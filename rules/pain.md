@@ -13,7 +13,8 @@ Some description here...
 > Verbal Pain Scale (at rest) - Row ID 3040104280
 
 > Verbal Pain Scale (at movement) - Row ID 3040104281
-> 
+
+
 
 
 
@@ -25,7 +26,35 @@ Some description here...
 
 > Compliance with Ventilator     -                			Row ID 3040104656
 
+Or
 
+> Vocalization (Extubated patients)  -  			Row ID 3040104657
+>
+> Muscle Tension                      -                			Row ID 3040104658
+>
+> CRITICAL CARE PAIN OBSERVATION SCORE  -  Row ID 3040104659
+
+
+
+
+
+---
+
+## ELIGIBILITY 
+
+1. All patients across all units
+
+## VALIDITY (time window)
+
+1. If verbal pain scale = 2-4, verbal pain scale is only valid if within last 75 minutes  
+
+2. If verbal pain scale = 0-1, verbal pain scale only valid if within last 5 hours  
+
+3. If verbal pain scale = ‘unable to assess’ valid for 5 hours 
+
+4. If CPOT = 3-8 CPOT scale only valid if within last 75 minutes 
+
+5. If CPOT =  0-2 CPOT scale only valid if within last 5 hours 
 ---
 
 
