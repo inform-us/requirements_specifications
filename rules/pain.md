@@ -13,6 +13,8 @@ Verbal Pain Scale (at rest) - Row ID 3040104280
 
 Verbal Pain Scale (at movement) - Row ID 3040104281
 
+---
+
 
 ## Table: equivalence between VPS & CPOT  
 | Classification | VPS (rest/move) | CPOT | Transformed CPOT | Validity time |
