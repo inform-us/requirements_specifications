@@ -54,7 +54,74 @@ Or
 
 4. If CPOT = 3-8 CPOT scale only valid if within last 75 minutes 
 
-5. If CPOT =  0-2 CPOT scale only valid if within last 5 hours 
+5. If CPOT =  0-2 CPOT scale only valid if within last 5 hours
+
+## CLASSIFICATION 
+
+**[A] Pain scales Measurement interval** 
+
+1. Measurement interval should be calculated from actual documented scores in EPIC and not any forward filled scores. These data have precise d/t stamps.
+2. There are two different measurement intervals that need to be calculated 
+   > a. Measurement interval for GREEN (none/mild pain or unable to assess)
+   > 
+   > b. Measurement interval for AMBER/RED (moderate/severe/very severe pain)
+3. When looking at the time interval between two measurements, look at the RAG label for the earlier _dt stamp and use this to allocate category (this differs from measurement interval calculation used in RASS)
+4. The mean measurement interval in the preceding 24 hours is then calculated for each respective measurement interval (GREEN & AMBER/RED)
+5. There needs to be a minimum of two scores to calculate a measurement interval. If a patient only has one pain score during their ICU admission, this will not/cannot be included in the ‘average measurement interval’ data.
+
+
+
+
+**[B]  Create 1 hour epoch, RAG classification**
+
+1. Create label for each 1-hour epoch
+2. If both CPOT and VPS score are documented, use highest score for that 1 hour epoch.
+3. If both CPOT and VPS scores are documented AND are equal, use VPS score.
+4. If both valid VPS at rest and at movement recorded, then use highest value score for that 1 hour epoch
+5. If both VPS at movement and rest scores are documented AND are equal, then use ‘at movement’ score
+6. If two of the same type of scores are documented (e.g. two VPS as rest in one epoch), use most recent score
+7. If both VPS ‘unable to assess’ AND CPOT are entered, use CPOT score
+8. If no valid score in the current epoch, then forward fill, using above validity (time) rules (i.e. if green forward fill for 5 hours, if amber or red 75 minutes.
+
+
+**[C] Floorplan labelling**
+
+1. If latest verbal pain scale reading = 0-1: ‘GREEN’; design = green filled bed 
+2. If latest CPOT reading = 0-2: ‘GREEN’; design = green filled bed
+3. If latest verbal pain scale reading = 2: ‘AMBER’; design = amber filled bed
+4. If latest CPOT reading = 3-4: ‘AMBER’; design = amber filled bed
+5. If latest verbal pain scale reading = 3-4: ‘RED’; design = red filled bed
+6. If latest CPOT reading = 5-8: ‘RED’; design = red filled bed
+7. If latest reading ‘missing’: ‘missing’; design = white filled bed with blue hashed outline
+8. If latest VPS reading is ‘unable to assess’, label as ‘unable to assess’. Design = white filled bed with green hashed outline.
+
+
+**[D] Classification Rules (corresponds to pain per patient chart)
+
+1. X-axis time in hours (range 24-72 hours)
+2. Y-axis left is VPS (0-4) & Y-axis right is CPOT (0-8)
+3. DESIGN KEY FOR INDIVIDUAL CHARTS 
+   > a. Label VPS as circles
+   > 
+   > b. Label CPOT as diamonds
+   > 
+   > c. Colour code – RAG rated pain severity
+   >
+   > d. Non-numerical – hashed / dotted outline
+   >
+   > e. Missing – no data points
+   >
+   > f.‘Unable to assess’ - white circle with green hashed outline. 
+
+
+ 
+
+
+
+
+
+
+
 ---
 
 
@@ -68,4 +135,3 @@ Or
 | Severe | 3 | 5-6 | 3| 75 minutes | ?? |
 | Very severe | 4 | 7-8 | 4 | 75 minutes | ?? |
 
-8. If no valid score in the current epoch, then forward fill, using above validity (time) rules (i.e. if green forward fill for 5 hours, if amber or red 75 minutes. 
