@@ -91,12 +91,17 @@ Or
 ---
 
 ## Table: equivalence between VPS & CPOT  
-| Classification | VPS (rest/move) | CPOT | Transformed CPOT | Validity time | Test |
+| Classification | VPS (rest/move) | CPOT | Transformed CPOT | Validity time | Colour |
 |-|-|-|-|-|-|
-| Unable to assess with 'other' filled | 0 | ?? | ?? | 5 hours | ?? |
+| Unable to assess with 'other' filled | 0 | ?? | ?? | 5 hours | green |
 | No | 0 | 0 | 0 | 5 hours | ?? |
 | Mild | 1 | 1-2 | 1 | 5 hours | ?? |
 | Moderate | 2 |  3-4 | 2 | 75 minutes | ??|
 | Severe | 3 | 5-6 | 3| 75 minutes | ?? |
-| Very severe | 4 | 7-8 | 4 | 75 minutes | ?? |
+| Very severe | 4 | 7-8 | 4 | 75 minutes | red |
+
+---
+# SPC CHARTS 
+
+
 
