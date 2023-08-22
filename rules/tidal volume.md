@@ -44,6 +44,7 @@ TIDAL VOLUME
     4. if latest 2 readings are 'out_of_range_10':'out of range' 
 
     5. if there are 5 non consecutive 'out_of_range_8':'out of range' 
+    
     6. if the latest classification is 'in range' : 'in range' 
-
+   
     7. if none of the above: 'fallthrough' 
