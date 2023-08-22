@@ -11,19 +11,13 @@
 
         	 
 
- 
+## Classification Rules: (corresponds to the per patient chart) 
 
-Classification Rules: (corresponds to the per patient chart) 
-
-    1) if not 'on_inotrope': 'not applicable' 
-
-2) if not 'has_valid_map':'missing' 
-
-3) if 'has_valid_numerical_map_target': below or above or in range 
-
-4) if 'has_valid_entered_map_target':'non-numerical 
-
-5) if non of the above 'not set' 
+1. if not 'on_inotrope': 'not applicable'
+2. if not 'has_valid_map':'missing' 
+3. if 'has_valid_numerical_map_target': below or above or in range 
+4. if 'has_valid_entered_map_target':'non-numerical 
+5. if non of the above 'not set' 
 
  
 
