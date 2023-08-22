@@ -32,3 +32,4 @@
 8. if the latest classification is 'not set' then label the patient as 'not set' 
 9. if the classification was 'in range' and is now above(below) for fewer than 3(2) hours then label as 'in range' 
 10. if none of the rules matched then label the patient as 'fallthrough' 
+---
