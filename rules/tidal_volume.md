@@ -5,16 +5,13 @@ Some description here...
 ## Validity (time window) Rules: 
 
 1) O2delivery only valid if o2delivery_dt within last 6 hours of epoch 
-
 2) Vent mode score only valid if vent_mode_vt_dt within last 4 hours of epoch_dt 
 
- 
 
- 
 
 ## Classification Rules: (corresponds to the per patient chart) 
 
-   1. if not 'is_ventilated':'not applicable' 
+   1. if not 'is_ventilated':'not applicable'
    2. if not 'has_valid_vent_mode_vt': 'missing' 
    3. if 'vent_mode_vt' 10.0:  'out_of_range_10' (out of range) 
    4. if 'vent_mode_vt' > 8.0: 'out_of_range_8' (out of range) 
