@@ -104,8 +104,7 @@ Or
 ---
 # SPC CHARTS 
 ## Chart 1 [Patient chart] 
-
-**Proportion of time in moderate or severe pain – weekly chart**
+### Proportion of time in moderate or severe pain – weekly chart
 
 
 
