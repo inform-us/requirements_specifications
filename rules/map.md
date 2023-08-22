@@ -20,7 +20,7 @@
 5. if non of the above 'not set' 
 
  
-## Labelling Rule: (corresponds to the floor plans)     
+## Labelling Rules: (corresponds to the floor plans)     
 
 1. if the latest 3 consecutive hours are all classified as 'above' then label patient as 'above'
 2. if the latest 2 consecutive hours are both classified as 'below' then label patient as 'below'       
