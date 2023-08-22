@@ -133,6 +133,6 @@ Or
 - Plot on weekly chart
 
   Anotation: We acknowledge the possibility of VPS at rest being a higher reading than VPS at movement though this is unlikely and therefore in the event that both scores are documented we select VPS at movement. 
-
+Is the prioritisation of pain scores the same for SPC as for the RAG classification? If yes, is that written in this part of the code?
 
 
