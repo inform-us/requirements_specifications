@@ -10,34 +10,19 @@ Some description here...
 
 ## EPIC Flowsheets
 * ### Verbal Pain Scale (VPS)
-> Verbal Pain Scale (at rest) - Row ID 3040104280
-
-> Verbal Pain Scale (at movement) - Row ID 3040104281
-
-
-
-
-
+ - Verbal Pain Scale (at rest) - Row ID 3040104280
+ - Verbal Pain Scale (at movement) - Row ID 3040104281
 
 * ### Critical Care Observation Tool (CPOT) - components
-> Facial Expression    -                           			Row ID 3040104654
-
-> Body Movements       -                        		   	Row ID 3040104655 
-
-> Compliance with Ventilator     -                			Row ID 3040104656
+- Facial Expression    -                           			Row ID 3040104654
+- Body Movements       -                        		   	Row ID 3040104655 
+- Compliance with Ventilator     -                			Row ID 3040104656
 
 Or
 
-> Vocalization (Extubated patients)  -  			Row ID 3040104657
->
-> Muscle Tension                      -                			Row ID 3040104658
->
-> CRITICAL CARE PAIN OBSERVATION SCORE  -  Row ID 3040104659
-
-
-
-
-
+- Vocalization (Extubated patients)  -  			Row ID 3040104657
+- Muscle Tension                      -                			Row ID 3040104658
+- CRITICAL CARE PAIN OBSERVATION SCORE  -  Row ID 3040104659
 ---
 
 ## ELIGIBILITY 
@@ -62,15 +47,11 @@ Or
 
 1. Measurement interval should be calculated from actual documented scores in EPIC and not any forward filled scores. These data have precise d/t stamps.
 2. There are two different measurement intervals that need to be calculated 
-   > a. Measurement interval for GREEN (none/mild pain or unable to assess)
-   > 
-   > b. Measurement interval for AMBER/RED (moderate/severe/very severe pain)
+   - a. Measurement interval for GREEN (none/mild pain or unable to assess) 
+   - b. Measurement interval for AMBER/RED (moderate/severe/very severe pain)
 3. When looking at the time interval between two measurements, look at the RAG label for the earlier _dt stamp and use this to allocate category (this differs from measurement interval calculation used in RASS)
 4. The mean measurement interval in the preceding 24 hours is then calculated for each respective measurement interval (GREEN & AMBER/RED)
 5. There needs to be a minimum of two scores to calculate a measurement interval. If a patient only has one pain score during their ICU admission, this will not/cannot be included in the ‘average measurement interval’ data.
-
-
-
 
 **[B]  Create 1 hour epoch, RAG classification**
 
@@ -101,29 +82,13 @@ Or
 1. X-axis time in hours (range 24-72 hours)
 2. Y-axis left is VPS (0-4) & Y-axis right is CPOT (0-8)
 3. DESIGN KEY FOR INDIVIDUAL CHARTS 
-   > a. Label VPS as circles
-   > 
-   > b. Label CPOT as diamonds
-   > 
-   > c. Colour code – RAG rated pain severity
-   >
-   > d. Non-numerical – hashed / dotted outline
-   >
-   > e. Missing – no data points
-   >
-   > f.‘Unable to assess’ - white circle with green hashed outline. 
-
-
- 
-
-
-
-
-
-
-
+   - a. Label VPS as circles 
+   - b. Label CPOT as diamonds
+   - c. Colour code – RAG rated pain severity
+   - d. Non-numerical – hashed / dotted outline
+   - e. Missing – no data points
+   - f.‘Unable to assess’ - white circle with green hashed outline. 
 ---
-
 
 ## Table: equivalence between VPS & CPOT  
 | Classification | VPS (rest/move) | CPOT | Transformed CPOT | Validity time | Test |
