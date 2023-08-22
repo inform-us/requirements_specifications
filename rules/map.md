@@ -20,29 +20,15 @@
 5. if non of the above 'not set' 
 
  
+## Labelling Rule: (corresponds to the floor plans)     
 
-     
-
- 
-
-Labelling Rule: (corresponds to the floor plans)     
-
-    1. if the latest 3 consecutive hours are all classified as 'above' then label patient as 'above' 
-
-    2. if the latest 2 consecutive hours are both classified as 'below' then label patient as 'below'       
-
-    3. if the latest classification is 'not applicable' then label the patient as 'not applicable' 
-
-    4. if there are 5 non-consecutive hours in the 24hr timeseries classified as *either* 'below' or 'above', count backward and label the patient the majority label 
-
-    5. if the latest hour is classified as 'in range', then label patient as 'in range' 
-
-    6. if the latest classification is 'non-numerical' then label the patient as 'non-numerical' 
-
-    7. if the latest classification is 'missing' then label the patient as 'missing' 
-
-    8. if the latest classification is 'not set' then label the patient as 'not set' 
-
-    9. if the classification was 'in range' and is now above(below) for fewer than 3(2) hours then label as 'in range' 
-
-    10. if none of the rules matched then label the patient as 'fallthrough' 
+1. if the latest 3 consecutive hours are all classified as 'above' then label patient as 'above'
+2. if the latest 2 consecutive hours are both classified as 'below' then label patient as 'below'       
+3. if the latest classification is 'not applicable' then label the patient as 'not applicable' 
+4. if there are 5 non-consecutive hours in the 24hr timeseries classified as *either* 'below' or 'above', count backward and label the patient the majority label 
+5. if the latest hour is classified as 'in range', then label patient as 'in range' 
+6. if the latest classification is 'non-numerical' then label the patient as 'non-numerical' 
+7. if the latest classification is 'missing' then label the patient as 'missing' 
+8. if the latest classification is 'not set' then label the patient as 'not set' 
+9. if the classification was 'in range' and is now above(below) for fewer than 3(2) hours then label as 'in range' 
+10. if none of the rules matched then label the patient as 'fallthrough' 
