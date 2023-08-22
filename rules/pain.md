@@ -105,6 +105,15 @@ Or
 # SPC CHARTS 
 ## Chart 1 [Patient chart] 
 ### Proportion of time in moderate or severe pain – weekly chart
+- Take individual patient label / reading for each 1 hour epoch 
+
+- Count number of amber / red (A/R) hours  
+- Divide by total number of eligible hours (hours with a valid pain score) for that patient in that calendar day period (accounts for missing bias)  
+- Number of hours A/R / Total hours (for that patient)  
+- Convert into percentage of hours spent in A/R (for each patient)  
+- Pool every patient percentage (individual patient day) into a weekly aggregate (all patients)  
+- Generate a weekly mean value (weekly aggregation) 
+- Week defined a Monday 00:00 – Sunday 23:59 
 
 
 
