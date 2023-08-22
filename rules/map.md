@@ -4,10 +4,10 @@
 1. MAP only valid if map_dt within last 6 hours of epoch_dt 
 2. Inotropes only valid if within last 4 hours 
 3. 8:00 - 12:00 MAP Target Validity rule: 
--  if epoch time before 12noon, 
--  if map_target_dt after 8am on the day before then mark as valid else as invalid 
--  if epoch after 12noon, 
--  if map_target_dt after 8am on the morning of then mark as valid else as invalid 
+  -  if epoch time before 12noon, 
+  -  if map_target_dt after 8am on the day before then mark as valid else as invalid 
+  -  if epoch after 12noon, 
+  -  if map_target_dt after 8am on the morning of then mark as valid else as invalid 
 
         	 
 
