@@ -1,3 +1,3 @@
-# SpO2 rules
+# Spo2 rules
 
-Some description here...
+ 
