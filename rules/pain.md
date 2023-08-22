@@ -121,6 +121,15 @@ Or
 - Numerator = count measurement intervals that are ≤ 4:00 hours 
 - Denominator = count all measurement intervals in the GREEN category in that week 
 - Generate percentage of measurement intervals that are 4:00 hours or less 
+- Plot on weekly chart
+
+## Chart 2b AMBER/RED [Interval chart] moderate severe pain 
+**Measurement interval – weekly chart** 
+- Week defined a Monday 00:00 – Sunday 23:59 
+- Look at AMBER/RED measurement category in a week 
+- Numerator = count measurement intervals that are ≤ 1:00 hour 
+- Denominator = count all measurement intervals in the AMBER/RED category in that week 
+- Generate percentage of measurement intervals that are 1:00 hour or less 
 - Plot on weekly chart 
 
 
