@@ -130,7 +130,9 @@ Or
 - Numerator = count measurement intervals that are ≤ 1:00 hour 
 - Denominator = count all measurement intervals in the AMBER/RED category in that week 
 - Generate percentage of measurement intervals that are 1:00 hour or less 
-- Plot on weekly chart 
+- Plot on weekly chart
+
+  Anotation: We acknowledge the possibility of VPS at rest being a higher reading than VPS at movement though this is unlikely and therefore in the event that both scores are documented we select VPS at movement. 
 
 
 
