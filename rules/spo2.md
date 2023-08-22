@@ -17,17 +17,13 @@ Some description here...
         	 
 
 
-Classification Rules: (corresponds to the per patient chart) 
+## Classification Rules: (corresponds to the per patient chart) 
 
-1) if 'on_room_air': 'not applicable' 
-
-    2) if 'has_valid_o2sat': 'missing' 
-
-    3) if  'has_valid_numerical_spo2_target': 'below' or 'above' or 'in range' 
-
-    4) if 'has_valid_entered_spo2_target': 'non-numerical' 
-
-    5) if none of the above:  'not set' 
+1. if 'on_room_air': 'not applicable'
+2. if 'has_valid_o2sat': 'missing'
+3. if  'has_valid_numerical_spo2_target': 'below' or 'above' or 'in range' 
+4. if 'has_valid_entered_spo2_target': 'non-numerical'
+5. if none of the above:  'not set' 
 
      
 
