@@ -40,4 +40,13 @@ Operational definition = of the patients who are intubated and on mandatory vent
 3. Discard the following hour epoch labels:
       -  ‘n/a’ (not intubated / mandatory ventilation mode)
       -  ‘fall through’
-      -  ‘Missing’ 
+      -  ‘Missing’
+
+### GENERATE DESIGNATION FOR PATIENT CALENDAR DAY 
+4. Perform a count of the number of eligible hours in that calendar day (labels: ‘within target’ or ‘above target’). This is the denominator. 
+5. Take most frequent epoch count as the calendar day designation. IF highest count on that calendar day is ‘within target’’ then designate as ‘on target’ OR if ‘above target’ then designate as ‘above target’.  
+6. IF the most frequent hour counts are equal (between ‘within target’ and ‘above target’ (step 5) then calendar day designation = ‘within target’.
+
+### GENERATE DATA POINT FOR SPC CHART   
+7. Take all of the patient calendar day designations and aggregate into one week: Week defined as: Monday 00:00 - Sunday 23:59 
+8. ABOVE TIDAL VOLUME TARGET CHART: calendar day designation = ‘above target’ divided by all calendar day designations ‘within target’ + ‘above target’ (i.e. add up all ‘above target’ in that week and divide by ‘above target’ + ‘within target’ in that week). Present as percentage.     
