@@ -41,7 +41,7 @@ Operational definition = of the patients who are on vasopressor therapy and have
 
 ### GENERATE LABEL FOR 1 HOUR EPOCH & DISCARD ‘IN’-ELIGIBLE HOURS 
 
-2.If more than one MAP reading in a one hour epoch, take last reading and discard others 
+2. If more than one MAP reading in a one hour epoch, take last reading and discard others 
 
 3. Discard the following hour epoch labels: 
    - ‘n/a’ (not on vasopressor therapy)
