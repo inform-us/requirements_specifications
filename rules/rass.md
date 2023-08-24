@@ -26,3 +26,19 @@ Some description here...
 6. if latest reading 'not applicable': 'not applicable' 
 7. if latest reading 'non-numerical':'non-numerical' 
 8. if none of the above: 'fallthrough' 
+---
+# SPC CHARTS 
+## RASS Graph 9- Weekly percentage RASS target compliance
+Operational definition = of the patients who are ventilated and on sedative drug therapy and have had RASS targets set in EPIC, what proportion are achieving (‘on’) or not achieving (‘off’) the set RASS target on a weekly basis? 
+
+### GROUP PATIENT HOURLY DATA INTO CALENDAR DAY
+1. Group patient (MRN/CSN) hourly data into a calendar day
+
+### GENERATE LABEL FOR 1 HOUR EPOCH & DISCARD ‘IN’-ELIGIBLE EPOCHS 
+2. If more than one RASS reading in a one hour epoch, take last reading and discard others 
+
+3. Discard the following hour epoch labels: 
+             - ‘n/a’ (not ventilated / sedated)
+             -  ‘fall through’
+             -  ‘not set’
+             - ‘missing’  
