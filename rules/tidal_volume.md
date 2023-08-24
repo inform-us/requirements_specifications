@@ -29,3 +29,5 @@ Some description here...
   7. if none of the above: 'fallthrough'
  ---    
 # SPC CHARTS
+##  Tidal Volume- Graph 8- Weekly percentage of patients exceeding/above/not achieving Tidal Volume target of 6-8ml/kg IBW 
+Operational definition = of the patients who are intubated and on mandatory ventilation (modes), what proportion are exceeding their tidal volume target [i.e. >8ml/kg IBW] (‘above target’) on a weekly basis?
