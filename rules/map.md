@@ -40,9 +40,7 @@ Operational definition = of the patients who are on vasopressor therapy and have
 1. Group patient (MRN/CSN) hourly data into a calendar day 
 
 ### GENERATE LABEL FOR 1 HOUR EPOCH & DISCARD ‘IN’-ELIGIBLE HOURS 
-
 2. If more than one MAP reading in a one hour epoch, take last reading and discard others 
-
 3. Discard the following hour epoch labels: 
    - ‘n/a’ (not on vasopressor therapy)
    - ‘fall through’
@@ -54,8 +52,7 @@ Operational definition = of the patients who are on vasopressor therapy and have
 6. IF highest count is ‘in range’ AND label is ‘in range’ for ≥50% of eligible readings (numerator = ‘in range’ hour count (step 5), denominator = number of eligible hours (step 4)) then calendar day designation = ‘in range’ 
 7. IF the most frequent hour count are equal (between all three ‘in range’ and ‘above’ or ‘below’ (step 5) then calendar day designation = ‘above’ 
 8. IF the most frequent hour count is ‘in range’ AND label is ‘in range’ for ≤49.9% of eligible readings (numerator = ‘in range’ hour count (step 5), denominator = number of eligible hours (step 4)) then calendar day designation is second most frequent hour count (‘above’ or ‘below’).  
-
-IF the most frequent hour count is equal between ‘above’ and ‘below’ (step 5) then calendar day designation = ‘above’ 
+9. IF the most frequent hour count is equal between ‘above’ and ‘below’ (step 5) then calendar day designation = ‘above’ 
 
 GENERATE DATA POINT FOR SPC CHART 
 
