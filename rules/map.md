@@ -53,8 +53,7 @@ Operational definition = of the patients who are on vasopressor therapy and have
 5. Take most frequent hour count as the calendar day designation IF highest count is ‘above’ or ‘below’ 
 6. IF highest count is ‘in range’ AND label is ‘in range’ for ≥50% of eligible readings (numerator = ‘in range’ hour count (step 5), denominator = number of eligible hours (step 4)) then calendar day designation = ‘in range’ 
 7. IF the most frequent hour count are equal (between all three ‘in range’ and ‘above’ or ‘below’ (step 5) then calendar day designation = ‘above’ 
-
-IF the most frequent hour count is ‘in range’ AND label is ‘in range’ for ≤49.9% of eligible readings (numerator = ‘in range’ hour count (step 5), denominator = number of eligible hours (step 4)) then calendar day designation is second most frequent hour count (‘above’ or ‘below’).  
+8. IF the most frequent hour count is ‘in range’ AND label is ‘in range’ for ≤49.9% of eligible readings (numerator = ‘in range’ hour count (step 5), denominator = number of eligible hours (step 4)) then calendar day designation is second most frequent hour count (‘above’ or ‘below’).  
 
 IF the most frequent hour count is equal between ‘above’ and ‘below’ (step 5) then calendar day designation = ‘above’ 
 
