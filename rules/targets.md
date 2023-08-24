@@ -9,6 +9,8 @@ Some description here ....
 ## VALIDITY (time window)
 
 ## CLASSIFICATION 
+1. All eight physiological targets completed in the ICU Targets section of the ICU Navigators
+2. Compliance measured at 13:00 hours each day 
 
 ---
 # SPC CHARTS 
