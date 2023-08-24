@@ -36,6 +36,11 @@ Some description here...
  7. if the latest classification is 'missing' then label the patient as 'missing' 
  8. if the latest classification is 'not set' then label the patient as 'not set' 
  9. if the classification was 'in range' and is now above(below) for fewer than 3(2) hours then label as 'in range' 
- 10. if none of the rules matched then label the patient as 'fallthrough' 
+ 10. if none of the rules matched then label the patient as 'fallthrough'
+---
+# SPC CHARTS
+## SpO2 Graphs 2, 3 and 4- Daily percentage SpO2  
+Operational definition = of the patients who are on oxygen therapy and have had SpO2 targets set in EPIC, what proportion are above, below and within their SpO2 targets on a daily basis? 
+
 
  
