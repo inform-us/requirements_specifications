@@ -44,9 +44,9 @@ Operational definition = of the patients who are on vasopressor therapy and have
 2.If more than one MAP reading in a one hour epoch, take last reading and discard others 
 
 3. Discard the following hour epoch labels: 
-   a. ‘n/a’ (not on vasopressor therapy)
-   b. ‘fall through’
-   c. ‘not set’ 
+   - ‘n/a’ (not on vasopressor therapy)
+   - ‘fall through’
+   -  ‘not set’ 
 
 
 
