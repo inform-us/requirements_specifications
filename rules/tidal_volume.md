@@ -27,5 +27,5 @@ Some description here...
   5. if there are 5 non consecutive 'out_of_range_8':'out of range' 
   6. if the latest classification is 'in range' : 'in range'
   7. if none of the above: 'fallthrough'
-     ---
-     
+ ---    
+# SPC CHARTS
