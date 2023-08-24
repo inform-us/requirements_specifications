@@ -37,8 +37,11 @@ Operational definition = of the patients who are ventilated and on sedative drug
 ### GENERATE LABEL FOR 1 HOUR EPOCH & DISCARD ‘IN’-ELIGIBLE EPOCHS 
 2. If more than one RASS reading in a one hour epoch, take last reading and discard others 
 
-3. Discard the following hour epoch labels: 
-   -  ‘n/a’ (not ventilated / sedated)
-   - ‘fall through’
-   - ‘not set’
-   -  ‘missing’  
+3. Discard the following hour epoch labels:
+    - ‘n/a’ (not ventilated / sedated)
+    - ‘fall through’
+    - ‘not set’
+    - ‘missing’ 
+   
+               
+    
