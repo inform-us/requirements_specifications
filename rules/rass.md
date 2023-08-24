@@ -38,7 +38,7 @@ Operational definition = of the patients who are ventilated and on sedative drug
 2. If more than one RASS reading in a one hour epoch, take last reading and discard others 
 
 3. Discard the following hour epoch labels: 
-             - ‘n/a’ (not ventilated / sedated)
-             -  ‘fall through’
-             -  ‘not set’
-             - ‘missing’  
+   -  ‘n/a’ (not ventilated / sedated)
+   - ‘fall through’
+   - ‘not set’
+   -  ‘missing’  
