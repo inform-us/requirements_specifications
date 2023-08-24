@@ -37,7 +37,7 @@ Operational definition = of the patients who are intubated and on mandatory vent
 
 ### GENERATE LABEL FOR 1 HOUR EPOCH & DISCARD ‘IN’-ELIGIBLE EPOCHS 
 2. If more than one tidal volume reading in a one hour epoch, take last reading and discard others 
-3. Discard the following hour epoch labels: 
-       - ‘n/a’ (not intubated / mandatory ventilation mode)
-       - ‘fall through’
-       - ‘Missing’ 
+3. Discard the following hour epoch labels:
+      -  ‘n/a’ (not intubated / mandatory ventilation mode)
+      -  ‘fall through’
+      -  ‘Missing’ 
