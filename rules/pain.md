@@ -1,8 +1,6 @@
 # Pain rules
 Some description here...
 
-TEST TEST
-
 ## EPIC
 - There will only be two pain scores going forward
   - Verbal pain score
