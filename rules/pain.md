@@ -2,29 +2,29 @@
 Some description here...
 
 ## EPIC
-- There will only be two pain scores going forward
-  - Verbal pain score
+- There will only be two pain scores (in EPIC) going forward
+  - Verbal pain score - scale 0-4
   - Critical Care Pain Observation Tool (CPOT) - scale 0-8
 - Pain scale value is an integer (EPIC will allow free text!)
 - There are no targets for these variables
-- 
+
 ## EPIC Flowsheets
 * ### Verbal Pain Scale (VPS)
- - Verbal Pain Scale (at rest) - Row ID 3040104280
- - Verbal Pain Scale (at movement) - Row ID 3040104281
+ - VERBAL PAIN SCALE (at rest) - Row ID 3040104280
+ - VERBAL PAIN SCALE (at movement) - Row ID 3040104281
 
-* ### Critical Care Observation Tool (CPOT) - components
-- Facial Expression    -                           			Row ID 3040104654
-- Body Movements       -                        		   	Row ID 3040104655 
-- Compliance with Ventilator     -                			Row ID 3040104656
-
-Or
-
-- Vocalization (Extubated patients)  -  			Row ID 3040104657
-- Muscle Tension                      -                			Row ID 3040104658
-- CRITICAL CARE PAIN OBSERVATION SCORE  -  Row ID 3040104659
+* ### Critical Care Pain Observation Tool (CPOT) - components
+- Facial Expression - Row ID 3040104654
+- Body Movements - Row ID 3040104655 
+- Compliance with Ventilator - Row ID 3040104656
+- OR
+- Vocalization (extubated patients) - Row ID 3040104657
+- Muscle Tension - Row ID 3040104658
+ 
+- CRITICAL CARE PAIN OBSERVATION SCORE - Row ID 3040104659
 ---
 
+---
 ## ELIGIBILITY 
 
 1. All patients across all units
@@ -35,11 +35,11 @@ Or
 
 2. If verbal pain scale = 0-1, verbal pain scale only valid if within last 5 hours  
 
-3. If verbal pain scale = ‘unable to assess’ valid for 5 hours 
+3. If verbal pain scale = ‘unable to assess’, verbal pain scale only valid if within last 5 hours
 
-4. If CPOT = 3-8 CPOT scale only valid if within last 75 minutes 
+4. If CPOT = 3-8, CPOT scale only valid if within last 75 minutes 
 
-5. If CPOT =  0-2 CPOT scale only valid if within last 5 hours
+5. If CPOT =  0-2, CPOT scale only valid if within last 5 hours
 
 ## CLASSIFICATION 
 
