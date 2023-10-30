@@ -43,15 +43,18 @@ Some description here...
 
 ## CLASSIFICATION 
 
-**[A] Pain scales Measurement interval** 
+**[A1] Pain Score Measurement interval** 
 
-1. Measurement interval should be calculated from actual documented scores in EPIC and not any forward filled scores. These data have precise d/t stamps.
-2. There are two different measurement intervals that need to be calculated 
-   - a. Measurement interval for GREEN (none/mild pain or unable to assess) 
-   - b. Measurement interval for AMBER/RED (moderate/severe/very severe pain)
+1. Measurement interval should be calculated from ACTUAL documented scores in EPIC and not any forward filled scores - these data have precise _dt stamps
+2. There are two different categories of measurement intervals that need to be calculated (refer to equivalence table VPS-CPOT):
+   - a. GREEN measurement interval - no pain / mild pain or 'unable to assess'
+   - b. AMBER/RED measurement interval - moderate / severe / very severe pain
 3. When looking at the time interval between two measurements, look at the RAG label for the earlier _dt stamp and use this to allocate category (this differs from measurement interval calculation used in RASS)
-4. The mean measurement interval in the preceding 24 hours is then calculated for each respective measurement interval (GREEN & AMBER/RED)
-5. There needs to be a minimum of two scores to calculate a measurement interval. If a patient only has one pain score during their ICU admission, this will not/cannot be included in the ‘average measurement interval’ data.
+4. The mean measurement interval in the preceding 24 hours is then calculated for each respective measurement interval category (GREEN & AMBER/RED)
+5. There needs to be a minimum of two scores to calculate a measurement interval (if a patient only has one pain score during their ICU admission, this will not be included in the ‘average measurement interval’ data)
+
+**[A2] Pain Score Measurement interval (front tile - 24 hour rolling window) - adjustment** 
+
 
 **[B]  Create 1 hour epoch, RAG classification**
 
