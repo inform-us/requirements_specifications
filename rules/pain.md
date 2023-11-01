@@ -65,19 +65,21 @@ Feeds into (i) front tile - 24 hour rolling window and (ii) SPC interval charts.
 **[B]  Create 1 hour epoch, RAG classification**
 
 1. Create label for each 1-hour epoch
-2. If both CPOT and VPS score are documented, use highest score for that 1 hour epoch.
-3. If both CPOT and VPS scores are documented AND are equal, use VPS score.
-4. If both valid VPS at rest and at movement recorded, then use highest value score for that 1 hour epoch
-5. If both VPS at movement and rest scores are documented AND are equal, then use ‘at movement’ score
-6. If two of the same type of scores are documented (e.g. two VPS as rest in one epoch), use most recent score
-7. If both VPS ‘unable to assess’ AND CPOT are entered, use CPOT score
-8. If no valid score in the current epoch, then forward fill, using above validity (time) rules (i.e. if green forward fill for 5 hours, if amber or red 75 minutes.
+2. Pool all the pain measurements (VPS_move / VPS_rest / CPOT) for each individual patient into 1-hour epochs
+3. Eliminate same _dt stamp:
+4. If two or more measurements have the same _dt stamp then retain the highest score for that time _dt stamp
+5. If there is an equal highest score (with the same _dt stamp) accross two or more of VPS_move / VPS_rest / CPOT - then retain VPS_move over VPS_rest over CPOT
+6. 1-hour epoch label (most recent score):
+7. If there are two or more scores in a 1-hour epoch then take the most recent score, unless it is a CPOT score preceeded by a VPS_move/VPS_rest score (in which case take the most recent VPS score, but not VPS 'unable to assess')
+8. If the 1-hour epoch only has CPOT scores, then take the most recent
+9. If both VPS ‘unable to assess’ AND CPOT are entered, use CPOT score
+10. If no valid score in the current 1-hour epoch, then forward fill, using above validity (time) rules (i.e. if green forward fill for 5 hours, if amber or red 75 minutes
 
 
    ## Table: equivalence between VPS & CPOT  
 | Classification | VPS (rest/move) | CPOT | Transformed CPOT | Validity time | Colour |
 |-|-|-|-|-|-|
-| Unable to assess with 'other' filled | 0 |  |  | 5 hours | green |
+| Unable to assess with 'other' filled | -1 |  |  | 5 hours | green |
 | No | 0 | 0 | 0 | 5 hours | green |
 | Mild | 1 | 1-2 | 1 | 5 hours | green |
 | Moderate | 2 |  3-4 | 2 | 75 minutes | amber|
