@@ -29,7 +29,7 @@ Some description here...
 
 1. All patients across all units
 
-## VALIDITY (time window)
+## VALIDITY for 1 hour epoch calculation (time window)
 
 1. If verbal pain scale = 2-4, verbal pain scale is only valid if within last 75 minutes  
 
@@ -43,18 +43,24 @@ Some description here...
 
 ## CLASSIFICATION 
 
-**[A1] Pain Score Measurement interval** 
-
+**[A] Pain Score Measurement Interval**
+  
+Feeds into (i) front tile - 24 hour rolling window and (ii) SPC interval charts.
 1. Measurement interval should be calculated from ACTUAL documented scores in EPIC and not any forward filled scores - these data have precise _dt stamps
-2. There are two different categories of measurement intervals that need to be calculated (refer to equivalence table VPS-CPOT):
+2. There needs to be a minimum of two scores to calculate a measurement interval (if a patient only has one pain score during their ICU admission, this will not be included in the ‘average measurement interval’ data)
+3. There are two different categories of measurement intervals that need to be calculated (refer to equivalence table VPS-CPOT):
    - a. GREEN measurement interval - no pain / mild pain or 'unable to assess'
    - b. AMBER/RED measurement interval - moderate / severe / very severe pain
-3. When looking at the time interval between two measurements, look at the RAG label for the earlier _dt stamp and use this to allocate category (this differs from measurement interval calculation used in RASS)
-4. The mean measurement interval in the preceding 24 hours is then calculated for each respective measurement interval category (GREEN & AMBER/RED)
-5. There needs to be a minimum of two scores to calculate a measurement interval (if a patient only has one pain score during their ICU admission, this will not be included in the ‘average measurement interval’ data)
-
-**[A2] Pain Score Measurement interval (front tile - 24 hour rolling window) - adjustment** 
-
+4. When looking at the time interval between two measurements, look at the RAG label for the earlier _dt stamp and use this to allocate category (this differs from measurement interval calculation used in RASS)
+5. Pool (not individial patient basis) measurement interval data for the 24 hour time period
+6. Numerator = number of measurements
+7. Denominator (unadjusted) = number of measurements
+8. Denominator adjustment required for excessively long measurememnt intervals (those that are 2x accepted measurement interval from clincal guideance)
+9. GREEN category: count the number of measurement intervals that are >8:00hr in the 24 hour period and add +1 to denominator for each four hour period greater than the permitted 4:00hr
+10. For example: (i) an 8:01hr measurement interval will count as 2 in the adjusted denominator - once for the measurement and once for being an additional 4:00hr over the permitted four hours for this category; (ii) 12:01hr measurement interval will count as 3 in the adjusted denominator; (iii) 16:01hr measurement interval will count as 4 in the adjusted denominator etc...
+11. AMBER/RED category: count the number of measurement intervals that are >2:00hr in the 24 hour period and add +1 to denominator for each one hour eperiod greater than the permitted 1:00hr
+12. For example: (i) an 2:01hr measurement interval will count as 2 in the adjusted denominator - once for the measurement and once for being an additional 1:00hr over the permitted four hours for this category; (ii) 3:01hr measurement interval will count as 3 in the adjusted denominator; (iii) 4:01hr measurement interval will count as 4 in the adjusted denominator etc...
+13. Calculate the (adjusted) mean measurement interval in the preceding 24 hours for each respective measurement interval category (GREEN & AMBER/RED) using the NUMERATOR / adjusted DENOMINATOR
 
 **[B]  Create 1 hour epoch, RAG classification**
 
