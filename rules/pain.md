@@ -63,17 +63,20 @@ Feeds into (i) front tile - 24 hour rolling window and (ii) SPC interval charts.
 13. Calculate the (adjusted) mean measurement interval in the preceding 24 hours for each respective measurement interval category (GREEN & AMBER/RED) using the NUMERATOR / adjusted DENOMINATOR
 
 **[B]  Create 1 hour epoch, RAG classification**
+  
+Feeds into (i) floor plan, (ii) individual patinet chart and (iii) SPC pain score charts.
 
 1. Create label for each 1-hour epoch
-2. Pool all the pain measurements (VPS_move / VPS_rest / CPOT) for each individual patient into 1-hour epochs
-3. Eliminate same _dt stamp:
-4. If two or more measurements have the same _dt stamp then retain the highest score for that time _dt stamp
-5. If there is an equal highest score (with the same _dt stamp) accross two or more of VPS_move / VPS_rest / CPOT - then retain VPS_move over VPS_rest over CPOT
-6. 1-hour epoch label (most recent score):
-7. If there are two or more scores in a 1-hour epoch then take the most recent score, unless it is a CPOT score preceeded by a VPS_move/VPS_rest score (in which case take the most recent VPS score, but not VPS 'unable to assess')
-8. If the 1-hour epoch only has CPOT scores, then take the most recent
-9. If both VPS ‘unable to assess’ AND CPOT are entered, use CPOT score
+2. There are four pain measurement possibilities: (1) VPS _move score, (2) VPS_rest score, (3) CPOT score and VPS 'unable to assess'
+3. Pool all the pain measurements (VPS_move / VPS_rest / CPOT/ VPS 'unable to assess') for each individual patient into 1-hour epochs
+4. Eliminate same _dt stamp:
+5. If two or more measurements (of any type) have the same _dt stamp then retain the highest score for that time _dt stamp
+6. If there is an equal highest score (with the same _dt stamp) accross two or more of VPS_move / VPS_rest / CPOT - then retain VPS_move over VPS_rest over CPOT
+7. 1-hour epoch label (most recent score):
+8. If there are two or more scores in a 1-hour epoch then take the most recent score, unless: (i) it is a CPOT score preceeded by a VPS_move/VPS_rest score, in which case retain the most recent VPS_move/VPS_rest score; or (ii) it is a VPS 'unable to assess' preceeded by a VPS_move/VPS_rest score/CPOT, in which case take the most recent VPS_move/VPS_rest score/CPOT
+9. A 1-hour epoch should only carry a VPS ‘unable to assess’, if this is the only measuremnt in that hour, or it is preceeded by a VPS 'unable to assess'
 10. If no valid score in the current 1-hour epoch, then forward fill, using above validity (time) rules (i.e. if green forward fill for 5 hours, if amber or red 75 minutes
+11. NOTE - the VPS 'unable to assess' label will ONLY be used for the unit floorplan (where it will have its own specific label), it has no purpose in the individual patient pain score chart nor the SPC pain chart
 
 
    ## Table: equivalence between VPS & CPOT  
