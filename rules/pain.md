@@ -103,17 +103,16 @@ Feeds into (i) floor plan, (ii) individual patinet chart and (iii) SPC pain scor
 8. If latest VPS reading is ‘unable to assess’, label as ‘unable to assess’. Design = white filled bed with green hashed outline.
 
 
-**[D] Classification Rules (corresponds to pain per patient chart)
+**[D] Classification Rules: Individical patient chart**
 
-1. X-axis time in hours (range 24-72 hours)
-2. Y-axis left is VPS (0-4) & Y-axis right is CPOT (0-8)
+1. X-axis time in hours, range 0-72 hours, default to 24 hours
+2. Y-axis left is pain score (VPS-0 to 4 and CPOT 0 to 8 adjusted to VPS equivalence (see tabel above))
 3. DESIGN KEY FOR INDIVIDUAL CHARTS 
    - a. Label VPS as circles 
    - b. Label CPOT as diamonds
-   - c. Colour code – RAG rated pain severity
-   - d. Non-numerical – hashed / dotted outline
-   - e. Missing – no data points
-   - f.‘Unable to assess’ - white circle with green hashed outline. 
+   - c. Colour code – RAG rated pain score (see equivalence table)
+   - d. Missing – no data points
+   - f. Forward filled data (see validity for 1 hour epoch calculation) shown as a continuing line (no icons circles/daimonds)
 
 ---
 # SPC CHARTS 
