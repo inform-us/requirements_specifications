@@ -46,21 +46,25 @@ Some description here...
 **[A] Pain Score Measurement Interval**
   
 Feeds into (i) front tile - 24 hour rolling window and (ii) SPC interval charts.
+**Front tile AVERAGE PAIN MEASUREMENT INTERVAL**
 1. Measurement interval should be calculated from ACTUAL documented scores in EPIC and not any forward filled scores - these data have precise _dt stamps
 2. There needs to be a minimum of two scores to calculate a measurement interval (if a patient only has one pain score during their ICU admission, this will not be included in the ‘average measurement interval’ data)
 3. There are two different categories of measurement intervals that need to be calculated (refer to equivalence table VPS-CPOT):
    - a. GREEN measurement interval - no pain / mild pain or 'unable to assess'
    - b. AMBER/RED measurement interval - moderate / severe / very severe pain
 4. When looking at the time interval between two measurements, look at the RAG label for the earlier _dt stamp and use this to allocate category (this differs from measurement interval calculation used in RASS)
-5. Pool (not individial patient basis) measurement interval data for the 24 hour time period
-6. Numerator = number of measurements
-7. Denominator (unadjusted) = number of measurements
-8. Denominator adjustment required for excessively long measurememnt intervals (those that are 2x accepted measurement interval from clincal guideance)
-9. GREEN category: count the number of measurement intervals that are >8:00hr in the 24 hour period and add +1 to denominator for each four hour period greater than the permitted 4:00hr
-10. For example: (i) an 8:01hr measurement interval will count as 2 in the adjusted denominator - once for the measurement and once for being an additional 4:00hr over the permitted four hours for this category; (ii) 12:01hr measurement interval will count as 3 in the adjusted denominator; (iii) 16:01hr measurement interval will count as 4 in the adjusted denominator etc...
-11. AMBER/RED category: count the number of measurement intervals that are >2:00hr in the 24 hour period and add +1 to denominator for each one hour eperiod greater than the permitted 1:00hr
-12. For example: (i) an 2:01hr measurement interval will count as 2 in the adjusted denominator - once for the measurement and once for being an additional 1:00hr over the permitted four hours for this category; (ii) 3:01hr measurement interval will count as 3 in the adjusted denominator; (iii) 4:01hr measurement interval will count as 4 in the adjusted denominator etc...
-13. Calculate the (adjusted) mean measurement interval in the preceding 24 hours for each respective measurement interval category (GREEN & AMBER/RED) using the NUMERATOR / adjusted DENOMINATOR
+5. Pool (each categrory GREEN or AMBER/RED (i.e. not on an individial patient basis) measurement interval data for the 24 hour time period
+6. Numerator = sum of time interval measurement (hours) 
+7. Denominator (unadjusted) = number of time interval measurements
+8. FRONT TILE AVERGAE MEASUREMENT INTERVAL (24 hour rolling window) - CALCLULATE MEAN using above numerator / denominator (unadjusted)
+** SPC MEASUREMENT INTERVAL CHART (p-chart (%))**
+9. Numerator = count of time intervals that are ≤ 4:00 hours for the GREEN category and ≤ 1:00 hour for the AMBER/RED categroy respectively
+10. (SPC) denominator adjustment required for excessively long measurememnt intervals (those that are 2x accepted measurement interval from clincal guideance)
+12. GREEN category: count the number of measurement intervals that are >8:00hr in the defined period (week) and add +1 to denominator for each four hour period greater than the permitted 4:00hr
+13. For example: (i) an 8:01hr measurement interval will count as 2 in the adjusted denominator - once for the measurement and once for being an additional 4:00hr over the permitted four hours for this category; (ii) 12:01hr measurement interval will count as 3 in the adjusted denominator; (iii) 16:01hr measurement interval will count as 4 in the adjusted denominator etc...
+14. AMBER/RED category: count the number of measurement intervals that are >2:00hr in the defined period (week) and add +1 to denominator for each one hour eperiod greater than the permitted 1:00hr
+15. For example: (i) an 2:01hr measurement interval will count as 2 in the adjusted denominator - once for the measurement and once for being an additional 1:00hr over the permitted four hours for this category; (ii) 3:01hr measurement interval will count as 3 in the adjusted denominator; (iii) 4:01hr measurement interval will count as 4 in the adjusted denominator etc...
+16. The SPC numerator and SPC (adjusted) denominator will be used for the SPC INTERVAL p-chart calculation (see below)
 
 **[B]  Create 1 hour epoch, RAG classification**
   
@@ -90,7 +94,6 @@ Feeds into (i) floor plan, (ii) individual patinet chart and (iii) SPC pain scor
 | Very severe | 4 | 7-8 | 4 | 75 minutes | red |
 
 
-
 **[C] Floorplan labelling**
 
 1. If latest verbal pain scale reading = 0-1: ‘GREEN’; design = green filled bed 
@@ -115,7 +118,7 @@ Feeds into (i) floor plan, (ii) individual patinet chart and (iii) SPC pain scor
    - f. Forward filled data (see validity for 1 hour epoch calculation) shown as a continuing line (no icons circles/daimonds)
 
 ---
-# SPC CHARTS 
+# [E] Classification Rules: SPC CHARTS 
 ## Chart 1 [Patient chart] 
 **Proportion of time in moderate or severe pain – weekly chart**
 - Take individual patient label / reading for each 1 hour epoch 
@@ -127,26 +130,22 @@ Feeds into (i) floor plan, (ii) individual patinet chart and (iii) SPC pain scor
 - Generate a weekly mean value (weekly aggregation) 
 - Week defined a Monday 00:00 – Sunday 23:59
 
-## Chart 2a GREEN [Interval chart] none to mild pain 
-**Measurement interval – weekly chart**
-- Week defined a Monday 00:00 – Sunday 23:59 
-- Look at GREEN measurement category in a week 
-- Numerator = count measurement intervals that are ≤ 4:00 hours 
-- Denominator = count all measurement intervals in the GREEN category in that week 
-- Generate percentage of measurement intervals that are 4:00 hours or less 
-- Plot on weekly chart
+**INTERVAL SPC CHARTS (refer to derived data from 'Pain Score Measurement Interval [A])**
+1. These are weekly percentage (p-charts) SPC
+2. Week defined a Monday 00:00 – Sunday 23:59
 
-## Chart 2b AMBER/RED [Interval chart] moderate severe pain 
-**Measurement interval – weekly chart** 
-- Week defined a Monday 00:00 – Sunday 23:59 
-- Look at AMBER/RED measurement category in a week 
-- Numerator = count measurement intervals that are ≤ 1:00 hour 
-- Denominator = count all measurement intervals in the AMBER/RED category in that week 
-- Generate percentage of measurement intervals that are 1:00 hour or less 
-- Plot on weekly chart
+## Chart 2a GREEN [Measurement Interval Chart] - none to mild pain 
+1. Look at GREEN category measurement intervals in that week
+2. Numerator = count of time intervals that are ≤ 4:00 hours for the GREEN category
+3. Denominator (adjusted) = count all measurement intervals in the GREEN category in that week that are >8:00 hours and ADD +1 to denominator for each four hour period greater than the permitted 4:00 hours
+4. Generate percentage of measurement intervals for that week that are 4:00 hours or less: numerator / denominator (adjusted)
+5. Plot on weekly chart
 
-  Anotation: We acknowledge the possibility of VPS at rest being a higher reading than VPS at movement though this is unlikely and therefore in the event that both scores are documented we select VPS at movement. 
-  Questions for clarification : Is the prioritisation of pain scores the same for SPC as for the RAG classification? If yes, is that written in this part of the code?
-  Are we happy with the decision to exclude CPOT when entered at the same time than VPS ( though it might not be the exact same time stamp)?
+## Chart 2b AMBER/RED [Measurement Interval chart] - moderate severe pain 
+1. Look at AMBER/RED category measurement intervals in that week
+2. Numerator = count of time intervals that are ≤ 1:00 hour for the AMBER/RED category
+3. Denominator (adjusted) = count all measurement intervals in the AMBER/RED category in that week that are >1:00 hours and ADD +1 to denominator for each one hour period greater than the permitted 1:00 hours
+4. Generate percentage of measurement intervals for that week that are 1:00 hour or less: numerator / denominator (adjusted)
+5. Plot on weekly chart
 
 
