@@ -98,7 +98,7 @@ Feeds into (i) floor plan, (ii) individual patinet chart and (iii) SPC pain scor
 5. If latest verbal pain scale reading = 3-4: ‘RED’; design = red filled bed
 6. If latest CPOT reading = 5-8: ‘RED’; design = red filled bed
 7. If latest reading ‘missing’: ‘missing’; design = white filled bed with red hashed outline
-8. If latest VPS reading is ‘unable to assess’, label as ‘unable to assess’. Design = white filled bed with blue / green [CHECK] hashed outline.
+8. If latest VPS reading is ‘unable to assess’, label as ‘unable to assess’. Design = white filled bed with blue hashed outline.
 
 
 **[D] Classification Rules: Individical patient chart**
