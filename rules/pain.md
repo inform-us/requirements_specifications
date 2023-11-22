@@ -33,13 +33,13 @@ Some description here...
 
 1. If verbal pain scale = 2-4, verbal pain scale is only valid if within last 75 minutes  
 
-2. If verbal pain scale = 0-1, verbal pain scale only valid if within last 5 hours  
+2. If verbal pain scale = 0-1, verbal pain scale only valid if within last 4:15 (4 hours & 15 minutes) hours  
 
-3. If verbal pain scale = ‘unable to assess’, verbal pain scale only valid if within last 5 hours
+3. If verbal pain scale = ‘unable to assess’, verbal pain scale only valid if within last 4:15 hours
 
 4. If CPOT = 3-8, CPOT scale only valid if within last 75 minutes 
 
-5. If CPOT =  0-2, CPOT scale only valid if within last 5 hours
+5. If CPOT =  0-2, CPOT scale only valid if within last 4:15 hours
 
 ## CLASSIFICATION 
 
@@ -58,8 +58,10 @@ Feeds into (i) front tile - 24 hour rolling window and (ii) SPC interval charts.
 6. Numerator = sum of time interval measurement (hours) 
 7. Denominator (unadjusted) = number of time interval measurements
 8. FRONT TILE AVERGAE MEASUREMENT INTERVAL (24 hour rolling window) - CALCLULATE MEAN using above numerator / denominator (unadjusted)
+  
 ** SPC MEASUREMENT INTERVAL CHART (p-chart (%))**
-9.Please see SPC pain score chart for denominator adjustment and calculation
+  
+9. Please see SPC pain score chart for denominator adjustment and calculation
 
 **[B]  Create 1 hour epoch, RAG classification**
   
