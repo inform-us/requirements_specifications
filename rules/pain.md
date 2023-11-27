@@ -29,7 +29,7 @@ Some description here...
 
 1. All patients across all units
 
-## VALIDITY for 1 hour epoch calculation (time window)
+## VALIDITY for 1 hour epoch calculation (floorplan, individual chart & SPC)
 
 1. If verbal pain scale = 2-4, verbal pain scale is only valid if within last 75 minutes  
 
@@ -76,22 +76,30 @@ Feeds into (i) floor plan, (ii) individual patinet chart and (iii) SPC pain scor
 7. 1-hour epoch label (most recent score):
 8. If there are two or more scores in a 1-hour epoch then take the most recent score, unless: (i) it is a CPOT score preceeded by a VPS_move/VPS_rest score, in which case retain the most recent VPS_move/VPS_rest score; or (ii) it is a VPS 'unable to assess' preceeded by a VPS_move/VPS_rest score/CPOT, in which case take the most recent VPS_move/VPS_rest score/CPOT
 9. A 1-hour epoch should only carry a VPS ‘unable to assess’, if this is the only measuremnt in that hour, or it is preceeded by a VPS 'unable to assess'
-10. If no valid score in the current 1-hour epoch, then forward fill, using above validity (time) rules (i.e. if green forward fill for 5 hours, if amber or red 75 minutes
+10. If no valid score in the current 1-hour epoch, then forward fill, using above validity (time) rules (i.e. if green forward fill for 4:15 hours, if amber or red 75 minutes
 11. NOTE - the VPS 'unable to assess' label will ONLY be used for the unit floorplan (where it will have its own specific label), it has no purpose in the individual patient pain score chart nor the SPC pain chart
 
 
    ## Table: equivalence between VPS & CPOT  
 | Classification | VPS (rest/move) | CPOT | Transformed CPOT | Validity time | Colour |
 |-|-|-|-|-|-|
-| Unable to assess with 'other' filled | -1 |  |  | 5 hours | green |
-| No | 0 | 0 | 0 | 5 hours | green |
-| Mild | 1 | 1-2 | 1 | 5 hours | green |
+| Unable to assess with 'other' filled | -1 |  |  | 4:15 hours | green |
+| No | 0 | 0 | 0 | 4:15 hours | green |
+| Mild | 1 | 1-2 | 1 | 4:15 hours | green |
 | Moderate | 2 |  3-4 | 2 | 75 minutes | amber|
 | Severe | 3 | 5-6 | 3| 75 minutes | red |
 | Very severe | 4 | 7-8 | 4 | 75 minutes | red |
 
+**[C] No pain / mild pain front tile calculation**
+1. Front tile is a 24 hour rolling window (at each refresh looks back and collect all the pain scores for 24 hours)
+2. Eliminate same _dt stamp: (a) if two or more measurements (of any type) have the same _dt stamp then retain the highest score for that time _dt stamp; (b) If there is an equal highest score (with the same _dt stamp) accross two or more of VPS_move / VPS_rest / CPOT - then retain VPS_move over VPS_rest over CPOT
+3. Eliminate VPS 'unable to assess'
+4. Use RAG calssifcation to label each score
+5. Numerator: All green scores (VPS_move 0 or 1; VPS_rest 0 or 1; CPOT 0, 1 or 2) in that 24 hour period
+6. Denominator All scores in that 24 hour period
+7. Calcualte and represent as a percentage for front tile 
 
-**[C] Floorplan labelling**
+**[D] Floorplan labelling**
 
 1. If latest verbal pain scale reading = 0-1: ‘GREEN’; design = green filled bed 
 2. If latest CPOT reading = 0-2: ‘GREEN’; design = green filled bed
@@ -103,7 +111,7 @@ Feeds into (i) floor plan, (ii) individual patinet chart and (iii) SPC pain scor
 8. If latest VPS reading is ‘unable to assess’, label as ‘unable to assess’. Design = white filled bed with blue hashed outline.
 
 
-**[D] Classification Rules: Individical patient chart**
+**[E] Classification Rules: Individical patient chart**
 
 1. X-axis time in hours, range 0-72 hours, default to 24 hours
 2. Y-axis left is pain score (VPS-0 to 4 and CPOT 0 to 8 adjusted to VPS equivalence (see tabel above))
@@ -115,7 +123,7 @@ Feeds into (i) floor plan, (ii) individual patinet chart and (iii) SPC pain scor
    - f. Forward filled data (see validity for 1 hour epoch calculation) shown as a continuing line (no icons circles/daimonds)
 
 ---
-# [E] Classification Rules: SPC CHARTS 
+# [F] Classification Rules: SPC CHARTS 
   
 **PAIN SPC CHARTS (refer to 1-hour epoch, RAG classification [B]**
 1. These are weekly percentage (p-charts) SPC
