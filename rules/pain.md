@@ -132,12 +132,12 @@ Feeds into (i) floor plan, (ii) individual patinet chart and (iii) SPC pain scor
   
 ## Chart 1 [Patient chart] 
 **Proportion of moderate or severe pain scores – weekly chart**
-1. Look at 1-hour epch RAG calssification
+1. Look at 1-hour epoch RAG calssification
 2. Exclude 1-hour epochs that have a VPS 'unable to assess' label
 3. Exclude all 1-hour epchs that have been back filled
 4. You should now only have 1-hour epochs that were generated using an actual measurement (has a _dt stamp) of VPS _move/VPS_rest/CPOT score
 5. For each individual patinet: count the number of AMBER/RED 1-hour epochs in one calendar day (day_numerator) and count all the 1-hour epochs in that calendar that were generaetd by an actual measurement (day-denominator)
-6. Calculate the day percentage of AMBER/RED 1-hour epochs: day_numerator / day_denominator for each patinet on each calendar day in the designated week
+6. Calculate the day percentage of AMBER/RED 1-hour epochs: day_numerator / day_denominator for each patient on each calendar day in the designated week
 7. Calculate a mean of all the patient_day percentages during the designated week - plot on p-chart SPC
 8. RATIONALE FOR CALENDAR DAYS: reduces confounder for variation in pain due to type of operation
    
