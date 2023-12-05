@@ -40,7 +40,7 @@ Rules for Sp02 saturations metric
 ---
 # SPC CHARTS
 ## SpO2 -Daily percentage above, below, within SpO2 target
-Operational definition = of the patients who are on oxygen therapy and have had SpO2 targets set in EPIC, what proportion are above, below and within their SpO2 targets on a daily basis? 
+Operational definition = of the patients who are on oxygen therapy and have had SpO2 targets set in ICU navigators in EPIC, what proportion are above, below and within their SpO2 targets on a daily basis? 
 
 ### GROUP PATIENT HOURLY DATA INTO CALENDAR DAY 
 1. Group patient (MRN/CSN) hourly data into a calendar day
