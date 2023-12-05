@@ -5,7 +5,6 @@ Rules for RASS Sedation metric
 2. RASS score only valid if rass_dt within last 4 hours of epoch_dt 
 3. 8:00 - 12:00 RASS Target Validity rule 
 
- 
 
 ## Classification Rules: (corresponds to the per patient chart) 
 
