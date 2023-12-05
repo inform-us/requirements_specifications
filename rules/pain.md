@@ -73,7 +73,7 @@ Feeds into (i) floor plan, (ii) individual patinet chart and (iii) SPC pain scor
 4. Eliminate same _dt stamp:
 5. If two or more measurements (of any type) have the same _dt stamp then retain the highest score for that time _dt stamp
 6. If there is an equal highest score (with the same _dt stamp) accross two or more of VPS_move / VPS_rest / CPOT - then retain VPS_move over VPS_rest over CPOT
-7. 1-hour epoch label (most recent score):
+7. 1-hour epoch label (most recent score)
 8. If there are two or more scores in a 1-hour epoch then take the most recent score, unless: (i) it is a CPOT score preceeded by a VPS_move/VPS_rest score, in which case retain the most recent VPS_move/VPS_rest score; or (ii) it is a VPS 'unable to assess' preceeded by a VPS_move/VPS_rest score/CPOT, in which case take the most recent VPS_move/VPS_rest score/CPOT
 9. A 1-hour epoch should only carry a VPS ‘unable to assess’, if this is the only measuremnt in that hour, or it is preceeded by a VPS 'unable to assess'
 10. If no valid score in the current 1-hour epoch, then forward fill, using above validity (time) rules (i.e. if green forward fill for 4:15 hours, if amber or red 75 minutes
