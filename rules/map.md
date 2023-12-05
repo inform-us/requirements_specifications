@@ -1,5 +1,5 @@
 # Mean Arterial Blood Pressure (MAP) rules
-Some description here...
+Rules for Arterila Blood Pressure (MAP) metric
 ## Validity (time window) Rules: 
 
 1. MAP only valid if map_dt within last 6 hours of epoch_dt 
@@ -35,8 +35,8 @@ Some description here...
 10. if none of the rules matched then label the patient as 'fallthrough' 
 ---
 # SPC CHARTS
-## Mean Arterial Blood Pressure (MAP) Graphs 5, 6, 7 - Daily percentage MAP 
-Operational definition = of the patients who are on vasopressor therapy and have had MAP targets set in EPIC, what proportion are above, below and within their MAP targets on a daily basis? 
+## Mean Arterial Blood Pressure (MAP) - Daily percentage MAP 
+Operational definition = of the patients who are on vasopressor therapy and have had MAP targets set in ICU naviagtors in EPIC, what proportion are above, below and within their MAP targets on a weekly basis? 
 ### GROUP PATIENT HOURLY DATA INTO CALENDAR DAY 
 1. Group patient (MRN/CSN) hourly data into a calendar day 
 
@@ -50,16 +50,16 @@ Operational definition = of the patients who are on vasopressor therapy and have
 ### GENERATE DESIGNATION FOR PATIENT CALENDAR DAY 
 4. Perform a count of the number of eligible hours in that calendar day (eligible hours should only be labelled as: ‘above’, ‘in range’ or ‘below’ target). This is the denominator. 
 5. Take most frequent hour count as the calendar day designation IF highest count is ‘above’ or ‘below’ 
-6. IF highest count is ‘in range’ AND label is ‘in range’ for ≥50% of eligible readings (numerator = ‘in range’ hour count (step 5), denominator = number of eligible hours (step 4)) then calendar day designation = ‘in range’ 
-7. IF the most frequent hour count are equal (between all three ‘in range’ and ‘above’ or ‘below’ (step 5) then calendar day designation = ‘above’ 
-8. IF the most frequent hour count is ‘in range’ AND label is ‘in range’ for ≤49.9% of eligible readings (numerator = ‘in range’ hour count (step 5), denominator = number of eligible hours (step 4)) then calendar day designation is second most frequent hour count (‘above’ or ‘below’).  
-9. IF the most frequent hour count is equal between ‘above’ and ‘below’ (step 5) then calendar day designation = ‘above’ 
+6. IF highest count is ‘in range’ AND label is ‘in range’ for ≥50% of eligible readings then calendar day designation = ‘in range’ 
+7. IF the most frequent hour count are equal (between all three ‘in range’ and ‘above’ or ‘below' then calendar day designation = ‘above’ 
+8. IF the most frequent hour count is ‘in range’ AND label is ‘in range’ for ≤49.9% of eligible readings then calendar day designation is second most frequent hour count (‘above’ or ‘below’).  
+9. IF the most frequent hour count is equal between ‘above’ and ‘below' then calendar day designation = ‘above’ 
 
 ### GENERATE DATA POINT FOR SPC CHART 
 10. Take all of the patient calendar day designations and aggregate into one week: Week defined as: Monday 00:00 - Sunday 23:59 
-11. ABOVE CHART: calendar day designation = ‘above’ divided by calendar day designation ‘in range’ + ‘below’ + ‘above’(i.e. add up all ‘above’ in that week and divide by ‘above’ + in range’ + ‘below’ in that week). Present as percentage.  
-12. BELOW CHART: calendar day designation = ‘below’ divided by calendar day designation ‘in range’ + above’ + ‘below’(i.e. add up all ‘below’ in that week and divide by ‘above’ + in range’ + ‘below’ in that week). Present as percentage.  
-13. IN RANGE CHART: calendar day designation = ‘in range’ divided by all calendar day designation ‘in range’ + above’ + ‘below’ (i.e. add up all ‘in range’ in that week and divide by ‘above’ + in range’ + ‘below’ in that week). Present as percentage.
+11. ABOVE CHART: calendar day designation = ‘above’ divided by calendar day designation ‘in range’ + ‘below’ + ‘above’(i.e. add up all ‘above’ in that week and divide by ‘above’ + in range’ + ‘below’ in that week). Present as percentage  
+12. BELOW CHART: calendar day designation = ‘below’ divided by calendar day designation ‘in range’ + above’ + ‘below’(i.e. add up all ‘below’ in that week and divide by ‘above’ + in range’ + ‘below’ in that week). Present as percentage  
+13. IN RANGE CHART: calendar day designation = ‘in range’ divided by all calendar day designation ‘in range’ + above’ + ‘below’ (i.e. add up all ‘in range’ in that week and divide by ‘above’ + in range’ + ‘below’ in that week). Present as percentage
 
     
 
