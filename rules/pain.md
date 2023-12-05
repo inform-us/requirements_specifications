@@ -131,6 +131,7 @@ Feeds into (i) floor plan, (ii) individual patinet chart and (iii) SPC pain scor
   
 ## Chart 1 [Patient chart] 
 **Proportion of moderate or severe pain scores – weekly chart**
+
 Operational definition = of the documented pain scores in EPIC, what proportion are moderate or severe on a weekly basis? 
 
 1. Look at 1-hour epoch RAG calssification
