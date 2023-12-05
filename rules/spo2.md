@@ -39,7 +39,7 @@ Rules for Sp02 saturations metric
  10. if none of the rules matched then label the patient as 'fallthrough'
 ---
 # SPC CHARTS
-## SpO2 Graphs 2, 3 and 4- Daily percentage SpO2  
+## SpO2 -Daily percentage above, below, within SpO2 target
 Operational definition = of the patients who are on oxygen therapy and have had SpO2 targets set in EPIC, what proportion are above, below and within their SpO2 targets on a daily basis? 
 
 ### GROUP PATIENT HOURLY DATA INTO CALENDAR DAY 
@@ -55,15 +55,14 @@ Operational definition = of the patients who are on oxygen therapy and have had 
 ### GENERATE DESIGNATION FOR PATIENT CALENDAR DAY 
 3. Perform a count of the number of eligible hours in that calendar day (eligible hours should only be labelled as: ‘above’, ‘in range’ or ‘below’ target). This is the denominator. 
 4. Take most frequent hour count as the calendar day designation IF highest count is ‘above’ or ‘below’ 
-5. IF highest count is ‘in range’ AND label is ‘in range’ for ≥50% of eligible readings (numerator = ‘in range’ hour count (step 5), denominator = number of eligible hours (step 4)) then calendar day designation = ‘in range’ 
-6. IF the most frequent hour count are equal (between all three ‘in range’ and ‘above’ or ‘below’ (step 5) then calendar day designation = ‘above’ 
-7. IF the most frequent hour count is ‘in range’ AND label is ‘in range’ for ≤49.9% of eligible readings (numerator = ‘in range’ hour count (step 5), denominator = number of eligible hours (step 4)) then calendar day designation is second most frequent hour count (‘above’ or ‘below’).  
-8. IF the most frequent hour count is equal between ‘above’ and ‘below’ (step 5) then calendar day designation = ‘above’
+5. IF highest count is ‘in range’ AND label is ‘in range’ for ≥50% of eligible readings then calendar day designation = ‘in range’ 
+6. IF the most frequent hour count are equal (between all three ‘in range’ and ‘above’ or ‘below’ then calendar day designation = ‘above’ 
+7. IF the most frequent hour count is ‘in range’ AND label is ‘in range’ for ≤49.9% of eligible readings then calendar day designation is second most frequent hour count (‘above’ or ‘below’).  
+8. IF the most frequent hour count is equal between ‘above’ and ‘below’then calendar day designation = ‘above’
 
 ### GENERATE DATA POINT FOR SPC CHART 
-9. ABOVE CHART: calendar day designation = ‘above’ divided by calendar day designation ‘in range’ + ‘below’ + ‘above’ 
-10. BELOW CHART: calendar day designation = ‘below’ divided by calendar day designation ‘in range’ + above’ + ‘below’ 
-11. I GENERATE DATA POINT FOR SPC CHART  
-12. N RANGE CHART: calendar day designation = ‘in range’ divided by all calendar day designation ‘in range’ + above’ + ‘below’ 
+9. ABOVE CHART: calendar day designation = ‘above’ divided by calendar day designation ‘in range’ + ‘below’ + ‘above’,(i.e.add up all 'above' in that week and divide by 'above'+ 'In range'+ 'below' in that week). Precent as percentage
+10. BELOW CHART: calendar day designation = ‘below’ divided by calendar day designation ‘in range’ + above’ + ‘below’, (i.e.add up all 'below' in that week and divide by 'above'+ 'In range'+ 'below' in that week). Precent as percentage
+11. IN RANGE CHART: calendar day designation = ‘in range’ divided by all calendar day designation ‘in range’ + above’ + ‘below', (i.e.add up all 'in range' in that week and divide by 'above'+ 'In range'+ 'below' int that week). Precent as percentage
 
  
