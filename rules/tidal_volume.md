@@ -43,11 +43,11 @@ Operational definition = of the patients who are intubated and on mandatory vent
       -  ‘Missing’
 
 ### GENERATE DESIGNATION FOR PATIENT CALENDAR DAY 
-4. Perform a count of the number of eligible hours in that calendar day (labels: ‘within target’ or ‘above target’). This is the denominator 
+4. Perform a count of the number of eligible hours in that calendar day (labels: ‘achieving target’ or ‘above target’). This is the denominator 
 5. Take most frequent epoch count as the calendar day designation. IF highest count on that calendar day is ‘achieving target’ then designate as ‘achieving target’
 6. IF highest count on that calendar day is ‘above target’ then designate as ‘above target’.  
 7. IF the most frequent hour counts are equal (between ‘acheiving target’ and ‘above target' then calendar day designation = ‘achieving target’
 
 ### GENERATE DATA POINT FOR SPC CHART   
 7. Take all of the patient calendar day designations and aggregate into one week: Week defined as: Monday 00:00 - Sunday 23:59 
-8. ACHIEVING TIDAL VOLUME TARGET CHART: calendar day designation = ‘achieving target’ divided by all calendar day designations ‘achieving target’ + ‘above target’ (i.e. add up all ‘achieving target’ in that week and divide by ‘achieving target’ + ‘above target’ in that week). Present as percentage    
+8. Achieving TIDAL VOLUME TARGET CHART: calendar day designation = ‘achieving target’ divided by all calendar day designations ‘achieving target’ + ‘above target’ (i.e. add up all ‘achieving target’ in that week and divide by ‘achieving target’ + ‘above target’ in that week). Present as percentage    
