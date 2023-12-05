@@ -44,13 +44,14 @@ Operational definition = of the patients who are ventilated and on sedative drug
     - ‘missing’
   
   ### GENERATE DESIGNATION FOR PATIENT CALENDAR DAY 
-4. Perform a count of the number of eligible hours in that calendar day (labels: ‘on target’’ or ‘off target’). This is the denominator. 
-5. Take most frequent epoch count as the calendar day designation. IF highest count on that calendar day is ‘on target’’ then designate as ‘on target’ OR if ‘off target’ then designate as ‘off target’.  
-6. IF the most frequent hour counts are equal (between ‘on target’ and ‘off target’ (step 5) then calendar day designation = ‘on target’. 
+4. Perform a count of the number of eligible hours in that calendar day (labels: ‘on target’ or ‘off target’). This is the denominator
+5. Take most frequent epoch count as the calendar day designation. IF highest count on that calendar day is ‘on target’ then designate as ‘on target’
+6. IF highest count on that calendar day is ‘off target’ then designate as ‘off target’
+7. IF the most frequent hour counts are equal (between ‘on target’ and ‘off target’ then calendar day designation = ‘on target’
 
 ### GENERATE DATA POINT FOR SPC CHART 
 7. Take all of the patient calendar day designations and aggregate into one week: Week defined as: Monday 00:00 - Sunday 23:59 
-8. NOT ACHIEVING RASS TARGET CHART: calendar day designation = ‘not achieving target’ divided by all calendar day designations ‘achieving target’ + ‘not achieving target’ (i.e. add up all ‘not achieving target’ in that week and divide by ‘not achieving target’ + ‘achieving target’ in that week). Present as percentage.  
+8. NOT ACHIEVING RASS TARGET CHART: calendar day designation = ‘not achieving target’ divided by all calendar day designations ‘achieving target’ + ‘not achieving target’ (i.e. add up all ‘not achieving target’ in that week and divide by ‘not achieving target’ + ‘achieving target’ in that week). Present as percentage
 
  
 
