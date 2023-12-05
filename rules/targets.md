@@ -1,5 +1,5 @@
 # Target Rules
-Some description here ....
+Daily percentage of all targets set in ICU navigator
 
 ---
 ## ELIGIBILITY 
