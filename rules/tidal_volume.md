@@ -1,10 +1,10 @@
 # TIDAL VOLUME rules
-Some description here...
+Rules for Tidal volume metric
  
 
 ## Validity (time window) Rules: 
 
-1) O2delivery only valid if o2delivery_dt within last 6 hours of epoch 
+1) O2 delivery only valid if o2delivery_dt within last 6 hours of epoch 
 2) Vent mode score only valid if vent_mode_vt_dt within last 4 hours of epoch_dt 
 
 
@@ -30,7 +30,7 @@ Some description here...
  ---    
 # SPC CHARTS
 ##  Tidal Volume- Graph 8- Weekly percentage of patients exceeding/above/not achieving Tidal Volume target of 6-8ml/kg IBW 
-Operational definition = of the patients who are intubated and on mandatory ventilation (modes), what proportion are exceeding their tidal volume target [i.e. >8ml/kg IBW] (‘above target’) on a weekly basis?
+Operational definition = of the patients who are intubated and on mandatory ventilation (modes), what proportion are achieving their tidal volume target [i.e. < or = 8ml/kg IBW] on a weekly basis?
 
 ### GROUP PATIENT HOURLY DATA INTO CALENDAR DAY  
 1. Group patient (MRN/CSN) hourly data into a calendar day
