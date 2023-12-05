@@ -126,7 +126,6 @@ Feeds into (i) floor plan, (ii) individual patinet chart and (iii) SPC pain scor
 # [F] Classification Rules: SPC CHARTS 
   
 **PAIN SPC CHARTS (refer to 1-hour epoch, RAG classification [B]**
-1. These are weekly percentage (p-charts) SPC
 2. Calendar day defined as 00:00 - 23:59
 3. Week defined as Monday 00:00 – Sunday 23:59
   
