@@ -114,13 +114,13 @@ Feeds into (i) floor plan, (ii) individual patinet chart and (iii) SPC pain scor
 **[E] Classification Rules: Individical patient chart**
 
 1. X-axis time in hours, range 0-72 hours, default to 24 hours
-2. Y-axis left is pain score (VPS-0 to 4 and CPOT 0 to 8 adjusted to VPS equivalence (see tabel above))
+2. Y-axis left is pain score (VPS-0 to 4 and CPOT 0 to 8 adjusted to VPS equivalence (see tabel above)
 3. DESIGN KEY FOR INDIVIDUAL CHARTS 
    - a. Label VPS as circles 
    - b. Label CPOT as diamonds
    - c. Colour code – RAG rated pain score (see equivalence table)
    - d. Missing – no data points
-   - f. Forward filled data (see validity for 1 hour epoch calculation) shown as a continuing line (no icons circles/daimonds)
+   - f. Forward filled data (see validity for 1 hour epoch calculation) shown as a continuing line (no icons circles/diamonds)
 
 ---
 # [F] Classification Rules: SPC CHARTS 
