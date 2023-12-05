@@ -50,7 +50,8 @@ Operational definition = of the patients who are ventilated and on sedative drug
 
 ### GENERATE DATA POINT FOR SPC CHART 
 7. Take all of the patient calendar day designations and aggregate into one week: Week defined as: Monday 00:00 - Sunday 23:59 
-8. NOT ACHIEVING RASS TARGET CHART: calendar day designation = ‘not achieving target’ divided by all calendar day designations ‘achieving target’ + ‘not achieving target’ (i.e. add up all ‘not achieving target’ in that week and divide by ‘not achieving target’ + ‘achieving target’ in that week). Present as percentage
+9. Generate weekly percentage designations that are on target (i.e. add up all ‘on target’ in that week and divide by ‘on target’ + ‘off target’ in that week). Present as percentage
+10. Plot on weekly chart
 
  
 
