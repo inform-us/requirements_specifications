@@ -15,9 +15,9 @@ Rules for target set metric
 ---
 # SPC CHARTS 
 ## TARGETS Graph 1- Daily percentage of all targets set in ICU navigators 
-Operational definition= what proportion of all patients have all their targets set in EPIC by 1pm each day?  
+Operational definition= what proportion of all patients have all their targets set in ICU navigators in  EPIC by 1pm each day?  
 
-1. Count daily number of patients with all 8 (Sp)2, MAP, RASS, pH, haemoglobin, fluid balance, paCO2) targets set at 1pm/number of patients on unit at that time 
-2. Graphs shows as percentage  
+1. Count daily number of patients with all 8 (Sp)2, MAP, RASS, pH, haemoglobin, fluid balance, paCO2) targets set at 1pm and devide by number of patients on unit at that time 
+2. Present as percentage 
 
  
