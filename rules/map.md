@@ -57,9 +57,10 @@ Operational definition = of the patients who are on vasopressor therapy and have
 
 ### GENERATE DATA POINT FOR SPC CHART 
 10. Take all of the patient calendar day designations and aggregate into one week: Week defined as: Monday 00:00 - Sunday 23:59 
-11. ABOVE CHART: calendar day designation = ‘above’ divided by calendar day designation ‘in range’ + ‘below’ + ‘above’(i.e. add up all ‘above’ in that week and divide by ‘above’ + in range’ + ‘below’ in that week). Present as percentage  
-12. BELOW CHART: calendar day designation = ‘below’ divided by calendar day designation ‘in range’ + above’ + ‘below’(i.e. add up all ‘below’ in that week and divide by ‘above’ + in range’ + ‘below’ in that week). Present as percentage  
-13. IN RANGE CHART: calendar day designation = ‘in range’ divided by all calendar day designation ‘in range’ + above’ + ‘below’ (i.e. add up all ‘in range’ in that week and divide by ‘above’ + in range’ + ‘below’ in that week). Present as percentage
+11. ABOVE CHART: generate percentage weekly designations that are above MAP target = (i.e. add up all ‘above’ in that week and divide by ‘above’ + in range’ + ‘below’ in that week). Present as percentage  
+12. BELOW CHART: generate percentage weekly designations that are below MAP target (i.e. add up all ‘below’ in that week and divide by ‘above’ + in range’ + ‘below’ in that week). Present as percentage  
+13. IN RANGE CHART:  generate percentage weekly designations that are in range MAP target (i.e. add up all ‘in range’ in that week and divide by ‘above’ + in range’ + ‘below’ in that week). Present as percentage
+14. Plot on weekly chart
 
     
 
