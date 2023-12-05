@@ -1,7 +1,7 @@
 # RASS rules
-Some description here...
+Rules for RASS Sedation metric
 ## Validity (time window) Rules: 
-1. O2delivery only valid if o2delivery_dt within last 6 hours of epoch 
+1. O2 delivery only valid if o2delivery_dt within last 6 hours of epoch 
 2. RASS score only valid if rass_dt within last 4 hours of epoch_dt 
 3. 8:00 - 12:00 RASS Target Validity rule 
 
