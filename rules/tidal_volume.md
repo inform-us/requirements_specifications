@@ -50,4 +50,5 @@ Operational definition = of the patients who are intubated and on mandatory vent
 
 ### GENERATE DATA POINT FOR SPC CHART   
 7. Take all of the patient calendar day designations and aggregate into one week: Week defined as: Monday 00:00 - Sunday 23:59 
-8. Achieving TIDAL VOLUME TARGET CHART: calendar day designation = ‘achieving target’ divided by all calendar day designations ‘achieving target’ + ‘above target’ (i.e. add up all ‘achieving target’ in that week and divide by ‘achieving target’ + ‘above target’ in that week). Present as percentage    
+8. Generate percentage achieving weekly tidal volume target (i.e. add up all ‘achieving target’ in that week and divide by ‘achieving target’ + ‘above target’ in that week). Present as percentage
+9. Plot on weekly chart
