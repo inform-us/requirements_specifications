@@ -1,5 +1,5 @@
 # Pain rules
-Some description here...
+Rules for pain metric
 
 ## EPIC
 - There will only be two pain scores (in EPIC) going forward
