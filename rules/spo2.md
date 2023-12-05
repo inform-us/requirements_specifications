@@ -61,8 +61,9 @@ Operational definition = of the patients who are on oxygen therapy and have had 
 8. IF the most frequent hour count is equal between ‘above’ and ‘below’then calendar day designation = ‘above’
 
 ### GENERATE DATA POINT FOR SPC CHART 
-9. ABOVE CHART: calendar day designation = ‘above’ divided by calendar day designation ‘in range’ + ‘below’ + ‘above’,(i.e.add up all 'above' in that week and divide by 'above'+ 'In range'+ 'below' in that week). Present as percentage
-10. BELOW CHART: calendar day designation = ‘below’ divided by calendar day designation ‘in range’ + above’ + ‘below’, (i.e.add up all 'below' in that week and divide by 'above'+ 'In range'+ 'below' in that week). Present as percentage
-11. IN RANGE CHART: calendar day designation = ‘in range’ divided by all calendar day designation ‘in range’ + above’ + ‘below', (i.e.add up all 'in range' in that week and divide by 'above'+ 'In range'+ 'below' int that week). Present as percentage
+9. ABOVE CHART: generate percentage calendar day designation ‘above’ SpO2 target (i.e.add up all 'above' in that week and divide by 'above'+ 'In range'+ 'below' in that week). Present as percentage
+10. BELOW CHART: generate percentage calendar day designation ‘below’ SpO2 target (i.e.add up all 'below' in that week and divide by 'above'+ 'In range'+ 'below' in that week). Present as percentage
+11. IN RANGE CHART: generate percentage calendar day designation ‘in range’ SpO2 target(i.e.add up all 'in range' in that week and divide by 'above'+ 'In range'+ 'below' int that week). Present as percentage
+12. Plot on daily chart
 
  
