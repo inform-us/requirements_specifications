@@ -123,14 +123,16 @@ Feeds into (i) floor plan, (ii) individual patinet chart and (iii) SPC pain scor
    - f. Forward filled data (see validity for 1 hour epoch calculation) shown as a continuing line (no icons circles/diamonds)
 
 ---
-# [F] Classification Rules: SPC CHARTS 
-  
+# [F] SPC CHARTS 
+
 **PAIN SPC CHARTS (refer to 1-hour epoch, RAG classification [B]**
 2. Calendar day defined as 00:00 - 23:59
 3. Week defined as Monday 00:00 – Sunday 23:59
   
 ## Chart 1 [Patient chart] 
 **Proportion of moderate or severe pain scores – weekly chart**
+Operational definition = of the documented pain scores in EPIC, what proportion are moderate or severe on a weekly basis? 
+
 1. Look at 1-hour epoch RAG calssification
 2. Exclude 1-hour epochs that have a VPS 'unable to assess' label
 3. Exclude all 1-hour epchs that have been back filled
