@@ -28,8 +28,8 @@ Rules for RASS Sedation metric
 8. if none of the above: 'fallthrough' 
 ---
 # SPC CHARTS 
-## RASS Graph 9- Weekly percentage RASS target compliance
-Operational definition = of the patients who are ventilated and on sedative drug therapy and have had RASS targets set in EPIC, what proportion are achieving (‘on’) or not achieving (‘off’) the set RASS target on a weekly basis? 
+## RASS- Weekly percentage RASS target compliance
+Operational definition = of the patients who are ventilated and on sedative drug therapy and have had RASS targets set in ICU navigators in EPIC, what proportion are achieving (‘on’) or not achieving (‘off’) the set RASS target on a weekly basis? 
 
 ### GROUP PATIENT HOURLY DATA INTO CALENDAR DAY
 1. Group patient (MRN/CSN) hourly data into a calendar day
