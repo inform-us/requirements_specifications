@@ -28,7 +28,7 @@ Rules for Tidal volume metric
   6. IF the latest classification is 'in range' : 'in range'
   7. IF none of the above: 'fallthrough'
  ---    
-# SPC CHARTS
+# SPC CHARTS 
 ##  Tidal Volume- Weekly percentage of patients achieving Tidal Volume target of 6-8ml/kg IBW 
 Operational definition = of the patients who are intubated and on mandatory ventilation (modes), what proportion are achieving their tidal volume target, i.e. < or = 8ml/kg IBW on a weekly basis?
 
