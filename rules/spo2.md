@@ -1,5 +1,5 @@
 # SpO2 rules 
-Some description here...
+Rules for Sp02 saturations metric
 ## Validity (time window) Rules: 
 
 1. O2Sat only valid if o2sat_dt within last 4 hours of epoch 
