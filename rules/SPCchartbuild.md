@@ -18,15 +18,15 @@ Lower control limit = process mean - 3 square root of process mean x (1-process 
 
 ## Rules for detecting special cause variation, i.e. statistically meaningful variation in the process
 
-# Rule 1 - SHIFT 
+## Rule 1 - SHIFT 
 
  When an SPC chart shows at least 7 data points above or below the mean, denote as a shift using 7 orange diamonds  
 
-# Rule 2 - TREND  
+## Rule 2 - TREND  
 
 When an SPC chart shows at least 7 ascending or descending data points, denote as a trend using 7 blue squares  
 
-# Rule 3- OUTLIER 
+## Rule 3- OUTLIER 
 
 When an SPC chart shows any data point outside of the control limits, denote as an outlier using a red triangle  
 
