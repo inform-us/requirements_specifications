@@ -4,7 +4,6 @@ A p chart is a time series chart showing a percentage with three reference lines
 
 # Constructing the charts
 
-
 * Build y-axis depicting the variable in question (the performance indicator you are interested in) 
 * Build x-axis depicting time in days/weeks 
 * Build central line based on the mean of all data points 
