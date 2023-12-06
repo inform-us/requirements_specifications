@@ -1,4 +1,6 @@
-# Rules for qualifying patient labels for Statistical Process Control (SPC)Charts (daily and weekly aggregate time series data) 
+# Rules for qualifying patient labels for Statistical Process Control (SPC)Charts 
+(daily and weekly aggregate time series data) 
+
 ## About SPC Percentage Charts (p-charts)
 A p chart is a time series chart showing a percentage with three reference lines- a mean, and an upper and lower control limit which indicate that 99% of the data points fall within these two limits. SPC charts are used in Quality Improvement to view variation in a process over time and to assess whether changes that are made to processes during improvement initiatives are resulting in actual statistically meaningful improvements.
 
