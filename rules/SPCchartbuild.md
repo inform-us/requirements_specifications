@@ -13,7 +13,8 @@ A p chart is a time series chart showing a percentage with three reference lines
 
 ## Formulae for calculating control limits
 
-Upper control limit = process mean + 3 square root of process mean x (1-process mean)/ *n* 
+Upper control limit = process mean + 3 square root of process mean x (1-process mean)/ *n*
+  
 Lower control limit = process mean - 3 square root of process mean x (1-process mean)/ *n* 
 
 ## Rules for detecting special cause variation, i.e. statistically meaningful variation in the process
