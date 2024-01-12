@@ -2,7 +2,7 @@
 
 **Page: Data for Improvement tab: Targets Set SPC Chart**
 
-* i button
+## i button
 
 **What is this chart?**
 
@@ -16,3 +16,24 @@ Outliers, shifts and trends suggest there is a non-random change to the data. Wh
 
  
 Means and process limits are recalculated once per quarter or after a shift.
+
+
+## ? button
+
+**Eligibility**
+
+All patients in critical care. 
+
+**Classification**
+
+A patient is classified ‘all targets set’ for the day if all 8 physiological targets have been set or ticket ‘not applicable’ in the ICU Targets section of the ICU Navigators. 
+
+
+‘All targets set’ classification is valid from 08:00 hours the previous day (or more recent – e.g. if targets updated or new admission) until 13:00 hours on the current day. This allows period of time to set new targets each morning.  
+
+
+  
+
+ 
+
+**Hyperlink -More about how to interpret SPC charts  (content for hyperlink see end of document)**
