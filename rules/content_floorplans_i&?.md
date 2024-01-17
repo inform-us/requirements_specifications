@@ -109,6 +109,29 @@ All patients
 
 ---
 
+**Page: Clinical dashboard tab: Mean Arteriel BP**
+
+## Mean Arteriel Blood Pressure (MAP) achieved
+
+## i button
+
+to add
+
+## ? button
+
+to add 
+
+**Eligibility**  
+
+All patients 
+
+
+**Classification**
+
+
+
+---
+
 
 
 
