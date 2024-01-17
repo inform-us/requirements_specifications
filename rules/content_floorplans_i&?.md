@@ -121,9 +121,9 @@ to add
 
 to add 
 
-**Eligibility**  
+**Eligibility**
 
-All patients 
+to add
 
 
 **Classification**
@@ -132,7 +132,51 @@ All patients
 
 ---
 
+**Page: Clinical dashboard tab: RASS**
 
+## RASS Targets achieved
+
+## i button
+
+to add
+
+## ? button
+
+to add 
+
+**Eligibility**  
+
+to add
+
+
+**Classification**
+
+
+
+---
+
+**Page: Clinical dashboard tab: Tidal Volume**
+
+## Tidal Volume targets achieved (below 8ml/kg IBW)
+
+## i button
+
+to add
+
+## ? button
+
+to add 
+
+**Eligibility**  
+
+to add
+
+
+**Classification**
+
+
+
+---
 
 
 
