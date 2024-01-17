@@ -69,4 +69,49 @@ These data update every five minutes.
 
 ## i button
 
+to add
+
+## ? button
+
+to add 
+
+**Eligibility**  
+
+All patients 
+
+
+**Classification**
+
+
+
+---
+
+**Page: Clinical dashboard tab: SpO2 Saturations**
+
+## SpO2 targets achieved floorplan
+
+## i button
+
+to add
+
+## ? button
+
+to add 
+
+**Eligibility**  
+
+All patients 
+
+
+**Classification**
+
+
+
+---
+
+
+
+
+
+
 
