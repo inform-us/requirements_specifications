@@ -59,4 +59,14 @@ These data update every five minutes.
 
 * **Tip 4:**  Pain assessments recorded as “unable to assess” due to sleep will not show on the individual patient graph as this is not a pain score. This will appear greyed out (same as missing).  
 
-* **Tip 5:**  A gap after a blue line on the individual patient charts reflects the 15-minute leeway added to the validity window of a score 
+* **Tip 5:**  A gap after a blue line on the individual patient charts reflects the 15-minute leeway added to the validity window of a score
+
+---
+
+**Page: Clinical dashboard tab: Target tile**
+
+## All targets set in ICU navigators floorplan 
+
+## i button
+
+
