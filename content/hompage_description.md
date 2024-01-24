@@ -1,14 +1,21 @@
 # Homepage description
 
 ## Navigate
-1. Select 'Clinical Dashboard'
 
-2. Choose Unit
+
+**1. Tabs on left**
+
+
+   * Clinical Dashboard 
+   * Data for Improvement
+   * About us
+
+**2. Location / Units**
    * T03 Critical Care
    * T06 Critical Care
    * GWB Critical Care
      
-3.  Overview of tiles / metrics
+**3.  Overview of tiles / metrics**
    * Bed Occupancy
    * All targets set in ICU Navigators
    * All patietns Pain
