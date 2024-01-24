@@ -6,7 +6,7 @@
 **1. Tabs on left**
 
    * Clinical Dashboard
-   * Data for Improvement
+   * **Data for Improvement**
    * About us
 
 **2. Location / Units**
