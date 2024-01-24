@@ -81,14 +81,20 @@ Our nurses rely on these targets to deliver safe, quality care.
 
 ## ? button
 
-to add 
 
 **Eligibility**  
 
-All patients 
+All patients on ICU - 'All patients in critical care'.
 
 
 **Classification**
+**Rule 1:** All eight physiological targets completed in the ICU Targets section of the ICU Navigators.
+
+**Rule 2:** Compliance measured at 13:00 hours each day.
+
+**Tip 1:** All targets ideally set at the same entry at the morning handover or on admission.
+
+**Tip 2:** If a target is not applicable, please select 'Not applicable'.
 
 
 
