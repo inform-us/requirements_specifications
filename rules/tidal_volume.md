@@ -27,6 +27,7 @@ Rules for Tidal volume metric
   5. IF there are 5 non consecutive 'out_of_range_8':'out of range' 
   6. IF the latest classification is 'in range' : 'in range'
   7. IF none of the above: 'fallthrough'
+  8. n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in ? button. 
  ---    
 # SPC CHARTS 
 ##  Tidal Volume- Weekly percentage of patients achieving Tidal Volume target of 6-8ml/kg IBW 
