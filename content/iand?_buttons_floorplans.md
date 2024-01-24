@@ -88,6 +88,8 @@ All patients on ICU - 'All patients in critical care'.
 
 
 **Classification**
+
+
 **Rule 1:** All eight physiological targets completed in the ICU Targets section of the ICU Navigators.
 
 **Rule 2:** Compliance measured at 13:00 hours each day.
@@ -106,18 +108,39 @@ All patients on ICU - 'All patients in critical care'.
 
 ## i button
 
-to add
+Oxygen therapy is prescribed to achieve a specific target SpO2 range, most commonly 94-98% or 88-92%. A bespoke range can be set if required.
+
+Note that SpO2 targets have an upper as well as lower limit.
+
+Elevated blood oxygen levels are associated with poor outcomes. Decreased blood oxygen levels are also associated with poor outcomes and less physiological reserve in the event of sudden deterioration.
+
+If you are unsure about a patient’s SpO2 target, ask the doctor in charge for guidance during handover.
+
+
 
 ## ? button
 
-to add 
 
 **Eligibility**  
 
-All patients 
+Patients are receiving supplemental oxygen. If a patient does not receive supplemental oxygen for four consecutive hours, they are classified as ‘Not on oxygen therapy’.
 
 
 **Classification**
+
+
+**In range:** Within target range.
+
+**Above:** Patient has been above range for three consecutive hours OR five non-consecutive hours within the preceding 24 hours.
+
+**Below:** Patient has been below range for two consecutive hours OR five non-consecutive hours within the preceding 24 hours.
+
+
+**Tip 1:** These data update on the hour.
+
+**Tip 2:** Non-numerical means that a free text target has been set.
+
+**Tip 3:** Unable to calculate means missing data does not allow classification.
 
 
 
