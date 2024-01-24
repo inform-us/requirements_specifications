@@ -272,7 +272,13 @@ Patients are intubated (oral/nasal tube or tracheostomy) and on mandatory ventil
 
 **Tip 1:** These data update on the hour
 
-**Tip 2:** Unable to calculate means missing data does not allow classification
+**Tip 2:** Unable to calculate menas mising data does not allow classification
+
+
+
+
+
+
 ---
 
 
