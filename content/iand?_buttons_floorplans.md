@@ -94,6 +94,7 @@ All patients on ICU - 'All patients in critical care'.
 
 **Rule 2:** Compliance measured at 13:00 hours each day.
 
+
 **Tip 1:** All targets ideally set at the same entry at the morning handover or on admission.
 
 **Tip 2:** If a target is not applicable, please select 'Not applicable'.
@@ -152,19 +153,39 @@ Patients are receiving supplemental oxygen. If a patient does not receive supple
 
 ## i button
 
-to add
+
+Excessive use of intravenous vasoactive drugs is associated with poor outcomes. Conversely, low blood pressure is also associated with poor outcome.
+
+MAP targets have an upper as well as lower limit. We need to ensure the MAP remains within the target range and not above or below for prolonged periods.
+
+If you are unsure about a patient’s MAP target, ask the doctor in charge for guidance during handover.
+
 
 ## ? button
 
-to add 
+
 
 **Eligibility**
 
-to add
+Patients are receiving intravenous vasoactive drugs. If a patient does not receive this medication for four consecutive hours, they are classified as ‘not on intravenous vasoactive drugs’.
 
 
 **Classification**
 
+
+**In range:** Within target range.
+
+**Above:** Patient has been above range for three consecutive hours OR five non-consecutive hours within the preceding 24 hours.
+
+**Below:** Patient has been below range for two consecutive hours OR five non-consecutive hours within the preceding 24 hours.
+
+
+
+**Tip 1:** These data update on the hour.
+
+**Tip 2:**  Non numerical means that a free text target has been set.
+
+**Tip 3:**  Unable to calculate means missing data does not allow classification.
 
 
 ---
@@ -175,20 +196,40 @@ to add
 
 ## i button
 
-to add
+The Richmond Agitation and Sedation Score (RASS) measures how sedated or agitated a patient is and is used to prevent over- or under- sedation.
+
+Excessive use of sedative drugs to support mechanical ventilation is associated with poor outcomes. To prevent this we set an optimal RASS target, balancing safety and comfort.
+
+If you are unsure about a patient’s RASS target, ask the doctor in charge for guidance during handover.
+
+
 
 ## ? button
 
-to add 
 
 **Eligibility**  
 
-to add
+Patients are receiving sedative drugs, intubated and mechanically ventilated. If a patient is not sedated and mechanically ventilated for four consecutive hours, they are classified as ‘not sedated & mechanically ventilated’.
+
 
 
 **Classification**
 
+RASS score is valid for 4 hours.
 
+**Achieving target:** Patient’s most recent RASS reading is the same as the target set.
+
+**Not achieving target:** Patient’s most recent RASS reading differs from the target set.
+
+
+
+**Tip 1:** These data update on the hour.
+
+**Tip 2:** Non-numerical means that a free text target has been set.
+
+**Tip 3:** Unable to calculate means missing data does not allow classification.
+
+**Tip 4:** RASS score is valid for four hours or until a new score is documented.
 
 ---
 
@@ -198,21 +239,40 @@ to add
 
 ## i button
 
-to add
+
+Tidal volume measures the size of each breath given by the ventilator to the patient. High tidal volumes during mandatory ventilation (in particular acute lung injury) are associated with increased morbidity and mortality.
+
+The evidence for lung protective ventilation supports maintaining a tidal volume of 6-8 ml/kg Ideal Body Weight (IBW) in patients who are on mandatory ventilation.
+
+Persistently exceeding 8ml/kg worsens outcome through pulmonary complications and their systemic consequences, both in medical and post-operative patients.
+
+Conversely, tidal volumes less than 6ml/kg are not associated with similar harm.
+
+Tidal volume targets do not need to be set. All eligible patients must have a height documented in EPIC (to calculate IBW) and should be kept within 6-8 ml/kg IBW.
+
+
 
 ## ? button
 
-to add 
 
 **Eligibility**  
 
-to add
+Patients are intubated (oral/nasal tube or tracheostomy) and on mandatory ventilation. If a patient is not on mandatory ventilation for four consecutive hours, they are classified as ‘not on mandatory ventilation’.
+
+
 
 
 **Classification**
 
 
+**In range:** Tidal volumes are less than 8 ml/kg IBW and have not met ‘above range’ criteria.
 
+**Above range:** Tidal volumes are above 8ml/kg IBW for 3 consecutive hours OR 5 non-consecutive hours within the preceding 24 hours; OR tidal volumes are above 10 ml/kg IBW for 2 consecutive hours.
+
+
+**Tip 1:** These data update on the hour
+
+**Tip 2:** Unable to calculate means missing data does not allow classification
 ---
 
 
