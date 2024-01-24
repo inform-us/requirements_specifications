@@ -69,7 +69,15 @@ These data update every five minutes.
 
 ## i button
 
-to add
+Physiological targets are set to facilitate the bedside nurse titrating therapy.
+
+There is varying degree of harm when physiological variables are persistently out of range.
+
+Targets should be discussed in handover each morning and set in targets tab of ICU Navigators of EPIC before 13:00 hours.
+
+If you are unsure about a patient's target, ask the doctor in charge for guidance during handover.
+
+Our nurses rely on these targets to deliver safe, quality care.
 
 ## ? button
 
