@@ -24,7 +24,8 @@ Rules for RASS Sedation metric
 5. if latest reading 'not set':'not set' 
 6. if latest reading 'not applicable': 'not applicable' 
 7. if latest reading 'non-numerical':'non-numerical' 
-8. if none of the above: 'fallthrough' 
+8. if none of the above: 'fallthrough'
+9. n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in ? button. 
 ---
 # SPC CHARTS 
 ## RASS- Weekly percentage RASS target compliance
