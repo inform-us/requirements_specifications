@@ -37,6 +37,8 @@ Rules for Sp02 saturations metric
  8. if the latest classification is 'not set' then label the patient as 'not set' 
  9. if the classification was 'in range' and is now above(below) for fewer than 3(2) hours then label as 'in range' 
  10. if none of the rules matched then label the patient as 'fallthrough'
+ 11. n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in
+ ? button. 
 ---
 # SPC CHARTS
 ## SpO2 -Daily percentage above, below, within SpO2 target
