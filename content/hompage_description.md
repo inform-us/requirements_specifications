@@ -6,7 +6,7 @@
 **1. Tabs on left**
 
 
-   * Clinical Dashboard 
+   * **Clinical Dashboard** 
    * Data for Improvement
    * About us
 
@@ -21,7 +21,7 @@
    * All patietns Pain
    * Patients on oxygen therapy SpO2 Saturations
    * Patients on vasoactive drugs Mean Arterial BP
-   * Sedadated patients RASS
+   * Sedated patients RASS
    * Patients on mandatory ventilation Tidal Volume  
    
 
