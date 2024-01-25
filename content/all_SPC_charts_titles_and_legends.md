@@ -40,6 +40,19 @@ To access specific SPC charts select location and required tile/metric from Data
 ![image](https://github.com/inform-us/requirements_specifications/assets/94536083/18359e63-e620-4902-a114-1a3c26a471ff)
 
 
+---
+
+
+## Tile: Patients on oxygen therapy SpO2 Saturations
+
+**SPC chart title: Daily percentage of patients within/ above/ below SpO2 Saturations Target (patients on oxygen therapy)**
+
+
+![image](https://github.com/inform-us/requirements_specifications/assets/94536083/e59252c6-0bd3-4793-a075-8f60e91ea67e)
+
+
+
+
 
 
 
