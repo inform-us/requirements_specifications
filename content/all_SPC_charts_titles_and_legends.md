@@ -34,7 +34,7 @@ To access specific SPC charts select location and required tile/metric from Data
 
 ## Tile: All ICU Targets set ( clarify if to align tile title with floorplan)
 
-**SPC chart title: Daily percentage of patients with all targets set in ICU Navigators**
+**SPC chart title: Daily percentage of patients with all targets set in ICU Navigators** ( do we need to right out Unit Performance Data?)
 
 
 ![image](https://github.com/inform-us/requirements_specifications/assets/94536083/18359e63-e620-4902-a114-1a3c26a471ff)
@@ -49,6 +49,49 @@ To access specific SPC charts select location and required tile/metric from Data
 
 
 ![image](https://github.com/inform-us/requirements_specifications/assets/94536083/e59252c6-0bd3-4793-a075-8f60e91ea67e)
+
+
+---
+
+## Tile: All patients Pain Scores
+
+**SPC chart title: Percentage of pain scores documented as moderate/severe**
+
+
+![image](https://github.com/inform-us/requirements_specifications/assets/94536083/a733a87d-f733-4106-87c3-38a3945ffe98)
+
+
+---
+
+
+## Tile: All patients Pain Assessment Frequency**
+
+**SPC chart title: Percentage of pain assessment documented on time as per guidelines**
+
+* a) Moderate/Severe Pain (hourly)
+* b) No/Mild Pain (4-hourly)
+
+
+a) ![image](https://github.com/inform-us/requirements_specifications/assets/94536083/456282d3-ddf0-4f18-a1d4-9fa817fdc80c)    b) ![image](https://github.com/inform-us/requirements_specifications/assets/94536083/156b1085-061b-4671-8867-66229cc59351)
+
+
+---
+
+
+## Tile: Patients on vasoactive drugs Mean Arterial BP
+
+**SPC chart title: check updated title as not yet deployed on dashboard**
+
+
+
+
+
+
+
+
+
+  
+
 
 
 
