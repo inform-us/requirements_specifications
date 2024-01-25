@@ -80,7 +80,42 @@ a) ![image](https://github.com/inform-us/requirements_specifications/assets/9453
 
 ## Tile: Patients on vasoactive drugs Mean Arterial BP
 
-**SPC chart title: check updated title as not yet deployed on dashboard**
+**SPC chart title: Daily percentage of patients within/ above / below MAP target (patients on vasoactive drugs)**
+
+*  In range
+*  Above
+*  Below
+
+to clarify but I guess one screenshot is enough???
+
+---
+
+
+## Tile: Sedated patients RASS 
+
+**SPC chart title: Weekly percentage of patients achieving RASS target (patients on sedation and mechanical ventilation)**
+
+
+![image](https://github.com/inform-us/requirements_specifications/assets/94536083/4700abae-4fd4-4184-9059-16b0560056c3)
+
+
+---
+
+## Tile: Patients on mandatory ventilation Tidal Volume
+
+**SPC chart title: Weekly percentage of patients achieving Tidal Volumes below 8ml/kg IBW (patients of mandatory ventilation)**
+
+
+![image](https://github.com/inform-us/requirements_specifications/assets/94536083/384f2031-f039-477f-83cc-7715f2a78838)
+
+
+---
+
+
+
+
+
+
 
 
 
