@@ -32,7 +32,12 @@ To access specific SPC charts select location and required tile/metric from Data
 
 ---
 
-Tile
+## Tile: All ICU Targets set ( clarify if to align tile title with floorplan)
+
+**SPC chart title: Daily percentage of patients with all targets set in ICU Navigators**
+
+
+![image](https://github.com/inform-us/requirements_specifications/assets/94536083/18359e63-e620-4902-a114-1a3c26a471ff)
 
 
 
