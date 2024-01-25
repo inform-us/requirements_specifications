@@ -20,7 +20,7 @@ To access individual floorplan select location and required tile/metric from Cli
 **3.  Overview of tiles / metrics**
    * Bed Occupancy
    * All targets set in ICU Navigators
-   * All patietns Pain
+   * All patients Pain
    * Patients on oxygen therapy SpO2 Saturations
    * Patients on vasoactive drugs Mean Arterial BP
    * Sedated patients RASS
