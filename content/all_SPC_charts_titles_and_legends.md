@@ -37,9 +37,10 @@ To access specific SPC charts select location and required tile/metric from Data
 
 * Unit top left
 * Title top centre
+* Legend below title
+* SPC chart ( ? lable of axis 
+* Slider bar
 * i and ? buttons bottom right
-* Bed floorplan
-* Legend to left of floorplan
 * Back button bottom left
 
 
