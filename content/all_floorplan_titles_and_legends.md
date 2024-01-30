@@ -30,8 +30,16 @@ To access individual floorplan select location and required tile/metric from Cli
 
 
 ---
+**All Floorplans contents:**
+* Unit top left
+* Title top centre
+* i and ? buttons bottom right
+* Bed floorplan
+* Legend to left of floorplan
+* Back button bottom left
 
 ## Tile: Bed Occupancy 
+
 
 **Floorplan title: Bed Occupancy**
 
