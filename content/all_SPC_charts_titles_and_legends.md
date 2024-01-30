@@ -38,8 +38,8 @@ To access specific SPC charts select location and required tile/metric from Data
 * Unit top left
 * Title top centre
 * Legend below title
-* SPC chart ( ? lable of axis 
-* Slider bar
+* SPC chart labels: x axis, time; y axis, percentage
+* Slider bar: time window
 * i and ? buttons bottom right
 * Back button bottom left
 
