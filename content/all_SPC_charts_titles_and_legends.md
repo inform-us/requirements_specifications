@@ -26,15 +26,31 @@ To access specific SPC charts select location and required tile/metric from Data
    * Patients on vasoactive drugs Mean Arterial BP
    * Sedated patients RASS
    * Patients on mandatory ventilation Tidal Volume
+     
 
 ![image](https://github.com/inform-us/requirements_specifications/assets/94536083/6f16d1a6-5449-4de0-9f80-583d8e272f69)
 
 
 ---
 
+# All Floorplans contents:
+
+* Unit top left
+* Title top centre
+* i and ? buttons bottom right
+* Bed floorplan
+* Legend to left of floorplan
+* Back button bottom left
+
+
+---
+
+
+
 ## Tile: All ICU Targets set ( clarify if to align tile title with floorplan)
 
 **SPC chart title: Daily percentage of patients with all targets set in ICU Navigators** ( do we need to right out Unit Performance Data?)
+
 
 
 ![image](https://github.com/inform-us/requirements_specifications/assets/94536083/18359e63-e620-4902-a114-1a3c26a471ff)
@@ -46,6 +62,7 @@ To access specific SPC charts select location and required tile/metric from Data
 ## Tile: Patients on oxygen therapy SpO2 Saturations
 
 **SPC chart title: Daily percentage of patients within/ above/ below SpO2 Saturations Target (patients on oxygen therapy)**
+
 
 
 ![image](https://github.com/inform-us/requirements_specifications/assets/94536083/e59252c6-0bd3-4793-a075-8f60e91ea67e)
