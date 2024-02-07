@@ -25,7 +25,7 @@ x = number of events we are interested in (e.g. patients on target)
 Process mean:
 $\bar{p} = \frac{\sum x_i}{\sum n_i}, i=1...n$
 
-Sigma:
+Sigma is a measure of the variation of a binomial distribution, calculated as the square root of the process mean x (1-process mean) / n
 $\sigma = \sqrt{\bar{p}(1 - \bar{p}) / n_i}$
 
 Upper control limit = $\bar{p} + 3 \sigma$ (capped at 100%)
