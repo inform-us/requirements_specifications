@@ -1,5 +1,7 @@
 # Rules for qualifying patient labels for Statistical Process Control (SPC) Charts 
-(weekly aggregate time series data) 
+(weekly aggregate time series data)
+
+See [Mohammed, Worthington & Woodall; Plotting basic control charts: tutorial notes for healthcare practitioners](https://qualitysafety.bmj.com/content/17/2/137) for mathematical background.
 
 ## About SPC Percentage Charts (p-charts)
 A p-chart is a time series chart showing a percentage with three reference lines - a mean, and an upper (UCL) and lower control limit (LCL) which indicate that 99% of the data points fall within these two limits. SPC charts are used in Quality Improvement to view variation in a process over time and to assess whether changes that are made to processes during improvement initiatives are resulting in actual statistically meaningful improvements (rather than common cause variation).
@@ -14,12 +16,23 @@ A p-chart is a time series chart showing a percentage with three reference lines
 * Build central line based on the mean of all data points [Label: red line]
 * Build upper and lower control limits [Label: green hashed line] to the data 3 sigma (σ) above and below the mean
 
-## Formulae for calculating control limits
-n = sample size
+## Formulae for calculating process mean and control limits
 
-Upper control limit = process mean + 3 square root of process mean x (1-process mean)/ *n*
+n = sample size (e.g. all patients)
+
+x = number of events we are interested in (e.g. patients on target)
+
+Process mean:
+$\bar{p} = \frac{\sum x_i}{\sum n_i}, i=1...n$
+
+Sigma is a measure of the variation of a binomial distribution, calculated as the square root of the process mean x (1-process mean) / n
+$\sigma = \sqrt{\bar{p}(1 - \bar{p}) / n_i}$
+Upper and lower control limits are 3 sigma above and below the process mean, but can't be below 0% or above 100%
+Upper control limit = $\bar{p} + 3 \sigma$ (capped at 100%)
   
-Lower control limit = process mean - 3 square root of process mean x (1-process mean)/ *n* 
+Lower control limit = $\bar{p} - 3 \sigma$ (capped at 0%)
+
+
 
 ## Rules for detecting special cause variation, i.e. statistically meaningful variation in the process
 
