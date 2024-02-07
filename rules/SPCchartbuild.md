@@ -27,7 +27,7 @@ $\bar{p} = \frac{\sum x_i}{\sum n_i}, i=1...n$
 
 Sigma is a measure of the variation of a binomial distribution, calculated as the square root of the process mean x (1-process mean) / n
 $\sigma = \sqrt{\bar{p}(1 - \bar{p}) / n_i}$
-
+Upper and lower control limits are 3 sigma above and below the process mean, but can't be below 0% or above 100%
 Upper control limit = $\bar{p} + 3 \sigma$ (capped at 100%)
   
 Lower control limit = $\bar{p} - 3 \sigma$ (capped at 0%)
