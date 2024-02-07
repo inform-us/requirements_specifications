@@ -1,4 +1,5 @@
-# Rules for qualifying patient labels for Statistical Process Control (SPC) Charts 
+# Rules for qualifying patient labels for Statistical Process Control (SPC) Charts
+
 (weekly aggregate time series data)
 
 See [Mohammed, Worthington & Woodall; Plotting basic control charts: tutorial notes for healthcare practitioners](https://qualitysafety.bmj.com/content/17/2/137) for mathematical background.
@@ -19,17 +20,18 @@ A p-chart is a time series chart showing a percentage with three reference lines
 ## Formulae for calculating process mean and control limits
 
 n = sample size (e.g. all patients)
-
 x = number of events we are interested in (e.g. patients on target)
 
 Process mean:
 $\bar{p} = \frac{\sum x_i}{\sum n_i}, i=1...n$
 
 Sigma is a measure of the variation of a binomial distribution, calculated as the square root of the process mean x (1-process mean) / n
+
 $\sigma = \sqrt{\bar{p}(1 - \bar{p}) / n_i}$
+
 Upper and lower control limits are 3 sigma above and below the process mean, but can't be below 0% or above 100%
+
 Upper control limit = $\bar{p} + 3 \sigma$ (capped at 100%)
-  
 Lower control limit = $\bar{p} - 3 \sigma$ (capped at 0%)
 
 
