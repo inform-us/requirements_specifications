@@ -55,6 +55,10 @@ When an SPC chart shows any data point outside of the control limits, denote as 
 
 Note: *Control limits are stepped as they reflect the change in sample size of each data point* 
 
+- If data points indicate a TREND as well as a  SHIFT, denote as SHIFT only. 
+- If data points indicate a TREND which includes an OUTLIER, denote all nonoutlier data points as a TREND (blue squares) and denote any outlier data points OUTLIERS (red triangle) within the TREND. 
+- If data points indicate a SHIFT which includes an OUTLIER, denote all nonoutlier data points as a SHIFT (orange diamonds) and denote outlier data points as OUTLIERS (red triangle) within the SHIFT. 
+
 ## Mean recalculation
 If 7 + 1 consecutive data points above or below the mean (=shift), then recalculate the mean from this 8th data point using those 8 data points (i.e. this point and the preceding 7), but visually depict a change in mean going forward from the 8th data point. 
 If there has been no mean recalculation at the end of a three month period: (end defined as March 31st, June 30th, September 30th & December 31st), then automatically recalculate mean using the previous 13 data points, only visually display change in mean going forward on next data point
