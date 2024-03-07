@@ -1,3 +1,5 @@
+\* **Frontend code up to date as of: 07.03.2024 apart from Tidal volume classification** \*
+
 # Content for Individual Charts Tooltips (Hover Over datapoint boxes) 
 *As user hovers over each data point, the content in the boxes should read as follows*
 ## Pain individual chart tooltip content
