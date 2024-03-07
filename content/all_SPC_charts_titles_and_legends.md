@@ -1,3 +1,5 @@
+\* **Frontend code up to date as of: 07.03.2024** \*
+
 # All SPC charts titles and legends
 
 To access specific SPC charts select location and required tile/metric from Data for Improvement homepage
