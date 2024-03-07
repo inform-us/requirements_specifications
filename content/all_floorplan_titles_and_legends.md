@@ -1,3 +1,5 @@
+\* **Frontend code up to date as of: 07.03.2024** \*
+
 # All Floorplan titles and legends
 
 To access individual floorplan select location and required tile/metric from Clinical Dashboard homepage
