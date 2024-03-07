@@ -1,3 +1,5 @@
+\* **Frontend code up to date as of: 07.03.2024** \*
+
 # All tile content
 
 ## Clinical Dashboard page
