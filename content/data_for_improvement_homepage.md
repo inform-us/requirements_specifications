@@ -1,3 +1,5 @@
+\* **Frontend code up to date as of: 07.03.2024** \*
+
 # Description of Data for Improvement Homepage
 
 ## Navigate
