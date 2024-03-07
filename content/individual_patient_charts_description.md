@@ -1,6 +1,6 @@
 \* **Frontend code up to date as of: 07.03.2024** \*
 
-# All individual charts description of content: 
+# All individual charts content: 
 
 Tabs on Left
 1. Clinical Dashboard
