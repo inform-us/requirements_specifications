@@ -59,7 +59,7 @@ These data update every five minutes.
 
 * **Tip 3:** If a bed is dark grey, calculation cannot be completed 
 
-* **Tip 4:**  Pain assessments recorded as “unable to assess” due to sleep will not show on the individual patient graph as this is not a pain score. This will appear greyed out (same as missing).  
+* **Tip 4:**  Pain assessments recorded as “unable to assess” due to sleep will not show on the individual patient graph as this is not a pain score. 
 
 * **Tip 5:**  A gap after a blue line on the individual patient charts reflects the 15-minute leeway added to the validity window of a score
 
@@ -143,7 +143,7 @@ Patients are receiving supplemental oxygen. If a patient does not receive supple
 
 **Tip 2:** Non-numerical means that a free text target has been set.
 
-**Tip 3:** Unable to calculate means missing data does not allow classification.
+**Tip 3:**  If a bed is dark grey, calculation cannot be completed. 
 
 
 
@@ -187,7 +187,8 @@ Patients are receiving intravenous vasoactive drugs. If a patient does not recei
 
 **Tip 2:**  Non numerical means that a free text target has been set.
 
-**Tip 3:**  Unable to calculate means missing data does not allow classification.
+**Tip 3:**  If a bed is dark grey, calculation cannot be completed. 
+
 
 
 ---
@@ -229,7 +230,7 @@ RASS score is valid for 4 hours.
 
 **Tip 2:** Non-numerical means that a free text target has been set.
 
-**Tip 3:** Unable to calculate means missing data does not allow classification.
+**Tip 3:** If a bed is dark grey, calculation cannot be completed. 
 
 **Tip 4:** RASS score is valid for four hours or until a new score is documented.
 
@@ -274,7 +275,8 @@ Patients are intubated (oral/nasal tube or tracheostomy) and on mandatory ventil
 
 **Tip 1:** These data update on the hour
 
-**Tip 2:** Unable to calculate menas mising data does not allow classification
+**Tip 2:** If a bed is dark grey, calculation cannot be completed. 
+
 
 
 
