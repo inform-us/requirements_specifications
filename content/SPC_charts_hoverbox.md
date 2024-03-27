@@ -26,7 +26,7 @@
 - Percentage:
 - Assessments within time:
 - Total pain assessments:
-- 
+
 ## Mean Arterial Blood Pressure SPC Tool Tip (Hover Over Box) Content
 - Date:
 - Percentage:
