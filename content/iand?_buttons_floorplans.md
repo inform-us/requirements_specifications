@@ -1,4 +1,4 @@
-\* **Frontend code up to date as of: 07.03.2024** \*
+\* **Frontend code up to date as of: 10.04.2024** \*
 
 # Content for i and ? buttons for all floorplans
 
