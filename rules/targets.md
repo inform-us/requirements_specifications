@@ -1,6 +1,9 @@
 # Target Rules
 Rules for target set metric
 
+[TARGETS_frontend sequence .pdf](https://github.com/inform-us/requirements_specifications/files/15090740/TARGETS_frontend.sequence.pdf)
+
+
 ---
 ## ELIGIBILITY 
 
