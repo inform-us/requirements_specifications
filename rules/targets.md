@@ -17,8 +17,6 @@ Rules for all target set metric
 - metric output (e.g. numerical (integer / decimal), drop down, range selection, free text etc)
 - Are there corresponds targets?
 
-[TARGETS_user interface sequence .pdf](https://github.com/inform-us/requirements_specifications/files/15090740/TARGETS_frontend.sequence.pdf)
-
 ## EPIC Flowsheets
 
 * ### Group ID:
@@ -34,16 +32,26 @@ Rules for all target set metric
 7. Fluid Balance - R UCLH ICU TARGETS FLUID BALANCE [36553]
 8. RASS - R UCLH ICU TARGET RASS [36555]
 
-Miscellaneous information:
+* ### Miscellaneous information:
 - not used - Row ID	- R UCLH ICU READY DISCHARGE [41222]
 - there are no components to for a summative score
 
 ---
+[TARGETS_user interface sequence .pdf](https://github.com/inform-us/requirements_specifications/files/15090740/TARGETS_frontend.sequence.pdf)
+
 ## ELIGIBILITY 
 
 1. All patients across all units
 
-## VALIDITY (time window)
+
+## VALIDITY (time window) - (floorplan & SPC)
+
+1. For the purposes of the 'all target set' metric, each of the 8 physiological metrics returns a binary response: [SET] - any of the set range or number / not applicable / other (comment) / free text entry are returned (generating a _dt stamp), or [NOT SET] nothing is returned.
+2. Each of the 8 physiological metrics can be superseded if an entry is updated or new entry is made, this will generate a new _dt stamp (more recent) and become the 'valid' entry
+3. Each of the 8 physiological metrics is valid from _dt stamp it is set, until 07:59 hours, at which point they become invalid, from 08:00 onwards all of these 8 physiological targets need to be set afresh (i.e  can only be valid for a maximum time of 24 hours between the hours of 08:00 - 07:59)
+4. In order to meet the 'all target set' metric, all 8 physiological metrics need to have been trurned with a vailid _dt stamp
+
+XXXXXXX
 
 ## CLASSIFICATION 
 1. All eight physiological targets completed in the ICU Targets section of the ICU Navigators
