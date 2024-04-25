@@ -17,7 +17,7 @@ Rules for all target set metric
 - metric output (e.g. numerical (integer / decimal), drop down, range selection, free text etc)
 - Are there corresponds targets?
 
-[TARGETS_frontend sequence .pdf](https://github.com/inform-us/requirements_specifications/files/15090740/TARGETS_frontend.sequence.pdf)
+[TARGETS_user interface sequence .pdf](https://github.com/inform-us/requirements_specifications/files/15090740/TARGETS_frontend.sequence.pdf)
 
 ## EPIC Flowsheets
 
