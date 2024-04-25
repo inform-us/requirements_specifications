@@ -8,41 +8,35 @@ Rules for all target set metric
 2. SpO2 (saturation pulse oximeter (UNIT = %; integer)) - options: (i) set range; (ii) not applicable; (iii) other (comment) +/- free text entry
 3. PaO2 (arterial partial pressure of oxygen (UNIT = kPa; decimal)) - options: (i) set range; (ii) not applicable; (iii) other (comment) +/- free text entry
 4. PaCO2 (arterial partial pressure of carbon dioxide (UNIT = kPa; decimal)) - options: (i) set range; (ii) not applicable; (iii) other (comment) +/- free text entry
+5. pH (power hydrogen (UNIT = nil; (log) decimal)) - options: (i) set range; (ii) not applicable; (iii) other (comment) +/- free text entry
+6. Haemoglobin (blood haemoglobin concentration (UNIT = g/l; integer)) - options: (i) set range; (ii) not applicable; (iii) other (comment) +/- free text entry
+7. Fluid Balance (fluid balance to achieved by end of calendar day (UNIT = ml, decimal rounded to whole number)) - options: (i) set target number; (ii) not applicable; (iii) other (comment) +/- free text entry
+8. RASS (Richmond Agitation Sedation Score (UNIT = nil; integer)) - options: (i) set target number; (ii) not applicable; (iii) other (comment) +/- free text entry
 
 - general information about metric (e.g. location, components, group or summative score etc)
 - metric output (e.g. numerical (integer / decimal), drop down, range selection, free text etc)
 - Are there corresponds targets?
 
-## EPIC Flowsheets
-* ### ABC metric [ID XXXX for Group or summative score if applicable]
- - ABC metric - Row ID XXXX
--  ABC metric [component if applicable] - Row ID XXXX
-
 [TARGETS_frontend sequence .pdf](https://github.com/inform-us/requirements_specifications/files/15090740/TARGETS_frontend.sequence.pdf)
 
-Group ID - G UCLH ICU TARGETS [36552] 
+## EPIC Flowsheets
 
-Row ID - R UCLH ICU TARGET MAP [36554]
+* ### Group ID:
+- G UCLH ICU TARGETS [36552] 
 
-Row ID - R UCLH ICU TARGETS SPO2 [36551]	
+* ### Individual metric Row ID:
+1. MAP - R UCLH ICU TARGET MAP [36554]
+2. SpO2 - R UCLH ICU TARGETS SPO2 [36551]	
+3. PaO2 - R UCLH ICU TARGET PAO2 [36556]
+4. PaCO2	- R UCLH ICU TARGET PACO2 [36557]
+5. pH -	R UCLH ICU TARGETS PH [36559]
+6. Haemoglobin - R UCLH ICU TARGET HB [36558]
+7. Fluid Balance - R UCLH ICU TARGETS FLUID BALANCE [36553]
+8. RASS - R UCLH ICU TARGET RASS [36555]
 
-Row ID	- R UCLH ICU TARGET PAO2 [36556]
-
-Row ID	- R UCLH ICU TARGET PACO2 [36557]
-
-Row ID -	R UCLH ICU TARGETS PH [36559]
-
-Row ID	- R UCLH ICU TARGET HB [36558]
-
-Row ID	- R UCLH ICU TARGETS FLUID BALANCE [36553]
-
-Row ID	- R UCLH ICU TARGET RASS [36555]
-
-Row ID	- R UCLH ICU READY DISCHARGE [41222]
-
-
-
-
+Miscellaneous information:
+- not used - Row ID	- R UCLH ICU READY DISCHARGE [41222]
+- there are no components to for a summative score
 
 ---
 ## ELIGIBILITY 
