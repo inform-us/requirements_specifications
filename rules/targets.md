@@ -1,5 +1,5 @@
 # Target Rules
-Rules for all target set metric
+Rules for all targets set metric
 
 ## EPIC
 - ICU targets are set in the 'ICU Navigators' tab [doctors log in view] and are then displayed in the flowsheet 'ICU targets' tab
@@ -13,8 +13,8 @@ Rules for all target set metric
 7. Fluid Balance (fluid balance target to achieve by end of calendar day (UNIT = ml, integer)) - options: (i) set target number; (ii) not applicable; (iii) other (comment) +/- free text entry
 8. RASS (Richmond Agitation Sedation Score (UNIT = nil; 10 point scale (-5 to +4))) - options: (i) set target number; (ii) not applicable; (iii) other (comment) +/- free text entry
 
-- the 8 physiological metrics are independent of each other, but for the 'all target set' metric to be met, ALL the 8 physiological targets need to have had an entry made within the designated time frame (vide infra)
-- the 'all target set' metric has a binary output: (1) SET (all targets set within time frame) or (2) NOT SET
+- the 8 physiological metrics are independent of each other, but for the 'all targets set' metric to be met, ALL the 8 physiological targets need to have had an entry made within the designated time frame (see below)
+- the 'all targets set' metric has a binary output: (1) SET (all targets set within time frame) or (2) NOT SET
 - there are no corresponding targets for this metric
 
 ## EPIC Flowsheets
@@ -48,34 +48,78 @@ Rules for all target set metric
 
 ## VALIDITY up to 24 hour time window - (floorplan & SPC)
 
-1. For the purposes of the 'all target set' metric, each of the 8 physiological metrics returns a binary response: (1) [SET] - any of the set range or number / not applicable / other (comment) / free text entry are returned (all generating a _dt stamp), or (2) [NOT SET] nothing is returned.
+1. For the purposes of the 'all targets set' metric, each of the 8 physiological metrics returns a binary response: (1) [SET] - any of the set range or number / not applicable / other (comment) / free text entry are returned (all generating a _dt stamp), or (2) [NOT SET] nothing is returned.
 2. Each of the 8 physiological metrics can be superseded if an entry is updated or new entry is made, this will generate a new _dt stamp (more recent) and become the 'valid' entry
 3. Each of the 8 physiological metrics is valid from _dt stamp it is set, until 07:59 hours, after which point they become invalid, from 08:00 onwards all of these 8 physiological targets need to be set afresh (i.e  can only be valid for a maximum time of 24 hours between the hours of 08:00 - 07:59)
-4. In order to meet the 'all target set' metric, all 8 physiological metrics need to have been returned with a valid _dt stamp
+4. In order to meet the 'all targets set' metric, all 8 physiological metrics need to have been returned with a valid _dt stamp
 
 
 ## CLASSIFICATION 
 
-**[A] Proportion of patients with 'all target set'**
+**[A] Proportion of patients with 'all targets set'**
 
-Feeds into (i) front tile (current time snapshoot), (ii) floorplan and (iii) 'all target set' SPC chart
+Feeds into (i) front tile (current time snapshoot), (ii) floorplan and (iii) 'all targets set' SPC chart
 
-**FRONT TILE proportion of patients with 'all target set'**
+**FRONT TILE proportion of patients with 'all targets set'**
 1. The front tile displays live data (i.e. the current state on each unit)
 2. For each patient ALL of the 8 physiological targets need to have been completed in the ICU Targets section of the ICU Navigators (i.e. a valid _dt stamp for an entry for each individual metric) in order to achive (1) SET; if any of the 8 physiological metrics is missing an entry (a valid _dt stamp) then return (2) NOT SET
-3. Numerator = sum of patinets achieving (1) SET response
+3. Numerator = sum of patients achieving (1) SET response
 4. Denominator = total number of current patients (occupied beds)
+5. For each unit this is displayed as a fraction (numerator / denominator); except on T03 where the unit is divided into 15-bed Northside (beds 1-16 (no bed 13)) & 20-bed Southside (beds 17-36), displaying a proportion for each side
 
+**[B] Floorplan labelling
+1. The floorplan displays current state and is updated as new data is available (outcome is binary and there is no option for 'missing data')
+2. If 'all targets set'; design = green filled bed
+3. If 'all targets not set'; design = red filled bed
+4. If bed is empty; design = white filled bed
+
+**There is no individual chart for the 'all targets set' metric**
 
 ---
-# SPC CHARTS 
-## TARGETS SET - Daily percentage of all targets set in ICU navigators 
-Operational definition= what proportion of all patients have all their targets set in ICU navigators in EPIC by 1pm each day?  
+##SPC CHART
 
-1. Generate percentage of patients with all 8 (Spo2, MAP, RASS, pH, haemoglobin, fluid balance, paCO2, paO2) daily - i.e. add up number of patients with all targets set at 1pm and divide by number of patients on unit at that time 
-2. Present as percentage
-3. Plot on daily chart
+**Relevant SPC chart information**
 
-3. Compliance measured at 13:00 hours each day 
+*PLEASE NOTE SPC CHART CURRENTLY GENERATING DAILY DATA - DELETE THIS LINE & ADJUST FRONT END TEXT ONCE ZENHUB TICKETS 891 & 1113 resolved*
 
- 
+1. This is a weekly percentage (p-chart) SPC
+2. It differs from the other SPC charts in that it takes a snapshot at 13:00, and not a calendar day aggregate
+3. Week defined as Monday 00:00 – Sunday 23:59
+4. Working clinical day (24 hours) defined as 08:00 - 07:59 (next day) - labelled as the day of the week at the start of the 24 hour period (e.g. Sunday date xx/xx/xxxx 08:00 until Monday date +1/xx/xxxx 07:59 calcaultion performed on Modnay, but lablled a 'Sunday' working clinical day) 
+
+**ALL TARGETS SET IN ICU NAVIGATOR**
+
+Proportion of of 'all targets set' in ICU navigators
+
+Operational definition = of documented physiological targets set in ICU Navigators in EPIC, what proportion of all patients have all their targets set by 13:00 each day on a weekly basis?  
+
+1. Metric complicance is measured at 13:00 on each day, for the purposes of this SPC calculation the code is set to run at 13:30
+2. For each patient ALL of the 8 physiological targets need to have been completed in the ICU Targets section of the ICU Navigators (i.e. a valid _dt stamp for an entry for each individual metric) in order to achive (1) SET; if any of the 8 physiological metrics is missing an entry (a valid _dt stamp) then return (2) NOT SET
+3. Numerator = sum of patients achieving (1) SET response
+4. Denominator = total number of current patients (occupied beds)
+5. Calculate daily percentage for each unit, (exceptionally) treating T03 as Northside & Southside (e.g. T03N, T03S, T06, GWB & WMS units)
+6. Aggregate the daily percenatges into a weekly mean for each of these units (T06, GWB & WMS)
+7. Aggregate the daily percenatges into a weekly mean for T03 Northside & T03 Southside producing one value for the unit T03
+8. Plot a SPC chart for each respective unit: y-axis = weekly percentage; x-axis = time
+
+**NOTE**
+- this SPC chart has an alternative design for the purposes of adding a competitive edge (gamify) to the daily clinical working pattern
+- a consequence of this method (i.e. snapshot versus calendar day) is that a small proportion of patinets may not be accounted for, specifically those admitted after 13:00 and discharged before 13:00 the next day: (i) severely ill and early death (ii) straightforward unplanned admission and (iii) straightforward elective surgery.
+- group (iii) is most likely to affect T06 if patient flow is working well, but conversely these may be the least likely to benefit from target setting
+- an alternative SPC calculation is porposed below to ascertain complexity from developer perspective and if uncomplicated could generate a second SPC chart
+
+**ALTERNATE - ALL TARGETS SET IN ICU NAVIGATOR - CALENDAR DAY VERSION**
+
+Proportion of of 'all targets set' in ICU navigators
+
+Operational definition = of documented physiological targets set in ICU Navigators in EPIC, what proportion of all patients have all their targets set each day on a weekly basis?  
+
+1. Metric complicance is measured for the preceeding 'working clinical day' and includes all patients present on a unit from 07:59 on the day of the calcualtion to 08:00 the day before; the calcaultion date label should be for the day before (e.g. Sunday date xx/xx/xxxx 08:00 until Monday date +1/xx/xxxx 07:59 calculation performed on Modnay, but lablled a 'Sunday' working clinical day) 
+2. Identify all patients present on each unit during the working clinical day (this will be the denominator)
+3. For each patient ALL of the 8 physiological targets need to have been completed within the 24 hour period of a clinical working day in the ICU Targets section of the ICU Navigators (i.e. a valid _dt stamp for an entry for each individual metric) in order to achive (1) SET; if any of the 8 physiological metrics is missing an entry (a valid _dt stamp) then return (2) NOT SET
+4. Numerator = sum of patients achieving (1) SET response
+5. Denominator = total number of patients present on each unit during the working clinical day
+6. Using the working clinical day definition (see above - day label), calculate daily percentage for each unit, (exceptionally) treating T03 as Northside & Southside (e.g. T03N, T03S, T06, GWB & WMS units)
+8. Aggregate the daily percenatges into a weekly mean for each of these units (T06, GWB & WMS)
+9. Aggregate the daily percenatges into a weekly mean for T03 Northside & T03 Southside producing one value for the unit T03
+10. Plot a SPC chart for each respective unit: y-axis = weekly percentage; x-axis = time
