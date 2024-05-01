@@ -58,7 +58,7 @@ Rules for all targets set metric
 
 **[A] Proportion of patients with 'all targets set'**
 
-Feeds into (i) front tile (current time snapshoot), (ii) floorplan and (iii) 'all targets set' SPC chart
+Feeds into (i) front tile (current time snapshot), (ii) floorplan and (iii) 'all targets set' SPC chart
 
 **FRONT TILE proportion of patients with 'all targets set'**
 1. The front tile displays live data (i.e. the current state on each unit)
@@ -68,10 +68,10 @@ Feeds into (i) front tile (current time snapshoot), (ii) floorplan and (iii) 'al
 5. For each unit this is displayed as a fraction (numerator / denominator); except on T03 where the unit is divided into 15-bed Northside (beds 1-16 (no bed 13)) & 20-bed Southside (beds 17-36), displaying a proportion for each side
 
 **[B] Floorplan labelling
-1. The floorplan displays current state and is updated as new data is available (outcome is binary and there is no option for 'missing data')
+1. The floorplan displays live data (current state) on a bed by bed basis and is updated as new data is available (outcome is binary and there is no option for 'missing data')
 2. If 'all targets set'; design = green filled bed
 3. If 'all targets not set'; design = red filled bed
-4. If bed is empty; design = white filled bed
+4. If bed is empty; design = white filled bed with dark grey outline
 
 **There is no individual chart for the 'all targets set' metric**
 
