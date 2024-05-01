@@ -11,7 +11,7 @@ A p-chart is a time series chart showing a percentage with three reference lines
 
 * Build y-axis depicting the variable in question (the performance indicator you are interested in)
 * Build x-axis depicting time in days/weeks
-* Default x-axis to show last 26 data points, slider to allow up to 112 data points
+* Default x-axis to show last 52 data points, slider to allow up to 112 data points
 * Database to hold 164 data points to allow annual export (manual) of data from DBForge; older data than this can be automatically erased
 * Data points [Label: standard data point = blue dots; trend = blue squares; shift = organge diamonds; outlier = red triangle]
 * Build central line based on the mean of all data points [Label: red line]
