@@ -41,7 +41,7 @@ To access specific SPC charts select location and required tile/metric from Data
 * Title top centre
 * Legend below title
 * SPC chart labels: x axis, time; y axis, percentage
-* Slider bar: time window
+* Slider bar: time window (up to 112 weeks)
 * i and ? buttons bottom right
 * Back button bottom left
 
