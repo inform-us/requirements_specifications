@@ -75,7 +75,7 @@ Physiological targets are set to facilitate the bedside nurse titrating therapy.
 
 There is varying degree of harm when physiological variables are persistently out of range.
 
-Targets should be discussed in handover each morning and set in targets tab of ICU Navigators of EPIC before 13:00 hours.
+Targets should be discussed in handover each morning and set in targets tab of ICU Navigators of EPIC before 13:00 hours (and after 08:00 hours).
 
 If you are unsure about a patient's target, ask the doctor in charge for guidance during handover.
 
@@ -97,9 +97,11 @@ All patients on ICU - 'All patients in critical care'.
 **Rule 2:** Compliance measured at 13:00 hours each day.
 
 
-**Tip 1:** All targets ideally set at the same entry at the morning handover or on admission.
+**Tip 1:** All targets ideally set at the same entry at the morning handover or on admission. 
 
 **Tip 2:** If a target is not applicable, please select 'Not applicable'.
+
+**Tip2:** Targets refresh at 08:00 each day. Do not set targets before 08:00 or they will be counted as set from the previous day.
 
 
 
