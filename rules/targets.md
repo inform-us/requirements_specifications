@@ -76,7 +76,7 @@ Feeds into (i) front tile (current time snapshot), (ii) floorplan and (iii) 'all
 **There is no individual chart for the 'all targets set' metric**
 
 ---
-##SPC CHART
+## SPC CHART
 
 **Relevant SPC chart information**
 
