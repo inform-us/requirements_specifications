@@ -1,5 +1,21 @@
 # RASS rules
-Rules for RASS Sedation metric
+Rules for RASS (sedation/agitation) metric
+
+## EPIC
+- The degree of sedation and conversely agitation are measured by the Richmond Agitation Sedation Score (RASS)
+- This runs on 10 point scale from (agitated) +4/+3/+2/+1/-/-1/-2/-3/-4/-5 (sedated)
+- RASS scale value is an integer (EPIC will allow free text!)
+- Individual patient targets are set on a daily basis [see targets.md]
+- For the purposes of the RASS metric tile, we are interested in oversedation on mechanical ventilation (i.e. a score more negative than the target set), hence the eligibility criteria include 'is_ventilated' & 'is_sedated')
+
+## EPIC Flowshets XXX
+- epic flowsheet
+- componenet
+- no overall score
+
+XXX
+
+
 ## Validity (time window) Rules: 
 1. O2 delivery only valid if o2delivery_dt within last 6 hours of epoch 
 2. RASS score only valid if rass_dt within last 4 hours of epoch_dt 
