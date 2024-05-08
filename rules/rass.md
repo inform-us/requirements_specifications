@@ -5,7 +5,7 @@ Rules for RASS (sedation/agitation) metric
 - The degree of sedation and conversely agitation are measured by the Richmond Agitation Sedation Score (RASS)
 - This runs on 10 point scale from (agitated) +4/+3/+2/+1/-/-1/-2/-3/-4/-5 (sedated)
 - RASS scale value is an integer (EPIC will allow free text!)
-- Individual patient targets are set on a daily basis [see targets.md]
+- Individual patient targets are set on a daily basis [see targets.md](./targets.md#ELIGIBILITY)
 - For the purposes of the RASS metric tile, we are interested in oversedation on mechanical ventilation (i.e. a score more negative than the target set), hence the eligibility criteria include 'is_ventilated' & 'is_sedated')
 
 ## EPIC Flowshets XXX
