@@ -1,3 +1,7 @@
+|File .md signed_off|Code review|Production|Outstanding|
+|---|---|---|---|
+|yes - 09/05/24|- 29/04/2024 (#1) <br> - pending further review <br> - Y/N to alternate SPC (line 115)|no|- remove references to daily targets in MD file (line 87) <br> - adjust content from daily to weekly|
+
 # Target Rules
 Rules for all targets set metric
 
@@ -48,10 +52,10 @@ Rules for all targets set metric
 
 ## VALIDITY up to 24 hour time window - (floorplan & SPC)
 
-1. For the purposes of the 'all targets set' metric, each of the 8 physiological metrics returns a binary response: (1) [SET] - any of the set range or number / not applicable / other (comment) / free text entry are returned (all generating a _dt stamp), or (2) [NOT SET] nothing is returned.
+1. For the purposes of the 'all targets set' metric, each of the **_individual_** 8 physiological metrics returns a binary response: <br> (1) [individual_SET] - any of the set range or number / not applicable / other (comment) / free text entry are returned (an entry generating a _dt stamp), or <br> (2) [individual_NOT SET] nothing is returned (no entry and therefore no _dt stamp)
 2. Each of the 8 physiological metrics can be superseded if an entry is updated or new entry is made, this will generate a new _dt stamp (more recent) and become the 'valid' entry
-3. Each of the 8 physiological metrics is valid from _dt stamp it is set, until 07:59 hours, after which point they become invalid, from 08:00 onwards all of these 8 physiological targets need to be set afresh (i.e  can only be valid for a maximum time of 24 hours between the hours of 08:00 - 07:59)
-4. In order to meet the 'all targets set' metric, all 8 physiological metrics need to have been returned with a valid _dt stamp
+3. Each of the 8 physiological metrics is valid from when the _dt stamp is set, until 07:59 hours, after which point they become invalid, from 08:00 onwards all of these 8 physiological targets need to be set afresh (i.e  can only be valid for a maximum time of 24 hours between the hours of [current day] 08:00 - [next day] 07:59)
+4. In order to meet the 'all targets set' metric (SET), **ALL** 8 physiological metrics need to have been returned with a valid _dt stamp <br> i.e. **ALL** 8 physiological metrics return an [individual_SET] within the time frame of [current day] 08:00 - [next day] 07:59
 
 
 ## CLASSIFICATION 
@@ -80,12 +84,12 @@ Feeds into (i) front tile (current time snapshot), (ii) floorplan and (iii) 'all
 
 **Relevant SPC chart information**
 
-*PLEASE NOTE SPC CHART CURRENTLY GENERATING DAILY DATA - DELETE THIS LINE & ADJUST FRONT END TEXT ONCE ZENHUB TICKETS 891 & 1113 resolved*
+**_PLEASE NOTE SPC CHART CURRENTLY GENERATING DAILY DATA - DELETE THIS LINE & ADJUST FRONT END TEXT ONCE ZENHUB TICKETS 891 & 1113 resolved_**
 
 1. This is a weekly percentage (p-chart) SPC
 2. It differs from the other SPC charts in that it takes a snapshot at 13:00, and not a calendar day aggregate
 3. Week defined as Monday 00:00 – Sunday 23:59
-4. Working clinical day (24 hours) defined as 08:00 - 07:59 (next day) - labeled as the day of the week at the start of the 24 hour period (e.g. Sunday date xx/xx/xxxx 08:00 until Monday date +1/xx/xxxx 07:59 calculation performed on Monday, but labeled a 'Sunday' working clinical day) 
+4. 'Working clinical day' (24 hours) defined as [current day] 08:00 - [next day] 07:59 - labeled as the day of the week at the start of the 24 hour period (e.g. Sunday date xx/xx/xxxx 08:00 until Monday date +1/xx/xxxx 07:59 calculation performed on Monday, but labeled a 'Sunday' working clinical day) - **_ONLY RELEVANT TO ALTERNATE SPC 'CALENDAR DAY VERSION'_**
 
 **ALL TARGETS SET IN ICU NAVIGATOR**
 
@@ -93,13 +97,13 @@ Proportion of 'all targets set' in ICU navigators
 
 Operational definition = of documented physiological targets set in ICU Navigators in EPIC, what proportion of all patients have all their targets set by 13:00 each day on a weekly basis?  
 
-1. Metric compliance is measured at 13:00 on each day, for the purposes of this SPC calculation the code is set to run at 13:30 to give small amount of leeway
+1. Metric compliance is measured at 13:00 on each day, for the purposes of this SPC calculation, the code is set to run at 13:30 to give small amount of leeway for a clinically busy day
 2. For each patient ALL of the 8 physiological targets need to have been completed in the ICU Targets section of the ICU Navigators (i.e. a valid _dt stamp for an entry for each individual metric) in order to achieve (1) SET; if any of the 8 physiological metrics is missing an entry (a valid _dt stamp) then return (2) NOT SET
 3. Numerator = sum of patients achieving (1) SET response
 4. Denominator = total number of current patients (occupied beds) at 13:30 hours
 5. Calculate daily percentage for each unit, (exceptionally) treating T03 as Northside & Southside (e.g. T03N, T03S, T06, GWB & WMS units)
-6. Aggregate the daily percentages into a weekly mean percentage for each of these units (T06, GWB & WMS)
-7. Aggregate the daily percentages into a weekly mean percentage for T03 Northside & T03 Southside producing one value for the unit T03
+6. Aggregate the daily percentages into a **-weekly mean percentage_** for each of these respective units (T06, GWB & WMS)
+7. Aggregate the daily percentages into a **_weekly mean percentage_** for T03 Northside & T03 Southside producing one value for the unit T03
 8. Plot an SPC chart for each respective unit: y-axis = weekly percentage; x-axis = time
 
 **NOTE**
@@ -108,18 +112,19 @@ Operational definition = of documented physiological targets set in ICU Navigato
 - group (iii) is most likely to affect T06 (surgical patients) if patient flow is working well, but conversely these may be the least likely to benefit clinically from target setting
 - an alternative SPC calculation is proposed below to ascertain complexity from developer perspective and if uncomplicated could generate a second SPC chart
 
+---
 **ALTERNATE - ALL TARGETS SET IN ICU NAVIGATOR - CALENDAR DAY VERSION**
 
 Proportion of 'all targets set' in ICU navigators
 
-Operational definition = of documented physiological targets set in ICU Navigators in EPIC, what proportion of all patients have all their targets set each day on a weekly basis?  
+Operational definition = of documented physiological targets set in ICU Navigators in EPIC, what proportion of all patients have all their targets set each 'working clinical day' on a weekly basis?  
 
-1. Metric compliance is measured for the preceding 'working clinical day' and includes all patients present on a unit from 07:59 on the day of the calculation to 08:00 the day before; the calculation date label should be for the day before (e.g. Sunday date xx/xx/xxxx 08:00 until Monday date +1/xx/xxxx 07:59 calculation performed on Monday, but labeled a 'Sunday' working clinical day) 
-2. Identify all patients present on each unit during the working clinical day (this will be the denominator)
+1. Metric compliance is measured for the preceding 'working clinical day' and includes all patients present on a unit from 07:59 on the day of the calculation to 08:00 the day before; the calculation date label should be for the day before (e.g. Sunday date xx/xx/xxxx 08:00 until Monday date +1/xx/xxxx 07:59 calculation performed on Monday, but labeled a 'Sunday working clinical day') 
+2. Identify all patients present on each unit during the 'working clinical day' (this will be the denominator)
 3. For each patient ALL of the 8 physiological targets need to have been completed within the 24 hour period of a clinical working day in the ICU Targets section of the ICU Navigators (i.e. a valid _dt stamp for an entry for each individual metric) in order to achieve (1) SET; if any of the 8 physiological metrics is missing an entry (a valid _dt stamp) then return (2) NOT SET
 4. Numerator = sum of patients achieving (1) SET response
 5. Denominator = total number of patients present on each unit during the working clinical day
 6. Using the working clinical day definition (see above - day label), calculate daily percentage for each unit, (exceptionally) treating T03 as Northside & Southside (e.g. T03N, T03S, T06, GWB & WMS units)
-8. Aggregate the daily percentages into a weekly mean for each of these units (T06, GWB & WMS)
-9. Aggregate the daily percentages into a weekly mean for T03 Northside & T03 Southside producing one value for the unit T03
+8. Aggregate the daily percentages into a **-weekly mean percentage_** for each of these units (T06, GWB & WMS)
+9. Aggregate the daily percentages into a **-weekly mean percentage_** for T03 Northside & T03 Southside producing one value for the unit T03
 10. Plot an SPC chart for each respective unit: y-axis = weekly percentage; x-axis = time
