@@ -53,6 +53,7 @@ E.G. Feeds into (i) front tile - 24 hour rolling window and (ii) SPC interval ch
 -denominator: the number of patients with a RASS score of -3 to -4 
 xxxxxxxxxxxxxxxxxxxxxxxx
 **[C] Floorplan labelling**
+1) If latest CAM-ICU score reading = negative: 
 
 **[D] Classification Rules: Individual patient chart**
 
