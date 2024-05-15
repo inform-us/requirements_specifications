@@ -53,7 +53,10 @@ E.G. Feeds into (i) front tile - 24 hour rolling window and (ii) SPC interval ch
 -denominator: the number of patients with a RASS score of -3 to -4 
 xxxxxxxxxxxxxxxxxxxxxxxx
 **[C] Floorplan labelling**
-1) If latest CAM-ICU score reading = negative: 
+1) If latest CAM-ICU score reading = negative: ‘GREEN’; design = green filled bed 
+2) If latest CAM-ICU score reading = positive: ‘RED’; design = red filled bed 
+3) If latest CAM-ICU score ‘missing’: ‘missing’; design = white filled bed with red hashed outline
+4) If latest CAM-ICU score ‘not applicable’ as RASS score has fallen to -4--5: ‘not applicable’ design = white filled bed with blue hashed outline
 
 **[D] Classification Rules: Individual patient chart**
 
