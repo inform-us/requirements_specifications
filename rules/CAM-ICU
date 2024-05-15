@@ -38,10 +38,10 @@ Go through each metric in sequence and which charts this data feeds into.
 - Numerator = number of patients with a RASS score of -3 to +4 who have had at least one CAM-ICU score documented since the beginning of this shift 
 - Denominator = number of patients with a RASS score of -3 to +4 (*for at least two consecutive hours?*) this shift 
 **[A] CAM-ICU Percentage Completions Last Shift Front Tile**
-- calculate the number of patients with a RASS score of -3 to +4 (*for at least two consecutive hours?*) this shift (since 08:00 hours or 20:00 hours today) 
-- for each patient with a RASS score of -3 to +4 this shift, calculate the number who have at least one CAM-ICU score documented (positive or negative) this shift (since 08:00 hours or 20:00 hours today) 
-- Numerator = number of patients with a RASS score of -3 to +4 who have had at least one CAM-ICU score documented since the beginning of this shift 
-- Denominator = number of patients with a RASS score of -3 to +4 (*for at least two consecutive hours?*) this shift 
+- calculate the number of patients with a RASS score of -3 to +4 (*for at least two consecutive hours?*)  during the previous shift (previous shift 08:00 to 19:59 hours today or 20:00 to 07.59 hours yesterday) 
+- for each patient with a RASS score of -3 to +4 this shift, calculate the number who have at least one CAM-ICU score documented (positive or negative) during the previous shift (previous shift either 08:00 to 19.59 hours today or 20:00 to 07.59  hours yesterday) 
+- Numerator = number of patients with a RASS score of -3 to +4 who have had at least one CAM-ICU score documented during the previous shift 
+- Denominator = number of patients with a RASS score of -3 to +4 (*for at least two consecutive hours?*) during the previous shift 
 
 E.G. Feeds into (i) front tile - 24 hour rolling window and (ii) SPC interval charts.
 
