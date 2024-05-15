@@ -8,8 +8,8 @@ Rules for CAM-ICU Metric
 
 ## EPIC Flowsheets
 * ### ABC metric [ID XXXX for Group or summative score if applicable]
- - ABC metric - Row ID XXXX
--  ABC metric [component if applicable] - Row ID XXXX
+ - overall CAM-ICU- Row ID 3040104650
+-  Richmond Agitation Sedation Scale (RASS)- Row ID 3040104644
 
 ---
 
@@ -31,8 +31,9 @@ PDF - ABC metric user interface sequence
 
 Go through each metric in sequence and which charts this data feeds into. 
 
-**[A] ABC Measurement Interval**
-  
+**[A] CAM-ICU Measurement Interval Front Tile**
+  - calculate the number of patients with a RASS score of -3 to +4 this shift (since 08:00 hours or 20:00 hours today) 
+- calculate the number of overal_CAM-ICU score documented (postive or negative) 
 E.G. Feeds into (i) front tile - 24 hour rolling window and (ii) SPC interval charts.
   
 **[B]  ABC metric front tile calculation**
