@@ -5,6 +5,7 @@ Rules for CAM-ICU Metric
 - general information about metric (e.g. location, components, group or summative score etc)
 - metric output (e.g. numerical (integer / decimal), drop down, range selection, free text etc)
 - Are there corresponding targets?
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 ## EPIC Flowsheets
 * ### ABC metric [ID XXXX for Group or summative score if applicable]
@@ -50,7 +51,7 @@ E.G. Feeds into (i) front tile - 24 hour rolling window and (ii) SPC interval ch
 - calculate the number of patients with at least one positive CAM-ICU positive score in the last 24 hours 
 -numerator: the number of patients with positive CAM-ICU scores in the last 24 hours 
 -denominator: the number of patients with a RASS score of -3 to -4 
-
+xxxxxxxxxxxxxxxxxxxxxxxx
 **[C] Floorplan labelling**
 
 **[D] Classification Rules: Individual patient chart**
