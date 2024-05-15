@@ -1,4 +1,4 @@
-#CAM-ICU Delirium 
+# CAM-ICU Delirium 
 Rules for CAM-ICU Metric
 
 ## EPIC
@@ -18,7 +18,7 @@ PDF - ABC metric user interface sequence
 
 ## ELIGIBILITY 
 
-- which patients are eligible for this metric
+- All patients with a RASS score of -3 to +4 
 
 ## VALIDITY
 - for XYZ calculation (e.g. 1 hour epoch) used for which part of user interface (e.g. floorplan, individual chart & SPC)
