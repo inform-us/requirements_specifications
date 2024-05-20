@@ -23,7 +23,7 @@ PDF - ABC metric user interface sequence
 
 ## VALIDITY
 1) The CAM-ICU metric should be documented once per 12-hour shift
-2) 12- hour shifts are defined as 08:00-19:59 (day shift) and 20:00-07:59 (night shift)
+2) 12-hour shifts are defined as 08:00-19:59 (day shift) and 20:00-07:59 (night shift)
 3) Every CAM-ICU score set on a day shift (between 08:00-19:59) is valid until 20:00 hours or until a subsequent score is documented. 
 4) Every  CAM-ICU score set on a night shift (between 20:00-07:59) is valid until 08:00or until a subsequent score is documented. 
 5) Each CAM-ICU score therefore expires at 08:00 and 20:00 every day. 
@@ -57,12 +57,15 @@ PDF - ABC metric user interface sequence
 *The following feeds into the floorplans*
 
 **[C] Floorplan labelling**
-1) If latest CAM-ICU score reading = negative: ‘GREEN’; design = green filled bed 
-2) If latest CAM-ICU score reading = positive: ‘RED’; design = red filled bed 
-3) If latest CAM-ICU score ‘missing’: ‘missing’; design = white filled bed with red hashed outline
-4) If latest CAM-ICU score ‘not applicable’ as RASS score has fallen to -4- -5: ‘assessment not required’ design = white filled bed with blue hashed outline
+1) If latest CAM-ICU score reading this shift= negative: ‘GREEN’; design = green filled bed 
+2) If latest CAM-ICU score reading this shift = positive: ‘RED’; design = red filled bed 
+3) If there is no CAM-ICU score since the start of the shift (since 08:00 day or 20:00 night)  ‘missing’: ‘missing’; design = white filled bed with red hashed outline
+4) If latest CAM-ICU score not applicable as RASS score has fallen to -4- -5: ‘assessment not required (RASS is -5 or -4)’ design = white filled bed with blue hashed outline
+
+*The following feeds into the individual patient charts*
 
 **[D] Classification Rules: Individual patient chart**
+
 
 ---
 # [E] SPC CHARTS 
