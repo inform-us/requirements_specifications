@@ -67,6 +67,15 @@ PDF - ABC metric user interface sequence
 **[D] Classification Rules: Individual patient chart**
 
 
+1) X-axis time in hours, range 0-72 hours, default to 24 hours
+2) Y-axis left is CAM-ICU score divided into 'Positive' at top and 'Negative' at bottom.
+3) CAM-ICU score: 'POSITIVE' = delirium is present, 'NEGATIVE: delirium is not present
+4) Label all CAM-ICU scores as circles
+5) Plot all positive CAM-ICU scores on top half of chart as red filled circle
+6) Plot all positive CAM-ICU scores on bottom half of chart as green filled circle
+7) 'Missing' CAM-ICU scores shown as grey vertical bar with no data points
+8) CAM-ICU not required shown as grey tick on central dividing line 
+
 ---
 # [E] SPC CHARTS 
 
