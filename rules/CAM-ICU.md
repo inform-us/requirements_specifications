@@ -31,7 +31,7 @@ PDF - ABC metric user interface sequence
 
 ## CLASSIFICATION 
 
-Go through each metric in sequence and which charts this data feeds into. 
+*The following data feeds into (i) the text at the bottom of the CAM-ICU front tile and (ii) SPC CAM-ICU documentation chart*
 
 **[A] CAM-ICU Percentage Completions This Shift Front Tile**
   - calculate the number of patients with at least two consecutive RASS scores of -3 to +4 this shift (since 08:00 hours or 20:00 hours today) 
@@ -45,20 +45,22 @@ Go through each metric in sequence and which charts this data feeds into.
 - Numerator = number of patients with at least two consecutive RASS scores of -3 to +4 who have had at least one CAM-ICU score documented during the previous shift 
 - Denominator = number of patients with at least two consecutive RASS scores of -3 to +4 during the previous shift 
 
-E.G. Feeds into (i) front tile - 24 hour rolling window and (ii) SPC interval charts.
+*the following feeds into the (i) front tile - 24-hour rolling window and (ii) SPC patients with delirium chart*
 
 **[B]  overall CAM-ICU front tile calculation: Patients with Delirium in the last 24 hours**
 
-- calculate the number of patients with a RASS score of -3 to +4 (*for at least two consecutive hours?*) in the last 24 hours
-- calculate the number of patients with at least one positive CAM-ICU positive score in the last 24 hours 
+- calculate the number of patients with at least two consecutive RASS scores of -3 to +4 in the last 24 hours
+- calculate the number of patients with at least one positive CAM-ICU in the last 24 hours 
 -numerator: the number of patients with positive CAM-ICU scores in the last 24 hours 
--denominator: the number of patients with a RASS score of -3 to -4 
-xxxxxxxxxxxxxxxxxxxxxxxx
+-denominator: the number of patients with at least two consecutive RASS scores of -3 to +4 in the last 24 hours
+
+*The following feeds into the floorplans*
+
 **[C] Floorplan labelling**
 1) If latest CAM-ICU score reading = negative: ‘GREEN’; design = green filled bed 
 2) If latest CAM-ICU score reading = positive: ‘RED’; design = red filled bed 
 3) If latest CAM-ICU score ‘missing’: ‘missing’; design = white filled bed with red hashed outline
-4) If latest CAM-ICU score ‘not applicable’ as RASS score has fallen to -4--5: ‘not applicable’ design = white filled bed with blue hashed outline
+4) If latest CAM-ICU score ‘not applicable’ as RASS score has fallen to -4- -5: ‘assessment not required’ design = white filled bed with blue hashed outline
 
 **[D] Classification Rules: Individual patient chart**
 
