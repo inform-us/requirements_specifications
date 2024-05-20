@@ -19,29 +19,31 @@ PDF - ABC metric user interface sequence
 
 ## ELIGIBILITY 
 
-- All patients who have had a RASS score of -3 to +4 (for at least 2 consecutive hours?) 
+- All patients who have had at least two consecutive RASS scores of -3 to +4 this shift
 
 ## VALIDITY
-1) The CAM-ICU metric should be documented once per shift ie. once between 08:00-19:59 each day and once between 20:00-07:59 each day 
-2) Every CAM-ICU score set between 08:00-19:59 is valid until either 20:00 hours. 
-3) Every  CAM-ICU score set between 20:00-07:59 is valid until 08:00. 
-4) Each CAM-ICU score therefore expires at 08:00 and 20:00 every day. 
-5) Each documented CAM-ICU score can be superseded if an entry is updated or new entry is made during that shift, this will generate a new _dt stamp (more recent) and become the 'valid' entry
+1) The CAM-ICU metric should be documented once per 12-hour shift
+2) 12- hour shifts are defined as 08:00-19:59 (day shift) and 20:00-07:59 (night shift)
+3) Every CAM-ICU score set on a day shift (between 08:00-19:59) is valid until 20:00 hours or until a subsequent score is documented. 
+4) Every  CAM-ICU score set on a night shift (between 20:00-07:59) is valid until 08:00or until a subsequent score is documented. 
+5) Each CAM-ICU score therefore expires at 08:00 and 20:00 every day. 
+6) Each documented CAM-ICU score can be superseded if an entry is updated or new entry is made during that shift, this will generate a new _dt stamp (more recent) and become the 'valid' entry
 
 ## CLASSIFICATION 
 
 Go through each metric in sequence and which charts this data feeds into. 
 
 **[A] CAM-ICU Percentage Completions This Shift Front Tile**
-  - calculate the number of patients with a RASS score of -3 to +4 (*for at least two consecutive hours?*) this shift (since 08:00 hours or 20:00 hours today) 
-- for each patient with a RASS score of -3 to +4 this shift, calculate the number who have at least one CAM-ICU score documented (positive or negative) this shift (since 08:00 hours or 20:00 hours today) 
-- Numerator = number of patients with a RASS score of -3 to +4 who have had at least one CAM-ICU score documented since the beginning of this shift 
-- Denominator = number of patients with a RASS score of -3 to +4 (*for at least two consecutive hours?*) this shift 
+  - calculate the number of patients with at least two consecutive RASS scores of -3 to +4 this shift (since 08:00 hours or 20:00 hours today) 
+- for each patient with at least two consecutive RASS scores of -3 to +4 this shift, calculate the number who have at least one CAM-ICU score documented (positive or negative) this shift (since 08:00 hours or 20:00 hours today) 
+- Numerator = number of patients with at least 2 consecutive RASS scores of -3 to +4 who have had at least one CAM-ICU score documented since the beginning of this shift 
+- Denominator = number of patients with at least 2 consecutive RASS scores of -3 to +4 this shift (since 08:00 hours or 20:00 hours today) 
 **[A] CAM-ICU Percentage Completions Last Shift Front Tile**
-- calculate the number of patients with a RASS score of -3 to +4 (*for at least two consecutive hours?*)  during the previous shift 
-- for each patient with a RASS score of -3 to +4 this shift, calculate the number who have at least one CAM-ICU score documented (positive or negative) during the previous shift 
-- Numerator = number of patients with a RASS score of -3 to +4 who have had at least one CAM-ICU score documented during the previous shift 
-- Denominator = number of patients with a RASS score of -3 to +4 (*for at least two consecutive hours?*) during the previous shift 
+- IF the current time falls between 08:00-19:59 (day shift), calculate the number of patients with at least 2 consecutive RASS scores of -3 to +4 during the previous shift (20:00 yesterday to 07:59 today)
+-  IF the current time falls between 20:00-07:59 (night shift), calculate the number of patients with at least 2 consecutive RASS scores of
+ of -3 to +4 during the previous shift, calculate the number who have at least one CAM-ICU score documented (positive or negative) during the previous shift 
+- Numerator = number of patients with at least two consecutive RASS scores of -3 to +4 who have had at least one CAM-ICU score documented during the previous shift 
+- Denominator = number of patients with at least two consecutive RASS scores of -3 to +4 during the previous shift 
 
 E.G. Feeds into (i) front tile - 24 hour rolling window and (ii) SPC interval charts.
 
