@@ -35,6 +35,8 @@ PDF - ABC metric user interface sequence
 *The following data feeds into (i) the text at the bottom of the CAM-ICU front tile and (ii) SPC CAM-ICU documentation chart*
 
 **[A] CAM-ICU Percentage Completions This Shift Front Tile**
+![image](https://github.com/inform-us/requirements_specifications/assets/167782531/1281d06f-09e7-42ca-9d60-c2c03701a970)
+
   - calculate the number of patients with at least two consecutive RASS scores of -3 to +4 this shift (since 08:00 hours or 20:00 hours today) 
 - for each patient with at least two consecutive RASS scores of -3 to +4 this shift, calculate the number who have at least one CAM-ICU score documented (positive or negative) this shift (since 08:00 hours or 20:00 hours today) 
 - Numerator = number of patients with at least 2 consecutive RASS scores of -3 to +4 who have had at least one CAM-ICU score documented since the beginning of this shift 
@@ -50,10 +52,13 @@ PDF - ABC metric user interface sequence
 
 **[B]  overall CAM-ICU front tile calculation: Patients with Delirium in the last 24 hours**
 
+![image](https://github.com/inform-us/requirements_specifications/assets/167782531/e2b82308-a00b-45d6-a5fa-28b46eba09ea)
+
+
 - calculate the number of patients with at least two consecutive RASS scores of -3 to +4 in the last 24 hours
 - calculate the number of patients with at least one positive CAM-ICU in the last 24 hours 
--numerator: the number of patients with positive CAM-ICU scores in the last 24 hours 
--denominator: the number of patients with at least two consecutive RASS scores of -3 to +4 in the last 24 hours
+- Numerator: the number of patients with positive CAM-ICU scores in the last 24 hours 
+- Denominator: the number of patients with at least two consecutive RASS scores of -3 to +4 in the last 24 hours
 
 *The following feeds into the floorplans*
 
@@ -67,13 +72,15 @@ PDF - ABC metric user interface sequence
 
 **[D] Classification Rules: Individual patient chart**
 
+![image](https://github.com/inform-us/requirements_specifications/assets/167782531/cf4c8747-a8c1-40d4-971c-65a22ca4e4bf)
+
 
 1) X-axis time in hours, range 0-72 hours, default to 24 hours
-2) Y-axis left is CAM-ICU score divided into 'Positive' at top and 'Negative' at bottom.
+2) Y-axis left is CAM-ICU score divided into 'Positive' at top and 'Negative' at bottom
 3) CAM-ICU score: 'POSITIVE' = delirium is present, 'NEGATIVE: delirium is not present
 4) Label all CAM-ICU scores as circles
 5) Plot all positive CAM-ICU scores on top half of chart as red filled circle
-6) Plot all positive CAM-ICU scores on bottom half of chart as green filled circle
+6) Plot all negative CAM-ICU scores on bottom half of chart as green filled circle
 7) 'Missing' CAM-ICU scores shown as grey vertical bar with no data points
 8) CAM-ICU not required shown as grey tick on central dividing line 
 
