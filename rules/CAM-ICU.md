@@ -2,11 +2,11 @@
 Rules for CAM-ICU Metric
 
 ## EPIC
-- CAM-ICU metric is a binary score;
+- CAM-ICU metric is a binary score
 - The score is required on all patients that have at least two consecutive RASS scores of -3 to +4 every 12 hour shift.
 - The two possible outcomes for CAM-ICU score are positive or negative.
 - There are no targets for these variables
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
 
 ## EPIC Flowsheets
 * ### ABC metric [ID XXXX for Group or summative score if applicable]
