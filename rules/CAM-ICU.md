@@ -2,9 +2,10 @@
 Rules for CAM-ICU Metric
 
 ## EPIC
-- general information about metric (e.g. location, components, group or summative score etc)
-- metric output (e.g. numerical (integer / decimal), drop down, range selection, free text etc)
-- Are there corresponding targets?
+- CAM-ICU metric is a binary score;
+- The score is required on all patients that have at least two consecutive RASS scores of -3 to +4 every 12 hour shift.
+- The two possible outcomes for CAM-ICU score are positive or negative.
+- There are no targets for these variables
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 ## EPIC Flowsheets
@@ -25,7 +26,7 @@ PDF - ABC metric user interface sequence
 1) The CAM-ICU metric should be documented once per 12-hour shift
 2) 12-hour shifts are defined as 08:00-19:59 (day shift) and 20:00-07:59 (night shift)
 3) Every CAM-ICU score set on a day shift (between 08:00-19:59) is valid until 20:00 hours or until a subsequent score is documented. 
-4) Every  CAM-ICU score set on a night shift (between 20:00-07:59) is valid until 08:00or until a subsequent score is documented. 
+4) Every CAM-ICU score set on a night shift (between 20:00-07:59) is valid until 08:00or until a subsequent score is documented. 
 5) Each CAM-ICU score therefore expires at 08:00 and 20:00 every day. 
 6) Each documented CAM-ICU score can be superseded if an entry is updated or new entry is made during that shift, this will generate a new _dt stamp (more recent) and become the 'valid' entry
 
