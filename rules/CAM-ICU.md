@@ -3,20 +3,19 @@ Rules for CAM-ICU Metric
 
 ## EPIC
 - CAM-ICU metric is a binary score
-- The score is required on all patients that have at least two consecutive RASS scores of -3 to +4 every 12 hour shift.
+- The score is required on all patients that have at least two consecutive RASS scores of -3 to +4 during any 12-hour shift.
 - The two possible outcomes for CAM-ICU score are positive or negative.
-- There are no targets for these variables
-
+- A positive score denotes that a patient has delirium, a negative score denotes that a patient does not have delirium. 
+- There are no targets for these variables, however we endeavour clinically to have as few positive scores as we can. 
 
 ## EPIC Flowsheets
-* ### ABC metric [ID XXXX for Group or summative score if applicable]
  - overall CAM-ICU- Row ID 3040104650
 -  Richmond Agitation Sedation Scale (RASS)- Row ID 3040104644
 
 ---
 
 ---
-PDF - ABC metric user interface sequence
+PDF - ABC metric user interface sequence 
 
 ## ELIGIBILITY 
 
@@ -35,7 +34,6 @@ PDF - ABC metric user interface sequence
 *The following data feeds into (i) the text at the bottom of the CAM-ICU front tile and (ii) SPC CAM-ICU documentation chart*
 
 **[A] CAM-ICU Percentage Completions This Shift Front Tile**
-![image](https://github.com/inform-us/requirements_specifications/assets/167782531/1281d06f-09e7-42ca-9d60-c2c03701a970)
 
   - calculate the number of patients with at least two consecutive RASS scores of -3 to +4 this shift (since 08:00 hours or 20:00 hours today) 
 - for each patient with at least two consecutive RASS scores of -3 to +4 this shift, calculate the number who have at least one CAM-ICU score documented (positive or negative) this shift (since 08:00 hours or 20:00 hours today) 
@@ -52,27 +50,31 @@ PDF - ABC metric user interface sequence
 
 **[B]  overall CAM-ICU front tile calculation: Patients with Delirium in the last 24 hours**
 
-![image](https://github.com/inform-us/requirements_specifications/assets/167782531/e2b82308-a00b-45d6-a5fa-28b46eba09ea)
-
 
 - calculate the number of patients with at least two consecutive RASS scores of -3 to +4 in the last 24 hours
 - calculate the number of patients with at least one positive CAM-ICU in the last 24 hours 
 - Numerator: the number of patients with positive CAM-ICU scores in the last 24 hours 
 - Denominator: the number of patients with at least two consecutive RASS scores of -3 to +4 in the last 24 hours
 
-*The following feeds into the floorplans*
 
+
+![image](https://github.com/inform-us/requirements_specifications/assets/167782531/e2b82308-a00b-45d6-a5fa-28b46eba09ea)
+
+*The following feeds into the floorplans*
 **[C] Floorplan labelling**
+
 1) If latest CAM-ICU score reading this shift= negative: ‘GREEN’; design = green filled bed 
 2) If latest CAM-ICU score reading this shift = positive: ‘RED’; design = red filled bed 
 3) If there is no CAM-ICU score since the start of the shift (since 08:00 day or 20:00 night)  ‘missing’: ‘missing’; design = white filled bed with red hashed outline
 4) If latest CAM-ICU score not applicable as RASS score has fallen to -4- -5: ‘assessment not required (RASS is -5 or -4)’ design = white filled bed with blue hashed outline
 
+![image](https://github.com/inform-us/requirements_specifications/assets/167782531/1281d06f-09e7-42ca-9d60-c2c03701a970)
+
 *The following feeds into the individual patient charts*
 
 **[D] Classification Rules: Individual patient chart**
 
-![image](https://github.com/inform-us/requirements_specifications/assets/167782531/cf4c8747-a8c1-40d4-971c-65a22ca4e4bf)
+
 
 
 1) X-axis time in hours, range 0-72 hours, default to 24 hours
@@ -83,6 +85,8 @@ PDF - ABC metric user interface sequence
 6) Plot all negative CAM-ICU scores on bottom half of chart as green filled circle
 7) 'Missing' CAM-ICU scores shown as grey vertical bar with no data points
 8) CAM-ICU not required shown as grey tick on central dividing line 
+
+![image](https://github.com/inform-us/requirements_specifications/assets/167782531/cf4c8747-a8c1-40d4-971c-65a22ca4e4bf)
 
 ---
 # [E] SPC CHARTS 
