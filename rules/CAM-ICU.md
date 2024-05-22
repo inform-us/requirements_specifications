@@ -38,8 +38,9 @@ PDF - ABC metric user interface sequence
   - calculate the number of patients with at least two consecutive RASS scores of -3 to +4 this shift (since 08:00 hours or 20:00 hours today) 
 - for each patient with at least two consecutive RASS scores of -3 to +4 this shift, calculate the number who have at least one CAM-ICU score documented (positive or negative) this shift (since 08:00 hours or 20:00 hours today) 
 - Numerator = number of patients with at least 2 consecutive RASS scores of -3 to +4 who have had at least one CAM-ICU score documented since the beginning of this shift 
-- Denominator = number of patients with at least 2 consecutive RASS scores of -3 to +4 this shift (since 08:00 hours or 20:00 hours today) 
-**[A] CAM-ICU Percentage Completions Last Shift Front Tile**
+- Denominator = number of patients with at least 2 consecutive RASS scores of -3 to +4 this shift (since 08:00 hours or 20:00 hours today)
+  
+**[B] CAM-ICU Percentage Completions Last Shift Front Tile**
 - IF the current time falls between 08:00-19:59 (day shift), calculate the number of patients with at least 2 consecutive RASS scores of -3 to +4 during the previous shift (20:00 yesterday to 07:59 today)
 -  IF the current time falls between 20:00-07:59 (night shift), calculate the number of patients with at least 2 consecutive RASS scores of
  of -3 to +4 during the previous shift, calculate the number who have at least one CAM-ICU score documented (positive or negative) during the previous shift 
@@ -75,8 +76,6 @@ PDF - ABC metric user interface sequence
 **[D] Classification Rules: Individual patient chart**
 
 
-
-
 1) X-axis time in hours, range 0-72 hours, default to 24 hours
 2) Y-axis left is CAM-ICU score divided into 'Positive' at top and 'Negative' at bottom
 3) CAM-ICU score: 'POSITIVE' = delirium is present, 'NEGATIVE: delirium is not present
@@ -96,7 +95,7 @@ PDF - ABC metric user interface sequence
 1. A day shift is defined as 08:00-19:59 on one day
 2. A night shift is defined as 20:00-07:59 on one day
 3. Calendar day defined as 00:00 - 23:59
-4. Shift week is defined as Monday 08:00 – Monday 17:59
+4. Shift week is defined as Monday 08:00 – Monday 07:59
 5. There are fourteen shifts in every week
 6. These charts are weekly percentage (p-charts)
   
