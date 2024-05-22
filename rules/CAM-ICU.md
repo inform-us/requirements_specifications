@@ -89,20 +89,39 @@ PDF - ABC metric user interface sequence
 ![image](https://github.com/inform-us/requirements_specifications/assets/167782531/cf4c8747-a8c1-40d4-971c-65a22ca4e4bf)
 
 ---
-# [E] SPC CHARTS 
+# [E] SPC CHARTS -below is a working draft.... !
 
 **CAM-ICU SPC CHARTS (refer to XYZ metric in classification**
 
-1. Calendar day defined as 00:00 - 23:59
-2. Week defined as Monday 00:00 – Sunday 23:59
+1. A day shift is defined as 08:00-19:59 on one day
+2. A night shift is defined as 20:00-07:59 on one day
+3. Calendar day defined as 00:00 - 23:59
+4. Shift week is defined as Monday 08:00 – Monday 17:59
+5. There are fourteen shifts in every week
+6. These charts are weekly percentage (p-charts)
   
-## Chart 1 [Patient chart] 
-**Proportion of moderate or severe pain scores – weekly chart**
+## Chart 1a and 1b [Patient chart] 
+**Proportion of eligible patients with positive CAM-ICU scores (day and night shifts)– weekly chart**
 
-Operational definition = of the documented pain scores in EPIC, what proportion are moderate or severe on a weekly basis? 
+Operational definition = out of all patients with at least two consecutive RASS scores of -3 to +4 in a shift what proportion of patients have at least one positive CAM-ICU score on a weekly basis? 
+
+1. Break the week down into fourteen 12-hour shift epochs, seven 08:00-19:59 and seven 20:00-07:59. 
+2. For every 12-hour day shift epoch (08:00-19:59), calculate the number of patients with at least two consecutive RASS scores of -3 to +4 in the shift epoch
+3. For each of these patients, calculate the number that have had at least one positive CAM-ICU score documented
+4. Repeat seven times for each 12-hour day shift epoch
+5. Numerator= number of patients with at least one positive CAM-ICU score documented per each shift epoch
+6. Denominator= number of patients with at least ttwo consecutive RASS scores of -3 to +4 per each shift epoch
+7. Sum seven numerators
+8. Sum seven denominators
+9. Denote as percentage
 
    
-**Chart 2**
+## Chart 2 [CAM-ICU documentation chart]
+**Proportion of CAM-ICU scores done once per shift as per guidelines**
+
+Operational definition = out of all patients with at least two consecutive RASS scores of -3 to +4 in a shift, what proportion of these patients have at least one CAM-ICU documented per shift?
+
+1) For each shift
 
 1. These are weekly percentage (p-charts) SPC
-2. Week defined a Monday 00:00 – Sunday 23:59
+
