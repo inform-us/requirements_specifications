@@ -26,3 +26,22 @@
 | Epidural drugs | PCEA theatres bupivacaine 0.1% epidural infusion (aka EPIDURAL) | 408107895 |
 | Epidural drugs | PCEA theatres bupivacaine 0.1% with fentanyl 2mcg/ml epidural infusion (aka EPIDURAL) | 408107894 |
 | | |
+| Airway | ETT| 400655 |
+| Airway | Surgical Airway | 7070173 |
+| Airway | Supraglottic Airway | 1120100089 |
+| Airway | Airway plan | 23864 |
+| | | 
+| PACU | Ready for discharge | 41222 |
+| PACU | Post op surgical | 1169 |
+| PACU | Fluid intake | 42532 |
+| PACU | Oral Fluids Offered | 6374 |
+| PACU | Fluid intake | 45429 |
+| PACU | Nutritional intake | 42701 |
+| PACU | Food offered | 6375 |
+| PACU | Diet Intake | 6482 |
+| PACU | Amount Eaten | 6484 |
+| PACU | Mobilisation | 42700 |
+| PACU | Mobilisation achieved by patient | 40705 |
+| PACU | Distance walked | 42533 | 
+| PACU | Step count | 44741 |
+| | |
