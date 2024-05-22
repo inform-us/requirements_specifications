@@ -87,7 +87,7 @@ PDF - ABC metric user interface sequence
 ---
 # [E] SPC CHARTS 
 
-**ABC SPC CHARTS (refer to XYZ metric in classification**
+**CAM-ICU SPC CHARTS (refer to XYZ metric in classification**
 
 1. Calendar day defined as 00:00 - 23:59
 2. Week defined as Monday 00:00 – Sunday 23:59
