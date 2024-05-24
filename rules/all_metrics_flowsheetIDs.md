@@ -1,5 +1,7 @@
 ## List of all existing and upcoming inform_us metrics and their corresponding flowsheet IDs in EPIC ##
 
+James ran some EMAP queries for all of the below flowsheet ID's on 24.05.2024. I added a final column to the table to indicate what the results of the queries were. ❌ indicates that no data at all was returned, while ✅ indicates that I successfully got data back for patients that were currently on the unit.
+
 | Tile | Metric | Flowsheet ID | data available in EMAP? |
 |-|-|-|-|
 | CAM -ICU | Feature 1: Acute Onset or Fluctuating Course | 3040104645 | ❌ |
