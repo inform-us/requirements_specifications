@@ -1,26 +1,52 @@
-# RASS rules
-Rules for RASS (sedation/agitation) metric
+|File .md signed_off|Code review|Production|Outstanding|
+|---|---|---|---|
+|no - 01/01/01|- pending code review|no|- abc <br> - def|
+
+# SEDATION rules
+
+Rules for SEDATION (on mechanical ventilation) metric, measured using the RASS scale (sedation/agitation)
 
 ## EPIC
 - The degree of sedation and conversely agitation are measured by the Richmond Agitation Sedation Score (RASS)
-- This runs on 10 point scale from (agitated) +4/+3/+2/+1/-/-1/-2/-3/-4/-5 (sedated)
-- RASS scale value is an integer (EPIC will allow free text!)
+- For the purposes of the RASS metric tile, we are particularly interested in oversedation on mechanical ventilation (i.e. a score more negative than the target set) which has a detrimental impact on length of stay, morbidity & mortality, hence the eligibility criteria include 'is_ventilated' & 'is_sedated')
+- RASS runs on 10 point scale from (agitated) +4/+3/+2/+1/-/-1/-2/-3/-4/-5 (sedated) - *see table below*
+- RASS scale value is an integer (note EPIC will allow free text!)
+- RASS charting frequency differs during the day and night: <br> RASS_frequency_DAY: day defined as 06:00:00 - 21:59:59 - hourly as per guideline <br> RASS_frequency_NIGHT: night defined as 22:00:00 - 05:59:59 - 4 hourly as per guideline
 - Individual patient targets are set on a daily basis [see targets.md](./targets.md#ELIGIBILITY)
-- For the purposes of the RASS metric tile, we are interested in oversedation on mechanical ventilation (i.e. a score more negative than the target set), hence the eligibility criteria include 'is_ventilated' & 'is_sedated')
+- The function of the SEDATION_metric is twofold: <br> (1) measurement interval - a RASS charting frequency within guidleines <br> (2) achieving set RASS target
+
+___
+**The Richmond Agitation Sedation Score**
+|Description|Term|Score|
+|---|---|---|
+|Overtly combative or violent; immediate danger to staff|Combative|+4|
+|Pulls on or removes tube(s) or catheter(s) or has aggressive behavior toward staff|Very agitated|+3|
+|Frequent nonpurposeful movement or patient–ventilator dyssynchrony|Agitated|+2|
+|Anxious or apprehensive but movements not aggressive or vigorous|Restless|+1|
+|Spontaneously pays attention to caregiver|Alert and calm|0|
+|Not fully alert, but has sustained (more than 10 seconds) awakening, with eye contact, to voice|Drowsy|-1|
+|Briefly (less than 10 seconds) awakens with eye contact to voice|Light sedation|-2|
+|Any movement (but no eye contact) to voice|Moderate sedation|-3|
+|No response to voice, but any movement to physical stimulation|Deep sedation|-4|
+|No response to voice or physical stimulation|Unarousable|-5|
+___
 
 ## EPIC Flowshets XXX
 - epic flowsheet
 - componenet
 - no overall score
 
-XXX
+[SEDATION_user interface sequence .pdf](https://github.com/inform-us/requirements_specifications/files/15480198/SEDATION_user.interface.sequence.pdf)
 
+## ELIGIBILITY
+1. Patient (i) on mechanical ventilation AND (ii) receiving sedative drugs
 
 ## Validity (time window) Rules: 
 1. O2 delivery only valid if o2delivery_dt within last 6 hours of epoch 
 2. RASS score only valid if rass_dt within last 4 hours of epoch_dt 
 3. 8:00 - 12:00 RASS Target Validity rule 
 
+XXX
 
 ## Classification Rules: (corresponds to the per patient chart) 
 
