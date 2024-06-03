@@ -121,14 +121,14 @@ Operational definition = out of all patients with at least two consecutive RASS 
 Operational definition = out of all patients with at least two consecutive RASS scores of -3 to +4 in a shift, what proportion of these patients have at least one CAM-ICU documented per shift?
 
 1) Break the week down into fourteen 12-hour shift epochs, seven 08:00-19:59 and seven 20:00-07:59. 
-2. For every 12-hour day shift epoch (08:00-19:59), calculate the number of patients with at least two consecutive RASS scores of -3 to +4 in the shift epoch
-3. For each of these patients, calculate the number that have had at least one CAM-ICU score documented
-4. Repeat seven times for each 12-hour day shift epoch
-5. Numerator= number of patients with at least one CAM-ICU score documented per each shift epoch
-6. Denominator= number of patients with at least two consecutive RASS scores of -3 to +4 per each shift epoch
-7. Sum seven numerators
-8. Sum seven denominators
-9. Denote as percentage
+2) For every 12-hour day shift epoch (08:00-19:59), calculate the number of patients with at least two consecutive RASS scores of -3 to +4 in the shift epoch
+3) For each of these patients, calculate the number that have had at least one CAM-ICU score documented
+4) Repeat seven times for each 12-hour day shift epoch
+5) Numerator= number of patients with at least one CAM-ICU score documented per each shift epoch
+6) Denominator= number of patients with at least two consecutive RASS scores of -3 to +4 per each shift epoch
+7) Sum seven numerators
+8) Sum seven denominators
+9) Denote as percentage
 
 
 1. These are weekly percentage (p-charts) SPC
