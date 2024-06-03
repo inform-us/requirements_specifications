@@ -49,13 +49,13 @@ James ran some EMAP queries for all of the below flowsheet ID's on 24.05.2024. I
 | PACU | Step count | 44741 | ❌ |
 | | | |
 
-## Trimmed down list of minimum Flowsheet IDs needed for next metrics on dashboard##
+## Trimmed down list of minimum Flowsheet IDs needed for next metrics on dashboard ##
 
-| Tile | Metric | Flowsheet ID | data available in EMAP? | Expected frequency of documentation (according to guideline)
-|-|-|-|-|
-| CAM-ICU | Overall CAM-ICU | 3040104650 | ✅ | Documented once per 12-hour shift (once between 0800-1959 and once between 2000-0759)|
+| Tile | Metric | Flowsheet ID | data available in EMAP? | Expected frequency of documentation according to guideline |**
+|-|-|-|-|-|
+| CAM-ICU | Overall CAM-ICU | 3040104650 | ✅ | Documented once between 0800-1959 and once between 2000-0759|
 | | | |
-| Epidural | Level of Block (Left side) | 38580 | ❌ | Documented two hourly 0800-2000 and four hourly 2001-0759 |
+| Epidural | Level of Block (Left side) | 38580 | ❌ | Documented two hourly between 0800-2000 and four hourly between 2001-0759 |
 | Epidural | Level of Block (Right side) | 38581 | ❌ | Documented two hourly 0800-2000 and four hourly 2001-0759 |
 | Epidrual | Assessment of Motor Block Lt leg | 30415249 | ❌ | Documented two hourly 0800-2000 and four hourly 2001-0759 |
 | Epidural | Assessment of Motor Block Rt leg | 30415250 | ❌ | Documented two hourly 0800-2000 and four hourly 2001-0759 |
@@ -78,7 +78,7 @@ James ran some EMAP queries for all of the below flowsheet ID's on 24.05.2024. I
 | Airway | Supraglottic Airway | 1120100089 | ❌ |
 | Airway | Airway plan | 23864 | ❌ |
 | | | | 
-| PACU | Ready for discharge | 41222 | ✅ |
+| PACU | Ready for discharge | 41222 | ✅ | Real time |
 | PACU | Post op surgical | 1169 | ❌ |
 | PACU | Fluid intake | 42532 | ❌ |
 | PACU | Oral Fluids Offered | 6374 | ❌ |
