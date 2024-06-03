@@ -120,7 +120,8 @@ Operational definition = out of all patients with at least two consecutive RASS 
 
 Operational definition = out of all patients with at least two consecutive RASS scores of -3 to +4 in a shift, what proportion of these patients have at least one CAM-ICU documented per shift?
 
-1) For each shift
+1) For each shift, calculate the number of patients with at least two consecutive RASS scores of -3 to +4 in a shift
+2) 
 
 1. These are weekly percentage (p-charts) SPC
 
