@@ -26,16 +26,16 @@ James ran some EMAP queries for all of the below flowsheet ID's on 24.05.2024. I
 | Epidural drugs | PCEA theatres bupivacaine 0.1% with fentanyl 2mcg/ml epidural infusion (aka EPIDURAL) | 408107894 | ❌ | hourly
 | | | |
 
-| Airway | Airway plan - *do they have an airway plan?*| 23864 | ❌ | 
+| Airway | Airway plan - *do they have an airway plan?*| 23864 | ❌ | once per admission
 | Airway | ETT| 400655 -*on avatar* | ❌ | 
-| Airway | Surgical Airway- *surgical trache* | 7070173 | ❌ | 
-| Airway | Supraglottic Airway- *trache* | 1120100089 | ❌ | 
-| Airway | Non-surgical Airway - |*trache placed without surgery* | 400638 | 
+| Airway | Surgical Airway- *surgical trache* | 7070173 | ❌ | once 
+| Airway | Supraglottic Airway- *trache* | 1120100089 | ❌ |  once 
+| Airway | Non-surgical Airway - |*trache placed without surgery* | 400638 |  once 
 | | | | 
-| PACU | Ready for discharge | 41222 | ✅ |
-| PACU | Fluid intake | 45429 | ❌ |
-| PACU | Diet Intake *type of diet patient is on* | 6482 | ❌ |
-| PACU | Amount Eaten | 6484 | ❌ |
-| PACU | Mobilisation achieved by patient *scale of mobilising from none to walking independently* | 40705 | ❌ |
+| PACU | Ready for discharge | 41222 | ✅ | real-time
+| PACU | Fluid intake | 45429 | ❌ | real-time
+| PACU | Diet Intake *type of diet patient is on* | 6482 | ❌ | real-time
+| PACU | Amount Eaten | 6484 | ❌ | real-time
+| PACU | Mobilisation achieved by patient *scale of mobilising from none to walking independently* | 40705 | ❌ | real-time
 | | | |
 
