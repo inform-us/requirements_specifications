@@ -107,7 +107,7 @@ Operational definition = out of all patients with at least two consecutive RASS 
 ## Chart 1a 
 **Weekly Percentage of positive CAM-ICU scores (day shift)**
 1. Break the week down into fourteen 12-hour shift epochs, seven 08:00-19:59 and seven 20:00-07:59. 
-2. For each 12-hour day shift epoch (08:00-19:59), calculate the number of patients with at least two consecutive RASS scores of -3 to +4 in the shift epoch
+2. For each 12-hour day shift epoch (08:00-19:59), calculate the number of patients with at least two consecutive RASS scores of -3 to +4 at least one of which is in this shift
 3. For each every 12-hour day shift epoch, calculate the number of patients that have had at least one positive CAM-ICU score documented that shift
    - Numerator = number of patients that have had at least one positive CAM-ICU score documented each day shift
    - Denominator =  number of patients with at least two consecutive RASS scores of -3 to +4 in each day shift 
@@ -116,10 +116,10 @@ Operational definition = out of all patients with at least two consecutive RASS 
 7. Sum all day shift percentages, divide by seven. Denote as percentage. This is the weekly percentage of positive CAM-ICU scores (day shift).
 ## Chart 1b 
 **Weekly Percentage of positive CAM-ICU scores (night shift)**
-1. For each 12-hour night shift epoch (20:00-07:59), calculate the number of patients with at least two consecutive RASS scores of -3 to +4 in the night shift epoch
+1. For each 12-hour night shift epoch (20:00-07:59), calculate the number of patients with at least two consecutive RASS scores of -3 to +4, at least one of which is in this shift
 3. For each every 12-hour night shift epoch, calculate the number of patients that have had at least one positive CAM-ICU score documented that shift
    - Numerator = number of patients that have had at least one positive CAM-ICU score documented each night shift
-   - Denominator =  number of patients with at least two consecutive RASS scores of -3 to +4 in each night shift 
+   - Denominator =  number of patients with at least two consecutive RASS scores of -3 to +4 
 5. Divide step 3 number by step 2 number. Denote as percentage. This is the shift's percentage of positive CAM-ICU scores (night shift)
 6. Repeat steps 2-4 seven times for each 12-hour night shift epoch in the week
 7. Sum all night shift percentages, divide by seven. Denote as percentage. This is the average weekly percentage of positive CAM-ICU scores (night shift).
@@ -130,9 +130,9 @@ Operational definition = out of all patients with at least two consecutive RASS 
 Operational definition = out of all patients with at least two consecutive RASS scores of -3 to +4 in a shift, what proportion of these patients have at least one CAM-ICU documented per shift on a weekly basis?
 
 1) Break the week down into fourteen 12-hour shift epochs, seven 08:00-19:59 and seven 20:00-07:59. 
-2) For each 12-hour day shift epoch (08:00-19:59), calculate the number of patients with at least two consecutive RASS scores of -3 to +4 in the shift epoch
+2) For each 12-hour day shift epoch (08:00-19:59), calculate the number of patients with at least two consecutive RASS scores of -3 to +4, at least one of which is in this shift
 3) For each every 12-hour day shift epoch, calculate the number of patients that have had at least one positive CAM-ICU score documented that shift
-4)  For each 12-hour night shift epoch (08:00-19:59), calculate the number of patients with at least two consecutive RASS scores of -3 to +4 in the shift epoch
+4)  For each 12-hour night shift epoch (08:00-19:59), calculate the number of patients with at least two consecutive RASS scores of -3 to +4 
 5)  For each every 12-hour night shift epoch, calculate the number of patients that have had at least one positive CAM-ICU score documented that shift
    -  Numerator = number of patients that have had at least one CAM-ICU score documented each shift
    -  Denominator =  number of patients with at least two consecutive RASS scores of -3 to +4 in each shift
