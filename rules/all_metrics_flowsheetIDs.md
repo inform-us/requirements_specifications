@@ -24,18 +24,17 @@ James ran some EMAP queries for all of the below flowsheet ID's on 24.05.2024. I
 | Epidural drugs | Levobupivacaine 0.125% epidural infusion 200ml | 181762 | ❌ | hourly
 | Epidural drugs | PCEA theatres bupivacaine 0.1% epidural infusion (aka EPIDURAL) | 408107895 | ❌ | hourly
 | Epidural drugs | PCEA theatres bupivacaine 0.1% with fentanyl 2mcg/ml epidural infusion (aka EPIDURAL) | 408107894 | ❌ | hourly
-| | | |
-
+| | | | |
 | Airway | Airway plan - *do they have an airway plan?*| 23864 | ❌ | once per admission
-| Airway | ETT| 400655 -*on avatar* | ❌ | 
+| Airway | ETT-*on avatar* | 400655 | ❌ | 
 | Airway | Surgical Airway- *surgical trache* | 7070173 | ❌ | once 
 | Airway | Supraglottic Airway- *trache* | 1120100089 | ❌ |  once 
-| Airway | Non-surgical Airway - |*trache placed without surgery* | 400638 |  once 
-| | | | 
+| Airway | Non-surgical Airway - *trache placed without surgery* | 400638 | | once 
+| | | | |
 | PACU | Ready for discharge | 41222 | ✅ | real-time
 | PACU | Fluid intake | 45429 | ❌ | real-time
-| PACU | Diet Intake *type of diet patient is on* | 6482 | ❌ | real-time
+| PACU | Diet Intake - *type of diet patient is on* | 6482 | ❌ | real-time
 | PACU | Amount Eaten | 6484 | ❌ | real-time
-| PACU | Mobilisation achieved by patient *scale of mobilising from none to walking independently* | 40705 | ❌ | real-time
-| | | |
+| PACU | Mobilisation achieved by patient - *scale of mobilising from none to walking independently* | 40705 | ❌ | real-time
+| | | | |
 
