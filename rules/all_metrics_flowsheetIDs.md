@@ -25,7 +25,9 @@ James ran some EMAP queries for all of the below flowsheet ID's on 24.05.2024. I
 | Epidural drugs | PCEA theatres bupivacaine 0.1% epidural infusion (aka EPIDURAL) | 408107895 | ❌ | hourly
 | Epidural drugs | PCEA theatres bupivacaine 0.1% with fentanyl 2mcg/ml epidural infusion (aka EPIDURAL) | 408107894 | ❌ | hourly
 | | | | |
-| Airway | Airway plan - *do they have an airway plan?*| 23864 | ❌ | once per admission
+| Airway | Airway plan| 24499 | ❌ | once per admission
+| Airway| Intubation grade| 37950
+| Airway| Das Generic Airway Plan| 24498
 | Airway | ETT-*on avatar* | 400655 | ❌ | 
 | Airway | Surgical Airway- *surgical trache* | 7070173 | ❌ | once 
 | Airway | Supraglottic Airway- *trache* | 1120100089 | ❌ |  once 
