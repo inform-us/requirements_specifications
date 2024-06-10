@@ -1,6 +1,9 @@
 # List of all existing and upcoming inform_us metrics and their corresponding flowsheet IDs in EPIC ##
 
-James ran some EMAP queries for all of the below flowsheet ID's on 24.05.2024. I added a final column to the table to indicate what the results of the queries were. ❌ indicates that no data at all was returned, while ✅ indicates that I successfully got data back for patients that were currently on the unit.
+Query ran: 2024/06/10
+
+- `has_visit_observation` ✅ indicates that data is available in EPIC and is pulled through to EMAP `star`. Items with ✅ in this column but not in `is_real_time` can be added to the HL7 feed to provide real-time data.
+- `is_real_time` ✅ shows whether real-time data is available in EMAP.
 
 | Tile | Metric | Flowsheet ID | `has_visit_observation` is `True` | `is_real_time` is `True`  |frequency of reporting | Found in `star.visit_observation_type` |
 |-|-|-|-|-|-|-|
