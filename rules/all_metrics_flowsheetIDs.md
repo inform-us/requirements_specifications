@@ -2,7 +2,7 @@
 
 James ran some EMAP queries for all of the below flowsheet ID's on 24.05.2024. I added a final column to the table to indicate what the results of the queries were. ❌ indicates that no data at all was returned, while ✅ indicates that I successfully got data back for patients that were currently on the unit.
 
-| Tile | Metric | Flowsheet ID | `has_visit_observation` is `True` | `is_real_time` is `True`  |frequency of reporting | Has entry in `star_visit_observation_type` |
+| Tile | Metric | Flowsheet ID | `has_visit_observation` is `True` | `is_real_time` is `True`  |frequency of reporting | Found in `star.visit_observation_type` |
 |-|-|-|-|-|-|-|
 | CAM-ICU | Overall CAM-ICU | 3040104650 | ✅ | ❌ | Once between 0800-1959 and once between 2000-0759 | ✅ |
 | | | | | | | |
