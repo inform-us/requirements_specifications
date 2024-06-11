@@ -3,11 +3,11 @@ Rules for CAM-ICU Metric
 
 ## EPIC
 - CAM-ICU metric is a binary score
-- The score is required on all patients that have at least two consecutive RASS scores of -3 to +4 during any 12-hour shift.
+- The score is required on all patients that have at least two consecutive RASS scores (or forward filled RASS scores) of -3 to +4 during any 12-hour shift.
 - The two possible outcomes for CAM-ICU score are positive or negative.
 - A positive score denotes that a patient has delirium, a negative score denotes that a patient does not have delirium. 
 - There are no targets for these variables, however we endeavour clinically to have as few positive scores as we can. 
-
+EPOCHS 
 ## EPIC Flowsheets
  - overall CAM-ICU- Row ID 3040104650
 -  Richmond Agitation Sedation Scale (RASS)- Row ID 3040104644
@@ -25,7 +25,7 @@ PDF - ABC metric user interface sequence
 1) The CAM-ICU metric should be documented once per 12-hour shift
 2) 12-hour shifts are defined as 08:00-19:59 (day shift) and 20:00-07:59 (night shift)
 3) Every CAM-ICU score set on a day shift (between 08:00-19:59) is valid until 20:00 hours or until a subsequent score is documented. 
-4) Every CAM-ICU score set on a night shift (between 20:00-07:59) is valid until 08:00or until a subsequent score is documented. 
+4) Every CAM-ICU score set on a night shift (between 20:00-07:59) is valid until 08:00 or until a subsequent score is documented. 
 5) Each CAM-ICU score therefore expires at 08:00 and 20:00 every day. 
 6) Each documented CAM-ICU score can be superseded if an entry is updated or new entry is made during that shift, this will generate a new _dt stamp (more recent) and become the 'valid' entry
 
@@ -102,15 +102,15 @@ PDF - ABC metric user interface sequence
 ## Chart 1a and 1b [Patient chart] 
 **Percentage of eligible patients with positive CAM-ICU scores (day and night shifts)– weekly chart**
 
-Operational definition = out of all patients with at least two consecutive RASS scores of -3 to +4 in a shift what proportion of patients have at least one positive CAM-ICU score on a weekly basis? 
+Operational definition = out of all patients with at least two consecutive RASS scores (or forward filled scores) of -3 to +4 what proportion of patients have at least one positive CAM-ICU score during day and night shifts on a weekly basis? 
 
 ## Chart 1a 
 **Weekly Percentage of positive CAM-ICU scores (day shift)**
 1. Break the week down into fourteen 12-hour shift epochs, seven 08:00-19:59 and seven 20:00-07:59. 
 2. For each 12-hour day shift epoch (08:00-19:59), calculate the number of patients with at least two consecutive RASS scores of -3 to +4 at least one of which is in this shift
-3. For each every 12-hour day shift epoch, calculate the number of patients that have had at least one positive CAM-ICU score documented that shift
+3. For each 12-hour day shift epoch, calculate the number of patients that have had at least one positive CAM-ICU score documented that shift
    - Numerator = number of patients that have had at least one positive CAM-ICU score documented each day shift
-   - Denominator =  number of patients with at least two consecutive RASS scores of -3 to +4 in each day shift 
+   - Denominator =  number of patients with at least two consecutive RASS scores of -3 to +4 one of which is in each day shift
 5. Divide step 3 number by step 2 number. Denote as percentage. This is the shift's percentage of positive CAM-ICU scores (day shift)
 6. Repeat steps 2-4 seven times for each 12-hour day shift epoch in the week
 7. Sum all day shift percentages, divide by seven. Denote as percentage. This is the weekly percentage of positive CAM-ICU scores (day shift).
