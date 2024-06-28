@@ -1,4 +1,4 @@
-# CAM-ICU Delirium 
+# Delirium CAM-ICU 
 Rules for CAM-ICU Metric
 
 ## EPIC
