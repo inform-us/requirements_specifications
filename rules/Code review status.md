@@ -12,4 +12,3 @@ Sedation RASS|yes||||
 SpO2|yes||||
 Tidal Volume|yes||||
 Validity|||||
-SPC mean process limits recalculation|||||
