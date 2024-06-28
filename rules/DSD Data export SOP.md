@@ -6,13 +6,16 @@ DBForge is a programme for looking at databases
 
 *Note There is a wiki about DB forge access called common tasks and how tos on the git hub repository. Lots of other common tasks too.*
 *This is also on Read me on Repo uclvldddtaeps02.xuclh.nhs.uk*
-![image](
+
 --------
 
 * On the NHS desktops you need to start with citrix login which is on the bottom right hand corner of the screen. 
 * Using the Data Science Desktop, on citrix, open dbForge Studio for PostgreSQL > Devart, DB Forge in the windows drop down
 * IF 'trial period expired' message, select 'Use Express' and re-open dbForge
 * Enter the database information when prompted using the following:
+
+ <img width="183" alt="DSD access1" src="https://github.com/inform-us/requirements_specifications/assets/78792902/be14b155-2e54-44f9-84d2-d274f7c62b3b">
+
 
 
 > Host: UCLVLDDDTAEPS02
@@ -29,8 +32,11 @@ Database: uds
  
 * For the graphical GUI method select the drop-down arrow next to the 'uds' entry in the panel at the top left of the screen > scroll down to the 'informus' entry > select drop-down arrows next to 'informus' > select'Tables'. 
 
-You should see something like
-  
+<img width="204" alt="DSD access 2" src="https://github.com/inform-us/requirements_specifications/assets/78792902/ff0ea119-2c44-4339-b4b7-2e37d3a81fbb">
+
+<img width="158" alt="DSD access 3" src="https://github.com/inform-us/requirements_specifications/assets/78792902/69e85472-559d-4a77-ab7b-4c03ebc4773e">
+
+
 You can now view the data in any of these tables by double-clicking on the name of the table. For general browsing, please select 'read-only' when prompted, unless you intend to alter data within the tables.
 Once the tables are loaded you are able to filter by any of the columns shown. 
 
