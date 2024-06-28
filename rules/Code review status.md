@@ -10,6 +10,6 @@ MAP (Mean Arterial Blood Pressure)|yes||||
 Pain|yes||||
 Sedation RASS|yes||||
 SpO2|yes||||
-Targets|yes||||
 Tidal Volume|yes||||
 Validity|||||
+SPC mean process limits recalculation|||||
