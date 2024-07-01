@@ -19,14 +19,14 @@ PDF - ABC metric user interface sequence
 
 ## ELIGIBILITY 
 
-- All patients who have had at least two consecutive RASS scores of -3 to +4 this shift
+- All patients who have had at least two consecutive RASS scores of -3 to +4 this shift (at least one of which is in this shift)
 
 ## VALIDITY
-1) The CAM-ICU metric should be documented once per 12-hour shift
+1) For eligible patients, the CAM-ICU metric should be documented once per 12-hour shift 
 2) 12-hour shifts are defined as 08:00-19:59 (day shift) and 20:00-07:59 (night shift)
-3) Every CAM-ICU score set on a day shift (between 08:00-19:59) is valid until 20:00 hours or until a subsequent score is documented. 
-4) Every CAM-ICU score set on a night shift (between 20:00-07:59) is valid until 08:00 or until a subsequent score is documented. 
-5) Each CAM-ICU score therefore expires at 08:00 and 20:00 every day. 
+3) Every CAM-ICU score set on a day shift (between 08:00-19:59) is valid until 19:59 hours or until a subsequent score is documented. 
+4) Every CAM-ICU score set on a night shift (between 20:00-07:59) is valid until 07:59 or until a subsequent score is documented. 
+5) Each CAM-ICU score therefore expires at 07:59 or 19:59 every day. 
 6) Each documented CAM-ICU score can be superseded if an entry is updated or new entry is made during that shift, this will generate a new _dt stamp (more recent) and become the 'valid' entry
 
 ## CLASSIFICATION 
