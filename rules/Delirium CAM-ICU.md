@@ -83,9 +83,10 @@ PDF - ABC metric user interface sequence
 5) Plot all positive CAM-ICU scores on top half of chart as red filled circle
 6) Plot all negative CAM-ICU scores on bottom half of chart as green filled circle
 7) 'Missing' CAM-ICU scores shown as grey vertical bar with no data points
-8) CAM-ICU not required shown as grey tick on central dividing line 
+8) CAM-ICU not required shown as grey tick on central dividing line
 
-![image](https://github.com/inform-us/requirements_specifications/assets/167782531/cf4c8747-a8c1-40d4-971c-65a22ca4e4bf)
+  ![image](https://github.com/inform-us/requirements_specifications/assets/167782531/69d62352-10e9-4a19-90eb-f37ec423304e)
+ 
 
 ---
 # [E] SPC CHARTS -below is a working draft.... !
