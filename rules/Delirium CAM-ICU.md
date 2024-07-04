@@ -49,7 +49,7 @@ PDF - ABC metric user interface sequence
 
 *the following feeds into the (i) front tile - 24-hour rolling window and (ii) SPC patients with delirium chart*
 
-**[B]  overall CAM-ICU front tile calculation: Patients with Delirium in the last 24 hours**
+**[C]  overall CAM-ICU front tile calculation: Patients with Delirium in the last 24 hours**
 
 
 - calculate the number of patients with at least two consecutive RASS scores of -3 to +4 in the last 24 hours
@@ -62,7 +62,8 @@ PDF - ABC metric user interface sequence
 ![image](https://github.com/inform-us/requirements_specifications/assets/167782531/e2b82308-a00b-45d6-a5fa-28b46eba09ea)
 
 *The following feeds into the floorplans*
-**[C] Floorplan labelling**
+
+**[D] Floorplan labelling**
 
 1) If latest CAM-ICU score reading this shift= negative: ‘GREEN’; design = green filled bed 
 2) If latest CAM-ICU score reading this shift = positive: ‘RED’; design = red filled bed 
@@ -73,7 +74,7 @@ PDF - ABC metric user interface sequence
 
 *The following feeds into the individual patient charts*
 
-**[D] Classification Rules: Individual patient chart**
+**[E] Classification Rules: Individual patient chart**
 
 
 1) X-axis time in hours, range 0-72 hours, default to 24 hours
@@ -89,7 +90,7 @@ PDF - ABC metric user interface sequence
  
 
 ---
-# [E] SPC CHARTS -below is a working draft.... !
+# [F] SPC CHARTS -below is a working draft.... !
 
 **CAM-ICU SPC CHARTS (refer to XYZ metric in classification**
 
