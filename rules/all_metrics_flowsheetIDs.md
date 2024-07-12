@@ -7,7 +7,7 @@ Query ran: 2024/06/10
 
 | Tile | Metric | Flowsheet ID | `has_visit_observation` is `True` | `is_real_time` is `True`  |frequency of reporting | Found in `star.visit_observation_type` |
 |-|-|-|-|-|-|-|
-| CAM-ICU | Overall CAM-ICU | 3040104650 | ✅ | ❌ | Once between 0800-1959 and once between 2000-0759 | ✅ |
+| CAM-ICU | Overall CAM-ICU | 3040104650 | ✅ | ✅ | Once between 0800-1959 and once between 2000-0759 | ✅ |
 | | | | | | | |
 | Epidural | Level of Block (Left side) | 38580 | ✅ | ✅ | 2-hourly between 0800-1959, 4-hourly between 2000-0759 | ✅ |
 | Epidural | Level of Block (Right side) | 38581 | ✅ | ✅ | 2-hourly between 0800-1959, 4-hourly between 2000-0759 | ✅ |
