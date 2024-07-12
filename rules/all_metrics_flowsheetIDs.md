@@ -36,8 +36,8 @@ Query ran: 2024/06/10
 | Airway | Non-surgical Airway - *trache placed without surgery* | 400638 | ❌ | ❌ | once | ✅ |
 | | | | | | | |
 | PACU | Ready for discharge | 41222 | ✅ | ✅ | real-time | ✅ |
-| PACU | Fluid intake | 45429 | ❌ | ❌ | real-time | ✅ |
-| PACU | Diet Intake - *type of diet patient is on* | 6482 | ❌ | ❌ | real-time | ✅ |
-| PACU | Amount Eaten | 6484 | ❌ | ❌ | real-time | ✅ |
-| PACU | Mobilisation achieved by patient - *scale of mobilising from none to walking independently* | 40705 | ❌ | ❌ | real-time | ✅ |
+| PACU | Fluid intake | 45429 | ✅ | ✅ | real-time | ✅ |
+| PACU | Diet Intake - *type of diet patient is on* | 6482 | ✅ | ✅ | real-time | ✅ |
+| PACU | Amount Eaten | 6484 | ✅ | ✅ | real-time | ✅ |
+| PACU | Mobilisation achieved by patient - *scale of mobilising from none to walking independently* | 40705 | ✅ | ✅ | real-time | ✅ |
 | | | | | | | |
