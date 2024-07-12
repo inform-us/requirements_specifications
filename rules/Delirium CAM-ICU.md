@@ -69,6 +69,7 @@ PDF - ABC metric user interface sequence
 2) If latest CAM-ICU score reading this shift = positive: ‘RED’; design = red filled bed 
 3) If there is no CAM-ICU score since the start of the shift (since 08:00 day or 20:00 night)  ‘missing’: ‘missing’; design = white filled bed with red hashed outline
 4) If latest CAM-ICU score not applicable as RASS score has fallen to -4- -5: ‘assessment not required (RASS is -5 or -4)’ design = white filled bed with blue hashed outline
+    - The description of the bed colouring does not match the image below
 
 ![image](https://github.com/inform-us/requirements_specifications/assets/167782531/1281d06f-09e7-42ca-9d60-c2c03701a970)
 
