@@ -68,7 +68,7 @@ According to clinical guidelines:
 
 **[A] CAM-ICU Percentage Completions This Shift Front Tile**
 - Includes all patients in the current shift
-- Numerator = number of patients who have a documented RASS score of -3 to +4 at any point, who have had at least one CAM-ICU score documented since the beginning of this shift 
+- Numerator = number of patients who have a documented RASS score of -3 to +4 at any point this shift, who have had at least one CAM-ICU score documented since the beginning of this shift 
 - Denominator = number of patients who have a documented RASS score of -3 to +4 at any point durng this shift
   
 **[B] CAM-ICU Percentage Completions Last Shift Front Tile**
