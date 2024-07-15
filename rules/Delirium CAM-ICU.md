@@ -10,23 +10,34 @@ Rules for CAM-ICU Metric
 
 ## EPIC Flowsheets
 - CAM-ICU has 4 components (feature 1-4, see CAM-ICU EPIC_flowsheet PDF) to generate an 'overall' CAM-ICU; the components are not required for this metric
+
+###Group ID CAM-ICU
+- CONFUSION ASSESSMENT METHOD-ICU (CAM-ICU) [3040104646]
+
+###Row ID CAM-ICU
+- R CAM-ICU FEATURE 1: ACUTE ONSET OR FLUCTUATING COURSE [3040104645]
+- R CAM-ICU FEATURE 2: INATTENTION [3040104647]
+- R CAM-ICU FEATURE 3: ALTERED LEVEL OF CONSCIOUSNESS [3040104648]
+- R CAM-ICU FEATURE 4: DISORGANIZED THINKING [3040104649]
 - R CAM-ICU OVERALL [3040104650]
-- - Row ID 3040104650
--  Richmond Agitation Sedation Scale (RASS)- Row ID 3040104644
 
 [CAM-ICU EPIC_flowsheet.pdf](https://github.com/user-attachments/files/16232471/CAM-ICU.EPIC_flowsheet.pdf)
 	R RICHMOND AGITATION SEDATION SCALE (RASS) [3040104644]
----
+###Group ID Richmond Agitation Sedation Scale (RASS)
+- G UCLH ICU NEW NEUROLOGY [39859]
+
+###Row ID RASS
+- R RICHMOND AGITATION SEDATION SCALE (RASS) [3040104644]
 
 ---
-PDF - ABC metric user interface sequence 
+INSERT PDF - ABC metric user interface sequence once built on staging
+---
 
 ## ELIGIBILITY 
-EPOCHS 
-
-- All patients who have had at least two consecutive RASS scores of -3 to +4 this shift (at least one of which is in this shift)
+- All patients who have a valid (current or forward filled; see below) RASS score between -3 to +4 this shift
 
 ## VALIDITY
+EPOCHS
 1) For eligible patients, the CAM-ICU metric should be documented once per 12-hour shift 
 2) 12-hour shifts are defined as 08:00-19:59 (day shift) and 20:00-07:59 (night shift)
 3) Every CAM-ICU score set on a day shift (between 08:00-19:59) is valid until 19:59 hours or until a subsequent score is documented. 
