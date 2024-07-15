@@ -12,6 +12,7 @@ Rules for CAM-ICU Metric
 - overall CAM-ICU- Row ID 3040104650
 -  Richmond Agitation Sedation Scale (RASS)- Row ID 3040104644
 
+[CAM-ICU EPIC_flowsheet.pdf](https://github.com/user-attachments/files/16232471/CAM-ICU.EPIC_flowsheet.pdf)
 
 ---
 
