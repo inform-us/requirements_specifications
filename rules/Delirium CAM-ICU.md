@@ -3,14 +3,15 @@ Rules for CAM-ICU Metric
 
 ## EPIC
 - CAM-ICU metric is a binary score
-- The score is required on all patients that have at least two consecutive RASS scores (or forward filled RASS scores) of -3 to +4 during any 12-hour shift.
-- The two possible outcomes for CAM-ICU score are positive or negative.
-- A positive score denotes that a patient has delirium, a negative score denotes that a patient does not have delirium. 
-- There are no targets for these variables, however we endeavour clinically to have as few positive scores as we can. 
-EPOCHS 
+- The score is required on all patients that have a (valid) RASS score (e.g. includes forward filled RASS scores) of -3 to +4 during any 12-hour shift
+- The two possible outcomes for CAM-ICU score are positive or negative
+- A positive score denotes that a patient has delirium, a negative score denotes that a patient does not have delirium
+- There are no targets for these variables, however we endeavour clinically to have as few positive scores as we can
+
 ## EPIC Flowsheets
- - overall CAM-ICU- Row ID 3040104650
+- overall CAM-ICU- Row ID 3040104650
 -  Richmond Agitation Sedation Scale (RASS)- Row ID 3040104644
+
 
 ---
 
@@ -18,6 +19,7 @@ EPOCHS
 PDF - ABC metric user interface sequence 
 
 ## ELIGIBILITY 
+EPOCHS 
 
 - All patients who have had at least two consecutive RASS scores of -3 to +4 this shift (at least one of which is in this shift)
 
