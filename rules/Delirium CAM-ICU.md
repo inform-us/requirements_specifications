@@ -2,7 +2,7 @@
 Rules for CAM-ICU Metric
 
 ## EPIC
-- CAM-ICU metric is a binary score
+- CAM-ICU metric is a binary score, nurses input this manually
 - The score is required on all patients that have a (valid) RASS score (e.g. includes forward filled RASS scores) of -3 to +4 during any 12-hour shift
 - The two possible outcomes for CAM-ICU score are positive or negative
 - A positive score denotes that a patient has delirium, a negative score denotes that a patient does not have delirium
@@ -11,10 +11,10 @@ Rules for CAM-ICU Metric
 ## EPIC Flowsheets
 - CAM-ICU has 4 components (feature 1-4, see CAM-ICU EPIC_flowsheet PDF) to generate an 'overall' CAM-ICU; the components are not required for this metric
 
-###Group ID CAM-ICU
+### Group ID CAM-ICU
 - CONFUSION ASSESSMENT METHOD-ICU (CAM-ICU) [3040104646]
 
-###Row ID CAM-ICU
+### Row ID CAM-ICU
 - R CAM-ICU FEATURE 1: ACUTE ONSET OR FLUCTUATING COURSE [3040104645]
 - R CAM-ICU FEATURE 2: INATTENTION [3040104647]
 - R CAM-ICU FEATURE 3: ALTERED LEVEL OF CONSCIOUSNESS [3040104648]
@@ -23,10 +23,10 @@ Rules for CAM-ICU Metric
 
 [CAM-ICU EPIC_flowsheet.pdf](https://github.com/user-attachments/files/16235096/CAM-ICU.EPIC_flowsheet.pdf)
 
-###Group ID Richmond Agitation Sedation Scale (RASS)
+### Group ID Richmond Agitation Sedation Scale (RASS)
 - G UCLH ICU NEW NEUROLOGY [39859]
 
-###Row ID RASS
+### Row ID RASS
 - R RICHMOND AGITATION SEDATION SCALE (RASS) [3040104644]
 
 ---
