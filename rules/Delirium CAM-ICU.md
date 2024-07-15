@@ -21,8 +21,8 @@ Rules for CAM-ICU Metric
 - R CAM-ICU FEATURE 4: DISORGANIZED THINKING [3040104649]
 - R CAM-ICU OVERALL [3040104650]
 
-[CAM-ICU EPIC_flowsheet.pdf](https://github.com/user-attachments/files/16232471/CAM-ICU.EPIC_flowsheet.pdf)
-	R RICHMOND AGITATION SEDATION SCALE (RASS) [3040104644]
+[CAM-ICU EPIC_flowsheet.pdf](https://github.com/user-attachments/files/16235096/CAM-ICU.EPIC_flowsheet.pdf)
+
 ###Group ID Richmond Agitation Sedation Scale (RASS)
 - G UCLH ICU NEW NEUROLOGY [39859]
 
@@ -48,10 +48,13 @@ According to clinical guidelines:
 ### RASS
 - clinical guideline recommended charting frequency for RASS differs depending on time of day
 - in line with other documentation we add a 15 minute to the validity of the documented score to allow for clinical leeway
-### RASS generate 1-hour epochs
-1) RASS scores documented between 06:00 - 21.59 have a 75 minute validity
 
-  
+### RASS generate 1-hour epochs
+1) RASS scores documented between 06:00 - 21.59 is valid for 75 minute
+2) RASS scores documented between 22:00 - 05:59 is valid 04:15 hh:mm
+3) Using score d_t stamp and above validty generate 1-hour epoch
+
+### CAM-ICU
 1) For eligible patients, the CAM-ICU metric should be documented once per 12-hour shift 
 2) 12-hour shifts are defined as 08:00-19:59 (day shift) and 20:00-07:59 (night shift)
 3) Every CAM-ICU score set on a day shift (between 08:00-19:59) is valid until 19:59 hours or until a subsequent score is documented. 
@@ -64,13 +67,12 @@ According to clinical guidelines:
 *The following data feeds into (i) the text at the bottom of the CAM-ICU front tile and (ii) SPC CAM-ICU documentation chart*
 
 **[A] CAM-ICU Percentage Completions This Shift Front Tile**
-
-  - calculate the number of patients with at least two consecutive RASS scores of -3 to +4 this shift (since 08:00 hours or 20:00 hours today) 
-- for each patient with at least two consecutive RASS scores of -3 to +4 this shift, calculate the number who have at least one CAM-ICU score documented (positive or negative) this shift (since 08:00 hours or 20:00 hours today) 
-- Numerator = number of patients with at least 2 consecutive RASS scores of -3 to +4 who have had at least one CAM-ICU score documented since the beginning of this shift 
-- Denominator = number of patients with at least 2 consecutive RASS scores of -3 to +4 this shift (since 08:00 hours or 20:00 hours today)
+- current shift
+- Numerator = number of patients with at who have a documented RASS score of -3 to +4 at any point, who have had at least one CAM-ICU score documented since the beginning of this shift 
+- Denominator = number of patients with at who have a documented RASS score of -3 to +4 at any point durng this shift
   
 **[B] CAM-ICU Percentage Completions Last Shift Front Tile**
+get all flowsheet data for previous shift then go through logic
 - IF the current time falls between 08:00-19:59 (day shift), calculate the number of patients with at least 2 consecutive RASS scores of -3 to +4 during the previous shift (20:00 yesterday to 07:59 today)
 -  IF the current time falls between 20:00-07:59 (night shift), calculate the number of patients with at least 2 consecutive RASS scores of
  of -3 to +4 during the previous shift, calculate the number who have at least one CAM-ICU score documented (positive or negative) during the previous shift 
@@ -81,34 +83,31 @@ According to clinical guidelines:
 
 **[C]  overall CAM-ICU front tile calculation: Patients with Delirium in the last 24 hours**
 
-
-- calculate the number of patients with at least two consecutive RASS scores of -3 to +4 in the last 24 hours
-- calculate the number of patients with at least one positive CAM-ICU in the last 24 hours 
 - Numerator: the number of patients with positive CAM-ICU scores in the last 24 hours 
-- Denominator: the number of patients with at least two consecutive RASS scores of -3 to +4 in the last 24 hours
-
-
+- Denominator: the number of patients with at present on on each unit that have had a RASS score of -3 to +4 (at any point) in the last 24 hours
 
 ![image](https://github.com/inform-us/requirements_specifications/assets/167782531/e2b82308-a00b-45d6-a5fa-28b46eba09ea)
 
 *The following feeds into the floorplans*
 
 **[D] Floorplan labelling**
+MAKE EPOCHS FOR THIS SECTION
 
 1) If latest CAM-ICU score reading this shift= negative: ‘GREEN’; design = green filled bed
-   - By 'latest' do we include forward/backfilled data or look back at the most recent 'real' data point?
-3) If latest CAM-ICU score reading this shift = positive: ‘RED’; design = red filled bed 
-4) If there is no CAM-ICU score since the start of the shift (since 08:00 day or 20:00 night)  ‘missing’: ‘missing’; design = white filled bed with red hashed outline
-5) If latest CAM-ICU score not applicable as RASS score has fallen to -4- -5: ‘assessment not required (RASS is -5 or -4)’ design = white filled bed with blue hashed outline
+   - By 'latest' do we include forward filled data or look back at the most recent 'real' data point?
+2) If latest CAM-ICU score reading this shift = positive: ‘RED’; design = red filled bed 
+3) If there is no CAM-ICU score since the start of the shift (since 08:00 day or 20:00 night)  ‘missing’: ‘missing’; design = white filled bed with red hashed outline
+4) If latest CAM-ICU score not applicable as RASS score has fallen to -4- -5: ‘assessment not required (RASS is -5 or -4)’ design = white filled bed with blue hashed outline (RASS pips CAM)
     - Do we apply this logic across all epochs or just the latest epoch?
     - The description of the bed colouring does not match the image below
+ 5) CAM-ICU with a null RASS - label  
 
 ![image](https://github.com/inform-us/requirements_specifications/assets/167782531/1281d06f-09e7-42ca-9d60-c2c03701a970)
 
 *The following feeds into the individual patient charts*
 
 **[E] Classification Rules: Individual patient chart**
-
+MAKE EPOCHS FOR THIS SECTION
 
 1) X-axis time in hours, range 0-72 hours, default to 24 hours
 2) Y-axis left is CAM-ICU score divided into 'Positive' at top and 'Negative' at bottom
