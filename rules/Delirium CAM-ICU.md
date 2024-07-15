@@ -35,9 +35,23 @@ INSERT PDF - ABC metric user interface sequence once built on staging
 
 ## ELIGIBILITY 
 - All patients who have a valid (current or forward filled; see below) RASS score between -3 to +4 this shift
+### Clinical pragmatism
+According to clinical guidelines:
+	- a RASS score within the range above should trigger a CAM-ICU assessment
+	- a CAM-ICU assessment should be done a minimum once a shift
+	- best practice is to have a RASS & CAM-ICU charted concurrently
+	- however, it is possible to be CAM-ICU positive (features 1, 2 & 4 positive) without a RASS being documented
+ Therefore it would be sensible to unlink the RASS from CAM-ICU, but highlight the absence of RASS documentation. 
 
 ## VALIDITY
-EPOCHS
+
+### RASS
+- clinical guideline recommended charting frequency for RASS differs depending on time of day
+- in line with other documentation we add a 15 minute to the validity of the documented score to allow for clinical leeway
+### RASS generate 1-hour epochs
+1) RASS scores documented between 06:00 - 21.59 have a 75 minute validity
+
+  
 1) For eligible patients, the CAM-ICU metric should be documented once per 12-hour shift 
 2) 12-hour shifts are defined as 08:00-19:59 (day shift) and 20:00-07:59 (night shift)
 3) Every CAM-ICU score set on a day shift (between 08:00-19:59) is valid until 19:59 hours or until a subsequent score is documented. 
