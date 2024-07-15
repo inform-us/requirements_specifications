@@ -67,9 +67,9 @@ According to clinical guidelines:
 *The following data feeds into (i) the text at the bottom of the CAM-ICU front tile and (ii) SPC CAM-ICU documentation chart*
 
 **[A] CAM-ICU Percentage Completions This Shift Front Tile**
-- current shift
-- Numerator = number of patients with at who have a documented RASS score of -3 to +4 at any point, who have had at least one CAM-ICU score documented since the beginning of this shift 
-- Denominator = number of patients with at who have a documented RASS score of -3 to +4 at any point durng this shift
+- Includes all patients in the current shift
+- Numerator = number of patients who have a documented RASS score of -3 to +4 at any point, who have had at least one CAM-ICU score documented since the beginning of this shift 
+- Denominator = number of patients who have a documented RASS score of -3 to +4 at any point durng this shift
   
 **[B] CAM-ICU Percentage Completions Last Shift Front Tile**
 get all flowsheet data for previous shift then go through logic
