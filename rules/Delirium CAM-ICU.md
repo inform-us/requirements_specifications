@@ -9,11 +9,13 @@ Rules for CAM-ICU Metric
 - There are no targets for these variables, however we endeavour clinically to have as few positive scores as we can
 
 ## EPIC Flowsheets
-- overall CAM-ICU- Row ID 3040104650
+- CAM-ICU has 4 components (feature 1-4, see CAM-ICU EPIC_flowsheet PDF) to generate an 'overall' CAM-ICU; the components are not required for this metric
+- R CAM-ICU OVERALL [3040104650]
+- - Row ID 3040104650
 -  Richmond Agitation Sedation Scale (RASS)- Row ID 3040104644
 
 [CAM-ICU EPIC_flowsheet.pdf](https://github.com/user-attachments/files/16232471/CAM-ICU.EPIC_flowsheet.pdf)
-
+	R RICHMOND AGITATION SEDATION SCALE (RASS) [3040104644]
 ---
 
 ---
