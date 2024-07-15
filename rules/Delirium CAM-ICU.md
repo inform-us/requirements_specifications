@@ -93,14 +93,12 @@ get all flowsheet data for previous shift then go through logic
 **[D] Floorplan labelling**
 MAKE EPOCHS FOR THIS SECTION
 
-1) If latest CAM-ICU score reading this shift= negative: ‘GREEN’; design = green filled bed
-   - By 'latest' do we include forward filled data or look back at the most recent 'real' data point?
-2) If latest CAM-ICU score reading this shift = positive: ‘RED’; design = red filled bed 
-3) If there is no CAM-ICU score since the start of the shift (since 08:00 day or 20:00 night)  ‘missing’: ‘missing’; design = white filled bed with red hashed outline
-4) If latest CAM-ICU score not applicable as RASS score has fallen to -4- -5: ‘assessment not required (RASS is -5 or -4)’ design = white filled bed with blue hashed outline (RASS pips CAM)
-    - Do we apply this logic across all epochs or just the latest epoch?
-    - The description of the bed colouring does not match the image below
- 5) CAM-ICU with a null RASS - label  
+1) If the latest (real or forward-filled) CAM-ICU score reading this shift= negative: ‘GREEN’; design = green filled bed
+2) If the latest (real or forward-filled) CAM-ICU score reading this shift = positive: ‘RED’; design = red filled bed 
+3) If there is no CAM-ICU score since the start of the shift (since 08:00 day or 20:00 night) ‘missing’: ‘missing’; design = white filled bed with red hashed outline
+4) If the latest CAM-ICU score not applicable as RASS score has fallen to -4- -5: ‘assessment not required (RASS is -5 or -4)’ design = white filled bed with blue hashed outline (RASS pips CAM)
+    - This logic is applied across all epochs, so we override the CAM-ICU score for a particular row if RASS falls below -3.
+5) CAM-ICU with a null RASS - label as either: `positive with no RASS` or `negative with no RASS`
 
 ![image](https://github.com/inform-us/requirements_specifications/assets/167782531/1281d06f-09e7-42ca-9d60-c2c03701a970)
 
