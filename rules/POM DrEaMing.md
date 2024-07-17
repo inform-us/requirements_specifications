@@ -1,19 +1,47 @@
-POM Perioperative Medicine Drinking, Eating and Mobilisation (DrEaMing)
 
-EPIC Flowsheet Row IDS
-Fluid intake 45429
-Food intake 6482
-Mobilisation achieved 40705
-Post operative flowsheet 
+# Perioperative Medicine (POM) DrEaMing Metrics 
+Rules for POM DrEaMing metrics
 
-Eligibility Criteria 
 
-Frequency of documentation varies, but is default once a day? 
-CQUIN - are we documenting Drinking Eating and mobilising 
-Best performance in all measures recorded in 24 hours. 
+## EPIC
+The POM DrEaMing Metrics refer to the status of patients' Drinking Eating and Mobilising and are input manually by nurses at least once every 24 hours or every time a patient Drinks, Eats or Mobilises
+The metrics are labeled as fluid intake, food intake and moblisation acheieved in EPIC
+Inform_us will display whether the nurse has documented the status of drinking, eating and mobilising in the last 24 hours and each patient's status on the three components
 
-Tile
-Percentage patients this shift and last shift with DrEaMing documented 
+
+## EPIC Flowsheets
+
+The flowsheets exist in Post-Op Surgical tab of ICU navigators
+
+Fluid intake [45429]
+Food intake [6482]
+Mobilisation achieved [40705]
+
+
+## ELIGIBILITY
+All patients on T06 or WMS units
+
+## VALIDITY
+Fluid intake, food intake and mobilisation achieved metrics are valid for 24 hours from 00:01 hours each day or until a new entry has been made 
+
+
+For eligible patients, fluid intake, food intake and mobilisation achieved metrics should be documented once every 24 hours or until a patient's status changes. 
+
+
+## CLASSIFICATION
+The following data feeds into (i) the text at the bottom POM DrEaMing front tile (ii) POM DrEaMing documentation chart
+
+POM DrEaMing Percentage Completions today (since midnight)
+
+Includes all patients present on T06 and WMS since 00:01 today
+Numerator = number of patients who have DrEaMing (all three of fluid intake, food intake and mobilisation achieved) documented at least once since 00:01 today
+Denominator = number of patients who have been present since 00:01 today
+
+* note compliance with the documentation is binary and patient must have all three documented to be considered compliant with documentation
+
+
+
+
 
 Floor plan 
 Are we looking at who 
