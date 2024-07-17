@@ -40,6 +40,7 @@ Denominator = number of patients who have been present since 00:01 today
 * note compliance with the documentation is binary and patient must have all three documented to be considered compliant with documentation
 
 
+floor plan
 
 
 
