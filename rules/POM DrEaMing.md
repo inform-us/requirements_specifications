@@ -13,9 +13,11 @@ Inform_us will display whether the nurse has documented the status of drinking, 
 
 The flowsheets exist in Post-Op Surgical tab of ICU navigators
 
-Fluid intake [45429]
-Food intake [6482]
-Mobilisation achieved [40705]
+FLUID INTAKE [45429]
+
+FOOD INTAKE [6482]
+
+MOBILISATION ACHIEVED [40705]
 
 
 ## ELIGIBILITY
