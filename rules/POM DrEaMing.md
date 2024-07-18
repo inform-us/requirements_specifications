@@ -1,11 +1,15 @@
 
-# Perioperative Medicine (POM) DrEaMing Metrics 
+# Perioperative Medicine (POM) DrEaMing (Drinking, Eating and Mobilising) Metrics 
 Rules for POM DrEaMing metrics
 
 
 ## EPIC
-The POM DrEaMing Metrics refer to the status of patients' Drinking Eating and Mobilising and are input manually by nurses at least once every 24 hours or every time a patient Drinks, Eats or Mobilises
+The POM DrEaMing Metrics refer to the status of post-operative patients' Drinking Eating and Mobilising.
+
+These data are input manually by nurses at least once every 24 hours or every time a patient Drinks, Eats or Mobilises
+
 The metrics are labeled as fluid intake, food intake and moblisation acheieved in EPIC
+
 Inform_us will display whether the nurse has documented the status of drinking, eating and mobilising in the last 24 hours and each patient's status on the three components
 
 
@@ -36,14 +40,15 @@ The following data feeds into (i) the text at the bottom POM DrEaMing front tile
 POM DrEaMing Percentage Completions today (since midnight)
 
 Includes all patients present on T06 and WMS since 00:01 today
+
 Numerator = number of patients who have DrEaMing (all three of fluid intake, food intake and mobilisation achieved) documented at least once since 00:01 today
+
 Denominator = number of patients who have been present since 00:01 today
 
-* note compliance with the documentation is binary and patient must have all three documented to be considered compliant with documentation
+*note compliance with the documentation is binary and patient must have all three documented to be considered compliant with documentation*
 
 
-floor plan
-
+## FLOORPLAN 
 
 
 Floor plan 
