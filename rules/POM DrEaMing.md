@@ -65,25 +65,29 @@ FLUID INTAKE FLOORPLAN
 DIET INTAKE FLOORPLAN
 
 1. if the latest 'diet intake' reading is 'normal diet' or 'soft diet' then label patient as 'oral diet'
-2.  if the latest 'diet intake' reading is 'free fluid' or 'sips' then label patient as 'fluids only'
+2.  if the latest 'diet intake' reading is 'free fluid' then label patient as 'free fluids'
 3.  if the latest 'diet intake' reading is 'enteral (NG/PEG etc.)' then label patient as 'enteral feeding'
 4.  if the latest 'diet intake' reading is  'parenteral (TPN)' then label patient as 'parental feeding'
-5.  if the latest 'diet intake' reading is 'NBM' then label patient as 'NBM'
+5.  if the latest 'diet intake' reading is 'NBM' or 'sips' then label patient as 'NBM/sips'
 6.  if the latest 'diet intake' reading is 'other' then label patient as 'other'
 7.  if 'diet intake' has not been completed since 00:01 today, then label patient as 'missing documentation'
 8.  if none of the rules matched then label the patient as 'fallthrough'
    
+  *n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in ? button.*   
+  
 MOBILISATION ACHIEVED FLOORPLAN
 
-1. if the latest 'mobilisation acheived' reading is 'normal diet' or 'soft diet' then label patient as 'oral diet'
-2.  if the latest 'diet intake' reading is 'free fluid' or 'sips' then label patient as 'fluids only'
-3.  if the latest 'diet intake' reading is 'enteral (NG/PEG etc.)' then label patient as 'enteral feeding'
-4.  if the latest 'diet intake' reading is  'parenteral (TPN)' then label patient as 'parental feeding'
-5.  if the latest 'diet intake' reading is 'NBM' then label patient as 'NBM'
-6.  if the latest 'diet intake' reading is 'other' then label patient as 'other'
-7.  if 'diet intake' has not been completed since 00:01 today, then label patient as 'missing documentation'
-8.  if none of the rules matched then label the patient as 'fallthrough'
+1. if the latest 'mobilisation achieved' reading is 'nothing (lying in bed) 0' or 'sitting in bed, exercises in bed 1' or 'passively moved to chair (no standing) 2' 'sitting over edge of the bed 3' then label patient as 'in bed' 
+2. if the latest 'mobilisation achieved' reading is 'standing 4' then label patient as 'standing'
+3.  if the latest 'mobilisation achieved' reading is 'transferring bed to chair 5' then label patient as 'chair' 
+4.  if the latest 'mobilisation achieved' reading is 'marching on spot (at bedside) 6'then label patient as 'marching on spot'
+5.  if the latest 'mobilisation achieved' reading is 'walking with assistance of 2 or more people 7' or 'walking with assistance of 1 person 8' label patient as 'walking with assistance'
+6.   if the latest 'mobilisation achieved' reading is 'walking independently with gait aid 9 ' or 'walking independently without gait aid 10' label patient as 'walking independently'
+7. If 'mobilisation achieved' has not been completed since 00:01 today, then label patient as 'missing documentation'
+8. If none of the rules matched then label the patient as 'fallthrough'
 
+   *n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in ? button.*
+   
 Floor plan 
 Are we looking at who 
 Are we looking at who is DrEaMing? Bespoke. 
