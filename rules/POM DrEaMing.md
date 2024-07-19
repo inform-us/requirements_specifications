@@ -87,7 +87,24 @@ MOBILISATION ACHIEVED FLOORPLAN
 8. If none of the rules matched then label the patient as 'fallthrough'
 
    *n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in ? button.*
-   
+
+## NOTE DRAFT BELOW!!!!
+## SPC Chart: (corresponds to the DrEaMing documentation SPC chart)
+
+ Daily POM DrEaMing Documentation 
+
+Proportion of 'POM DrEaMing' documented in EPIC
+
+Operational definition = of all Perioperative patients, what proportion have daily DrEaMing metrics (fluid intake, diet intake, mobilisation achieved) documented  (weekly chart) 
+
+Metric compliance is measured at 00:00 on each day
+For each patient ALL of the 8 physiological targets need to have been completed in the ICU Targets section of the ICU Navigators (i.e. a valid _dt stamp for an entry for each individual metric) in order to achieve (1) SET; if any of the 8 physiological metrics is missing an entry (a valid _dt stamp) then return (2) NOT SET
+Numerator = sum of patients achieving (1) SET response
+Denominator = total number of current patients (occupied beds) at 13:30 hours
+Calculate daily percentage for each unit, (exceptionally) 
+Aggregate the daily percentages into a -weekly mean percentage_ for each of these respective units (T06, GWB & WMS)
+Aggregate the daily percentages into a weekly mean percentage for T03 Northside & T03 Southside producing one value for the unit T03
+Plot an SPC chart for each respective unit: y-axis = weekly percentage; x-axis = time
 Floor plan 
 Are we looking at who 
 Are we looking at who is DrEaMing? Bespoke. 
