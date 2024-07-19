@@ -4,7 +4,7 @@ Query ran: 2024/06/10
 
 - `has_visit_observation` ✅ indicates that data is available in EPIC and is pulled through to EMAP `star`. Items with ✅ in this column but not in `is_real_time` can be added to the HL7 feed to provide real-time data.
 - `is_real_time` ✅ shows whether real-time data is available in EMAP.
-- An X in `has_visit_observateion` means we cannot request this flowsheet to be activated in EMAP. So we will have to explore `caboodle` to see if there are any alternative flowsheets that we might be able to use.
+- An ❌ in `has_visit_observateion` means we cannot request this flowsheet to be activated in EMAP. So we will have to explore `caboodle` to see if there are any alternative flowsheets that we might be able to use.
 
 | Tile | Metric | Flowsheet ID | `has_visit_observation` is `True` | `is_real_time` is `True`  |frequency of reporting | Found in `star.visit_observation_type` |
 |-|-|-|-|-|-|-|
