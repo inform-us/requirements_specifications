@@ -21,7 +21,7 @@ FLUID INTAKE [45429]
 
 DIET INTAKE [6482]
 
-MOBILISATION ACHIEVED [40705]
+MOBILISATION ACHIEVED [40705] levels of mobilisation are from 0-10 from lying in bed to walking independently
 
 
 ## ELIGIBILITY
@@ -35,15 +35,15 @@ For eligible patients, fluid intake, diet intake and mobilisation achieved metri
 
 
 ## CLASSIFICATION
-The following data feeds into (i) the text at the bottom POM DrEaMing front tile (ii) POM DrEaMing documentation SPC chart
+The following data feeds into (i) the dial on the front tile (ii) POM DrEaMing documentation SPC chart
 
 POM DrEaMing Percentage Completions today (since midnight)
 
-Includes all patients present on T06 and WMS since 00:01 today
+Includes all patients present on T06 and WMS since 00:00 today
 
-Numerator = number of patients who have DrEaMing (all three of fluid intake, diet intake and mobilisation achieved) documented at least once since 00:01 today
+Numerator = number of patients who have DrEaMing (all three of fluid intake, diet intake and mobilisation achieved) documented at least once since 00:00 today until now
 
-Denominator = number of patients who have been present since 00:01 today
+Denominator = number of patients who have been present since 00:00 today until now
 
 *note compliance with the documentation is binary and patient must have all three documented to be considered compliant with documentation*
 
@@ -57,7 +57,7 @@ FLUID INTAKE FLOORPLAN
 2.  if the latest 'fluid intake' reading is 'IV discontinued' then label patient as 'IV discontinued'
 3.  if the latest 'fluid intake' reading is 'oral fluids' then label patient as 'oral fluids' 
 4.  if the latest 'fluid intake' reading is 'NBM' then label patient as 'NBM'
-5.  if 'fluid intake' has not been completed since 00:01 today, then label patient as 'missing documentation'
+5.  if 'fluid intake' has not been completed since 00:00 today, then label patient as 'missing documentation'
 6.  if none of the rules matched then label the patient as 'fallthrough'
    
   *n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in ? button.*
@@ -70,7 +70,7 @@ DIET INTAKE FLOORPLAN
 4.  if the latest 'diet intake' reading is  'parenteral (TPN)' then label patient as 'parental feeding'
 5.  if the latest 'diet intake' reading is 'NBM' or 'sips' then label patient as 'NBM/sips'
 6.  if the latest 'diet intake' reading is 'other' then label patient as 'other'
-7.  if 'diet intake' has not been completed since 00:01 today, then label patient as 'missing documentation'
+7.  if 'diet intake' has not been completed since 00:00 today, then label patient as 'missing documentation'
 8.  if none of the rules matched then label the patient as 'fallthrough'
    
   *n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in ? button.*   
@@ -83,10 +83,10 @@ MOBILISATION ACHIEVED FLOORPLAN
 4.  if the latest 'mobilisation achieved' reading is 'marching on spot (at bedside) 6'then label patient as 'marching on spot'
 5.  if the latest 'mobilisation achieved' reading is 'walking with assistance of 2 or more people 7' or 'walking with assistance of 1 person 8' label patient as 'walking with assistance'
 6.   if the latest 'mobilisation achieved' reading is 'walking independently with gait aid 9 ' or 'walking independently without gait aid 10' label patient as 'walking independently'
-7. If 'mobilisation achieved' has not been completed since 00:01 today, then label patient as 'missing documentation'
+7. If 'mobilisation achieved' has not been completed since 00:00 today, then label patient as 'missing documentation'
 8. If none of the rules matched then label the patient as 'fallthrough'
 
-   *n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in ? button.*
+   *n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This to be explained to user in ? button.*
 
 ## NOTE DRAFT BELOW!!!!
 ## SPC Chart: (corresponds to the DrEaMing documentation SPC chart)
