@@ -41,7 +41,7 @@ POM DrEaMing Percentage Completions today (since midnight)
 
 Includes all patients present on T06 and WMS since 00:00 today
 
-Numerator = number of patients who have DrEaMing (all three of fluid intake, diet intake and mobilisation achieved) documented at least once since 00:00 today until now
+Numerator = number of patients who have DrEaMing (all three of fluid intake, diet intake and mobilisation achieved) documented (anything other than missing) at least once since 00:00 today until now
 
 Denominator = number of patients who have been present since 00:00 today until now
 
