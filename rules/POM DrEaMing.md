@@ -23,6 +23,10 @@ DIET INTAKE [6482]
 
 MOBILISATION ACHIEVED [40705] levels of mobilisation are from 0-10 from lying in bed to walking independently
 
+MOBILITY SCALE [1102] is the scale that the physios use
+
+Is this the same as the 40705 flowsheet 
+
 
 ## ELIGIBILITY
 All patients on T06 or WMS units
