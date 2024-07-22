@@ -96,12 +96,13 @@ MOBILISATION ACHIEVED FLOORPLAN
 
 Proportion of 'POM DrEaMing' documented in EPIC
 
-Operational definition = of all Perioperative patients, what proportion have daily DrEaMing metrics (fluid intake, diet intake, mobilisation achieved) documented  (weekly chart) 
+Operational definition = of all Perioperative patients (patients on T06 and WMS), what proportion have daily DrEaMing metrics (fluid intake, diet intake, mobilisation achieved) documented (weekly chart) 
 
-Metric compliance is measured at 00:00 on each day
-For each patient ALL of the 8 physiological targets need to have been completed in the ICU Targets section of the ICU Navigators (i.e. a valid _dt stamp for an entry for each individual metric) in order to achieve (1) SET; if any of the 8 physiological metrics is missing an entry (a valid _dt stamp) then return (2) NOT SET
-Numerator = sum of patients achieving (1) SET response
-Denominator = total number of current patients (occupied beds) at 13:30 hours
+A day is defined as between 00:00 and 23:59 
+To comply with the DReaMing metric, all three (fluid intake, diet intake, mobilisation achieved) must be documented at least once in this time window (i.e. a valid _dt stamp for an entry for each individual metric) in order to achieve (1) Documented; if any of the 3 DReaMing metrics is missing an entry (a valid _dt stamp) then return (2) Missing
+
+Numerator = sum of patients achieving (1) Documented response between 00:00 and 23:59 
+Denominator = total number of patients (occupied beds) between 00:00 and 23:59 
 Calculate daily percentage for each unit, (exceptionally) 
 Aggregate the daily percentages into a -weekly mean percentage_ for each of these respective units (T06, GWB & WMS)
 Aggregate the daily percentages into a weekly mean percentage for T03 Northside & T03 Southside producing one value for the unit T03
