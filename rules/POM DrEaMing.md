@@ -56,7 +56,7 @@ FLUID INTAKE FLOORPLAN
 
 1. if the latest 'fluid intake' reading is 'IV ongoing' then label patient as 'IV ongoing'
 2.  if the latest 'fluid intake' reading is 'IV discontinued' then label patient as 'IV discontinued'
-3.  if the latest 'fluid intake' reading is 'oral fluids' or 'sips' then label patient as 'oral fluids' 
+3.  if the latest 'fluid intake' reading is 'oral fluids' or 'sips' then label patient as 'oral fluids' TBC
 4.  if the latest 'fluid intake' reading is 'NBM' then label patient as 'NBM'
 5.  if 'fluid intake' has not been completed since 00:00 today, then label patient as 'missing'
 6.  if none of the rules matched then label the patient as 'fallthrough'
@@ -66,12 +66,12 @@ FLUID INTAKE FLOORPLAN
 DIET INTAKE FLOORPLAN
 
 1. if the latest 'diet intake' reading is 'normal diet' or 'soft diet' then label patient as 'oral diet'
-2.  if the latest 'diet intake' reading is 'free fluid' then label patient as 'free fluids'
+2.  if the latest 'diet intake' reading is 'free fluids' then label patient as 'free fluids'
 3.  if the latest 'diet intake' reading is 'enteral (NG/PEG etc.)' then label patient as 'enteral feeding'
-4.  if the latest 'diet intake' reading is  'parenteral (TPN)' then label patient as 'parental feeding'
-5.  if the latest 'diet intake' reading is 'NBM' or 'sips' then label patient as 'NBM/sips'
+4.  if the latest 'diet intake' reading is  'parenteral (TPN)' then label patient as 'parenteral feeding'
+5.  if the latest 'diet intake' reading is 'NBM' or 'sips' then label patient as 'NBM/sips' TBC
 6.  if the latest 'diet intake' reading is 'other' then label patient as 'other'
-7.  if 'diet intake' has not been completed since 00:00 today, then label patient as 'missing documentation'
+7.  if 'diet intake' has not been completed since 00:00 today, then label patient as 'missing'
 8.  if none of the rules matched then label the patient as 'fallthrough'
    
   *n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in ? button.*   
