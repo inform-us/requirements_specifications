@@ -99,14 +99,14 @@ Proportion of 'POM DrEaMing' documented in EPIC
 Operational definition = of all Perioperative patients (patients on T06 and WMS), what proportion have daily DrEaMing metrics (fluid intake, diet intake, mobilisation achieved) documented (weekly chart) 
 
 A day is defined as between 00:00 and 23:59 
-To comply with the DReaMing metric, all three (fluid intake, diet intake, mobilisation achieved) must be documented at least once in this time window (i.e. a valid _dt stamp for an entry for each individual metric) in order to achieve (1) Documented; if any of the 3 DReaMing metrics is missing an entry (a valid _dt stamp) then return (2) Missing
+
+To comply with the DReaMing metric, all three (fluid intake, diet intake, mobilisation achieved) must be documented at least once in this time window (i.e. a valid _dt stamp for an entry for each individual metric) in order for each patient to achieve (1) Documented for that patient
+
+If any of the 3 DReaMing metrics is missing for any patient, an entry (a valid _dt stamp) then do not count 
 
 Numerator = sum of patients achieving (1) Documented response between 00:00 and 23:59 
 Denominator = total number of patients (occupied beds) between 00:00 and 23:59 
-Calculate daily percentage for each unit, (exceptionally) 
-Aggregate the daily percentages into a -weekly mean percentage_ for each of these respective units (T06, GWB & WMS)
-Aggregate the daily percentages into a weekly mean percentage for T03 Northside & T03 Southside producing one value for the unit T03
+Calculate daily percentage for each unit
+Aggregate the daily percentages into a -weekly mean percentage_ for each of these respective units (T06, WMS)
 Plot an SPC chart for each respective unit: y-axis = weekly percentage; x-axis = time
-Floor plan 
-Are we looking at who 
-Are we looking at who is DrEaMing? Bespoke. 
+
