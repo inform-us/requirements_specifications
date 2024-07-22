@@ -51,6 +51,7 @@ Denominator = number of patients who have been present since 00:00 today until n
  
 ## Labelling Rules: (corresponds to the floor plans)
 
+There will be 3 separate floorplans with Fluid intake to be default and buttons to select the others (see e.g. MAP and SPO2 SPC charts)
 FLUID INTAKE FLOORPLAN
 
 1. if the latest 'fluid intake' reading is 'IV ongoing' then label patient as 'IV ongoing'
