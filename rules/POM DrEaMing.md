@@ -56,7 +56,7 @@ FLUID INTAKE FLOORPLAN
 
 1. if the latest 'fluid intake' reading is 'IV ongoing' then label patient as 'IV ongoing'
 2.  if the latest 'fluid intake' reading is 'IV discontinued' then label patient as 'IV discontinued'
-3.  if the latest 'fluid intake' reading is 'oral fluids' then label patient as 'oral fluids' 
+3.  if the latest 'fluid intake' reading is 'oral fluids' or 'sips' then label patient as 'oral fluids' 
 4.  if the latest 'fluid intake' reading is 'NBM' then label patient as 'NBM'
 5.  if 'fluid intake' has not been completed since 00:00 today, then label patient as 'missing documentation'
 6.  if none of the rules matched then label the patient as 'fallthrough'
