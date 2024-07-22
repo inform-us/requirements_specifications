@@ -1,5 +1,5 @@
 # Delirium CAM-ICU 
-Rules for CAM-ICU Metric
+Rules for CAM-ICU Metric (confusion assessment method-intensive care unit)
 
 ## EPIC
 - CAM-ICU metric is a binary score, nurses input this manually
@@ -34,14 +34,16 @@ INSERT PDF - ABC metric user interface sequence once built on staging
 ---
 
 ## ELIGIBILITY 
-- All patients who have a valid (current or forward filled; see below) RASS score between -3 to +4 this shift
+- All patients who have a valid (actual or forward filled; see below) RASS score between -3 to +4 this shift
+
 ### Clinical pragmatism
 According to clinical guidelines:
 	- a RASS score within the range above should trigger a CAM-ICU assessment
 	- a CAM-ICU assessment should be done a minimum once a shift
 	- best practice is to have a RASS & CAM-ICU charted concurrently
 	- however, it is possible to be CAM-ICU positive (features 1, 2 & 4 positive) without a RASS being documented
- Therefore it would be sensible to unlink the RASS from CAM-ICU, but highlight the absence of RASS documentation. 
+
+Therefore it would be sensible to unlink the RASS from CAM-ICU, but highlight the absence of RASS documentation (if a CAM-ICU is charted without RASS). 
 
 ## VALIDITY
 
@@ -51,28 +53,42 @@ According to clinical guidelines:
 
 ### RASS generate 1-hour epochs
 1) RASS scores documented between 06:00 - 21.59 is valid for 75 minute
-2) RASS scores documented between 22:00 - 05:59 is valid 04:15 hh:mm
-3) Using score d_t stamp and above validty generate 1-hour epoch
+2) RASS scores documented between 22:00 - 05:59 is valid 255 minutes (4 hours & 15 minutes)
+3) Using score d_t stamp and above validty criteria, generate 1-hour RASS epochs
 
 ### CAM-ICU
-1) For eligible patients, the CAM-ICU metric should be documented once per 12-hour shift 
-2) 12-hour shifts are defined as 08:00-19:59 (day shift) and 20:00-07:59 (night shift)
-3) Every CAM-ICU score set on a day shift (between 08:00-19:59) is valid until 19:59 hours or until a subsequent score is documented. 
-4) Every CAM-ICU score set on a night shift (between 20:00-07:59) is valid until 07:59 or until a subsequent score is documented. 
-5) Each CAM-ICU score therefore expires at 07:59 or 19:59 every day. 
-6) Each documented CAM-ICU score can be superseded if an entry is updated or new entry is made during that shift, this will generate a new _dt stamp (more recent) and become the 'valid' entry
+1) For eligible patients (RASS -3 to +4), the CAM-ICU metric should be documented once per 12-hour shift 
+2) 12-hour shifts are defined as:
+- DAY SHIFT 08:00-19:59
+- NIGHT SHIFT 20:00-07:59
+3) Every CAM-ICU score set on a shift is valid until the end of the shift or until superseded by a subsequent documented score:
+- DAY SHIFT (08:00-19:59) CAM-ICU score is valid until 19:59 hours or until a subsequent score is documented
+- NIGHT SHIFT (20:00-07:59) CAM-ICU score is valid until 07:59 hours or until a subsequent score is documented
+4) Each CAM-ICU score therefore expires at 07:59 or 19:59 every day. 
+7) Each documented CAM-ICU score can be superseded if an entry is updated or new entry is made during that shift, this will generate a new _dt stamp (more recent) and become the 'valid' entry
 
 ## CLASSIFICATION 
 
-*The following data feeds into (i) the text at the bottom of the CAM-ICU front tile and (ii) SPC CAM-ICU documentation chart*
+*The following data feeds into (i) the text at the bottom of the Delirium front tile [and (ii) SPC CAM-ICU documentation chart]*
 
-**[A] CAM-ICU Percentage Completions This Shift Front Tile**
+**[A] CAM-ICU Percentage Completion This Shift - Front Tile**
+- This is a real time (cumulative) percentage that should head towards 100% by close of the current shift
+- With each 'refresh' you are looking at the period from start of the shift to the current time
 - Includes all patients in the current shift
 - Numerator = number of patients who have a documented RASS score of -3 to +4 at any point this shift, who have had at least one CAM-ICU score documented since the beginning of this shift 
 - Denominator = number of patients who have a documented RASS score of -3 to +4 at any point durng this shift
-  
-**[B] CAM-ICU Percentage Completions Last Shift Front Tile**
-get all flowsheet data for previous shift then go through logic
+- Calculation: (numerator / denominator)*100 represented as percentage
+
+NOTE:
+- there are no need for epochs for this calcualtion
+- the denominator can potentially be a bigger number than the current number of patients occupying the ICU beds (allowing for admissions / discharges), hence representing this as percentage and not a fraction
+- the following could potentially be excluded from the calculation:
+a) RASS -4/-5 with a CAM-ICU score - this is theoretically possible to document (by accident) but highly unlikely
+b) NO Valid RASS documented with a CAM-ICU score documented - this is possible as the bedside nurse may assume that a RASS score documented in the final hour of the last shift is still valid or incorrect as per clinical guidelines as RASS and CAM-ICU should be documented concurrently - both these scenarios are unlikely and would be even less likely once improvement work on thie metric is underway
+
+**[B] CAM-ICU Percentage Completions Last Shift - Front Tile**
+- get all flowsheet data for previous shift
+-  then go through logic
 - IF the current time falls between 08:00-19:59 (day shift), calculate the number of patients with at least 2 consecutive RASS scores of -3 to +4 during the previous shift (20:00 yesterday to 07:59 today)
 -  IF the current time falls between 20:00-07:59 (night shift), calculate the number of patients with at least 2 consecutive RASS scores of
  of -3 to +4 during the previous shift, calculate the number who have at least one CAM-ICU score documented (positive or negative) during the previous shift 
