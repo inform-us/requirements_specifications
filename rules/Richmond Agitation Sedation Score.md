@@ -2,9 +2,9 @@
 |---|---|---|---|
 |no - 01/01/01|- pending code review|no|- abc <br> - def|
 
-# SEDATION rules
+# RICHMOND AGITATION SEDATION SCORE (RASS) rules
 
-Rules for SEDATION (on mechanical ventilation) metric, measured using the RASS scale (sedation/agitation)
+Rules for RICHMOND AGITATION SEDATION SCORE (on mechanical ventilation) metric, measured using the RASS scale (sedation/agitation)
 
 ## EPIC
 - The degree of sedation and conversely agitation are measured by the Richmond Agitation Sedation Score (RASS)
