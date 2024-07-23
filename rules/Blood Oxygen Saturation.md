@@ -1,5 +1,5 @@
-# SpO2 rules 
-Rules for Sp02 saturations metric
+# Blood Oxygen Saturation (SpO2) rules 
+Rules for Blood Oxygen Saturation metric
 ## Validity (time window) Rules: 
 
 1. O2Sat only valid if o2sat_dt within last 4 hours of epoch 
