@@ -23,9 +23,7 @@ DIET INTAKE [6482]
 
 MOBILISATION ACHIEVED [40705] levels of mobilisation are from 0-10 from lying in bed to walking independently
 
-MOBILITY SCALE [1102] is the scale that the physios use
-
-Is this the same as the 40705 flowsheet 
+MOBILITY SCALE [1102] is the scale that the physios use 
 
 
 ## ELIGIBILITY
@@ -60,7 +58,7 @@ FLUID INTAKE FLOORPLAN
 
 1. if the latest 'fluid intake' reading is 'IV ongoing' then label patient as 'IV ongoing'
 2.  if the latest 'fluid intake' reading is 'IV discontinued' then label patient as 'IV discontinued'
-3.  if the latest 'fluid intake' reading is 'oral fluids' or 'sips' then label patient as 'oral fluids' TBC
+3.  if the latest 'fluid intake' reading is 'oral fluids' then label patient as 'oral fluids' TBC
 4.  if the latest 'fluid intake' reading is 'NBM' then label patient as 'NBM'
 5.  if 'fluid intake' has not been completed since 00:00 today, then label patient as 'missing'
 6.  if none of the rules matched then label the patient as 'fallthrough'
@@ -69,18 +67,18 @@ FLUID INTAKE FLOORPLAN
 
 DIET INTAKE FLOORPLAN
 
-1. if the latest 'diet intake' reading is 'normal diet' or 'soft diet' then label patient as 'oral diet'
-2.  if the latest 'diet intake' reading is 'free fluids' then label patient as 'free fluids'
-3.  if the latest 'diet intake' reading is 'enteral (NG/PEG etc.)' then label patient as 'enteral feeding'
-4.  if the latest 'diet intake' reading is  'parenteral (TPN)' then label patient as 'parenteral feeding'
-5.  if the latest 'diet intake' reading is 'NBM' or 'sips' then label patient as 'NBM/sips' TBC
-6.  if the latest 'diet intake' reading is 'other' then label patient as 'other'
-7.  if 'diet intake' has not been completed since 00:00 today, then label patient as 'missing'
-8.  if none of the rules matched then label the patient as 'fallthrough'
+1. if the latest 'diet intake' reading is 'normal diet' or 'soft diet' then label patient as 'eating and drinking'
+2.  if the latest 'diet intake' reading is 'free fluids' or 'clear fluids' then label patient as 'fluid only'
+3.  if the latest 'diet intake' reading is 'enteral (NG/PEG etc.)' or 'parenteral (TPN)' then label patient as 'enteral/parenteral feeding'
+5.  if the latest 'diet intake' reading is 'NBM' then label patient as 'NBM'
+6.   if the latest 'diet intake' reading is 'sips' then label patient as 'sips only'
+7.  if the latest 'diet intake' reading is 'other' then label patient as 'other'
+8.  if 'diet intake' has not been completed since 00:00 today, then label patient as 'missing'
+9.  if none of the rules matched then label the patient as 'fallthrough'
    
   *n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in ? button.*   
   
-MOBILISATION ACHIEVED FLOORPLAN
+MOBILISATION ACHIEVED FLOORPLAN - **DRAFT FOR NOW as We've come up against some issues with staff here. Hold off on this build.** 
 
 1. if the latest 'mobilisation achieved' reading is 'nothing (lying in bed) 0' or 'sitting in bed, exercises in bed 1' or 'passively moved to chair (no standing) 2'or 'sitting over edge of the bed 3' then label patient as 'in bed' 
 2. if the latest 'mobilisation achieved' reading is 'standing 4' then label patient as 'standing'
@@ -93,7 +91,7 @@ MOBILISATION ACHIEVED FLOORPLAN
 
    *n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This to be explained to user in ? button.*
 
-## NOTE DRAFT BELOW!!!!
+
 ## SPC Chart: (corresponds to the DrEaMing documentation SPC chart)
 
  Daily POM DrEaMing Documentation 
@@ -107,7 +105,7 @@ A week is defined as 00:00 on Monday to 23:59 on the following Sunday
 
 To comply with the DReaMing metric, all three (fluid intake, diet intake, mobilisation achieved) must be documented at least once in this time window (i.e. a valid _dt stamp for an entry for each individual metric) in order for each patient to achieve (1) Documented for that patient
 
-If any of the 3 DReaMing metrics is missing for any patient, an entry (a valid _dt stamp) then do not count 
+If any of the 3 DReaMing metrics are missing for any patient, an entry (a valid _dt stamp) then do not count 
 
 Numerator = sum of patients achieving (1) Documented response between 00:00 and 23:59 
 Denominator = total number of patients (occupied beds) between 00:00 and 23:59 
@@ -115,6 +113,7 @@ Denominator = total number of patients (occupied beds) between 00:00 and 23:59
 Calculate daily percentage for each unit
 
 Aggregate the daily percentages into a -weekly mean percentage_ for each of these respective units (T06, WMS)
+?calculate weekly percentage without aggregation? 
 
 Plot an SPC chart for each respective unit: y-axis = weekly percentage; x-axis = time
 
