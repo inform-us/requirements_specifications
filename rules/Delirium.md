@@ -1,8 +1,8 @@
-# Delirium CAM-ICU 
-Rules for CAM-ICU Metric (confusion assessment method-intensive care unit)
+# Delirium  
+Rules for Delirium using CAM-ICU Metric (confusion assessment method-intensive care unit)
 
 ## EPIC
-- CAM-ICU metric is a binary score, nurses input this manually
+- Delirium metric is a binary score, nurses input this manually
 - The score is required on all patients that have a (valid) RASS score (e.g. includes forward filled RASS scores) of -3 to +4 during any 12-hour shift
 - The two possible outcomes for CAM-ICU score are positive or negative
 - A positive score denotes that a patient has delirium, a negative score denotes that a patient does not have delirium
