@@ -1,5 +1,5 @@
 # Mean Arterial Blood Pressure (MAP) rules
-Rules for Arterial Blood Pressure (MAP) metric
+Rules for Mean Arterial Blood Pressure (MAP) metric
 ## Validity (time window) Rules: 
 
 1. MAP only valid if map_dt within last 6 hours of epoch_dt 
