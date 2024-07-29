@@ -80,10 +80,8 @@ DIET INTAKE FLOORPLAN
   
 MOBILISATION ACHIEVED FLOORPLAN - **DRAFT FOR NOW as We've come up against some issues with staff here. Hold off on this build.** 
 
-1. if the latest 'mobilisation achieved' reading is 'nothing (lying in bed) 0' or 'sitting in bed, exercises in bed 1' or 'passively moved to chair (no standing) 2'or 'sitting over edge of the bed 3' then label patient as 'in bed' 
-2. if the latest 'mobilisation achieved' reading is 'standing 4' then label patient as 'standing'
-3.  if the latest 'mobilisation achieved' reading is 'transferring bed to chair 5' then label patient as 'chair' 
-4.  if the latest 'mobilisation achieved' reading is 'marching on spot (at bedside) 6' then label patient as 'marching on spot'
+1. if the latest 'mobilisation achieved' reading is 'nothing (lying in bed) 0' or 'sitting in bed, exercises in bed 1' or 'passively moved to chair (no standing) 2' or 'sitting over edge of the bed 3' then label patient as 'in bed' 
+2. if the latest 'mobilisation achieved' reading is 'standing 4' or 'transferring bed to chair 5' 'marching on spot (at bedside) 6' then label patient as 'active transferring'
 5.  if the latest 'mobilisation achieved' reading is 'walking with assistance of 2 or more people 7' or 'walking with assistance of 1 person 8' label patient as 'walking with assistance'
 6.   if the latest 'mobilisation achieved' reading is 'walking independently with gait aid 9 ' or 'walking independently without gait aid 10' label patient as 'walking independently'
 7. If 'mobilisation achieved' has not been completed since 00:00 today, then label patient as 'missing'
