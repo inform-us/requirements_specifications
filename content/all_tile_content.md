@@ -101,9 +101,12 @@ Unit Performance Data for each metric
 **7) Patients on mandatory ventilation Tidal Volume**
 
 
-![image](https://github.com/inform-us/requirements_specifications/assets/94536083/9197e25f-21dc-4978-bc9b-9fcde5574548)
+![image](https://github.com/inform-us/requirements_specifications/assets/94536083/9197e25f-21dc-4978-bc9b-9fcde5574548) 
 
 
+**8) Patients with RASS of -3 mto 4 CAM-ICU**
+
+![image](https://github.com/user-attachments/assets/bb7066d0-33d8-4043-b9a7-40e42fa1f5a1)
 
 
 
