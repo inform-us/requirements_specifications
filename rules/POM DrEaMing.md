@@ -57,7 +57,7 @@ FLUID INTAKE FLOORPLAN
 
 1. if the latest 'fluid intake' reading is 'IV ongoing' then label patient as 'IV ongoing'
 2.  if the latest 'fluid intake' reading is 'IV discontinued' then label patient as 'IV discontinued'
-3.  if the latest 'fluid intake' reading is 'oral fluids' then label patient as 'oral fluids' TBC
+3.  if the latest 'fluid intake' reading is 'oral fluids' then label patient as 'oral fluids' 
 4.  if the latest 'fluid intake' reading is 'NBM' then label patient as 'NBM'
 5.  if 'fluid intake' has not been completed since 00:00 today, then label patient as 'missing'
 6.  if none of the rules matched then label the patient as 'fallthrough'
@@ -66,18 +66,19 @@ FLUID INTAKE FLOORPLAN
 
 DIET INTAKE FLOORPLAN
 
-1. if the latest 'diet intake' reading is 'normal diet' or 'soft diet' then label patient as 'eating and drinking'
-2.  if the latest 'diet intake' reading is 'free fluids' or 'clear fluids' then label patient as 'fluid only'
-3.  if the latest 'diet intake' reading is 'enteral (NG/PEG etc.)' or 'parenteral (TPN)' then label patient as 'enteral/parenteral feeding'
-5.  if the latest 'diet intake' reading is 'NBM' then label patient as 'NBM'
-6.   if the latest 'diet intake' reading is 'sips' then label patient as 'sips only'
-7.  if the latest 'diet intake' reading is 'other' then label patient as 'other'
-8.  if 'diet intake' has not been completed since 00:00 today, then label patient as 'missing'
-9.  if none of the rules matched then label the patient as 'fallthrough'
+1. if the latest 'diet intake' reading is 'normal diet' or 'soft diet' or 'pureed' or 'nutritional supplement' then label patient as 'eating and drinking'
+2. if the latest 'diet intake' reading is 'free fluids' or 'clear fluids' then label patient as 'fluid only'
+3. if the latest 'diet intake' reading is 'enteral (NG/PEG etc.)' or 'parenteral (TPN)' then label patient as 'enteral/parenteral feeding'
+5. if the latest 'diet intake' reading is 'NBM' then label patient as 'NBM'
+6. if the latest 'diet intake' reading is 'sips' then label patient as 'sips only'
+7. if the latest 'diet intake' reading is 'other' then label patient as 'other'
+8. if the latest 'diet intake' reading is 'fluid restriction' then label the patient as 'fluid restriction' 
+9.  if 'diet intake' has not been completed since 00:00 today, then label patient as 'missing'
+10.  if none of the rules matched then label the patient as 'fallthrough'
    
   *n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in ? button.*   
   
-MOBILISATION ACHIEVED FLOORPLAN - **DRAFT FOR NOW as We've come up against some issues with staff here. Hold off on this build.** 
+MOBILISATION ACHIEVED FLOORPLAN 
 
 1. if the latest 'mobilisation achieved' reading is 'nothing (lying in bed) 0' or 'sitting in bed, exercises in bed 1' or 'passively moved to chair (no standing) 2' or 'sitting over edge of the bed 3' then label patient as 'in bed' 
 2. if the latest 'mobilisation achieved' reading is 'standing 4' or 'transferring bed to chair 5' 'marching on spot (at bedside) 6' then label patient as 'active transferring'
