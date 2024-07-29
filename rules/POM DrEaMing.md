@@ -6,24 +6,23 @@ Rules for POM DrEaMing metrics
 ## EPIC
 The POM DrEaMing Metrics refer to the status of post-operative patients' Drinking Eating and Mobilising.
 
-These data are input manually by nurses at least once every 24 hours or every time a patient Drinks, Eats or Mobilises
+These data are input manually by nurses at least once every 24 hours and ideally every time a patient Drinks, Eats or Mobilises
 
-The metrics are labeled as fluid intake, diet intake and moblisation acheieved in EPIC
+The metrics are labeled as fluid intake, diet intake and moblisation achieved in EPIC
 
-Inform_us will display whether the nurse has documented the status of drinking, eating and mobilising in the last 24 hours and each patient's status on the three components
+Inform_us will display whether staff have documented the status of drinking, eating and mobilising in the last 24 hours and each patient's status on the three components
 
 
 ## EPIC Flowsheets
 
 The flowsheets exist in Post-Op Surgical tab of ICU navigators
 
-FLUID INTAKE [45429]
+FLUID INTAKE [45429] the nurse will document whether a patient's fluid intake is: intravenous 'IV Ongoing', previously intravenous 'IV Discontinued', drinking normally 'oral fluids', or nil by mouth/not allowed any oral fluid or food intake 'NBM'
 
-DIET INTAKE [6482]
+DIET INTAKE [6482] the nurse will document 
 
-MOBILISATION ACHIEVED [40705] levels of mobilisation are from 0-10 from lying in bed to walking independently
+MOBILISATION ACHIEVED [40705] levels of mobilisation are documented by physio or nurse when staff are attempting to mobilise. The scale ranges from 0-10 from lying (0) in bed through transferring into a chair, to walking with assistance and eventually walking independently (10). 
 
-MOBILITY SCALE [1102] is the scale that the physios use 
 
 
 ## ELIGIBILITY
