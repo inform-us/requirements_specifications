@@ -23,7 +23,10 @@ DIET INTAKE [6482] the nurse will document
 
 MOBILISATION ACHIEVED [40705] levels of mobilisation are documented by physio or nurse when staff are attempting to mobilise. The scale ranges from 0-10 from lying (0) in bed through transferring into a chair, to walking with assistance and eventually walking independently (10). 
 
-
+nothing (lying in bed) 0' or 'sitting in bed, exercises in bed 1' or 'passively moved to chair (no standing) 2' or 'sitting over edge of the bed 3' then label patient as 'in bed' 
+2. if the latest 'mobilisation achieved' reading is 'standing 4' or 'transferring bed to chair 5' 'marching on spot (at bedside) 6' then label patient as 'active transferring'
+5.  if the latest 'mobilisation achieved' reading is 'walking with assistance of 2 or more people 7' or 'walking with assistance of 1 person 8' label patient as 'walking with assistance'
+6.   if the latest 'mobilisation achieved' reading is 'walking independently with gait aid 9 ' or 'walking independently without gait aid 10' label patient as 'walking independently'
 
 ## ELIGIBILITY
 All patients on T06 or WMS units
