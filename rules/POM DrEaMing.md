@@ -101,17 +101,18 @@ Operational definition = of all Perioperative patients (patients on T06 and WMS)
 A day is defined as between 00:00 and 23:59 
 A week is defined as 00:00 on Monday to 23:59 on the following Sunday
 
-To comply with the DReaMing metric, all three (fluid intake, diet intake, mobilisation achieved) must be documented at least once in this time window (i.e. a valid _dt stamp for an entry for each individual metric) in order for each patient to achieve (1) Documented for that patient
+To comply with the DReaMing metric, all three (fluid intake, diet intake, mobilisation achieved) must be documented at least once in this time window (i.e. a valid _dt stamp for an entry for each individual metric) in order for each patient to achieve (1) DReaMing documented 
 
 If any of the 3 DReaMing metrics are missing for any patient, an entry (a valid _dt stamp) then do not count 
 
 Numerator = sum of patients achieving (1) Documented response between 00:00 and 23:59 
-Denominator = total number of patients (occupied beds) between 00:00 and 23:59 
+
+Denominator = total number of patients present on unit (based on MRNs) between 00:00 and 23:59 
 
 Calculate daily percentage for each unit
 
 Aggregate the daily percentages into a -weekly mean percentage_ for each of these respective units (T06, WMS)
-?calculate weekly percentage without aggregation? 
+?calculate weekly percentage without aggregating? - this does not account for patients with admission over 1 day... 
 
 Plot an SPC chart for each respective unit: y-axis = weekly percentage; x-axis = time
 
