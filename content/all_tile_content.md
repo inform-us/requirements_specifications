@@ -48,7 +48,11 @@ Number of currently occupied beds / Total number of beds per unit
 **7) Patients on mandatory ventilation Tidal Volume**
 
 
-![image](https://github.com/inform-us/requirements_specifications/assets/94536083/681584c8-4598-4c3f-9b34-6eadd5599664)
+![image](https://github.com/inform-us/requirements_specifications/assets/94536083/681584c8-4598-4c3f-9b34-6eadd5599664) 
+
+**8) Patients with a RASS of -3 to 4 CAM-ICU**
+
+![image](https://github.com/user-attachments/assets/07c51358-ae53-48e8-9dc8-d0dba39fe931)
 
 
 
@@ -104,9 +108,9 @@ Unit Performance Data for each metric
 ![image](https://github.com/inform-us/requirements_specifications/assets/94536083/9197e25f-21dc-4978-bc9b-9fcde5574548) 
 
 
-**8) Patients with RASS of -3 mto 4 CAM-ICU**
 
-![image](https://github.com/user-attachments/assets/bb7066d0-33d8-4043-b9a7-40e42fa1f5a1)
+
+
 
 
 
