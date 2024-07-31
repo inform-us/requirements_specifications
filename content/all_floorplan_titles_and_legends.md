@@ -138,7 +138,11 @@ To access individual floorplan select location and required tile/metric from Cli
 
 **Floorplan title: All POM patients: DrEaMing**
 
+<img width="481" alt="image" src="https://github.com/user-attachments/assets/fc48ba66-ab61-4a0a-8fe5-cf5e42e77da9">
 
+<img width="487" alt="image" src="https://github.com/user-attachments/assets/8de78d9f-8d81-4aac-a9f8-75a937cdd874">
+
+<img width="489" alt="image" src="https://github.com/user-attachments/assets/325185bd-a283-4d11-93c5-8f9a3518b1dc">
 
 
 
