@@ -18,6 +18,7 @@ To access individual floorplan select location and required tile/metric from Cli
    * T03 Critical Care
    * T06 Critical Care
    * GWB Critical Care
+   * WMS Critical Care
      
 **3.  Overview of tiles / metrics**
    * Bed Occupancy
@@ -26,7 +27,9 @@ To access individual floorplan select location and required tile/metric from Cli
    * Patients on oxygen therapy SpO2 Saturations
    * Patients on vasoactive drugs Mean Arterial BP
    * Sedated patients RASS
-   * Patients on mandatory ventilation Tidal Volume  
+   * Patients on mandatory ventilation Tidal Volume
+   * Patients with a RASS -3 to +4 CAM-ICU
+   * All POM patients DrEaMing
 
 ![image](https://github.com/inform-us/requirements_specifications/assets/94536083/f4ceeba1-a5b4-45ed-867e-7d7435745fc7)
 
@@ -124,6 +127,17 @@ To access individual floorplan select location and required tile/metric from Cli
 
 
 ---
+## Tile: Patients with a RASS -3 to + 4 CAM-ICU
+
+**Floorplan title: All patients with RASS score if > -3: CAM-ICU Delirium**
+
+
+![image](https://github.com/inform-us/requirements_specifications/assets/167782531/1281d06f-09e7-42ca-9d60-c2c03701a970)
+
+## Tile: All POM patients DrEaMing
+
+**Floorplan title: All POM patients: DrEaMing**
+
 
 
 
