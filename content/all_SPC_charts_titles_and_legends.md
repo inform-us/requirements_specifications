@@ -18,6 +18,7 @@ To access specific SPC charts select location and required tile/metric from Data
    * T03 Critical Care
    * T06 Critical Care
    * GWB Critical Care
+   * WMS
      
 **3.  Overview of tiles / metrics**
   
