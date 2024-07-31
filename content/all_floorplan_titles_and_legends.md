@@ -1,4 +1,4 @@
-\* **Frontend code up to date as of: 07.03.2024** \*
+\* **Frontend code updated July 24 but requires checking** \*
 
 # All Floorplan titles and legends
 
@@ -12,6 +12,7 @@ To access individual floorplan select location and required tile/metric from Cli
 
    * **Clinical Dashboard** 
    * Data for Improvement
+   * Critical Care Comms
    * About us
 
 **2. Location / Units**
