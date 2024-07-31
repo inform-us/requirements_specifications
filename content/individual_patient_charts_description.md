@@ -5,7 +5,8 @@
 Tabs on Left
 1. Clinical Dashboard
 2. Data for Improvement
-3. About us
+3. Critical Care Comms
+4. About us
 
 ## Pain - individual chart contents:
 
@@ -65,3 +66,17 @@ Tabs on Left
 * Slider bar: time window (up to last 72 hours)
 * Back button bottom left
    <img width="1383" alt="Screenshot 2024-02-28 at 16 12 54" src="https://github.com/inform-us/requirements_specifications/assets/78792902/2fddbca1-89ec-4a5f-b7c5-357b4e9c4241">
+
+## CAM-ICU: Delirium - individual chart contents:
+* Unit top left
+* Title top centre: CAM-ICU scores
+* Bed number underneath title
+* Legend below title: CAM-ICU positive (red filled circle darker red outline), CAM-ICU negative (green filled circle darker green outline), CAM-ICU not required (dark grey tick on central dividing line ), **missing reading** (light grey verticle rectangle)
+* x axis: time day, date of month, e.g. 14:00, Wed 28
+* y axis: Title: CAM-ICU score divided into positive at the top and negative at the bottom
+* Slider bar: time window (upt to last 72 hours)
+* Back button bottom left
+<img width="552" alt="image" src="https://github.com/user-attachments/assets/a8234003-e00d-4e5a-a4db-127f5a98d3b3">
+
+  
+  
