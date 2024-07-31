@@ -15,6 +15,7 @@
    * T03 Critical Care
    * T06 Critical Care
    * GWB Critical Care
+   * WMS Critical Care
      
 **3.  Overview of tiles / metrics**
    
