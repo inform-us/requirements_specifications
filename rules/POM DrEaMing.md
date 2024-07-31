@@ -17,26 +17,56 @@ Inform_us will display whether staff have documented the status of drinking, eat
 
 The flowsheets exist in Post-Op Surgical tab of ICU navigators
 
-FLUID INTAKE [45429] the nurse will document whether a patient's fluid intake is: intravenous 'IV Ongoing', previously intravenous 'IV Discontinued', drinking normally 'oral fluids', or nil by mouth/not allowed any oral fluid or food intake 'NBM'
+**FLUID INTAKE [45429] the nurse will document whether a patient's fluid intake is:**  
 
-DIET INTAKE [6482] the nurse will document whether a patient's diet intake is: 'normal diet' or 'soft diet' or 'pureed' or 'nutritional supplement', fed through a feeding tube 'enteral (NG/PEG etc.)', fed directly into the vein 'parenteral (TPN)', is having only sips of water 'sips', is on a fluid restriction diet 'fluid restriction' or nil by mouth/not allowed any oral fluid or food intake 'NBM'. There is also an 'other' option for diet intake. 
+- intravenous 'IV Ongoing'
 
-MOBILISATION ACHIEVED [40705] levels of mobilisation are documented by physiotherapist or nurse when staff are attempting to mobilise. The scale ranges from 0-10 from lying (0) in bed through transferring into a chair, to walking with assistance and eventually walking independently (10). 
+- previously intravenous 'IV Discontinued'
 
- if the latest 'diet intake' reading is 'normal diet' or 'soft diet' or 'pureed' or 'nutritional supplement' then label patient as 'eating and drinking'
-2. if the latest 'diet intake' reading is 'free fluids' or 'clear fluids' then label patient as 'fluid only'
-3. if the latest 'diet intake' reading is 'enteral (NG/PEG etc.)' or 'parenteral (TPN)' then label patient as 'enteral/parenteral feeding'
-5. if the latest 'diet intake' reading is 'NBM' then label patient as 'NBM'
-6. if the latest 'diet intake' reading is 'sips' then label patient as 'sips only'
-7. if the latest 'diet intake' reading is 'other' then label patient as 'other'
-8. if the latest 'diet intake' reading is 'fluid restriction' then label the patient as 'fluid restriction' 
-9.  if 'diet intake' has not been completed since 00:00 today, then label patient as 'missing'
-10.  if none of the rules matched then label the patient as 'fallthrough'
-   
-nothing (lying in bed) 0' or 'sitting in bed, exercises in bed 1' or 'passively moved to chair (no standing) 2' or 'sitting over edge of the bed 3' then label patient as 'in bed' 
-2. if the latest 'mobilisation achieved' reading is 'standing 4' or 'transferring bed to chair 5' 'marching on spot (at bedside) 6' then label patient as 'active transferring'
-5.  if the latest 'mobilisation achieved' reading is 'walking with assistance of 2 or more people 7' or 'walking with assistance of 1 person 8' label patient as 'walking with assistance'
-6.   if the latest 'mobilisation achieved' reading is 'walking independently with gait aid 9 ' or 'walking independently without gait aid 10' label patient as 'walking independently'
+- drinking normally 'oral fluids' or
+
+- nil by mouth/not allowed any oral fluid or food intake 'NBM'
+  
+
+**DIET INTAKE [6482] the nurse will document whether a patient's diet intake is:** 
+
+-  oral: 'normal diet' or 'soft diet' or 'pureed' or 'nutritional supplement'
+
+-   fed through a feeding tube 'enteral (NG/PEG etc.)'
+
+-   fed directly into the vein 'parenteral (TPN)'
+
+-   is having only sips of water 'sips'
+
+-   is on a fluid restriction diet 'fluid restriction' or 
+  
+-   nil by mouth/not allowed any oral fluid or food intake 'NBM'. There is also an 'other' option for diet intake. 
+
+**MOBILISATION ACHIEVED [40705] levels of mobilisation are documented by physiotherapist or nurse when staff are attempting to mobilise.**
+
+The scale ranges from 0-10 and in T06 and WMS we aim to get post-operative patients to level 5 within a few hours of surgery and walking on day one unless their baseline mobility will not allow for this. 
+
+0 - patient is lying in bed
+
+1- patient is sitting in bed or doing exercises in bed 
+
+2- patient is being passively moved to chair, but cannot stand
+
+3- patient can sit over edge of the bed
+
+4- patient can stand
+
+5- patient can transfer from bed to a chair 
+
+6- patient can march on spot at bedside 
+
+7- patient can walk with the assistance of 2 or more people
+
+8- patient can walk with assistance of 1 person 
+
+9- patient can walk independently with gait aid 
+
+10- patient can walking independently without gait aid 
 
 ## ELIGIBILITY
 All patients on T06 or WMS units
