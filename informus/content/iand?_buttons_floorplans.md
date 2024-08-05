@@ -322,7 +322,36 @@ If a patient’s most recent CAM-ICU score is negative: delirium is not present.
 **Page: Clinical dashboard tab: All POM patients DrEaMing**
 
 ## All POM patients DrEaMing floorplan 
+
 ## i button
+
+Ensuring that patients Drink, Eat and Mobilise (DrEaMing) after soon as possible after surgery is important in reducing post operative complications such as respiratory infections. 
+Patients recieiving different types of surgery will have different guidelines concerning initiation of drinking, eating and mobilisation.
+
+## ? button
+
+**Eligibility** 
+
+All patients on T06 or WMS
+
+**Classification**
+
+Fluid intake, diet intake and mobilisation should be documented everytime a patient has a change in status and a minimum of once every 24 hours.  The mmeasurement in valid for for 24 hours from 01.00 or until a new entry is made. The expected minimum is that there will be one fluid intake status, one diet intake status and one episode of mobilisation documented within the 24 hour period.
+
+**Fluid Intake**
+
+IV Ongoing: Patient is recieving IV fluids 
+IV Discontinued:  IV fluids have been discontinued and a new bag is not going to be restarted.
+Oral fluids:  drinking normally
+NBM: nil by mouth/not allowed any oral fluid or food intake
+
+Fluid intake is documented as patient recieves 
+
+If none of the above matches, the bed will be dark grey on floorplan. 
+
+
+
+
 
 
 
