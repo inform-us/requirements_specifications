@@ -277,7 +277,7 @@ Patients are intubated (oral/nasal tube or tracheostomy) and on mandatory ventil
 
 **Tip 1:** These data update on the hour
 
-**Tip 2:** If a bed is blue, CAM-ICU is not required as patient's RASS score is below -3. 
+
 
 
 
@@ -294,7 +294,7 @@ Patients are intubated (oral/nasal tube or tracheostomy) and on mandatory ventil
 ## i button
 
 
-Delirium is an acute confusional state that may not always be easily recognisable but is associated with negative outcomes. To recognise if a patient has delirium or does not have delirium, CAM-ICU scores are completed at least once a shift.  CAM-ICU score should only be completed if a patient has RASS score of -3 to 4.
+Delirium is an acute confusional state that may not always be easily recognisable but is associated with negative outcomes. To recognise if delirium is present, CAM-ICU scores are completed at least once a shift.  CAM-ICU score should only be completed if a patient has RASS score of -3 to 4.
 
 Recognisation of delirium enables formulation of management plan to assess for causes and address them.
 
@@ -309,15 +309,16 @@ All patients who have a valid RASS score between -3 to +4 this shift
 
 For eligible patients (RASS -3 to +4), the CAM-ICU metric should be documented once per 12-hour shift.  Every CAM-ICU score set on a shift is valid until the end of the shift or until superseded by a subsequent documented score.  Therefore, the CAM-ICU score will expire at 07.59 or 19.59 everyday.
 
-* **Red:** Patient’s most recent CAM-ICU score is positive indicating that delirium is present.   
+If a patient’s most recent CAM-ICU score is positive: delirium is present.   
 
-* **Green:** Patient’s most recent CAM-ICU score is negative indicating that delirium is not present.
+If a patient’s most recent CAM-ICU score is negative: delirium is not present.
 
 
 * **Tip 1:** If there has been more than one CAM-ICU score documented across a shift, the most recent score will be used. 
 
 * **Tip 2:** If the bed is shaded blue, the patient's RASS score is below -3 and therefore a CAM-ICU is not required.
 
+---
 
 
 
