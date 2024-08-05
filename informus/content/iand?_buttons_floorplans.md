@@ -319,6 +319,10 @@ If a patient’s most recent CAM-ICU score is negative: delirium is not present.
 * **Tip 2:** If the bed is shaded blue, the patient's RASS score is below -3 and therefore a CAM-ICU is not required.
 
 ---
+**Page: Clinical dashboard tab: All POM patients DrEaMing**
+
+## All POM patients DrEaMing floorplan 
+## i button
 
 
 
