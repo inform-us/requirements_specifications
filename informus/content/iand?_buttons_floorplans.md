@@ -341,9 +341,13 @@ For compliance with documentation to be achieved, a patient must have all three 
 **Fluid Intake**
 
 **IV Ongoing:** Patient is recieving IV fluids 
+
 **IV Discontinued:**  IV fluids have been discontinued
+
 **Oral fluids:**  Patient is drinking normally
+
 **NBM:** Patient is nil by mouth/not allowed any oral fluid or food intake
+
 **Missing:** Documentation has not been documented today
 
 If none of the above rules match, the bed will appear as dark grey on floorplan. 
@@ -351,21 +355,33 @@ If none of the above rules match, the bed will appear as dark grey on floorplan.
 **Diet Intake**
 
 **Eating and Drinking:** Patient is recieving normal diet, soft diet, puree diet or nutritional supplements
+
 **Fluid Only:** Patient is recieiving free fluids or clear fluids (this does not include IV fluids)
+
 **Enteral/parenteral Feeding:** Patient is recieving enteral (NG/PEG etc.) or parenteral (TPN) 
+
 **NBM:** Patient is nil by mouth/ not allowed any oral fluid or food intake
+
 **Sips only** Patient is recieving sips
+
 **Fluid Restriction** Patient is on fluid restriction
+
 **Other** Patient is recieving diet intake that is not defined by the above labels
+
 **Missing** Diet intake has not been documented today
 
 If none of the above rules match, the bed will appear as dark grey on floorplan
 
 **Mobilisation Achieved**
-**In bed:** 
-**Actively transferring:**
-**Walking with assistance**
-**Walking independently**
+
+**In bed:** Patient is lying in bed (0), passively moved to chair (1) or sitting over edge of bed (3)
+
+**Actively transferring:** Patient is standing (4), transferring bed to chair (5) or marching on spot (6)
+
+**Walking with assistance** Patient is walking with assistance of 2 or more people (7) or walking with assistance of 1 person (8)
+
+**Walking independently** Patient is walking independently with a gait aid (9) or walking independently without a gait aid (10)
+
 **Missing:** Mobilisation has not been documented today.
 
 If none of the above rules match, the bed will appear as dark grey on floorplan
