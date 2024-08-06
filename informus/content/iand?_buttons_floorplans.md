@@ -296,7 +296,7 @@ Patients are intubated (oral/nasal tube or tracheostomy) and on mandatory ventil
 
 Delirium is an acute confusional state that may not always be easily recognisable but is associated with negative outcomes. To recognise if delirium is present, CAM-ICU scores are completed at least once a shift.  CAM-ICU score should only be completed if a patient has RASS score of -3 to 4.
 
-Recognisation of delirium enables formulation of management plan to assess for causes and address them.
+Recognisation of delirium enables formulation of a management plan to assess for causes and then address them.
 
 ## ? button
 
@@ -313,10 +313,8 @@ If a patient’s most recent CAM-ICU score is positive: delirium is present.
 
 If a patient’s most recent CAM-ICU score is negative: delirium is not present.
 
-
-* **Tip 1:** If there has been more than one CAM-ICU score documented across a shift, the most recent score will be used. 
-
-* **Tip 2:** If the bed is shaded blue, the patient's RASS score is below -3 and therefore a CAM-ICU is not required.
+If there has been more than one CAM-ICU score documented across a shift, the most recent score will be used. 
+A blue shaded bed indicates that the patient's RASS score is below -3 and therefore a CAM-ICU is not required.
 
 ---
 **Page: Clinical dashboard tab: All POM patients DrEaMing**
@@ -325,8 +323,8 @@ If a patient’s most recent CAM-ICU score is negative: delirium is not present.
 
 ## i button
 
-Ensuring that patients Drink, Eat and Mobilise (DrEaMing) after soon as possible after surgery is important in reducing post operative complications such as respiratory infections. 
-Patients recieiving different types of surgery will have different guidelines concerning initiation of drinking, eating and mobilisation.
+Ensuring that patients Drink, Eat and Mobilise (DrEaMing) after soon as possible after surgery is important in reducing post operative complications such as respiratory infections and reducing length of recovery.
+Patients recieiving different types of surgery will have different guidelines concerning initiation of drinking, eating and mobilisation. Therefore, when viewing and interpreting the floorplan, knowledge of individual patient's recovery pathway is required.
 
 ## ? button
 
@@ -336,18 +334,45 @@ All patients on T06 or WMS
 
 **Classification**
 
-Fluid intake, diet intake and mobilisation should be documented everytime a patient has a change in status and a minimum of once every 24 hours.  The mmeasurement in valid for for 24 hours from 01.00 or until a new entry is made. The expected minimum is that there will be one fluid intake status, one diet intake status and one episode of mobilisation documented within the 24 hour period.
+Fluid intake, diet intake and mobilisation achieved metrics should be documented once every 24 hours or until the patient's status changes.  
+Fluid intake, diet intake and mobilisation achieved metrics are valid for 24 hours from 00:01 hours each day or until a new entry is made.
+For compliance with documentation to be achieved, a patient must have all three metrics documented within the 24 hour period.
 
 **Fluid Intake**
 
-IV Ongoing: Patient is recieving IV fluids 
-IV Discontinued:  IV fluids have been discontinued and a new bag is not going to be restarted.
-Oral fluids:  drinking normally
-NBM: nil by mouth/not allowed any oral fluid or food intake
+**IV Ongoing:** Patient is recieving IV fluids 
+**IV Discontinued:**  IV fluids have been discontinued
+**Oral fluids:**  Patient is drinking normally
+**NBM:** Patient is nil by mouth/not allowed any oral fluid or food intake
+**Missing:** Documentation has not been documented today
 
-Fluid intake is documented as patient recieves 
+If none of the above rules match, the bed will appear as dark grey on floorplan. 
 
-If none of the above matches, the bed will be dark grey on floorplan. 
+**Diet Intake**
+
+**Eating and Drinking:** Patient is recieving normal diet, soft diet, puree diet or nutritional supplements
+**Fluid Only:** Patient is recieiving free fluids or clear fluids (this does not include IV fluids)
+**Enteral/parenteral Feeding:** Patient is recieving enteral (NG/PEG etc.) or parenteral (TPN) 
+**NBM:** Patient is nil by mouth/ not allowed any oral fluid or food intake
+**Sips only** Patient is recieving sips
+**Fluid Restriction** Patient is on fluid restriction
+**Other** Patient is recieving diet intake that is not defined by the above labels
+**Missing** Diet intake has not been documented today
+
+If none of the above rules match, the bed will appear as dark grey on floorplan
+
+**Mobilisation Achieved**
+**In bed:** 
+**Actively transferring:**
+**Walking with assistance**
+**Walking independently**
+**Missing:** Mobilisation has not been documented today.
+
+If none of the above rules match, the bed will appear as dark grey on floorplan
+
+
+
+
 
 
 
