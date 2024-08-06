@@ -36,3 +36,11 @@
 - Tidal Volume ml/kg(IBW): number with one decimal place, e.g. 6.8
 - Target: 6-8ml/kg(IBW)
 - Classification: in range or out of range
+
+  
+## CAM-ICU score individual chart tooltip content
+- From: Time, Day Date of current month, e.g. 13:00, Wed 28
+- To: Time, Day, Date of current month, e.g. 19:59, Wed 28
+- CAM-ICU score: Positive or negative
+- (if carried forward) 'last assessment still valid' 
+  
