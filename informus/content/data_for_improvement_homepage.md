@@ -27,6 +27,10 @@
    * Sedated patients RASS / Unit Performance Data
    * Patients on mandatory ventilation Tidal Volume / Unit Performance Data
 
+Following metrics to be confirmed.
+   * Patients with RASS of -3 to +4 CAM-ICU score /Unit Performance Data
+   * Patients with RASS of -3 to +4 CAM-ICU Assessment Frequency / Unit Performance Data
+   * All POM patients DrEaMing Documentation / Unit Performance Data
 
      ![image](https://github.com/inform-us/requirements_specifications/assets/94536083/703a4a6b-157b-4917-a824-52f8584b012f)
 
