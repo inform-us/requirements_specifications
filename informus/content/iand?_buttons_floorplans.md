@@ -352,6 +352,8 @@ For compliance with documentation to be achieved, a patient must have all three 
 
 If none of the above rules match, the bed will appear as dark grey on floorplan. 
 
+-------
+
 **Diet Intake**
 
 **Eating and Drinking:** Patient is recieving normal diet, soft diet, puree diet or nutritional supplements
@@ -371,6 +373,8 @@ If none of the above rules match, the bed will appear as dark grey on floorplan.
 **Missing** Diet intake has not been documented today
 
 If none of the above rules match, the bed will appear as dark grey on floorplan
+
+-----
 
 **Mobilisation Achieved**
 
