@@ -313,8 +313,14 @@ If a patient’s most recent CAM-ICU score is positive: delirium is present.
 
 If a patient’s most recent CAM-ICU score is negative: delirium is not present.
 
-If there has been more than one CAM-ICU score documented across a shift, the most recent score will be used. 
-A blue shaded bed indicates that the patient's RASS score is below -3 and therefore a CAM-ICU is not required.
+
+**Tip 1:** If there has been more than one CAM-ICU score documented across a shift, the most recent score will be used. 
+
+**Tip 2:** Only patients that meet RASS criteria (i.e. have RASS score between -3 and 4) are included in percentage calculations on front tile.
+
+**Tip3:** RASS scores are valid for 1 hourly during the day (06:00 - 21:59) and 4 hourly during the night (22:00 to 05.59). If a patient has a valid CAM-ICU score, but not a valid RASS score this will be denoted by a dashed line around a coloured (red or green) bed.
+
+**Tip4:** A blue shaded bed indicates that the patient's RASS score is below -3 and therefore a CAM-ICU is not required.
 
 ---
 **Page: Clinical dashboard tab: All POM patients DrEaMing**
