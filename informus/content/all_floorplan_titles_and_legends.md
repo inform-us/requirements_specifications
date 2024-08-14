@@ -133,7 +133,8 @@ To access individual floorplan select location and required tile/metric from Cli
 **Floorplan title: All patients with RASS score if > -3: CAM-ICU Delirium**
 
 
-![image](https://github.com/inform-us/requirements_specifications/assets/167782531/1281d06f-09e7-42ca-9d60-c2c03701a970)
+![image](https://github.com/user-attachments/assets/c00a4de3-8a86-486c-825d-0ea9542737d2)
+
 
 ## Tile: All POM patients DrEaMing
 
