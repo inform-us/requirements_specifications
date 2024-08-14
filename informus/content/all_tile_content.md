@@ -56,7 +56,8 @@ Number of currently occupied beds / Total number of beds per unit
 
 **9) All POM patients DrEaMing**
 
-<img width="113" alt="image" src="https://github.com/user-attachments/assets/1e6ee801-02f6-4077-a1f6-a08e1ea1a526">
+![image](https://github.com/user-attachments/assets/7401b17b-07a2-4caf-b065-e184d00c9c6b)
+
 
 
 ---
