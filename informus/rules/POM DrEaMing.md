@@ -72,7 +72,7 @@ The scale ranges from 0-10 and in T06 and WMS we aim to get post-operative patie
 All patients on T06 or WMS units
 
 ## VALIDITY
-Fluid intake, diet intake and mobilisation achieved metrics are valid for 24 hours from 00:01 hours each day or until a new entry has been made 
+Fluid intake, diet intake and mobilisation achieved metrics are valid for 24 hours from 00:00 hours each day or until a new entry has been made 
 
 
 For eligible patients, fluid intake, diet intake and mobilisation achieved metrics should be documented once every 24 hours or until a patient's status changes. 
