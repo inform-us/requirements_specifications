@@ -112,6 +112,24 @@ Unit Performance Data for each metric
 ![image](https://github.com/inform-us/requirements_specifications/assets/94536083/9197e25f-21dc-4978-bc9b-9fcde5574548) 
 
 
+**8) Patients with a RASS of -3 to 4 CAM-ICU**
+
+Content on Tile- 
+
+Patients with RASS -3 to 4 
+
+CAM-ICU
+
+Unit performance data
+
+**9) All POM patients DrEaMing**
+
+Content of Tile
+POM patients on T06 and WMS 
+
+DrEaMing 
+
+Unit performance data
 
 
 
