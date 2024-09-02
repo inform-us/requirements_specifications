@@ -42,5 +42,6 @@
 - From: Time, Day Date of current month, e.g. 13:00, Wed 28
 - To: Time, Day, Date of current month, e.g. 19:59, Wed 28
 - CAM-ICU score: Positive or negative
-- (if carried forward) 'last assessment still valid' 
+- (if carried forward) 'last assessment still valid'
+- OR 'assessment valid for the rest of this shift' 
   
