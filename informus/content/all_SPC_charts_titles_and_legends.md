@@ -53,7 +53,7 @@ To access specific SPC charts select location and required tile/metric from Data
 
 ## Tile: All ICU Targets set ( clarify if to align tile title with floorplan)
 
-**SPC chart title: Daily percentage of patients with all targets set in ICU Navigators** ( do we need to right out Unit Performance Data?)
+**SPC chart title: Percentage of patients with all targets set in ICU Navigators** 
 
 
 
@@ -65,7 +65,7 @@ To access specific SPC charts select location and required tile/metric from Data
 
 ## Tile: Patients on oxygen therapy SpO2 Saturations
 
-**SPC chart title: Daily percentage of patients within/ above/ below SpO2 Saturations Target (patients on oxygen therapy)**
+**SPC chart title: Percentage of patients within/ above/ below SpO2 Saturations Target (patients on oxygen therapy)**
 
 
 
@@ -74,7 +74,7 @@ To access specific SPC charts select location and required tile/metric from Data
 
 ---
 
-## Tile: All patients Pain Scores
+## Tile: All Patients Pain Scores
 
 **SPC chart title: Percentage of pain scores documented as moderate/severe**
 
@@ -101,7 +101,7 @@ a) ![image](https://github.com/inform-us/requirements_specifications/assets/9453
 
 ## Tile: Patients on vasoactive drugs Mean Arterial BP
 
-**SPC chart title: Daily percentage of patients within/ above / below MAP target (patients on vasoactive drugs)**
+**SPC chart title: Percentage of patients within/ above / below MAP target (patients on vasoactive drugs)**
 
 *  In range
 *  Above
@@ -114,7 +114,7 @@ to clarify but I guess one screenshot is enough???
 
 ## Tile: Sedated patients RASS 
 
-**SPC chart title: Weekly percentage of patients achieving RASS target (patients on sedation and mechanical ventilation)**
+**SPC chart title: Percentage of patients achieving RASS target (patients on sedation and mechanical ventilation)**
 
 
 ![image](https://github.com/inform-us/requirements_specifications/assets/94536083/4700abae-4fd4-4184-9059-16b0560056c3)
@@ -124,13 +124,27 @@ to clarify but I guess one screenshot is enough???
 
 ## Tile: Patients on mandatory ventilation Tidal Volume
 
-**SPC chart title: Weekly percentage of patients achieving Tidal Volumes below 8ml/kg IBW (patients of mandatory ventilation)**
+**SPC chart title: Percentage of patients achieving Tidal Volumes below 8ml/kg IBW (patients of mandatory ventilation)**
 
 
 ![image](https://github.com/inform-us/requirements_specifications/assets/94536083/384f2031-f039-477f-83cc-7715f2a78838)
 
 
 ---
+## Tile: All Patients Delirium - CAM-ICU documentation
+
+**SPC chart title: Percentage of CAM-ICU Documentations completed at least once per shift**
+
+---
+## Tile: All Patients Delirium Levels
+
+**SPC chart title: Percentage of Positive CAM-ICU scores**
+
+---
+## Tile: POM Patients DrEaMing  
+
+**SPC chart title: Percentage of POM Patients with Drinking, Eating and Mobilising documented at least once per shift (T06 and WMS)**
+
 
 
 
