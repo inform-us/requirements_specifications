@@ -131,7 +131,7 @@ to clarify but I guess one screenshot is enough???
 
 
 ---
-## Tile: All Patients Delirium - CAM-ICU documentation
+## Tile: All Patients Delirium - CAM-ICU assessment frequency
 
 **SPC chart title: Percentage of CAM-ICU Documentations completed at least once per shift**
 
