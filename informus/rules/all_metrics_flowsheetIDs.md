@@ -32,14 +32,9 @@ Query ran: 2024/06/10
 | Airway | Airway plan A | 23865 | ❌ | ❌ |  | ❌ |
 | Airway | Airway plan B | 23866 | ❌ | ❌ |  | ❌ |
 | Airway | Airway plan C | 23867 | ❌ | ❌ |  | ❌ |
-| Airway | 02 delivery method | 3040109305 | ❌ | ❌ |  | ❌ |
+| Airway | 02 delivery method | 3040109305 | ✅ | ✅ |  | ✅ |
 | Airway| Intubation grade| 37950 | ✅ | ✅ | | ✅ |
 | Airway| Das Generic Airway Plan| 24498 | ✅ | ✅ | | ✅ |
-| | |  |  |  | |  |
-| Airway | ETT-*on avatar* | 400655 | ❌ | ❌ | | ✅ |
-| Airway | Surgical Airway- *surgical trache* | 7070173 | ❌ | ❌ | once | ✅ |
-| Airway | Supraglottic Airway- *trache* | 1120100089 | ❌ | ❌ |  once  | ✅ |
-| Airway | Non-surgical Airway - *trache placed without surgery* | 400638 | ❌ | ❌ | once | ✅ |
 | | | | | | | |
 | DrEaMing | Fluid intake | 45429 | ✅ | ✅ | real-time | ✅ |
 | DrEaMing | Diet Intake - *type of diet patient is on* | 6482 | ✅ | ✅ | real-time | ✅ |
