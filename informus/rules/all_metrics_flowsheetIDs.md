@@ -28,7 +28,8 @@ Query ran: 2024/06/10
 | Epidural drugs | PCEA theatres bupivacaine 0.1% epidural infusion (aka EPIDURAL) | 408107895 | ❌ | ❌ | hourly | ❌ |
 | Epidural drugs | PCEA theatres bupivacaine 0.1% with fentanyl 2mcg/ml epidural infusion (aka EPIDURAL) | 408107894 | ❌ | ❌ | hourly | ❌ |
 | | | | | | | |
-| Airway | Airway plan| 24499 | ✅ | ✅ | once per admission | ✅ |
+| Airway | Airway plan | 24499 | ✅ | ✅ | once per admission | ✅ |
+| Airway | Airway plan A | 23865 | ❌ | ? | ? | ? |
 | Airway| Intubation grade| 37950 | ✅ | ✅ | | ✅ |
 | Airway| Das Generic Airway Plan| 24498 | ✅ | ✅ | | ✅ |
 | Airway | ETT-*on avatar* | 400655 | ❌ | ❌ | | ✅ |
