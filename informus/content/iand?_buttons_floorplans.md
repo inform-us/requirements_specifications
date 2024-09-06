@@ -384,13 +384,13 @@ If none of the above rules match, the bed will appear as dark grey on floorplan
 
 **Mobilisation Achieved**
 
-**In bed:** Patient is lying in bed (0), passively moved to chair (1) or sitting over edge of bed (3)
+**In bed:** Patient is lying in bed, passively moved to chair, or sitting over the edge of bed (mobility scale 0-3)
 
-**Actively transferring:** Patient is standing (4), transferring bed to chair (5) or marching on spot (6)
+**Actively transferring:** Patient is standing, transferring bed to chair, or marching on spot (mobility scale 4-6)
 
-**Walking with assistance** Patient is walking with assistance of 2 or more people (7) or walking with assistance of 1 person (8)
+**Walking with assistance** Patient is walking with the assistance of at least one person (mobility scale 7-8)
 
-**Walking independently** Patient is walking independently with a gait aid (9) or walking independently without a gait aid (10)
+**Walking independently** Patient is walking independently with or without a gait aid (mobility scale 9-10)
 
 **Missing:** Mobilisation has not been documented today.
 
