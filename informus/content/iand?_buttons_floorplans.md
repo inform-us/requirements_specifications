@@ -13,7 +13,7 @@
 
 
  
-Good pain management is an essential component of quality care. Pain in critical care and post-anasthetic care unit is common and contributes to poor patient outcomes.  
+Good pain management is an essential component of quality care. Pain in critical care and post-anaesthetic care unit is common and contributes to poor patient outcomes.  
 
 In CCU we assess pain using the Verbal Pain Scale (VPS) or Critical Care Observation Tool (CPOT) for patients who are unable to self-report their pain, e.g. under sedation.  
 
@@ -294,9 +294,9 @@ Patients are intubated (oral/nasal tube or tracheostomy) and on mandatory ventil
 ## i button
 
 
-Delirium is an acute confusional state that may not always be easily recognisable but is associated with negative outcomes. To recognise if delirium is present, CAM-ICU scores are completed at least once a shift.  CAM-ICU score should only be completed if a patient has RASS score of -3 to 4.
+Delirium is an acute confusional state that may not always be easy to recognise, but is harmful to patients and staff. To assess whether delirium is present, CAM-ICU scores should be completed alongside RASS for patients with a RASS score of -3 and above (i.e. not heavily sedated) once a shift or if a person's mental state changes.  
 
-Recognisation of delirium enables formulation of a management plan to assess for causes and then address them.
+Recognisation and documentation of delirium enables formulation of a management plan to assess causes and treat them. 
 
 ## ? button
 
@@ -307,7 +307,7 @@ All patients who have a valid RASS score between -3 to +4 this shift
 
 **Classification**
 
-For eligible patients (RASS -3 to +4), the CAM-ICU metric should be documented once per 12-hour shift.  Every CAM-ICU score set on a shift is valid until the end of the shift or until superseded by a subsequent documented score.  Therefore, the CAM-ICU score will expire at 07.59 or 19.59 everyday.
+For eligible patients (RASS -3 to +4), the CAM-ICU metric should be documented once per 12-hour shift.  Every CAM-ICU score set on a shift is valid until the end of the shift or until superseded by a subsequent documented score.  Therefore, the CAM-ICU score will expire at 07.59 or 19.59 every day.
 
 If a patient’s most recent CAM-ICU score is positive: delirium is present.   
 
@@ -316,9 +316,9 @@ If a patient’s most recent CAM-ICU score is negative: delirium is not present.
 
 **Tip 1:** If there has been more than one CAM-ICU score documented across a shift, the most recent score will be used. 
 
-**Tip 2:** Only patients that meet RASS criteria (i.e. have RASS score between -3 and 4) are included in percentage calculations on front tile.
+**Tip 2:** Only patients that meet RASS criteria (i.e. have RASS score between -3 and 4) are included in percentage calculations on the front tile.
 
-**Tip3:** RASS scores are valid for 1 hourly during the day (06:00 - 21:59) and 4 hourly during the night (22:00 to 05.59). If a patient has a valid CAM-ICU score, but not a valid RASS score this will be denoted by a dashed line around a coloured (red or green) bed.
+**Tip3:** RASS scores are valid for 1 hour during the day (06:00 - 21:59) and 4 hour during the night (22:00 to 05.59). If a patient has a valid CAM-ICU score, but not a valid RASS score this will be denoted by a dashed line around a coloured (red or green) bed.
 
 **Tip4:** A blue shaded bed indicates that the patient's RASS score is below -3 and therefore a CAM-ICU is not required.
 
