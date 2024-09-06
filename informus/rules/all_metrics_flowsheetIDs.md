@@ -39,5 +39,5 @@ Query ran: 2024/06/10
 | DrEaMing | Fluid intake | 45429 | ✅ | ✅ | real-time | ✅ |
 | DrEaMing | Diet Intake - *type of diet patient is on* | 6482 | ✅ | ✅ | real-time | ✅ |
 | DrEaMing | Mobilisation achieved by patient - *scale of mobilising from none to walking independently* | 40705 | ✅ | ✅ | real-time | ✅ |
-| DrEaMing | ... | 47371 | ? | ? | real-time | ? |
+| DrEaMing | ... | 47371 | ✅ | ? | real-time | ? |
 | | | | | | | |
