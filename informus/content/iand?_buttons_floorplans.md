@@ -329,8 +329,8 @@ If a patient’s most recent CAM-ICU score is negative: delirium is not present.
 
 ## i button
 
-Ensuring that patients Drink, Eat and Mobilise (DrEaMing) after soon as possible after surgery is important in reducing post operative complications such as respiratory infections and reducing length of recovery.
-Patients recieiving different types of surgery will have different guidelines concerning initiation of drinking, eating and mobilisation. Therefore, when viewing and interpreting the floorplan, knowledge of individual patient's recovery pathway is required.
+Ensuring that patients Drink, Eat and Mobilise (DrEaMing) as soon as possible after surgery is important for timely recovery and for reducing post-operative complications such as respiratory infections. 
+Patients receiving different types of surgery will have different guidelines concerning the initiation of drinking, eating and mobilisation. Therefore, when viewing and interpreting this floorplan, knowledge of individual patients' recovery pathway is required.
 
 ## ? button
 
@@ -342,11 +342,11 @@ All patients on T06 or WMS
 
 Fluid intake, diet intake and mobilisation achieved metrics should be documented once every 24 hours or until the patient's status changes.  
 Fluid intake, diet intake and mobilisation achieved metrics are valid for 24 hours from 00:01 hours each day or until a new entry is made.
-For compliance with documentation to be achieved, a patient must have all three metrics documented within the 24 hour period.
+For compliance with documentation to be achieved, a patient must have all three metrics documented within the 24-hour period.
 
 **Fluid Intake**
 
-**IV Ongoing:** Patient is recieving IV fluids 
+**IV Ongoing:** Patient is receiving IV fluids 
 
 **IV Discontinued:**  IV fluids have been discontinued
 
@@ -354,7 +354,7 @@ For compliance with documentation to be achieved, a patient must have all three 
 
 **NBM:** Patient is nil by mouth/not allowed any oral fluid or food intake
 
-**Missing:** Documentation has not been documented today
+**Missing:** Fluid intake has not been documented today
 
 If none of the above rules match, the bed will appear as dark grey on floorplan. 
 
@@ -362,19 +362,19 @@ If none of the above rules match, the bed will appear as dark grey on floorplan.
 
 **Diet Intake**
 
-**Eating and Drinking:** Patient is recieving normal diet, soft diet, puree diet or nutritional supplements
+**Eating and Drinking:** Patient is receiving normal diet, soft diet, puree diet or nutritional supplements and is taking in oral fluids
 
-**Fluid Only:** Patient is recieiving free fluids or clear fluids (this does not include IV fluids)
+**Fluid Only:** Patient is receiving free fluids or clear fluids only orally (this does not include IV fluids). The patient is not eating.
 
-**Enteral/parenteral Feeding:** Patient is recieving enteral (NG/PEG etc.) or parenteral (TPN) 
+**Enteral/parenteral Feeding:** Patient is receiving enteral (NG/PEG etc.) or parenteral (TPN) nutrition
 
-**NBM:** Patient is nil by mouth/ not allowed any oral fluid or food intake
+**NBM:** Patient is nil by mouth/not allowed any oral fluid or food intake
 
-**Sips only** Patient is recieving sips
+**Sips only** Patient is receiving sips of fluid
 
-**Fluid Restriction** Patient is on fluid restriction
+**Fluid Restriction** Patient is on fluid restriction diet
 
-**Other** Patient is recieving diet intake that is not defined by the above labels
+**Other** Patient is receiving diet intake that is not defined by the above labels
 
 **Missing** Diet intake has not been documented today
 
