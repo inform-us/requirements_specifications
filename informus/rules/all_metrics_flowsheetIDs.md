@@ -16,6 +16,8 @@ Query ran: 2024/06/10
 | Epidural | Assessment of Motor Block Rt leg | 30415250 | ✅ | ✅ | 2-hourly between 0800-1959, 4-hourly between 2000-0759 | ✅ |
 | Epidural | Epidural catheter | 7080610 | ❌ | ❌ |  note this is on avatar | ✅ |
 | | | | | | | |
+| Epidural drugs ? | ? | 28221 | ? | ? | ? | ? |
+| Epidural drugs ? | ? | 28222 | ? | ? | ? | ? |
 | Epidural drugs | Bupivacane 0.1% Epidural infusion prescription | 191107 | ❌ | ❌ | hourly | ❌ |
 | Epidural drugs | Bupivacane 0.1% with fentanyl 2mcg/ml epidural infusion prescription | 30863 | ❌ | ❌ | hourly | ❌ |
 | Epidural drugs | Bupivacaine 0.1% with fentanyl 2mcg/ml PIEB epidural infusion | 40830864 | ❌ | ❌ | hourly | ❌ |
