@@ -39,7 +39,7 @@ To be INSERT PDF -  ABC metric user interface sequence once built on staging (fl
 ## ELIGIBILITY 
 - All patients who have a valid RASS score between -3 to +4 this shift
 
-*note If a patient has a RASS score of <-3 documented, CAM-ICU can still be generated on EPIC. Even though a CAM-ICU assessment is physcially immpossible* check
+*note If a patient has a RASS score of <-3 documented, CAM-ICU can still be generated on EPIC. Even though a CAM-ICU assessment is physcially immpossible when patient is this sedated* check
 
 ### Clinical pragmatism
 According to clinical guidelines:
@@ -84,24 +84,21 @@ Therefore we unlink the RASS from CAM-ICU, but highlight the absence of RASS doc
 - Calculation: (numerator / denominator)*100 represented as percentage
 - 
   *Note the percentage does not include patients with a CAM-ICU score documented, but no RASS score documented.* 
-  *it also does not include patients with a CAM-ICU score documented who have a RASS score of < -3.*
+  *it also does not include patients with a CAM-ICU score documented who have a RASS score of < -3 documented.*
    
 NOTE:
-- there are no need for epochs for this calcualtion
+- there are no need for epochs for this calculation
 - the denominator can potentially be a bigger number than the current number of patients occupying the ICU beds (allowing for admissions / discharges), hence representing this as percentage and not a fraction
 - the following could potentially be excluded from the calculation:
 a) RASS -4/-5 with a CAM-ICU score - this is theoretically possible to document (by accident) but highly unlikely
-b) NO Valid RASS documented with a CAM-ICU score documented - this is possible as the bedside nurse may assume that a RASS score documented in the final hour of the last shift is still valid or incorrect as per clinical guidelines as RASS and CAM-ICU should be documented concurrently - both these scenarios are unlikely and would be even less likely once improvement work on thie metric is underway
+b) NO Valid RASS documented with a CAM-ICU score documented - this is possible as the bedside nurse may assume that a RASS score documented in the final hour of the last shift is still valid or incorrect as per clinical guidelines as RASS and CAM-ICU should be documented concurrently - both these scenarios are unlikely and would be even less likely once improvement work on this metric is underway
 
 **[B] CAM-ICU Percentage Completions Last Shift - Front Tile**
 - get all flowsheet data for previous shift
--  then go through logic
-- IF the current time falls between 08:00-19:59 (day shift), calculate the number of patients with at least 2 consecutive RASS scores of -3 to +4 during the previous shift (20:00 yesterday to 07:59 today)
--  IF the current time falls between 20:00-07:59 (night shift), calculate the number of patients with at least 2 consecutive RASS scores of
- of -3 to +4 during the previous shift, calculate the number who have at least one CAM-ICU score documented (positive or negative) during the previous shift 
-- Numerator = number of patients with at least two consecutive RASS scores of -3 to +4 who have had at least one CAM-ICU score documented during the previous shift 
-- Denominator = number of patients with at least two consecutive RASS scores of -3 to +4 during the previous shift 
-
+- Includes all patients from the previous shift (including discharged patients who were present during the previous shift)
+- Numerator = number of patients who have a documented RASS score of -3 to +4 at any point the previous shift, who have had at least one CAM-ICU score documented during the previous shift
+- Denominator = number of patients who have a documented RASS score of -3 to +4 at any point the previous shift
+- Calculation: (numerator / denominator)*100 represented as percentage
 *the following feeds into the (i) front tile - 24-hour rolling window and (ii) SPC patients with delirium chart*
 
 **[C]  overall CAM-ICU front tile calculation: Patients with Delirium in the last 24 hours**
