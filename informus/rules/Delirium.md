@@ -37,7 +37,7 @@ To be INSERT PDF -  ABC metric user interface sequence once built on staging (fl
 ---
 
 ## ELIGIBILITY 
-- All patients who have a valid (actual or forward filled; see below) RASS score between -3 to +4 this shift
+- All patients who have a valid RASS score between -3 to +4 this shift
 
 ### Clinical pragmatism
 According to clinical guidelines:
@@ -46,15 +46,15 @@ According to clinical guidelines:
 	- best practice is to have a RASS & CAM-ICU charted concurrently
 	- however, it is possible to be CAM-ICU positive (features 1, 2 & 4 positive) without a RASS being documented
 
-Therefore it would be sensible to unlink the RASS from CAM-ICU, but highlight the absence of RASS documentation (if a CAM-ICU is charted without RASS). 
+Therefore we unlink the RASS from CAM-ICU, but highlight the absence of RASS documentation (if a CAM-ICU is charted without RASS). 
 
 ## VALIDITY
 
 ### RASS
 - clinical guideline recommended charting frequency for RASS differs depending on time of day
-- in line with other documentation we add a 15 minute to the validity of the documented score to allow for clinical leeway
+- in line with other documentation we add 15 minutes leeway to the validity of the documented score to allow for clinical leeway
 
-### RASS generate 1-hour epochs
+### RASS generate 1-hour epoch
 1) RASS scores documented between 06:00 - 21.59 is valid for 75 minute
 2) RASS scores documented between 22:00 - 05:59 is valid 255 minutes (4 hours & 15 minutes)
 3) Using score d_t stamp and above validty criteria, generate 1-hour RASS epochs
