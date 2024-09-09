@@ -15,11 +15,14 @@ Rules for Delirium using CAM-ICU Metric (confusion assessment method-intensive c
 - CONFUSION ASSESSMENT METHOD-ICU (CAM-ICU) [3040104646]
 
 ### Row ID CAM-ICU
+
 - R CAM-ICU FEATURE 1: ACUTE ONSET OR FLUCTUATING COURSE [3040104645]
 - R CAM-ICU FEATURE 2: INATTENTION [3040104647]
 - R CAM-ICU FEATURE 3: ALTERED LEVEL OF CONSCIOUSNESS [3040104648]
 - R CAM-ICU FEATURE 4: DISORGANIZED THINKING [3040104649]
-- R CAM-ICU OVERALL [3040104650]
+- R CAM-ICU OVERALL [3040104650] (this is the flowsheet that we pull the data from for delirium metric. Is autopopulated from the above) 
+
+
 
 [CAM-ICU EPIC_flowsheet.pdf](https://github.com/user-attachments/files/16235096/CAM-ICU.EPIC_flowsheet.pdf)
 
@@ -30,7 +33,7 @@ Rules for Delirium using CAM-ICU Metric (confusion assessment method-intensive c
 - R RICHMOND AGITATION SEDATION SCALE (RASS) [3040104644]
 
 ---
-INSERT PDF - ABC metric user interface sequence once built on staging
+To be INSERT PDF -  ABC metric user interface sequence once built on staging (flowchart on how you navigate through the dashboard) 
 ---
 
 ## ELIGIBILITY 
