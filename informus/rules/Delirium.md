@@ -39,6 +39,8 @@ To be INSERT PDF -  ABC metric user interface sequence once built on staging (fl
 ## ELIGIBILITY 
 - All patients who have a valid RASS score between -3 to +4 this shift
 
+*note If a patient has a RASS score of <-3 documented, CAM-ICU cannot be generated on EPIC* check
+
 ### Clinical pragmatism
 According to clinical guidelines:
 	- a RASS score within the range above should trigger a CAM-ICU assessment
@@ -80,7 +82,9 @@ Therefore we unlink the RASS from CAM-ICU, but highlight the absence of RASS doc
 - Numerator = number of patients who have a documented RASS score of -3 to +4 at any point this shift, who have had at least one CAM-ICU score documented since the beginning of this shift 
 - Denominator = number of patients who have a documented RASS score of -3 to +4 at any point during this shift
 - Calculation: (numerator / denominator)*100 represented as percentage
-  *note this excludes patients with a CAM-ICU score, but no RASS score documented or a RASS score of < -3.*
+- 
+  *Note the percentage does not include patients with a CAM-ICU score documented, but no RASS score documented.* 
+  *it also does not include patients with a CAM-ICU score documented who have a RASS score of < -3.*
    
 NOTE:
 - there are no need for epochs for this calcualtion
