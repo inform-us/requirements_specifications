@@ -54,10 +54,9 @@ Therefore we unlink the RASS from CAM-ICU, but highlight the absence of RASS doc
 - clinical guideline recommended charting frequency for RASS differs depending on time of day
 - in line with other documentation we add 15 minutes leeway to the validity of the documented score to allow for clinical leeway
 
-### RASS generate 1-hour epoch
-1) RASS scores documented between 06:00 - 21.59 is valid for 75 minute
+### RASS generate 
+1) RASS scores documented between 06:00 - 21.59 is valid for 75 minutes
 2) RASS scores documented between 22:00 - 05:59 is valid 255 minutes (4 hours & 15 minutes)
-3) Using score d_t stamp and above validty criteria, generate 1-hour RASS epochs
 
 ### CAM-ICU
 1) For eligible patients (RASS -3 to +4), the CAM-ICU metric should be documented once per 12-hour shift 
@@ -77,11 +76,12 @@ Therefore we unlink the RASS from CAM-ICU, but highlight the absence of RASS doc
 **[A] CAM-ICU Percentage Completion This Shift - Front Tile**
 - This is a real time (cumulative) percentage that should head towards 100% by close of the current shift
 - With each 'refresh' you are looking at the period from start of the shift to the current time
-- Includes all patients in the current shift
+- Includes all patients present on the unit during the current shift (including discharged patients who were present during this shift)
 - Numerator = number of patients who have a documented RASS score of -3 to +4 at any point this shift, who have had at least one CAM-ICU score documented since the beginning of this shift 
-- Denominator = number of patients who have a documented RASS score of -3 to +4 at any point durng this shift
+- Denominator = number of patients who have a documented RASS score of -3 to +4 at any point during this shift
 - Calculation: (numerator / denominator)*100 represented as percentage
-
+  *note this excludes patients with a CAM-ICU score, but no RASS score documented or a RASS score of < -3.*
+   
 NOTE:
 - there are no need for epochs for this calcualtion
 - the denominator can potentially be a bigger number than the current number of patients occupying the ICU beds (allowing for admissions / discharges), hence representing this as percentage and not a fraction
