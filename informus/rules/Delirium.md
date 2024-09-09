@@ -99,12 +99,15 @@ b) NO Valid RASS documented with a CAM-ICU score documented - this is possible a
 - Numerator = number of patients who have a documented RASS score of -3 to +4 at any point the previous shift, who have had at least one CAM-ICU score documented during the previous shift
 - Denominator = number of patients who have a documented RASS score of -3 to +4 at any point the previous shift
 - Calculation: (numerator / denominator)*100 represented as percentage
+  
 *the following feeds into the (i) front tile - 24-hour rolling window and (ii) SPC patients with delirium chart*
 
 **[C]  overall CAM-ICU front tile calculation: Patients with Delirium in the last 24 hours**
-
-- Numerator: the number of patients with positive CAM-ICU scores in the last 24 hours 
-- Denominator: the number of patients with at present on on each unit that have had a RASS score of -3 to +4 (at any point) in the last 24 hours
+- This is a live update that looks at incidence of delirium in the last 24 hours (inpatients and those discharged)
+- Refer to CAM-ICU validity rules above (use backfilled CAM-ICU) *even if the last CAM-ICU was documented over 24 hours ago, it was still valid until the end of that shift so should be included*
+- Numerator: the number of patients present on on each unit at any time over the last 24 hours  with positive CAM-ICU scores in the last 24 hours 
+- Denominator: the number of patients present on on each unit at any time over the last 24 hours 
+- Calculation: (numerator / denominator)*100 represented as percentage
 
 ![image](https://github.com/inform-us/requirements_specifications/assets/167782531/e2b82308-a00b-45d6-a5fa-28b46eba09ea)
 
@@ -116,7 +119,7 @@ MAKE EPOCHS FOR THIS SECTION
 1) If the latest (real or forward-filled) CAM-ICU score reading this shift= negative: ‘GREEN’; design = green filled bed
 2) If the latest (real or forward-filled) CAM-ICU score reading this shift = positive: ‘RED’; design = red filled bed 
 3) If there is no CAM-ICU score since the start of the shift (since 08:00 day or 20:00 night) ‘missing’: ‘missing’; design = white filled bed with red hashed outline
-4) If the latest CAM-ICU score not applicable as RASS score has fallen to -4- -5: ‘assessment not required (RASS is -5 or -4)’ design = white filled bed with blue hashed outline (RASS pips CAM)
+4) If the latest CAM-ICU score not applicable as RASS score has fallen to -4- or -5: ‘assessment not required (RASS is -5 or -4)’ design = white filled bed with blue hashed outline (RASS pips CAM-ICU)
     - This logic is applied across all epochs, so we override the CAM-ICU score for a particular row if RASS falls below -3.
 5) CAM-ICU with a null RASS - label as either: `positive with no RASS` or `negative with no RASS`
 
@@ -131,10 +134,12 @@ MAKE EPOCHS FOR THIS SECTION
 2) Y-axis left is CAM-ICU score divided into 'Positive' at top and 'Negative' at bottom
 3) CAM-ICU score: 'POSITIVE' = delirium is present, 'NEGATIVE: delirium is not present
 4) Label all CAM-ICU scores as circles
-5) Plot all positive CAM-ICU scores on top half of chart as red filled circle
-6) Plot all negative CAM-ICU scores on bottom half of chart as green filled circle
-7) 'Missing' CAM-ICU scores shown as grey vertical bar with no data points
-8) CAM-ICU not required shown as grey tick on central dividing line
+5) Plot all positive CAM-ICU scores with a RASS on top half of chart as red filled circle
+6) Plot all negative CAM-ICU scores with a RASS on bottom half of chart as green filled circle
+7) Plot all positive CAM-ICU scores without a RASS on top half of chart as red hashed filled circle
+8) Plot all negative CAM-ICU scores without a RASS on bottom half of chart as green hashed filled circle
+8) 'Missing' CAM-ICU scores shown as grey vertical bar with no data points
+9) CAM-ICU not required shown as grey tick on central dividing line
 
   ![image](https://github.com/inform-us/requirements_specifications/assets/167782531/69d62352-10e9-4a19-90eb-f37ec423304e)
  
