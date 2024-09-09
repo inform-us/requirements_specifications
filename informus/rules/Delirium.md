@@ -39,7 +39,7 @@ To be INSERT PDF -  ABC metric user interface sequence once built on staging (fl
 ## ELIGIBILITY 
 - All patients who have a valid RASS score between -3 to +4 this shift
 
-*note If a patient has a RASS score of <-3 documented, CAM-ICU cannot be generated on EPIC* check
+*note If a patient has a RASS score of <-3 documented, CAM-ICU can still be generated on EPIC. Even though a CAM-ICU assessment is physcially immpossible* check
 
 ### Clinical pragmatism
 According to clinical guidelines:
