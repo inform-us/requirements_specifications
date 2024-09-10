@@ -145,9 +145,9 @@ MAKE EPOCHS FOR THIS SECTION
  
 
 ---
-# [F] SPC CHARTS -below is a working draft.... !
+# [F] SPC CHARTS
 
-**CAM-ICU SPC CHARTS (refer to XYZ metric in classification**
+**CAM-ICU SPC CHARTS (refer to XYZ metric in classification)**
 
 1. A day shift is defined as 08:00-19:59 on one day
 2. A night shift is defined as 20:00-07:59 on one day
@@ -156,50 +156,69 @@ MAKE EPOCHS FOR THIS SECTION
 5. There are fourteen shifts in every week
 6. These charts are weekly percentage (p-charts)
   
-## Chart 1a and 1b 1c [Patient chart] 
-**Percentage of eligible patients with positive CAM-ICU scores (total combined shifts, day and night shifts)– weekly chart**
+## Chart 1a, 1b and  1c [Patient chart] - one SPC chart with three tabs (cf MAP, SpO2)
+**Percentage of patients with positive CAM-ICU scores (1a total combined shifts, 1b day shifts and 1c night shifts) – weekly chart**
 
-Operational definition = out of all patients with at least two consecutive RASS scores (or forward filled scores) of -3 to +4 what proportion of patients have at least one positive CAM-ICU score during day and night shifts on a weekly basis? 
+Operational definition = out of all patients what proportion of patients have at least one positive CAM-ICU score during a calendar day OR per day / night shifts on a weekly basis? 
+
 ## Chart 1a 
-**Weekly Percentage of positive CAM-ICU scores all shifts**
+**Weekly percentage of patients with a positive CAM-ICU score per CALENDAR DAY**
+
+1. This looks at data on a calendar day basis (00:00 - 23:59)
+2. Establish each patient present on each of the units for that calendar day (including current inpatients and those that have been discharged)
+3. Idenifty for each of these patients whether there was a positive CAM-ICU score documented at any time during the calendar day
+4. Numerator = number of patients that have had one (or more) positive CAM-ICU score(s) documented on each calendar day
+   Denominator = number of patients present on each calenday day (including current inpatients and those that have been discharged)
+5. Calculate a daily percentage of positive CAM-ICU scores (delirium) = numerator / denominator 
+6. Calculate weekly mean of the 7 calendar days (sum of percentage of each of the seven days / seven). Denote as percentage. 
 
 ## Chart 1b 
-**Weekly Percentage of positive CAM-ICU scores (day shift)**
-1. Break the week down into fourteen 12-hour shift epochs, seven 08:00-19:59 and seven 20:00-07:59. 
-2. For each 12-hour day shift epoch (08:00-19:59), calculate the number of patients with at least two consecutive RASS scores of -3 to +4 at least one of which is in this shift
-3. For each 12-hour day shift epoch, calculate the number of patients that have had at least one positive CAM-ICU score documented that shift
-   - Numerator = number of patients that have had at least one positive CAM-ICU score documented each day shift
-   - Denominator =  number of patients with at least two consecutive RASS scores of -3 to +4 one of which is in each day shift
-5. Divide step 3 number by step 2 number. Denote as percentage. This is the shift's percentage of positive CAM-ICU scores (day shift)
-6. Repeat steps 2-4 seven times for each 12-hour day shift epoch in the week
-7. Sum all day shift percentages, divide by seven. Denote as percentage. This is the weekly percentage of positive CAM-ICU scores (day shift).
-## Chart 1b 
-**Weekly Percentage of positive CAM-ICU scores (night shift)**
-1. For each 12-hour night shift epoch (20:00-07:59), calculate the number of patients with at least two consecutive RASS scores of -3 to +4, at least one of which is in this shift
-3. For each every 12-hour night shift epoch, calculate the number of patients that have had at least one positive CAM-ICU score documented that shift
-   - Numerator = number of patients that have had at least one positive CAM-ICU score documented each night shift
-   - Denominator =  number of patients with at least two consecutive RASS scores of -3 to +4 
-5. Divide step 3 number by step 2 number. Denote as percentage. This is the shift's percentage of positive CAM-ICU scores (night shift)
-6. Repeat steps 2-4 seven times for each 12-hour night shift epoch in the week
-7. Sum all night shift percentages, divide by seven. Denote as percentage. This is the average weekly percentage of positive CAM-ICU scores (night shift).
+**Weekly percentage of patients with a positive CAM-ICU score during a DAY SHIFT**
+
+1. This looks at data on a day shift basis (08:00-19:59)
+2. Establish each patient present on each of the units for the day shift (including current inpatients and those that have been discharged)
+3. Idenifty for each of these patients whether there was a positive CAM-ICU score documented at any time during the day shift
+4. Numerator = number of patients that have had one (or more) positive CAM-ICU score(s) documented on each day shift
+   Denominator = number of patients present on each day shift (including current inpatients and those that have been discharged)
+5. Calculate a daily day shift percentage of positive CAM-ICU scores (delirium) = numerator / denominator 
+6. Calculate weekly mean of the 7 day shifts (sum of percentage of each of the seven day shifts / seven). Denote as percentage. 
+
+## Chart 1c 
+**Weekly percentage of patients with a positive CAM-ICU score during a NIGHT SHIFT**
+
+1. This looks at data on a night shift basis (20:00-07:59)
+2. Establish each patient present on each of the units for the night shift (including current inpatients and those that have been discharged)
+3. Idenifty for each of these patients whether there was a positive CAM-ICU score documented at any time during the night shift
+4. Numerator = number of patients that have had one (or more) positive CAM-ICU score(s) documented on each night shift
+   Denominator = number of patients present on each night shift (including current inpatients and those that have been discharged)
+5. Calculate a daily night shift percentage of positive CAM-ICU scores (delirium) = numerator / denominator 
+6. Calculate weekly mean of the 7 night shifts (sum of percentage of each of the seven night shifts / seven). Denote as percentage.
+7. NOTE - the night shift that starts on Sunday at 20:00 and ends Monday 07:59 is included in the data from the previous week (i.e. the week that ends the Sunday the night shift starts)
+   - SHIFT WEEK is defined as Monday 08:00 – Monday 07:59
+   - WE MAY NEED TO ALTER THE TIME OF THE WEEKLY SPC DATA CAPTURE FOR THE DELIRIUM SPC, WHICH NORMALLY OCCURS EVERY MONDAY AT 03:00/04:00, IT WOULD NEED TO HAPPEN AFTER THE END OF THE NIGHT SHIFT ON MONDAY MORNING 
 
 ## Chart 2 [CAM-ICU documentation chart]
-**Weekly percentage of CAM-ICU scores documented once per shift as per guidelines**
+**Weekly percentage of CAM-ICU scores documented at least once per shift as per guidelines**
 
-Operational definition = out of all patients with at least two consecutive RASS scores of -3 to +4, what proportion of these patients have at least one CAM-ICU documented per shift on a weekly basis?
+Operational definition = out of all patients with a documented RASS score of -3 to +4, what proportion of these patients have at least one CAM-ICU documented per shift on a weekly basis?
 
-1) Break the week down into fourteen 12-hour shift, seven 08:00-19:59 and seven 20:00-07:59. 
-2) For each 12-hour day shift epoch (08:00-19:59), calculate the number of patients with at least two consecutive RASS scores of -3 to +4, at least one of which is in this shift
-3) For each every 12-hour day shift epoch, calculate the number of patients that have had at least one positive CAM-ICU score documented that shift
-4)  For each 12-hour night shift epoch (08:00-19:59), calculate the number of patients with at least two consecutive RASS scores of -3 to +4 at least one of which is in this shift
-5)  For each every 12-hour night shift epoch, calculate the number of patients that have had at least one positive CAM-ICU score documented that shift
-   -  Numerator = number of patients that have had at least one CAM-ICU score documented each shift
-   -  Denominator =  number of patients with at least two consecutive RASS scores of -3 to +4 (eligible patients)
-6)  Divide step 3 by step 2. Denote as percentage. This is the day shift's percentage of CAM-ICU scores documented
-7)  Divide step  5 by step 4.  Denote as percentage. This is the night shift's percentage of CAM-ICU scores documented
-8) Repeat fourteen times for each 12-hour shift 
-9) Sum all fourteen shift percentages, divide by fourteen. Denote as percentage. This is the average weekly percentage of CAM-ICU scores documented
+1. This looks at data on a per shift basis, which is then converted into a weekly percentage based on a shift week (defined as Monday 08:00 – Monday 07:59)
+2. Break the week down into fourteen 12-hour shift, seven 08:00-19:59 and seven 20:00-07:59
+3. Note to include current inpatients and those that have been discharged for each shift
 
+4. For each 12-hour day shift (08:00-19:59), calculate the number of patients with a RASS scores of -3 to +4, documented at least once during this shift
+5. For these patients (that have a RASS -3 to +4 on the 12-hour day shift), calculate the number of patients that have had at least one positive CAM-ICU score documented during this shift
+6. Calculate percentage CAM-ICU documented on day shift:
+   Numerator - patients present on day shift with at least one RASS score of -3 to +4 AND at least one CAM-ICU score documented (does not have to be concurrent)
+   Denominator - all patients present on day shift (including current inpatients and those that have been discharged for that shift)
 
+7. For each 12-hour night shift (20:00-07:59), calculate the number of patients with a RASS scores of -3 to +4, documented at least once during this shift
+8. For these patients (that have a RASS -3 to +4 on the 12-hour night shift), calculate the number of patients that have had at least one positive CAM-ICU score documented during this shift
+9. Calculate percentage CAM-ICU documented on night shift:
+   Numerator - patients present on night shift with at least one RASS score of -3 to +4 AND at least one CAM-ICU score documented (does not have to be concurrent)
+   Denominator - all patients present on night shift (including current inpatients and those that have been discharged for that shift)
 
-
+10. Take the percentges for the number of shifts that week (14 if a complete week) and generate a mean (sum of percentages of shifts / number of shifts), denote as a percentage - this is the shift week data point
+11. NOTE - the night shift that starts on Sunday at 20:00 and ends Monday 07:59 is included in the data from the previous week (i.e. the week that ends the Sunday the night shift starts)
+   - SHIFT WEEK is defined as Monday 08:00 – Monday 07:59
+   - WE MAY NEED TO ALTER THE TIME OF THE WEEKLY SPC DATA CAPTURE FOR THE DELIRIUM SPC, WHICH NORMALLY OCCURS EVERY MONDAY AT 03:00/04:00, IT WOULD NEED TO HAPPEN AFTER THE END OF THE NIGHT SHIFT ON MONDAY MORNING 
