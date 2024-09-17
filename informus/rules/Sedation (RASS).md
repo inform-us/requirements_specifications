@@ -35,6 +35,7 @@ ___
 
 O2 delivery_device 3040109305
 FIO2_% 301550
+02 Flow rate r ip flowrate 500690
 
 
 ### Group ID Richmond Agitation Sedation Scale (RASS)
