@@ -53,7 +53,8 @@ FIO2_% 301550
 1. Patient (i) on mechanical ventilation AND (ii) receiving sedative drugs
 
 ## Validity (time window) Rules: 
-1. O2 delivery device only valid if o2delivery_dt documented within last 6 hours of epoch 
+1. O2 delivery device only valid if o2delivery_dt documented within last 6 hours of epoch
+2. Or is this actually vent mode flowsheet?
 
 ### RASS
 - clinical guideline recommended charting frequency for RASS differs depending on time of day
