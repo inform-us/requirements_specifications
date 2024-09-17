@@ -9,10 +9,10 @@ Rules for Sedation (on mechanical ventilation) metric, measured using the RASS s
 ## EPIC
 - The degree of sedation and conversely agitation are measured by the Richmond Agitation Sedation Score (RASS)
 - For the purposes of the RASS metric tile, we are particularly interested in oversedation on mechanical ventilation (i.e. a score more negative than the target set) which has a detrimental impact on length of stay, morbidity & mortality, hence the eligibility criteria include 'is_ventilated' & 'is_sedated')
-- RASS runs on 10 point scale from (agitated) +4/+3/+2/+1/-/-1/-2/-3/-4/-5 (sedated) - *see table below*
+- RASS runs on 10 point scale from (agitated) +4/+3/+2/+1/0/-1/-2/-3/-4/-5 (sedated) - *see table below*
 - RASS scale value is an integer (note EPIC will allow free text!)
-- RASS charting frequency differs during the day and night: <br> RASS_frequency_DAY: day defined as 06:00:00 - 21:59:59 - hourly as per guideline <br> RASS_frequency_NIGHT: night defined as 22:00:00 - 05:59:59 - 4 hourly as per guideline
-- Individual patient targets are set on a daily basis [see targets.md](./targets.md#ELIGIBILITY)
+- RASS expected charting frequency differs during the day and night: <br> RASS_frequency_DAY: day defined as 06:00:00 - 21:59:59 - hourly as per guideline <br> RASS_frequency_NIGHT: night defined as 22:00:00 - 05:59:59 - 4 hourly as per guideline
+- Individual patient RASS target is set on a daily basis [see targets.md](./targets.md#ELIGIBILITY)
 - The function of the SEDATION_metric is twofold: <br> (1) measurement interval - a RASS charting frequency within guidleines <br> (2) achieving set RASS target
 
 ___
