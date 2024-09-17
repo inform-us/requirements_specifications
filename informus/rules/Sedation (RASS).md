@@ -31,10 +31,13 @@ ___
 |No response to voice or physical stimulation|Unarousable|-5|
 ___
 
-## EPIC Flowshets XXX
-- epic flowsheet
-- componenet
-- no overall score
+## EPIC Flowshets 
+
+### Group ID Richmond Agitation Sedation Scale (RASS)
+- G UCLH ICU NEW NEUROLOGY [39859]
+
+### Row ID RASS
+- R RICHMOND AGITATION SEDATION SCALE (RASS) [3040104644]
 
 [SEDATION_user interface sequence .pdf](https://github.com/inform-us/requirements_specifications/files/15480198/SEDATION_user.interface.sequence.pdf)
 
@@ -44,7 +47,7 @@ ___
 ## Validity (time window) Rules: 
 1. O2 delivery only valid if o2delivery_dt within last 6 hours of epoch 
 2. RASS score only valid if rass_dt within last 4 hours of epoch_dt 
-3. 8:00 - 12:00 RASS Target Validity rule 
+3. 8:00 - 12:00 set RASS Target Validity rule 
 
 XXX
 
