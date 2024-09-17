@@ -33,6 +33,10 @@ ___
 
 ## EPIC Flowshets 
 
+O2 delivery_device 3040109305
+FIO2_% 301550
+
+
 ### Group ID Richmond Agitation Sedation Scale (RASS)
 - G UCLH ICU NEW NEUROLOGY [39859]
 
@@ -46,10 +50,14 @@ ___
 
 ## Validity (time window) Rules: 
 1. O2 delivery only valid if o2delivery_dt within last 6 hours of epoch 
-2. RASS score only valid if rass_dt within last 4 hours of epoch_dt 
-3. 8:00 - 12:00 set RASS Target Validity rule 
 
-XXX
+### RASS
+- clinical guideline recommended charting frequency for RASS differs depending on time of day
+- in line with other documentation we add 15 minutes leeway to the validity of the documented score to allow for clinical leeway
+
+### RASS generate 
+1) RASS scores documented between 06:00 - 21.59 is valid for 75 minutes
+2) RASS scores documented between 22:00 - 05:59 is valid 255 minutes (4 hours & 15 minutes)
 
 ## Classification Rules: (corresponds to the per patient chart) 
 
