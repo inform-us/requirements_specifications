@@ -49,7 +49,7 @@ FIO2_% 301550
 1. Patient (i) on mechanical ventilation AND (ii) receiving sedative drugs
 
 ## Validity (time window) Rules: 
-1. O2 delivery only valid if o2delivery_dt within last 6 hours of epoch 
+1. O2 delivery device only valid if o2delivery_dt documented within last 6 hours of epoch 
 
 ### RASS
 - clinical guideline recommended charting frequency for RASS differs depending on time of day
@@ -59,13 +59,13 @@ FIO2_% 301550
 1) RASS scores documented between 06:00 - 21.59 is valid for 75 minutes
 2) RASS scores documented between 22:00 - 05:59 is valid 255 minutes (4 hours & 15 minutes)
 
-## Classification Rules: (corresponds to the per patient chart) 
+## Classification Rules: 
 
-1. if 'is_ventilated' : 'not applicable' 
+1. if 'is_ventilated': 'not applicable' 
 2. Add is_sedated check when drugs available 
 3. if 'has_valid_rass': missing' 
-4. if 'has_valid_numerical_rass_target': 'below target' , 'above target', 'on target' 
-5. if 'has_valid_entered_rass_target'] :'non-numerical' 
+4. if 'has_valid_numerical_rass_target': 'below target', 'above target', 'on target' 
+5. if 'has_valid_entered_rass_target']:'non-numerical' 
 6. if non of the above rules: 'not set'
 
 ## Labelling Rule: (corresponds to the floor plans)     
@@ -78,7 +78,12 @@ FIO2_% 301550
 6. if latest reading 'not applicable': 'not applicable' 
 7. if latest reading 'non-numerical':'non-numerical' 
 8. if none of the above: 'fallthrough'
-9. n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in ? button. 
+9. n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in ? button.
+
+    
+
+
+ 
 ---
 # SPC CHARTS 
 ## RASS- Weekly percentage RASS target compliance
