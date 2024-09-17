@@ -33,7 +33,10 @@ ___
 
 ## EPIC Flowshets 
 
+### Ventilation flowsheet
+
 O2 delivery_device 3040109305
+vent mode 3040102607
 FIO2_% 301550
 02 Flow rate r ip flowrate 500690
 
