@@ -100,13 +100,12 @@ Note if two measurements, take most recent.
 
 ## Labelling Rule: (corresponds to the floor plans)     
 
-1. if latest reading 'on target':'on target' 
-2. if latest reading 'above target':'off target' 
-3. if latest reading 'below target':'off target' 
-4. if latest reading 'missing':'missing' 
-5. if latest reading 'not set':'not set' 
-6. if latest reading 'not applicable': 'not applicable' 
-7. if latest reading 'non-numerical':'non-numerical' 
+1. if latest RASS reading equals target, patient is 'on target' 
+2. if latest RASS reading is 'above target' or 'below target', patient is 'off target' 
+4. if latest RASS reading 'missing': patient's RASS reading is 'missing' 
+5. if RASS target set is false, patient's target is 'not set' 
+6. if latest RASS reading is 'not applicable': 'not applicable' 
+7. if latest RASS reading 'non-numerical': patient is classified as 'non-numerical' (n.b. assumes free text has been entered into EPIC) 
 8. if none of the above: 'fallthrough'
 9. n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in ? button.
 
