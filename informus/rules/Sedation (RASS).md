@@ -59,11 +59,15 @@ FIO2_% 301550?
 [SEDATION_user interface sequence .pdf](https://github.com/inform-us/requirements_specifications/files/15480198/SEDATION_user.interface.sequence.pdf)
 
 ## ELIGIBILITY
-1. Patient (i) on mandatory mechanical ventilation AND (ii) receiving sedative drugs within the last 6 hours 
+1. Patient (i) on mandatory mechanical ventilation AND (ii) receiving sedative drugs within the last 6 hours
 
-2. If O2 delivery is endotrachael tube or tracheostomy, patient is on mandatory mechanical ventilation
-3. If ventmode is CPAP/PS...., patient is on mandatory mechanical ventilation
-4. 
+   (i)
+3. If O2 delivery is endotrachael tube or tracheostomy, patient is on mandatory mechanical ventilation
+4. If ventmode is CPAP/PS...., patient is on mandatory mechanical ventilation
+5. Note in code we seem to be missing the step of classifying what is mandatory ventilation and what is not. we think ventmode set flowsheet. 
+6. (ii)
+7. if sedative volume flowsheet is any number (any charted volume), then the patient is sedated. If sedation volume flowsheet is NaN, then patient is not sedated. *note this should be backfilled from 4 hours and looks like current code it isn't*
+
 ## Validity (time window) Rules: 
 1. O2 delivery device only valid if o2delivery_dt documented within last 6 hours of epoch
 2. This is double checked with ventmode flowsheet
@@ -77,8 +81,11 @@ FIO2_% 301550?
 ### RASS generate 
 1) RASS scores documented between 06:00 - 21.59 is valid for 75 minutes
 2) RASS scores documented between 22:00 - 05:59 is valid 255 minutes (4 hours & 15 minutes)
+   *note current rules have same one hour rule for all day and night*
+   
 
 ## Classification Rules: 
+RASS Target set on any day is valid until 12:00hrs the day after the RASS target is set unless another target is set between 08:00 and 12:00hr on the second day. 
 
 1. if 'is_ventilated': 'not applicable' 
 2. Add is_sedated check when drugs available 
@@ -104,9 +111,6 @@ Note if two measurements, take most recent.
 9. n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in ? button.
 
     
-
-
- 
 ---
 # SPC CHARTS 
 ## RASS- Weekly percentage RASS target compliance
