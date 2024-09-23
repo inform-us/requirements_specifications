@@ -40,7 +40,17 @@ vent mode 3040102607
 FIO2_% 301550
 02 Flow rate r ip flowrate 500690
 
-
+   "o2delivery": "3040109305",
+    "vent_mode": "3040102607",
+    "rass_score": "3040104644",
+    "rass_target": "36555",
+    "CLONIDINE": "12351",
+    "FENTANYL": "331223",
+    "PROPOFOL": "331218",
+    "MIDAZOLAM": "3040101274",
+    "MORPHINE": "331228",
+    "DEXMEDETOMIDINE": "3040101250"
+    
 ### Group ID Richmond Agitation Sedation Scale (RASS)
 - G UCLH ICU NEW NEUROLOGY [39859]
 
