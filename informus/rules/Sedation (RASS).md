@@ -60,11 +60,15 @@ FIO2_% 301550
 [SEDATION_user interface sequence .pdf](https://github.com/inform-us/requirements_specifications/files/15480198/SEDATION_user.interface.sequence.pdf)
 
 ## ELIGIBILITY
-1. Patient (i) on mechanical ventilation AND (ii) receiving sedative drugs
+1. Patient (i) on mandatory mechanical ventilation AND (ii) receiving sedative drugs
 
+2. If O2 delivery is endotrachael tube or tracheostomy, patient is on mandatory mechanical ventilation
+3. If ventmode is CPAP/PS...., patient is on mandatory mechanical ventilation
+4. 
 ## Validity (time window) Rules: 
 1. O2 delivery device only valid if o2delivery_dt documented within last 6 hours of epoch
 2. Or is this actually vent mode flowsheet?
+3. Need to write validity rules here as original code was written with 8 hour leeway. note all early metrics may have extended leeway. 
 
 ### RASS
 - clinical guideline recommended charting frequency for RASS differs depending on time of day
@@ -82,6 +86,10 @@ FIO2_% 301550
 4. if 'has_valid_numerical_rass_target': 'below target', 'above target', 'on target' 
 5. if 'has_valid_entered_rass_target']:'non-numerical' 
 6. if non of the above rules: 'not set'
+
+Note if two measurements, take most recent. 
+
+
 
 ## Labelling Rule: (corresponds to the floor plans)     
 
