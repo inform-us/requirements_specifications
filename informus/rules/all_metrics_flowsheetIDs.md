@@ -28,6 +28,7 @@ Query ran: 2024/06/10
 | Epidural drugs | Levobupivacaine 0.125% epidural infusion 200ml | 181762 | ❌ | ❌ | hourly | ❌ |
 | Epidural drugs | PCEA theatres bupivacaine 0.1% epidural infusion (aka EPIDURAL) | 408107895 | ❌ | ❌ | hourly | ❌ |
 | Epidural drugs | PCEA theatres bupivacaine 0.1% with fentanyl 2mcg/ml epidural infusion (aka EPIDURAL) | 408107894 | ❌ | ❌ | hourly | ❌ |
+| Epidural drugs | R UCLH PIEB BUPIVACAINE (0.125%) / FENTANYL (2 MCG/ML) - VOLUME INFUSED, Volume Infused (mL) Bupivacaine (0.125%) / Fentanyl (2 mcg/mL) | 47779 | ❌ | ❌ | hourly | ❌ |
 | | | | | | | |
 | Airway | Airway plan | 24499 | ✅ | ✅ | once per admission | ✅ |
 | Airway | Airway plan A | 23865 | ❌ | ❌ |  | ❌ |
