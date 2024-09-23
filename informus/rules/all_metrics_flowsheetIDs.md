@@ -34,9 +34,9 @@ Query ran: 2024/06/10
 | Epidural drugs | R UCLH PCEA BUPIVACAINE (0.125%) / FENTANYL (2 MCG/ML) - CUMULATIVE INTAKE, Volume Infused (mL) Bupivacaine (0.125%)/Fentanyl (2 mcg /mL) | 47756 | ❌ | ❌ |  | ❌ |
 | | | | | | | |
 | Airway | Airway plan | 24499 | ✅ | ✅ | once per admission | ✅ |
-| Airway | Airway plan A | 23865 | ❌ | ❌ |  | ❌ |
-| Airway | Airway plan B | 23866 | ❌ | ❌ |  | ❌ |
-| Airway | Airway plan C | 23867 | ❌ | ❌ |  | ❌ |
+| Airway | Airway plan A | 23865 |  |  |  |  |
+| Airway | Airway plan B | 23866 |  |  |  |  |
+| Airway | Airway plan C | 23867 |  |  |  |  |
 | Airway | 02 delivery method | 3040109305 | ✅ | ✅ |  | ✅ |
 | Airway| Intubation grade| 37950 | ✅ | ✅ | | ✅ |
 | Airway| Das Generic Airway Plan| 24498 | ✅ | ✅ | | ✅ |
