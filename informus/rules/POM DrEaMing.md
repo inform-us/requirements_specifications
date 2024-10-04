@@ -15,6 +15,8 @@ Inform_us will display whether staff have documented the status of drinking, eat
 
 ## EPIC Flowsheets
 
+ |Flowsheet | Manual/Automatic |
+
 The flowsheets exist in Post-Op Surgical tab of ICU navigators
 
 **FLUID INTAKE [45429] the nurse will document whether a patient's fluid intake is:**  
