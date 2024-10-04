@@ -11,6 +11,14 @@ Rules for Delirium using CAM-ICU Metric (confusion assessment method-intensive c
 ## EPIC Flowsheets
 - CAM-ICU has 4 components (feature 1-4, see CAM-ICU EPIC_flowsheet PDF) to generate an 'overall' CAM-ICU; the components are not required for this metric
 
+  |Flowsheet|Flowsheet Number| Manual/Automatic/Calculated Input | Comments|
+  |-|-|-|-|
+  |R CAM-ICU FEATURE 1: ACUTE ONSET OR FLUCTUATING COURSE|3040104645|Manual| Drop Down (free text possible)|
+  |R CAM-ICU FEATURE 2: INATTENTION|3040104647|Manual| Drop Down (free text possible)|
+  |R CAM-ICU FEATURE 3: ALTERED LEVEL OF CONSCIOUSNESS|3040104648|Calculated|Autopopulated when RASS score is entered|
+  |R CAM-ICU FEATURE 4: DISORGANIZED THINKING|3040104649|Manual| Drop Down (free text possible)|
+  |R CAM-ICU OVERALL|3040104650|Calculated|Autopopulated from the flowsheets above|
+  
 ### Group ID CAM-ICU
 - CONFUSION ASSESSMENT METHOD-ICU (CAM-ICU) [3040104646]
 
