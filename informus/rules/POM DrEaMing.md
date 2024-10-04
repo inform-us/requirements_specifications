@@ -18,8 +18,8 @@ Inform_us will display whether staff have documented the status of drinking, eat
  | Flowsheet | Row ID | Manual/Automatic/Calculated Input | Comments |
   |-|-|-|-|
  | Fluid Intake | 45429 | Manual | Drop down (free text possible)|
- | Diet Intake | 6482 | Manual | Drop down (free text possible|
- | Mobisation Achieved | 40705 | Manual | Drop down (free text possible|
+ | Diet Intake | 6482 | Manual | Drop down (free text possible)|
+ | Mobisation Achieved | 40705 | Manual | Drop down (free text possible)|
 
  
 
