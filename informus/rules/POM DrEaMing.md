@@ -15,7 +15,11 @@ Inform_us will display whether staff have documented the status of drinking, eat
 
 ## EPIC Flowsheets
 
- |Flowsheet | Manual/Automatic |
+ | Flowsheet | Flowsheet Number | Manual/Automatic |
+ | Fluid Intake | 45429 | Manual |
+ | Diet Intake | 6482 | Manual |
+ | Mobisation Achieved | 40705 | Manual |
+ 
 
 The flowsheets exist in Post-Op Surgical tab of ICU navigators
 
