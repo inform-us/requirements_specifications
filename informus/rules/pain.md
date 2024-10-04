@@ -9,6 +9,18 @@ Rules for pain metric
 - There are no targets for these variables
 
 ## EPIC Flowsheets
+
+| Flowsheet| Flowsheet Number| Manual/Automatic/Calculated Input | Comments |
+|-|-|-|-|
+|Verbal Pain Scale (at rest) | 3040104280 | Manual | Drop down (free text possible) |
+|Verbal Pain Scale (at movement) | 3040104281 | Manual |  Drop down (free text possible) |
+|Facial Expression | 3040104654 | Manual |  Drop down (free text possible) |
+|Body Movements | 3040104655 | Manual |  Drop down (free text possible) |
+|Compliance with Ventilator | 3040104656 | Manual |  Drop down (free text possible) |
+|Vocalization (extubated patients)| 3040104657 | Manual |  Drop down (free text possible) |
+|Muscle Tension| 3040104658 | Manual |  Drop down (free text possible) |
+|CRITICAL CARE PAIN OBSERVATION SCORE| 3040104659 | Calculated | Entry calculated from manual inputs above |
+
 * ### Verbal Pain Scale (VPS)
  - VERBAL PAIN SCALE (at rest) - Row ID 3040104280
  - VERBAL PAIN SCALE (at movement) - Row ID 3040104281
