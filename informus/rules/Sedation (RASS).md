@@ -41,7 +41,7 @@ ___
 |Vent mode| 3040102607| Manual | Drop down (free text option)|
 |Rass score| 3040104644|Manual | Drop down (free text option)|
 |Rass target| 36555| | |
-|Clondine| 12351| Manual|  Numerical entry (free text option)|
+|CLONDINE| 12351| Manual|  Numerical entry (free text option)|
 |FENTANYL| 331223| Manual|  Numerical entry (free text option)|
 |PROPOFOL| 331218| Manual|  Numerical entry (free text option)|
 |MIDAZOLAM| 3040101274| Manual|  Numerical entry (free text option)|
