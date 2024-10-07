@@ -18,6 +18,7 @@ Rules for Delirium using CAM-ICU Metric (confusion assessment method-intensive c
   |R CAM-ICU FEATURE 3: ALTERED LEVEL OF CONSCIOUSNESS|3040104648|Calculated|Autopopulated when RASS score is entered|
   |R CAM-ICU FEATURE 4: DISORGANIZED THINKING|3040104649|Manual| Drop Down (free text possible)|
   |R CAM-ICU OVERALL|3040104650|Calculated|Autopopulated from the flowsheets above|
+  |R RICHMOND AGITATION SEDATION SCALE|3040104644|Manual|Drop Down (free text possible)|
   
 ### Group ID CAM-ICU
 - CONFUSION ASSESSMENT METHOD-ICU (CAM-ICU) [3040104646]
