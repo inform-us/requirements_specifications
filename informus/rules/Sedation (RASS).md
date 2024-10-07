@@ -33,6 +33,21 @@ ___
 
 ## EPIC Flowshets 
 
+|Flowsheet| Flowsheet ID| Manual/Automatic/Calculation Input| Comments|
+|-|-|-|-|
+|FiO2% | 301550| Manual| Numerical entry (free text option)|
+|O2 flow rate| 500690| | | 
+|O2 delivery device| 3040109305|Manual| Drop down (free text option)|
+|Vent mode| 3040102607| Manual | Drop down (free text option)|
+|Rass score| 3040104644|Manual | Drop down (free text option)|
+|Rass target| 36555| | |
+|Clondine| 12351| Manual|  Numerical entry (free text option)|
+|FENTANYL| 331223| Manual|  Numerical entry (free text option)|
+|PROPOFOL| 331218| Manual|  Numerical entry (free text option)|
+|MIDAZOLAM| 3040101274| Manual|  Numerical entry (free text option)|
+|MORPHINE| 331228| Manual|  Numerical entry (free text option)|
+|DEXMEDETOMIDINE| 3040101250| Manual|  Numerical entry (free text option)|
+
 ### Ventilation flowsheet
 
 
