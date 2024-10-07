@@ -15,7 +15,6 @@ The `recent_patients.sql` currently returns all patients including `current` , `
         - Produces a duplicated data row returned from our patients query
         - One of the rows will have a date value in the `location_visit_discharge_dt` column, the other row will have `null` for that column
     - Patients who are currently away for surgery (or possibly moved to a different unit)
-        - These patients have a `location_visit_discharge_dt` but do not have another entry in a different bed
         - Produces one data row in our patients query, because the patient hasn’t come back yet (i.e. there is no duplicated row yet)
         - But they might come back at some point, at which point we would have a duplicate data row returned from our patients query
 
