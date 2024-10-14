@@ -154,7 +154,7 @@ EATING AND DRINKING FLOORPLAN
 7.  if the latest 'diet intake' reading is 'other' then label patient as 'other'. Bed to be light grey filled.
 9.  if both 'diet intake' AND 'fluid intake' flowsheets have not been completed since 00:00 today, then label patient as 'missing'. Bed to be red hashed outline and no fill.
    Secondary eating and drinking labelling 
-10.  in addition to the above labelling, if the latest 'fluid intake' reading is 'IV ongoing' then also label patient as 'IV ongoing'. Note this means that some patients who have 'IV ongoing' will have two labels, a primary label as per steps 1-9 and and a potential secondary label for example if the patient is on an IV and also drinking fluids. We need to denote this somehow on the floorplan as well. Bed is filled with the primary label as above with an outline denoting IV- blue outline? 
+10.  in addition to the above labelling, if the latest 'fluid intake' reading is 'IV ongoing' then also label patient as 'IV ongoing'. Note this means that some patients who have 'IV ongoing' will have two labels, a primary label as per steps 1-8 and and a potential secondary label for example if the patient is on an IV and also drinking fluids. We need to denote this somehow on the floorplan as well. Bed is filled with the primary label as above with an outline denoting IV- blue outline? 
 11.   if none of the rules matched then label the patient as 'fallthrough' 
    
   *n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in ? button.*
