@@ -122,7 +122,7 @@ CAM-ICU
 
 Unit performance data
 
-**9) All POM patients DrEaMing**
+**9) All patients DrEaMing**
 
 Content of Tile
 POM patients on T06 and WMS 
