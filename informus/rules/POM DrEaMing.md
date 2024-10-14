@@ -1,10 +1,10 @@
 
 # Perioperative Medicine (POM) DrEaMing (Drinking, Eating and Mobilising) Metrics 
-Rules for POM DrEaMing metrics
+Rules for DrEaMing metrics
 
 
 ## EPIC
-The POM DrEaMing Metrics refer to the status of post-operative patients' Drinking Eating and Mobilising.
+The DrEaMing Metrics refer to the status of post-operative patients' Drinking Eating and Mobilising.
 
 These data are input manually by nurses at least once every 24 hours and ideally every time a patient Drinks, Eats or Mobilises
 
@@ -20,9 +20,9 @@ Inform_us will display whether staff have documented the status of drinking, eat
  | Fluid Intake | 45429 | Manual | Drop down (free text possible)|
  | Diet Intake | 6482 | Manual | Drop down (free text possible)|
  | Mobisation Achieved | 40705 | Manual | Drop down (free text possible)|
+|Reasons for not mobilising | 47371 | Manual | Drop down| 
 
  
-
 The flowsheets exist in Post-Op Surgical tab of ICU navigators
 
 **FLUID INTAKE [45429] the nurse will document whether a patient's fluid intake is:**  
@@ -129,6 +129,16 @@ DIET INTAKE FLOORPLAN
    
   *n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in ? button.*   
 
+MOBILISATION ACHIEVED FLOORPLAN 
+
+1. if the latest 'mobilisation achieved' reading is 0, 1, 2 or 3 then label patient as 'in bed' 
+2. if the latest 'mobilisation achieved' reading is 4, 5 or 6 then label patient as 'actively transferring'
+5.  if the latest 'mobilisation achieved' reading is 7 or 8, then label patient as 'walking with assistance'
+6.   if the latest 'mobilisation achieved' reading is 9  or 10, then  label patient as 'walking independently'
+7. If 'mobilisation achieved' has not been completed since 00:00 today, then label patient as 'missing'
+8. If none of the rules matched then label the patient as 'fallthrough'
+
+   *n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This to be explained to user in ? button.*
   ## Alternative version Labelling Rules: (corresponds to the floor plans)
 
 There will be 3 separate floorplans with Eating and Drinking  to be default and buttons to select the others (see e.g. MAP and SPO2 SPC charts)
@@ -149,24 +159,19 @@ EATING AND DRINKING FLOORPLAN
    
   *n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in ? button.*
 
-
-  *n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in ? button.* 
-  
 MOBILISATION ACHIEVED FLOORPLAN 
 
 1. if the latest 'mobilisation achieved' reading is 0, 1, 2 or 3 then label patient as 'in bed' 
-2. if the latest 'mobilisation achieved' reading is 4, 5 or 6 then label patient as 'active transferring'
+2. if the latest 'mobilisation achieved' reading is 4, 5 or 6 then label patient as 'actively transferring'
 5.  if the latest 'mobilisation achieved' reading is 7 or 8, then label patient as 'walking with assistance'
 6.   if the latest 'mobilisation achieved' reading is 9  or 10, then  label patient as 'walking independently'
 7. If 'mobilisation achieved' has not been completed since 00:00 today, then label patient as 'missing'
 8. If none of the rules matched then label the patient as 'fallthrough'
 
-   *n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This to be explained to user in ? button.*
-
 DOCUMENTATION COMPLIANCE FLOORPLAN
 
 1. if all three DReaMing flowsheets- 'fluid intake', 'diet intake' and 'moblisation acheived' flowsheets have been completed since 00:00 today, then label patient as 'missing DReaMING Documentation'
-2. if any of 'fluid intake', 'diet intake' or 'moblisation acheived' flowsheets have been completed since 00:00 today, do not label.
+2. if any of 'fluid intake', 'diet intake' or 'moblisation acheived' flowsheets have been completed since 00:00 today,  then label patient as 'some documentation'. Not sure about the wording here, but we basically want it not to be highlighted. Can it be not labeled on the front end? 
    
 ## SPC Chart: (corresponds to the DrEaMing documentation SPC chart)
 
