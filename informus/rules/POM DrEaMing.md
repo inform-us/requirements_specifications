@@ -152,7 +152,7 @@ EATING AND DRINKING FLOORPLAN
 5. if the latest 'diet intake' reading is 'enteral (NG/PEG etc.)' or 'parenteral (TPN)' then label patient as 'enteral/parenteral feeding'. Bed to be violet filled. 
 6. if the latest 'fluid intake' or 'diet intake' reading is 'NBM' then label patient as 'NBM'. Bed to be red filled. 
 7.  if the latest 'diet intake' reading is 'other' then label patient as 'other'. Bed to be light grey filled.
-9.  if both 'diet intake' AND 'fluid intake' flowsheets have been completed since 00:00 today, then label patient as 'missing'. Bed to be red hashed outline and no fill.
+9.  if both 'diet intake' AND 'fluid intake' flowsheets have not been completed since 00:00 today, then label patient as 'missing'. Bed to be red hashed outline and no fill.
    Secondary eating and drinking labelling 
 10.  in addition to the above labelling, if the latest 'fluid intake' reading is 'IV ongoing' then also label patient as 'IV ongoing'. Note this means that some patients who have 'IV ongoing' will have two labels, a primary label as per steps 1-9 and and a potential secondary label for example if the patient is on an IV and also drinking fluids. We need to denote this somehow on the floorplan as well. Bed is filled with the primary label as above with an outline denoting IV- blue outline? 
 11.   if none of the rules matched then label the patient as 'fallthrough' 
@@ -170,8 +170,9 @@ MOBILISATION ACHIEVED FLOORPLAN
 
 DOCUMENTATION COMPLIANCE FLOORPLAN
 
-1. if all three DReaMing flowsheets- 'fluid intake', 'diet intake' and 'moblisation acheived' flowsheets have been completed since 00:00 today, then label patient as 'missing DReaMING Documentation'
-2. if any of 'fluid intake', 'diet intake' or 'moblisation acheived' flowsheets have been completed since 00:00 today,  then label patient as 'some documentation'. Not sure about the wording here, but we basically want it not to be highlighted. Can it be not labeled on the front end? 
+1. if all three DrEaMing flowsheets- 'fluid intake', 'diet intake' and 'moblisation acheived' flowsheets have not been completed since 00:00 today, then label patient as 'Missing DReaMING Documentation'. Bed to be red hash outline. 
+2. if one or two of the 'fluid intake', 'diet intake' or 'moblisation acheived' flowsheets have been completed since 00:00 today,  then label patient as 'DrEaMing Partially Documented'. Bed to be amber filled. 
+3. if all three DrEaMing flowsheets- 'fluid intake', 'diet intake' and 'moblisation acheived' flowsheets have been completed since 00:00 today, then label patient as 'DReaMING Documentation Complete'. Bed to be green filled. 
    
 ## SPC Chart: (corresponds to the DrEaMing documentation SPC chart)
 
