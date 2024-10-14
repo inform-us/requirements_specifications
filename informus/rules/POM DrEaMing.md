@@ -128,7 +128,40 @@ DIET INTAKE FLOORPLAN
 10.  if none of the rules matched then label the patient as 'fallthrough'
    
   *n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in ? button.*   
-  
+
+  ## Alternative version Labelling Rules: (corresponds to the floor plans)
+
+There will be 3 separate floorplans with Eating and Drinking  to be default and buttons to select the others (see e.g. MAP and SPO2 SPC charts)
+EATING AND DRINKING FLOORPLAN
+
+1. if the latest 'diet intake' reading is 'normal diet' or 'soft diet' or 'pureed' or 'nutritional supplement' then label patient as 'eating and drinking'. Bed to be green filled. 
+2.  if the latest 'diet intake' reading is 'sips' then label patient as 'sips of water'. Bed to be orange filled. 
+3.  if the latest 'diet intake' reading is 'free fluids',  or if the latest 'fluid intake' reading is 'oral fluids', then label patient as 'free fluids'. Bed to be blue filled. 
+4. if the latest 'diet intake' reading is 'clear fluids' then label patient as 'clear fluids'. Bed to be yellow filled.
+5. if the latest 'diet intake' reading is 'enteral (NG/PEG etc.)' or 'parenteral (TPN)' then label patient as 'enteral/parenteral feeding'. Bed to be violet filled. 
+6. if the latest 'fluid intake' reading is 'NBM' then label patient as 'NBM'. Bed to be red filled. 
+7.  if the latest 'diet intake' reading is 'fluid restriction' or 'other' then label patient as 'other'. Bed to be lightgrey filled.
+9.  if neither 'diet intake' or 'fluid intake' has not been completed since 00:00 today, then label patient as 'missing'. Bed to be red hashed outline and no fill. 
+10.  if none of the rules matched then label the patient as 'fallthrough'
+11.  
+1. if the latest 'fluid intake' reading is 'IV ongoing' then label patient as 'IV ongoing'
+
+3. 
+
+
+   
+  *n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in ? button.*
+
+DIET INTAKE FLOORPLAN
+
+
+
+
+5. if the latest 'diet intake' reading is 'NBM' then label patient as 'NBM'
+6.
+
+   
+  *n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in ? button.* 
 MOBILISATION ACHIEVED FLOORPLAN 
 
 1. if the latest 'mobilisation achieved' reading is 0, 1, 2 or 3 then label patient as 'in bed' 
