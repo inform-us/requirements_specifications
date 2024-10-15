@@ -145,16 +145,16 @@ There will be 3 separate floorplans with Eating and Drinking  to be default and 
 
 EATING AND DRINKING FLOORPLAN
 
-1. if the latest 'diet intake' reading is 'normal diet' or 'soft diet' or 'pureed' or 'nutritional supplement' then label patient as 'eating and drinking'. Bed to be green filled. 
-2.  if the latest 'diet intake' reading is 'sips' then label patient as 'sips of water'. Bed to be orange filled. 
-3.  if the latest 'diet intake' reading is 'free fluids',  or if the latest 'fluid intake' reading is 'oral fluids', then label patient as 'free fluids'. Bed to be blue filled. 
-4. if the latest 'diet intake' reading is 'clear fluids' then label patient as 'clear fluids'. Bed to be yellow filled.
-5. if the latest 'diet intake' reading is 'enteral (NG/PEG etc.)' or 'parenteral (TPN)' then label patient as 'enteral/parenteral feeding'. Bed to be violet filled. 
-6. if the latest 'fluid intake' or 'diet intake' reading is 'NBM' then label patient as 'NBM'. Bed to be red filled. 
-7.  if the latest 'diet intake' reading is 'other' then label patient as 'other'. Bed to be light grey filled.
-9.  if both 'diet intake' AND 'fluid intake' flowsheets have not been completed since 00:00 today, then label patient as 'missing'. Bed to be red hashed outline and no fill.
+1. if any 'diet intake' reading since 00:00 today is 'normal diet' or 'soft diet' or 'pureed' or 'nutritional supplement' then label patient as 'eating and drinking'. Bed to be green filled. 
+2.  if the latest 'diet intake' reading is 'sips' AND there are no 'diet intake' readings of 'normal diet' or 'soft diet' or 'pureed' or 'nutritional supplement' since 00:00 today, then label patient as 'sips of water'. Bed to be orange filled. 
+3.  if the latest 'diet intake' reading is 'free fluids',  or if the latest 'fluid intake' reading is 'oral fluids',  AND there are no 'diet intake' readings of 'normal diet' or 'soft diet' or 'pureed' or 'nutritional supplement' since 00:00 today, then label patient as 'free fluids'. Bed to be blue filled. 
+4. if the latest 'diet intake' reading is 'clear fluids',  AND there are no 'diet intake' readings of 'normal diet' or 'soft diet' or 'pureed' or 'nutritional supplement' since 00:00 today then label patient as 'clear fluids'. Bed to be yellow filled.
+5. if the latest 'diet intake' reading is 'enteral (NG/PEG etc.)' or 'parenteral (TPN)' AND there are no 'diet intake' readings of 'normal diet' or 'soft diet' or 'pureed' or 'nutritional supplement' since 00:00 today then label patient as 'enteral/parenteral feeding'. Bed to be violet filled. 
+6. if the latest 'fluid intake' or 'diet intake' reading is 'NBM', then label patient as 'NBM'. Bed to be red filled. 
+7.  if the latest 'diet intake' reading is 'other' AND there are no 'diet intake' readings of 'normal diet' or 'soft diet' or 'pureed' or 'nutritional supplement' since 00:00 today, then label patient as 'other'. Bed to be light grey filled.
+8.  if both 'diet intake' AND 'fluid intake' flowsheets have not been completed since 00:00 today, then label patient as 'missing'. Bed to be red hashed outline and no fill.
    Secondary eating and drinking labelling 
-10.  in addition to the above labelling, if the latest 'fluid intake' reading is 'IV ongoing' then also label patient as 'IV ongoing'. Note this means that some patients who have 'IV ongoing' will have two labels, a primary label as per steps 1-8 and and a potential secondary label for example if the patient is on an IV and also drinking fluids. We need to denote this somehow on the floorplan as well. Bed is filled with the primary label as above with an outline denoting IV- blue outline? 
+10.  in addition to the above labelling, if the latest 'fluid intake' reading is 'IV ongoing' then also label patient as 'IV ongoing'. Note this means that some patients who have 'IV ongoing' will have two labels, a primary label as per steps 1-8 above and a potential secondary label for example if the patient is on an IV and also drinking fluids. We need to denote this somehow on the floorplan as well. Bed is filled with the primary label as above with an outline denoting IV- blue outline? 
 11.   if none of the rules matched then label the patient as 'fallthrough' 
    
   *n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in ? button.*
