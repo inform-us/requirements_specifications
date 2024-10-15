@@ -16,11 +16,11 @@ Inform_us will display whether staff have documented the status of drinking, eat
 ## EPIC Flowsheets
 
  | Flowsheet | Row ID | Manual/Automatic/Calculated Input | Comments |
-  |-|-|-|-|
- | Fluid Intake | 45429 | Manual | Drop down (free text possible)|
- | Diet Intake | 6482 | Manual | Drop down (free text possible)|
- | Mobisation Achieved | 40705 | Manual | Drop down (free text possible)|
-|Reasons for not mobilising | 47371 | Manual | Drop down| 
+  |-|-|-|-|-|
+ | Fluid Intake | 45429 | Manual | Drop down (free text possible)|expected documentation frequency|
+ | Diet Intake | 6482 | Manual | Drop down (free text possible)|expected documentation frequency|
+ | Mobisation Achieved | 40705 | Manual | Drop down (free text possible)|expected documentation frequency|
+|Reasons for not mobilising | 47371 | Manual | Drop down| expected documentation frequency|
 
  
 The flowsheets exist in Post-Op Surgical tab of ICU navigators
