@@ -169,10 +169,10 @@ MOBILISATION ACHIEVED FLOORPLAN
 8. If none of the rules matched then label the patient as 'fallthrough'
 
 DOCUMENTATION COMPLIANCE FLOORPLAN
-
-1. if all three DrEaMing flowsheets- 'fluid intake', 'diet intake' and 'moblisation acheived' flowsheets have not been completed since 00:00 today, then label patient as 'Missing DReaMING Documentation'. Bed to be red hash outline. 
-2. if one or two of the 'fluid intake', 'diet intake' or 'moblisation acheived' flowsheets have been completed since 00:00 today,  then label patient as 'DrEaMing Partially Documented'. Bed to be amber filled. 
-3. if all three DrEaMing flowsheets- 'fluid intake', 'diet intake' and 'moblisation acheived' flowsheets have been completed since 00:00 today, then label patient as 'DReaMING Documentation Complete'. Bed to be green filled. 
+1. if there are no DrEaMing flowsheets for the patient, then label patient as 'no post-op surgical flowsheet'. Bed to be blue hashed outline.
+2. if there are DrEaMing flowsheets, but none of the three DrEaMing flowsheets- 'fluid intake', 'diet intake' and 'moblisation achieved' flowsheets have not been completed since 00:00 today, then label patient as 'Missing DReaMING Documentation'. Bed to be red hash outline.
+3. if one or two of the 'fluid intake', 'diet intake' or 'moblisation achieved' flowsheets have been completed since 00:00 today,  then label patient as 'DrEaMing Partially Documented'. Bed to be amber filled. 
+4. if all three DrEaMing flowsheets- 'fluid intake', 'diet intake' and 'moblisation acheived' flowsheets have been completed since 00:00 today, then label patient as 'DReaMING Documentation Complete'. Bed to be green filled. 
    
 ## SPC Chart: (corresponds to the DrEaMing documentation SPC chart)
 
