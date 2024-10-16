@@ -11,6 +11,8 @@ Rules for Blood Oxygen Saturation metric
 | Flowsheet | Row ID | Manual/Automatic/Calculated Input | Comments | Expected documentation frequency|
   |-|-|-|-|-|
   |Oxygen saturation|10|Automatic| Taken from monitor| Hourly (varies according to patient's clinical condition)|
+  |FiO2%|301550|Manual| Numerical entry (free text possible)| Usually Hourly (Vaires according to clincial condition|
+  |
 
 ## Validity (time window) Rules: 
 
