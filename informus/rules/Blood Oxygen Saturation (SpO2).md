@@ -2,7 +2,12 @@
 Rules for Blood Oxygen Saturation metric
 
 
+## EPIC Flowsheets
 
+* ### Group ID:
+-  [] 
+
+* ### Individual metric Row ID:
 | Flowsheet | Row ID | Manual/Automatic/Calculated Input | Comments | Expected documentation frequency|
   |-|-|-|-|-|
 
