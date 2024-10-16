@@ -1,6 +1,14 @@
 # TIDAL VOLUME rules
 Rules for Tidal volume metric
- 
+
+ ## EPIC Flowsheets
+
+* ### Group ID:
+-  [] 
+
+* ### Individual metric Row ID:
+| Flowsheet | Row ID | Manual/Automatic/Calculated Input | Comments | Expected documentation frequency|
+  |-|-|-|-|-|
 
 ## Validity (time window) Rules: 
 
