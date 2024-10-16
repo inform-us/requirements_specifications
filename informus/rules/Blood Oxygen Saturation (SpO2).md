@@ -1,6 +1,8 @@
 # Blood Oxygen Saturation (SpO2) rules 
 Rules for Blood Oxygen Saturation metric
 
+
+
 | Flowsheet | Row ID | Manual/Automatic/Calculated Input | Comments | Expected documentation frequency|
   |-|-|-|-|-|
 
