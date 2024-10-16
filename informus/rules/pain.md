@@ -12,14 +12,14 @@ Rules for pain metric
 
 | Flowsheet| Row ID| Manual/Automatic/Calculated Input | Comments |Expected Documentation Frequency|
 |-|-|-|-|-|
-|Verbal Pain Scale (at rest) | 3040104280 | Manual | Drop down (free text possible) |
-|Verbal Pain Scale (at movement) | 3040104281 | Manual |  Drop down (free text possible) |
-|Facial Expression | 3040104654 | Manual |  Drop down (free text possible) |
-|Body Movements | 3040104655 | Manual |  Drop down (free text possible) |
-|Compliance with Ventilator | 3040104656 | Manual |  Drop down (free text possible) |
-|Vocalization (extubated patients)| 3040104657 | Manual |  Drop down (free text possible) |
-|Muscle Tension| 3040104658 | Manual |  Drop down (free text possible) |
-|CRITICAL CARE PAIN OBSERVATION SCORE| 3040104659 | Calculated | Entry calculated from manual inputs above |
+|Verbal Pain Scale (at rest) | 3040104280 | Manual | Drop down (free text possible) |Four hourly if previous score was 0 or 1 or unable to access, hourly if previous score was 2 or above|
+|Verbal Pain Scale (at movement) | 3040104281 | Manual |  Drop down (free text possible) |Four hourly if previous score was 0 or 1 or unable to access, hourly if previous score was 2 or above|
+|Facial Expression | 3040104654 | Manual |  Drop down (free text possible) |Four hourly if previous Critical Care Pain Observation Score score was 0 - 2, hourly if previous Critical Care Pain Observation Score score was 3 or above|
+|Body Movements | 3040104655 | Manual |  Drop down (free text possible) |Four hourly if previous Critical Care Pain Observation Score score was 0 - 2, hourly if previous Critical Care Pain Observation Score score was 3 or above|
+|Compliance with Ventilator | 3040104656 | Manual |  Drop down (free text possible) |Four hourly if previous Critical Care Pain Observation Score score was 0 - 2, hourly if previous Critical Care Pain Observation Score score was 3 or above|
+|Vocalization (extubated patients)| 3040104657 | Manual |  Drop down (free text possible) |Four hourly if previous Critical Care Pain Observation Score score was 0 - 2, hourly if previous Critical Care Pain Observation Score score was 3 or above|
+|Muscle Tension| 3040104658 | Manual |  Drop down (free text possible) |Four hourly if previous Critical Care Pain Observation Score score was 0 - 2, hourly if previous Critical Care Pain Observation Score score was 3 or above|
+|CRITICAL CARE PAIN OBSERVATION SCORE| 3040104659 | Calculated | Entry calculated from manual inputs above |Four hourly if previous score was 0 or 2, hourly if previous score was 3 or above|
 
 * ### Verbal Pain Scale (VPS)
  - VERBAL PAIN SCALE (at rest) - Row ID 3040104280
