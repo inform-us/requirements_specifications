@@ -11,8 +11,9 @@ Rules for Blood Oxygen Saturation metric
 | Flowsheet | Row ID | Manual/Automatic/Calculated Input | Comments | Expected documentation frequency|
   |-|-|-|-|-|
   |Oxygen saturation|10|Automatic| Taken from monitor| Hourly (varies according to patient's clinical condition)|
+  |O2 flow rate| 250026| Manual | Numerical entry (free text possible)| Hourly only if FiO2 not documented|
   |FiO2%|301550|Manual| Numerical entry (free text possible)| Usually Hourly (Vaires according to clincial condition|
-  |
+  |R UCLH ICU TARGETS SPO2|36551| Manual| Drop down (free text possible)| minimum once per day between 0800 and 1200|
 
 ## Validity (time window) Rules: 
 
