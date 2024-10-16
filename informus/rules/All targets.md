@@ -36,6 +36,17 @@ Rules for all targets set metric
 7. Fluid Balance - R UCLH ICU TARGETS FLUID BALANCE [36553]
 8. RASS - R UCLH ICU TARGET RASS [36555]
 
+| Flowsheet | Row ID | Manual/Automatic/Calculated Input | Comments | Expected documentation frequency|
+  |-|-|-|-|-|
+ | MAP| 36554| Manual | Drop down (free text possible)|minimum once per day between 0800 and 1200|
+ | SpO2|  36551 | Manual | Drop down (free text possible)|minimum once per day between 0800 and 1200|
+ | PaO2 | 36556| Manual | Drop down (free text possible)|minimum once per day between 0800 and 1200|
+|PaCO2 | 36557| Manual | Drop down (free text possible)|minimum once per day between 0800 and 1200|
+|ph| 36559| Manual | Drop down (free text possible)|minimum once per day between 0800 and 1200|
+|Haemoglobin|36558| Manual | Drop down (free text possible)|minimum once per day between 0800 and 1200|
+|Fluid Balance| 36553| Manual | Drop down )free text possible)|minimum once per day between 0800 and 1200|
+|RASS | 36555| Manual | Drop down )free text possible)|minimum once per day between 0800 and 1200|
+
 * ### Miscellaneous information:
 - not used - Row ID	- R UCLH ICU READY DISCHARGE [41222]
 - there are no components to form a summative score
