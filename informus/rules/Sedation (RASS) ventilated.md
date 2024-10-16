@@ -39,7 +39,7 @@ ___
 |O2 flow rate| 500690| | | 
 |O2 delivery device| 3040109305|Manual| Drop down (free text option)|Usually hourly but varies depending on patient's clinical condition|
 |Vent mode| 3040102607| Manual | Drop down (free text option)|
-|Rass score| 3040104644|Manual | Drop down (free text option)|
+|Rass score| 3040104644|Manual | Drop down (free text option)|Hourly between 0800 and 1959. Fourly hourly between 2000 and 0759|
 |Rass target| 36555| | |
 |CLONDINE| 12351| Manual|  Numerical entry (free text option)|
 |FENTANYL| 331223| Manual|  Numerical entry (free text option)|
