@@ -16,7 +16,7 @@ Rules for Delirium using CAM-ICU Metric (confusion assessment method-intensive c
   |R CAM-ICU FEATURE 1: ACUTE ONSET OR FLUCTUATING COURSE|3040104645|Manual| Drop Down (free text possible)|Once between 0800-1959 and once between 2000-0759|
   |R CAM-ICU FEATURE 2: INATTENTION|3040104647|Manual| Drop Down (free text possible)|Once between 0800-1959 and once between 2000-0759|
   |R CAM-ICU FEATURE 3: ALTERED LEVEL OF CONSCIOUSNESS|3040104648|Calculated|Autopopulated when RASS score is entered|Hourly between 0800 - 1959. Four hourly between 2000 - 0759|
-  |R CAM-ICU FEATURE 4: DISORGANIZED THINKING|3040104649|Manual| Drop Down (free text possible)|Once between 0800-1959 and once between 2000-0759. Note: Feacture 4 is not required if feacture 3 is positive|
+  |R CAM-ICU FEATURE 4: DISORGANIZED THINKING|3040104649|Manual| Drop Down (free text possible)|Once between 0800-1959 and once between 2000-0759. Note: Feature 4 is not required if feature 3 is positive|
   |R CAM-ICU OVERALL|3040104650|Calculated|Autopopulated from the flowsheets above|Once between 0800-1959 and once between 2000-0759|
   |R RICHMOND AGITATION SEDATION SCALE|3040104644|Manual|Drop Down (free text possible)|Hourly between 0800 - 1959. Four hourly between 2000 - 0759|
   
