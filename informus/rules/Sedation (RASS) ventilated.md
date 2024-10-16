@@ -33,8 +33,8 @@ ___
 
 ## EPIC Flowshets 
 
-|Flowsheet| Flowsheet ID| Manual/Automatic/Calculation Input| Comments|
-|-|-|-|-|
+|Flowsheet| Flowsheet ID| Manual/Automatic/Calculation Input| Comments| Expected Documentation Frequency|
+|-|-|-|-|-|
 |FiO2% | 301550| Manual| Numerical entry (free text option)|
 |O2 flow rate| 500690| | | 
 |O2 delivery device| 3040109305|Manual| Drop down (free text option)|
