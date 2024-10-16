@@ -10,8 +10,8 @@ Rules for pain metric
 
 ## EPIC Flowsheets
 
-| Flowsheet| Row ID| Manual/Automatic/Calculated Input | Comments |
-|-|-|-|-|
+| Flowsheet| Row ID| Manual/Automatic/Calculated Input | Comments |Expected Documentation Frequency|
+|-|-|-|-|-|
 |Verbal Pain Scale (at rest) | 3040104280 | Manual | Drop down (free text possible) |
 |Verbal Pain Scale (at movement) | 3040104281 | Manual |  Drop down (free text possible) |
 |Facial Expression | 3040104654 | Manual |  Drop down (free text possible) |
