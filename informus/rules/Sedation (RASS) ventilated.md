@@ -35,9 +35,9 @@ ___
 
 |Flowsheet| Flowsheet ID| Manual/Automatic/Calculation Input| Comments| Expected Documentation Frequency|
 |-|-|-|-|-|
-|FiO2% | 301550| Manual| Numerical entry (free text option)|
+|FiO2% | 301550| Manual| Numerical entry (free text option)|Usually hourly but varies depending on patient's clinical condition|
 |O2 flow rate| 500690| | | 
-|O2 delivery device| 3040109305|Manual| Drop down (free text option)|
+|O2 delivery device| 3040109305|Manual| Drop down (free text option)|Usually hourly but varies depending on patient's clinical condition|
 |Vent mode| 3040102607| Manual | Drop down (free text option)|
 |Rass score| 3040104644|Manual | Drop down (free text option)|
 |Rass target| 36555| | |
