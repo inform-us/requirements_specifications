@@ -14,11 +14,11 @@ Rules for Delirium using CAM-ICU Metric (confusion assessment method-intensive c
   |Flowsheet|Flowsheet Number| Manual/Automatic/Calculated Input | Comments|Expected documentation frequency|
   |-|-|-|-|-|
   |R CAM-ICU FEATURE 1: ACUTE ONSET OR FLUCTUATING COURSE|3040104645|Manual| Drop Down (free text possible)|Once between 0800-1959 and once between 2000-0759|
-  |R CAM-ICU FEATURE 2: INATTENTION|3040104647|Manual| Drop Down (free text possible)|
-  |R CAM-ICU FEATURE 3: ALTERED LEVEL OF CONSCIOUSNESS|3040104648|Calculated|Autopopulated when RASS score is entered|
-  |R CAM-ICU FEATURE 4: DISORGANIZED THINKING|3040104649|Manual| Drop Down (free text possible)|
-  |R CAM-ICU OVERALL|3040104650|Calculated|Autopopulated from the flowsheets above|
-  |R RICHMOND AGITATION SEDATION SCALE|3040104644|Manual|Drop Down (free text possible)|
+  |R CAM-ICU FEATURE 2: INATTENTION|3040104647|Manual| Drop Down (free text possible)|Once between 0800-1959 and once between 2000-0759|
+  |R CAM-ICU FEATURE 3: ALTERED LEVEL OF CONSCIOUSNESS|3040104648|Calculated|Autopopulated when RASS score is entered|Hourly between 0800 - 1959. Four hourly between 2000 - 0759|
+  |R CAM-ICU FEATURE 4: DISORGANIZED THINKING|3040104649|Manual| Drop Down (free text possible)|Once between 0800-1959 and once between 2000-0759. Note: Feacture 4 is not required if feacture 3 is positive|
+  |R CAM-ICU OVERALL|3040104650|Calculated|Autopopulated from the flowsheets above|Once between 0800-1959 and once between 2000-0759|
+  |R RICHMOND AGITATION SEDATION SCALE|3040104644|Manual|Drop Down (free text possible)|Hourly between 0800 - 1959. Four hourly between 2000 - 0759|
   
 ### Group ID CAM-ICU
 - CONFUSION ASSESSMENT METHOD-ICU (CAM-ICU) [3040104646]
