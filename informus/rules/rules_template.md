@@ -11,6 +11,10 @@ Rules for ABC metric
  - ABC metric - Row ID XXXX
 -  ABC metric [component if applicable] - Row ID XXXX
 
+
+| Flowsheet | Row ID | Manual/Automatic/Calculated Input | Comments | Expected documentation frequency|
+  |-|-|-|-|-|
+
 ---
 
 ---
