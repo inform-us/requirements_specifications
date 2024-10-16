@@ -1,5 +1,14 @@
 # Mean Arterial Blood Pressure (MAP) rules
 Rules for Mean Arterial Blood Pressure (MAP) metric
+
+## EPIC Flowsheets
+
+* ### Group ID:
+-  [] 
+
+* ### Individual metric Row ID:
+| Flowsheet | Row ID | Manual/Automatic/Calculated Input | Comments | Expected documentation frequency|
+  |-|-|-|-|-|
 ## Validity (time window) Rules: 
 
 1. MAP only valid if map_dt within last 6 hours of epoch_dt 
