@@ -13,7 +13,7 @@ Rules for Delirium using CAM-ICU Metric (confusion assessment method-intensive c
 
   |Flowsheet|Flowsheet Number| Manual/Automatic/Calculated Input | Comments|Expected documentation frequency|
   |-|-|-|-|-|
-  |R CAM-ICU FEATURE 1: ACUTE ONSET OR FLUCTUATING COURSE|3040104645|Manual| Drop Down (free text possible)|
+  |R CAM-ICU FEATURE 1: ACUTE ONSET OR FLUCTUATING COURSE|3040104645|Manual| Drop Down (free text possible)|Once between 0800-1959 and once between 2000-0759|
   |R CAM-ICU FEATURE 2: INATTENTION|3040104647|Manual| Drop Down (free text possible)|
   |R CAM-ICU FEATURE 3: ALTERED LEVEL OF CONSCIOUSNESS|3040104648|Calculated|Autopopulated when RASS score is entered|
   |R CAM-ICU FEATURE 4: DISORGANIZED THINKING|3040104649|Manual| Drop Down (free text possible)|
