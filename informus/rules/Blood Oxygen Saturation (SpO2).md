@@ -1,5 +1,9 @@
 # Blood Oxygen Saturation (SpO2) rules 
 Rules for Blood Oxygen Saturation metric
+
+| Flowsheet | Row ID | Manual/Automatic/Calculated Input | Comments | Expected documentation frequency|
+  |-|-|-|-|-|
+
 ## Validity (time window) Rules: 
 
 1. O2Sat only valid if o2sat_dt within last 4 hours of epoch 
