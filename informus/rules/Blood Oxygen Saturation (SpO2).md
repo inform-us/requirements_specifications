@@ -10,6 +10,7 @@ Rules for Blood Oxygen Saturation metric
 * ### Individual metric Row ID:
 | Flowsheet | Row ID | Manual/Automatic/Calculated Input | Comments | Expected documentation frequency|
   |-|-|-|-|-|
+  |Oxygen saturation|10|Automatic| Taken from monitor| Hourly (varies according to patient's clinical condition)|
 
 ## Validity (time window) Rules: 
 
