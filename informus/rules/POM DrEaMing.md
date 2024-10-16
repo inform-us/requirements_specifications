@@ -15,7 +15,7 @@ Inform_us will display whether staff have documented the status of drinking, eat
 
 ## EPIC Flowsheets
 
- | Flowsheet | Row ID | Manual/Automatic/Calculated Input | Comments |
+ | Flowsheet | Row ID | Manual/Automatic/Calculated Input | Comments | Expected documentation frequency|
   |-|-|-|-|-|
  | Fluid Intake | 45429 | Manual | Drop down (free text possible)|expected documentation frequency|
  | Diet Intake | 6482 | Manual | Drop down (free text possible)|expected documentation frequency|
