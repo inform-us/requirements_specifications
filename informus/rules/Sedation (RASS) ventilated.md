@@ -157,6 +157,30 @@ Operational definition = of the patients who are ventilated and on sedative drug
 9. Generate weekly percentage designations that are on target (i.e. add up all ‘on target’ in that week and divide by ‘on target’ + ‘off target’ in that week). Present as percentage
 10. Plot on weekly chart
 
+
+## chart 2 RASS ASSESSMENT TIME INTERVAL SPC CHARTS 
+
+These are weekly percentage (p-charts) SPC
+Week defined a Monday 00:00 – Sunday 23:59
+Chart 2a - DAY [Measurement Interval Chart] 
+Look at RASS assessment measurement intervals between the hours of 06:00 and 21:59 each day 
+Numerator = count of time intervals that are ≤ 1:00 hours for the DAY category (?Leeway)
+Chart 2b- NIGHT Measurement Interval Chart
+Look at RASS assessment measurement intervals between the hours of 22:00 and 05:59 each day 
+Numerator = count of time intervals that are ≤ 4:00 hours for the NIGHT category
+SPC denominator adjustment required for excessively long measurement intervals (those that are 2x accepted measurement interval from clinical guidance)
+Denominator (adjusted) = count all measurement intervals in the GREEN category in that week that are >8:00 hours and ADD +1 to denominator for each four hour period greater than the permitted 4:00 hours
+For example: (i) an 8:01hr measurement interval will count as 2 in the adjusted denominator - once for the measurement and once for being an additional 4:00hr over the permitted four hours for this category; (ii) 12:01hr measurement interval will count as 3 in the adjusted denominator; (iii) 16:01hr measurement interval will count as 4 in the adjusted denominator etc...
+Generate percentage of measurement intervals for that week that are 4:00 hours or less: numerator / denominator (adjusted)
+Plot on weekly chart
+Chart 2b AMBER/RED [Measurement Interval chart] - moderate severe pain
+Look at AMBER/RED category measurement intervals in that week
+Numerator = count of time intervals that are ≤ 1:00 hour for the AMBER/RED category
+SPC denominator adjustment required for excessively long measurement intervals (those that are 2x accepted measurement interval from clinical guideance)
+Denominator (adjusted) = count all measurement intervals in the AMBER/RED category in that week that are >1:00 hours and ADD +1 to denominator for each one hour period greater than the permitted 1:00 hours
+For example: (i) an 2:01hr measurement interval will count as 2 in the adjusted denominator - once for the measurement and once for being an additional 1:00hr over the permitted four hours for this category; (ii) 3:01hr measurement interval will count as 3 in the adjusted denominator; (iii) 4:01hr measurement interval will count as 4 in the adjusted denominator etc...
+Generate percentage of measurement intervals for that week that are 1:00 hour or less: numerator / denominator (adjusted)
+Plot on weekly chart
  
 
  
