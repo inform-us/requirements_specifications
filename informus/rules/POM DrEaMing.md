@@ -153,16 +153,18 @@ EATING AND DRINKING FLOORPLAN
 6. if the latest 'fluid intake' or 'diet intake' reading is 'NBM', then label patient as 'NBM'. Bed to be red filled. 
 7.  if the latest 'diet intake' reading is 'other' AND there are no 'diet intake' readings of 'normal diet' or 'soft diet' or 'pureed' or 'nutritional supplement' since 00:00 today, then label patient as 'other'. Bed to be light grey filled.
 8.  if both 'diet intake' AND 'fluid intake' flowsheets have not been completed since 00:00 today, then label patient as 'missing'. Bed to be red hashed outline and no fill.
-   Secondary eating and drinking labelling 
-10.  in addition to the above labelling, if the latest 'fluid intake' reading is 'IV ongoing' then also label patient as 'IV ongoing'. Note this means that some patients who have 'IV ongoing' will have two labels, a primary label as per steps 1-8 above and a potential secondary label for example if the patient is on an IV and also drinking fluids. We need to denote this somehow on the floorplan as well. Bed is filled with the primary label as above with an outline denoting IV- blue outline? 
+
+   #Secondary eating and drinking labeling 
+10.  in addition to the above labeling, if the latest 'fluid intake' reading is 'IV ongoing' then also label patient as 'IV ongoing'. Note this means that some patients who have 'IV ongoing' will have two labels, a primary label as per steps 1-8 above and a potential secondary label for example if the patient is on an IV and also drinking fluids. We need to denote this somehow on the floorplan as well. Bed is filled with the primary label as above with an outline denoting IV- blue outline? 
 11.   if none of the rules matched then label the patient as 'fallthrough' 
    
   *n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in ? button.*
 
 MOBILISATION ACHIEVED FLOORPLAN 
 
-1. if the latest 'mobilisation achieved' reading is 0, 1, 2 or 3 then label patient as 'in bed' 
-2. if the latest 'mobilisation achieved' reading is 4, 5 or 6 then label patient as 'actively transferring'
+1. if the latest 'mobilisation achieved' reading is 0, 1, 2 or 3 then label patient as 'in bed'
+    1b. for patients labelled as 'in bed', hover over box to open on bed 'reasons for not mobilising' flowsheet and display drop down options. 
+3. if the latest 'mobilisation achieved' reading is 4, 5 or 6 then label patient as 'actively transferring'
 5.  if the latest 'mobilisation achieved' reading is 7 or 8, then label patient as 'walking with assistance'
 6.   if the latest 'mobilisation achieved' reading is 9  or 10, then  label patient as 'walking independently'
 7. If 'mobilisation achieved' has not been completed since 00:00 today, then label patient as 'missing'
@@ -171,8 +173,8 @@ MOBILISATION ACHIEVED FLOORPLAN
 DOCUMENTATION COMPLIANCE FLOORPLAN
 
 1. if none of the three DrEaMing flowsheets- 'fluid intake', 'diet intake' and 'moblisation achieved' flowsheets have not been completed since 00:00 today, then label patient as 'Missing DReaMING Documentation'. Bed to be red hash outline.
-2. if one or two of the 'fluid intake', 'diet intake' or 'moblisation achieved' flowsheets have been completed since 00:00 today,  then label patient as 'DrEaMing Partially Documented'. Bed to be amber filled. 
-3. if all three DrEaMing flowsheets- 'fluid intake', 'diet intake' and 'moblisation achieved' flowsheets have been completed since 00:00 today, then label patient as 'DReaMING Documentation Complete'. Bed to be green filled. 
+2. if one or two of the 'fluid intake', 'diet intake' or 'moblisation achieved' flowsheets have been completed since 00:00 today,  then label patient as 'DrEaMing Partially Documented'. Bed to be amber hashed outline
+3. if all three DrEaMing flowsheets- 'fluid intake', 'diet intake' and 'moblisation achieved' flowsheets have been completed since 00:00 today, then label patient as 'DReaMING Documentation Complete'. Bed to be green hashed outline.
    
 ## SPC Chart: (corresponds to the DrEaMing documentation SPC chart)
 
