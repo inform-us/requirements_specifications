@@ -97,7 +97,12 @@ FIO2_% 301550?
 2) RASS scores documented between 22:00 - 05:59 is valid 255 minutes (4 hours & 15 minutes)
    *note current rules have same one hour rule for all day and night*
    
-
+## Tile calculation- average time between RASS assessments
+Average time between should be calculated from ACTUAL documented scores in EPIC and not any forward filled scores - these data have precise _dt stamps
+There needs to be a minimum of two scores to calculate a measurement interval (if a patient only has one RASS score during their ICU admission, this will not be included in this data)
+Numerator = sum of the minutes and hours between all intervals in a 24 hour period (hours)
+Denominator (unadjusted) = number of all time interval measurements
+FRONT TILE AVERAGE MEASUREMENT INTERVAL (24 hour rolling window) - CALCULATE MEAN using above numerator / denominator (unadjusted)
 ## Classification Rules: 
 RASS Target set on any day is valid until 12:00hrs the day after the RASS target is set unless another target is set between 08:00 and 12:00hr on the second day. 
 
