@@ -131,12 +131,38 @@ DIET INTAKE FLOORPLAN
 
 MOBILISATION ACHIEVED FLOORPLAN 
 
-1. if the latest 'mobilisation achieved' reading is 0, 1, 2 or 3 then label patient as 'in bed' 
+1. if the latest 'mobilisation achieved' reading is 0, 1, 2 or 3 then label patient as 'in bed'
+   
+   1b. for patients labelled as 'in bed', hover over box to open on bed 'reasons for not mobilising' flowsheet and display drop down options.
+   |Drop down options|
+   |-|
+   |Achieving ICU MS above or equal to 3 (ICU)|
+   |Achieving ICU MS above or equal to 6 (PACU)|
+   |Agitation|
+   |Baseline ICU MS <3|
+   |Delirium|
+   |Dizziness|
+   |Engagement|
+   |Equipment|
+   |High O2 requirement|
+   |Hypotension|
+   |Metaraminol > 5mg/hr|
+   |Motor Block|
+   |MSK related problem|
+   |Nausea|
+   |NorAd > 0.05mcg/kg/hr|
+   |Pain|
+   |Sedated RASS < -2|
+   |Staffing|
+   |Surgical Contraindication|
+   |Unstable CVS|
+   |Other|
+   
 2. if the latest 'mobilisation achieved' reading is 4, 5 or 6 then label patient as 'actively transferring'
-5.  if the latest 'mobilisation achieved' reading is 7 or 8, then label patient as 'walking with assistance'
-6.   if the latest 'mobilisation achieved' reading is 9  or 10, then  label patient as 'walking independently'
-7. If 'mobilisation achieved' has not been completed since 00:00 today, then label patient as 'missing'
-8. If none of the rules matched then label the patient as 'fallthrough'
+3.  if the latest 'mobilisation achieved' reading is 7 or 8, then label patient as 'walking with assistance'
+4.   if the latest 'mobilisation achieved' reading is 9  or 10, then  label patient as 'walking independently'
+5. If 'mobilisation achieved' has not been completed since 00:00 today, then label patient as 'missing'
+6. If none of the rules matched then label the patient as 'fallthrough'
 
    *n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This to be explained to user in ? button.*
   ## Alternative version Labelling Rules: (corresponds to the floor plans)
@@ -163,12 +189,37 @@ EATING AND DRINKING FLOORPLAN
 MOBILISATION ACHIEVED FLOORPLAN 
 
 1. if the latest 'mobilisation achieved' reading is 0, 1, 2 or 3 then label patient as 'in bed'
-    1b. for patients labelled as 'in bed', hover over box to open on bed 'reasons for not mobilising' flowsheet and display drop down options. 
-3. if the latest 'mobilisation achieved' reading is 4, 5 or 6 then label patient as 'actively transferring'
-5.  if the latest 'mobilisation achieved' reading is 7 or 8, then label patient as 'walking with assistance'
-6.   if the latest 'mobilisation achieved' reading is 9  or 10, then  label patient as 'walking independently'
-7. If 'mobilisation achieved' has not been completed since 00:00 today, then label patient as 'missing'
-8. If none of the rules matched then label the patient as 'fallthrough'
+   
+   1b. for patients labelled as 'in bed', hover over box to open on bed 'reasons for not mobilising' flowsheet and display drop down options.
+   |Drop down options|
+   |-|
+   |Achieving ICU MS above or equal to 3 (ICU)|
+   |Achieving ICU MS above or equal to 6 (PACU)|
+   |Agitation|
+   |Baseline ICU MS <3|
+   |Delirium|
+   |Dizziness|
+   |Engagement|
+   |Equipment|
+   |High O2 requirement|
+   |Hypotension|
+   |Metaraminol > 5mg/hr|
+   |Motor Block|
+   |MSK related problem|
+   |Nausea|
+   |NorAd > 0.05mcg/kg/hr|
+   |Pain|
+   |Sedated RASS < -2|
+   |Staffing|
+   |Surgical Contraindication|
+   |Unstable CVS|
+   |Other|
+   
+2. if the latest 'mobilisation achieved' reading is 4, 5 or 6 then label patient as 'actively transferring'
+3.  if the latest 'mobilisation achieved' reading is 7 or 8, then label patient as 'walking with assistance'
+4.   if the latest 'mobilisation achieved' reading is 9  or 10, then  label patient as 'walking independently'
+5. If 'mobilisation achieved' has not been completed since 00:00 today, then label patient as 'missing'
+6. If none of the rules matched then label the patient as 'fallthrough'
 
 DOCUMENTATION COMPLIANCE FLOORPLAN
 
