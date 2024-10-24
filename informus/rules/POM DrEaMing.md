@@ -176,12 +176,13 @@ EATING AND DRINKING FLOORPLAN
 3.  if the latest 'diet intake' reading is 'free fluids',  or if the latest 'fluid intake' reading is 'oral fluids',  AND there are no 'diet intake' readings of 'normal diet' or 'soft diet' or 'pureed' or 'nutritional supplement' since 00:00 today, then label patient as 'free fluids'. Bed to be blue filled. 
 4. if the latest 'diet intake' reading is 'clear fluids',  AND there are no 'diet intake' readings of 'normal diet' or 'soft diet' or 'pureed' or 'nutritional supplement' since 00:00 today then label patient as 'clear fluids'. Bed to be yellow filled.
 5. if the latest 'diet intake' reading is 'enteral (NG/PEG etc.)' or 'parenteral (TPN)' AND there are no 'diet intake' readings of 'normal diet' or 'soft diet' or 'pureed' or 'nutritional supplement' since 00:00 today then label patient as 'enteral/parenteral feeding'. Bed to be violet filled. 
-6. if the latest 'fluid intake' or 'diet intake' reading is 'NBM', then label patient as 'NBM'. Bed to be red filled. 
+6. if the latest 'fluid intake' or 'diet intake' reading is 'NBM', then label patient as 'NBM'. Note a NBM documentation on 'fluid intake' OR 'diet intake' flowsheet should overtake any other reading on the other flowsheet. This means that a patient can be on enteral or parental feeding but also be NBM. We need to know if they are NBM as the priority. Bed to be red filled. 
 7.  if the latest 'diet intake' reading is 'other' AND there are no 'diet intake' readings of 'normal diet' or 'soft diet' or 'pureed' or 'nutritional supplement' since 00:00 today, then label patient as 'other'. Bed to be light grey filled.
-8.  if both 'diet intake' AND 'fluid intake' flowsheets have not been completed since 00:00 today, then label patient as 'missing'. Bed to be red hashed outline and no fill.
+8.  if both 'diet intake' AND 'fluid intake' flowsheets have not been completed since 00:00 today, then label patient as 'missing'. Bed to be red hashed outline and no fill. note that if they have either one of the flowsheets documented, do not show as missing on this floor plan, but display the flowsheet that they have documented. 
 
    #Secondary eating and drinking labeling 
 10.  in addition to the above labeling, if the latest 'fluid intake' reading is 'IV ongoing' then also label patient as 'IV ongoing'. Note this means that some patients who have 'IV ongoing' will have two labels, a primary label as per steps 1-8 above and a potential secondary label for example if the patient is on an IV and also drinking fluids. We need to denote this somehow on the floorplan as well. Bed is filled with the primary label as above with an outline denoting IV- blue outline? 
+11. Note if only 'IV ongoing' is documented and there is nothing documented in the diet intake flowsheet, IV ongoing becomes the primary and only classification. 
 11.   if none of the rules matched then label the patient as 'fallthrough' 
    
   *n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in ? button.*
