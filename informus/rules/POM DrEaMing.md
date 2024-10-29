@@ -225,7 +225,7 @@ MOBILISATION ACHIEVED FLOORPLAN
 
 DOCUMENTATION COMPLIANCE FLOORPLAN
 
-1. if none of the three DrEaMing flowsheets- 'fluid intake', 'diet intake' and 'moblisation achieved' flowsheets have not been completed since 00:00 today, then label patient as 'Missing DReaMING Documentation'. Bed to be no fill red hash outline.
+1. if none of the three DrEaMing flowsheets- 'fluid intake', 'diet intake' and 'moblisation achieved' flowsheets have been completed since 00:00 today, then label patient as 'Missing DReaMING Documentation'. Bed to be no fill red hash outline.
 2. if one or two of the 'fluid intake', 'diet intake' or 'moblisation achieved' flowsheets have been completed since 00:00 today,  then label patient as 'DrEaMing Partially Documented'. Bed to be no fill amber hashed outline
 3. if all three DrEaMing flowsheets- 'fluid intake', 'diet intake' and 'moblisation achieved' flowsheets have been completed since 00:00 today, then label patient as 'DReaMING Documentation Complete'. Bed to be no fill green hashed outline.
    
