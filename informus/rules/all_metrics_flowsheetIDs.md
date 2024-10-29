@@ -14,7 +14,7 @@ Query ran: 2024/06/10
 | Epidural | Level of Block (Right side) | 38581 | ✅ | ✅ | 2-hourly between 0800-1959, 4-hourly between 2000-0759 | ✅ |
 | Epidrual | Assessment of Motor Block Lt leg | 30415249 | ✅ | ✅ | 2-hourly between 0800-1959, 4-hourly between 2000-0759 | ✅ |
 | Epidural | Assessment of Motor Block Rt leg | 30415250 | ✅ | ✅ | 2-hourly between 0800-1959, 4-hourly between 2000-0759 | ✅ |
-| Epidural | LDA line status simple | 3040102506 | ✅ | ✅ |  | ✅ |
+| Epidural | LDA line status simple | 3040102506 | ✅ | ✅ |  | ? |
 | | | | | | | |
 | Epidural drugs | Pcea volume P 0.1% F2 (volume) | 28222 | ❌ | ❌ |  | ❌ |
 | Epidural drugs | Bupivacane 0.1% Epidural infusion prescription | 191107 | ❌ | ❌ | hourly | ❌ |
@@ -34,9 +34,9 @@ Query ran: 2024/06/10
 | Epidural drugs | R UCLH PCEA BUPIVACAINE (0.125%) / FENTANYL (2 MCG/ML) - CUMULATIVE INTAKE, Volume Infused (mL) Bupivacaine (0.125%)/Fentanyl (2 mcg /mL) | 47756 | ❌ | ❌ |  | ❌ |
 | | | | | | | |
 | Airway | Airway plan | 24499 | ✅ | ✅ | once per admission | ✅ |
-| Airway | Airway plan A | 23865 |  |  |  |  |
-| Airway | Airway plan B | 23866 |  |  |  |  |
-| Airway | Airway plan C | 23867 |  |  |  |  |
+| Airway | Airway plan A | 23865 | ✅ | ✅ |  | ? |
+| Airway | Airway plan B | 23866 | ✅ | ✅ |  | ? |
+| Airway | Airway plan C | 23867 | ✅ | ✅ |  | ? |
 | Airway | 02 delivery method | 3040109305 | ✅ | ✅ |  | ✅ |
 | Airway| Intubation grade| 37950 | ✅ | ✅ | | ✅ |
 | Airway| Das Generic Airway Plan| 24498 | ✅ | ✅ | | ✅ |
@@ -44,5 +44,5 @@ Query ran: 2024/06/10
 | DrEaMing | Fluid intake | 45429 | ✅ | ✅ | real-time | ✅ |
 | DrEaMing | Diet Intake - *type of diet patient is on* | 6482 | ✅ | ✅ | real-time | ✅ |
 | DrEaMing | Mobilisation achieved by patient - *scale of mobilising from none to walking independently* | 40705 | ✅ | ✅ | real-time | ✅ |
-| DrEaMing | Mobility scale reasons | 47371 | ✅ | ? | real-time | ? |
+| DrEaMing | Mobility scale reasons | 47371 | ✅ | ✅ | real-time | ? |
 | | | | | | | |
