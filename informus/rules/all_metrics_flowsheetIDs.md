@@ -14,7 +14,7 @@ Query ran: 2024/06/10
 | Epidural | Level of Block (Right side) | 38581 | ✅ | ✅ | 2-hourly between 0800-1959, 4-hourly between 2000-0759 | ✅ |
 | Epidrual | Assessment of Motor Block Lt leg | 30415249 | ✅ | ✅ | 2-hourly between 0800-1959, 4-hourly between 2000-0759 | ✅ |
 | Epidural | Assessment of Motor Block Rt leg | 30415250 | ✅ | ✅ | 2-hourly between 0800-1959, 4-hourly between 2000-0759 | ✅ |
-| Epidural | LDA line status simple | 3040102506 | ❌ | ❌ |  | ❌ |
+| Epidural | LDA line status simple | 3040102506 | ✅ | ✅ |  | ✅ |
 | | | | | | | |
 | Epidural drugs | Pcea volume P 0.1% F2 (volume) | 28222 | ❌ | ❌ |  | ❌ |
 | Epidural drugs | Bupivacane 0.1% Epidural infusion prescription | 191107 | ❌ | ❌ | hourly | ❌ |
