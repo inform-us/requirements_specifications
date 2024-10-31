@@ -11,7 +11,10 @@ Rules for Mean Arterial Blood Pressure (MAP) metric
   |-|-|-|-|-|
   |MAP|301360||||
   |Arterial line MAP|310250| Automatic| Taken from monitor|Hourly (varies according to patient condition)|
-  |
+  |MAP target| 36554| Manual| Drop down (free text possible)| Minimum once per day between 0800 and 1200|
+  |Noradrenaline|3040102622| Manual| Numerical (free text possible) | Hourly|
+  |Adrenaline|331213|Manual| Numerical (free text possible)| Hourly|
+  
   
 ## Validity (time window) Rules: 
 
