@@ -65,7 +65,7 @@ Feeds into (i) front tile - 24 hour rolling window and (ii) SPC interval charts.
 3. There are two different categories of measurement intervals that need to be calculated (refer to equivalence table VPS-CPOT):
    - a. GREEN measurement interval - no pain / mild pain or 'unable to assess'
    - b. AMBER/RED measurement interval - moderate / severe / very severe pain
-4. When looking at the time interval between two measurements, look at the RAG label for the earlier _dt stamp and use this to allocate category (this differs from measurement interval calculation used in RASS)
+4. When looking at the time interval between two measurements, look at the RAG label for the earlier _dt stamp and use this to allocate category. This is required because when the pain measurement changes for a patient (e.g. from mild to moderate) this will actually result in a time comparison between two different categories (i.e. green vs. red) but this is still valid. Note that this differs from measurement interval calculation used in RASS.
 5. Pool (each categrory GREEN or AMBER/RED (i.e. not on an individial patient basis) measurement interval data for the 24 hour time period
 6. Numerator = sum of time interval measurement (hours) 
 7. Denominator (unadjusted) = number of time interval measurements
