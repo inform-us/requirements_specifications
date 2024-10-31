@@ -10,7 +10,8 @@ Rules for Mean Arterial Blood Pressure (MAP) metric
 | Flowsheet | Row ID | Manual/Automatic/Calculated Input | Comments | Expected documentation frequency|
   |-|-|-|-|-|
   |MAP|301360||||
-  |Arterial line MAP|310250| Automatic| Pulled from device - confirmed by nurse|Usually hourly but dependent on patient condition|
+  |Arterial line MAP|310250| Automatic| Taken from monitor|Hourly (varies according to patient condition)|
+  |
   
 ## Validity (time window) Rules: 
 
