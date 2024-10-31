@@ -9,6 +9,9 @@ Rules for Mean Arterial Blood Pressure (MAP) metric
 * ### Individual metric Row ID:
 | Flowsheet | Row ID | Manual/Automatic/Calculated Input | Comments | Expected documentation frequency|
   |-|-|-|-|-|
+  |MAP|301360||||
+  |Arterial line MAP|310250| Automatic| Pulled from device - confirmed by nurse|Usually hourly but dependent on patient condition|
+  
 ## Validity (time window) Rules: 
 
 1. MAP only valid if map_dt within last 6 hours of epoch_dt 
