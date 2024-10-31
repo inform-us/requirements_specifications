@@ -9,6 +9,8 @@ Rules for Tidal volume metric
 * ### Individual metric Row ID:
 | Flowsheet | Row ID | Manual/Automatic/Calculated Input | Comments | Expected documentation frequency|
   |-|-|-|-|-|
+  |O2 delivery|3040109305|Manual| Drop down (free text available)| Hourly (varies depending on patient's clinical condition)|
+  |Vent Mode|3040102607|Manual| Drop down (free text available)|  Hourly (varies depending on patient's clinical condition)|
 
 ## Validity (time window) Rules: 
 
