@@ -396,7 +396,15 @@ If none of the above rules match, the bed will appear as dark grey on floorplan
 
 If none of the above rules match, the bed will appear as dark grey on floorplan
 
+**Alternative floor plans for All POM patient DrEaMing**
+**Eating and Drinking**
 
+**Eating and Drinking** Patient is having normal diet, soft diet, pureed or nutritional supplements.
+**Sips of water** Patient is having sips and has not had normal diet, soft diet, pureed or nutritional supplements since 0000 today.
+
+**Free fluids** Patient latest diet intacke is free fluids or latest fluid intake is oral fluids and they have not had normal diet, soft diet, pureed or nutritional supplements since 0000 today.
+
+**
 
 
 
