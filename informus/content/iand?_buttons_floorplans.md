@@ -396,17 +396,62 @@ If none of the above rules match, the bed will appear as dark grey on floorplan
 
 If none of the above rules match, the bed will appear as dark grey on floorplan
 
-**Alternative floor plans for All POM patient DrEaMing**
-**Eating and Drinking**
+------
+## Alternative floor plans for All POM patient DrEaMing
+## ? button
+
+**Eating and Drinking Floorplan**
+
+This floorplan combines information from the Fluid Intake and Diet Intake flowsheets.
 
 **Eating and Drinking** Patient is having normal diet, soft diet, pureed or nutritional supplements.
+
 **Sips of water** Patient is having sips and has not had normal diet, soft diet, pureed or nutritional supplements since 0000 today.
 
-**Free fluids** Patient latest diet intacke is free fluids or latest fluid intake is oral fluids and they have not had normal diet, soft diet, pureed or nutritional supplements since 0000 today.
+**Free fluids** Patient latest diet intake is free fluids OR latest fluid intake is oral fluids AND they have not had normal diet, soft diet, pureed or nutritional supplements since 0000 today.
 
-------------
+**Clear fluids** The latest 'diet intake' reading is 'clear fluids',  AND there are no 'diet intake' readings of 'normal diet' or 'soft diet' or 'pureed' or 'nutritional supplement' since 00:00 today.
+
+**Enteral/parenteral feeding** The latest 'diet intake' reading is 'enteral (NG/PEG etc.)' or 'parenteral (TPN)' AND there are no 'diet intake' readings of 'normal diet' or 'soft diet' or 'pureed' or 'nutritional supplement'
+
+**NBM** The latest 'fluid intake' or 'diet intake' reading is 'NBM'.  
+
+**Other** The latest 'diet intake' reading is 'other' AND there are no 'diet intake' readings of 'normal diet' or 'soft diet' or 'pureed' or 'nutritional supplement' since 00:00 today.
+
+**Missing** Both 'diet intake' AND 'fluid intake' flowsheets have not been completed since 00:00 today. 
+
+**IV ongoing** The latest fluid intake reading is IV ongoing
+
+If none of the above rules match, the bed will appear as dark grey on floorplan. 
+ 
+------
+**Mobilisation achieved** 
 
 
+**In bed:** Patient is lying in bed, passively moved to chair, or sitting over the edge of bed (mobility scale 0-3)
+
+Any patient that is 'In Bed', the reason for not mobilising can be seen by hovering over the bed space.
+
+**Actively transferring:** Patient is standing, transferring bed to chair, or marching on spot (mobility scale 4-6)
+
+**Walking with assistance** Patient is walking with the assistance of at least one person (mobility scale 7-8)
+
+**Walking independently** Patient is walking independently with or without a gait aid (mobility scale 9-10)
+
+**Missing:** Mobilisation has not been documented today.
+
+If none of the above rules match, the bed will appear as dark grey on floorplan
+
+------
+**DOCUMENTATION COMPLIANCE FLOORPLAN**
+
+**Missing DrEaMing Documentation** None of the three DrEaMing flowsheets- 'fluid intake', 'diet intake' and 'moblisation achieved' flowsheets have been completed since 00:00 today,DReaMING Documentation'.
+
+**DrEaMing Partially Documented**  One or two of the 'fluid intake', 'diet intake' or 'moblisation achieved' flowsheets have been completed since 00:00 today.
+
+**DReaMING Documentation Complete** All three DrEaMing flowsheets- 'fluid intake', 'diet intake' and 'moblisation achieved' flowsheets have been completed since 00:00 today.
+
+--------
 
 
 
