@@ -404,7 +404,7 @@ If none of the above rules match, the bed will appear as dark grey on floorplan
 
 **Free fluids** Patient latest diet intacke is free fluids or latest fluid intake is oral fluids and they have not had normal diet, soft diet, pureed or nutritional supplements since 0000 today.
 
-**
+------------
 
 
 
