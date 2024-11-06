@@ -7,7 +7,7 @@ The `recent_patients.sql` currently returns all patients including `current` , `
 - These are patients who have a date value in `location_visit_discharge_dt` but DO NOT have a value in `hospital_visit_discharge_dt`
 - Moved patients fall under one of the following circumstances:
     - Patients who were in a bed at one point in time, but have now moved to a different bed on the same unit
-        - Produces a duplicated data row returned from our patients query
+        - Potentially produces a duplicated data row returned from our patients query (i.e. multiple rows of the same bed). This is because the data contains the moved patient who used to be in that bed as well as the new patient who is now currently occupying that same bed.
         - One of the rows will have a date value in the `location_visit_discharge_dt` column, the other row will have `null` for that column
     - Patients who are readmitted to the same bed, for instance if they were temporarily moved for surgery and then came back to the same bed
         - Produces a duplicated data row returned from our patients query
