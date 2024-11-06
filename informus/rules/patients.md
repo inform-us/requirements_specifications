@@ -1,7 +1,5 @@
 # Moved and discharged patients
 
-Here is my best understanding of the current logic behind the discharged patients and the moved patients. Some of my understanding might be wrong or incomplete, so we need the clinicians input. The clinicians should write the rules for these patients in their rules document, just like they do for the metrics.
-
 The `recent_patients.sql` currently returns all patients including `current` , `moved` , and `discharged` patients all in the same query. Then we have further python logic to parse them all out. The discharged patients are not currently saved to mongodb, but we need to implement this so that they can be picked up on the frontend. There might also be some additional edge cases that we haven’t yet covered.
 
 ## Moved patients explanation
