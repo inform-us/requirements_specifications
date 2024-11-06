@@ -344,57 +344,6 @@ Fluid intake, diet intake and mobilisation achieved metrics should be documented
 Fluid intake, diet intake and mobilisation achieved metrics are valid for 24 hours from 00:01 hours each day or until a new entry is made.
 For compliance with documentation to be achieved, a patient must have all three metrics documented within the 24-hour period.
 
-**Fluid Intake**
-
-**IV Ongoing:** Patient is receiving IV fluids 
-
-**IV Discontinued:**  IV fluids have been discontinued
-
-**Oral fluids:**  Patient is drinking normally
-
-**NBM:** Patient is nil by mouth/not allowed any oral fluid or food intake
-
-**Missing:** Fluid intake has not been documented today
-
-If none of the above rules match, the bed will appear as dark grey on floorplan. 
-
--------
-
-**Diet Intake**
-
-**Eating and Drinking:** Patient is receiving normal diet, soft diet, puree diet or nutritional supplements and is taking in oral fluids
-
-**Fluid Only:** Patient is receiving free fluids or clear fluids only orally (this does not include IV fluids). The patient is not eating.
-
-**Enteral/parenteral Feeding:** Patient is receiving enteral (NG/PEG etc.) or parenteral (TPN) nutrition
-
-**NBM:** Patient is nil by mouth/not allowed any oral fluid or food intake
-
-**Sips only** Patient is receiving sips of fluid
-
-**Fluid Restriction** Patient is on fluid restriction diet
-
-**Other** Patient is receiving diet intake that is not defined by the above labels
-
-**Missing** Diet intake has not been documented today
-
-If none of the above rules match, the bed will appear as dark grey on floorplan
-
------
-
-**Mobilisation Achieved**
-
-**In bed:** Patient is lying in bed, passively moved to chair, or sitting over the edge of bed (mobility scale 0-3)
-
-**Actively transferring:** Patient is standing, transferring bed to chair, or marching on spot (mobility scale 4-6)
-
-**Walking with assistance** Patient is walking with the assistance of at least one person (mobility scale 7-8)
-
-**Walking independently** Patient is walking independently with or without a gait aid (mobility scale 9-10)
-
-**Missing:** Mobilisation has not been documented today.
-
-If none of the above rules match, the bed will appear as dark grey on floorplan
 
 ------
 ## Alternative floor plans for All POM patient DrEaMing
@@ -425,7 +374,7 @@ This floorplan combines information from the Fluid Intake and Diet Intake flowsh
 If none of the above rules match, the bed will appear as dark grey on floorplan. 
  
 ------
-**Mobilisation achieved** 
+**Mobilisation achieved floorplan** 
 
 
 **In bed:** Patient is lying in bed, passively moved to chair, or sitting over the edge of bed (mobility scale 0-3)
@@ -443,13 +392,16 @@ Any patient that is 'In Bed', the reason for not mobilising can be seen by hover
 If none of the above rules match, the bed will appear as dark grey on floorplan
 
 ------
-**DOCUMENTATION COMPLIANCE FLOORPLAN**
+**Documentation compliance floorplan**
 
-**Missing DrEaMing Documentation** None of the three DrEaMing flowsheets- 'fluid intake', 'diet intake' and 'moblisation achieved' flowsheets have been completed since 00:00 today,DReaMING Documentation'.
+**Missing DrEaMing Documentation** None of the three DrEaMing flowsheets- 'fluid intake', 'diet intake' and 'moblisation achieved' flowsheets have been completed since 00:00 today, DReaMING Documentation'.
 
 **DrEaMing Partially Documented**  One or two of the 'fluid intake', 'diet intake' or 'moblisation achieved' flowsheets have been completed since 00:00 today.
 
 **DReaMING Documentation Complete** All three DrEaMing flowsheets- 'fluid intake', 'diet intake' and 'moblisation achieved' flowsheets have been completed since 00:00 today.
+
+If none of the above rules match, the bed will appear as dark grey on floorplan
+
 
 --------
 
