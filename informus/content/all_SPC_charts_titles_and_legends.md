@@ -125,6 +125,7 @@ to clarify but I guess one screenshot is enough???
 ## Tile: Patients on mandatory ventilation Tidal Volume
 
 **SPC chart title: Percentage of patients achieving Tidal Volumes below 8ml/kg IBW (patients of mandatory ventilation)**
+Note current title is inccorrect.... says 'informus'
 
 
 ![image](https://github.com/inform-us/requirements_specifications/assets/94536083/384f2031-f039-477f-83cc-7715f2a78838)
