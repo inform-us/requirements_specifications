@@ -34,10 +34,9 @@ The `recent_patients.sql` currently returns all patients including `current` , `
     - The remaining valid data point should be considered as a `current` patient and included in both our `unit_wide` statistics AND occupy a bed on the frontend
 - Patients who are readmitted to the same bed, for instance if they were temporarily moved for surgery and then came back to the same bed
     - Same solution as above
-- Patients who are currently away for surgery
-    - I’m not sure about this, we need the clinicians guidance. Here are my guesses:
-        - These patients should be included in our `unit_wide` calculations, but not as part of our current patients list (I might be wrong about this)
-        - They should not appear as an occupied bed on the frontend (again, I might be wrong)
+- Patients who are transferred out of ICU (either to a non-ICU ward, or another hospital, or gone home)
+    - These patients should be included in our `unit_wide` calculations, but not as part of our current patients list
+    - They should not appear as an occupied bed on the frontend
 
 ## How to handle discharged patients
 
