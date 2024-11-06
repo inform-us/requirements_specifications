@@ -152,7 +152,7 @@ To access individual floorplan select location and required tile/metric from Cli
 <img width="489" alt="image" src="https://github.com/user-attachments/assets/325185bd-a283-4d11-93c5-8f9a3518b1dc">
 
 Hover over 'In Bed' to pop up 'Reason's for not moblising' text. 
-Note there are no other hover overs. Only in bed patients. 
+*Note there are no other hover overs. Only in bed patients.* 
 
 ## Documentation compliance floor plan (note image below is hashed. Agreed to change to filled as per targets set. 
 
