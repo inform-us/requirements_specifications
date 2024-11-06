@@ -38,7 +38,8 @@ Rules for Blood Oxygen Saturation metric
 3. if  'has_valid_numerical_spo2_target': 'below' or 'above' or 'in range' 
 4. if 'has_valid_entered_spo2_target': 'non-numerical'
 5. if none of the above:  'not set' 
-   
+
+   assign an epoch to each existing dt, a measurement within an hour and assigning it to the previous hour. 
 
 ## Labelling Rule: (corresponds to the floor plans)     
 
