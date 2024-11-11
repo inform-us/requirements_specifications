@@ -32,11 +32,31 @@ An airway plan is considered complete if the following is true:
  - DAS airway plan reads 'YES'
  - DAS airway plan reads 'NO' but rows Airway plan A, Airway plan B and/or Airway plan C are filled in.
  - Either rows Airway plan A, Airway plan B and/or Airway plan C are filled in.
-   *(Does rows airway plan A, airway plan B and airway plan C all need to be filled in to be valid if not following generic airway plan?)*
+   *(Does rows airway plan A, airway plan B and airway plan C all need to be filled in toi be valid if not following generic airway plan?)*
    
 An airway plan can be superseded if an entry is updated or new entry is made, this will generate a new _dt stamp (more recent) and become the 'valid' entry
 
 ## Classification
+
+**[A] Proportion of patients with 'Airway Plan Completed'**
+
+Feeds into (i) front tile (current time snapshot), (ii) (?) floorplan and (iii) 'airway plan completed' SPC chart
+
+**FRONT TILE proportion of patients with 'airway plan completed'**
+
+The front tile displays live data (i.e. the current state on each unit)
+For each patient, the following needs to have been completed in the ICU Airway and Turning plan section of the ICU Navigators in order to achive (1) COMPLETED; 
+ - DAS airway plan reads 'YES'
+ - DAS airway plan reads 'NO' but rows Airway plan A, Airway plan B and/or Airway plan C are filled in.
+ - Either rows Airway plan A, Airway plan B and/or Airway plan C are filled in.
+   *(Does rows airway plan A, airway plan B and airway plan C all need to be filled in to be valid if not following generic airway plan?)*
+
+If none of the following flowsheets are completed: DAS airway (with a reading of YES) or Airway Plan A, B or C then Airway Plan is (2) NOT COMPLETED.
+
+Numerator = sum of patients achieving (1) COMPLETED response
+Denominator = total number of current patients (occupied beds)
+Calculation: (numerator / denominator)*100 represented as percentage *(we want to express as a percentage as all targets is not?)*
+
 
 
 
