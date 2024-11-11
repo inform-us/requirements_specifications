@@ -11,24 +11,26 @@ To access specific SPC charts select location and required tile/metric from Data
 
 
    * Clinical Dashboard
-   * **Data for Improvement**
+   * **Time Series Data- SPC**
    * About us
 
 **2. Location / Units**
    * T03 Critical Care
    * T06 Critical Care
    * GWB Critical Care
-   * WMS
+   * WMS Critical Care
      
 **3.  Overview of tiles / metrics**
   
-   * All targets set in ICU Navigators / All ICU Targets set ( not slight difference in wording from clinical dashboard tile to data for improvement) 
+   * All ICU Targets set
    * Patients on oxygen therapy SpO2 Saturations
    * All patients Pain Scores
    * All patients Pain Assessment Frequency
    * Patients on vasoactive drugs Mean Arterial BP
    * Sedated patients RASS
    * Patients on mandatory ventilation Tidal Volume
+   * All patients Delirium
+   * All patients DrEaMing
      
 
 ![image](https://github.com/inform-us/requirements_specifications/assets/94536083/6f16d1a6-5449-4de0-9f80-583d8e272f69)
@@ -137,14 +139,14 @@ Note current title is inccorrect.... says 'informus'
 **SPC chart title: Percentage of CAM-ICU Documentations completed at least once per shift**
 
 ---
-## Tile: All Patients Delirium Levels
+## Tile: All Patients Delirium
 
 **SPC chart title: Percentage of Positive CAM-ICU scores**
 
 ---
-## Tile: POM Patients DrEaMing  
+## Tile: All Patients DrEaMing  
 
-**SPC chart title: Percentage of POM Patients with Drinking, Eating and Mobilising documented at least once per shift (T06 and WMS)**
+**SPC chart title: Percentage Patients with Drinking, Eating and Mobilising documented at least once per shift (T06 and WMS)**
 
 
 
