@@ -16,4 +16,8 @@ Inform_us will display if the airway plan has been documented once during the pa
 | Airway plan A | 23865 | Manual |||
 | Airway plan B| 23866|Manual| | |
 | Airway plan C | 23867|Manual | | |
-|
+|O2 delivery|3040109305|Manual| Drop down (free text available)| Hourly (varies depending on patient's clinical condition)|
+
+## Eligibility
+## Validity (time window) Rules: 
+
