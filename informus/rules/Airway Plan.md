@@ -19,5 +19,7 @@ Inform_us will display if the airway plan has been documented once during the pa
 |O2 delivery|3040109305|Manual| Drop down (free text available)| Hourly (varies depending on patient's clinical condition)|
 
 ## Eligibility
+All patiets across all units
+
 ## Validity (time window) Rules: 
 
