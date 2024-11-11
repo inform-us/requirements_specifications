@@ -116,10 +116,10 @@ FLUID INTAKE FLOORPLAN
   *n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in ? button.*
 
 DIET INTAKE FLOORPLAN
-
-1. if the latest 'diet intake' reading is 'normal diet' or 'soft diet' or 'pureed' or 'nutritional supplement' then label patient as 'eating and drinking'
-2. if the latest 'diet intake' reading is 'free fluids' or 'clear fluids' then label patient as 'fluid only'
-3. if the latest 'diet intake' reading is 'enteral (NG/PEG etc.)' or 'parenteral (TPN)' then label patient as 'enteral/parenteral feeding'
+1. if a patient is labeled any of the 'diet intake' or 'fluid intake' labels, but the latest 'fluid intake' or 'diet intake' reading is 'NBM', label the patient as 'NBM' as the primary label. **i.e. a latest 'NBM' reading always overrides any other 'fluid intake' or 'diet intake' reading.**
+2. . if the latest 'diet intake' reading is 'normal diet' or 'soft diet' or 'pureed' or 'nutritional supplement' then label patient as 'eating and drinking'
+3. if the latest 'diet intake' reading is 'free fluids' or 'clear fluids' then label patient as 'fluid only'
+4. if the latest 'diet intake' reading is 'enteral (NG/PEG etc.)' or 'parenteral (TPN)' then label patient as 'enteral/parenteral feeding'
 5. if the latest 'diet intake' reading is 'NBM' then label patient as 'NBM'
 6. if the latest 'diet intake' reading is 'sips' then label patient as 'sips only'
 7. if the latest 'diet intake' reading is 'other' then label patient as 'other'
