@@ -6,7 +6,9 @@ Airway plan is completed in 'ICU Navigators' tab [doctors' log in view] and are 
 
 The medical team should complete the airway plan at least once during the patient's admission to critical care.  If there are changes to the patient's airway status, then the airway plan should be updated.
 
-Inform_us will display if the airway plan has been documented once during the patients admission.
+ICU Airway Plan is a binary metric (a generic airway plan is either selected or not selected). If this flowsheet is not selected, then Airway plan A, B and C will be collected specifying a specific plan for the individual patient.
+
+Inforum_us will display if the airway plan has been documented once during the patients admission.
 
 ## EPIC Flowsheets
 
@@ -18,8 +20,11 @@ Inform_us will display if the airway plan has been documented once during the pa
 | Airway plan C | 23867|Manual | | |
 |O2 delivery|3040109305|Manual| Drop down (free text available)| Hourly (varies depending on patient's clinical condition)|
 
+
 ## Eligibility
-All patiets across all units
+All patients across all units
 
 ## Validity (time window) Rules: 
+
+All patients should have an airway plan documented during admission. 
 
