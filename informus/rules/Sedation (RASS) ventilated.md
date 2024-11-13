@@ -104,14 +104,15 @@ FIO2_% 301550?
 - the data on the front tile looks back from the current time to 24 hours in the past
 - there will be two measurement interval calculations displayed on the front tile: DAY (06:00-21:59) and NIGHT (22:00-05:59)
 - in line with other metrics we should provide some leeway (15 minutes) in charting documentation, therefore (adjusted time frame): DAY (06:00-22:14) and NIGHT (22:00-06:14)
+- teh leeway is to mitigate skewed mean interval, pparticulalry in the DAY calculation (e.g. 06:01 RASS, time interval calcaulted with a NIGHT RASS at 02:00, would give a 04:01 measurement interval which would skew daytime data, the 15 minute leeway may need to be reviewed if insufficient
 - the _dt of each measurement determines whether it is categorised as 'DAY' or 'NIGHT', but in order to complete the measurement interval calcualtion, a preceeding measurement can be in the opposing category
 - worked example: <br> (a) a mesurement taken at 06:10 would have to be linked with an earlier measurement during the night shift to calculate an interval and would be classified as - NIGHT (before 06:14) <br> (b) a mesurement taken at 06:30 would have to be linked with an earlier measurement during the day or night shift to calculate an interval and would be classified as - DAY (after 06:14) <br> (c) a mesurement taken at 22:10 would have to be linked with an earlier measurement during the day shift to calculate an interval and would be classified as - DAY (before 22:14) <br> (d) a mesurement taken at 23:00 would have to be linked with an earlier measurement during the night or day shift to calculate an interval and would be classified as - NIGHT (after 22:14) <br>
 - once classified into DAY or NIGHT deteremine numerator and denominator for each and calculate mean
-- DAY Numerator = sum of the minutes and hours between all intervals recorded between (06:00-22:14) that fall into the current 24 hour rolling window
+- DAY Numerator = sum of the minutes and hours between all intervals recorded between (06:15-22:14) that fall into the current 24 hour rolling window
 - DAY Denominator = number of all time interval measurements that fall into the current 24 hour rolling window
-- NIGHT Numerator = sum of the minutes and hours between all intervals recorded between (22:00-06:14) that fall into the current 24 hour rolling window
+- NIGHT Numerator = sum of the minutes and hours between all intervals recorded between (22:15-06:14) that fall into the current 24 hour rolling window
 - NIGHT Denominator = number of all time interval measurements that fall into the current 24 hour rolling window
-- calculate respective DAY and NIGHT mean measurement interval and display as hh:mm on fron tile
+- calculate respective DAY and NIGHT mean measurement interval and display as hh:mm on front tile
 
 ## Classification Rules: 
 RASS Target set on any day is valid until 12:00hrs the day after the RASS target is set unless another target is set between 08:00 and 12:00hr on the second day. 
