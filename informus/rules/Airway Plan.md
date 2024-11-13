@@ -55,14 +55,19 @@ For each patient, an airway plan is considered (1) COMPLETED if any of the follo
 If none of the following flowsheets are completed: DAS airway (with a reading of YES) or Airway Plan A, B or C then Airway Plan is (2) NOT COMPLETED.
 
 Numerator = sum of patients achieving (1) COMPLETED response
+
 Denominator = total number of current patients (occupied beds)
+
 Calculation: (numerator / denominator)*100 represented as percentage *(we want to express as a percentage as all targets is not?)*
 
 **[B] Floorplan labelling** *(This is assuming that the dashboard is only displaying airway plan completed and not looking at other parameters such as difficult or altered airway)*
 
 The floorplan displays live data (current state) on a bed by bed basis and is updated as new data is available (outcome is binary and there is no option for 'missing data')
+
 If 'airway plan completed'; design = green filled bed
+
 If 'airway plan not completed'; design = red filled bed
+
 If bed is empty; design = white filled bed with dark grey outline
 
 ---
