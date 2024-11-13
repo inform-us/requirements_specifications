@@ -1,5 +1,5 @@
-# Airway Plan Rules
-Rules for the Airway Plan Metric
+# Airway Plan Rules 
+Rules for the Airway Plan Metric *(This is just a draft - with lots of questions!)*
 
 ## EPIC
 Airway plan is completed in 'ICU Navigators' tab [doctors' log in view] and are displayed in 'Airway and Turning Plan' Tab.
