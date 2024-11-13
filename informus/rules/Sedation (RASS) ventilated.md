@@ -98,6 +98,7 @@ FIO2_% 301550?
    *note current rules have same one hour rule for all day and night*
    
 ## Measurement Interval - average time between RASS assessments - front tile metric calculation
+- this calcaulation will look at all RASS scores (including those that are not on sedationor mechanically ventilated)
 - average time between scores should be calculated from ACTUAL documented RASS scores in EPIC (ie. those with a _dt stamp) and not any forward filled scores
 - there needs to be a minimum of two scores to calculate a measurement interval (if a patient has only just been admitted with one RASS score documented, or if a patient only has one RASS score during their entire ICU admission, calculation will not be possible and data will not be included on front tile metric
 - the data on the front tile looks back from the current time to 24 hours in the past
