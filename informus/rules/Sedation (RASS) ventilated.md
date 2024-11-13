@@ -40,7 +40,7 @@ ___
 |Vent mode| 3040102607| Manual | Drop down (free text option)|Hourly?|
 |RASS score| 3040104644|Manual | Drop down (free text option)|Hourly between 06:00 and 21:59 <br> Fourly hourly between 22:00 and 05:59|
 |RASS target| 36555| Manual|  ICU Navigator |Daily between 0800 and 13:00 <br> On admission|
-|CLONDINE| 12351| Manual|  Numerical entry (free text option)|Hourly|
+|CLONIDINE| 12351| Manual|  Numerical entry (free text option)|Hourly|
 |FENTANYL| 331223| Manual|  Numerical entry (free text option)|Hourly|
 |PROPOFOL| 331218| Manual|  Numerical entry (free text option)|Hourly|
 |MIDAZOLAM| 3040101274| Manual|  Numerical entry (free text option)|Hourly|
