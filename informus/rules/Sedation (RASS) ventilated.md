@@ -38,8 +38,8 @@ ___
 |FiO2% | 301550| Manual| Numerical entry (free text option)|Usually hourly but varies depending on patient's clinical condition|
 |O2 delivery device| 3040109305|Manual| Drop down (free text option)|Usually hourly but varies depending on patient's clinical condition|
 |Vent mode| 3040102607| Manual | Drop down (free text option)|Hourly?|
-|RASS score| 3040104644|Manual | Drop down (free text option)|Hourly between 0800 and 1959. Fourly hourly between 2000 and 0759|
-|RASS target| 36555| Manual|  |Daily between 0800 and 1300|
+|RASS score| 3040104644|Manual | Drop down (free text option)|Hourly between 06:00 and 21:59 <br> Fourly hourly between 22:00 and 05:59|
+|RASS target| 36555| Manual|  |Daily between 0800 and 13:00 <br> On admission|
 |CLONDINE| 12351| Manual|  Numerical entry (free text option)|Hourly|
 |FENTANYL| 331223| Manual|  Numerical entry (free text option)|Hourly|
 |PROPOFOL| 331218| Manual|  Numerical entry (free text option)|Hourly|
