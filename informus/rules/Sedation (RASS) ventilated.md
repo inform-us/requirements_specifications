@@ -97,12 +97,21 @@ FIO2_% 301550?
 2) RASS scores documented between 22:00 - 05:59 is valid 255 minutes (4 hours & 15 minutes)
    *note current rules have same one hour rule for all day and night*
    
-## Tile calculation- average time between RASS assessments
-Average time between should be calculated from ACTUAL documented scores in EPIC and not any forward filled scores - these data have precise _dt stamps
-There needs to be a minimum of two scores to calculate a measurement interval (if a patient only has one RASS score during their ICU admission, this will not be included in this data)
-Numerator = sum of the minutes and hours between all intervals in a 24 hour period (hours)
-Denominator (unadjusted) = number of all time interval measurements
-FRONT TILE AVERAGE MEASUREMENT INTERVAL (24 hour rolling window) - CALCULATE MEAN using above numerator / denominator (unadjusted)
+## Measurement Interval - average time between RASS assessments - front tile metric calculation
+- average time between scores should be calculated from ACTUAL documented RASS scores in EPIC (ie. those with a _dt stamp) and not any forward filled scores
+- there needs to be a minimum of two scores to calculate a measurement interval (if a patient has only just been admitted with one RASS score documented, or if a patient only has one RASS score during their entire ICU admission, calculation will not be possible and data will not be included on front tile metric
+- the data on the front tile looks back from the current time to 24 hours in the past
+- there will be two measurement interval calculations displayed on the front tile: DAY (06:00-21:59) and NIGHT (22:00-05:59)
+- in line with other metrics we should provide some leeway (15 minutes) in charting documentation, therefore (adjusted time frame): DAY (06:00-22:14) and NIGHT (22:00-06:14)
+- the _dt of each measurement determines whether it is categorised as 'DAY' or 'NIGHT', but in order to complete the measurement interval calcualtion, a preceeding measurement can be in the opposing category
+- worked example: <br> (a) a mesurement taken at 06:10 would have to be linked with an earlier measurement during the night shift to calculate an interval and would be classified as - NIGHT (before 06:14) <br> (b) a mesurement taken at 06:30 would have to be linked with an earlier measurement during the day or night shift to calculate an interval and would be classified as - DAY (after 06:14) <br> (c) a mesurement taken at 22:10 would have to be linked with an earlier measurement during the day shift to calculate an interval and would be classified as - DAY (before 22:14) <br> (d) a mesurement taken at 23:00 would have to be linked with an earlier measurement during the night or day shift to calculate an interval and would be classified as - NIGHT (after 22:14) <br>
+- once classified into DAY or NIGHT deteremine numerator and denominator for each and calculate mean
+- DAY Numerator = sum of the minutes and hours between all intervals recorded between (06:00-22:14) that fall into the current 24 hour rolling window
+- DAY Denominator = number of all time interval measurements that fall into the current 24 hour rolling window
+- NIGHT Numerator = sum of the minutes and hours between all intervals recorded between (22:00-06:14) that fall into the current 24 hour rolling window
+- NIGHT Denominator = number of all time interval measurements that fall into the current 24 hour rolling window
+- calculate respective DAY and NIGHT mean measurement interval and display as hh:mm on fron tile
+
 ## Classification Rules: 
 RASS Target set on any day is valid until 12:00hrs the day after the RASS target is set unless another target is set between 08:00 and 12:00hr on the second day. 
 
