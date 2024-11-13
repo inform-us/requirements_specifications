@@ -13,7 +13,7 @@ Rules for Sedation (on mechanical ventilation) metric, measured using the RASS s
 - RASS scale value is an integer (note EPIC will allow free text!)
 - RASS expected charting frequency differs during the day and night: <br> RASS_frequency_DAY: day defined as 06:00:00 - 21:59:59 - hourly as per guideline <br> RASS_frequency_NIGHT: night defined as 22:00:00 - 05:59:59 - 4 hourly as per guideline
 - Individual patient RASS target is set on a daily basis [see targets.md](./targets.md#ELIGIBILITY)
-- The function of the SEDATION_metric is twofold: <br> (1) measurement interval - a RASS charting frequency within guidleines <br> (2) achieving set RASS target
+- The function of the SEDATION_metric is two-fold: <br> (1) measurement interval - a RASS charting frequency within guidelines <br> (2) achieving set RASS target
 
 ___
 **The Richmond Agitation Sedation Score**
