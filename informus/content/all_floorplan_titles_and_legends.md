@@ -143,13 +143,14 @@ To access individual floorplan select location and required tile/metric from Cli
 
 ## Eating and Drinking floorplan
 
-![image](https://github.com/user-attachments/assets/665e388b-a6b4-407e-a63d-eb8921ec862d)
 
+![image](https://github.com/user-attachments/assets/b996f030-82ae-42ed-b90d-3470129c45af)
 
 
 ## Mobilisation achieved floorplan
 
-<img width="489" alt="image" src="https://github.com/user-attachments/assets/325185bd-a283-4d11-93c5-8f9a3518b1dc">
+![image](https://github.com/user-attachments/assets/d1f4250e-11db-4c22-acf2-91144147d497)
+
 
 In legend, change 'bed' to 'in bed'. Change 'active transfer' to 'actively transferring'
 
@@ -161,9 +162,13 @@ Hover over 'In Bed' to pop up 'Reason's for not moblising' text.
 
 - All documentation - green-filled bed
 - Partial documentation- amber-filled bed
-- No DrEaMing documentation- red-filled bed 
+- No DrEaMing documentation- red-filled bed
 
-![image](https://github.com/user-attachments/assets/fe671005-2a63-4598-8aec-5591449c3a55)
+- ![image](https://github.com/user-attachments/assets/7253fd06-78c0-4467-bbfc-7801125c3309)
+
+
+
+
 
 
 
