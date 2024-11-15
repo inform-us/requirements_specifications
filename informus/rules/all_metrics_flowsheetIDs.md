@@ -40,7 +40,7 @@ Query ran: 2024/06/10
 | Airway | Airway plan C | 23867 | ✅ | ✅ |  | ✅ |
 | Airway | 02 delivery method | 3040109305 | ✅ | ✅ |  | ✅ |
 | Airway| Intubation grade| 37950 | ✅ | ✅ | | ✅ |
-| Airway| Das Generic Airway Plan| 24498 | ✅ | ✅ | | ✅ |
+| Airway| Has Generic Airway Plan| 24498 | ✅ | ✅ | | ✅ |
 | | | | | | | |
 | DrEaMing | Fluid intake | 45429 | ✅ | ✅ | real-time | ✅ |
 | DrEaMing | Diet Intake - *type of diet patient is on* | 6482 | ✅ | ✅ | real-time | ✅ |
