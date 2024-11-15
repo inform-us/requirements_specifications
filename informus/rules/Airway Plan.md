@@ -31,7 +31,7 @@ All patients across all units *(what about patients that are end of life?)*
 All patients should have an airway plan documented during admission to critical care. Airway plan documentation is considered valid until the patient is discharged from critical care.  However, there is an expectation that the airway plan will be updated if changes occur in the management of a patient's airway. For example: if patient has an artificial airway inserted or removed. *(Is this true if the type of airway is altered during the patient's stay? Is it possible to capture this?')* 
 
 An airway plan is considered complete if any of the following is true:
- - DAS airway plan reads 'YES' *(don't think we have flowsheet for this - ID: 24498)*
+ - DAS airway plan reads 'YES' 
  - DAS airway plan reads 'NO' but rows Airway plan A, Airway plan B and/or Airway plan C are completed. 
  - Either rows Airway plan A, Airway plan B and/or Airway plan C are filled in.
    *(Does rows airway plan A, airway plan B and airway plan C all need to be filled in to be valid if not following generic airway plan?)*
@@ -49,7 +49,7 @@ Feeds into (i) front tile (current time snapshot), (ii) (?) floorplan and (iii) 
 The front tile displays live data (i.e. the current state on each unit)
 For each patient, an airway plan is considered (1) COMPLETED if any of the following is true;
 
- - DAS airway plan reads 'YES'*(don't think we have flowsheet for this - ID: 24498)*
+ - DAS airway plan reads 'YES'
  - DAS airway plan reads 'NO' but rows Airway plan A, Airway plan B and/or Airway plan C are filled in.
  - Either rows Airway plan A, Airway plan B and/or Airway plan C are filled in.
    *(Does rows airway plan A, airway plan B and airway plan C all need to be filled in to be valid if not following generic airway plan?)*
