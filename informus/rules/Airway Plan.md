@@ -33,9 +33,10 @@ All patients should have an airway plan documented during admission to critical 
 An airway plan is considered complete if any of the following is true:
  - DAS airway plan reads 'YES' and has been completed within the last seven days.
  - DAS airway plan reads 'NO' but rows Airway plan A, Airway plan B and/or Airway plan C are completed within the last seven days.
- - Either rows Airway plan A, Airway plan B and/or Airway plan C are filled in has completed within the last seven days.
+ - Either rows Airway plan A, Airway plan B and/or Airway plan C are filled within the last seven days.
    *(Does rows airway plan A, airway plan B and airway plan C all need to be filled in to be valid if not following generic airway plan?)*
 
+However, if a new artificial airway is inserted the previous airway plan becomes invalid and a new airway plan needs to be completed according to the parameters set above.
 An airway plan can be superseded if an entry is updated or new entry is made, this will generate a new _dt stamp (more recent) and become the 'valid' entry
 
 ## Classification
@@ -51,7 +52,7 @@ For each patient, an airway plan is considered (1) COMPLETED if any of the follo
 
  - DAS airway plan reads 'YES' and has been completed within the last seven days.
  - DAS airway plan reads 'NO' but rows Airway plan A, Airway plan B and/or Airway plan C are completed within the last seven days.
- - Either rows Airway plan A, Airway plan B and/or Airway plan C are filled in.
+ - Either rows Airway plan A, Airway plan B and/or Airway plan C are filled in within the last seven days.
    *(Does rows airway plan A, airway plan B and airway plan C all need to be filled in to be valid if not following generic airway plan?)*
 
 If none of the following flowsheets are completed: DAS airway (with a reading of YES) or Airway Plan A, B or C then Airway Plan is (2) NOT COMPLETED.
