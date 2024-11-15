@@ -24,17 +24,19 @@ Inforum_us will display if the airway plan has been documented once during the p
 
 
 ## Eligibility
-All patients across all units *(what about patients that are end of life?)*
+All patients across all units *(what about patients that are end of life: no way of obtaining this information at the present time?)*
 
 ## Validity (time window) Rules: 
 
-All patients should have an airway plan documented during admission to critical care. Airway plan documentation is considered valid until the patient is discharged from critical care.  However, there is an expectation that the airway plan will be updated if changes occur in the management of a patient's airway. For example: if patient has an artificial airway inserted or removed. *(Is this true if the type of airway is altered during the patient's stay? Is it possible to capture this?')* 
+All patients should have an airway plan documented during admission to critical care. Airway plan documentation is considered valid for one week unless a new artifical airway is inserted (i.e. a tracheostomy or endotracheal tube).
 
 An airway plan is considered complete if any of the following is true:
- - DAS airway plan reads 'YES' 
- - DAS airway plan reads 'NO' but rows Airway plan A, Airway plan B and/or Airway plan C are completed. 
- - Either rows Airway plan A, Airway plan B and/or Airway plan C are filled in.
+ - DAS airway plan reads 'YES' and has been completed within the last seven days.
+ - DAS airway plan reads 'NO' but rows Airway plan A, Airway plan B and/or Airway plan C are completed and has completed within the last seven days.
+ - Either rows Airway plan A, Airway plan B and/or Airway plan C are filled in has completed within the last seven days.
    *(Does rows airway plan A, airway plan B and airway plan C all need to be filled in to be valid if not following generic airway plan?)*
+
+
    
 An airway plan can be superseded if an entry is updated or new entry is made, this will generate a new _dt stamp (more recent) and become the 'valid' entry
 
