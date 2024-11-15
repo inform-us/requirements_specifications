@@ -28,16 +28,14 @@ All patients across all units *(what about patients that are end of life: no way
 
 ## Validity (time window) Rules: 
 
-All patients should have an airway plan documented during admission to critical care. Airway plan documentation is considered valid for one week unless a new artifical airway is inserted (i.e. a tracheostomy or endotracheal tube).
+All patients should have an airway plan documented during admission to critical care. Airway plan documentation is considered valid for one week unless a new artifical airway is inserted or removed (i.e. a tracheostomy or endotracheal tube). If an new artifical airway is inserted or removed than the previous airway plan is considered invalid and a new airway plan should been completed.
 
 An airway plan is considered complete if any of the following is true:
  - DAS airway plan reads 'YES' and has been completed within the last seven days.
- - DAS airway plan reads 'NO' but rows Airway plan A, Airway plan B and/or Airway plan C are completed and has completed within the last seven days.
+ - DAS airway plan reads 'NO' but rows Airway plan A, Airway plan B and/or Airway plan C are completed within the last seven days.
  - Either rows Airway plan A, Airway plan B and/or Airway plan C are filled in has completed within the last seven days.
    *(Does rows airway plan A, airway plan B and airway plan C all need to be filled in to be valid if not following generic airway plan?)*
 
-
-   
 An airway plan can be superseded if an entry is updated or new entry is made, this will generate a new _dt stamp (more recent) and become the 'valid' entry
 
 ## Classification
@@ -51,8 +49,8 @@ Feeds into (i) front tile (current time snapshot), (ii) (?) floorplan and (iii) 
 The front tile displays live data (i.e. the current state on each unit)
 For each patient, an airway plan is considered (1) COMPLETED if any of the following is true;
 
- - DAS airway plan reads 'YES'
- - DAS airway plan reads 'NO' but rows Airway plan A, Airway plan B and/or Airway plan C are filled in.
+ - DAS airway plan reads 'YES' and has been completed within the last seven days.
+ - DAS airway plan reads 'NO' but rows Airway plan A, Airway plan B and/or Airway plan C are completed within the last seven days.
  - Either rows Airway plan A, Airway plan B and/or Airway plan C are filled in.
    *(Does rows airway plan A, airway plan B and airway plan C all need to be filled in to be valid if not following generic airway plan?)*
 
