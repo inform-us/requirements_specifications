@@ -57,7 +57,8 @@ Moved - stay in same unit:
 - moved to for surgery/procedure/imaging and comes back to different bed space
 
 Moved - away from this unit:
-- another ICU
+- another ICU at UCH
+- another ICU elsewhere
 - ward
 - home
 - died
