@@ -12,8 +12,8 @@ Inforum_us will display if the airway plan has been documented once during the p
 
 ## EPIC Flowsheets
 
- | Flowsheet | Row ID | Manual/Automatic/Calculated Input | Comments | Expected documentation frequency|
- |-|-|-|-|-|
+| Flowsheet | Row ID | Manual/Automatic/Calculated Input | Comments | Expected documentation frequency|
+|-|-|-|-|-|
 |Airway| 24499| Manual| Options available (free text available)|On completion of airway plan |
 | DAS generic Airway Plan | 24498 | Manual|Options available (free text available) | Weekly|
 | Airway plan A | 23865 | Manual |Free text|Weekly (if DAS airway plan parameter is no)|
@@ -24,27 +24,22 @@ Inforum_us will display if the airway plan has been documented once during the p
 
 
 ## Eligibility
-All patients across all units *(what about patients that are end of life: no way of obtaining this information at the present time?)*
+All patients across all units 
 
 ## Validity (time window) Rules: 
 
-All patients should have an airway plan documented during admission to critical care. Airway plan documentation is considered valid for one week unless a new artifical airway is inserted or removed (i.e. a tracheostomy or endotracheal tube). *(Note that this is not official guidelines currently)* If an new artifical airway is inserted or *(removed)* than the previous airway plan is considered invalid and a new airway plan should been completed.
-
-An airway plan is considered complete if any of the following is true:
- - DAS airway plan reads 'YES' and has been completed within the last seven days.
- - DAS airway plan reads 'NO' but rows Airway plan A, Airway plan B and/or Airway plan C are completed within the last seven days.
- - Either rows Airway plan A, Airway plan B and/or Airway plan C are filled within the last seven days.
-   *(Does rows airway plan A, airway plan B and airway plan C all need to be filled in to be valid if not following generic airway plan?)*
-
-An airway plan expires if a new artificial airway is inserted *(or removed? Does removal of an airway warrent a new airway plan?)*.
-
+All patients should have an airway plan documented during admission to critical care. Airway plan documentation is considered valid for one week unless a new artifical airway is inserted or removed (i.e. a tracheostomy or endotracheal tube). *(Note that this is not official guidelines currently)* 
 An airway plan can be superseded if an entry is updated or new entry is made, this will generate a new _dt stamp (more recent) and become the 'valid' entry
+
+If an new artifical airway is inserted or removed *(Does removal of an airway warrent a new airway plan?)* than the previous airway plan is considered invalid and a new airway plan should been completed. 
+*(Currently awaiting flowsheets to enable identification of insertion/removal of new airways so this will be included in the second version of metric)*
+
 
 ## Classification
 
 **[A] Proportion of patients with 'Airway Plan Completed'**
 
-Feeds into (i) front tile (current time snapshot), (ii) (?) floorplan and (iii) 'airway plan completed' SPC chart
+Feeds into (i) front tile (current time snapshot), (ii) floorplan and (iii) 'airway plan completed' SPC chart
 
 **FRONT TILE proportion of patients with 'airway plan completed'**
 
@@ -58,17 +53,17 @@ For each patient, an airway plan is considered (1) COMPLETED if any of the follo
 
 If none of the following flowsheets are completed within the last seven days: DAS airway (with a reading of YES) or Airway Plan A, B or C then Airway Plan is (2) NOT COMPLETED.
 
-If a patient has a new airway inserted or *( ?removed )*, the Airway Plan will switch to (2) NOT COMPLETED until any of the following documentation is redone:
-
--  DAS airway plan reads 'YES' 
- - DAS airway plan reads 'NO' but rows Airway plan A, Airway plan B and/or Airway plan C.
- - Either rows Airway plan A, Airway plan B and/or Airway plan C are filled in.
-
 Numerator = sum of patients achieving (1) COMPLETED response
 
 Denominator = total number of current patients (occupied beds)
 
 Calculation: (numerator / denominator)*100 represented as percentage *(we want to express as a percentage as all targets is not?)*
+
+
+*(NOTE: For second version of metric)*
+If a patient has a new airway inserted or removed, the Airway Plan will switch to (2) NOT COMPLETED until any of the documentation specified for COMPLETED is redone. 
+
+
 
 **[B] Floorplan labelling** *(This is assuming that the dashboard is only displaying airway plan completed and not looking at other parameters such as difficult or altered airway)*
 
