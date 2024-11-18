@@ -16,19 +16,19 @@ Query ran: 2024/06/10
 | Epidural | Assessment of Motor Block Rt leg | 30415250 | ✅ | ✅ | 2-hourly between 0800-1959, 4-hourly between 2000-0759 | ✅ | ? | complete (flowsheet is in EMAP) |
 | Epidural | LDA line status simple | 3040102506 | ✅ | ✅ |  | ✅ | ? | complete (flowsheet is in EMAP) |
 | | | | | | | | | |
-| Epidural drugs | PCEA theatres bupivicaine 0.1% with fentanyl 2mcg/ml epidural infusion | 28222 | ❌ | ❌ |  | ❌ | 408107894 | p |
-| Epidural drugs | bupivicaine 0.1% epidural infusion | 7001026 | ❌ | ❌ | hourly | ❌ | 191107 | p |
-| Epidural drugs | bupivicaine 0.1% with fentanyl 2mcg/ml epidural infusion | ? | ❌ | ❌ | hourly | ❌ | 30863 | p |
-| Epidural drugs | bupivicaine 0.1% with fentanyl 2mcg/ml PIEB epidural infusion | 31429 | ❌ | ❌ | hourly | ❌ | 40830864 | p |
-| Epidural drugs | bupivicaine 0.1% with fentanyl 2mcg/ml PCEA epidural infusion | ? | ❌ | ❌ | hourly | ❌ | 40830863 | p |
-| Epidural drugs | Bupivacane 0.1% with fentanyl 2mcg/ml epidural injection (EGA only) 20mls | ? | ❌ | ❌ | hourly | ❌ | 408124007 | p |
-| Epidural drugs | levobupivicaine 0.125% wtih fentanyl  2mch/ml epidural infusion | ? | ❌ | ❌ | hourly | ❌ | 188047 | p |
-| Epidural drugs | Levobupivacaine 0.1% with fentanyl 2 mcg/ml  PCEA epidural infusion | 48330 | ❌ | ❌ | hourly | ❌ | 408133001 | p |
-| Epidural drugs | levobupivicaine 0.125% epidural infusion (100ml) | 7001026 | ❌ | ❌ | hourly | ❌ | 181761 | p |
-| Epidural drugs | levobupivicaine 0.125% epidural infusion (200ml) | ? | ❌ | ❌ | hourly | ❌ | 181762 | p |
-| Epidural drugs | PCEA theatres bupivicaine 0.1% epidural infusion | ? | ❌ | ❌ | hourly | ❌ | 408107895 | p |
-| Epidural drugs | R UCLH PIEB BUPIVACAINE (0.125%) / FENTANYL (2 MCG/ML) - VOLUME INFUSED, Volume Infused (mL) Bupivacaine (0.125%) / Fentanyl (2 mcg/mL) | 47779 (Harry said there is no data avilable for this, so we can't use it) | ❌ | ❌ | hourly | ❌ | ? | p |
-| Epidural drugs | R UCLH PCEA BUPIVACAINE (0.125%) / FENTANYL (2 MCG/ML) - CUMULATIVE INTAKE, Volume Infused (mL) Bupivacaine (0.125%)/Fentanyl (2 mcg /mL) | 47756 | ❌ | ❌ |  | ❌ | ? | p |
+| Epidural drugs | PCEA theatres bupivicaine 0.1% with fentanyl 2mcg/ml epidural infusion | 28222 | ❌ | ❌ |  | ❌ | 408107894 | not yet requested |
+| Epidural drugs | bupivicaine 0.1% epidural infusion | 7001026 | ❌ | ❌ | hourly | ❌ | 191107 | not yet requested |
+| Epidural drugs | bupivicaine 0.1% with fentanyl 2mcg/ml epidural infusion | ? | ❌ | ❌ | hourly | ❌ | 30863 | not yet requested |
+| Epidural drugs | bupivicaine 0.1% with fentanyl 2mcg/ml PIEB epidural infusion | 31429 | ❌ | ❌ | hourly | ❌ | 40830864 | not yet requested |
+| Epidural drugs | bupivicaine 0.1% with fentanyl 2mcg/ml PCEA epidural infusion | ? | ❌ | ❌ | hourly | ❌ | 40830863 | not yet requested |
+| Epidural drugs | Bupivacane 0.1% with fentanyl 2mcg/ml epidural injection (EGA only) 20mls | ? | ❌ | ❌ | hourly | ❌ | 408124007 | not yet requested |
+| Epidural drugs | levobupivicaine 0.125% wtih fentanyl  2mch/ml epidural infusion | ? | ❌ | ❌ | hourly | ❌ | 188047 | not yet requested |
+| Epidural drugs | Levobupivacaine 0.1% with fentanyl 2 mcg/ml  PCEA epidural infusion | 48330 | ❌ | ❌ | hourly | ❌ | 408133001 | not yet requested |
+| Epidural drugs | levobupivicaine 0.125% epidural infusion (100ml) | 7001026 | ❌ | ❌ | hourly | ❌ | 181761 | not yet requested |
+| Epidural drugs | levobupivicaine 0.125% epidural infusion (200ml) | ? | ❌ | ❌ | hourly | ❌ | 181762 | not yet requested |
+| Epidural drugs | PCEA theatres bupivicaine 0.1% epidural infusion | ? | ❌ | ❌ | hourly | ❌ | 408107895 | not yet requested |
+| Epidural drugs | R UCLH PIEB BUPIVACAINE (0.125%) / FENTANYL (2 MCG/ML) - VOLUME INFUSED, Volume Infused (mL) Bupivacaine (0.125%) / Fentanyl (2 mcg/mL) | 47779 (Harry said there is no data avilable for this, so we can't use it) | ❌ | ❌ | hourly | ❌ | ? | not yet requested |
+| Epidural drugs | R UCLH PCEA BUPIVACAINE (0.125%) / FENTANYL (2 MCG/ML) - CUMULATIVE INTAKE, Volume Infused (mL) Bupivacaine (0.125%)/Fentanyl (2 mcg /mL) | 47756 | ❌ | ❌ |  | ❌ | ? | not yet requested |
 | | | | | | | | | |
 | Airway | Airway plan | 24499 | ✅ | ✅ | once per admission | ✅ | ? | complete (flowsheet is in EMAP) |
 | Airway | Airway plan A | 23865 | ✅ | ✅ |  | ✅ | ? | complete (flowsheet is in EMAP) |
