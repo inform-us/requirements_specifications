@@ -15,11 +15,11 @@ Inforum_us will display if the airway plan has been documented once during the p
  | Flowsheet | Row ID | Manual/Automatic/Calculated Input | Comments | Expected documentation frequency|
  |-|-|-|-|-|
 |Airway| 24499| Manual| Options available (free text available)|On completion of airway plan |
-| DAS generic Airway Plan | 24498 | Manual| | Weekly|
+| DAS generic Airway Plan | 24498 | Manual|Options available (free text available) | Weekly|
 | Airway plan A | 23865 | Manual |Free text|Weekly (if DAS airway plan parameter is no)|
 | Airway plan B| 23866|Manual|Free text | |
 | Airway plan C | 23867|Manual |Free text| |
-|Intubation grade| 37950| Manual |Options available (free text available) | |
+|Intubation grade| 37950| Manual |Options available (free text available) | On completion of airway plan |
 |O2 delivery|3040109305|Manual| Drop down (free text available)| Hourly (varies depending on patient's clinical condition)|
 
 
