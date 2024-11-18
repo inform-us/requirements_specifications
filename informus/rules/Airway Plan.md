@@ -65,7 +65,7 @@ If a patient has a new airway inserted or removed, the Airway Plan will switch t
 
 
 
-**[B] Floorplan labelling** *(This is assuming that the dashboard is only displaying airway plan completed and not looking at other parameters such as difficult or altered airway)*
+**[B] Floorplan labelling** 
 
 The floorplan displays live data (current state) on a bed by bed basis and is updated as new data is available (outcome is binary and there is no option for 'missing data')
 
@@ -79,7 +79,7 @@ If bed is empty; design = white filled bed with dark grey outline
 
 ---
 
-**[B] Alternative Floorplan labelling** *(This is highlighting the patients that have specific requirements concerning airway management)*
+**[C] Future Floorplan labelling** *(This is highlighting the patients that have specific requirements concerning airway management)*
 
 The floorplan displays live data (current state) on a bed by bed basis and is updated as new data is available.    
 
