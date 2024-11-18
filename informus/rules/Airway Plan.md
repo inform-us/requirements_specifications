@@ -83,6 +83,11 @@ If bed is empty; design = white filled bed with dark grey outline
 *(Would having an amber category for patients that have had an airway plan completed this admission but not currently valid or is this complicationg things?)*
 
 ---
+
+**[B] Alternative Floorplan labelling** *(This is highlighting the patients that have specific requirements concerning airway management)*
+
+The floorplan displays live data (current state) on a bed by bed basis and is updated as new data is available.    
+
 ## SPC CHART
 
 
