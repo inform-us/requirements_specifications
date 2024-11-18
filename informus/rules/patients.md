@@ -40,3 +40,25 @@ The `recent_patients.sql` currently returns all patients including `current` , `
 
 - They should be included in our `unit_wide` statistics,
 - They should not be included in our list of `current` patients and should not appear as an occupied bed on the frontend
+
+PATIENT FLOW
+
+Admission:
+- emergency department
+- ward
+- theatres / radiology / procedure suite
+- outpatients
+- an external hospital
+- others
+
+Moved - stay in same unit:
+- moved to different bedspace
+- moved to for surgery/procedure/imaging and comes back to same bed space
+- moved to for surgery/procedure/imaging and comes back to different bed space
+
+Moved - away from this unit:
+- another ICU
+- ward
+- home
+- died
+- another hospital
