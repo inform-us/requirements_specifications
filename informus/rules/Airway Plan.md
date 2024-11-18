@@ -64,8 +64,7 @@ Calculation: (numerator / denominator)*100 represented as percentage *(Do we wan
 If a patient has a new airway inserted or removed, the Airway Plan will switch to (2) NOT COMPLETED until any of the documentation specified for COMPLETED is redone. 
 
 
-
-**[B] Floorplan labelling** 
+**Floorplan labelling: Patients in Critical Care: Airway Plan Completed** 
 
 The floorplan displays live data (current state) on a bed by bed basis and is updated as new data is available (outcome is binary and there is no option for 'missing data')
 
@@ -79,7 +78,10 @@ If bed is empty; design = white filled bed with dark grey outline
 
 ---
 
-**[C] Future Floorplan labelling** *(This is highlighting the patients that have specific requirements concerning airway management)*
+**[C] Future floorplan labelling: Patients in Critical Care: Airway Management** 
+
+This is a seperate floorplan with Airway Plan Completed to be default and a button to select Airway Management.  *(Note: Awaiting activation of flowsheets in EMAP therefore this floorplan is for future development)*
+
 
 The floorplan displays live data (current state) on a bed by bed basis and is updated as new data is available.    
 
