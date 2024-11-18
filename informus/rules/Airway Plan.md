@@ -57,7 +57,7 @@ Numerator = sum of patients achieving (1) COMPLETED response
 
 Denominator = total number of current patients (occupied beds)
 
-Calculation: (numerator / denominator)*100 represented as percentage *(we want to express as a percentage as all targets is not?)*
+Calculation: (numerator / denominator)*100 represented as percentage *(Do we want to express as a percentage?)*
 
 
 *(NOTE: For second version of metric)*
