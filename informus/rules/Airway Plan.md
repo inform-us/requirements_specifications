@@ -80,10 +80,20 @@ If bed is empty; design = white filled bed with dark grey outline
 
 **[C] Future floorplan labelling: Patients in Critical Care: Airway Management** 
 
-This is a seperate floorplan with Airway Plan Completed to be default and a button to select Airway Management.  *(Note: Awaiting activation of flowsheets in EMAP therefore this floorplan is for future development)*
+This is a seperate floorplan with Airway Plan Completed to be default and a button to select Airway Management.  
+*(Note: Awaiting activation of flowsheets in EMAP therefore this floorplan is for future development)*
 
+The floorplan displays live data (current state) on a bed by bed basis and is updated as new data is available.   
 
-The floorplan displays live data (current state) on a bed by bed basis and is updated as new data is available.    
+If a patient is labelled as doctor led turn; design = red filled bed. 
+If a patient is labelled as senior nurse led turn; design = amber filled bed.  However, if a patient is also labelled as doctor led turn, the label will be doctor led turn as primary label i.e. a reading of doctor led turn overides the label of senior led turn.
+If a patient has neither doctor led turn or senior led turn label: design = white filled bed.
+
+Secondary 'emergency teams' labeling
+
+In addition to the above labeling, if the latest 'emergency team@ reading is 'DART' then also label patient as 'DART'. Note this means that some patients who have 'DART' may have two labels, a primary label as per steps above and a potential secondary label.  We need to denote this somehow on the floorplan as well. Bed is filled with the primary label as well as the letters DART.
+
+*(Do we need to know the other emergency teams?)*
 
 ## SPC CHART
 
