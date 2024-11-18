@@ -28,7 +28,7 @@ All patients across all units *(what about patients that are end of life: no way
 
 ## Validity (time window) Rules: 
 
-All patients should have an airway plan documented during admission to critical care. Airway plan documentation is considered valid for one week unless a new artifical airway is inserted or removed (i.e. a tracheostomy or endotracheal tube). If an new artifical airway is inserted or removed than the previous airway plan is considered invalid and a new airway plan should been completed.
+All patients should have an airway plan documented during admission to critical care. Airway plan documentation is considered valid for one week unless a new artifical airway is inserted or removed (i.e. a tracheostomy or endotracheal tube). *(Note that this is not official guidelines currently)* If an new artifical airway is inserted or *(removed)* than the previous airway plan is considered invalid and a new airway plan should been completed.
 
 An airway plan is considered complete if any of the following is true:
  - DAS airway plan reads 'YES' and has been completed within the last seven days.
@@ -36,7 +36,7 @@ An airway plan is considered complete if any of the following is true:
  - Either rows Airway plan A, Airway plan B and/or Airway plan C are filled within the last seven days.
    *(Does rows airway plan A, airway plan B and airway plan C all need to be filled in to be valid if not following generic airway plan?)*
 
-An airway plan expires if a new artificial airway is inserted *(or removed)*.
+An airway plan expires if a new artificial airway is inserted *(or removed? Does removal of an airway warrent a new airway plan?)*.
 
 An airway plan can be superseded if an entry is updated or new entry is made, this will generate a new _dt stamp (more recent) and become the 'valid' entry
 
@@ -58,7 +58,11 @@ For each patient, an airway plan is considered (1) COMPLETED if any of the follo
 
 If none of the following flowsheets are completed within the last seven days: DAS airway (with a reading of YES) or Airway Plan A, B or C then Airway Plan is (2) NOT COMPLETED.
 
-If a patient has a new airway inserted or *( removed )* 
+If a patient has a new airway inserted or *( ?removed )*, the Airway Plan will switch to (2) NOT COMPLETED until any of the following documentation is redone:
+
+-  DAS airway plan reads 'YES' 
+ - DAS airway plan reads 'NO' but rows Airway plan A, Airway plan B and/or Airway plan C.
+ - Either rows Airway plan A, Airway plan B and/or Airway plan C are filled in.
 
 Numerator = sum of patients achieving (1) COMPLETED response
 
@@ -75,6 +79,8 @@ If 'airway plan completed'; design = green filled bed
 If 'airway plan not completed'; design = red filled bed
 
 If bed is empty; design = white filled bed with dark grey outline
+
+*(Would having an amber category for patients that have had an airway plan completed this admission but not currently valid or is this complicationg things?)*
 
 ---
 ## SPC CHART
