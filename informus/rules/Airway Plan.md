@@ -9,42 +9,43 @@ Rules for the Airway Plan [completed] Metric
 - the medical team should complete the ICU Airway Plan on admission to critical care, following assessment of any new upper airway pathology and after any procedure involving the airway (e.g. re-intubation, tracheostomy, bronchoscopy, difficult nasogastric tube insertion, SL&T review etc)
 - some of above review triggers are either more nuanced (subtle clinical changes) or rely on free text entry in EPIC - these will not be considered
 - other review triggers are more certain and are documented in EPIC flowsheets (e.g new endotracheal tube insertion or tracheostomy insertion)
-- there is currently no concensus on whether an ICU Airway Plan should also be subject to a review date (cf ICU targets), separate to the triggers mentioned above
+- there is currently no concensus on whether an ICU Airway Plan should also be subject to a review date (cf 24 hours for ICU targets), separate to the triggers mentioned above
 - the most favoured opinion is a 7 day validity [further information to follow]
 - ICU Airway Plan is a binary metric (an airway plan is either completed or not completed)
 
 
-## EPIC Flowsheets
+## EPIC Flowsheets <br>
+### $ denotes flowsheet ID used in this metric <br>
 **Components of the ICU Airway Plan**
 ICU Airway Plan - Group ID G UCLH ICU AIRWAY PLAN [23864]
 
 | Flowsheet | Row ID | Manual / Automatic / Calculated Input | Comments | Expected documentation frequency |
 |-|-|-|-|-|
-| Airway | R UCLH ICU AIRWAY PLAN 24499 | Manual | Options: <br> - Natural Airway <br> - Endotracheal Tube <br> - Percutaneous Tracheostomy <br> - Surgical Tracheostomy <br> - Laryngectomy <br> - Other (free text) | On completion of airway plan |
+| $_Airway | R UCLH ICU AIRWAY PLAN 24499 | Manual | Options: <br> - Natural Airway <br> - Endotracheal Tube <br> - Percutaneous Tracheostomy <br> - Surgical Tracheostomy <br> - Laryngectomy <br> - Other (free text) | On completion of airway plan |
 |Intubation grade | R UCLH ICU INTUBATION GRADE 37950 | Manual | Options: <br> - Grade 1 <br> - Grade 2a <br> - Grade 2b <br> - Grade 3 <br> - Grade 4 <br> - Other (free text)| On completion of airway plan |
-| DAS Generic Airway Plan | R UCLH ICU AIRWAY PLAN DAS 24498 | Manual | Options: <br> - Yes <br> - No <br> - Other (free text) | On completion of airway plan |
-| Plan A | R UCLH ICU AIRWAY PLAN A 23865 | Manual | Free text | On completion of airway plan (if DAS Generic Airway Plan = No) |
+| $_DAS Generic Airway Plan | R UCLH ICU AIRWAY PLAN DAS 24498 | Manual | Options: <br> - Yes <br> - No <br> - Other (free text) | On completion of airway plan |
+| $_Plan A | R UCLH ICU AIRWAY PLAN A 23865 | Manual | Free text | On completion of airway plan (if DAS Generic Airway Plan = No) |
 | Plan B | R UCLH ICU AIRWAY PLAN B 23866 | Manual | Free text | On completion of airway plan (if DAS Generic Airway Plan = No and PLAN A completed) |
 | Plan C | R UCLH ICU AIRWAY PLAN A 23867 | Manual | Free text | On completion of airway plan (if DAS Generic Airway Plan = No and PLAN B completed) |
-| Emergency Teams | R UCLH ICU AIRWAY PLAN TRACHE CALL 24504 | Manual | Options: <br> - Anaesthesia <br> - ICU <br> - ENT <br> MaxFax <br> - DART <br> - Other (free text) | On completion of airway plan |
+| $_Emergency Teams | R UCLH ICU AIRWAY PLAN TRACHE CALL 24504 | Manual | Options: <br> - Anaesthesia <br> - ICU <br> - ENT <br> MaxFax <br> - DART <br> - Other (free text) | On completion of airway plan |
 
 **Components of the ICU Turning Plan**
 ICU Turning Plan - Group ID G UCLH ICU TURNING PLAN [24505]
 
 | Flowsheet | Row ID | Manual / Automatic / Calculated Input | Comments | Expected documentation frequency |
 |-|-|-|-|-|
-| Doctor Required | R UCLH ICU TURNING PLAN DOC REQ 24508 | Manual | Options: <br> - Yes <br> - No <br> - Other (free text) | Optional on completion of airway plan |
-| Senior Nurse Required | R UCLH ICU TURNING PLAN NURSE REQ 24509 | Manual | Options: <br> - Yes <br> - No <br> - Other (free text) | Optional on completion of airway plan |
+| $_Doctor Required | R UCLH ICU TURNING PLAN DOC REQ 24508 | Manual | Options: <br> - Yes <br> - No <br> - Other (free text) | Optional on completion of airway plan |
+| $_Senior Nurse Required | R UCLH ICU TURNING PLAN NURSE REQ 24509 | Manual | Options: <br> - Yes <br> - No <br> - Other (free text) | Optional on completion of airway plan |
 
 **Associated flowsheet_IDs used in this metric**
 Respiratory Observations - Group ID G UCLH ICU RESPIRATORY OBS FOR ASSESSMENT [40722]
 
 | Flowsheet | Row ID | Manual / Automatic / Calculated Input | Comments | Expected documentation frequency|
 |-|-|-|-|-|
-| O2 delivery device |R OXYGEN DELIVERY METHOD 3040109305 | Drop down (free text available) |Select drop down options: <br> Nasal cannula <br> Simple mask <br> Venturi mask <br> Capno mask <br> High-flow nasal cannula (HFNC) <br> Humidified oxygen mask <br> Non-rebreather mask <br> Tracheostomy mask <br> CPAP/Bi-PAP mask <br> Oxyhood <br> Bag valve mask (BVM) <br> Endotracheal tube <br> Tracheostomy <br> Other (comment) <br> No respiratory support provided | Hourly (varies depending on patient's clinical condition)|
+| $_O2 delivery device |R OXYGEN DELIVERY METHOD 3040109305 | Drop down (free text available) |Select drop down options: <br> - Nasal cannula <br> - Simple mask <br> - Venturi mask <br> - Capno mask <br> - High-flow nasal cannula (HFNC) <br> - Humidified oxygen mask <br> - Non-rebreather mask <br> - Tracheostomy mask <br> - CPAP/Bi-PAP mask <br> - Oxyhood <br> - Bag valve mask (BVM) <br> - Endotracheal tube <br> - Tracheostomy <br> - Other (comment) <br> - No respiratory support provided | Hourly (varies depending on patient's clinical condition)|
 
-ETT Properties Row ID 3040102626 links to LDA AVATAR Placement Date Row ID 700 Placement Time Row ID 701 <br>
-Surgical Airway Properties Row ID 700004 links to LDA AVATAR Placement Date Row ID 700 Placement Time Row ID 701
+$_ETT Properties Row ID 3040102626 links to LDA AVATAR - Placement Date Row ID 700 - Placement Time Row ID 701 <br>
+$_Surgical Airway Properties Row ID 700004 links to LDA AVATAR - Placement Date Row ID 700 - Placement Time Row ID 701
 
 ## Eligibility
 All patients across all units 
@@ -52,11 +53,30 @@ All patients across all units
 
 ## Validity (time window) Rules: 
 
-All patients should have an airway plan documented during admission to critical care. Airway plan documentation is considered valid for one week unless a new artifical airway is inserted or removed (i.e. a tracheostomy or endotracheal tube). *(Note that this is not official guidelines currently)* 
-An airway plan can be superseded if an entry is updated or new entry is made, this will generate a new _dt stamp (more recent) and become the 'valid' entry
+- all patients should have an ICU Airway Plan documented during an admission to critical care
+- an ICU Airway Plan is only deemed COMPLETED if option A OR option B is met
 
-If an new artifical airway is inserted or removed *(Does removal of an airway warrent a new airway plan?)* than the previous airway plan is considered invalid and a new airway plan should been completed. 
-*(Currently awaiting flowsheets to enable identification of insertion/removal of new airways so this will be included in the second version of metric)*
+**Option A** <br>
+- Airway [Row ID 24499] completed - this will return one of the follwoing options: Natural Airway / Endotracheal Tube / Percutaneous Tracheostomy / Surgical Tracheostomy / Laryngectomy / Other and have a _dt stamp
+- AND DAS Generic Airway Plan [Row ID 24498] = YES and has a dt stamp
+
+**Option B** <br>
+- Airway [Row ID 24499] completed - this will return one of the follwoing options: Natural Airway / Endotracheal Tube / Percutaneous Tracheostomy / Surgical Tracheostomy / Laryngectomy / Other and have a _dt stamp
+- AND DAS Generic Airway Plan [Row ID 24498] = NO and has a dt stamp
+- PLUS Plan A [Row ID 23865] - any entry generating a _dt stamp
+
+**Validity** <br>
+- as there is currently no concensus on whether an ICU Airway Plan should also be subject to a review date
+- in EPIC an ICU Airway Plan does not expire during the admission
+- we will take a pragmatic stance and propose the following:
+1. MISSING - There is no ICU Airway Plan completed - either one has never been documented OR incomplete documenation does not satisfy option A or option B above
+2. COMPLETED - An ICU Airway plan has been completed - satisfying option A or option B above and genertating a _dt stamp
+3. FOR REVIEW - An ICU Airway plan has been completed - satisfying option A or option B above and genertating a _dt stamp, but it is now >7 days between the current time nad the _dt stamp
+4. NEW / UPDATE REQUIRED - triggered by insertion of new endotracheal tube or tracheostomy <br>
+- a new placement ddate/time generated  in ETT Properties Row ID 3040102626 (links to LDA AVATAR - Placement Date Row ID 700 - Placement Time Row ID 701) <br>
+- a new placement ddate/time generated in Surgical Airway Properties Row ID 700004 (links to LDA AVATAR - Placement Date Row ID 700 - Placement Time Row ID 701)
+- this new / updated ICU Airway Plan will then be subject for review 7 days after its _dt stamp
+5. An ICU Airway Plan can be superceded at any time if an entry is updated or new entry is made, this will generate a new _dt stamp
 
 
 ## Classification
