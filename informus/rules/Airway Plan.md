@@ -16,20 +16,32 @@ Rules for the Airway Plan [completed] Metric
 
 ## EPIC Flowsheets
 **Components of the ICU Airway Plan**
-| Flowsheet | Row ID | Manual / Automatic / Calculated Input | Comments | Expected documentation frequency|
-|-|-|-|-|-|
-|Airway| 24499| Manual| Options available (free text available)|On completion of airway plan |
-| DAS generic Airway Plan | 24498 | Manual|Options available (free text available) | Weekly|
-| Airway plan A | 23865 | Manual |Free text|Weekly (if DAS airway plan parameter is no)|
-| Airway plan B| 23866|Manual|Free text | |
-| Airway plan C | 23867|Manual |Free text| |
-|Intubation grade| 37950| Manual |Options available (free text available) | On completion of airway plan |
-|O2 delivery|3040109305|Manual| Drop down (free text available)| Hourly (varies depending on patient's clinical condition)|
+ICU Airway Plan - Group ID G UCLH ICU AIRWAY PLAN [23864]
 
-**Assocaited flowsheet_IDs used in this metric**
+| Flowsheet | Row ID | Manual / Automatic / Calculated Input | Comments | Expected documentation frequency |
+|-|-|-|-|-|
+| Airway | R UCLH ICU AIRWAY PLAN 24499 | Manual | Options: <br> - Natural Airway <br> - Endotracheal Tube <br> - Percutaneous Tracheostomy <br> - Surgical Tracheostomy <br> - Laryngectomy <br> - Other (free text) | On completion of airway plan |
+|Intubation grade | R UCLH ICU INTUBATION GRADE 37950 | Manual | Options: <br> - Grade 1 <br> - Grade 2a <br> - Grade 2b <br> - Grade 3 <br> - Grade 4 <br> - Other (free text)| On completion of airway plan |
+| DAS Generic Airway Plan | R UCLH ICU AIRWAY PLAN DAS 24498 | Manual | Options: <br> - Yes <br> - No <br> - Other (free text) | On completion of airway plan |
+| Plan A | R UCLH ICU AIRWAY PLAN A 23865 | Manual | Free text | On completion of airway plan (if DAS Generic Airway Plan = No) |
+| Plan B | R UCLH ICU AIRWAY PLAN B 23866 | Manual | Free text | On completion of airway plan (if DAS Generic Airway Plan = No and PLAN A completed) |
+| Plan C | R UCLH ICU AIRWAY PLAN A 23867 | Manual | Free text | On completion of airway plan (if DAS Generic Airway Plan = No and PLAN B completed) |
+| Emergency Teams | R UCLH ICU AIRWAY PLAN TRACHE CALL 24504 | Manual | Options: <br> - Anaesthesia <br> - ICU <br> - ENT <br> MaxFax <br> - DART <br> - Other (free text) | On completion of airway plan |
+
+**Components of the ICU Turning Plan**
+ICU Turning Plan - Group ID G UCLH ICU TURNING PLAN [24505]
+
+| Flowsheet | Row ID | Manual / Automatic / Calculated Input | Comments | Expected documentation frequency |
+|-|-|-|-|-|
+| Doctor Required | R UCLH ICU TURNING PLAN DOC REQ 24508 | Manual | Options: <br> - Yes <br> - No <br> - Other (free text) | Optional on completion of airway plan |
+| Senior Nurse Required | R UCLH ICU TURNING PLAN NURSE REQ 24509 | Manual | Options: <br> - Yes <br> - No <br> - Other (free text) | Optional on completion of airway plan |
+
+**Associated flowsheet_IDs used in this metric**
+Respiratory Observations - Group ID G UCLH ICU RESPIRATORY OBS FOR ASSESSMENT [40722]
+
 | Flowsheet | Row ID | Manual / Automatic / Calculated Input | Comments | Expected documentation frequency|
 |-|-|-|-|-|
-|O2 delivery|3040109305|Manual| Drop down (free text available)| Hourly (varies depending on patient's clinical condition)|
+| O2 delivery device |R OXYGEN DELIVERY METHOD 3040109305 | Drop down (free text available) |Select drop down options: <br> Nasal cannula <br> Simple mask <br> Venturi mask <br> Capno mask <br> High-flow nasal cannula (HFNC) <br> Humidified oxygen mask <br> Non-rebreather mask <br> Tracheostomy mask <br> CPAP/Bi-PAP mask <br> Oxyhood <br> Bag valve mask (BVM) <br> Endotracheal tube <br> Tracheostomy <br> Other (comment) <br> No respiratory support provided | Hourly (varies depending on patient's clinical condition)|
 
 
 ## Eligibility
