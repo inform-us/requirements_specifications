@@ -43,6 +43,8 @@ Respiratory Observations - Group ID G UCLH ICU RESPIRATORY OBS FOR ASSESSMENT [4
 |-|-|-|-|-|
 | O2 delivery device |R OXYGEN DELIVERY METHOD 3040109305 | Drop down (free text available) |Select drop down options: <br> Nasal cannula <br> Simple mask <br> Venturi mask <br> Capno mask <br> High-flow nasal cannula (HFNC) <br> Humidified oxygen mask <br> Non-rebreather mask <br> Tracheostomy mask <br> CPAP/Bi-PAP mask <br> Oxyhood <br> Bag valve mask (BVM) <br> Endotracheal tube <br> Tracheostomy <br> Other (comment) <br> No respiratory support provided | Hourly (varies depending on patient's clinical condition)|
 
+ETT Properties Row ID 3040102626 links to LDA AVATAR Placement Date Row ID 700 Placement Time Row ID 701 <br>
+Surgical Airway Properties Row ID 700004 links to LDA AVATAR Placement Date Row ID 700 Placement Time Row ID 701
 
 ## Eligibility
 All patients across all units 
