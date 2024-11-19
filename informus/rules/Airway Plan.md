@@ -1,19 +1,22 @@
 # Airway Plan 
-Rules for the completed Airway Plan Metric
+Rules for the Airway Plan [completed] Metric
+
 
 ## EPIC
-Airway plan is completed in 'ICU Navigators' tab [doctors' log in view] and are displayed in 'Airway and Turning Plan' Tab, as well as being accessed through the 'Airway ALert' tab on the left hadn side bar in EPIC
+- the ICU Airway Plan is completed by doctors
+- it is accessed in ICU Navigators - Airway and Turning [doctors' log in view]
+- in addition, if an 'Airway Alert' exists (left hand side of EPIC screen with allergies and other alerts), clicking on it will also take you to the ICU Airway Plan
+- the medical team should complete the ICU Airway Plan on admission to critical care, following assessment of any new upper airway pathology and after any procedure involving the airway (e.g. re-intubation, tracheostomy, bronchoscopy, difficult nasogastric tube insertion, SL&T review etc)
+- some of above review triggers are either more nuanced (subtle clinical changes) or rely on free text entry in EPIC - these will not be considered
+- other review triggers are more certain and are documented in EPIC flowsheets (e.g new endotracheal tube insertion or tracheostomy insertion)
+- there is currently no concensus on whether an ICU Airway Plan should also be subject to a review date (cf ICU targets), separate to the triggers mentioned above
+- the most favoured opinion is a 7 day validity [further information to follow]
+- ICU Airway Plan is a binary metric (an airway plan is either completed or not completed)
 
-The medical team should complete the airway plan on admission, after airway instrumnetation or change of status (e.g intubation, bronchoscopy , percutaneous tracheostomy, SL&T review etc) as well a a weekly review therafter. 
-If there are changes to the patient's airway status, then the airway plan should be updated.
-
-ICU Airway Plan is a binary metric (an airway plan is either completed or not completed).
-
-Inforum_us will display if the airway plan has been documented during the patients admission.
 
 ## EPIC Flowsheets
-
-| Flowsheet | Row ID | Manual/Automatic/Calculated Input | Comments | Expected documentation frequency|
+**Components of the ICU Airway Plan**
+| Flowsheet | Row ID | Manual / Automatic / Calculated Input | Comments | Expected documentation frequency|
 |-|-|-|-|-|
 |Airway| 24499| Manual| Options available (free text available)|On completion of airway plan |
 | DAS generic Airway Plan | 24498 | Manual|Options available (free text available) | Weekly|
@@ -23,9 +26,15 @@ Inforum_us will display if the airway plan has been documented during the patien
 |Intubation grade| 37950| Manual |Options available (free text available) | On completion of airway plan |
 |O2 delivery|3040109305|Manual| Drop down (free text available)| Hourly (varies depending on patient's clinical condition)|
 
+**Assocaited flowsheet_IDs used in this metric**
+| Flowsheet | Row ID | Manual / Automatic / Calculated Input | Comments | Expected documentation frequency|
+|-|-|-|-|-|
+|O2 delivery|3040109305|Manual| Drop down (free text available)| Hourly (varies depending on patient's clinical condition)|
+
 
 ## Eligibility
 All patients across all units 
+
 
 ## Validity (time window) Rules: 
 
