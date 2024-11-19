@@ -1,14 +1,15 @@
-# Airway Plan Rules 
-Rules for the Airway Plan Metric *(This is just a draft - with lots of questions!)*
+# Airway Plan 
+Rules for the completed Airway Plan Metric
 
 ## EPIC
-Airway plan is completed in 'ICU Navigators' tab [doctors' log in view] and are displayed in 'Airway and Turning Plan' Tab.
+Airway plan is completed in 'ICU Navigators' tab [doctors' log in view] and are displayed in 'Airway and Turning Plan' Tab, as well as being accessed through the 'Airway ALert' tab on the left hadn side bar in EPIC
 
-The medical team should complete the airway plan at least once during the patient's admission to critical care.  If there are changes to the patient's airway status, then the airway plan should be updated.
+The medical team should complete the airway plan on admission, after airway instrumnetation or change of status (e.g intubation, bronchoscopy , percutaneous tracheostomy, SL&T review etc) as well a a weekly review therafter. 
+If there are changes to the patient's airway status, then the airway plan should be updated.
 
 ICU Airway Plan is a binary metric (an airway plan is either completed or not completed).
 
-Inforum_us will display if the airway plan has been documented once during the patients admission.
+Inforum_us will display if the airway plan has been documented during the patients admission.
 
 ## EPIC Flowsheets
 
@@ -47,8 +48,8 @@ The front tile displays live data (i.e. the current state on each unit)
 For each patient, an airway plan is considered (1) COMPLETED if any of the following is true;
 
  - DAS airway plan reads 'YES' and has been completed within the last seven days.
- - DAS airway plan reads 'NO' but rows Airway plan A, Airway plan B and/or Airway plan C are completed within the last seven days.
- - Either rows Airway plan A, Airway plan B and/or Airway plan C are filled in within the last seven days.
+ - DAS airway plan reads 'NO' but rows Airway plan A (Airway plan B and/or Airway plan C are completed within the last seven days).
+ - Either rows Airway plan A, Airway plan B and/or Airway plan C are filled in within the **last seven days**.
    *(Does rows airway plan A, airway plan B and airway plan C all need to be filled in to be valid if not following generic airway plan?)*
 
 If none of the following flowsheets are completed within the last seven days: DAS airway (with a reading of YES) or Airway Plan A, B or C then Airway Plan is (2) NOT COMPLETED.
@@ -71,6 +72,8 @@ The floorplan displays live data (current state) on a bed by bed basis and is up
 If 'airway plan completed'; design = green filled bed
 
 If 'airway plan not completed'; design = red filled bed
+
+If 'airway plan completed but >7 days old'; design - orange filled bed
 
 If bed is empty; design = white filled bed with dark grey outline
 
