@@ -57,9 +57,9 @@ The front tile displays live data (i.e. the current state on each unit)
 For each patient, an airway plan is considered (1) COMPLETED if any of the following is true;
 
  - DAS airway plan reads 'YES' and has been completed within the last seven days.
- - DAS airway plan reads 'NO' but rows Airway plan A (Airway plan B and/or Airway plan C are completed within the last seven days).
- - Either rows Airway plan A, Airway plan B and/or Airway plan C are filled in within the **last seven days**.
-   *(Does rows airway plan A, airway plan B and airway plan C all need to be filled in to be valid if not following generic airway plan?)*
+ - DAS airway plan reads 'NO' but Airway plan A has been completed within the last seven days.
+ - Either Airway plan A, Airway plan B and/or Airway plan C are filled in within the **last seven days**.
+   
 
 If none of the following flowsheets are completed within the last seven days: DAS airway (with a reading of YES) or Airway Plan A, B or C then Airway Plan is (2) NOT COMPLETED.
 
@@ -67,7 +67,7 @@ Numerator = sum of patients achieving (1) COMPLETED response
 
 Denominator = total number of current patients (occupied beds)
 
-Calculation: (numerator / denominator)*100 represented as percentage *(Do we want to express as a percentage?)*
+Calculation: (numerator / denominator)
 
 
 *(NOTE: For second version of metric)*
@@ -86,26 +86,20 @@ If 'airway plan completed but >7 days old'; design - orange filled bed
 
 If bed is empty; design = white filled bed with dark grey outline
 
-*(Would having an amber category for patients that have had an airway plan completed this admission but not currently valid or is this complicationg things?)*
+Secondary "airway managment" labelling
+
+If a patient is labelled as doctor led turn; an icon "Dr" will be present on bed 
+If a patient is labelled as senior nurse led turn; an icon "SN" will be present on bed.  *(However, if a patient is also labelled as doctor led turn, the label will be doctor led turn as primary label i.e. a reading of doctor led turn overides the label of senior led turn)*
+If a patient has neither doctor led turn or senior led turn label *or DART label*, the bed space will not have an secondary label.
+
+*(NOTE: For second version of metric - when flowsheet for "emergency teams" become available on EMAP)*
+If a patient is labelled as DART: an icon spelling DART will be present on bed.
 
 ---
 
-**[C] Future floorplan labelling: Patients in Critical Care: Airway Management** 
+**[C] Future floorplan labelling: Airway Present**
 
-This is a seperate floorplan with Airway Plan Completed to be default and a button to select Airway Management.  
-*(Note: Awaiting activation of flowsheets in EMAP therefore this floorplan is for future development)*
 
-The floorplan displays live data (current state) on a bed by bed basis and is updated as new data is available.   
-
-If a patient is labelled as doctor led turn; design = red filled bed. 
-If a patient is labelled as senior nurse led turn; design = amber filled bed.  However, if a patient is also labelled as doctor led turn, the label will be doctor led turn as primary label i.e. a reading of doctor led turn overides the label of senior led turn.
-If a patient has neither doctor led turn or senior led turn label: design = white filled bed.
-
-Secondary 'emergency teams' labeling
-
-In addition to the above labeling, if the latest 'emergency team@ reading is 'DART' then also label patient as 'DART'. Note this means that some patients who have 'DART' may have two labels, a primary label as per steps above and a potential secondary label.  We need to denote this somehow on the floorplan as well. Bed is filled with the primary label as well as the letters DART.
-
-*(Do we need to know the other emergency teams?)*
 
 ## SPC CHART
 
