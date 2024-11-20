@@ -10,7 +10,7 @@ Rules for the Airway Plan [completed] Metric
 - some of above review triggers are either more nuanced (subtle clinical changes) or rely on free text entry in EPIC - these will not be considered
 - other review triggers are more certain and are documented in EPIC flowsheets (e.g new endotracheal tube insertion or tracheostomy insertion)
 - there is currently no concensus on whether an ICU Airway Plan should also be subject to a review date (cf 24 hours for ICU targets), separate to the triggers mentioned above
-- the most favoured opinion is a 7 day validity [further information to follow]
+- the most favoured opinion is a 7-14 day validity, with the bulk of the reviews falling on longer stay patients who are more likely to have a less dynamic airway 
 - ICU Airway Plan is a binary metric (an airway plan is either completed or not completed)
 
 
@@ -71,7 +71,7 @@ All patients across all units
 - we will take a pragmatic stance and propose the following:
 1. MISSING - There is no ICU Airway Plan completed - either one has never been documented OR incomplete documenation does not satisfy option A or option B above
 2. COMPLETED - An ICU Airway plan has been completed - satisfying option A or option B above and genertating a _dt stamp
-3. FOR REVIEW - An ICU Airway plan has been completed - satisfying option A or option B above and genertating a _dt stamp, but it is now >7 days between the current time nad the _dt stamp
+3. FOR REVIEW - An ICU Airway plan has been completed - satisfying option A or option B above and genertating a _dt stamp, but it is now >14 days between the current time and the _dt stamp; but exclude those with a COMPLETED Airway Plan who have a 'Natural Airway' (from the Airway tab [Airway Flowsheet ID 24499] of the ICU Airway Plan) AND have a DAS Generic Airway Plan [Row ID 24498] = YES (same a Option A that have 'Natural Airway') - these do not need review 
 4. UPDATE REQUIRED - triggered by insertion of new endotracheal tube or tracheostomy <br>
 - a new placement date/time generated  in ETT Properties Row ID 3040102626 (links to LDA AVATAR - Placement Date Row ID 700 - Placement Time Row ID 701) <br>
 - a new placement ddate/time generated in Surgical Airway Properties Row ID 700004 (links to LDA AVATAR - Placement Date Row ID 700 - Placement Time Row ID 701)
@@ -92,7 +92,8 @@ Feeds into (i) front tile (live data), (ii) floorplan and (iii) 'airway plan com
 **[B] Number of patients with 'Airway Plan For Review' - Front tile**
 - represented as a number: "Airway plan - for review: integer
 - classify T03 as one ICU (do not split into T03 North & T03 South) 
-- for each of the four ICUs, identify the number of current inpatients with a COMPLETED ICU Airway Plan that has a _dt >7 days from the current time, display the number
+- for each of the four ICUs, identify the number of current inpatients with a COMPLETED ICU Airway Plan that has a _dt >14 days from the current time, display the number
+- exclude those with a COMPLETED Airway Plan who have a 'Natural Airway' (from the Airway tab [Airway Flowsheet ID 24499] of the ICU Airway Plan) AND have a DAS Generic Airway Plan [Row ID 24498] = YES (same a Option A that have 'Natural Airway') - these do not need review
 
 **[C] Number of patients with 'Airway Plan Update Required' - Front tile**
 - represented as a number: "Airway plan - update required: integer
@@ -142,7 +143,7 @@ Feeds into (i) front tile (live data), (ii) floorplan and (iii) 'airway plan com
 - the floorplan displays live data (current state) on a bed by bed basis and is updated as new data is available
 1. If 'Airway Plan Completed'; design = green filled bed
 2. If 'Airway Plan Missing' (not completed / partially complted); design = white filled bed with red hashed outline
-3. If 'Airway Plan For Review'; design = orange filled bed
+3. If 'Airway Plan For Review'; design = green filled bed with orange hashed outline
 4. If 'Airway Plan Update Required'; design = red filled bed
 5. If bed is empty; design = white filled bed with dark grey outline
 
@@ -154,6 +155,7 @@ Feeds into (i) front tile (live data), (ii) floorplan and (iii) 'airway plan com
 4. If DART = YES; design = DART icon to bedspace
 5. If Doctor Required = YES; design = red hashed outline ??
 6. If Senior Nurse Required = YES; design = medium blue filled bed ??
+7. If Doctor Required = YES and Senior Nurse Required = YES; design medium blue filled bed with red hashed outline
 
 ____
 ## SPC CHART
