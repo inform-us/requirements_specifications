@@ -72,53 +72,71 @@ All patients across all units
 1. MISSING - There is no ICU Airway Plan completed - either one has never been documented OR incomplete documenation does not satisfy option A or option B above
 2. COMPLETED - An ICU Airway plan has been completed - satisfying option A or option B above and genertating a _dt stamp
 3. FOR REVIEW - An ICU Airway plan has been completed - satisfying option A or option B above and genertating a _dt stamp, but it is now >7 days between the current time nad the _dt stamp
-4. NEW / UPDATE REQUIRED - triggered by insertion of new endotracheal tube or tracheostomy <br>
-- a new placement ddate/time generated  in ETT Properties Row ID 3040102626 (links to LDA AVATAR - Placement Date Row ID 700 - Placement Time Row ID 701) <br>
+4. UPDATE REQUIRED - triggered by insertion of new endotracheal tube or tracheostomy <br>
+- a new placement date/time generated  in ETT Properties Row ID 3040102626 (links to LDA AVATAR - Placement Date Row ID 700 - Placement Time Row ID 701) <br>
 - a new placement ddate/time generated in Surgical Airway Properties Row ID 700004 (links to LDA AVATAR - Placement Date Row ID 700 - Placement Time Row ID 701)
 - this new / updated ICU Airway Plan will then be subject for review 7 days after its _dt stamp
 5. An ICU Airway Plan can be superceded at any time if an entry is updated or new entry is made, this will generate a new _dt stamp
 
 
 ## Classification
+Feeds into (i) front tile (live data), (ii) floorplan and (iii) 'airway plan completed' SPC chart
 
-**[A] Proportion of patients with 'Airway Plan Completed'**
+**[A] Proportion of patients with 'Airway Plan Completed' - Front tile**
+- represented as a fraction (cf all targets set)
+- classify T03 as one ICU (do not split into T03 North & T03 South) 
+- for each of the four ICUs, identify the number of current inpatients, this is the denominator
+- DENOMINATOR = total number of current number of inpatients (on each respective ICU)
+- NUMERATOR = current number of patients designated as COMPLETED, FOR REVIEW, UPDATE REQUIRED and add them together <br> [you may want to simplify this to = TOTAL CURRENT INPATIENTS - MISSING, but we will need the other data later]
 
-Feeds into (i) front tile (current time snapshot), (ii) floorplan and (iii) 'airway plan completed' SPC chart
+**[B] Number of patients with 'Airway Plan For Review' - Front tile**
+- represented as a number: "Airway plan - for review: integer
+- classify T03 as one ICU (do not split into T03 North & T03 South) 
+- for each of the four ICUs, identify the number of current inpatients with a COMPLETED ICU Airway Plan that has a _dt >7 days from the current time, display the number
 
-**FRONT TILE proportion of patients with 'airway plan completed'**
+**[C] Number of patients with 'Airway Plan Update Required' - Front tile**
+- represented as a number: "Airway plan - update required: integer
+- classify T03 as one ICU (do not split into T03 North & T03 South) 
+- for each of the four ICUs, identify the number of current inpatients with a COMPLETED ICU Airway Plan that has a _dt that precedes a _dt stamp from either: 
+- a new placement date/time generated  in ETT Properties Row ID 3040102626 (links to LDA AVATAR - Placement Date Row ID 700 - Placement Time Row ID 701) <br>
+- a new placement ddate/time generated in Surgical Airway Properties Row ID 700004 (links to LDA AVATAR - Placement Date Row ID 700 - Placement Time Row ID 701)
 
-The front tile displays live data (i.e. the current state on each unit)
-For each patient, an airway plan is considered (1) COMPLETED if any of the following is true;
+**[D] Number of patients with 'Airway Plan Missing'**
+- not represented on the front tile, but feeds into the floorplan 1 
+- for each of the four ICUs, identify the number of current inpatients with a MISSING ICU Airway Plan 
 
- - DAS airway plan reads 'YES' and has been completed within the last seven days.
- - DAS airway plan reads 'NO' but Airway plan A has been completed within the last seven days.
- - Either Airway plan A, Airway plan B and/or Airway plan C are filled in within the **last seven days**.
-   
+**[E] Airway Type**
+- not represented on the front tile, but feeds into the floorplan 2
+- for each of the four ICUs, for each patient, identify which option has been documented in the Airway tab [Airway Flowsheet ID 24499] of the ICU Airway Plan, retain _dt stamp and process the following:
+- Natural Airway - discard
+- Endotracheal Tube - designate as entotracheal
+- Percutaneous Tracheostomy - designate as tracheostomy
+- Surgical Tracheostomy - designate as tracheostomy
+- Laryngectomy - designate as laryngectomy
+- Other (free text) - discard
+- for each of the four ICUs, for each patient, identify whether 'Endotracheal tube' or 'Tracheostomy' have been returned from the O2 delivery device [Flowsheet ID 3040109305], retain _dt stamp and process the following:
+- Endotracheal tube - designate as entotracheal
+- Tracheostomy - designate as tracheostomy
+- All other data - discard
+<br>
+- determine whether any of the current inpatients have any of the following three airway types
+  1. entotracheal (from ID 24499 and ID 3040109305) 
 
-If none of the following flowsheets are completed within the last seven days: DAS airway (with a reading of YES) or Airway Plan A, B or C then Airway Plan is (2) NOT COMPLETED.
+**[E] Floorplan 1: Airway Plan Completed - floorplan labelling**
+- the floorplan displays live data (current state) on a bed by bed basis and is updated as new data is available
+1. If 'Airway Plan Completed'; design = green filled bed
+2. If 'Airway Plan Missing' (not completed / partially complted); design = white filled bed with red hashed outline
+3. If 'Airway Plan For Review'; design = orange filled bed
+4. If 'Airway Plan Update Required'; design = red filled bed
+5. If bed is empty; design = white filled bed with dark grey outline
 
-Numerator = sum of patients achieving (1) COMPLETED response
-
-Denominator = total number of current patients (occupied beds)
-
-Calculation: (numerator / denominator)
-
-
-*(NOTE: For second version of metric)*
-If a patient has a new airway inserted or removed, the Airway Plan will switch to (2) NOT COMPLETED until any of the documentation specified for COMPLETED is redone. 
-
-
-**Floorplan labelling: Patients in Critical Care: Airway Plan Completed** 
-
-The floorplan displays live data (current state) on a bed by bed basis and is updated as new data is available (outcome is binary and there is no option for 'missing data')
-
-If 'airway plan completed'; design = green filled bed
-
-If 'airway plan not completed'; design = red filled bed
-
-If 'airway plan completed but >7 days old'; design - orange filled bed
-
-If bed is empty; design = white filled bed with dark grey outline
+**[F] Floorplan 2: Airway: Type / Turning Plan / DART Call - floorplan labelling**
+- the floorplan displays live data (current state) on a bed by bed basis and is updated as new data is available
+1. If 'Airway Plan Completed'; design = green filled bed
+2. If 'Airway Plan Missing' (not completed / partially complted); design = white filled bed with red hashed outline
+3. If 'Airway Plan For Review'; design = orange filled bed
+4. If 'Airway Plan Update Required'; design = red filled bed
+5. If bed is empty; design = white filled bed with dark grey outline
 
 Secondary "airway managment" labelling
 
