@@ -118,11 +118,27 @@ Feeds into (i) front tile (live data), (ii) floorplan and (iii) 'airway plan com
 - Endotracheal tube - designate as entotracheal
 - Tracheostomy - designate as tracheostomy
 - All other data - discard
-<br>
 - determine whether any of the current inpatients have any of the following three airway types
-  1. entotracheal (from ID 24499 and ID 3040109305) 
+  1. entotracheal (from Airway Flowsheet ID 24499 and O2 delivery device ID 3040109305), use data with most recent _dt stamp, if data with the same _dt then use data from O2 delivery device (3040109305)
+  2. tracheostomy (from Airway Flowsheet ID 24499 and O2 delivery device ID 3040109305), use data with most recent _dt stamp, if data with the same _dt then use data from O2 delivery device (3040109305)
+  3. laryngectomy (from Airway Flowsheet ID 24499), use data with most recent _dt stamp
 
-**[E] Floorplan 1: Airway Plan Completed - floorplan labelling**
+**[F] DART Call**
+- not represented on the front tile, but feeds into the floorplan 2
+- for each of the four ICUs, for each patient, identify whether the DART option has been documented in the Emergency Teams tab [ICU AIRWAY PLAN TRACHE CALL 24504] of the ICU Airway Plan, retain _dt stamp, process the following:
+- DART = YES (will feed into floorplan 2)
+- DART = NO
+
+**[G] Airway Turning Plan**
+- not represented on the front tile, but feeds into the floorplan 2
+- for each of the four ICUs, for each patient, identify whether the Doctor Required option has been documented in the Turning Plan tab [TURNING PLAN DOC REQ 24508] of the ICU Turning Plan, retain _dt stamp, process the following:
+- Doctor Required = YES (will feed into floorplan 2)
+- Doctor Required = NO
+- for each of the four ICUs, for each patient, identify whether the Senior Nurse Required option has been documented in the Turning Plan tab [TURNING PLAN NURSE REQ 24509] of the ICU Turning Plan, retain _dt stamp, process the following:
+- Senior Nurse Required = YES (will feed into floorplan 2)
+- Senior Nurse Required = NO
+
+**[H] Floorplan 1: Airway Plan Completed - floorplan labelling**
 - the floorplan displays live data (current state) on a bed by bed basis and is updated as new data is available
 1. If 'Airway Plan Completed'; design = green filled bed
 2. If 'Airway Plan Missing' (not completed / partially complted); design = white filled bed with red hashed outline
@@ -130,29 +146,16 @@ Feeds into (i) front tile (live data), (ii) floorplan and (iii) 'airway plan com
 4. If 'Airway Plan Update Required'; design = red filled bed
 5. If bed is empty; design = white filled bed with dark grey outline
 
-**[F] Floorplan 2: Airway: Type / Turning Plan / DART Call - floorplan labelling**
+**[I] Floorplan 2: Airway: Type / Turning Plan / DART Call - floorplan labelling**
 - the floorplan displays live data (current state) on a bed by bed basis and is updated as new data is available
-1. If 'Airway Plan Completed'; design = green filled bed
-2. If 'Airway Plan Missing' (not completed / partially complted); design = white filled bed with red hashed outline
-3. If 'Airway Plan For Review'; design = orange filled bed
-4. If 'Airway Plan Update Required'; design = red filled bed
-5. If bed is empty; design = white filled bed with dark grey outline
+1. If bed is empty; design = white filled bed with dark grey outline
+2. If bed is occupied; design = light blue filled bed with dark grey outline
+3. If airway type is entotracheal, tracheostomy or laryngectomy then apply capital letter icon to bed space; 'E', 'T' or 'L' respectively
+4. If DART = YES; design = DART icon to bedspace
+5. If Doctor Required = YES; design = red hashed outline ??
+6. If Senior Nurse Required = YES; design = medium blue filled bed ??
 
-Secondary "airway managment" labelling
-
-If a patient is labelled as doctor led turn; an icon "Dr" will be present on bed 
-If a patient is labelled as senior nurse led turn; an icon "SN" will be present on bed.  *(However, if a patient is also labelled as doctor led turn, the label will be doctor led turn as primary label i.e. a reading of doctor led turn overides the label of senior led turn)*
-If a patient has neither doctor led turn or senior led turn label *or DART label*, the bed space will not have an secondary label.
-
-*(NOTE: For second version of metric - when flowsheet for "emergency teams" become available on EMAP)*
-If a patient is labelled as DART: an icon spelling DART will be present on bed.
-
----
-
-**[C] Future floorplan labelling: Airway Present**
-
-
-
+____
 ## SPC CHART
 
 
