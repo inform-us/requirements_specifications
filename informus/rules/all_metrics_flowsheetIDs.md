@@ -6,7 +6,7 @@ Query ran: 2024/06/10
 - `is_real_time` ✅ shows whether real-time data is available in EMAP. Once the flowsheet is activated in `star` we can ask the EMAP team to activate `is_real_time` for that flowsheet.
 - An ❌ in `has_visit_observation` means we cannot request this flowsheet to be activated in EMAP. So we will have to explore `caboodle` to see if there are any alternative flowsheets that we might be able to use.
 
-| Tile | Metric | Flowsheet ID | `star.has_visit_observation` is `True` | `star.is_real_time` is `True`  | frequency of reporting | Found in `star.visit_observation_type` | EPIC ID | Status |
+| Tile | Metric | Flowsheet ID | `star.has_visit_observation` is `True` | `star.is_real_time` is `True`  | frequency of reporting | Found in `star.visit_observation_type` | Notes | Status |
 |-|-|-|-|-|-|-|-|-|
 | CAM-ICU | Overall CAM-ICU | 3040104650 | ✅ | ✅ | Once between 0800-1959 and once between 2000-0759 | ✅ | ? | complete (flowsheet is in EMAP) |
 | | | | | | | | | |
@@ -16,17 +16,17 @@ Query ran: 2024/06/10
 | Epidural | Assessment of Motor Block Rt leg | 30415250 | ✅ | ✅ | 2-hourly between 0800-1959, 4-hourly between 2000-0759 | ✅ | ? | complete (flowsheet is in EMAP) |
 | Epidural | LDA line status simple | 3040102506 | ✅ | ✅ |  | ✅ | ? | complete (flowsheet is in EMAP) |
 | | | | | | | | | |
-| Epidural drugs | PCEA theatres bupivicaine 0.1% with fentanyl 2mcg/ml epidural infusion | 28222 | ❌ | ❌ |  | ❌ | 408107894 | not yet requested |
-| Epidural drugs | bupivicaine 0.1% epidural infusion | 7001026 | ❌ | ❌ | hourly | ❌ | 191107 | not yet requested |
-| Epidural drugs | bupivicaine 0.1% with fentanyl 2mcg/ml epidural infusion | ? | ❌ | ❌ | hourly | ❌ | 30863 | not yet requested |
-| Epidural drugs | bupivicaine 0.1% with fentanyl 2mcg/ml PIEB epidural infusion | 31429 | ❌ | ❌ | hourly | ❌ | 40830864 | not yet requested |
-| Epidural drugs | bupivicaine 0.1% with fentanyl 2mcg/ml PCEA epidural infusion | ? | ❌ | ❌ | hourly | ❌ | 40830863 | not yet requested |
-| Epidural drugs | Bupivacane 0.1% with fentanyl 2mcg/ml epidural injection (EGA only) 20mls | ? | ❌ | ❌ | hourly | ❌ | 408124007 | not yet requested |
-| Epidural drugs | levobupivicaine 0.125% wtih fentanyl  2mch/ml epidural infusion | ? | ❌ | ❌ | hourly | ❌ | 188047 | not yet requested |
-| Epidural drugs | Levobupivacaine 0.1% with fentanyl 2 mcg/ml  PCEA epidural infusion | 48330 | ❌ | ❌ | hourly | ❌ | 408133001 | not yet requested |
-| Epidural drugs | levobupivicaine 0.125% epidural infusion (100ml) | 7001026 | ❌ | ❌ | hourly | ❌ | 181761 | not yet requested |
-| Epidural drugs | levobupivicaine 0.125% epidural infusion (200ml) | ? | ❌ | ❌ | hourly | ❌ | 181762 | not yet requested |
-| Epidural drugs | PCEA theatres bupivicaine 0.1% epidural infusion | ? | ❌ | ❌ | hourly | ❌ | 408107895 | not yet requested |
+| Epidural drugs | PCEA theatres bupivicaine 0.1% with fentanyl 2mcg/ml epidural infusion | 28222 | ❌ | ❌ |  | ❌ | ? | not yet requested |
+| Epidural drugs | bupivicaine 0.1% epidural infusion | 7001026 | ❌ | ❌ | hourly | ❌ | ? | not yet requested |
+| Epidural drugs | bupivicaine 0.1% with fentanyl 2mcg/ml epidural infusion | ? | ❌ | ❌ | hourly | ❌ | 30863 is the drug code | not yet requested |
+| Epidural drugs | bupivicaine 0.1% with fentanyl 2mcg/ml PIEB epidural infusion | 31429 | ❌ | ❌ | hourly | ❌ | ? | not yet requested |
+| Epidural drugs | bupivicaine 0.1% with fentanyl 2mcg/ml PCEA epidural infusion | ? | ❌ | ❌ | hourly | ❌ | 40830863 is the drug code | not yet requested |
+| Epidural drugs | Bupivacane 0.1% with fentanyl 2mcg/ml epidural injection (EGA only) 20mls | ? | ❌ | ❌ | hourly | ❌ | 408124007 (not sure what this code is) | not yet requested |
+| Epidural drugs | levobupivicaine 0.125% wtih fentanyl  2mch/ml epidural infusion | ? | ❌ | ❌ | hourly | ❌ | 188047 is the drug code | not yet requested |
+| Epidural drugs | Levobupivacaine 0.1% with fentanyl 2 mcg/ml  PCEA epidural infusion | 48330 | ❌ | ❌ | hourly | ❌ | ? | not yet requested |
+| Epidural drugs | levobupivicaine 0.125% epidural infusion (100ml) | 7001026 | ❌ | ❌ | hourly | ❌ | ? | not yet requested |
+| Epidural drugs | levobupivicaine 0.125% epidural infusion (200ml) | ? | ❌ | ❌ | hourly | ❌ | 181762 is the drug code | not yet requested |
+| Epidural drugs | PCEA theatres bupivicaine 0.1% epidural infusion | ? | ❌ | ❌ | hourly | ❌ | 408107895 is the drug code | not yet requested |
 | Epidural drugs | R UCLH PIEB BUPIVACAINE (0.125%) / FENTANYL (2 MCG/ML) - VOLUME INFUSED, Volume Infused (mL) Bupivacaine (0.125%) / Fentanyl (2 mcg/mL) | 47779 (Harry said there is no data avilable for this, so we can't use it) | ❌ | ❌ | hourly | ❌ | ? | not yet requested |
 | Epidural drugs | R UCLH PCEA BUPIVACAINE (0.125%) / FENTANYL (2 MCG/ML) - CUMULATIVE INTAKE, Volume Infused (mL) Bupivacaine (0.125%)/Fentanyl (2 mcg /mL) | 47756 | ❌ | ❌ |  | ❌ | ? | not yet requested |
 | | | | | | | | | |
