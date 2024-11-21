@@ -92,7 +92,7 @@ This also holds true for shorter trips in and out of the unit. For example, let'
 
 Equally, we must ensure that any data 'gaps' in the last 24 hours (due to the patient being outside the unit, in another location in the hospital), don't negatively impact the scores on each tile. There is no data for these patients on T03 in these gaps, so they shouldn't contribute to the overall score.
 
-Tiles should still show data if there are no patients currently on the unit (as long as there have been some moved / discharged patients present in the last 24 hours). Clicking on a tile should show an empty floorplan in this scenario.
+Tiles should still show data if there are no patients currently on the unit (as long as there have been some moved / discharged patients present in the last 24 hours). Clicking on a tile for any metric should show an empty floorplan in this scenario (i.e. every bed shows an `empty` status).
 
 If there are no current patients and there haven't been any in the last 24 hours, then tiles should display text that says 'no data available'.
 
