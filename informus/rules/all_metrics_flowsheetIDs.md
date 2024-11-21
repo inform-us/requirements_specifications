@@ -24,7 +24,6 @@ Query ran: 2024/06/10
 | Epidural drugs | Bupivacane 0.1% with fentanyl 2mcg/ml epidural injection (EGA only) 20mls | ? | ❌ | ❌ | hourly | ❌ | 408124007 (not sure what this code is) | not yet requested |
 | Epidural drugs | levobupivicaine 0.125% wtih fentanyl  2mch/ml epidural infusion | ? | ❌ | ❌ | hourly | ❌ | 188047 is the drug code | not yet requested |
 | Epidural drugs | Volume Infused (mL) Levobupivacaine (0.1%)/Fentanyl (2 mcg /mL) | 48330 | ❌ | ❌ | hourly | ✅ |  | not yet requested |
-| Epidural drugs | levobupivicaine 0.125% epidural infusion (100ml) | 7001026 | ❌ | ❌ | hourly | ✅ |  | not yet requested |
 | Epidural drugs | levobupivicaine 0.125% epidural infusion (200ml) | ? | ❌ | ❌ | hourly | ❌ | 181762 is the drug code | not yet requested |
 | Epidural drugs | PCEA theatres bupivicaine 0.1% epidural infusion | ? | ❌ | ❌ | hourly | ❌ | 408107895 is the drug code | not yet requested |
 | Epidural drugs | Volume Infused (mL) Bupivacaine (0.125%) / Fentanyl (2 mcg/mL) | 47779 (Harry said there is no data avilable for this, so we can't use it) | ❌ | ❌ | hourly | ✅ |  | not yet requested |
