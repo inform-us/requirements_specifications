@@ -38,9 +38,9 @@ Query ran: 2024/06/10
 | Airway | Has Generic Airway Plan | 24498 | ✅ | ✅ | | ✅ |  | complete (flowsheet is in EMAP) |
 | Airway | Doctor Required | 24508 | ✅ | ✅ | | ✅ |  | complete (flowsheet is in EMAP) |
 | Airway | Senior Nurse Required | 24509 | ✅ | ✅ | | ✅ |  | complete (flowsheet is in EMAP) |
-| Airway | Emergency Teams | 24504 | ? | ? | | ? |  | not yet requested |
-| Airway | ETT Properties | 3040102626 | ? | ? | | ? |  | not yet requested |
-| Airway | Surgical Airway Properties | 700004 | ? | ? | | ? |  | not yet requested |
+| Airway | Emergency Teams | 24504 | ❌ | ❌ | | ✅ |  | not yet requested |
+| Airway | ETT Properties | 3040102626 | ❌ | ❌ | | ✅ |  | not yet requested |
+| Airway | Surgical Airway Properties | 700004 | ❌ | ❌ | | ✅ |  | not yet requested |
 | | | | | | | | | |
 | DrEaMing | Fluid intake | 45429 | ✅ | ✅ | real-time | ✅ |  | complete (flowsheet is in EMAP) |
 | DrEaMing | Diet Intake - *type of diet patient is on* | 6482 | ✅ | ✅ | real-time | ✅ |  | complete (flowsheet is in EMAP) |
