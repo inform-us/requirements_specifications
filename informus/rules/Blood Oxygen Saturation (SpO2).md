@@ -82,6 +82,6 @@ Operational definition = of the patients who are on oxygen therapy and have had 
 9. ABOVE CHART: generate percentage calendar day designation ‘above’ SpO2 target (i.e.add up all 'above' in that week and divide by 'above'+ 'In range'+ 'below' in that week). Present as percentage
 10. BELOW CHART: generate percentage calendar day designation ‘below’ SpO2 target (i.e.add up all 'below' in that week and divide by 'above'+ 'In range'+ 'below' in that week). Present as percentage
 11. IN RANGE CHART: generate percentage calendar day designation ‘in range’ SpO2 target(i.e.add up all 'in range' in that week and divide by 'above'+ 'In range'+ 'below' int that week). Present as percentage
-12. Plot on daily chart
+12. Aggregate the daily percentages into a -weekly mean percentage_ for each unit 
 
  
