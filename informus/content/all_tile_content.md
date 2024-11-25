@@ -58,6 +58,11 @@ Number of currently occupied beds / Total number of beds per unit
 
 ![image](https://github.com/user-attachments/assets/7401b17b-07a2-4caf-b065-e184d00c9c6b)
 
+**10) All patients Airway Plan**
+
+<img width="193" alt="image" src="https://github.com/user-attachments/assets/936584b6-d9fb-4b5b-a758-5220e074b28f">
+
+
 
 
 ---
@@ -130,6 +135,8 @@ POM patients on T06 and WMS
 DrEaMing 
 
 Unit performance data
+
+**
 
 
 
