@@ -109,9 +109,10 @@ FIO2_% 301550?
 - worked example: <br> (a) a mesurement taken at 06:10 would have to be linked with an earlier measurement during the night shift to calculate an interval and would be classified as - NIGHT (before 06:14) <br> (b) a mesurement taken at 06:30 would have to be linked with an earlier measurement during the day or night shift to calculate an interval and would be classified as - DAY (after 06:14) <br> (c) a mesurement taken at 22:10 would have to be linked with an earlier measurement during the day shift to calculate an interval and would be classified as - DAY (before 22:14) <br> (d) a mesurement taken at 23:00 would have to be linked with an earlier measurement during the night or day shift to calculate an interval and would be classified as - NIGHT (after 22:14) <br>
 - once classified into DAY or NIGHT deteremine numerator and denominator for each and calculate mean
 - DAY Numerator = sum of the minutes and hours between all intervals recorded between (06:15-22:14) that fall into the current 24 hour rolling window
-- DAY Denominator = number of all time interval measurements that fall into the current 24 hour rolling window
+- DAY Denominator = number of day time "interval" measurements that fall into the current 24 hour rolling window
 - NIGHT Numerator = sum of the minutes and hours between all intervals recorded between (22:15-06:14) that fall into the current 24 hour rolling window
-- NIGHT Denominator = number of all time interval measurements that fall into the current 24 hour rolling window
+- NIGHT Denominator = number of night time "interval" measurements that fall into the current 24 hour rolling window
+- (*Denominator is the number of time interval and not number of measurements)
 - calculate respective DAY and NIGHT mean measurement interval and display as hh:mm on front tile
 
 ## Classification Rules: 
