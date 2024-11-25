@@ -9,7 +9,7 @@ SPC Chart Build|yes|Yes|Yes|Check mean and process limits recalculation for new 
 MAP (Mean Arterial Blood Pressure)|yes||||
 Pain|yes||||
 Sedation RASS|yes||||
-SpO2|yes||||
+SpO2|yes|yes|||
 Tidal Volume|yes||||
 POM DReaMing|yes|yes||SPC chart rules and build|
 Validity|||||
