@@ -166,7 +166,10 @@ Hover over 'In Bed' to pop up 'Reason's for not moblising' text.
 
 - ![image](https://github.com/user-attachments/assets/7253fd06-78c0-4467-bbfc-7801125c3309)
 
+## Tile: Airway Plan Completed
 
+
+<img width="498" alt="image" src="https://github.com/user-attachments/assets/3fe477a2-847d-4101-be82-046b2080a445">
 
 
 
