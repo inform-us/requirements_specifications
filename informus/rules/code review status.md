@@ -11,5 +11,6 @@ Pain|yes||||
 Sedation RASS|yes||||
 SpO2|yes|yes|||
 Tidal Volume|yes||||
-POM DReaMing|yes|yes||SPC chart rules and build|
+POM DReaMing|yes|yes|yes|SPC chart rules and build|
+Missing discharged patient rules|yes|yes||||
 Validity|||||
