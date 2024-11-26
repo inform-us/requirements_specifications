@@ -26,7 +26,7 @@ Query ran: 2024/06/10
 | Epidural drugs | Volume Infused (mL) Levobupivacaine (0.1%)/Fentanyl (2 mcg /mL) | 48330 | ❌ | ❌ | hourly | ✅ |  | not yet requested |
 | Epidural drugs | levobupivicaine 0.125% epidural infusion (200ml) | ? | ❌ | ❌ | hourly | ❌ | 181762 is the drug code | not yet requested |
 | Epidural drugs | PCEA theatres bupivicaine 0.1% epidural infusion | ? | ❌ | ❌ | hourly | ❌ | 408107895 is the drug code | not yet requested |
-| Epidural drugs | Volume Infused (mL) Bupivacaine (0.125%) / Fentanyl (2 mcg/mL) | 47779 (Harry said there is no data avilable for this, so we can't use it) | ❌ | ❌ | hourly | ✅ | `has_visit_observation` was `False` in star.staging indicating a lack of data. We need to check Caboodle if any data is coming through | not yet requested |
+| Epidural drugs | Volume Infused (mL) Bupivacaine (0.125%) / Fentanyl (2 mcg/mL) | 47779 (Harry said there is no data avilable for this, so we can't use it) | ❌ | ❌ | hourly | ✅ | `has_visit_observation` was `False` in star_staging indicating a lack of data. We need to check Caboodle if any data is coming through | not yet requested |
 | Epidural drugs | Volume Infused (mL) Bupivacaine (0.125%)/Fentanyl (2 mcg /mL) | 47756 | ❌ | ❌ |  | ✅ |  | not yet requested |
 | | | | | | | | | |
 | Airway | Airway plan | 24499 | ✅ | ✅ | once per admission | ✅ |  | complete (flowsheet is in EMAP) |
@@ -39,8 +39,8 @@ Query ran: 2024/06/10
 | Airway | Doctor Required | 24508 | ✅ | ✅ | | ✅ |  | complete (flowsheet is in EMAP) |
 | Airway | Senior Nurse Required | 24509 | ✅ | ✅ | | ✅ |  | complete (flowsheet is in EMAP) |
 | Airway | Emergency Teams | 24504 | ❌ | ❌ | | ✅ |  | request submitted to EMAP team on 26.11.2024 |
-| Airway | ETT Properties | 3040102626 | ❌ | ❌ | | ✅ | `has_visit_observation` was `False` in star.staging indicating a lack of data. We need to check Caboodle if any data is coming through | not yet requested |
-| Airway | Surgical Airway Properties | 700004 | ❌ | ❌ | | ✅ | `has_visit_observation` was `False` in star.staging indicating a lack of data. We need to check Caboodle if any data is coming through | not yet requested |
+| Airway | ETT Properties | 3040102626 | ❌ | ❌ | | ✅ | `has_visit_observation` was `False` in star_staging indicating a lack of data. We need to check Caboodle if any data is coming through | not yet requested |
+| Airway | Surgical Airway Properties | 700004 | ❌ | ❌ | | ✅ | `has_visit_observation` was `False` in star_staging indicating a lack of data. We need to check Caboodle if any data is coming through | not yet requested |
 | | | | | | | | | |
 | DrEaMing | Fluid intake | 45429 | ✅ | ✅ | real-time | ✅ |  | complete (flowsheet is in EMAP) |
 | DrEaMing | Diet Intake - *type of diet patient is on* | 6482 | ✅ | ✅ | real-time | ✅ |  | complete (flowsheet is in EMAP) |
