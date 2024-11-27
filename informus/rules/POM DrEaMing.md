@@ -182,15 +182,15 @@ EATING AND DRINKING FLOORPLAN
 
 Secondary eating and drinking labeling 
 
-9.  in addition to the above labeling, if the latest 'fluid intake' reading is 'IV ongoing' then also label patient as 'IV ongoing'. Note this means that some patients who have 'IV ongoing' will have two labels, a primary label as per steps 1-8 above and a potential secondary label for example if the patient is on an IV and also drinking fluids. We need to denote this somehow on the floorplan as well. Bed is filled with the primary label as above with an outline denoting IV- blue outline? 
-10. Note if only 'IV ongoing' is documented and there is nothing documented in the diet intake flowsheet, IV ongoing becomes the primary and only classification, label as 'IV fluids only'
+9.  in addition to the above labeling, if the latest 'fluid intake' reading is 'IV ongoing' then also label patient as 'IV ongoing'. Note this means that some patients who have 'IV ongoing' will have two labels, a primary label as per steps 1-8 above and a potential secondary label for example if the patient is on an IV and also drinking fluids. We need to denote this somehow on the floorplan as well. Bed is filled with the primary label as above with a blue outline denoting IV with 'IV' label.
+10. Note if only 'IV ongoing' is documented and there is nothing documented in the diet intake flowsheet, IV ongoing becomes the primary and only classification, label as 'IV fluids only'. Bed is white with blue outline and 'IV' label. 
 11.   if none of the rules matched then label the patient as 'fallthrough' 
    
   *n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in ? button.*
 
 MOBILISATION ACHIEVED FLOORPLAN 
 
-1. if the latest 'mobilisation achieved' reading is 0, 1, 2 or 3 then label patient as 'in bed'
+1. if the latest 'mobilisation achieved' reading is 0, 1, 2 or 3 then label patient as 'in bed'. Bed is to be red filled.
    
    1b. for patients labelled as 'in bed', hover over box to open on bed 'reasons for not mobilising' flowsheet and display drop down options.
    |Drop down options|
@@ -217,10 +217,10 @@ MOBILISATION ACHIEVED FLOORPLAN
    |Unstable CVS|
    |Other|
    
-2. if the latest 'mobilisation achieved' reading is 4, 5 or 6 then label patient as 'actively transferring'
-3.  if the latest 'mobilisation achieved' reading is 7 or 8, then label patient as 'walking with assistance'
-4.   if the latest 'mobilisation achieved' reading is 9  or 10, then  label patient as 'walking independently'
-5. If 'mobilisation achieved' has not been completed since 00:00 today, then label patient as 'missing'
+2. if the latest 'mobilisation achieved' reading is 4, 5 or 6 then label patient as 'actively transferring'. Bed it to be blue filled.
+3.  if the latest 'mobilisation achieved' reading is 7 or 8, then label patient as 'walking with assistance'. Bed is to be amber filled.
+4.   if the latest 'mobilisation achieved' reading is 9  or 10, then  label patient as 'walking independently'. Bed is to be green filled.
+5. If 'mobilisation achieved' has not been completed since 00:00 today, then label patient as 'missing'. Bed has a dashed red outline.
 6. If none of the rules matched then label the patient as 'fallthrough'
 
 DOCUMENTATION COMPLIANCE FLOORPLAN
