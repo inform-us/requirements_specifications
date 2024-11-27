@@ -1,49 +1,10 @@
 # Moved and discharged patients
 
-The `recent_patients.sql` currently returns all patients including `current` , `moved` , and `discharged` patients all in the same query. Then we have further python logic to parse them all out. The discharged patients are not currently saved to mongodb, but we need to implement this so that they can be picked up on the frontend. There might also be some additional edge cases that we haven’t yet covered.
+## Patient flow
 
-## Moved patients explanation
+Patients may move between multiple locations as part of one hospital visit.
 
-- These are patients who have a date value in `location_visit_discharge_dt` but DO NOT have a value in `hospital_visit_discharge_dt`
-- Moved patients fall under one of the following circumstances:
-    - Patients who were in a bed at one point in time, but have now moved to a different bed on the same unit
-        - Potentially produces a duplicated data row returned from our patients query (i.e. multiple rows of the same bed). This is because the data contains the moved patient who used to be in that bed as well as the new patient who is now currently occupying that same bed.
-        - One of the rows will have a date value in the `location_visit_discharge_dt` column, the other row will have `null` for that column
-    - Patients who are readmitted to the same bed, for instance if they were temporarily moved for surgery and then came back to the same bed
-        - Produces a duplicated data row returned from our patients query
-        - One of the rows will have a date value in the `location_visit_discharge_dt` column, the other row will have `null` for that column
-    - Patients who are currently away for surgery (or possibly moved to a different unit)
-        - Produces one data row in our patients query, because the patient hasn’t come back yet (i.e. there is no duplicated row yet)
-        - But they might come back at some point, at which point we would have a duplicate data row returned from our patients query
-
-## Discharged patients explanation
-
-- These patients have a date value in both `location_visit_discharge_dt` AND `hospital_visit_discharge_dt`
-- Discharged patients fall under the following circumstance:
-    - Patients who have been completely discharged from the hospital
-        - They won’t have a duplicate row returned from our patients query because they are now discharged from the hospital and are not currently occupying a bed
-
-## How to handle moved patients
-
-- Patients who were in a bed at one point in time, but have now moved to a different bed on the same unit
-    - Treat the duplicated patient row that does not have a `location_visit_discharge_dt` as the valid data point (because this is where the patient was moved to),
-    - Replace the `admission_dt` of the chosen valid data point with the earlier `admission_dt` of the old duplicated data point. We do this as we want to retain their original `admission_dt`
-    - Discard the old and no longer needed duplicated data point
-    - The remaining valid data point should be considered as a `current` patient and included in both our `unit_wide` statistics AND occupy a bed on the frontend
-- Patients who are readmitted to the same bed, for instance if they were temporarily moved for surgery and then came back to the same bed
-    - Same solution as above
-- Patients who are transferred out of ICU (either to a non-ICU ward, or another hospital, or gone home)
-    - These patients should be included in our `unit_wide` calculations, but not as part of our current patients list
-    - They should not appear as an occupied bed on the frontend
-
-## How to handle discharged patients
-
-- They should be included in our `unit_wide` statistics,
-- They should not be included in our list of `current` patients and should not appear as an occupied bed on the frontend
-
-PATIENT FLOW
-
-Admission:
+First, they are admitted to one of the following locations:
 - emergency department
 - ward
 - theatres / radiology / procedure suite
@@ -51,15 +12,106 @@ Admission:
 - an external hospital
 - others
 
-Moved - stay in same unit:
-- moved to different bedspace
-- moved to for surgery/procedure/imaging and comes back to same bed space
-- moved to for surgery/procedure/imaging and comes back to different bed space
+Then they may be moved (staying in same unit), potentially multiple times:
+- moved to a different bed in the same unit
+- moved for surgery/procedure/imaging and comes back to the same bed
+- moved for surgery/procedure/imaging and comes back to a different bed
 
-Moved - away from this unit:
+Or moved (away from this unit), again potentially multiple times:
 - another ICU at UCH
 - another ICU elsewhere
 - ward
 - home
 - died
 - another hospital
+
+## Representing patient flow in EMAP / UDS
+
+Patient movements are captured in three different tables in `uds.star`: `hospital_visit`, `location_visit` and `location`. 
+- `hospital_visit`: each row represents an entire hospital stay for a single patient. This may involve moving between multiple different locations within the hospital.
+  
+- `location_visit`: each row represents a stay at a certain hospital location (e.g. a specific bed in a specific unit) for a single patient. The location is given by a `location_id` which corresponds to a row in the `location` table. 
+  
+- `location`: lists every possible location inside the hospital, along with its hl7 string e.g. `T03^T03 BY01^BY01-11`.
+
+Patient movements are represented as follows:
+
+### Initial admission to hospital:
+- Creates a `hospital_visit` row with a specific admission datetime + a discharge datetime of `NULL`.
+  
+- Creates a `location_visit` row with a specific admission datetime + a discharge datetime of `NULL`. Its `location_id` corresponds to the bed the patient is admitted to.
+
+### Moved to another bed in the unit:
+- The discharge datetime of their current `location_visit` row is set to the movement time.
+  
+- A new `location_visit` row is created with an admission datetime of the movement time + a discharge datetime of `NULL`. Its `location_id` matches the new bed location.
+  
+- If the patient is moved multiple times within the same unit, then they will have one `location_visit` row for each bed location they have occupied.
+
+### Moved away from the unit (to another ward / operating theatre etc.):
+- Same as above (for moved to another bed in the unit), except the `location_id` will now correspond to a location outside of the unit.
+  
+- Each time they are moved out of the unit, or to any other location in the hospital, this will generate a new `location_visit` row for each location they have occupied.
+
+- If they return to the unit, this will be handled in the same way, by creation of a new `location_visit` row with a location id corresponding to a bed in the unit.
+
+### Discharged from hospital:
+- The discharge datetime of their `hospital_visit` row is set to the discharge time.
+- The discharge datetime of their current `location_visit` row is set to the discharge time.
+
+### Died in hospital:
+- The `date_of_death` and `datetime_of_death` in `uds.star` `core_demographic` will be set for this patient.
+  
+- In most cases, this should also set their `hospital_visit` discharge datetime and `location_visit` discharge datetime. In rare cases, the `hospital_visit` discharge datetime and/or `location_visit` discharge datetime may remain as `NULL`.
+
+## Handling moved / discharged patients
+
+### T03 'wait' bed
+
+On T03 there is a 'wait' bed denoted by `T03^T03 WAITING^WAIT`. This 'wait' bed isn't used consistently, so it is unclear what it represents exactly. 
+
+All data from the 'wait' bed should be excluded from all informus data.
+
+### 'ghost' patients
+
+'ghost' patients appear as rows with a `NULL` `hospital_visit` admission datetime. All data from 'ghost' patients (i.e. hospital visits with a `NULL` admission) should be excluded from all informus data.
+
+### Tiles (i.e. `unit_wide` data)
+
+All tiles should include data from any patient that has been on the unit in the last 24 hours including: 
+
+- patients that have since been moved to another location in the hospital
+  
+- patients that have since been discharged from the hospital and/or died
+  
+The exceptions to this are: `bed occupancy` and `all targets set` - these tiles should only use data from patients currently present on the unit.
+
+For those that include discharged/moved patients, they should use all data produced by patients _on the current unit_ in the last 24 hours. For example, let's consider the tiles on the T03 dashboard. Let's imagine a patient has been on T03 for multiple days in a specific bed, before being moved 12 hours ago to another ward. In this scenario we would use all data generated by the patient on T03 in the last 24 hours (so from 12-24 hours ago), but ignore any data generated while they are off the unit (0-12 hours ago). No data generated outside of the unit should be included in any tile calculations.
+
+This also holds true for shorter trips in and out of the unit. For example, let's imagine a patient has been on T03 for multiple days in a specific bed, before being moved 12 hours ago to another location in the hospital (could be another ward, or the operating theatre, imaging etc.), before being transferred back to a bed on T03 10 hours ago (this could be the same bed as before or a different one). In this scenario we would use all data generated by the patient on T03 in the last 24 hours (so 0-10 hours ago, as well as 12-24 hours ago), but ignore any data generated during the 2 hours they were off the unit.
+
+Equally, we must ensure that any data 'gaps' in the last 24 hours (due to the patient being outside the unit, in another location in the hospital), don't negatively impact the scores on each tile. There is no data for these patients on T03 in these gaps, so they shouldn't contribute to the overall score.
+
+Tiles should still show data if there are no patients currently on the unit (as long as there have been some moved / discharged patients present in the last 24 hours). Clicking on a tile for any metric should show an empty floorplan in this scenario (i.e. every bed shows an `empty` status).
+
+If there are no current patients and there haven't been any in the last 24 hours, then no tiles should be displayed and instead a message should be shown that reads 'There have been no patients on this unit in the last 24 hours'.
+
+The time window is always exactly 24 hours (even over a daylight savings transition).
+
+### Floorplan (i.e. `latest` data)
+
+The floorplan (i.e. the view with beds as individual coloured rectangles), should only include data for patients currently on the unit (i.e. patients that have since been discharged or moved to another location in the hospital should be excluded). 
+
+As above, we still need to ensure that we only use data generated within the current unit, excluding any that may have been generated while the patient was in another location in the hospital. Bear in mind that current patients may have previously been moved in/out of the unit, as well as within the unit within our time period of interest. 
+
+### Metric charts (i.e. `24hr` / `72hr` data)
+
+The metric charts (shown when clicking on a bed in the floorplan), should only include data for patients currently on the unit (i.e. patients that have since been discharged or moved to another location in the hospital should be excluded). 
+
+As above, we still need to ensure that we only use data generated within the current unit, excluding any that may have been generated while the patient was in another location in the hospital. Times when the patient was off the unit will appear as 'missing' data in the chart.
+
+### SPC charts
+
+The SPC charts should include data from all patients that have been on the unit in the relevant time period. As above, we still need to ensure that we only use data generated within the unit, excluding any that may have been generated while patients were in other locations in the hospital. 
+
+As with the tiles, we must ensure that any data 'gaps' (due to patients being outside the unit, in another location in the hospital), don't negatively impact the scores for that week. For example, say a patient was on T03 on Monday, before being transferred to another unit for most of the week and transferred back to T03 for the last hour of Sunday. The fact that most of their data is 'missing' for that week (due to being off the unit) shouldn't negatively impact the overall scores.
