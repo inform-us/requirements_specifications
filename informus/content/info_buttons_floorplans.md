@@ -405,7 +405,21 @@ If none of the above rules match, the bed will appear as dark grey on floorplan
 
 --------
 
+**Page: Clinical dashboard tab: Airway Plan** (DRAFT)
 
+## All patients Airway Plan Completed 
+
+## i button
+
+
+
+## ? button
+
+**Eligibility** 
+
+All patients in critical care
+
+**Classification**
 
 
 
