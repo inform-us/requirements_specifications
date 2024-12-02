@@ -423,16 +423,13 @@ All patients accross all units
 
 **Classification**
 
-All patients should have an ICU Airway Plan documented during an admission to critical care.  
+**MISSING:** There has been no airway plan completed during this admission. 
 
-An ICU airway plan is considered completed when:
+**COMPLETED:** An ICU Airway plan has been completed during this admission. 
 
-Airway row is completed (Natural Airway / Endotracheal Tube / Percutaneous Tracheostomy / Surgical Tracheostomy / Laryngectomy / Other)  AND DAS generic Airway plan is filled in with YES or NO.  If the DAS generic airway plan is filled in with No then Plan A row also needs to be filled in
+**FOR REVIEW:** An ICU Airway plan has been completed during this admission but over 14 days ago.  Because this patient does not have a natural airway and a DAS generic airway plan it is reccomended that the plan is reviewed in order to ensure that it is still appropriate.   
 
-**MISSING:** There is no ICU Airway Plan completed as described above.
-**COMPLETED:** An ICU Airway plan has been completed.
-**FOR REVIEW:** An ICU Airway plan has been completed more than 14 days ago.  (This excludes patients that have a Natural Airway and have DAS Generic Airway Plan) 
-**UPDATE REQUIRED:** Triggered by insertion of new endotracheal tube or tracheostomy
+**UPDATE REQUIRED:** An update to the current airway plan is required as patient has had an new artifical airway inserted.   
 
 
 
