@@ -411,17 +411,28 @@ If none of the above rules match, the bed will appear as dark grey on floorplan
 
 ## i button
 
+Airway managment in critical care can be seen as a routine procedure for critically ill patients. Neverorless, critical care patients are more prone to complications from airway management procedures which may result in worse patient outcomes (such as death, brain damage and prolonged ICU stay).   
 
+Identification of patients with difficult airways enables an individualised airway plan to be formulated. Such a plan includes ensuring that adequately trained personale and appropriate equipment are accessible in an airway emergency.  
 
 ## ? button
 
 **Eligibility** 
 
-All patients in critical care
+All patients accross all units
 
 **Classification**
 
+All patients should have an ICU Airway Plan documented during an admission to critical care.  
 
+An ICU airway plan is considered completed when:
+
+Airway row is completed (Natural Airway / Endotracheal Tube / Percutaneous Tracheostomy / Surgical Tracheostomy / Laryngectomy / Other)  AND DAS generic Airway plan is filled in with YES or NO.  If the DAS generic airway plan is filled in with No then Plan A row also needs to be filled in
+
+**MISSING:** There is no ICU Airway Plan completed as described above.
+**COMPLETED:** An ICU Airway plan has been completed.
+**FOR REVIEW:** An ICU Airway plan has been completed more than 14 days ago.  (This excludes patients that have a Natural Airway and have DAS Generic Airway Plan) 
+**UPDATE REQUIRED:** Triggered by insertion of new endotracheal tube or tracheostomy
 
 
 
