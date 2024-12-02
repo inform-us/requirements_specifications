@@ -147,12 +147,14 @@ Feeds into (i) front tile (live data), (ii) floorplan and (iii) 'airway plan com
 **[I] Floorplan 2: Airway: Type / Turning Plan / DART Call - floorplan labelling**
 - the floorplan displays live data (current state) on a bed by bed basis and is updated as new data is available
 1. If bed is empty; design = white filled bed with dark grey outline
-2. If bed is occupied; design = light blue filled bed with dark grey outline
-3. If airway type is entotracheal, tracheostomy or laryngectomy then apply capital letter icon to bed space; 'E', 'T' or 'L' respectively; 'E' most discrete icon, 'T' obvious icon, 'L' stand out +++ icon - colour, shape, size, I don't mind
-4. If DART = YES; design = DART icon to bedspace
-5. If Doctor Required = YES; design = red hashed outline ??
-6. If Senior Nurse Required = YES; design = medium blue filled bed ??
-7. If Doctor Required = YES and Senior Nurse Required = YES; design medium blue filled bed with red hashed outline
+2. If bed is occupied with a patient who has no artifical airway; design = light blue filled bed with dark grey outline
+3. If airway type is endotracheal; design = amber filled bed with orange outline
+4. If airway type is tracheostomy; design = green filled bed with dark green outline
+5. If airway type is laryngectomy; design = red filled bed with red outline. 
+6. If DART = YES; design = red hashed outline
+7. If Doctor Required = YES; design = D inside appropriately (according to airway type) coloured bed
+8. If Senior Nurse Required = YES; design = N inside appropriately (according to airway type) coloured bed
+   
 
 ____
 ## SPC CHART
