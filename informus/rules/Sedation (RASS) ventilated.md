@@ -175,7 +175,7 @@ These are weekly percentage (p-charts) SPC
 
 Week defined a Monday 00:00 – Sunday 23:59
 
-#Chart 2a - DAY [Assessment Time Interval Chart]#
+## Chart 2a - DAY RASS Assessment Time Interval Chart
 
 DAY for RASS assessment is defined as between the hours of 06:00am and 21:59pm. Note this is not the same as a 'day shift' used in other metrics, which is 08:00am to 19:59pm
 
@@ -189,7 +189,7 @@ hr measurement interval will count as 3 in the adjusted denominator: (iii) 4.01h
 4. Generate percentage of measurement intervals for that week that are 1:15 hours or less: numerator / denominator (adjusted)
 5. Plot on weekly chart
 
-#Chart 2b- NIGHT Assessment Time Interval Chart
+## Chart 2b- NIGHT RASS Assessment Time Interval Chart
 
 NIGHT for RASS assessment is defined as between the hours of 22:00pm and 05:59am. Note this is not the same as a 'night shift' used in other metrics, which is 20:00pm to 07:59am
 
