@@ -175,23 +175,32 @@ These are weekly percentage (p-charts) SPC
 
 Week defined a Monday 00:00 – Sunday 23:59
 
-Chart 2a - DAY [Assessment Time Interval Chart] 
-- Look at RASS assessment measurement intervals between the hours of 06:00 and 21:59 each day 
-- Numerator = count of time intervals that are ≤ 1:15 hours for the DAY category
+#Chart 2a - DAY [Assessment Time Interval Chart]#
+
+DAY for RASS assessment is defined as between the hours of 06:00am and 21:59pm. Note this is not the same as a 'day shift' used in other metrics, which is 08:00am to 19:59pm
+
+1.  Look at RASS assessment measurement intervals between the hours of 06:00 and 21:59 each day
+2.   Numerator = count of time intervals that are ≤ 1:15 (TBC to add leeway?) hours for the DAY category
 - *note SPC denominator adjustment required for excessively long measurement intervals (those that are 2x accepted measurement interval from clinical guideline)*
--Denominator (adjusted) = count all assessment measurement intervals between the hours of 06:00 and 21:59 in that week that are > 2:00 hours and ADD +1 to denominator for each one hour period greater than the permitted 1:00 hour.
-For example: (i) an 2.01hr measurement interval will count as 2 in the adjusted denominator - once for the measurement and once for being an additional 1:00hr over the permitted one hour for this category; (ii) 3.01 
+  3. Denominator (adjusted) = count all assessment measurement intervals between the hours of 06:00 and 21:59 in that week that are > 2:00 hours and ADD +1 to denominator for each one hour period greater than the permitted 1:00 hour.
+
+For example: (i) an 2.01hr measurement (continue to add leeway?) interval will count as 2 in the adjusted denominator - once for the measurement and once for being an additional 1:00hr over the permitted one hour for this category; (ii) 3.01 
 hr measurement interval will count as 3 in the adjusted denominator: (iii) 4.01hr measurement interval will count as 4 in the adjusted denominator etc.....
-Generate percentage of measurement intervals for that week that are 1:15 hours or less: numerator / denominator (adjusted)
-Plot on weekly chart
-Chart 2b- NIGHT Measurement Interval Chart
-Look at RASS assessment measurement intervals between the hours of 22:00 and 05:59 each day 
-Numerator = count of time intervals that are ≤ 4:00 hours for the NIGHT category
-SPC denominator adjustment required for excessively long measurement intervals (those that are 2x accepted measurement interval from clinical guidance)
-Denominator (adjusted) = count all assessment measurement intervals between the hours of 22:00 and 05.59 in that week that are >8:00 hours and ADD +1 to denominator for each four hour period greater than the permitted 4:00 hours
+4. Generate percentage of measurement intervals for that week that are 1:15 hours or less: numerator / denominator (adjusted)
+5. Plot on weekly chart
+
+#Chart 2b- NIGHT Assessment Time Interval Chart
+
+NIGHT for RASS assessment is defined as between the hours of 22:00pm and 05:59am. Note this is not the same as a 'night shift' used in other metrics, which is 20:00pm to 07:59am
+
+1. Look at RASS assessment measurement intervals between the hours of 22:00 and 05:59 each day
+2. Numerator = count of time intervals that are ≤ 4:00 (4:15?)hours for the NIGHT category
+- *SPC denominator adjustment required for excessively long measurement intervals (those that are 2x accepted measurement interval from clinical guidance)*
+3. Denominator (adjusted) = count all assessment measurement intervals between the hours of 22:00 and 05.59 in that week that are >8:00 hours and ADD +1 to denominator for each four hour period greater than the permitted 4:00 hours
+
 For example: (i) an 8:01hr measurement interval will count as 2 in the adjusted denominator - once for the measurement and once for being an additional 4:00hr over the permitted four hours for this category; (ii) 12:01hr measurement interval will count as 3 in the adjusted denominator; (iii) 16:01hr measurement interval will count as 4 in the adjusted denominator etc...
-Generate percentage of measurement intervals for that week that are 4:00 hours or less: numerator / denominator (adjusted)
-Plot on weekly chart
+4. Generate percentage of measurement intervals for that week that are 4:00 hours or less: numerator / denominator (adjusted)
+5. Plot on weekly chart
 
  
 
