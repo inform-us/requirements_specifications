@@ -325,45 +325,42 @@ If a patient’s most recent CAM-ICU score is negative: delirium is not present.
 ---
 **Page: Clinical dashboard tab: All POM patients DrEaMing**
 
-## All POM patients DrEaMing floorplan 
+## All POM patients DrEaMing floorplans 
 
-## i button
+## i button (same i button for all three floorplans)
 
 Ensuring that patients Drink, Eat and Mobilise (DrEaMing) as soon as possible after surgery is important for timely recovery and for reducing post-operative complications such as respiratory infections. 
+For post-operative patients, Drinking, Eating and Moblising should be documented every day in the post-op surgical flowsheets in EPIC. If your EPIC interface does not display the post-op surgical flowsheets, you may need to add them. 
 Patients receiving different types of surgery will have different guidelines concerning the initiation of drinking, eating and mobilisation. Therefore, when viewing and interpreting this floorplan, knowledge of individual patients' recovery pathway is required.
 
-## ? button
+## ? button Eating and Drinking Floorplan
 
 **Eligibility** 
 
-All patients on T06 or WMS
+All post-operative patients on T06 or WMS
 
 **Classification**
 
-Fluid intake, diet intake and mobilisation achieved metrics should be documented once every 24 hours or until the patient's status changes.  
-Fluid intake, diet intake and mobilisation achieved metrics are valid for 24 hours from 00:01 hours each day or until a new entry is made.
-For compliance with documentation to be achieved, a patient must have all three metrics documented within the 24-hour period.
+Fluid and diet intake should be documented once every 24 hours or until the patient's eating and drinking status changes.  
+
+Fluid and diet intake documentation is valid for 24 hours from 00:01 hours each day or until a new entry is made.
+
+This floorplan combines information from the Fluid Intake and Diet Intake post-op surgical flowsheets.
 
 
-------
-## Alternative floor plans for All POM patient DrEaMing
-## ? button
+**Classification**
 
-**Eating and Drinking Floorplan**
+**Eating and Drinking**: The latest diet intake reading is 'normal diet', 'soft diet', 'pureed' or 'nutritional supplements'.
 
-This floorplan combines information from the Fluid Intake and Diet Intake flowsheets.
+**Sips of water**: Patient is having sips and has not had normal diet, soft diet, pureed or nutritional supplements since 00:00 today.
 
-**Eating and Drinking** Patient is having normal diet, soft diet, pureed or nutritional supplements.
+**Free fluids**: Patient latest diet intake is free fluids OR latest fluid intake is oral fluids AND they have not had normal diet, soft diet, pureed or nutritional supplements since 00:00 today.
 
-**Sips of water** Patient is having sips and has not had normal diet, soft diet, pureed or nutritional supplements since 0000 today.
+**Clear fluids**: The latest 'diet intake' reading is 'clear fluids',  AND there are no 'diet intake' readings of 'normal diet' or 'soft diet' or 'pureed' or 'nutritional supplement' since 00:00 today.
 
-**Free fluids** Patient latest diet intake is free fluids OR latest fluid intake is oral fluids AND they have not had normal diet, soft diet, pureed or nutritional supplements since 0000 today.
+**Enteral/parenteral feeding**: The latest 'diet intake' reading is 'enteral (NG/PEG etc.)' or 'parenteral (TPN)' AND there are no 'diet intake' readings of 'normal diet' or 'soft diet' or 'pureed' or 'nutritional supplement'
 
-**Clear fluids** The latest 'diet intake' reading is 'clear fluids',  AND there are no 'diet intake' readings of 'normal diet' or 'soft diet' or 'pureed' or 'nutritional supplement' since 00:00 today.
-
-**Enteral/parenteral feeding** The latest 'diet intake' reading is 'enteral (NG/PEG etc.)' or 'parenteral (TPN)' AND there are no 'diet intake' readings of 'normal diet' or 'soft diet' or 'pureed' or 'nutritional supplement'
-
-**NBM** The latest 'fluid intake' or 'diet intake' reading is 'NBM'.  
+**NBM**: The latest 'fluid intake' or 'diet intake' reading is 'NBM'.  
 
 **Other** The latest 'diet intake' reading is 'other' AND there are no 'diet intake' readings of 'normal diet' or 'soft diet' or 'pureed' or 'nutritional supplement' since 00:00 today.
 
@@ -394,6 +391,7 @@ If none of the above rules match, the bed will appear as dark grey on floorplan
 ------
 **Documentation compliance floorplan**
 
+For full compliance with documentation to be achieved on this floorplan, a patient must have all three metrics documented within the 24-hour period.
 **Missing DrEaMing Documentation** None of the three DrEaMing flowsheets- 'fluid intake', 'diet intake' and 'moblisation achieved' flowsheets have been completed since 00:00 today, DReaMING Documentation'.
 
 **DrEaMing Partially Documented**  One or two of the 'fluid intake', 'diet intake' or 'moblisation achieved' flowsheets have been completed since 00:00 today.
