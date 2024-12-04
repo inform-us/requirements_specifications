@@ -98,15 +98,15 @@ FIO2_% 301550?
    *note current rules have same one hour rule for all day and night*
    
 ## Measurement Interval - average time between RASS assessments - front tile metric calculation
-- this calcaulation will look at all RASS scores (including those that are not on sedationor mechanically ventilated)
+- this calculation will look at all RASS scores (including those that are not on sedation or mechanically ventilated)
 - average time between scores should be calculated from ACTUAL documented RASS scores in EPIC (ie. those with a _dt stamp) and not any forward filled scores
 - there needs to be a minimum of two scores to calculate a measurement interval (if a patient has only just been admitted with one RASS score documented, or if a patient only has one RASS score during their entire ICU admission, calculation will not be possible and data will not be included on front tile metric
 - the data on the front tile looks back from the current time to 24 hours in the past
 - there will be two measurement interval calculations displayed on the front tile: DAY (06:00-21:59) and NIGHT (22:00-05:59)
 - in line with other metrics we should provide some leeway (15 minutes) in charting documentation, therefore (adjusted time frame): DAY (06:00-22:14) and NIGHT (22:00-06:14)
-- teh leeway is to mitigate skewed mean interval, pparticulalry in the DAY calculation (e.g. 06:01 RASS, time interval calcaulted with a NIGHT RASS at 02:00, would give a 04:01 measurement interval which would skew daytime data, the 15 minute leeway may need to be reviewed if insufficient
-- the _dt of each measurement determines whether it is categorised as 'DAY' or 'NIGHT', but in order to complete the measurement interval calcualtion, a preceeding measurement can be in the opposing category
-- worked example: <br> (a) a mesurement taken at 06:10 would have to be linked with an earlier measurement during the night shift to calculate an interval and would be classified as - NIGHT (before 06:14) <br> (b) a mesurement taken at 06:30 would have to be linked with an earlier measurement during the day or night shift to calculate an interval and would be classified as - DAY (after 06:14) <br> (c) a mesurement taken at 22:10 would have to be linked with an earlier measurement during the day shift to calculate an interval and would be classified as - DAY (before 22:14) <br> (d) a mesurement taken at 23:00 would have to be linked with an earlier measurement during the night or day shift to calculate an interval and would be classified as - NIGHT (after 22:14) <br>
+- the leeway is to mitigate skewed mean interval, particularly in the DAY calculation (e.g. 06:01 RASS, time interval calcaulted with a NIGHT RASS at 02:00, would give a 04:01 measurement interval which would skew daytime data, the 15 minute leeway may need to be reviewed if insufficient
+- the _dt of each measurement determines whether it is categorised as 'DAY' or 'NIGHT', but in order to complete the measurement interval calculation, a preceeding measurement can be in the opposing category
+- worked example: <br> (a) a measurement taken at 06:10 would have to be linked with an earlier measurement during the night shift to calculate an interval and would be classified as - NIGHT (before 06:14) <br> (b) a mesurement taken at 06:30 would have to be linked with an earlier measurement during the day or night shift to calculate an interval and would be classified as - DAY (after 06:14) <br> (c) a mesurement taken at 22:10 would have to be linked with an earlier measurement during the day shift to calculate an interval and would be classified as - DAY (before 22:14) <br> (d) a mesurement taken at 23:00 would have to be linked with an earlier measurement during the night or day shift to calculate an interval and would be classified as - NIGHT (after 22:14) <br>
 - once classified into DAY or NIGHT deteremine numerator and denominator for each and calculate mean
 - DAY Numerator = sum of the minutes and hours between all intervals recorded between (06:15-22:14) that fall into the current 24 hour rolling window
 - DAY Denominator = number of all time interval measurements that fall into the current 24 hour rolling window
@@ -175,13 +175,13 @@ These are weekly percentage (p-charts) SPC.
 
 Operational definition = what percentage of RASS scores are done one time within the 1 hour guidelines (day) and 4 hour guidelines (night)? 
 
-Week defined a Monday 00:00 – Sunday 23:59
+Modified shift week is defined as Sunday 22:00 – Sunday 21:59
 
 ## Chart 2a - DAY RASS Assessment Time Interval Chart
 
-DAY for RASS assessment is defined as between the hours of 06:00am and 21:59pm. Note this is not the same as a 'day shift' used in other metrics, which is 08:00am to 19:59pm
+DAY for RASS assessment is defined as between the hours of 06:00am and 21:59pm. Note this is not the same as a 'day shift' used in other metrics, which is 08:00am to 19:59pm. Remember that RASS documentation is expected one hourly during the day and 4 hourly during the night. 
 
-1.  Look at RASS assessment measurement intervals between the hours of 06:00 and 21:59 each day
+1.  Look at RASS assessment measurement intervals between the hours of 06:14 and 22:14 each day
 2.   Numerator = count of time intervals that are ≤ 1:15 (TBC to add leeway?) hours for the DAY category
 - *note SPC denominator adjustment required for excessively long measurement intervals (those that are 2x accepted measurement interval from clinical guideline)*
   3. Denominator (adjusted) = count all assessment measurement intervals between the hours of 06:00 and 21:59 in that week that are > 2:00 hours and ADD +1 to denominator for each one hour period greater than the permitted 1:00 hour.
