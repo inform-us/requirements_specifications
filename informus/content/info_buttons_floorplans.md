@@ -350,7 +350,7 @@ This floorplan combines information from the Fluid Intake and Diet Intake post-o
 
 **Classification**
 
-**Eating and Drinking**: The latest diet intake reading is 'normal diet', 'soft diet', 'pureed' or 'nutritional supplements'.
+**Eating and Drinking**: Patient is on 'normal diet', 'soft diet', 'pureed' or 'nutritional supplements'.
 
 **Sips of water**: Patient is having sips and has not had normal diet, soft diet, pureed or nutritional supplements since 00:00 today.
 
@@ -358,7 +358,7 @@ This floorplan combines information from the Fluid Intake and Diet Intake post-o
 
 **Clear fluids**: The latest 'diet intake' reading is 'clear fluids',  AND there are no 'diet intake' readings of 'normal diet' or 'soft diet' or 'pureed' or 'nutritional supplement' since 00:00 today.
 
-**Enteral/parenteral feeding**: The latest 'diet intake' reading is 'enteral (NG/PEG etc.)' or 'parenteral (TPN)' AND there are no 'diet intake' readings of 'normal diet' or 'soft diet' or 'pureed' or 'nutritional supplement'
+**Enteral/parenteral feeding**: The latest 'diet intake' reading is 'enteral (NG/PEG etc.)' or 'parenteral (TPN)' AND there are no 'diet intake' readings of 'normal diet' or 'soft diet' or 'pureed' or 'nutritional supplement'since 00:00 today.
 
 **NBM**: The latest 'fluid intake' or 'diet intake' reading is 'NBM'.  
 
@@ -366,9 +366,8 @@ This floorplan combines information from the Fluid Intake and Diet Intake post-o
 
 **Missing** Both 'diet intake' AND 'fluid intake' flowsheets have not been completed since 00:00 today. 
 
-**IV ongoing** The latest fluid intake reading is IV ongoing
+**IV fluids only** The latest 'fluid intake' reading is IV ongoing
 
-If none of the above rules match, the bed will appear as dark grey on floorplan. 
  
 ------
 **Mobilisation achieved floorplan** 
