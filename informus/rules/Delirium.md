@@ -161,7 +161,7 @@ MAKE EPOCHS FOR THIS SECTION
 1. A day shift is defined as 08:00-19:59 on one day
 2. A night shift is defined as 20:00-07:59 on one day
 3. Calendar day defined as 00:00 - 23:59
-4. Shift week is defined as Monday 08:00 – Monday 07:59
+4. Shift week is defined as Monday 08:00 – Monday 07:59 - *note with SPC data grab on sunday am at 3am, is this a problem? If so we can change to sunday 20:00 to following sunday 19:59.* 
 5. There are fourteen shifts in every week
 6. These charts are weekly percentage (p-charts)
   
