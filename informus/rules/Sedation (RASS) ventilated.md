@@ -175,13 +175,13 @@ These are weekly percentage (p-charts) SPC.
 
 Operational definition = what percentage of RASS scores are done one time within the 1 hour guidelines (day) and 4 hour guidelines (night)? 
 
-Modified shift week is defined as Sunday 22:00 – Sunday 21:59
+Modified shift week is defined as Sunday 22:15 – Sunday 22:14
 
 ## Chart 2a - DAY RASS Assessment Time Interval Chart
 
 DAY for RASS assessment is defined as between the hours of 06:00am and 21:59pm. Note this is not the same as a 'day shift' used in other metrics, which is 08:00am to 19:59pm. Remember that RASS documentation is expected one hourly during the day and 4 hourly during the night. 
 
-1.  Look at RASS assessment measurement intervals between the hours of 06:14 and 22:14 each day
+1.  Look at RASS assessment measurement intervals between the hours of 06:14 and 22:14 each day. Reference measurement interval section above from line 101. 
 2.   Numerator = count of time intervals that are ≤ 1:15 (TBC to add leeway?) hours for the DAY category
 - *note SPC denominator adjustment required for excessively long measurement intervals (those that are 2x accepted measurement interval from clinical guideline)*
   3. Denominator (adjusted) = count all assessment measurement intervals between the hours of 06:00 and 21:59 in that week that are > 2:00 hours and ADD +1 to denominator for each one hour period greater than the permitted 1:00 hour.
