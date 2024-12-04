@@ -1,18 +1,24 @@
-# Moved and discharged patients
+# Capturing INFORM patient data for a critical care admission
+
+##Rationale
+- a critical care admission may form part of a patient's hospital visit
+- a critical care admission is characterised by a time period in a specified ICU bed location
+- patients may move to another ICU bed location within the same critical care admission
+- patients may leave the ICU to another location (within the hospital or be dicharged form the hospital)
+- patients may move off the unit and return within the same critical care admission
+- these rules seek to determine how to:
+1. Handle flow sheet data while 'off' the ICU
+2. Differentiate a discharge, from a bed move (within the same ICU), from a readmission (to the same ICU), from a period 'off' the ICU for an investigation / procedure
 
 ## Patient flow
 
 Patients may move between multiple locations as part of one hospital visit.
 
-First, they are admitted to one of the following locations:
-- emergency department
-- ward
-- theatres / radiology / procedure suite
-- outpatients
-- an external hospital
-- others
+For the pusposes of INFORM, we do not seek the admission location prior to a critical care admission. 
+Patients may be admitted form anywhere within the hospital or from outside the hospital (ie. another hospital or home). 
 
-Then they may be moved (staying in same unit), potentially multiple times:
+XXX
+Once in critical care they may be moved during a defined admission, potentially multiple times:
 - moved to a different bed in the same unit
 - moved for surgery/procedure/imaging and comes back to the same bed
 - moved for surgery/procedure/imaging and comes back to a different bed
