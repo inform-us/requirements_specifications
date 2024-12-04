@@ -182,7 +182,7 @@ Modified shift week is defined as Sunday 22:15 – Sunday 22:14
 DAY for RASS assessment is defined as between the hours of 06:00am and 21:59pm. Note this is not the same as a 'day shift' used in other metrics, which is 08:00am to 19:59pm. Remember that RASS documentation is expected one hourly during the day and 4 hourly during the night. 
 
 1.  Look at RASS assessment measurement intervals between the hours of 06:14 and 22:14 each day. Reference measurement interval section above from line 101. 
-2.   Numerator = count of time intervals that are ≤ 1:15 (TBC to add leeway?) hours for the DAY category
+2.   Numerator = count of time intervals that are ≤ 1:00 hours for the DAY category
 - *note SPC denominator adjustment required for excessively long measurement intervals (those that are 2x accepted measurement interval from clinical guideline)*
   3. Denominator (adjusted) = count all assessment measurement intervals between the hours of 06:00 and 21:59 in that week that are > 2:00 hours and ADD +1 to denominator for each one hour period greater than the permitted 1:00 hour.
 
@@ -196,7 +196,7 @@ hr measurement interval will count as 3 in the adjusted denominator: (iii) 4.01h
 NIGHT for RASS assessment is defined as between the hours of 22:00pm and 05:59am. Note this is not the same as a 'night shift' used in other metrics, which is 20:00pm to 07:59am
 
 1. Look at RASS assessment measurement intervals between the hours of 22:00 and 05:59 each day
-2. Numerator = count of time intervals that are ≤ 4:00 (4:15?)hours for the NIGHT category
+2. Numerator = count of time intervals that are ≤ 4:00 hours for the NIGHT category
 - *SPC denominator adjustment required for excessively long measurement intervals (those that are 2x accepted measurement interval from clinical guidance)*
 3. Denominator (adjusted) = count all assessment measurement intervals between the hours of 22:00 and 05.59 in that week that are >8:00 hours and ADD +1 to denominator for each four hour period greater than the permitted 4:00 hours
 
