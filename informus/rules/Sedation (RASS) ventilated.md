@@ -171,7 +171,9 @@ Operational definition = of the patients who are ventilated and on sedative drug
 
 ## chart 2 RASS ASSESSMENT TIME INTERVAL SPC CHARTS 
 
-These are weekly percentage (p-charts) SPC
+These are weekly percentage (p-charts) SPC.
+
+Operational definition = what percentage of RASS scores are done one time within the 1 hour guidelines (day) and 4 hour guidelines (night)? 
 
 Week defined a Monday 00:00 – Sunday 23:59
 
