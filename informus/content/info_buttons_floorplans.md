@@ -426,7 +426,7 @@ All patients accross all units
 
 **FOR REVIEW:** An ICU Airway plan has been completed during this admission but over 14 days ago.  Because this patient does not have a natural airway and a DAS generic airway plan it is reccomended that the plan is reviewed in order to ensure that it is still appropriate.   
 
-**UPDATE REQUIRED:** An update to the current airway plan is required as patient has had an new artifical airway inserted.   
+  
 
 
 
