@@ -56,7 +56,7 @@ Query ran: 2024/06/10
 | Airway | Has Generic Airway Plan | 24498 | ✅ | ✅ | | ✅ |  | complete (flowsheet is in EMAP) |
 | Airway | Doctor Required | 24508 | ✅ | ✅ | | ✅ |  | complete (flowsheet is in EMAP) |
 | Airway | Senior Nurse Required | 24509 | ✅ | ✅ | | ✅ |  | complete (flowsheet is in EMAP) |
-| Airway | Emergency Teams | 24504 | ❌ | ❌ | | ✅ |  | complete (flowsheet is in EMAP) |
+| Airway | Emergency Teams | 24504 | ✅ | ✅ | | ✅ |  | complete (flowsheet is in EMAP) |
 | Airway | ETT Properties | 3040102626 | ❌ | ❌ | | ✅ | `has_visit_observation` was `False` in star_staging indicating a lack of data. We need to check Caboodle if any data is coming through | not yet requested, because there isn't any data coming through on `has_visit_observation` |
 | Airway | Surgical Airway Properties | 700004 | ❌ | ❌ | | ✅ | `has_visit_observation` was `False` in star_staging indicating a lack of data. We need to check Caboodle if any data is coming through | not yet requested, because there isn't any data coming through on `has_visit_observation` |
 
