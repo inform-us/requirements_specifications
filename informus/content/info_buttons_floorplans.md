@@ -444,6 +444,16 @@ All patients across all units
 
 **Senior Nurse led turn** This patient has been identified as having a slightly difficult airway. When turning this patient, as senior nurse should be responsible for stabilisation of airway to prevent dislodgement.
 
+**Endotracheal tube** Patient has an endotracheal tube
+
+**Tracheostomy** Patient has a pertcutaneous or surgical tracheostomy
+
+**Laryngectomy** Patient has a laryngectomy
+
+**Occupied bed (no artifical airway)** Patient has natural airway.
+
+
+
 
 
   
