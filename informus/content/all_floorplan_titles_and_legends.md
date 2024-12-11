@@ -137,28 +137,22 @@ To access individual floorplan select location and required tile/metric from Cli
 
 
 ## Tile: All POM patients DrEaMing
-
-
-**Alternative floorplan for All POM patients: DrEaMing**
-
-## Eating and Drinking floorplan
+**Floorplan title: Eating and Drinking**
 
 
 ![image](https://github.com/user-attachments/assets/b996f030-82ae-42ed-b90d-3470129c45af)
 
 
-## Mobilisation achieved floorplan
+**Floorplan title: Mobilisation**
 
 ![image](https://github.com/user-attachments/assets/d1f4250e-11db-4c22-acf2-91144147d497)
-
-
-In legend, change 'bed' to 'in bed'. Change 'active transfer' to 'actively transferring'
 
 
 Hover over 'In Bed' to pop up 'Reason's for not moblising' text. 
 *Note there are no other hover overs. Only in bed patients.* 
 
-## Documentation compliance floorplan (note image below is hashed. Agreed to change to filled as per targets set. 
+
+**Floorplan title: Documentation compliance**  
 
 - All documentation - green-filled bed
 - Partial documentation- amber-filled bed
@@ -167,10 +161,14 @@ Hover over 'In Bed' to pop up 'Reason's for not moblising' text.
 - ![image](https://github.com/user-attachments/assets/7253fd06-78c0-4467-bbfc-7801125c3309)
 
 ## Tile: Airway Plan Completed
+**Floorplan title: Airway Plan**
 
 
 <img width="742" alt="image" src="https://github.com/user-attachments/assets/31cec9c4-7a68-4425-9d2e-3df51d219ea4">
 
+
+## Tile: Airway Plan Completed
+**Floorplan title: Airway (Type/ Turning Plan/ DART call)**
 
 
 
