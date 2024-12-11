@@ -168,8 +168,9 @@ Hover over 'In Bed' to pop up 'Reason's for not moblising' text.
 
 
 ## Tile: Airway Plan Completed
-**Floorplan title: Airway (Type/ Turning Plan/ DART call)**
+**Floorplan title: Airway (Type/ Turning Plan/ DART call)
 
+<img width="330" alt="image" src="https://github.com/user-attachments/assets/fda95e99-9da2-41f6-9281-563ba867b5a0">
 
 
 
