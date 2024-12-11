@@ -60,7 +60,8 @@ Number of currently occupied beds / Total number of beds per unit
 
 **10) All patients Airway Plan**
 
-<img width="193" alt="image" src="https://github.com/user-attachments/assets/936584b6-d9fb-4b5b-a758-5220e074b28f">
+<img width="167" alt="image" src="https://github.com/user-attachments/assets/7efa445d-f0e1-48d7-bc3c-123301252cf5">
+
 
 
 
@@ -143,10 +144,13 @@ Content of Tile
 All patients
 Airway Plan
 
+Unit performance data
 
-7/10 patients with airway plans completed
 
-Airway plans for review: 0 
+
+ 
+
+
 
 
 
