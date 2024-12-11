@@ -416,7 +416,7 @@ Identification of patients with difficult airways enables an individualised airw
 
 **Eligibility** 
 
-All patients accross all units
+All patients across all units
 
 **Classification**
 
@@ -426,7 +426,20 @@ All patients accross all units
 
 **FOR REVIEW:** An ICU Airway plan has been completed during this admission but over 14 days ago.  Because this patient does not have a natural airway and a DAS generic airway plan it is reccomended that the plan is reviewed in order to ensure that it is still appropriate.   
 
-## All patients: Airway (Type / Turning Plan / DART Call)  
+---
+
+## All patients: Airway (Type / Turning Plan / DART Call)
+
+## ? button
+
+**Eligibility**
+
+All patients across all units
+
+**Classification**
+
+**DART call** This patient has been identified as having a difficult airway.  In an airway emergency, the Difficult Airway Response Team (DART) should be call promptly to assist in airway management.
+
   
 
 
