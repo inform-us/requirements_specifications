@@ -404,13 +404,13 @@ If none of the above rules match, the bed will appear as dark grey on floorplan
 
 **Page: Clinical dashboard tab: Airway Plan** (DRAFT)
 
-## All patients Airway Plan Completed 
+## All patients:Airway Plan 
 
 ## i button
 
-Airway managment in critical care can be seen as a routine procedure for critically ill patients. Neverorless, critical care patients are more prone to complications from airway management procedures which may result in worse patient outcomes (such as death, brain damage and prolonged ICU stay).   
+Airway managment in critical care may be seen as a routine procedure for critically ill patients. Nevertheless, critical care patients are more prone to complications from airway management procedures, which may result in worse patient outcomes (such as death, brain damage and prolonged ICU stay).   
 
-Identification of patients with difficult airways enables an individualised airway plan to be formulated. Such a plan includes ensuring that adequately trained personale and appropriate equipment are accessible in an airway emergency.  
+Identification of patients with difficult airways enables an individualised airway plan to be formulated. Such a plan includes ensuring that adequately trained personale and appropriate equipment are accessible in an airway emergency.  Prescence of an airway plan is conducive to prompt and decisive action during an airway emergency.
 
 ## ? button
 
@@ -422,10 +422,11 @@ All patients accross all units
 
 **MISSING:** There has been no airway plan completed during this admission. 
 
-**COMPLETED:** An ICU Airway plan has been completed during this admission. 
+**COMPLETED:** An ICU Airway plan has been completed during this admission. If the patient has an artificial airway, the airway plan has been reviewed and completed within the last 14 days. 
 
 **FOR REVIEW:** An ICU Airway plan has been completed during this admission but over 14 days ago.  Because this patient does not have a natural airway and a DAS generic airway plan it is reccomended that the plan is reviewed in order to ensure that it is still appropriate.   
 
+## All patients: Airway (Type / Turning Plan / DART Call)  
   
 
 
