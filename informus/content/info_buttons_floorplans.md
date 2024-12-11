@@ -440,6 +440,12 @@ All patients across all units
 
 **DART call** This patient has been identified as having a difficult airway.  In an airway emergency, the Difficult Airway Response Team (DART) should be call promptly to assist in airway management.
 
+**Doctor led turn** This patient has been identified as having a difficult or unstable airway. When turning this patient, a airway trained doctor should be present for prevention and management of airway dislodgement.
+
+**Senior Nurse led turn** This patient has been identified as having a slightly difficult airway. When turning this patient, as senior nurse should be responsible for stabilisation of airway to prevent dislodgement.
+
+
+
   
 
 
