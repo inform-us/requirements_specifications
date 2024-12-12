@@ -1,10 +1,10 @@
 # List of all existing and upcoming inform_us metrics and their corresponding flowsheet IDs in EPIC ##
 
-Update from a project meeting on 11.12.2024
+## Update from a project meeting on 11.12.2024
 
 - It looks like we now have all the flowsheets we need activated in `star` to fulfil our goals by March 2025!
 
-Query ran: 2024/06/10
+## Additional details
 
 - `has_visit_observation` ✅ indicates that data is available in EPIC and is pulled through to EMAP `star`. Items with ✅ in this column but not in `is_real_time` can be added to the HL7 feed to provide real-time data.
 - `is_real_time` ✅ shows whether real-time data is available in EMAP. Once the flowsheet is activated in `star` we can ask the EMAP team to activate `is_real_time` for that flowsheet.
