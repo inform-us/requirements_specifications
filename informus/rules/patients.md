@@ -1,10 +1,30 @@
 # Capturing INFORM patient data for a critical care admission
 
+##Overview
+
+**Data is caputured at four points:**
+- FRONT TILE unit metric; summary data looking back 24 hours including patients present within that time window and those that have been discharged
+- FLOOR PLAN; individual current patient / bed space data
+- INDIVIDUAL PATIENT GRAPH; data looking back up to 72 hours for the individual patient
+- SPC chart; summary data for one week (see individual metrics for respective definitions) including all patients still present and thos discharged within that time window
+
+<br>
+**In order for these data to be processed for the above metrics a longer time time window needs to be sampled to account for:**
+
+- FRONT TILE unit metric; summary data looking back 24 hours including patients present within that time window 
+- ELIGIBILITY, an additional 6 hours of data to determine whether an individual is eligible for that metric calculation (e.g. is receivng oxygen or is receiving vasoactive drugs)
+
+
+
+
+
 ##Rationale
+
 - a critical care admission may form part of a patient's hospital visit
 - a critical care admission is characterised by a time period in a specified ICU bed location
 - patients may move to another ICU bed location within the same critical care admission
-- patients may leave the ICU to another location (within the hospital or be dicharged form the hospital)
+- patients may leave the ICU to another location (within the hospital, including another ICU or be dicharged form the hospital) 
+- patients may die, ending their critical care admission (leaving their specified ICU bed location)
 - patients may move off the unit and return within the same critical care admission
 - these rules seek to determine how to:
 1. Handle flow sheet data while 'off' the ICU
