@@ -1,6 +1,6 @@
 # Capturing INFORM patient data for a critical care admission
 
-##Overview
+## Overview
 
 **Data is caputured at four points:**
 - FRONT TILE unit metric; summary data looking back 24 hours including patients present within that time window and those that have been discharged
@@ -10,18 +10,13 @@
 
 **In order for these data to be processed for the above metrics a longer time time window needs to be sampled to account for:**
 - ELIGIBILITY; an additional 6 hours of data to determine whether an individual is eligible for that metric calculation (e.g. is receivng oxygen or is receiving vasoactive drugs)
-- ALL_TARGET SET metric is calculated differently; taking a single daily snapshot at 13:00 (code actually set to do this calcaultion at 13:30 to give some clinical leeway) of current inpatients (ie. does not include those that have been discharged, but would include those that are temporalily off the unit (see below) and as such that calcualtion would need amending). In order to To fulfil this metric at all times an additional 5 hours of data is required. 
-- METRIC COMPLIANCE TO SET TARGET; doctors set new targets (i) on admission, (ii) clinical change or during the morning ward rounds 08:00 - 13:00. For the puposes of the ALL_TARGETS METRIC, targets are reset at 07:59 (ie. become invalid) allowing new targets to be set form 08:00. However, during this period where new targets are set (08:00 - 13:00), complicance of physiological metric to targets still needs to take place. As such the logic allows for a previous target (set anytime bewteen 08:00 on the previous day and 07:59 on the current day to 'roll-over' until 12:00 on the current day, for the purposes of complicance calculation ONLY for the following: SpO2, MAP, RASS,
-- 
-- In order to To fulfil this metric at any given time an additional 5 hours of data is required
-    - ff
-- ff
+- ALL_TARGET SET metric is calculated differently; taking a single daily snapshot at 13:00 (code actually set to do this calcaultion at 13:30 to give some clinical leeway) of current inpatients (ie. does not include those that have been discharged, but would include those that are temporalily off the unit (see below) and as such that calcualtion would need amending). In order to fulfil this metric at all times an additional 5 hours of data is required. 
+- METRIC COMPLIANCE TO SET TARGET; doctors set new targets (i) on admission, (ii) clinical change or during the morning ward rounds 08:00 - 13:00. For the puposes of the ALL_TARGETS METRIC, targets are reset at 07:59 (ie. become invalid) allowing new targets to be set form 08:00. However, during this period where new targets are set (08:00 - 13:00), complicance of physiological metric to targets still needs to take place. As such the logic allows for a previous target (set anytime bewteen 08:00 on the previous day and 07:59 on the current day to 'roll-over' until 12:00 on the current day, for the purposes of compliance calculation ONLY for the following: SpO2, MAP, & RASS. In order to fulfil this metric at all times an additional 5 hours of data is required. 
+- BACKFILLING; ICU observation frequencies are not usually <4 hourly, most physiological metrics are charted between 1-4 hourly, but the logic allows for a 15 minute 'clinical leeway' in charting. In order to allow backfilling an additional 5 hours of data is required.
+- TIME OFF ICU vs. MISSING; (i) data collected while off the ICU should not be included in analysis (even if the patinet returns to the ICU as part of the same admission (e.g. away for CT scan); (ii) however this time off the unit has to be recorded and displayed on the INDIVIDUAL PATIENT GRAPH, both to differentiate it form 'missing data' and to avoid a collapsed time-line on the x-axis
+**QUESTION - how can we label as off unit unless they have returend back to the unit?**
 
-
-
-
-
-##Rationale
+## Patient Flow and 
 
 - a critical care admission may form part of a patient's hospital visit
 - a critical care admission is characterised by a time period in a specified ICU bed location
@@ -33,7 +28,7 @@
 1. Handle flow sheet data while 'off' the ICU
 2. Differentiate a discharge, from a bed move (within the same ICU), from a readmission (to the same ICU), from a period 'off' the ICU for an investigation / procedure
 
-## Patient flow
+## Patient flow & Data Items used to determine admission / dicharge / 'off ICU'
 
 Patients may move between multiple locations as part of one hospital visit.
 
