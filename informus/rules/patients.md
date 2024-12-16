@@ -8,11 +8,14 @@
 - INDIVIDUAL PATIENT GRAPH; data looking back up to 72 hours for the individual patient
 - SPC chart; summary data for one week (see individual metrics for respective definitions) including all patients still present and thos discharged within that time window
 
-<br>
 **In order for these data to be processed for the above metrics a longer time time window needs to be sampled to account for:**
-
-- FRONT TILE unit metric; summary data looking back 24 hours including patients present within that time window 
-- ELIGIBILITY, an additional 6 hours of data to determine whether an individual is eligible for that metric calculation (e.g. is receivng oxygen or is receiving vasoactive drugs)
+- ELIGIBILITY; an additional 6 hours of data to determine whether an individual is eligible for that metric calculation (e.g. is receivng oxygen or is receiving vasoactive drugs)
+- ALL_TARGET SET metric is calculated differently; taking a single daily snapshot at 13:00 (code actually set to do this calcaultion at 13:30 to give some clinical leeway) of current inpatients (ie. does not include those that have been discharged, but would include those that are temporalily off the unit (see below) and as such that calcualtion would need amending). In order to To fulfil this metric at all times an additional 5 hours of data is required. 
+- METRIC COMPLIANCE TO SET TARGET; doctors set new targets (i) on admission, (ii) clinical change or during the morning ward rounds 08:00 - 13:00. For the puposes of the ALL_TARGETS METRIC, targets are reset at 07:59 (ie. become invalid) allowing new targets to be set form 08:00. However, during this period where new targets are set (08:00 - 13:00), complicance of physiological metric to targets still needs to take place. As such the logic allows for a previous target (set anytime bewteen 08:00 on the previous day and 07:59 on the current day to 'roll-over' until 12:00 on the current day, for the purposes of complicance calculation ONLY for the following: SpO2, MAP, RASS,
+- 
+- In order to To fulfil this metric at any given time an additional 5 hours of data is required
+    - ff
+- ff
 
 
 
