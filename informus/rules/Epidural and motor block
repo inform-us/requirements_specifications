@@ -17,6 +17,35 @@ There are no individual patient charts for this metric
 
 EPIC Flowsheets
 Flowsheet	Row ID | Manual/Automatic/Calculated Input | Comments	| Expected documentation frequency
+
+# Epidural
+
+| Tile | Metric | Flowsheet ID | `star.has_visit_observation` is `True` | `star.is_real_time` is `True`  | frequency of reporting | Found in `star.visit_observation_type` | Notes | Status |
+|-|-|-|-|-|-|-|-|-|
+| Epidural | Level of Block (Left side) | 38580 | ✅ | ✅ | 2-hourly between 0800-1959, 4-hourly between 2000-0759 | ✅ |  | complete (flowsheet is in EMAP) |
+| Epidural | Level of Block (Right side) | 38581 | ✅ | ✅ | 2-hourly between 0800-1959, 4-hourly between 2000-0759 | ✅ |  | complete (flowsheet is in EMAP) |
+| Epidrual | Assessment of Motor Block Lt leg | 30415249 | ✅ | ✅ | 2-hourly between 0800-1959, 4-hourly between 2000-0759 | ✅ |  | complete (flowsheet is in EMAP) |
+| Epidural | Assessment of Motor Block Rt leg | 30415250 | ✅ | ✅ | 2-hourly between 0800-1959, 4-hourly between 2000-0759 | ✅ |  | complete (flowsheet is in EMAP) |
+| Epidural | LDA line status simple | 3040102506 | ✅ | ✅ |  | ✅ |  | complete (flowsheet is in EMAP) |
+
+
+# Epidural drugs
+
+| Tile | Metric | Flowsheet ID | `star.has_visit_observation` is `True` | `star.is_real_time` is `True`  | frequency of reporting | Found in `star.visit_observation_type` | Notes | Status |
+|-|-|-|-|-|-|-|-|-|
+| Epidural drugs | Volume Infused (mL) Bupivacaine (0.1%)/Fentanyl (2 mcg /mL) | 28222 | ✅ | ✅ |  | ✅ |  | complete (flowsheet is in EMAP) |
+| Epidural drugs | Volume (mL) | 7001026 | ✅ | ✅ | hourly | ✅ |  | complete (flowsheet is in EMAP) |
+| Epidural drugs | bupivicaine 0.1% with fentanyl 2mcg/ml epidural infusion | ? | ❌ | ❌ | hourly | ❌ | 30863 is the drug code | not yet requested |
+| Epidural drugs | Volume Infused (mL) Bupivacaine (0.1%) / Fentanyl (2 mcg/mL) | 31429 | ❌ | ❌ | hourly | ✅ |  | request completed from the EMAP team, but still no data coming through for `has_visit_observation` or `ir_real_time` |
+| Epidural drugs | bupivicaine 0.1% with fentanyl 2mcg/ml PCEA epidural infusion | ? | ❌ | ❌ | hourly | ❌ | 40830863 is the drug code | not yet requested |
+| Epidural drugs | Bupivacane 0.1% with fentanyl 2mcg/ml epidural injection (EGA only) 20mls | ? | ❌ | ❌ | hourly | ❌ | 408124007 (not sure what this code is) | not yet requested |
+| Epidural drugs | levobupivicaine 0.125% wtih fentanyl  2mch/ml epidural infusion | ? | ❌ | ❌ | hourly | ❌ | 188047 is the drug code | not yet requested |
+| Epidural drugs | Volume Infused (mL) Levobupivacaine (0.1%)/Fentanyl (2 mcg /mL) | 48330 | ❌ | ❌ | hourly | ✅ |  | request completed from the EMAP team, but still no data coming through for `has_visit_observation` or `ir_real_time` |
+| Epidural drugs | levobupivicaine 0.125% epidural infusion (200ml) | ? | ❌ | ❌ | hourly | ❌ | 181762 is the drug code | not yet requested |
+| Epidural drugs | PCEA theatres bupivicaine 0.1% epidural infusion | ? | ❌ | ❌ | hourly | ❌ | 408107895 is the drug code | not yet requested |
+| Epidural drugs | Volume Infused (mL) Bupivacaine (0.125%) / Fentanyl (2 mcg/mL) | 47779 | ❌ | ❌ | hourly | ✅ | `has_visit_observation` was `False` in star_staging indicating a lack of data. We need to check Caboodle if any data is coming through | not yet requested |
+| Epidural drugs | Volume Infused (mL) Bupivacaine (0.125%)/Fentanyl (2 mcg /mL) | 47756 | ❌ | ❌ |  | ✅ |  | request completed from the EMAP team, but still no data coming through for `has_visit_observation` or `ir_real_time` |
+
   |-|-|-|-|-|
 
 
@@ -47,19 +76,28 @@ ON EPIDURAL FLOOR PLAN
 
 **Whether a patient is on an epidural for their pain management should be denoted on the existing pain score floor plan** 
 
-1. If any of the epidural drug flowsheets have been documented in the last 4 hours, label patient as 'on epidural'
-2. If none of the epidudral drug flowsheets have been documented in the last 4 hours, the patient is not on an epidural. No change. 
+1. If any of the epidural drug flowsheets have been documented in the last 4 hours, label patient as 'on epidural'. ?Icon or letter 'E' in Bed. 
+2. If none of the epidural drug flowsheets have been documented in the last 4 hours, the patient is not on an epidural. No change. 
 
 MOTOR BLOCK ASSESSMENT FLOOR PLAN
 
-There will be an addtional floorplan button added to the pain floor plan entitled 'Motor Block Assessment'
+All patients who have been on an epidural in the last four hours need to have their level of motor block, also called the Brommage Score assessed 2 hourly in day and 4 hourly in the day. 
+There will be an additional floorplan button added to the pain floor plan entitled 'Motor Block Assessment'
+
+Patients with epidurals will be highlighted
+
+All patients who are not on epidurals will be greyed out or otherwise depicted as not on epidural. 
+# Primary Assessment of Motor Block/Bromage Score Label 
+
+1. If either the latest 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' entry is  0 or 1, label patient as 'bromage score = 0 or 1'; GREEN
+2. If either the latest 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' entry is 2, label patient as 'bromage score = 2'; AMBER
+3. If either the latest 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' entry is 3, label patient as 'bromage score = 3'; RED
 
 
-Secondary label-
-*we need to display whether a motor block assessment is overdue whilst at the same time displaying the last level of motor block assessed. This means that for this floor plan, 
-there will be no stricly 'missing' beds, but when an assessment is missing, it will also display the last motor block assessment captured. 
-If there has never been a motor block assessment completed during the patient's admission, then label patient as 'missing'. 
-If the current time is 08:00-19:59, if 'motor block' flowsheet has not been completed in the last two hours, then label patient as 'missing' and forward fill the latest motor block asessmeent reading. 
+# Secondary Assessment of Motor Block/Bromage Score label-
+*In addition to the last documented Motor Block Assessment, we need to display whether a motor block assessment is overdue. 
+1. If there has never been a 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' completed in the time that a patient has been on an epidural, then label patient as 'missing assessment'. Red Hashed and no fill bed.  
+2. If the current time is 08:00-19:59, if 'motor block' flowsheet has not been completed in the last two hours, then label patient as 'missing' and forward fill the latest motor block asessmeent reading. 
 Bed to be red hashed outline.
 If the current time is 20:00-)7:59, if 'motor block' flowsheet has not been completed in the last four hours, then label patient as 'missing' and forward fill the latest motor block asessmeent reading. 
 Bed to be red hashed outline.
