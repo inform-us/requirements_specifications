@@ -1,14 +1,16 @@
 
 
-#Epidural and Motor Block/Brommage Score Rules
+# Epidural and Motor Block/Brommage Score Rules#
 
-Rules for Epidural and the level of motor block that the epidural is providing to the patient
+## Rules for Epidural and the level of motor block that the epidural is providing to the patient
 
 EPIC
 Some patients will be given an epidural for pain management. While epidurals are effective, they also carry risk as they can cause
-temporary paralysis (motor block) which gone unnoticed for too long can have catastrophic immplications including permannet paralysis.
+temporary paralysis (motor block) which gone unnoticed for too long can have catastrophic implications including permanent paralysis.
 EPIC Flowsheets
-Volume Infused (mL) Bupivacaine (0.1%)/Fentanyl (2 mcg /mL)	28222
+Flowsheet	Row ID|Manual/Automatic/Calculated Input|Comments	| Expected documentation frequency
+  |-|-|-|-|-|
+
 
 ELIGIBILITY
 All patients on all units. Note these patients will more frequently be found on the post-surgical units, T06 and PACU
