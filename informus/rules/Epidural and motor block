@@ -8,11 +8,12 @@ EPIC
 Some patients will be given an epidural for pain management. While epidurals are effective, they also carry risk as they can cause
 temporary paralysis (motor block) which if gone unnoticed for too long can have catastrophic implications including permanent paralysis.
 It is therefore important for clinical staff to have an overview of who on the units is using an epidural for pain relief and what their 
-level of motorblock is in order to ensure patient safety. A patient with an epidural attached is a patient safety risk much like a patient
+level of motor block is in order to ensure patient safety. A patient with an epidural attached is a patient safety risk much like a patient
 with a difficult airway. 
 
 The epidural metric will be included on the pain tile and will not have its own tile. 
 Whether a patient has an epidural will be denoted on the pain score floor plan. An additional tab floor plan will be added to display the motor block data. 
+There are no individual patient charts for this metric
 
 EPIC Flowsheets
 Flowsheet	Row ID | Manual/Automatic/Calculated Input | Comments	| Expected documentation frequency
@@ -20,7 +21,8 @@ Flowsheet	Row ID | Manual/Automatic/Calculated Input | Comments	| Expected docum
 
 
 ELIGIBILITY
-All patients on all units. Note these patients will more frequently be found on the post-surgical units, T06 and PACU
+All patients on all units. 
+Note these patients will more frequently be found on the post-surgical units, T06 and PACU
 
 VALIDITY
 If a patient has been on an epidural in the last 4 hours, they are classified as 'on epidural'. If a patient is 'on epidural' they are required to have a 
@@ -28,6 +30,11 @@ motor block assessment documented: 2 hourly during the day shift (08:00-19:59), 
 
 CLASSIFICATION
 Go through each metric in sequence and which charts this data feeds into.
+
+[A] The epidural data on the front tile is a real time view of the number of patients who are currently on an epidural rolling window 
+(at each refresh looks back and collect all the current epidural flowsheets)
+Calculate the current number of patients who have had an epidural documented in the last four hours. 
+Present this number on the front tile as 'number of patients on epidural' 
 
 [A] ABC Measurement Interval
 
@@ -37,7 +44,7 @@ E.G. Feeds into (i) front tile - 24 hour rolling window and (ii) SPC interval ch
 
 [C] Floorplan labelling
 
-[D] Classification Rules: Individual patient chart
+[D] 
 
 [E] SPC CHARTS
 ABC SPC CHARTS (refer to XYZ metric in classification
