@@ -1,21 +1,31 @@
 
 
-# Epidural and Motor Block/Brommage Score Rules#
+# Epidural and Motor Block/Brommage Score Rules
 
 ## Rules for Epidural and the level of motor block that the epidural is providing to the patient
 
 EPIC
 Some patients will be given an epidural for pain management. While epidurals are effective, they also carry risk as they can cause
-temporary paralysis (motor block) which gone unnoticed for too long can have catastrophic implications including permanent paralysis.
+temporary paralysis (motor block) which if gone unnoticed for too long can have catastrophic implications including permanent paralysis.
+It is therefore important for clinical staff to have an overview of who on the units is using an epidural for pain relief and what their 
+level of motorblock is in order to ensure patient safety. A patient with an epidural attached is a patient safety risk much like a patient
+with a difficult airway. 
+
+The epidural metric will be included on the pain tile and will not have its own tile. 
+Whether a patient has an epidural will be denoted on the pain score floor plan. An additional tab floor plan will be added to display the motor block data. 
+
 EPIC Flowsheets
-Flowsheet	Row ID|Manual/Automatic/Calculated Input|Comments	| Expected documentation frequency
+Flowsheet	Row ID | Manual/Automatic/Calculated Input | Comments	| Expected documentation frequency
   |-|-|-|-|-|
 
 
 ELIGIBILITY
 All patients on all units. Note these patients will more frequently be found on the post-surgical units, T06 and PACU
+
 VALIDITY
-for XYZ calculation (e.g. 1 hour epoch) used for which part of user interface (e.g. floorplan, individual chart & SPC)
+If a patient has been on an epidural in the last 4 hours, they are classified as 'on epidural'. If a patient is 'on epidural' they are required to have a 
+motor block assessment documented: 2 hourly during the day shift (08:00-19:59), and 4 hourly during the night shift (20:00-07:59). 
+
 CLASSIFICATION
 Go through each metric in sequence and which charts this data feeds into.
 
