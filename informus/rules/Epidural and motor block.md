@@ -1,19 +1,22 @@
 
 
-# Epidural and Motor Block/Brommage Score Rules
+# Epidural and Motor Block Assessment/Bromage Score Rules
 
 ## Rules for Epidural and the level of motor block that the epidural is providing to the patient
 
 EPIC
-Some patients will be given an epidural for pain management. While epidurals are effective, they also carry risk as they can cause
+Some patients will be given an epidural for pain management. While epidurals are effective, they also can have complications and carry risk as they can cause
 temporary paralysis (motor block) which if gone unnoticed for too long can have catastrophic implications including permanent paralysis.
 It is therefore important for clinical staff to have an overview of who on the units is using an epidural for pain relief and what their 
-level of motor block is in order to ensure patient safety. A patient with an epidural attached is a patient safety risk much like a patient
-with a difficult airway. 
+level of motor block (temporary paralysis) in order to ensure patient safety. 
+
+All patients who have been on an epidural in the last four hours need to have Assessment of their level of motor block to their right and left leg (also called the Bromage Score) 2 hourly in day (08:00-19:59) and 4 hourly in the night (20:00-07|:59).
 
 The epidural metric will be included on the pain tile and will not have its own tile. 
+
 Whether a patient has an epidural will be denoted on the pain score floor plan. An additional tab floor plan will be added to display the motor block data. 
-There are no individual patient charts for this metric
+There are no individual patient charts for this metric. 
+There will be two SPC charts of the Percentage of Motor Block Assessments done on time (A- Day and B- Night). 
 
 EPIC Flowsheets
 Flowsheet	Row ID | Manual/Automatic/Calculated Input | Comments	| Expected documentation frequency
@@ -64,7 +67,7 @@ CLASSIFICATION
 Calculate the current number of patients who have had an epidural documented in the last four hours 
 Present this number on the front tile as 'number of patients on epidural'. 
 
-[A] ABC Measurement Interval (for motor block scoring only)
+[A] ABC Measurement Interval (for motor block assessment scoring only)
 
 E.G. Feeds into (i) front tile - 24 hour rolling window and (ii) SPC interval charts.
 
@@ -81,26 +84,27 @@ ON EPIDURAL FLOOR PLAN
 
 MOTOR BLOCK ASSESSMENT FLOOR PLAN
 
-All patients who have been on an epidural in the last four hours need to have their level of motor block, also called the Brommage Score assessed 2 hourly in day and 4 hourly in the day. 
+All patients who have been on an epidural in the last four hours need to have their level of motor block, also called the Bromage Score assessed 2 hourly in day and 4 hourly in the day. 
 There will be an additional floorplan button added to the pain floor plan entitled 'Motor Block Assessment'
 
 Patients with epidurals will be highlighted
 
 All patients who are not on epidurals will be greyed out or otherwise depicted as not on epidural. 
-# Primary Assessment of Motor Block/Bromage Score Label 
+## Primary Label Assessment of Motor Block/Bromage Score Label 
 
 1. If either the latest 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' entry is  0 or 1, label patient as 'bromage score = 0 or 1'; GREEN
 2. If either the latest 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' entry is 2, label patient as 'bromage score = 2'; AMBER
 3. If either the latest 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' entry is 3, label patient as 'bromage score = 3'; RED
 
 
-# Secondary Assessment of Motor Block/Bromage Score label-
-*In addition to the last documented Motor Block Assessment, we need to display whether a motor block assessment is overdue. 
-1. If there has never been a 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' completed in the time that a patient has been on an epidural, then label patient as 'missing assessment'. Red Hashed and no fill bed.  
-2. If the current time is 08:00-19:59, if 'motor block' flowsheet has not been completed in the last two hours, then label patient as 'missing' and forward fill the latest motor block asessmeent reading. 
-Bed to be red hashed outline.
-If the current time is 20:00-)7:59, if 'motor block' flowsheet has not been completed in the last four hours, then label patient as 'missing' and forward fill the latest motor block asessmeent reading. 
-Bed to be red hashed outline.
+## Secondary Label Assessment of Motor Block/Bromage Score label-
+*In addition to the last documented Motor Block Assessment, we need to display whether a motor block assessment is overdue*
+
+1. If there has never been an 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' since the patients has been classified as 'on epidural', then label patient as 'missing assessment'. Red Hashed and no fill bed.  
+2. If the current time is 08:00-19:59, if either 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' have not been completed in the last two hours, then label patient as 'missing' and forward fill the latest motor block asessmeent reading. 
+Bed to be red hashed outline (with fill of colour from forward filled entry). 
+3. If the current time is 20:00-07:59, if either 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' have not been completed in the last four hours, then label patient as 'missing' and forward fill the latest motor block asessmeent reading. 
+Bed to be red hashed outline  (with fill of colour from forward filled entry).
 _______________________________________________
 
 [E] SPC CHARTS
