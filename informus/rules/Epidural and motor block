@@ -35,25 +35,35 @@ CLASSIFICATION
 Calculate the current number of patients who have had an epidural documented in the last four hours 
 Present this number on the front tile as 'number of patients on epidural'. 
 
-[A] ABC Measurement Interval
+[A] ABC Measurement Interval (for motor block scoring only)
 
 E.G. Feeds into (i) front tile - 24 hour rolling window and (ii) SPC interval charts.
 
 
 
-**[C] Floorplan labelling - On Epidural**
+## [C] Floorplan labelling 
 
-**Whether a patient is on an epidural for their pain management should be denonted on the existing pain score floor plan** 
+ON EPIDURAL FLOOR PLAN
 
-1. If any of the epididural latest verbal pain scale reading = 0-1: ‘GREEN’; design = green filled bed 
-2. If latest CPOT reading = 0-2: ‘GREEN’; design = green filled bed
-3. If latest verbal pain scale reading = 2: ‘AMBER’; design = amber filled bed
-4. If latest CPOT reading = 3-4: ‘AMBER’; design = amber filled bed
-5. If latest verbal pain scale reading = 3-4: ‘RED’; design = red filled bed
-6. If latest CPOT reading = 5-8: ‘RED’; design = red filled bed
-7. If latest reading ‘missing’: ‘missing’; design = white filled bed with red hashed outline
-8. If latest VPS reading is ‘unable to assess’, label as ‘unable to assess’. Design = white filled bed with blue hashed outline.
-[D] 
+**Whether a patient is on an epidural for their pain management should be denoted on the existing pain score floor plan** 
+
+1. If any of the epidural drug flowsheets have been documented in the last 4 hours, label patient as 'on epidural'
+2. If none of the epidudral drug flowsheets have been documented in the last 4 hours, the patient is not on an epidural. No change. 
+
+MOTOR BLOCK ASSESSMENT FLOOR PLAN
+
+There will be an addtional floorplan button added to the pain floor plan entitled 'Motor Block Assessment'
+
+
+Secondary label-
+*we need to display whether a motor block assessment is overdue whilst at the same time displaying the last level of motor block assessed. This means that for this floor plan, 
+there will be no stricly 'missing' beds, but when an assessment is missing, it will also display the last motor block assessment captured. 
+If there has never been a motor block assessment completed during the patient's admission, then label patient as 'missing'. 
+If the current time is 08:00-19:59, if 'motor block' flowsheet has not been completed in the last two hours, then label patient as 'missing' and forward fill the latest motor block asessmeent reading. 
+Bed to be red hashed outline.
+If the current time is 20:00-)7:59, if 'motor block' flowsheet has not been completed in the last four hours, then label patient as 'missing' and forward fill the latest motor block asessmeent reading. 
+Bed to be red hashed outline.
+_______________________________________________
 
 [E] SPC CHARTS
 ABC SPC CHARTS (refer to XYZ metric in classification
