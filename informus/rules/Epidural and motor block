@@ -29,21 +29,30 @@ If a patient has been on an epidural in the last 4 hours, they are classified as
 motor block assessment documented: 2 hourly during the day shift (08:00-19:59), and 4 hourly during the night shift (20:00-07:59). 
 
 CLASSIFICATION
-Go through each metric in sequence and which charts this data feeds into.
 
-[A] The epidural data on the front tile is a real time view of the number of patients who are currently on an epidural rolling window 
+[A] The epidural data on the front tile is a real time view of the number of patients who are currently on an epidural 
 (at each refresh looks back and collect all the current epidural flowsheets)
-Calculate the current number of patients who have had an epidural documented in the last four hours. 
-Present this number on the front tile as 'number of patients on epidural' 
+Calculate the current number of patients who have had an epidural documented in the last four hours 
+Present this number on the front tile as 'number of patients on epidural'. 
 
 [A] ABC Measurement Interval
 
 E.G. Feeds into (i) front tile - 24 hour rolling window and (ii) SPC interval charts.
 
-[B] ABC metric front tile calculation
 
-[C] Floorplan labelling
 
+**[C] Floorplan labelling - On Epidural**
+
+**Whether a patient is on an epidural for their pain management should be denonted on the existing pain score floor plan** 
+
+1. If any of the epididural latest verbal pain scale reading = 0-1: ‘GREEN’; design = green filled bed 
+2. If latest CPOT reading = 0-2: ‘GREEN’; design = green filled bed
+3. If latest verbal pain scale reading = 2: ‘AMBER’; design = amber filled bed
+4. If latest CPOT reading = 3-4: ‘AMBER’; design = amber filled bed
+5. If latest verbal pain scale reading = 3-4: ‘RED’; design = red filled bed
+6. If latest CPOT reading = 5-8: ‘RED’; design = red filled bed
+7. If latest reading ‘missing’: ‘missing’; design = white filled bed with red hashed outline
+8. If latest VPS reading is ‘unable to assess’, label as ‘unable to assess’. Design = white filled bed with blue hashed outline.
 [D] 
 
 [E] SPC CHARTS
