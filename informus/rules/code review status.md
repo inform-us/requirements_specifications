@@ -11,6 +11,6 @@ Pain|yes||||
 Sedation RASS|yes||||
 SpO2|yes|yes|||
 Tidal Volume|yes||||
-POM DReaMing|yes|yes|yes|SPC chart rules and build|
-Missing discharged patient rules|yes|yes||||
+POM DReaMing|yes|yes|yes|SPC chart rules review|
+Missing discharged patient rules|yes|yes|||Some decisions to be made regarding patients of unit temporarily|
 Validity|||||
