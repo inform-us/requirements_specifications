@@ -21,7 +21,7 @@ There will be two SPC charts of the Percentage of Motor Block Assessments done o
 EPIC Flowsheets
 Flowsheet	Row ID | Manual/Automatic/Calculated Input | Comments	| Expected documentation frequency
 
-# Epidural
+# Motor Block Assessment/Bromage Score
 
 | Tile | Metric | Flowsheet ID | `star.has_visit_observation` is `True` | `star.is_real_time` is `True`  | frequency of reporting | Found in `star.visit_observation_type` | Notes | Status |
 |-|-|-|-|-|-|-|-|-|
@@ -57,21 +57,20 @@ All patients on all units.
 Note these patients will more frequently be found on the post-surgical units, T06 and PACU
 
 VALIDITY
-If a patient has been on an epidural in the last 4 hours, they are classified as 'on epidural'. If a patient is 'on epidural' they are required to have a 
-motor block assessment documented: 2 hourly during the day shift (08:00-19:59), and 4 hourly during the night shift (20:00-07:59). 
+If a patient has been on an epidural in the last ?4 hours, they are classified as 'on epidural'. If a patient is 'on epidural' they are required to have a motor block assessment documented: 2 hourly during the day shift (08:00-19:59), and 4 hourly during the night shift (20:00-07:59). 
 
 CLASSIFICATION
 
 [A] The epidural data on the front tile is a real time view of the number of patients who are currently on an epidural 
 (at each refresh looks back and collect all the current epidural flowsheets)
-Calculate the current number of patients who have had an epidural documented in the last four hours 
+Calculate the current number of patients who have had a ?epidural volume documented in the last four hours 
 Present this number on the front tile as 'number of patients on epidural'. 
 
-[A] ABC Measurement Interval (for motor block assessment scoring only)
+[A] Measurement Interval (for motor block assessment scoring only)
 
 E.G. Feeds into (i) front tile - 24 hour rolling window and (ii) SPC interval charts.
 
-
+Average time between motoblock assessments 
 
 ## [C] Floorplan labelling 
 
