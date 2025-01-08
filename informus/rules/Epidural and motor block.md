@@ -57,7 +57,7 @@ All patients on all units.
 Note these patients will more frequently be found on the post-surgical units, T06 and PACU
 
 VALIDITY
-If a patient has been on an epidural in the last ?4 hours, they are classified as 'on epidural'. If a patient is 'on epidural' they are required to have a motor block assessment documented: 2 hourly during the day shift (08:00-19:59), and 4 hourly during the night shift (20:00-07:59). 
+If a patient has been on an epidural (note flowsheets TBC) in the last ?4 hours, they are classified as 'on epidural'. If a patient is 'on epidural' they are required to have a motor block assessment documented: 2 hourly during the day shift (08:00-19:59), and 4 hourly during the night shift (20:00-07:59). 
 
 CLASSIFICATION
 
@@ -66,19 +66,21 @@ CLASSIFICATION
 Calculate the current number of patients who have had a ?epidural volume documented in the last four hours 
 Present this number on the front tile as 'number of patients on epidural'. 
 
-[A] Measurement Interval (for motor block assessment scoring only)
+*Note Average time between motorblock assessments - suggest not on front tile- TBC.* 
 
-E.G. Feeds into (i) front tile - 24 hour rolling window and (ii) SPC interval charts.
 
-Average time between motoblock assessments 
 
-## [C] Floorplan labelling 
+## [B] Floorplan labelling 
 
 ON EPIDURAL FLOOR PLAN
 
+ELIGIBILITY
+
+All patients
+
 **Whether a patient is on an epidural for their pain management should be denoted on the existing pain score floor plan** 
 
-1. If any of the epidural drug flowsheets have been documented in the last 4 hours, label patient as 'on epidural'. ?Icon or letter 'E' in Bed. 
+1. If epidural (flowsheets TBC) have been documented in the last 4 hours, label patient as 'on epidural'. ?Icon or letter 'E' in Bed. 
 2. If none of the epidural drug flowsheets have been documented in the last 4 hours, the patient is not on an epidural. No change. 
 
 MOTOR BLOCK ASSESSMENT FLOOR PLAN
@@ -86,9 +88,11 @@ MOTOR BLOCK ASSESSMENT FLOOR PLAN
 All patients who have been on an epidural in the last four hours need to have their level of motor block, also called the Bromage Score assessed 2 hourly in day and 4 hourly in the day. 
 There will be an additional floorplan button added to the pain floor plan entitled 'Motor Block Assessment'
 
-Patients with epidurals will be highlighted
+ELIGIBILITY
 
-All patients who are not on epidurals will be greyed out or otherwise depicted as not on epidural. 
+All patients on an epidural
+Patients with epidurals to be visualy denoted highlighted. Others are not included in the calculation
+
 ## Primary Label Assessment of Motor Block/Bromage Score Label 
 
 1. If either the latest 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' entry is  0 or 1, label patient as 'bromage score = 0 or 1'; GREEN
@@ -106,7 +110,14 @@ Bed to be red hashed outline (with fill of colour from forward filled entry).
 Bed to be red hashed outline  (with fill of colour from forward filled entry).
 _______________________________________________
 
-[E] SPC CHARTS
+
+
+
+
+[D] SPC CHARTS
+Measurement Interval (for motor block assessment scoring only)
+Average time between motorblock assessments - note suggest not on front tile- TBC. 
+
 ABC SPC CHARTS (refer to XYZ metric in classification
 
 Calendar day defined as 00:00 - 23:59
