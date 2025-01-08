@@ -69,10 +69,9 @@ Present this number on the front tile as 'number of patients on epidural'.
 *Note Average time between motorblock assessments - suggest not on front tile- TBC.* 
 
 
-
 ## [B] Floorplan labelling 
 
-ON EPIDURAL FLOOR PLAN
+## PATIENTS WHO ARE ON EPIDURAL FLOOR PLAN
 
 ELIGIBILITY
 
@@ -83,7 +82,7 @@ All patients
 1. If epidural (flowsheets TBC) have been documented in the last 4 hours, label patient as 'on epidural'. ?Icon or letter 'E' in Bed. 
 2. If none of the epidural drug flowsheets have been documented in the last 4 hours, the patient is not on an epidural. No change. 
 
-MOTOR BLOCK ASSESSMENT FLOOR PLAN
+## MOTOR BLOCK ASSESSMENT FLOOR PLAN
 
 All patients who have been on an epidural in the last four hours need to have their level of motor block, also called the Bromage Score assessed 2 hourly in day and 4 hourly in the day. 
 There will be an additional floorplan button added to the pain floor plan entitled 'Motor Block Assessment'
@@ -91,7 +90,8 @@ There will be an additional floorplan button added to the pain floor plan entitl
 ELIGIBILITY
 
 All patients on an epidural
-Patients with epidurals to be visualy denoted highlighted. Others are not included in the calculation
+
+*Patients with epidurals to be visualy highlighted. Others are not included in the calculation*
 
 ## Primary Label Assessment of Motor Block/Bromage Score Label 
 
@@ -109,8 +109,6 @@ Bed to be red hashed outline (with fill of colour from forward filled entry).
 3. If the current time is 20:00-07:59, if either 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' have not been completed in the last four hours, then label patient as 'missing' and forward fill the latest motor block asessmeent reading. 
 Bed to be red hashed outline  (with fill of colour from forward filled entry).
 _______________________________________________
-
-
 
 
 
