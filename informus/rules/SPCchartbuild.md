@@ -59,7 +59,10 @@ Note: *Control limits are stepped as they reflect the change in sample size of e
 - If data points indicate a TREND which includes an OUTLIER, denote all nonoutlier data points as a TREND (blue squares) and denote any outlier data points OUTLIERS (red triangle) within the TREND. 
 - If data points indicate a SHIFT which includes an OUTLIER, denote all nonoutlier data points as a SHIFT (orange diamonds) and denote outlier data points as OUTLIERS (red triangle) within the SHIFT. 
 
-## Mean recalculation
-If 11 + 1 consecutive data points above or below the mean (=shift plus 5 more points), then recalculate the mean from the 12th data point using those 12 data points (i.e. this point and the preceding 11), but visually depict a change in mean going forward from the 12th data point. Note that outliers that are above or below the mean should be included in this calculation. 
-If there has been no mean recalculation at the end of a three month period: (end defined as March 31st, June 30th, September 30th & December 31st), then automatically recalculate mean using the previous 13 data points, only visually display change in mean going forward on next data point
+## Mean and process limit recalculation
+If 11 + 1 consecutive data points above or below the mean including outliers (=shift plus 5 more points), then recalculate the mean and process limits using those preceding 12 data points (i.e. the 12th point and the preceding 11). Visually depict the recalculated mean and process limits going forward from the 12th data point. 
+
+*Note that outliers that are above or below the mean should be included in this calculation even if they aren't depicted as part of a shift as they are outliers as they lie above or below the process limit.* 
+
+If there has been no data-driven mean and process limit recalculation at the end of 24-week period: then automatically recalculate the mean using the previous 24 data points, only visually display change in mean and process limits going forward on the next data point.
 
