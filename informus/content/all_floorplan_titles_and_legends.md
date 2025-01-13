@@ -93,6 +93,7 @@ To access individual floorplan select location and required tile/metric from Cli
 
 ![image](https://github.com/inform-us/requirements_specifications/assets/94536083/e306b7c7-6dcf-4c53-944e-6f67fa756177)
 
+Add legend item - dark grey bed, label as 'incomplete data' 
 
 ---
 
@@ -104,6 +105,7 @@ To access individual floorplan select location and required tile/metric from Cli
 
 ![image](https://github.com/inform-us/requirements_specifications/assets/94536083/71ad7bbb-5d20-4a92-aefd-bedbe08af5c3)
 
+Add legend item - dark grey bed, label as 'incomplete data'
 
 ---
 
@@ -126,6 +128,7 @@ To access individual floorplan select location and required tile/metric from Cli
 
 ![image](https://github.com/inform-us/requirements_specifications/assets/94536083/34b10f7f-6b12-4212-8e7a-aeb99d2ccc32) 
 
+Add legend item - dark grey bed, label as 'incomplete data' 
 
 ---
 ## Tile: Patients with a RASS -3 to + 4 CAM-ICU
