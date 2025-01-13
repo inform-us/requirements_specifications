@@ -60,6 +60,6 @@ Note: *Control limits are stepped as they reflect the change in sample size of e
 - If data points indicate a SHIFT which includes an OUTLIER, denote all nonoutlier data points as a SHIFT (orange diamonds) and denote outlier data points as OUTLIERS (red triangle) within the SHIFT. 
 
 ## Mean recalculation
-If 7 + 1 consecutive data points above or below the mean (=shift), then recalculate the mean from this 8th data point using those 8 data points (i.e. this point and the preceding 7), but visually depict a change in mean going forward from the 8th data point. 
+If 11 + 1 consecutive data points above or below the mean (=shift plus 5 more points), then recalculate the mean from the 12th data point using those 12 data points (i.e. this point and the preceding 11), but visually depict a change in mean going forward from the 12th data point. Note that outliers that are above or below the mean should be included in this calculation. 
 If there has been no mean recalculation at the end of a three month period: (end defined as March 31st, June 30th, September 30th & December 31st), then automatically recalculate mean using the previous 13 data points, only visually display change in mean going forward on next data point
 
