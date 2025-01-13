@@ -64,5 +64,4 @@ If 11 + 1 consecutive data points above or below the mean including outliers (=s
 
 *Note that outliers that are above or below the mean should be included in this calculation even if they aren't depicted as part of a shift as they are outliers as they lie above or below the process limit.* 
 
-If there has been no data-driven mean and process limit recalculation at the end of 24-week period: then automatically recalculate the mean using the previous 24 data points, only visually display change in mean and process limits going forward on the next data point.
-
+If there has been no data-driven mean and process limit recalculation at the end of 24-week period: then automatically recalculate the mean and process limits from the 24th data point and the preceding 23 data points. Visually depict the recalculated mean and process limits going forward from the 24th data point. 
