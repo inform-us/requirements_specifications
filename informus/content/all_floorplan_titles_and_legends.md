@@ -145,6 +145,7 @@ Add legend item - dark grey bed, label as 'incomplete data'
 
 ![image](https://github.com/user-attachments/assets/b996f030-82ae-42ed-b90d-3470129c45af)
 
+Add IV as secondary label to legend. IV letters in shadow rectangle = 'IV in addition'
 
 **Floorplan title: Mobilisation**
 
