@@ -145,7 +145,7 @@ Patients are receiving supplemental oxygen. If a patient does not receive supple
 
 **Tip 2:** Non-numerical means that a free text target has been set.
 
-**Tip 3:** If cannot be completed this means there is not enough data. This is often due to a patient being newly admitted or having been off the unit for some time e.g. for imaging or a scan
+**Tip 3:** If a bed is labeled 'incomplete data' this means there is not enough data. This often means a patient is a new CCU admission or has been away from the unit for some time e.g. for imaging or a procedure
 
 
 
@@ -191,7 +191,7 @@ Patients are receiving intravenous vasoactive drugs. If a patient does not recei
 
 **Tip 2:**  Non numerical means that a free text target has been set.
 
-**Tip 3:**  If a bed is dark grey, calculation cannot be completed. 
+**Tip 3:**   If a bed is labeled 'incomplete data' this means there is not enough data. This often means a patient is a new CCU admission or has been away from the unit for some time e.g. for imaging or a procedure
 
 
 
@@ -267,8 +267,6 @@ Tidal volume targets do not need to be set. All eligible patients must have a he
 Patients are intubated (oral/nasal tube or tracheostomy) and on mandatory ventilation. If a patient is not on mandatory ventilation for four consecutive hours, they are classified as ‘not on mandatory ventilation’.
 
 
-
-
 **Classification**
 
 
@@ -278,6 +276,8 @@ Patients are intubated (oral/nasal tube or tracheostomy) and on mandatory ventil
 
 
 **Tip 1:** These data update on the hour
+
+**Tip 2:** If a bed is labeled 'incomplete data' this means there is not enough data. This often means a patient is a new CCU admission or has been away from the unit for some time e.g. for imaging or a procedure
 
 
 
