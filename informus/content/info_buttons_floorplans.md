@@ -145,7 +145,9 @@ Patients are receiving supplemental oxygen. If a patient does not receive supple
 
 **Tip 2:** Non-numerical means that a free text target has been set.
 
-**Tip 3:**  If a bed is dark grey, calculation cannot be completed. 
+**Tip 3:** If cannot be completed this means there is not enough data. This is often due to a patient being newly admitted or having been off the unit for some time e.g. for imaging or a scan
+
+
 
 
 
