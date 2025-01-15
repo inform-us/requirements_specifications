@@ -116,13 +116,13 @@ This also holds true for shorter trips in and out of the unit. For example, let'
 
 Equally, we must ensure that any data 'gaps' in the last 24 hours (due to the patient being outside the unit, in another location in the hospital), don't negatively impact the scores on each tile. There is no data for these patients on T03 in these gaps, so they shouldn't contribute to the overall score.
 
-Some specifics relating to time off unit
+## Some specifics relating to time off unit
 
-Sedation RASS, Blood Oxygen Saturation (SPO2), Mean Arterial Blood Pressure (MAP) Metrics 
+### Sedation RASS, Blood Oxygen Saturation (SPO2), Mean Arterial Blood Pressure (MAP) Metrics 
 
 For these metrics we calculate a 'denominator' of 'total hours on... sedation, oxygen therapy mandatory ventilation, vasoactive drugs' for the tile. Any time of += 1 hour when a patient is off the unit during their stay should not be included in this number. 
 
-Pain, RASS 
+### Pain, RASS 
 
 For these metrics, we calculate an average time between measurements for the tile. Any time of += 1 hour off the unit should also be excluded from the 'Average time between measurements. This is because if a patient is off the unit for a long period of time, e.g. for an operation, this would greatly skew the mean time between measurements even though taking observations at these times is impossible. If 'Time A' of  an interval between measurements starts before a trip off the unit, this measurement and the time interval before the next measurement 'Time B' of that interval are ignored. Therefore, when the patient returns, 'Time B' becomes 'Time A' of another time between measurements interval. 
 
@@ -139,7 +139,7 @@ The floorplan (i.e. the view with beds as individual coloured rectangles), shoul
 
 As above, we still need to ensure that we only use data generated within the current unit, excluding any that may have been generated while the patient was in another location in the hospital. Bear in mind that current patients may have previously been moved in/out of the unit, as well as within the unit within our time period of interest. 
 
-SPO2, Mean Arterial Blood Pressure and Tidal Volume metrics
+### SPO2, Mean Arterial Blood Pressure and Tidal Volume metrics
 
 Note these metrics classify patients for the floorplans according to summative rules and not real-time status of whether they are above, below or in range of target.... e.g. 'Tidal volumes are above 8 mL/kg IBW for 3 consecutive hours OR 5 non-consecutive hours within the preceding 24 hours; OR tidal volumes are above 10 mL/kg IBW for 2 consecutive hours'. We therefore need to exclude time off of the unit for more than an hour from these calculations.  
 
