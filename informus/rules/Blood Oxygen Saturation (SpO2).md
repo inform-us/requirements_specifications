@@ -29,7 +29,7 @@ Rules for Blood Oxygen Saturation metric
 - if epoch after 12noon: 
 - if spo2target_dt after 8am the morning of then mark as valid else as invalid 
 
-        	 
+
 
 ## Classification Rules: (corresponds to the per patient chart) 
 
@@ -37,9 +37,23 @@ Rules for Blood Oxygen Saturation metric
 2. if 'has_valid_o2sat': 'missing'
 3. if  'has_valid_numerical_spo2_target': 'below' or 'above' or 'in range' 
 4. if 'has_valid_entered_spo2_target': 'non-numerical'
-5. if none of the above:  'not set' 
+5. if none of the above:  'not set'
 
    assign an epoch to each existing dt, a measurement within an hour and assigning it to the previous hour. 
+
+
+## Summary Rules (corresponds to tile data)
+
+### Percentage of readings on Target Calculation
+
+- Denominator = the number of SP02 readings that have had 'has_valid_numerical_spo2_target': 'below' or 'above' or 'in range' 
+or if 'has_valid_entered_spo2_target': 'non-numerical' set within the last 24 hours
+- Numerator = the number of these SPO2 readings that were within their target within the last 24 hours
+- Denote as percentage
+
+### Total Hours on Oxygen Therapy Calculation
+  
+- Calculate the total patient hours of'on_room_air': 'not applicable' in the last 24 hours. Exclude any time += one hour when a patient is off the unit, e.g. patient has left the unit for a scan or procedure and has returned. 
 
 ## Labelling Rule: (corresponds to the floor plans)     
 
@@ -51,10 +65,10 @@ Rules for Blood Oxygen Saturation metric
  6. if the latest classification is 'non-numerical' then label the patient as 'non-numerical' 
  7. if the latest classification is 'missing' then label the patient as 'missing' 
  8. if the latest classification is 'not set' then label the patient as 'not set' 
- 9. if the classification was 'in range' and is now above(below) for fewer than 3(2) hours then label as 'in range' 
- 10. if none of the rules matched then label the patient as 'fallthrough'
- 11. n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in
- ? button. 
+ 9. if the classification was 'in range' and is now above(below) for fewer than 3(2) hours then label as 'in range'
+ 10. if the patient has been off the unit for += 1 hour, e.g. for imaging or a procedure, exclude these hours from this calculation
+ 11. if none of the rules matched then label the patient as 'fallthrough'
+
 ---
 # SPC CHARTS
 ## SpO2 -Daily percentage above, below, within SpO2 target
