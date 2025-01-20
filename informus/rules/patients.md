@@ -94,13 +94,19 @@ Note: during processing, you will need to consider a larger time window for most
 
 ### Exclude off unit hours from statistics
 
-Any time not on the unit (for any reason e.g. before admission to hospital, after discharge from hospital, transfer to another ward/ICU, temporary movement for surgery...) should be excluded from all tile statistics. For example:
+Time off the unit (for any reason e.g. before admission to hospital, after discharge from hospital, transfer to another ward/ICU, temporary movement for surgery...) should be excluded from all tile statistics. For example:
 
-- the denominator of tile percentages (%)
-- the 'total hours' e.g. total hours on oxygen or sedation
-- intervals (i.e. average time between measurements for pain and rass)
+#### Tile percentages / total hours
 
-For intervals, we exclude any pair of readings that includes an hour or more off unit time. For example, say a patient was present in a bed on T03, before being moved for surgery for 4 hours, and then returning to the same bed on T03. We would calculate intervals between all sequential pairs of pain readings taken on T03, excluding the one between the last reading before they were moved for surgery and the first one after they returned. This would remove the long interval of > 4 hours, which was caused by their movement off the unit.
+For metrics with tile percentages or 'total hours' (such as Sedation RASS, Blood Oxygen Saturation (SPO2), Mean Arterial Blood Pressure (MAP) etc.), off unit time should be excluded. Any hourly epochs when a patient isn't on the unit at any time during that hour should be excluded from the denominator of the percentages (%) and from the displayed 'total hours' e.g. 'total hours on... sedation, oxygen therapy, mandatory ventilation, vasoactive drugs'.
+
+This ensures that e.g. a patient being transferred off the unit temporarily for a long surgery doesn't negatively impact scores like the % of readings on target. It's impossible to take observations during their time off unit, so that time shouldn't contribute to their overall score.
+
+#### Pain/ RASS average time between measurements
+
+For these metrics, we calculate an average time between measurements for the tile (i.e. we take pairs of sequential readings, calculate the time interval between them and take an average). Any interval that includes an hour or more off unit time should be excluded. This is because if a patient is off the unit for a long period of time, e.g. for an operation, this would greatly skew the mean time between measurements even though taking observations at these times is impossible.
+
+For example, say a patient was present in a bed on T03, before being moved for surgery for 4 hours, and then returning to the same bed on T03. We would calculate intervals between all sequential pairs of pain readings taken on T03, excluding the one between the last reading before they were moved for surgery and the first one after they returned. This would remove the long interval of > 4 hours, which was caused by their movement off the unit.
 
 ### Tile display
 
@@ -114,7 +120,11 @@ The time window is always exactly 24 hours (even over a daylight savings transit
 
 The floorplan (i.e. the view with beds as individual coloured rectangles), should only include data for patients currently on the unit (i.e. patients that have since been discharged or moved to another location in the hospital should be excluded). 
 
-As above, we still need to ensure that we only use data generated within the current unit, excluding any that may have been generated while the patient was in another location in the hospital. Bear in mind that current patients may have previously been moved in/out of the unit, as well as within the unit within our time period of interest. 
+As above, we still need to ensure that we only use data generated within the current unit, excluding any that may have been generated while the patient was in another location in the hospital. Bear in mind that current patients may have previously been moved in/out of the unit, as well as within the unit within our time period of interest.
+
+#### SPO2, Mean Arterial Blood Pressure and Tidal Volume metrics
+
+Note these metrics classify patients for the floorplans according to summative rules and not real-time status of whether they are above, below or in range of target... e.g. 'Tidal volumes are above 8 mL/kg IBW for 3 consecutive hours OR 5 non-consecutive hours within the preceding 24 hours; OR tidal volumes are above 10 mL/kg IBW for 2 consecutive hours'. We therefore need individual rules to handle any 'off unit' hours (to be solved with https://github.com/inform-us/INFORMus/issues/1756) - see the 'labelling rules' for the individual metrics.
 
 ### Metric charts (i.e. `72hr` data)
 
