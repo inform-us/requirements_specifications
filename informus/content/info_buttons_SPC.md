@@ -263,7 +263,7 @@ The slider below the graph allows you to go forward and back in time. The maximu
 
 Regular and systematic assessment of Sedation and Agitation is a crucial part of ICU care. 
 RASS score should be documented hourly in the day and 4-hourly at night.  
-These charts help us evaluate how well we are doing with documenting RASS scores as per our guidelines.  
+These charts help us evaluate how well we are doing with assessing and documenting sedation and agitation as per our guidelines.  
 
 
 ## ? button 
@@ -282,9 +282,9 @@ A weekly percentage of ‘on time’ RASS assessments is calculated using the nu
  
 Within documentation guidelines:  
 
-A none or mild pain score (including‘ unable to assess’ due to sleep) that has been reassessed within 4 hours. 
+During the day, RASS score should be documented hourly in EPIC. 
 
-A moderate or severe pain score that has been reassessed within 1 hour.  
+During the night, RASS score should be documented every four hours. 
 
 To account for excessively long periods where pain has not been assessed and documented, the denominator has been adjusted.  
 
