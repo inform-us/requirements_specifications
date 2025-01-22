@@ -1,18 +1,31 @@
 # Code Review status 
 
 
-Code|clinical rules signed_off|Team Code Review Status|Outstanding|
+Code|Real Time clinical rules signed_off|Team Code Review Status|Outstanding|
 |---|---|---|---|
 Targets|yes - 09/05/24|- done with Harry/Sarah|Redo with current team||
 Delirium CAM-ICU |yes|completed|SPC chart rules and build|
 SPC Chart Build|yes|first set of code, yes, but formula to change|Change to mean and limit recalculation from 8 to 12 and to include outliers in shift
 MAP (Mean Arterial Blood Pressure)||||
 Pain|yes|completed|none|
-Sedation RASS||||
+Sedation RASS|yes|complete|extended hours|
 SpO2||||
 Tidal Volume||||
-POM DReaMing|yes|yes|yes|SPC chart rules review|
-Missing discharged patient rules|yes|have reviewed some of kimberly's code with final code review to do after decisions made|||Some decisions to be made regarding patients of unit temporarily|
-Validity?|not sure what this means- SS||||
+POM DReaMing|yes|complete||
+Missing discharged patient rules|yes|have reviewed some of kimberly's code with final code review to do after decisions made|complete|Review Kimbery's updated rules in PR, Siri to incorporate into each individual metric rules and content|
+Airway|yes|no|airway from other ward?|
+Epidural|||||
+
+
+Code|SPC clinical rules signed_off|Team Code Review Status|Outstanding|
+|---|---|---|---|
+Targets|yes - 09/05/24|- done with Harry/Sarah|Redo with current team||
+Delirium CAM-ICU |yes|completed|SPC chart rules and build|
+MAP (Mean Arterial Blood Pressure)|no|to do||
+Pain|yes|completed|none|
+Sedation RASS|||SPC measurement interval outstanding|
+SpO2||||
+Tidal Volume||||
+POM DReaMing|no|no|SPC chart rules review|
 Airway|||||
 Epidural|||||
