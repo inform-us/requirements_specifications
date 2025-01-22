@@ -57,7 +57,7 @@ All patients on all units.
 Note these patients will more frequently be found on the post-surgical units, T06 and PACU
 
 VALIDITY
-If a patient has been on an epidural (note flowsheets TBC) in the last ?4 hours, they are classified as 'on epidural'. If a patient is 'on epidural' they are required to have a motor block assessment documented: 2 hourly during the day shift (08:00-19:59), and 4 hourly during the night shift (20:00-07:59). 
+If a patient has been on an epidural (note flowsheets TBC) in the last 12 hours, they are classified as 'on epidural'. If a patient is 'on epidural' they are required to have a motor block assessment documented: 2 hourly during the day shift (08:00-19:59), and 4 hourly during the night shift (20:00-07:59). 
 
 CLASSIFICATION
 
@@ -79,8 +79,8 @@ All patients
 
 **Whether a patient is on an epidural for their pain management should be denoted on the existing pain score floor plan** 
 
-1. If epidural (flowsheets TBC) have been documented in the last 4 hours, label patient as 'on epidural'. ?Icon or letter 'E' in Bed. 
-2. If none of the epidural drug flowsheets have been documented in the last 4 hours, the patient is not on an epidural. No change. 
+1. If epidural (flowsheets TBC) have been documented in the last 12 hours, label patient as 'on epidural'. ?Icon or letter 'E' in Bed. 
+2. If none of the epidural drug flowsheets have been documented in the last 12 hours, the patient is not on an epidural. No change. 
 
 ## MOTOR BLOCK ASSESSMENT FLOOR PLAN
 
