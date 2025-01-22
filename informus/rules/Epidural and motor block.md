@@ -25,8 +25,6 @@ Flowsheet	Row ID | Manual/Automatic/Calculated Input | Comments	| Expected docum
 
 | Tile | Metric | Flowsheet ID | `star.has_visit_observation` is `True` | `star.is_real_time` is `True`  | frequency of reporting | Found in `star.visit_observation_type` | Notes | Status |
 |-|-|-|-|-|-|-|-|-|
-| Epidural | Level of Block (Left side) | 38580 | ✅ | ✅ | 2-hourly between 0800-1959, 4-hourly between 2000-0759 | ✅ |  | complete (flowsheet is in EMAP) |
-| Epidural | Level of Block (Right side) | 38581 | ✅ | ✅ | 2-hourly between 0800-1959, 4-hourly between 2000-0759 | ✅ |  | complete (flowsheet is in EMAP) |
 | Epidrual | Assessment of Motor Block Lt leg | 30415249 | ✅ | ✅ | 2-hourly between 0800-1959, 4-hourly between 2000-0759 | ✅ |  | complete (flowsheet is in EMAP) |
 | Epidural | Assessment of Motor Block Rt leg | 30415250 | ✅ | ✅ | 2-hourly between 0800-1959, 4-hourly between 2000-0759 | ✅ |  | complete (flowsheet is in EMAP) |
 | Epidural | LDA line status simple | 3040102506 | ✅ | ✅ |  | ✅ |  | complete (flowsheet is in EMAP) |
@@ -36,18 +34,8 @@ Flowsheet	Row ID | Manual/Automatic/Calculated Input | Comments	| Expected docum
 
 | Tile | Metric | Flowsheet ID | `star.has_visit_observation` is `True` | `star.is_real_time` is `True`  | frequency of reporting | Found in `star.visit_observation_type` | Notes | Status |
 |-|-|-|-|-|-|-|-|-|
-| Epidural drugs | Volume Infused (mL) Bupivacaine (0.1%)/Fentanyl (2 mcg /mL) | 28222 | ✅ | ✅ |  | ✅ |  | complete (flowsheet is in EMAP) |
+
 | Epidural drugs | Volume (mL) | 7001026 | ✅ | ✅ | hourly | ✅ |  | complete (flowsheet is in EMAP) |
-| Epidural drugs | bupivicaine 0.1% with fentanyl 2mcg/ml epidural infusion | ? | ❌ | ❌ | hourly | ❌ | 30863 is the drug code | not yet requested |
-| Epidural drugs | Volume Infused (mL) Bupivacaine (0.1%) / Fentanyl (2 mcg/mL) | 31429 | ❌ | ❌ | hourly | ✅ |  | request completed from the EMAP team, but still no data coming through for `has_visit_observation` or `ir_real_time` |
-| Epidural drugs | bupivicaine 0.1% with fentanyl 2mcg/ml PCEA epidural infusion | ? | ❌ | ❌ | hourly | ❌ | 40830863 is the drug code | not yet requested |
-| Epidural drugs | Bupivacane 0.1% with fentanyl 2mcg/ml epidural injection (EGA only) 20mls | ? | ❌ | ❌ | hourly | ❌ | 408124007 (not sure what this code is) | not yet requested |
-| Epidural drugs | levobupivicaine 0.125% wtih fentanyl  2mch/ml epidural infusion | ? | ❌ | ❌ | hourly | ❌ | 188047 is the drug code | not yet requested |
-| Epidural drugs | Volume Infused (mL) Levobupivacaine (0.1%)/Fentanyl (2 mcg /mL) | 48330 | ❌ | ❌ | hourly | ✅ |  | request completed from the EMAP team, but still no data coming through for `has_visit_observation` or `ir_real_time` |
-| Epidural drugs | levobupivicaine 0.125% epidural infusion (200ml) | ? | ❌ | ❌ | hourly | ❌ | 181762 is the drug code | not yet requested |
-| Epidural drugs | PCEA theatres bupivicaine 0.1% epidural infusion | ? | ❌ | ❌ | hourly | ❌ | 408107895 is the drug code | not yet requested |
-| Epidural drugs | Volume Infused (mL) Bupivacaine (0.125%) / Fentanyl (2 mcg/mL) | 47779 | ❌ | ❌ | hourly | ✅ | `has_visit_observation` was `False` in star_staging indicating a lack of data. We need to check Caboodle if any data is coming through | not yet requested |
-| Epidural drugs | Volume Infused (mL) Bupivacaine (0.125%)/Fentanyl (2 mcg /mL) | 47756 | ❌ | ❌ |  | ✅ |  | request completed from the EMAP team, but still no data coming through for `has_visit_observation` or `ir_real_time` |
 
   |-|-|-|-|-|
 
@@ -57,13 +45,13 @@ All patients on all units.
 Note these patients will more frequently be found on the post-surgical units, T06 and PACU
 
 VALIDITY
-If a patient has been on an epidural (note flowsheets TBC) in the last 12 hours, they are classified as 'on epidural'. If a patient is 'on epidural' they are required to have a motor block assessment documented: 2 hourly during the day shift (08:00-19:59), and 4 hourly during the night shift (20:00-07:59). 
+If a patient has data entered in flowsheet  Epidural drugs | Volume (mL) | 7001026  in the last 12 hours, they are classified as 'on epidural'. If a patient is 'on epidural' they are required to have a motor block assessment documented: 2 hourly during the day shift (08:00-19:59), and 4 hourly during the night shift (20:00-07:59). 
 
 CLASSIFICATION
 
 [A] The epidural data on the front tile is a real time view of the number of patients who are currently on an epidural 
 (at each refresh looks back and collect all the current epidural flowsheets)
-Calculate the current number of patients who have had a ?epidural volume documented in the last four hours 
+Calculate the current number of patients who have had epidural volume 7001026  documented in the last four hours 
 Present this number on the front tile as 'number of patients on epidural'. 
 
 *Note Average time between motorblock assessments - suggest not on front tile- TBC.* 
@@ -79,7 +67,7 @@ All patients
 
 **Whether a patient is on an epidural for their pain management should be denoted on the existing pain score floor plan** 
 
-1. If epidural (flowsheets TBC) have been documented in the last 12 hours, label patient as 'on epidural'. ?Icon or letter 'E' in Bed. 
+1. If data entered in flowsheet 7001026 in the last 12 hours, label patient as 'on epidural'. ?Icon or letter 'E' in Bed. 
 2. If none of the epidural drug flowsheets have been documented in the last 12 hours, the patient is not on an epidural. No change. 
 
 ## MOTOR BLOCK ASSESSMENT FLOOR PLAN
