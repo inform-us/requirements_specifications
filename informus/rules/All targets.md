@@ -95,7 +95,6 @@ Feeds into (i) front tile (current time snapshot), (ii) floorplan and (iii) 'all
 
 **Relevant SPC chart information**
 
-**_PLEASE NOTE SPC CHART CURRENTLY GENERATING DAILY DATA - DELETE THIS LINE & ADJUST FRONT END TEXT ONCE ZENHUB TICKETS 891 & 1113 resolved_**
 
 1. This is a weekly percentage (p-chart) SPC
 2. It differs from the other SPC charts in that it takes a snapshot at 13:00, and not a calendar day aggregate
@@ -125,6 +124,8 @@ Operational definition = of documented physiological targets set in ICU Navigato
 
 ---
 **ALTERNATE - ALL TARGETS SET IN ICU NAVIGATOR - CALENDAR DAY VERSION**
+
+*Note this is a concept as of now... January 2025. We are not building this chart.* 
 
 Proportion of 'all targets set' in ICU navigators
 
