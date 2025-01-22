@@ -1,5 +1,5 @@
 
-
+Deicsion to add icon epidural to pain floor plan and keep motor block fraction on an epidurual, then average time between epidural , then open a individual chart that shows motor block. pick point with the higher 
 # Epidural and Motor Block Assessment/Bromage Score Rules
 
 ## Rules for Epidural and the level of motor block that the epidural is providing to the patient
@@ -99,8 +99,12 @@ Bed to be red hashed outline  (with fill of colour from forward filled entry).
 _______________________________________________
 
 
+DRAFT below- 
 
 [D] SPC CHARTS
+
+Operational definition - For patients on epidurals, what percentage of motor block assessements are done on time as per guidelines. Chart a- day, Char b- night. 
+
 Measurement Interval (for motor block assessment scoring only)
 Average time between motorblock assessments - note suggest not on front tile- TBC. 
 
@@ -108,12 +112,7 @@ ABC SPC CHARTS (refer to XYZ metric in classification
 
 Calendar day defined as 00:00 - 23:59
 Week defined as Monday 00:00 – Sunday 23:59
-Chart 1 [Patient chart]
-Proportion of moderate or severe pain scores – weekly chart
 
-Operational definition = of the documented pain scores in EPIC, what proportion are moderate or severe on a weekly basis?
-
-Chart 2
 
 These are weekly percentage (p-charts) SPC
 Week defined a Monday 00:00 – Sunday 23:59
