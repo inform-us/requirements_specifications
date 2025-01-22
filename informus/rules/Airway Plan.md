@@ -54,7 +54,7 @@ All patients across all units
 - an ICU Airway Plan is only deemed COMPLETED if option A OR option B is met
 
 **Option A** <br>
-- Airway [Row ID 24499] completed - this will return one of the follwoing options: Natural Airway / Endotracheal Tube / Percutaneous Tracheostomy / Surgical Tracheostomy / Laryngectomy / Other and have a _dt stamp
+- Airway [Row ID 24499] completed - this will return one of the following options: Natural Airway / Endotracheal Tube / Percutaneous Tracheostomy / Surgical Tracheostomy / Laryngectomy / Other and have a _dt stamp
 - AND DAS Generic Airway Plan [Row ID 24498] = YES and has a dt stamp
 
 **Option B** <br>
@@ -152,9 +152,15 @@ ____
 
 TBC weekly percentage of patients who have an airway plan. 
 
-Numerator = patients present in the current week who have had at least one airway plan during ICU admission
 
-Denominator = Patients present in the current week
+
+1. This is a weekly percentage (p-chart) SPC
+2. Week defined as Monday 00:00 – Sunday 23:59
+3. Calculate the number of patients who have been present on the unit in the week
+4. Calculate the number of patients who have been present on the unit in the week who have had at least one airway plan documented at any point in their admission. In other words... a patient admitted during a particular week who has an ICU stay that spans over more than that week may have an airway plan documented the following week after their week of admission. These patients should be included in the 
+5. Numerator = patients present in the current week who have had at least one airway plan during ICU admission
+6. Denominator = Patients present in the current week
+
 ---
 ## APPENDIX - unused flow sheets, discard after code review
 
