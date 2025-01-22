@@ -5,7 +5,7 @@ Code|clinical rules signed_off|Team Code Review Status|Outstanding|
 |---|---|---|---|
 Targets|yes - 09/05/24|- pending code review <br> - Y/N to alternate SPC (line 116)|no||
 Delirium CAM-ICU |yes|yes|SPC chart rules and build|
-SPC Chart Build|yes|first set of code, yes,but formula to change|Change to mean recalculation
+SPC Chart Build|yes|first set of code, yes, but formula to change|Change to mean and limit recalculation from 8 to 12 and to include outliers in shift
 MAP (Mean Arterial Blood Pressure)||||
 Pain|yes|||
 Sedation RASS||||
