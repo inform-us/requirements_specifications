@@ -49,12 +49,11 @@ All patients who have received local anaesthesia via an epidural catheter in the
 Flowsheet data from 7001026 is valid for 75 minutes.
 A patient is classified as 'on an epidural' for ?12 hours following data entry in the flowsheet. 
 
-If a patient is 'on epidural' they are required to have a motor block assessment documented for at least ?12 hours following any data entered into flowsheet 7001026.: 2 hourly during the day shift (08:00-19:59), and 4 hourly during the night shift (20:00-07:59) ?unless red flag or worsening bromage score.... 
+If a patient is 'on epidural' they are required to have a motor block assessment documented for at least ?12 hours following any data entered into flowsheet 7001026.: 2 hourly during the day shift (08:00-19:59), and 4 hourly during the night shift (20:00-07:59) ?unless red flag or worsening bromage score.... Define! 
 
 30415249 Motor block assessment left leg
 30415250 Motor block assessment right leg
 
-Most recent Motor block assessment is valid. If two measurements at the same time, choose higher number. 
 
 ## CLASSIFICATION
 The epidural data on the front tile is a real time view of (a) the number of patients who are currently on an epidural shown as a number (at each refresh looks back and collect all the current epidural flowsheets), (b) the average time between motor block assessments. 
@@ -95,6 +94,7 @@ All patients on an epidural
 3. If either the latest 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' entry is 3, label patient as 'bromage score = 3'; RED
 
 
+The most recent Motor block assessment should . If two measurements at the same time, choose higher number. 
 ## Secondary Label Assessment of Motor Block/Bromage Score label-
 *In addition to the last documented Motor Block Assessment, we need to display whether a motor block assessment is overdue*
 
