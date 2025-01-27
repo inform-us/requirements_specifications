@@ -89,12 +89,19 @@ All patients on an epidural
 
 ## Primary Label Assessment of Motor Block/Bromage Score Label 
 
-1. If either the latest 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' entry is  0 or 1, label patient as 'bromage score = 0 or 1'; GREEN
-2. If either the latest 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' entry is 2, label patient as 'bromage score = 2'; AMBER
-3. If either the latest 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' entry is 3, label patient as 'bromage score = 3'; RED
 
+
+
+1. If either the latest 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' entry is  0 or 1, label patient as 'motor block = 0 or 1'; GREEN
+2. If either the latest 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' entry is 2, label patient as 'motor block = 2'; AMBER
+3. If either the latest 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' entry is 3, label patient as 'motor block= 3'; RED
+
+4. If two both 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment 'measurements have the same _dt stamp, then retain the highest score for that time _dt stamp
+5. If there is an equal highest score (with the same _dt stamp) across 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment '1-hour epoch label display most recent score. 
+6. If there are two or more scores in a 1-hour epoch then take the most recent score
 
 The most recent Motor block assessment should . If two measurements at the same time, choose higher number. 
+
 ## Secondary Label Assessment of Motor Block/Bromage Score label-
 *In addition to the last documented Motor Block Assessment, we need to display whether a motor block assessment is overdue*
 
