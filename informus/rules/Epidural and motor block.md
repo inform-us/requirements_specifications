@@ -10,13 +10,12 @@ temporary paralysis (motor block) which if gone unnoticed for too long can have 
 It is therefore important for clinical staff to have an overview of who on the units is using an epidural for pain relief and what their 
 level of motor block (temporary paralysis) in order to ensure patient safety. 
 
-All patients who have been on an epidural in the last four hours need to have Assessment of their level of motor block to their right and left leg (also called the Bromage Score) 2 hourly in day (08:00-19:59) and 4 hourly in the night (20:00-07|:59).
+All patients who have been on an epidural in the last twelve hours need to have Assessment of their level of motor block to their right and left leg (also called the Bromage Score) 2 hourly in the day (08:00-19:59) and 4 hourly in the night (20:00-07:59).
 
-The epidural metric will be included on the pain tile and will not have its own tile. 
+The epidural metric will have its own tile, floor plan and individual chart. An icon indicating which patients are on an epidural will also be included on the pain floor plan. 
 
-Whether a patient has an epidural will be denoted on the pain score floor plan. An additional tab floor plan will be added to display the motor block data. 
-There are no individual patient charts for this metric. 
-There will be two SPC charts of the Percentage of Motor Block Assessments done on time (A- Day and B- Night). 
+
+There will be two SPC charts of the Percentage of Motor Block Assessments done on time as per guidelines (A- Day and B- Night). 
 
 EPIC Flowsheets
 Flowsheet	Row ID | Manual/Automatic/Calculated Input | Comments	| Expected documentation frequency
