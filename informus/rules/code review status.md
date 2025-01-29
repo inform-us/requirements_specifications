@@ -1,5 +1,5 @@
 # Code Review status 
-
+Decided for SPC rules review- start with interval based charts... go through these rules together. 
 
 Code|Real Time clinical rules signed_off|Team Code Review Status|Outstanding|
 |---|---|---|---|
