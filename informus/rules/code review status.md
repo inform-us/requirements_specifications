@@ -13,7 +13,7 @@ SpO2||||
 Tidal Volume||||
 POM DReaMing|yes|complete||
 Missing discharged patient rules|yes|have reviewed some of kimberly's code with final code review to do after decisions made|complete|Review Kimbery's updated rules in PR, Siri to incorporate into each individual metric rules and content|
-Airway|yes|no|airway from other ward?|
+Airway|yes|no|update to include airway from other ward and double classification|
 Epidural|partial- have reviewed on/off epidural,still to review motor block|Code not written|all|
 
 
