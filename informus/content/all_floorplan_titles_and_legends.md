@@ -177,6 +177,32 @@ Hover over 'In Bed' to pop up 'Reason's for not moblising' text.
 <img width="330" alt="image" src="https://github.com/user-attachments/assets/fda95e99-9da2-41f6-9281-563ba867b5a0">
 
 
+## Updated Airway Plan Completed
+
+DLT - Doctor lef turn
+NLT - Nurse led turn
+E - Endotracheal tube
+T - Tracheostomy
+L - Laryngectomy
+
+|                         | DART                          | DLT                          | NLT                          | E                              | T                              | L                              | NONE                           |
+|-------------------------|-----------------------------|-----------------------------|-----------------------------|-----------------------------|-----------------------------|-----------------------------|-----------------------------|
+| (A) **DART (red border)**   | Red border, grey background | Red border, amber filling   | Red border, green filling  | Red border, E letter, grey filling | Red border, T letter, grey filling | Red border, L letter, grey filling | Red border, no letter, - |
+| (B) **DLT (amber border + filling)** | Red border, amber filling   | Amber border + filling  | X                           | Amber border+filling, E letter | Amber border+filling, T letter | Amber border+filling, L letter | Amber border+filling *** |
+| (B) **NLT (green border + filling)** | Red border, green filling  | X                           | Green border + filling   | Green border + filling, E letter | Green border + filling, T letter | Green border + filling, L letter | Green border + filling |
+|(C) **E (E letter)**        | Red border, grey filling, E letter | Amber border+filling, E letter | Green border + filling, E letter | X | X | X | X |
+|(C) **T (T letter)**        | Red border, grey filling, T letter | Amber border+filling, T letter | Green border + filling, T letter | X | X | X | X |
+|(C)**L (L letter)**        | Red border, grey filling, L letter | Amber border+filling, L letter | Green border + filling, L letter | X | X | X | X |
+|(C)**NONE (N letter)**     | Red border, grey filling, - | Amber border+filling, dash (-) | Green border + filling, dash (-) | X | X | X | X |
+
+Cannot >1 of E, T, L NONE at same time
+DLT trumps NLT
+Can have one from each section (A) (B) (C), e.g, DART, DLT, E
+Can have section (A)&(B) or (A)&(C) or (B)&(C) e.g, DART & DLT, DLT & E
+Can have only from section (A), i.e, only dart
+Can have only from section (B), e.g, only DLT
+Can have only from section (C), e.g, only E
+
 
 
 
