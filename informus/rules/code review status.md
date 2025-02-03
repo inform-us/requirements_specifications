@@ -20,12 +20,12 @@ Epidural|partial- have reviewed on/off epidural,still to review motor block|Code
 Code|SPC clinical rules signed_off|Team Code Review Status|Outstanding|
 |---|---|---|---|
 Targets|yes - 09/05/24|- done with Harry/Sarah|Redo with current team||
-Delirium CAM-ICU ||||
+Delirium CAM-ICU |yes|||
 MAP (Mean Arterial Blood Pressure)||||
 Pain|yes|completed|none|
 Sedation RASS|partial- SPC RASS on target|partial- SPC RASS on target|SPC measurement interval outstanding rules and code|
 SpO2||||
 Tidal Volume||||
-POM DReaMing||||
+POM DReaMing|yes|||
 Airway|||||
 Epidural|||||
