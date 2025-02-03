@@ -5,7 +5,6 @@ Code|Real Time clinical rules signed_off|Team Code Review Status|Outstanding|
 |---|---|---|---|
 Targets|yes - 09/05/24|- done with Harry/Sarah|Redo with current team||
 Delirium CAM-ICU |yes|completed|SPC chart rules and build|
-SPC Chart Build|yes|first set of code, yes, but formula to change|Change to mean and limit recalculation from 8 to 12 and to include outliers in shift
 MAP (Mean Arterial Blood Pressure)||||
 Pain|yes|completed|none|
 Sedation RASS|yes|complete|extended hours|
@@ -19,6 +18,7 @@ Epidural|partial- have reviewed on/off epidural,still to review motor block|Code
 
 Code|SPC clinical rules signed_off|Team Code Review Status|Outstanding|
 |---|---|---|---|
+SPC Chart Build|yes|first set of code, yes, but formula to change|Change to mean and limit recalculation from 8 to 12 and to include outliers in shift
 Targets|yes - 09/05/24|- done with Harry/Sarah|Redo with current team||
 Delirium CAM-ICU |yes|||
 MAP (Mean Arterial Blood Pressure)||||
