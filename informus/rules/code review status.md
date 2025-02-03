@@ -16,16 +16,18 @@ Airway|yes|no|update to include airway from other ward and double classification
 Epidural|partial- have reviewed on/off epidural,still to review motor block|Code not written|all|
 
 
-Code|SPC clinical rules signed_off|Team Code Review Status|Outstanding|
+Code|SPC clincial rules signed off|Team Code Review Status|Outstanding|
 |---|---|---|---|
 SPC Chart Build|yes|first set of code, yes, but formula to change|Change to mean and limit recalculation from 8 to 12 and to include outliers in shift
 Targets|yes - 09/05/24|- done with Harry/Sarah|Redo with current team||
-Delirium CAM-ICU |yes|||
+Delirium CAM-ICU |partial- measurement interval||
 MAP (Mean Arterial Blood Pressure)||||
-Pain|yes|completed|none|
-Sedation RASS|partial- SPC RASS on target|partial- SPC RASS on target|SPC measurement interval outstanding rules and code|
+Pain scores|yes|completed|none|
+Pain interval|yes|completed|none|
+Sedation RASS on target|yes|yes||
+Sedation RASS interval||||
 SpO2||||
 Tidal Volume||||
-POM DReaMing|yes|||
-Airway|||||
-Epidural|||||
+POM DReaMing interval|yes|||
+Airway interval|yes||||
+Epidural motor block score interval|||||
