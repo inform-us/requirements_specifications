@@ -413,13 +413,13 @@ If none of the above rules match, the bed will appear as dark grey on floorplan
 
 **Page: Clinical dashboard tab: Airway Plan** (DRAFT)
 
-## All patients:Airway Plan 
+## All patients: Airway Plan 
 
 ## i button
 
-Airway managment in critical care may be seen as a routine procedure for critically ill patients. Nevertheless, critical care patients are more prone to complications from airway management procedures, which may result in worse patient outcomes (such as death, brain damage and prolonged ICU stay).   
+Airway management in critical care may be seen as a routine procedure for critically ill patients. Nevertheless, critical care patients are more prone to complications from airway management procedures, which may result in worse patient outcomes (such as death, brain damage and prolonged ICU stay).   
 
-Identification of patients with difficult airways enables an individualised airway plan to be formulated. Such a plan includes ensuring that adequately trained personale and appropriate equipment are accessible in an airway emergency.  Prescence of an airway plan is conducive to prompt and decisive action during an airway emergency thus reducing potential complications.
+Identification of patients with difficult airways enables an individualised airway plan to be formulated. Such a plan includes ensuring that adequately trained personelle and appropriate equipment are accessible in an airway emergency.  Presence of an airway plan is conducive to prompt and decisive action during an airway emergency thus reducing potential complications.
 
 ## ? button
 
@@ -433,11 +433,17 @@ All patients across all units
 
 **COMPLETED:** An ICU Airway plan has been completed during this admission. If the patient has an artificial airway, the airway plan has been reviewed and completed within the last 14 days. 
 
-**FOR REVIEW:** An ICU Airway plan has been completed during this admission but over 14 days ago.  Because this patient does not have a natural airway and a DAS generic airway plan it is reccomended that the plan is reviewed in order to ensure that it is still appropriate.   
+**FOR REVIEW:** An ICU Airway plan has been completed during this admission but over 14 days ago.  Because this patient does not have a natural airway and a DAS generic airway plan it is reccommended that the plan is reviewed in order to ensure that it is still appropriate.   
 
 ---
 
 ## All patients: Airway (Type / Turning Plan / DART Call)
+
+## i button
+
+Airway management in critical care may be seen as a routine procedure for critically ill patients. Nevertheless, critical care patients are more prone to complications from airway management procedures, which may result in worse patient outcomes (such as death, brain damage and prolonged ICU stay).   
+
+Patients with potentially unstable airways must have an airway trained Doctor or Nurse during turning to prevent and manage airway dislodgement. For patients with difficult airways, the Difficult Airway Response Team (DART) should be called immediately in the event of an airway emergency. 
 
 ## ? button
 
