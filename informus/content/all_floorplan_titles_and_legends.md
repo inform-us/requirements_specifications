@@ -93,7 +93,7 @@ To access individual floorplan select location and required tile/metric from Cli
 
 ![image](https://github.com/inform-us/requirements_specifications/assets/94536083/e306b7c7-6dcf-4c53-944e-6f67fa756177)
 
-Add legend item - dark grey bed, label as 'incomplete data' 
+
 
 ---
 
@@ -105,7 +105,7 @@ Add legend item - dark grey bed, label as 'incomplete data'
 
 ![image](https://github.com/inform-us/requirements_specifications/assets/94536083/71ad7bbb-5d20-4a92-aefd-bedbe08af5c3)
 
-Add legend item - dark grey bed, label as 'incomplete data'
+
 
 ---
 
@@ -128,7 +128,7 @@ Add legend item - dark grey bed, label as 'incomplete data'
 
 ![image](https://github.com/inform-us/requirements_specifications/assets/94536083/34b10f7f-6b12-4212-8e7a-aeb99d2ccc32) 
 
-Add legend item - dark grey bed, label as 'incomplete data' 
+
 
 ---
 ## Tile: Patients with a RASS -3 to + 4 CAM-ICU
@@ -171,7 +171,7 @@ Hover over 'In Bed' to pop up 'Reason's for not moblising' text.
 <img width="742" alt="image" src="https://github.com/user-attachments/assets/31cec9c4-7a68-4425-9d2e-3df51d219ea4">
 
 
-## Tile: Airway Plan Completed
+## Tile: Type of Airway/Turning Plan
 **Floorplan title: Airway (Type/ Turning Plan/ DART call)
 
 <img width="330" alt="image" src="https://github.com/user-attachments/assets/fda95e99-9da2-41f6-9281-563ba867b5a0">
