@@ -76,7 +76,7 @@ the data on the front tile looks back from the current time to 24 hours in the p
 there will be two measurement interval calculations displayed on the front tile: DAY (08:00-19:59) and NIGHT (20:00-07:59)
 in line with other metrics we should provide some leeway (15 minutes) in charting documentation, therefore (adjusted time frame): DAY (08:00-19:59) and NIGHT (20:00-07:59)
 the leeway is to mitigate skewed mean interval, particularly in the DAY calculation (e.g. 08:01 RASS, time interval calculated with a NIGHT RASS at 02:00, would give a 04:01 measurement interval which would skew daytime data, the 15 minute leeway may need to be reviewed if insufficient
-the _dt of each measurement determines whether it is categorised as 'DAY' or 'NIGHT', but in order to complete the measurement interval calculation, a preceeding measurement can be in the opposing category
+the _dt of each measurement determines whether it is categorised as 'DAY' or 'NIGHT', but in order to complete the measurement interval calculation, a preceding measurement can be in the opposing category
 worked example:
 (a) a measurement taken at 06:10 would have to be linked with an earlier measurement during the night shift to calculate an interval and would be classified as - NIGHT (before 06:14)
 (b) a measurement taken at 06:30 would have to be linked with an earlier measurement during the day or night shift to calculate an interval and would be classified as - DAY (after 06:14)
@@ -92,31 +92,19 @@ calculate respective DAY and NIGHT mean measurement interval and display as hh:m
 
 ## [B] Floorplan labelling 
 
-### PATIENTS WHO ARE ON EPIDURAL FLOOR PLAN
+
+## MOTOR BLOCK ASSESSMENT - EPIDURAL PATIENTS FLOOR PLAN
+
+All patients who have been on an epidural in the last 12 hours need to have their level of motor block (level of paralysis) assessed 2 hourly in day and 4 hourly in the day. 
+
 
 ELIGIBILITY
 
-All patients
+All patients with an epidural volume infused in the last 12 hours. 
 
-**Whether a patient is on an epidural for their pain management should be denoted on the existing pain score floor plan** 
-
-1. If data entered in flowsheet 7001026 in the last 12 hours, label patient as 'on epidural'. ?Icon or letter 'E' in Bed. 
-2. If none of the epidural drug flowsheets have been documented in the last 12 hours, the patient is not on an epidural. No change. 
-
-## MOTOR BLOCK ASSESSMENT FLOOR PLAN
-
-All patients who have been on an epidural in the last four hours need to have their level of motor block, also called the Bromage Score assessed 2 hourly in day and 4 hourly in the day. 
-There will be an additional floorplan button added to the pain floor plan entitled 'Motor Block Assessment'
-
-ELIGIBILITY
-
-All patients on an epidural
-
-*Patients with epidurals to be visualy highlighted. Others are not included in the calculation*
+*Patients with epidurals to be visually highlighted. Others are not included in the calculation*
 
 ## Primary Label Assessment of Motor Block 
-
-
 
 
 1. If either the latest 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' entry is  0 or 1, label patient as 'motor block = 0 or 1'; GREEN
@@ -128,13 +116,12 @@ All patients on an epidural
 6. If there are two or more scores in a 1-hour epoch then take the most recent score.
 
 
-## Secondary Label Assessment of Motor Block/Bromage Score label-
-*In addition to the last documented Motor Block Assessment, we need to display whether a motor block assessment is overdue*
+## Secondary Label Assessment of Motor Block 
+*In addition to the last documented Motor Block Assessment, we need to display whether a motor block assessment is overdue (missingness). If a Motor Block Assessment is overdue, we need know what the last reading was as well. 
 
 1. If there has never been an 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' since the patients has been classified as 'on epidural', then label patient as 'missing assessment'. Red Hashed and no fill bed.  
-2. If the current time is 08:00-19:59, if either 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' have not been completed in the last two hours, then label patient as 'missing' and forward fill the latest motor block asessmeent reading. 
-Bed to be red hashed outline (with fill of colour from forward filled entry). 
-3. If the current time is 20:00-07:59, if either 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' have not been completed in the last four hours, then label patient as 'missing' and forward fill the latest motor block asessmeent reading. 
+2. If the current time is 08:00-19:59, if either 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' have not been completed in the last two hours, then label patient as 'missing' and forward fill the latest motor block assessment reading (red amber green). Bed to be red hashed outline (with fill of colour from forward filled entry). 
+3. If the current time is 20:00-07:59, if either 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' have not been completed in the last four hours, then label patient as 'missing' and forward fill the latest motor block assessment reading (red amber green). 
 Bed to be red hashed outline  (with fill of colour from forward filled entry).
 _______________________________________________
 
