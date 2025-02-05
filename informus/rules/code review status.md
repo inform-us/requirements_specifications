@@ -7,22 +7,22 @@ Decided for SPC rules review- start with interval based charts... go through the
 
 ⚠️ = partial (refer to the `Still to be done` column)
 
-Code|Real Time clinical rules signed_off|Team Code Review Status|Outstanding|
+Metric | Real Time clinical rules signed off status | Team Code Review Status | Still to be done |
 |---|---|---|---|
 Targets|✅ - 09/05/24| ⚠️ done with Harry/Sarah|Redo with current team||
 Delirium CAM-ICU |✅|✅| |
 MAP (Mean Arterial Blood Pressure)|❌|❌| |
-Pain|✅|✅| |
+Pain (including epidural)|✅|✅| |
 Sedation RASS|✅|✅| |
 SpO2|❌|❌| |
 Tidal Volume|❌|❌||
 POM DReaMing|✅|✅||
 Missing discharged patient rules| ⚠️ | ✅ |Review Kimbery's updated rules in PR, Siri to incorporate into each individual metric rules and content|
 Airway|✅|❌|update to include airway from other ward and double classification|
-Epidural| ⚠️ |❌|have reviewed on/off epidural, still to review motor block|
+Epidural| ⚠️ |❌| still to review motor block|
 
 
-Code|SPC clincial rules signed off|Team Code Review Status|Outstanding|
+Metric | SPC clincial rules signed off status | Team Code Review Status | Still to be done |
 |---|---|---|---|
 SPC Chart Build|yes|first set of code, yes, but formula to change|Change to mean and limit recalculation from 8 to 12 and to include outliers in shift
 Targets|yes - 09/05/24|- done with Harry/Sarah|Redo with current team||
