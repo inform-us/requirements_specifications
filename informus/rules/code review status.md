@@ -29,7 +29,7 @@ Metric | SPC clincial rules signed off status | Team Code Review Status | Still 
 |---|---|---|---|
 SPC Chart Build|✅|first set of code, yes, but formula to change|Change to mean and limit recalculation from 8 to 12 and to include outliers in shift
 Targets|✅ - 09/05/24|⚠️ done with Harry/Sarah|Redo with current team||
-Delirium CAM-ICU | ⚠️ | measurement interval|
+Delirium CAM-ICU | ⚠️ |❌ | measurement interval |
 MAP (Mean Arterial Blood Pressure)|❌|❌||
 Pain scores|✅|✅||
 Pain interval|✅|✅||
