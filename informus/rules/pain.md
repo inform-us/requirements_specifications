@@ -1,3 +1,5 @@
+
+
 # Pain rules
 Rules for pain metric
 
@@ -122,20 +124,24 @@ Feeds into (i) floor plan, (ii) individual patinet chart and (iii) SPC pain scor
 7. If latest reading ‘missing’: ‘missing’; design = white filled bed with red hashed outline
 8. If latest VPS reading is ‘unable to assess’, label as ‘unable to assess’. Design = white filled bed with blue hashed outline.
 
+**[E] Epidural Floorplan labelling**
 
-**[E] Classification Rules: Individical patient chart**
+1. Label patient as 'on epidural' if there is a value equal or greater to zero in flowsheet 7001026 within the last 12 hours.
+   
+**[F] Classification Rules: Individual patient chart**
 
 1. X-axis time in hours, range 0-72 hours, default to 24 hours
-2. Y-axis left is pain score (VPS-0 to 4 and CPOT 0 to 8 adjusted to VPS equivalence (see tabel above)
+2. Y-axis left is pain score (VPS-0 to 4 and CPOT 0 to 8 adjusted to VPS equivalence (see label above)
 3. DESIGN KEY FOR INDIVIDUAL CHARTS 
    - a. Label VPS as circles 
    - b. Label CPOT as diamonds
    - c. Colour code – RAG rated pain score (see equivalence table)
    - d. Missing – no data points
    - f. Forward filled data (see validity for 1 hour epoch calculation) shown as a continuing line (no icons circles/diamonds)
+   - g. epidural- letter 'E' centred on bed
 
 ---
-# [F] SPC CHARTS 
+# [G] SPC CHARTS 
 
 **PAIN SPC CHARTS (refer to 1-hour epoch, RAG classification [B]**
 
