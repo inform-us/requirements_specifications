@@ -74,12 +74,10 @@ FIO2_% 301550?
 
 ## ELIGIBILITY
 1. Patient (i) on mandatory mechanical ventilation AND (ii) receiving sedative drugs within the last 6 hours
-
-   (i)
-3. If O2 delivery is endotrachael tube or tracheostomy, patient is on mandatory mechanical ventilation
-4. If ventmode is CPAP/PS...., patient is on mandatory mechanical ventilation
-5. Note in code we seem to be missing the step of classifying what is mandatory ventilation and what is not. we think ventmode set flowsheet. 
-6. (ii)
+2.  If O2 delivery is endotrachael tube or tracheostomy, patient is on mandatory mechanical ventilation
+3.   If ventmode is CPAP/PS...., patient is on mandatory mechanical ventilation
+4.    Note in code we seem to be missing the step of classifying what is mandatory ventilation and what is not. We think ventmode set flowsheet.
+5.(ii)
 7. if sedative volume flowsheet is any number (any charted volume), then the patient is sedated. If sedation volume flowsheet is NaN, then patient is not sedated. *note this should be backfilled from 4 hours and looks like current code it isn't*
 
 ## Validity (time window) Rules: 
