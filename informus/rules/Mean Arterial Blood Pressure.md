@@ -35,9 +35,16 @@ Rules for Mean Arterial Blood Pressure (MAP) metric
 2. if not 'has_valid_map':'missing' 
 3. if 'has_valid_numerical_map_target': below or above or in range 
 4. if 'has_valid_entered_map_target':'non-numerical 
-5. if none of the above 'not set' 
+5. if none of the above 'not set'
 
-## Total Hours on Vasoactive Drugs Calculation (corresponds to front tile)
+## Summary Rules (corresponds to tile data)
+
+### Percentage of readings on Target Calculation
+Denominator = the number of MAP readings that have had 'has_valid_numerical_MAP_target': 'below' or 'above' or 'in range' or if 'has_valid_entered_MAP_target': 'non-numerical' set within the last 24 hours
+Numerator = the number of these MAP readings that were within their target within the last 24 hours
+Denote as percentage
+
+### Total Hours on Vasoactive Drugs Calculation (corresponds to front tile)
 
 Calculate the total patient hours of 'on_inotrope' in the last 24 hours. Exclude any time += one hour when a patient is off the unit, e.g. patient has left the unit for a scan or procedure and has returned.
  
