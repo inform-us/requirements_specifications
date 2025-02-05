@@ -1,5 +1,4 @@
 
-Decision to add icon epidural to pain floor plan and keep motor block fraction on an epidurual, then average time between epidural , then open a individual chart that shows motor block. pick point with the higher. Move to pain rules. 
 
 # Epidural and Motor Block Assessment 
 
