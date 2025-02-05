@@ -125,12 +125,27 @@ All patients with an epidural volume infused in the last 12 hours.
 Bed to be red hashed outline  (with fill of colour from forward filled entry).
 _______________________________________________
 
+[F] Classification Rules: Individual patient chart
+
+X-axis time in hours, range 0-72 hours, default to 24 hours
+Y-axis left is motor block assessment score (0 to 3) 
+0-1 = GREEN filled
+
+2= AMBER filled
+
+3 =RED filled
+
+DESIGN KEY FOR INDIVIDUAL CHARTS
+a. Label data points as circles
+c. Colour code – RAG rated motor block score 
+d. Missing – no data points with grey bar
+
 
 DRAFT below- 
 
 [D] SPC CHARTS
 
-Operational definition - For patients on epidurals, what percentage of motor block assessements are done on time as per guidelines. Chart a- day, Char b- night. 
+Operational definition - For patients on epidurals, what percentage of motor block assessments are done on time as per guidelines. Chart a- day, Char b- night. 
 
 Measurement Interval (for motor block assessment scoring only)
 Average time between motorblock assessments - note suggest not on front tile- TBC. 
