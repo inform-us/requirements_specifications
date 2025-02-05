@@ -5,7 +5,7 @@ Decided for SPC rules review- start with interval based charts... go through the
 
 ❌ = not done
 
-⚠️ = partial
+⚠️ = partial (refer `Outstanding` column)
 
 Code|Real Time clinical rules signed_off|Team Code Review Status|Outstanding|
 |---|---|---|---|
