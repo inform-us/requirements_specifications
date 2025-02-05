@@ -24,7 +24,7 @@ Delirium CAM-ICU |partial- measurement interval||
 MAP (Mean Arterial Blood Pressure)||||
 Pain scores|yes|completed|none|
 Pain interval|yes|completed|none|
-Sedation RASS on target|yes|yes||
+Sedation RASS scores|yes|yes||
 Sedation RASS interval||||
 SpO2||||
 Tidal Volume||||
