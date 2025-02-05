@@ -87,7 +87,7 @@ Add legend item - dark grey bed, label as 'incomplete data'
 
 ![image](https://github.com/inform-us/requirements_specifications/assets/94536083/71ad7bbb-5d20-4a92-aefd-bedbe08af5c3)
 
-Add legend item - dark grey bed, label as 'incomplete data'
+
 
 ---
 
@@ -144,9 +144,8 @@ _Note there are no other hover overs. Only in bed patients._
 
 <img width="742" alt="image" src="https://github.com/user-attachments/assets/31cec9c4-7a68-4425-9d2e-3df51d219ea4">
 
-## Tile: Airway Plan Completed
-
-\*\*Floorplan title: Airway (Type/ Turning Plan/ DART call)
+## Tile: Type of Airway/Turning Plan
+**Floorplan title: Airway (Type/ Turning Plan/ DART call)
 
 <img width="330" alt="image" src="https://github.com/user-attachments/assets/fda95e99-9da2-41f6-9281-563ba867b5a0">
 

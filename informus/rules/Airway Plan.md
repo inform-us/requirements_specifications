@@ -69,7 +69,7 @@ All patients across all units
 1. MISSING - There is no ICU Airway Plan completed - either one has never been documented OR incomplete documentation does not satisfy option A or option B above
 2. COMPLETED - An ICU Airway plan has been completed - satisfying option A or option B above and generating a _dt stamp
 3. FOR REVIEW - An ICU Airway plan has been completed - satisfying option A or option B above and generating a _dt stamp, but it is now >14 days between the current time and the _dt stamp; but exclude those with a COMPLETED Airway Plan who have a 'Natural Airway' (from the Airway tab [Airway Flowsheet ID 24499] of the ICU Airway Plan) AND have a DAS Generic Airway Plan [Row ID 24498] = YES (same a Option A that have 'Natural Airway') - these do not need review 
-4. An ICU Airway Plan can be superceeded at any time if an entry is updated or new entry is made, this will generate a new _dt stamp
+4. An ICU Airway Plan can be superceded at any time if an entry is updated or new entry is made, this will generate a new _dt stamp
 
 
 ## Classification
@@ -157,9 +157,10 @@ TBC weekly percentage of patients who have an airway plan.
 1. This is a weekly percentage (p-chart) SPC
 2. Week defined as Monday 00:00 – Sunday 23:59
 3. Calculate the number of patients who have been present on the unit in the week
-4. Calculate the number of patients who have been present on the unit in the week who have had at least one (option A or B above) airway plan documented at any point in their admission. In other words... a patient admitted during a particular week who has an ICU stay that spans over more than that week may have an airway plan documented the following week after their week of admission. These patients should be included in the numerator.
-5. Numerator = patients present in the current week who have had at least one airway plan during ICU admission
-6. Denominator = Patients present in the current week
+4. Calculate the number of patients who have been present on the unit in the week who have had at least one (option A or B above) airway plan documented at any point in their admission. In other words... a patient admitted during a particular week who has an ICU stay that spans over more than that week may have had an airway plan documented on any previous week during their ICU admission. These patients should be included in the numerator.
+   *note this means if a patient is admitted towards the end of the week and the airway plan is not completed until the following week, this would not factor into the numerator of the week of admission, but would in the following week in which the airway plan was completed.* 
+6. Numerator = patients present in the current week who have had at least one airway plan during ICU admission
+7. Denominator = Patients present in the current week
 
 ---
 ## APPENDIX - unused flow sheets, discard after code review

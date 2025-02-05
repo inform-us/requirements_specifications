@@ -57,7 +57,7 @@ These data update every five minutes.
 
 * **Tip 2:** If more than one score is documented at the same time, the highest score will be used. If the scores are equal, VPS will be used in preference to CPOT.  
 
-* **Tip 3:** If a bed is dark grey, calculation cannot be completed 
+* **Tip 3:** If a bed is dark grey, calculation cannot be completed. This often means a patient is a new CCU admission or has been away from the unit for some time e.g. for imaging or a procedure.
 
 * **Tip 4:**  Pain assessments recorded as “unable to assess” due to sleep will not show on the individual patient graph as this is not a pain score. 
 
@@ -101,7 +101,7 @@ All patients on ICU - 'All patients in critical care'.
 
 **Tip 2:** If a target is not applicable, please select 'Not applicable'.
 
-**Tip2:** Targets refresh at 08:00 each day. Do not set targets before 08:00 or they will be counted as set from the previous day.
+**Tip 3:** Targets refresh at 08:00 each day. Do not set targets before 08:00 or they will be counted as set from the previous day.
 
 
 
@@ -145,7 +145,7 @@ Patients are receiving supplemental oxygen. If a patient does not receive supple
 
 **Tip 2:** Non-numerical means that a free text target has been set.
 
-**Tip 3:** If a bed is labeled 'incomplete data' this means there is not enough data. This often means a patient is a new CCU admission or has been away from the unit for some time e.g. for imaging or a procedure
+**Tip 3:** If a bed is dark grey, calculation cannot be completed. This often means a patient is a new CCU admission or has been away from the unit for some time e.g. for imaging or a procedure.
 
 
 
@@ -191,8 +191,7 @@ Patients are receiving intravenous vasoactive drugs. If a patient does not recei
 
 **Tip 2:**  Non numerical means that a free text target has been set.
 
-**Tip 3:**   If a bed is labeled 'incomplete data' this means there is not enough data. This often means a patient is a new CCU admission or has been away from the unit for some time e.g. for imaging or a procedure
-
+**Tip 3:**  If a bed is dark grey, calculation cannot be completed. This often means a patient is a new CCU admission or has been away from the unit for some time e.g. for imaging or a procedure.
 
 
 ---
@@ -234,7 +233,7 @@ RASS score is valid for 4 hours.
 
 **Tip 2:** Non-numerical means that a free text target has been set.
 
-**Tip 3:** If a bed is dark grey, calculation cannot be completed. 
+**Tip 3:** If a bed is dark grey, calculation cannot be completed. This often means a patient is a new CCU admission or has been away from the unit for some time e.g. for imaging or a procedure.
 
 **Tip 4:** RASS score is valid for four hours or until a new score is documented.
 
@@ -277,14 +276,7 @@ Patients are intubated (oral/nasal tube or tracheostomy) and on mandatory ventil
 
 **Tip 1:** These data update on the hour
 
-**Tip 2:** If a bed is labeled 'incomplete data' this means there is not enough data. This often means a patient is a new CCU admission or has been away from the unit for some time e.g. for imaging or a procedure
-
-
-
-
-
-
-
+**Tip 2:** If a bed is dark grey, calculation cannot be completed. This often means a patient is a new CCU admission or has been away from the unit for some time e.g. for imaging or a procedure.
 
 
 ---
@@ -318,11 +310,11 @@ If a patient’s most recent CAM-ICU score is negative: delirium is not present.
 
 **Tip 1:** If there has been more than one CAM-ICU score documented across a shift, the most recent score will be used. 
 
-**Tip 2:** Only patients that meet RASS criteria (i.e. have RASS score between -3 and 4) are included in percentage calculations on the front tile.
+**Tip 2:** Only patients that meet RASS criteria (i.e. have RASS score between -3 and +4) are included in percentage calculations on the front tile.
 
-**Tip3:** RASS scores are valid for 1 hour during the day (06:00 - 21:59) and 4 hour during the night (22:00 to 05.59). If a patient has a valid CAM-ICU score, but not a valid RASS score this will be denoted by a dashed line around a coloured (red or green) bed.
+**Tip 3:** RASS scores are valid for 1 hour during the day (06:00 - 21:59) and 4 hour during the night (22:00 to 05.59). If a patient has a valid CAM-ICU score, but not a valid RASS score this will be denoted by a dashed line around a coloured (red or green) bed.
 
-**Tip4:** A blue shaded bed indicates that the patient's RASS score is below -3 and therefore a CAM-ICU is not required.
+**Tip 4:** A blue shaded bed indicates that the patient's RASS score is below -3 and therefore a CAM-ICU is not required.
 
 ---
 **Page: Clinical dashboard tab: All POM patients DrEaMing**
@@ -391,7 +383,7 @@ This floorplan displays a patient's mobilisation status according to entries in 
 
 **In bed:** Patient is lying in bed, passively moved to chair, or sitting over the edge of bed (mobility scale 0-3)
 
-Tip: Click the bed space to view a patient in bed's documented reason for not mobilising. 
+**Tip:** Click the bed space to view a patient in bed's documented reason for not mobilising. 
 
 **Actively transferring:** Patient is standing, transferring bed to chair, or marching on spot (mobility scale 4-6)
 
@@ -421,13 +413,13 @@ If none of the above rules match, the bed will appear as dark grey on floorplan
 
 **Page: Clinical dashboard tab: Airway Plan** (DRAFT)
 
-## All patients:Airway Plan 
+## All patients: Airway Plan 
 
 ## i button
 
-Airway managment in critical care may be seen as a routine procedure for critically ill patients. Nevertheless, critical care patients are more prone to complications from airway management procedures, which may result in worse patient outcomes (such as death, brain damage and prolonged ICU stay).   
+Airway management in critical care may be seen as a routine procedure for critically ill patients. Nevertheless, critical care patients are more prone to complications from airway management procedures, which may result in worse patient outcomes (such as death, brain damage and prolonged ICU stay).   
 
-Identification of patients with difficult airways enables an individualised airway plan to be formulated. Such a plan includes ensuring that adequately trained personale and appropriate equipment are accessible in an airway emergency.  Prescence of an airway plan is conducive to prompt and decisive action during an airway emergency thus reducing potential complications.
+Identification of patients with difficult airways enables an individualised airway plan to be formulated. Such a plan includes ensuring that adequately trained personelle and appropriate equipment are accessible in an airway emergency.  Presence of an airway plan is conducive to prompt and decisive action during an airway emergency thus reducing potential complications.
 
 ## ? button
 
@@ -441,11 +433,17 @@ All patients across all units
 
 **COMPLETED:** An ICU Airway plan has been completed during this admission. If the patient has an artificial airway, the airway plan has been reviewed and completed within the last 14 days. 
 
-**FOR REVIEW:** An ICU Airway plan has been completed during this admission but over 14 days ago.  Because this patient does not have a natural airway and a DAS generic airway plan it is reccomended that the plan is reviewed in order to ensure that it is still appropriate.   
+**FOR REVIEW:** An ICU Airway plan has been completed during this admission but over 14 days ago.  Because this patient does not have a natural airway and a DAS generic airway plan it is reccommended that the plan is reviewed in order to ensure that it is still appropriate.   
 
 ---
 
 ## All patients: Airway (Type / Turning Plan / DART Call)
+
+## i button
+
+Airway management in critical care may be seen as a routine procedure for critically ill patients. Nevertheless, critical care patients are more prone to complications from airway management procedures, which may result in worse patient outcomes (such as death, brain damage and prolonged ICU stay).   
+
+Patients with potentially unstable airways must have an airway trained Doctor or Nurse during turning to prevent and manage airway dislodgement. For patients with difficult airways, the Difficult Airway Response Team (DART) should be called immediately in the event of an airway emergency. 
 
 ## ? button
 
@@ -457,9 +455,9 @@ All patients across all units
 
 **DART call** This patient has been identified as having a difficult airway.  In an airway emergency, the Difficult Airway Response Team (DART) should be call promptly to assist in airway management.
 
-**Doctor led turn** This patient has been identified as having a difficult or unstable airway. When turning this patient, a airway trained doctor should be present for prevention and management of airway dislodgement.
+**Doctor led turn** This patient has been identified as having a difficult or unstable airway. When turning this patient, an airway trained doctor should be present for prevention and management of airway dislodgement.
 
-**Senior Nurse led turn** This patient has been identified as having a slightly difficult airway. When turning this patient, as senior nurse should be responsible for stabilisation of airway to prevent dislodgement.
+**Senior Nurse led turn** This patient has been identified as having a slightly difficult airway. When turning this patient, as senior nurse should be present for prevention and management of airway dislodgement.
 
 **Endotracheal tube** Patient has an endotracheal tube
 
@@ -467,7 +465,7 @@ All patients across all units
 
 **Laryngectomy** Patient has a laryngectomy
 
-**Occupied bed (no artifical airway)** Patient has natural airway.
+**Occupied bed (no artifical airway)** Patient has natural airway
 
 
 
