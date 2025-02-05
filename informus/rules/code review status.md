@@ -17,7 +17,7 @@ Sedation RASS|✅|✅| |
 SpO2|❌|❌| |
 Tidal Volume|❌|❌||
 POM DReaMing|✅|✅||
-Missing discharged patient rules|✅|have reviewed some of kimberly's code with final code review to do after decisions made|complete|Review Kimbery's updated rules in PR, Siri to incorporate into each individual metric rules and content|
+Missing discharged patient rules| ⚠️ | ✅ |Review Kimbery's updated rules in PR, Siri to incorporate into each individual metric rules and content|
 Airway|✅|❌|update to include airway from other ward and double classification|
 Epidural| ⚠️ |❌|have reviewed on/off epidural, still to review motor block|
 
