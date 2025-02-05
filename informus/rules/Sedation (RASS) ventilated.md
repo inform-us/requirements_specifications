@@ -1,6 +1,3 @@
-|File .md signed_off|Code review|Production|Outstanding|
-|---|---|---|---|
-|no - 01/01/01|- pending code review|no|- abc <br> - def|
 
 # SEDATION SCORE (using the Richmond Agitation Sedation Score -RASS) rules
 
@@ -77,8 +74,7 @@ FIO2_% 301550?
 2.  If O2 delivery is endotrachael tube or tracheostomy, patient is on mandatory mechanical ventilation
 3.   If ventmode is CPAP/PS...., patient is on mandatory mechanical ventilation
 4.    Note in code we seem to be missing the step of classifying what is mandatory ventilation and what is not. We think ventmode set flowsheet.
-5.(ii)
-7. if sedative volume flowsheet is any number (any charted volume), then the patient is sedated. If sedation volume flowsheet is NaN, then patient is not sedated. *note this should be backfilled from 4 hours and looks like current code it isn't*
+5.if sedative volume flowsheet is any number (any charted volume), then the patient is sedated. If sedation volume flowsheet is NaN, then patient is not sedated. *note this should be backfilled from 4 hours and looks like current code it isn't*
 
 ## Validity (time window) Rules: 
 1. O2 delivery device only valid if o2delivery_dt documented within last 6 hours of epoch
@@ -95,7 +91,20 @@ FIO2_% 301550?
 2) RASS scores documented between 22:00 - 05:59 is valid 255 minutes (4 hours & 15 minutes)
    *note current rules have same one hour rule for all day and night*
    
-## Measurement Interval - average time between RASS assessments - front tile metric calculation
+## Summary Rules (corresponds to tile data)
+
+### Percentage of RASS readings on Target Calculation
+
+Denominator = the number of RASS readings that have had 'has_valid_numerical_RASS_target': 'on target' or 'not on target' or if 'has_valid_entered_RASS_target': 'non-numerical' set within the last 24 hours
+Numerator = the number of these RASS readings that were within their target within the last 24 hours
+Denote as percentage
+
+### Total Hours on Sedation (corresponds to front tile)
+
+
+Calculate the total patient hours of (i) on mandatory mechanical ventilation AND (ii) receiving sedative drugs in the last 24 hours. Exclude any time += one hour when a patient is off the unit, e.g. patient has left the unit for a scan or procedure and has returned. 
+
+### Measurement Interval - average time between RASS assessments - front tile metric calculation
 - this calculation will look at all RASS scores (including those that are not on sedation or mechanically ventilated)
 - average time between scores should be calculated from ACTUAL documented RASS scores in EPIC (ie. those with a _dt stamp) and not any forward filled scores
 - there needs to be a minimum of two scores to calculate a measurement interval (if a patient has only just been admitted with one RASS score documented, or if a patient only has one RASS score during their entire ICU admission, calculation will not be possible and data will not be included on front tile metric
