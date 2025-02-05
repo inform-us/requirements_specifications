@@ -21,7 +21,7 @@ Tidal Volume|❌|❌||
 POM DReaMing|✅|✅||
 Patients rules| ⚠️ | ✅ |Review Kimbery's updated rules in PR, Siri to incorporate into each individual metric rules and content|
 Airway|✅|❌|update to include airway from other ward and double classification|
-Epidural| ⚠️ |❌| still to review motor block|
+Epidural motor block| ⚠️ |❌| |
 
 # SPC metrics
 
