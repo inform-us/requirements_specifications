@@ -15,7 +15,9 @@ Rules for Mean Arterial Blood Pressure (MAP) metric
   |Noradrenaline|3040102622| Manual| Numerical (free text possible) | Hourly|
   |Adrenaline|331213|Manual| Numerical (free text possible)| Hourly|
   
-  
+
+
+
 ## Validity (time window) Rules: 
 
 1. MAP only valid if map_dt within last 6 hours of epoch_dt 
@@ -27,15 +29,17 @@ Rules for Mean Arterial Blood Pressure (MAP) metric
   -  if map_target_dt after 8am on the morning of then mark as valid else as invalid 
 
         	 
-
 ## Classification Rules: (corresponds to the per patient chart) 
 
 1. if not 'on_inotrope': 'not applicable'
 2. if not 'has_valid_map':'missing' 
 3. if 'has_valid_numerical_map_target': below or above or in range 
 4. if 'has_valid_entered_map_target':'non-numerical 
-5. if non of the above 'not set' 
+5. if none of the above 'not set' 
 
+## Total Hours on Vasoactive Drugs Calculation (corresponds to front tile)
+
+Calculate the total patient hours of 'on_inotrope' in the last 24 hours. Exclude any time += one hour when a patient is off the unit, e.g. patient has left the unit for a scan or procedure and has returned.
  
 ## Labelling Rules: (corresponds to the floor plans)     
 
