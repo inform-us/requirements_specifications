@@ -18,7 +18,7 @@ ___
 |---|---|---|
 |Overtly combative or violent; immediate danger to staff|Combative|+4|
 |Pulls on or removes tube(s) or catheter(s) or has aggressive behavior toward staff|Very agitated|+3|
-|Frequent nonpurposeful movement or patient–ventilator dyssynchrony|Agitated|+2|
+|Frequent non-purposeful movement or patient–ventilator dyssynchrony|Agitated|+2|
 |Anxious or apprehensive but movements not aggressive or vigorous|Restless|+1|
 |Spontaneously pays attention to caregiver|Alert and calm|0|
 |Not fully alert, but has sustained (more than 10 seconds) awakening, with eye contact, to voice|Drowsy|-1|
@@ -95,8 +95,9 @@ FIO2_% 301550?
 
 ### Percentage of RASS readings on Target Calculation
 
-Denominator = the number of RASS readings that have had 'has_valid_numerical_RASS_target': 'on target' or 'not on target' or if 'has_valid_entered_RASS_target': 'non-numerical' set within the last 24 hours
-Numerator = the number of these RASS readings that were within their target within the last 24 hours
+- Denominator = the number of RASS readings that have had 'has_valid_numerical_rass_target': 'below target', 'above target', 'on target' or 'has_valid_entered_RASS_target': 'non-numerical' set within the last 24 hours
+- Numerator = the number of these RASS readings that were 'on target' within the last 24 hours
+
 Denote as percentage
 
 ### Total Hours on Sedation (corresponds to front tile)
