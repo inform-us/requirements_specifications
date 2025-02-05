@@ -1,6 +1,7 @@
 
-Decision to add icon epidural to pain floor plan and keep motor block fraction on an epidurual, then average time between epidural , then open a individual chart that shows motor block. pick point with the higher 
-# Epidural and Motor Block Assessment/Bromage Score Rules
+Decision to add icon epidural to pain floor plan and keep motor block fraction on an epidurual, then average time between epidural , then open a individual chart that shows motor block. pick point with the higher. Move to pain rules. 
+
+# Epidural and Motor Block Assessment 
 
 ## Rules for Epidural and the level of motor block that the epidural is providing to the patient
 
@@ -10,9 +11,9 @@ temporary paralysis (motor block) which if gone unnoticed for too long can have 
 It is therefore important for clinical staff to have an overview of who on the units is using an epidural for pain relief and what their 
 level of motor block (temporary paralysis) in order to ensure patient safety. 
 
-All patients who have been on an epidural in (the last twelve hours) need to have Assessment of their level of motor block to their right and left leg (also called the Bromage Score) 2 hourly in the day (08:00-19:59) and 4 hourly in the night (20:00-07:59).
+All patients who have been on an epidural in (the last twelve hours) need to have an assessment of their level of motor block to their right and left leg 2 hourly in the day (08:00-19:59) and 4 hourly in the night (20:00-07:59).
 
-The epidural metric will have its own tile, floor plan and individual chart. An icon indicating which patients are on an epidural will also be included on the pain floor plan. 
+The motor block assessment metric will have its own tile, floor plan and individual chart. An icon indicating which patients are on an epidural will also be included on the pain floor plan. 
 
 
 There will be two SPC charts of the Percentage of Motor Block Assessments done on time as per guidelines (A- Day and B- Night). 
@@ -20,7 +21,7 @@ There will be two SPC charts of the Percentage of Motor Block Assessments done o
 EPIC Flowsheets
 Flowsheet	Row ID | Manual/Automatic/Calculated Input | Comments	| Expected documentation frequency
 
-# Motor Block Assessment/Bromage Score
+# Motor Block Assessment
 
 | Tile | Metric | Flowsheet ID | `star.has_visit_observation` is `True` | `star.is_real_time` is `True`  | frequency of reporting | Found in `star.visit_observation_type` | Notes | Status |
 |-|-|-|-|-|-|-|-|-|
@@ -29,7 +30,7 @@ Flowsheet	Row ID | Manual/Automatic/Calculated Input | Comments	| Expected docum
 
 
 
-# Epidural drugs
+# Epidural infusion volume
 
 | Tile | Metric | Flowsheet ID | `star.has_visit_observation` is `True` | `star.is_real_time` is `True`  | frequency of reporting | Found in `star.visit_observation_type` | Notes | Status |
 |-|-|-|-|-|-|-|-|-|
@@ -40,7 +41,7 @@ Flowsheet	Row ID | Manual/Automatic/Calculated Input | Comments	| Expected docum
 
 
 ## ELIGIBILITY
-All patients who have received local anaesthesia via an epidural catheter in the last 12 hours. If a patient has data entered in flowsheet  Epidural drugs | Volume (mL) | 7001026  within the last ?12 hours (time TBC), they are eligible. 
+All patients who have received local anaesthesia via an epidural catheter in the last 12 hours. If a patient has a number greater than zero entered in flowsheet  Epidural drugs | Volume (mL) | 7001026  within the last ?12 hours (use 12 hours for now, but this may be amended), they are eligible. 
 
 *Note these patients will more frequently be found on the post-surgical units, T06 and PACU*
 
@@ -54,6 +55,10 @@ If a patient is 'on epidural' they are required to have a motor block assessment
 30415249 Motor block assessment left leg
 30415250 Motor block assessment right leg
 
+## SUMMARY (tile)
+
+Epidural 
+Motor Block Assessement 
 
 ## CLASSIFICATION
 The epidural data on the front tile is a real time view of (a) the number of patients who are currently on an epidural shown as a number (at each refresh looks back and collect all the current epidural flowsheets), (b) the average time between motor block assessments. 
