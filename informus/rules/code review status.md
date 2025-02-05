@@ -9,7 +9,7 @@
 
 # Real-time metrics
 
-Metric | Real Time clinical rules signed off status | Team Code Review Status | Still to be done |
+Metric | Clinical rules signed off status | Team Code Review Status | Still to be done |
 |---|---|---|---|
 Targets|✅ - 09/05/24| ⚠️ done with Harry/Sarah|Redo with current team||
 Delirium CAM-ICU |✅|✅| |
@@ -25,7 +25,7 @@ Epidural| ⚠️ |❌| still to review motor block|
 
 # SPC metrics
 
-Metric | SPC clincial rules signed off status | Team Code Review Status | Still to be done |
+Metric | Clincial rules signed off status | Team Code Review Status | Still to be done |
 |---|---|---|---|
 SPC Chart Build|✅|first set of code, yes, but formula to change|Change to mean and limit recalculation from 8 to 12 and to include outliers in shift
 Targets|✅ - 09/05/24|⚠️ done with Harry/Sarah|Redo with current team||
