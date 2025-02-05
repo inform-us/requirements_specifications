@@ -40,13 +40,12 @@ Flowsheet	Row ID | Manual/Automatic/Calculated Input | Comments	| Expected docum
 
 
 ## ELIGIBILITY
-All patients who have received local anaesthesia via an epidural catheter in the last 12 hours. If a patient has a number greater than zero entered in flowsheet  Epidural drugs | Volume (mL) | 7001026  within the last ?12 hours (use 12 hours for now, but this may be amended), they are eligible. 
+All patients who have received local anaesthesia via an epidural catheter in the last 12 hours. If a patient has a number equal to or greater than zero entered in flowsheet  Epidural drugs | Volume (mL) | 7001026  within the last ?12 hours (use 12 hours for now, but this may be amended), they are eligible. 
 
 *Note these patients will more frequently be found on the post-surgical units, T06 and PACU*
 
 ## VALIDITY
 
-Flowsheet data from 7001026 is valid for 75 minutes.
 A patient is classified as 'on an epidural' for ?12 hours following data entry in the flowsheet. 
 
 If a patient is 'on epidural' they are required to have a motor block assessment documented for at least ?12 hours following any data entered into flowsheet 7001026.: 2 hourly during the day shift (08:00-19:59), and 4 hourly during the night shift (20:00-07:59) ?unless red flag or worsening bromage score.... Define! 
@@ -56,15 +55,19 @@ If a patient is 'on epidural' they are required to have a motor block assessment
 
 ## SUMMARY (tile)
 
-Epidural 
-Motor Block Assessement 
 
 ## CLASSIFICATION
-The epidural data on the front tile is a real time view of (a) the number of patients who are currently on an epidural shown as a number (at each refresh looks back and collect all the current epidural flowsheets), (b) the average time between motor block assessments. 
 
-Calculate the number of patients who are currently on the unit and have had epidural volume 7001026 documented in the last ?12 hours. 
+### Number of patients on epidural
+
+The epidural data on the front tile is a real time view of (a) the number of patients who are on an epidural (using above eligiblity criteria of volume infused within the last 12 hours) shown as a number (at each refresh looks back and collect all the current epidural flowsheets), (b) the average time between motor block assessments. 
+
+Calculate the number of patients who are currently on the unit and have had a number equal to or greater than zero in epidural volume flowsheet 7001026 documented in the last 12 hours. Discharged patients are not included.
 
 Present this number on the front tile as 'number of patients on epidural'. 
+
+### Average time between motor block assessments (a) Day and (b) night 
+
 
 
 ## [B] Floorplan labelling 
@@ -91,7 +94,7 @@ All patients on an epidural
 
 *Patients with epidurals to be visualy highlighted. Others are not included in the calculation*
 
-## Primary Label Assessment of Motor Block/Bromage Score Label 
+## Primary Label Assessment of Motor Block 
 
 
 
@@ -100,11 +103,10 @@ All patients on an epidural
 2. If either the latest 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' entry is 2, label patient as 'motor block = 2'; AMBER
 3. If either the latest 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' entry is 3, label patient as 'motor block= 3'; RED
 
-4. If two both 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment 'measurements have the same _dt stamp, then retain the highest score for that time _dt stamp
-5. If there is an equal highest score (with the same _dt stamp) across 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment '1-hour epoch label display most recent score. 
-6. If there are two or more scores in a 1-hour epoch then take the most recent score
+4. If both 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment 'measurements have the same _dt stamp, then retain the highest score for that time _dt stamp.
+5. If there is an equal highest score (with the same _dt stamp) across 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment '1-hour epoch label, display Rt leg score. 
+6. If there are two or more scores in a 1-hour epoch then take the most recent score.
 
-The most recent Motor block assessment should . If two measurements at the same time, choose higher number. 
 
 ## Secondary Label Assessment of Motor Block/Bromage Score label-
 *In addition to the last documented Motor Block Assessment, we need to display whether a motor block assessment is overdue*
