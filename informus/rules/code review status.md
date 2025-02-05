@@ -27,16 +27,16 @@ Epidural| ⚠️ |❌| still to review motor block|
 
 Metric | SPC clincial rules signed off status | Team Code Review Status | Still to be done |
 |---|---|---|---|
-SPC Chart Build|yes|first set of code, yes, but formula to change|Change to mean and limit recalculation from 8 to 12 and to include outliers in shift
-Targets|yes - 09/05/24|- done with Harry/Sarah|Redo with current team||
-Delirium CAM-ICU |partial- measurement interval||
-MAP (Mean Arterial Blood Pressure)||||
-Pain scores|yes|completed|none|
-Pain interval|yes|completed|none|
-Sedation RASS scores|yes|yes||
-Sedation RASS interval||||
-SpO2||||
-Tidal Volume||||
-POM DReaMing interval|yes|||
-Airway interval|yes||||
-Epidural motor block score interval|||||
+SPC Chart Build|✅|first set of code, yes, but formula to change|Change to mean and limit recalculation from 8 to 12 and to include outliers in shift
+Targets|✅ - 09/05/24|⚠️ done with Harry/Sarah|Redo with current team||
+Delirium CAM-ICU |⚠️ - measurement interval||
+MAP (Mean Arterial Blood Pressure)|❌|❌||
+Pain scores|✅|✅||
+Pain interval|✅|✅||
+Sedation RASS scores|✅|✅||
+Sedation RASS interval|❌|❌||
+SpO2|❌|❌||
+Tidal Volume|❌|❌||
+POM DReaMing interval|✅|❌||
+Airway interval|✅|❌|||
+Epidural motor block score interval|❌|❌||
