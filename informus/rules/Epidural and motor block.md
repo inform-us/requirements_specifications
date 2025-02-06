@@ -75,19 +75,19 @@ there needs to be a minimum of two scores to calculate a measurement interval (i
 the data on the front tile looks back from the current time to 24 hours in the past
 there will be two measurement interval calculations displayed on the front tile: DAY (08:00-19:59) and NIGHT (20:00-07:59)
 in line with other metrics we should provide some leeway (15 minutes) in charting documentation, therefore (adjusted time frame): DAY (08:00-19:59) and NIGHT (20:00-07:59)
-the leeway is to mitigate skewed mean interval, particularly in the DAY calculation (e.g. 08:01 RASS, time interval calculated with a NIGHT RASS at 02:00, would give a 04:01 measurement interval which would skew daytime data, the 15 minute leeway may need to be reviewed if insufficient
+the leeway is to mitigate skewed mean interval, particularly in the DAY calculation (e.g. 08:01 motor block assessment, time interval calculated with a NIGHT RASS at 02:00, would give a 04:01 measurement interval which would skew daytime data, the 15 minute leeway may need to be reviewed if insufficient
 the _dt of each measurement determines whether it is categorised as 'DAY' or 'NIGHT', but in order to complete the measurement interval calculation, a preceding measurement can be in the opposing category
 worked example:
-(a) a measurement taken at 06:10 would have to be linked with an earlier measurement during the night shift to calculate an interval and would be classified as - NIGHT (before 06:14)
-(b) a measurement taken at 06:30 would have to be linked with an earlier measurement during the day or night shift to calculate an interval and would be classified as - DAY (after 06:14)
-(c) a measurement taken at 22:10 would have to be linked with an earlier measurement during the day shift to calculate an interval and would be classified as - DAY (before 22:14)
-(d) a measurement taken at 23:00 would have to be linked with an earlier measurement during the night or day shift to calculate an interval and would be classified as - NIGHT (after 22:14)
-once classified into DAY or NIGHT determine numerator and denominator for each and calculate mean
-DAY Numerator = sum of the minutes and hours between all intervals recorded between (06:15-22:14) that fall into the current 24 hour rolling window
+(a) a motor block assessment documented at 08:10 would have to be linked with an earlier measurement during the night shift to calculate an interval and would be classified as - NIGHT (before 08:14)
+(b) an assessment documented at 8:30 would have to be linked with an earlier measurement during the day or night shift to calculate an interval and would be classified as - DAY (after 08:14)
+(c) an assessment documented at 20:10 would have to be linked with an earlier measurement during the day shift to calculate an interval and would be classified as - DAY (before 20:14)
+(d)an assessment documented 20:00 would have to be linked with an earlier measurement during the night or day shift to calculate an interval and would be classified as - NIGHT (after 20:14)
+once classified into DAY or NIGHT, determine numerator and denominator for each and calculate mean
+DAY Numerator = sum of the minutes and hours between all intervals recorded between (08:15-20:14) that fall into the current 24 hour rolling window
 DAY Denominator = number of all time interval measurements that fall into the current 24 hour rolling window
-NIGHT Numerator = sum of the minutes and hours between all intervals recorded between (22:15-06:14) that fall into the current 24 hour rolling window
+NIGHT Numerator = sum of the minutes and hours between all intervals recorded between (20:15-08:14) that fall into the current 24 hour rolling window
 NIGHT Denominator = number of all time interval measurements that fall into the current 24 hour rolling window
-calculate respective DAY and NIGHT mean measurement interval and display as hh:mm on front tile
+calculate respective DAY and NIGHT mean motor block assessment measurement interval and display as hh:mm on front tile
 
 
 ## [B] Floorplan labelling 
@@ -95,7 +95,7 @@ calculate respective DAY and NIGHT mean measurement interval and display as hh:m
 
 ## MOTOR BLOCK ASSESSMENT - EPIDURAL PATIENTS FLOOR PLAN
 
-All patients who have been on an epidural in the last 12 hours need to have their level of motor block (level of paralysis) assessed 2 hourly in day and 4 hourly in the day. 
+All patients who have been on an epidural in the last 12 hours need to have their level of motor block (level of paralysis) assessed 2 hourly in the day and 4 hourly in the day. 
 
 
 ELIGIBILITY
@@ -110,7 +110,6 @@ All patients with an epidural volume infused in the last 12 hours.
 1. If either the latest 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' entry is  0 or 1, label patient as 'motor block = 0 or 1'; GREEN
 2. If either the latest 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' entry is 2, label patient as 'motor block = 2'; AMBER
 3. If either the latest 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' entry is 3, label patient as 'motor block= 3'; RED
-
 4. If both 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment 'measurements have the same _dt stamp, then retain the highest score for that time _dt stamp.
 5. If there is an equal highest score (with the same _dt stamp) across 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment '1-hour epoch label, display Rt leg score. 
 6. If there are two or more scores in a 1-hour epoch then take the most recent score.
@@ -125,25 +124,32 @@ All patients with an epidural volume infused in the last 12 hours.
 Bed to be red hashed outline  (with fill of colour from forward filled entry).
 _______________________________________________
 
-[F] Classification Rules: Individual patient chart
+## [F] Classification Rules: Individual patient chart
 
-X-axis time in hours, range 0-72 hours, default to 24 hours
-Y-axis left is motor block assessment score (0 to 3) 
-0-1 = GREEN filled
+- X-axis time in hours, range 0-72 hours, default to 24 hours
+- Y-axis left is motor block assessment score (0 to 3) with 0 denoting no paralysis and 3 denoting full paralysis of either leg.
+- Use rules on lines 110-115 to determine classification for individual charts
 
-2= AMBER filled
+   
 
-3 =RED filled
+### DESIGN KEY FOR INDIVIDUAL CHARTS
 
-DESIGN KEY FOR INDIVIDUAL CHARTS
 a. Label data points as circles
-c. Colour code – RAG rated motor block score 
-d. Missing – no data points with grey bar
+
+b. Missing – no data points with grey bar
+
+c. Colour code – RAG rated motor block assessment score 
+
+d. 0-1 = GREEN filled
+
+e. 2= AMBER filled
+
+f. 3 =RED filled
 
 
-DRAFT below- 
+## DRAFT below- 
 
-[D] SPC CHARTS
+## [D] SPC CHARTS
 
 Operational definition - For patients on epidurals, what percentage of motor block assessments are done on time as per guidelines. Chart a- day, Char b- night. 
 
