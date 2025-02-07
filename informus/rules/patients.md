@@ -135,13 +135,13 @@ Note these metrics classify patients for the floorplans according to summative r
 
 Any 'off unit' time should be excluded from these summative rules. For example, say a patient has the following labels for the last four hours: 'above', 'off unit', 'above', 'above'. If the summative rule says to consider the last 3 hours, we would remove the 'off unit' hourly epochs and take ['above', 'above', 'above'] as the last three. See the 'labelling rules' of individual metrics for details.
 
-### Metric charts (i.e. `72hr` data)
+## Metric charts (i.e. `72hr` data)
 
 The metric charts (shown when clicking on a bed in the floorplan), should only include data for patients currently on the unit (i.e. patients that have since been discharged or moved to another location in the hospital should be excluded). 
 
 As above, we still need to ensure that we only use data generated within the current unit, excluding any that may have been generated while the patient was in another location in the hospital. Times when the patient was off the unit should be marked with a different colour on the chart.
 
-### SPC charts
+## SPC charts
 
 The SPC charts should include data from all patients that have been on the unit in the relevant week. This includes patients that were present for the entire week, as well as those that were present for only part of the week, before being moved to another location in the hospital or discharged. As above, we still need to ensure that we only use data generated within the unit, excluding any that may have been generated while patients were in other locations in the hospital. 
 
