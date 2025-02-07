@@ -131,7 +131,9 @@ As above, we still need to ensure that we only use data generated within the cur
 
 #### SPO2, Mean Arterial Blood Pressure and Tidal Volume metrics
 
-Note these metrics classify patients for the floorplans according to summative rules and not real-time status of whether they are above, below or in range of target... e.g. 'Tidal volumes are above 8 mL/kg IBW for 3 consecutive hours OR 5 non-consecutive hours within the preceding 24 hours; OR tidal volumes are above 10 mL/kg IBW for 2 consecutive hours'. We therefore need individual rules to handle any 'off unit' hours (to be solved with https://github.com/inform-us/INFORMus/issues/1756) - see the 'labelling rules' for the individual metrics.
+Note these metrics classify patients for the floorplans according to summative rules and not real-time status of whether they are above, below or in range of target... e.g. 'Tidal volumes are above 8 mL/kg IBW for 3 consecutive hours OR 5 non-consecutive hours within the preceding 24 hours; OR tidal volumes are above 10 mL/kg IBW for 2 consecutive hours'.
+
+Any 'off unit' time should be excluded from these summative rules. For example, say a patient has the following labels for the last four hours: 'above', 'off unit', 'above', 'above'. If the summative rule says to consider the last 3 hours, we would remove the 'off unit' hourly epochs and take ['above', 'above', 'above'] as the last three. See the 'labelling rules' of individual metrics for details.
 
 ### Metric charts (i.e. `72hr` data)
 
@@ -154,13 +156,8 @@ Note: there are some exceptions to this for specific metrics (for example, airwa
 Some of the factors that require this longer time window:
 
 - ELIGIBILITY; an additional 6 hours of data to determine whether an individual is eligible for that metric calculation (e.g. is receiving oxygen or is receiving vasoactive drugs)
-
-(TODO - currently the all_target set tile will only include patients present on the unit right now. i.e. if a patient is away from the unit temporarily for surgery etc. (but this shows up as a location visit discharge) they won't be included - is this fine?)
-- ALL_TARGET SET metric is calculated differently; taking a single daily snapshot at 13:00 (code actually set to do this calculation at 13:30 to give some clinical leeway) of current inpatients (ie. does not include those that have been discharged, but would include those that are temporarily off the unit (see below) and as such that calculation would need amending). In order to fulfil this metric at all times an additional 5 hours of data is required. 
   
-- METRIC COMPLIANCE TO SET TARGET; doctors set new targets (i) on admission to the unit, (ii) clinical change or during the morning ward rounds 08:00 - 13:00. For the purposes of the ALL_TARGETS METRIC, targets are reset at 07:59 (ie. become invalid) allowing new targets to be set form 08:00. However, during this period where new targets are set (08:00 - 13:00), compliance of physiological metric to targets still needs to take place. As such the logic allows for a previous target (set anytime between 08:00 on the previous day and 07:59 on the current day) to 'roll-over' until 12:00 on the current day, for the purposes of compliance calculation ONLY for the following: SpO2, MAP, & RASS. In order to fulfil this metric at all times an additional 5 hours of data is required. **BUT SPC WOULD NEED MORE** [NEED to check but 16 for a week that starts on calendar day and up to 24 for 'shift' week]
-  
-- BACKFILLING; ICU observation frequencies are not usually <4 hourly, most physiological metrics are charted between 1-4 hourly, but the logic allows for a 15 minute 'clinical leeway' in charting. In order to allow backfilling an additional 5 hours of data is required.
+- METRIC COMPLIANCE TO SET TARGET; doctors set new targets (i) on admission to the unit, (ii) clinical change or during the morning ward rounds 08:00 - 13:00. For the purposes of the ALL_TARGETS METRIC, targets are reset at 07:59 (ie. become invalid) allowing new targets to be set form 08:00. However, during this period where new targets are set (08:00 - 13:00), compliance of physiological metric to targets still needs to take place. As such the logic allows for a previous target (set anytime between 08:00 on the previous day and 07:59 on the current day) to 'roll-over' until 12:00 on the current day, for the purposes of compliance calculation ONLY for the following: SpO2, MAP, & RASS. In order to fulfil this metric at all times an additional 5 hours of data is required.
 
 ## Representing patient flow in EMAP / UDS
 
