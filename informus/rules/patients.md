@@ -30,16 +30,25 @@ These rules seek to determine:
 
 INFORM collects data from patients in all bed locations within `T03`, `T06`, `GWB` and `WMS`, with a few exceptions (see below). For the purposes of INFORM, we do not seek the admission location prior to a critical care admission. Patients may be admitted from anywhere within the hospital or from outside the hospital (ie. another hospital or home). 
 
-### T03 'wait' bed
+### 'wait' beds
 
-On T03 there is a 'wait' bed denoted by `T03^T03 WAITING^WAIT`. This 'wait' bed isn't used consistently, so it is unclear what it represents exactly. All data from the 'wait' bed should be excluded from all informus data.
+On some units there is a 'wait' bed denoted by `WAITING^WAIT`. This 'wait' bed isn't used consistently, so it is unclear what it represents exactly. All data from 'wait' beds should be excluded from all informus data.
 
 ### Additional T06 beds
 
-T06 has two additional beds represented by `?` and `?` that are functional, but not currently used. All data from these beds should be excluded from all informus data.
+We include data from 10 beds on T06:
+- `1020100171^T06PACU BY10^BY10-46`
+- `1020100171^T06PACU BY10^BY10-47`
+- `1020100171^T06PACU BY11^BY11-48`
+- `1020100171^T06PACU BY11^BY11-49`
+- `1020100171^T06PACU BY12^BY12-51`
+- `1020100171^T06PACU BY12^BY12-53`
+- `1020100171^T06PACU SR42^SR42-42`
+- `1020100171^T06PACU SR43^SR43-43`
+- `1020100171^T06PACU SR44^SR44-44`
+- `1020100171^T06PACU SR45^SR45-45`
 
-(TODO - there are a number of beds listed in the star location table for T06 we don't use:
-- `1020100171^T06PACU WAITING^WAIT`
+There are others listed in EMAP/UDS but these are either not used, or invalid. All data from the following beds should be excluded:
 - `1020100171^T06PACU SR39^SR39-39`
 - `1020100171^T06PACU BY09^BY09-40`
 - `1020100171^T06PACU BY09^BY09-41`
@@ -51,10 +60,6 @@ T06 has two additional beds represented by `?` and `?` that are functional, but 
 - `1020100171^T06PACU BY08^BY08-36`
 - `1020100171^T06PACU BY08^BY08-38`
 - `1020100171^T06PACU BY08^BY08-37`
-Are any of these relevant?
-)
-
-(TODO - WMS also seems to have a wait bed `WSCC^WMSCCU WAITING^WAIT` - should we mention this?)
 
 ### 'ghost' patients
 
