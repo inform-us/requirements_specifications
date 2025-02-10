@@ -64,14 +64,15 @@ Feeds into (i) front tile - 24 hour rolling window and (ii) SPC interval charts.
 **Front tile AVERAGE PAIN MEASUREMENT INTERVAL**
 1. Measurement interval should be calculated from ACTUAL documented scores in EPIC and not any forward filled scores - these data have precise _dt stamps
 2. There needs to be a minimum of two scores to calculate a measurement interval (if a patient only has one pain score during their ICU admission, this will not be included in the ‘average measurement interval’ data)
-3. There are two different categories of measurement intervals that need to be calculated (refer to equivalence table VPS-CPOT):
+3. Any period of time where a patient is documented as off unit, e.g. for a scan or procedure, should not factor into the calculation. i.e. if pain assessment 1 of 2 in an interval has a dt_stamp directly before a time period when the patient is off the unit, this measurement and the interval between dt_stamp 1 and 2, which will occur after the patient has returned back to the unit should be excluded from the average. Time 2 of the interval when the patient returns should therefore become time 1 of the subsequent time interval. This is to avoid excessively long time intervals factoring into the average when there would not have been possible to document a pain score in the ICU notes. 
+4. There are two different categories of measurement intervals that need to be calculated (refer to equivalence table VPS-CPOT):
    - a. GREEN measurement interval - no pain / mild pain or 'unable to assess'
    - b. AMBER/RED measurement interval - moderate / severe / very severe pain
-4. When looking at the time interval between two measurements, look at the RAG label of the earlier _dt stamp and use this to allocate category (i.e. either green or red). This is required because when the pain measurement score changes for a patient between two measurements (e.g. it goes from mild to moderate) this will result in a measurement comparison between two different categories (i.e. green vs. red) but this is still a valid comparison for the purposes of this rule set. Note that this differs from measurement interval calculation used in RASS.
-5. Pool (each categrory GREEN or AMBER/RED (i.e. not on an individial patient basis) measurement interval data for the 24 hour time period
-6. Numerator = sum of time interval measurement (hours) 
-7. Denominator (unadjusted) = number of time interval measurements
-8. FRONT TILE AVERGAE MEASUREMENT INTERVAL (24 hour rolling window) - CALCLULATE MEAN using above numerator / denominator (unadjusted)
+5. When looking at the time interval between two measurements, look at the RAG label of the earlier _dt stamp and use this to allocate category (i.e. either green or red). This is required because when the pain measurement score changes for a patient between two measurements (e.g. it goes from mild to moderate) this will result in a measurement comparison between two different categories (i.e. green vs. red) but this is still a valid comparison for the purposes of this rule set. Note that this differs from measurement interval calculation used in RASS.
+6. Pool (each categrory GREEN or AMBER/RED (i.e. not on an individial patient basis) measurement interval data for the 24 hour time period
+7. Numerator = sum of time interval measurement (hours) 
+8. Denominator (unadjusted) = number of time interval measurements
+9. FRONT TILE AVERGAE MEASUREMENT INTERVAL (24 hour rolling window) - CALCLULATE MEAN using above numerator / denominator (unadjusted)
   
 ** SPC MEASUREMENT INTERVAL CHART (p-chart (%))**
   
