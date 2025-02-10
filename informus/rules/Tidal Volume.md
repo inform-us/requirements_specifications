@@ -24,8 +24,9 @@ Rules for Tidal volume metric
 2) Vent mode score only valid if vent_mode_vt_dt within last 6 hours of epoch_dt
 3) Tidal Volume validity is 4 hours and 15 minutes to give leeway 
 
-## Summative Rules (corresponds to tile metric) 
-For all eligible patients take an average of their tidal volumes and display as one number with one decimal point. 
+## Summary Rules (corresponds to tile metric) 
+Exclude missing, off unit, or not applicable. Take mean of ventmode value- display as number with one decimal point. 
+Total hours on mandatory ventiliation = eligible hours, exclude missing, off unit, or not applicable
 
 ## Classification Rules: (corresponds to the per patient chart) 
 
@@ -44,7 +45,7 @@ For all eligible patients take an average of their tidal volumes and display as 
   4. IF latest 2 or more readings are 'out_of_range_10':'out of range' 
   5. IF there are 5 or more non-consecutive 'out_of_range_8' in 24 hours:'out of range'
   6. IF the latest classification is 'in range': 'in range'
-  7. Insert extra rules from code review here. 
+  7. Insert extra rules to avoid fallthrough cases from code review here. 
   10. 
   11. IF none of the above: 'fallthrough'
   12. n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in ? button. 
