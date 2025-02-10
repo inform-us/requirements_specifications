@@ -3,6 +3,31 @@ Rules for Mean Arterial Blood Pressure (MAP) metric
 
 ## EPIC Flowsheets
 
+Flowsheet update - all volume flowsheets in ml
+
+Vasopressors:
+3040102622 noradrenaline
+331213 adrenaline
+12946 metaraminol
+7080040 vasopressin
+7071002 terlipressin
+
+Inotropes:
+331213 adrenaline
+331208 dobutamine
+25239 levosimenden
+12536 enoximone
+331253 milrinone
+
+Antihypertensives:
+12812 hydralazine
+331203 GTN
+3040101268 labetalol
+25251 metoprolol
+331243 esmolol
+331258 SNP
+
+
 * ### Group ID:
 -  [] 
 
