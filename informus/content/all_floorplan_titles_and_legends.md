@@ -87,8 +87,6 @@ Add legend item - dark grey bed, label as 'incomplete data'
 
 ![image](https://github.com/inform-us/requirements_specifications/assets/94536083/71ad7bbb-5d20-4a92-aefd-bedbe08af5c3)
 
-
-
 ---
 
 ## Tile: Sedated patients RASS
@@ -145,7 +143,8 @@ _Note there are no other hover overs. Only in bed patients._
 <img width="742" alt="image" src="https://github.com/user-attachments/assets/31cec9c4-7a68-4425-9d2e-3df51d219ea4">
 
 ## Tile: Type of Airway/Turning Plan
-**Floorplan title: Airway (Type/ Turning Plan/ DART call)
+
+\*\*Floorplan title: Airway (Type/ Turning Plan/ DART call)
 
 <img width="330" alt="image" src="https://github.com/user-attachments/assets/fda95e99-9da2-41f6-9281-563ba867b5a0">
 
@@ -161,15 +160,15 @@ _Note there are no other hover overs. Only in bed patients._
 
 **L** - Laryngectomy
 
-|                                      | DART                               | DLT                                    | NLT                                    | E                                      | T                                      | L                                      | NONE                         |
-| ------------------------------------ | ---------------------------------- | -------------------------------------- | -------------------------------------- | -------------------------------------- | -------------------------------------- | -------------------------------------- | ---------------------------- |
-| (A) **DART (red border)**            | Red border, grey background        | Red border, amber filling              | Red border, green filling              | Red border, E letter, grey filling     | Red border, T letter, grey filling     | Red border, L letter, grey filling     | Red border, no letter, -     |
-| (B) **DLT (amber border + filling)** | Red border, amber filling          | Amber border + amber filling           | X                                      | Amber border + amber filling, E letter | Amber border + amber filling, T letter | Amber border + amber filling, L letter | Amber border + amber filling |
-| (B) **NLT (green border + filling)** | Red border, green filling          | X                                      | Green border + green filling           | Green border + green filling, E letter | Green border + green filling, T letter | Green border + green filling, L letter | Green border + green filling |
-| (C) **E (E letter)**                 | Red border, grey filling, E letter | Amber border + amber filling, E letter | Green border + green filling, E letter | Grey border + grey filling, E letter                                    | X                                      | X                                      | X                            |
-| (C) **T (T letter)**                 | Red border, grey filling, T letter | Amber border + amber filling, T letter | Green border + green filling, T letter | X                                      | Grey border + grey filling, T letter                                       | X                                      | X                            |
-| (C) **L (L letter)**                 | Red border, grey filling, L letter | Amber border + amber filling, L letter | Green border + green filling, L letter | X                                      | X                                      | Grey border + grey filling, L letter                                       | X                            |
-| (C) **NONE (-)**                     | Red border, grey filling, -        | Amber border + amber filling, dash (-) | Green border + green filling, dash (-) | X                                      | X                                      | X                                      | Grey border + grey filling, -                             |
+|                                                     | DART                                | DLT                                    | NLT                                    | E                                      | T                                      | L                                      | NONE                                  |
+| --------------------------------------------------- | ----------------------------------- | -------------------------------------- | -------------------------------------- | -------------------------------------- | -------------------------------------- | -------------------------------------- | ------------------------------------- |
+| (A) **DART (red border)**                           | X                                   | Red border, amber filling              | Red border, green filling              | Red border, - letter, grey filling     | Red border, T letter, grey filling     | Red border, L letter, grey filling     | Red border, very light blue filling   |
+| (B) **DLT (amber border + filling)**                | Red border, amber filling           | X                                      | X                                      | Amber border + amber filling, - letter | Amber border + amber filling, T letter | Amber border + amber filling, L letter | Amber border + amber filling          |
+| (B) **NLT (green border + filling)**                | Red border, green filling           | X                                      | X                                      | Green border + green filling, - letter | Green border + green filling, T letter | Green border + green filling, L letter | Green border + green filling          |
+| (C) **E (- letter)**                                | Red border, grey filling, - letter  | Amber border + amber filling, - letter | Green border + green filling, - letter | Grey border + grey filling, - letter   | X                                      | X                                      | X                                     |
+| (C) **T (T letter)**                                | Red border, grey filling, T letter  | Amber border + amber filling, T letter | Green border + green filling, T letter | X                                      | Grey border + grey filling, T letter   | X                                      | X                                     |
+| (C) **L (L letter)**                                | Red border, grey filling, L letter  | Amber border + amber filling, L letter | Green border + green filling, L letter | X                                      | X                                      | Grey border + grey filling, L letter   | X                                     |
+| (C) **NONE (grey border, very light blue filling)** | Red border, very light blue filling | Amber border + amber filling           | Green border + green filling           | X                                      | X                                      | X                                      | Grey border + very light blue filling |
 
 Cannot >1 of E, T, L NONE at same time
 
