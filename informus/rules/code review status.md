@@ -13,15 +13,15 @@ Metric | Clinical rules signed off status | Team Code Review Status | Still to b
 |---|---|---|---|
 Targets|✅ - 09/05/24| ⚠️ done with Harry/Sarah|Redo with current team||
 Delirium CAM-ICU |✅|✅| |
-MAP (Mean Arterial Blood Pressure)|❌|❌| |
+MAP (Mean Arterial Blood Pressure)||✅|Update rules based on the code |
 Pain (including epidural)|✅|✅| |
 Sedation RASS|✅|✅| |
-SpO2|❌|❌| |
+SpO2|❌|✅|update rules based on the code|
 Tidal Volume|❌|❌||
 POM DReaMing|✅|✅||
-Patients rules| ⚠️ | ✅ |Review Kimbery's updated rules in PR, Siri to incorporate into each individual metric rules and content|
+Patients rules| ✅| ✅ ||
 Airway|✅|❌|update to include airway from other ward and double classification|
-Epidural motor block| ⚠️ |❌| |
+Epidural motor block| ⚠️ |❌| 12 hours validity may change|
 
 # SPC metrics
 
