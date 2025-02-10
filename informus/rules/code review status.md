@@ -24,6 +24,7 @@ Airway|✅|❌|update to include airway from other ward and double classificatio
 Epidural motor block| ⚠️ |❌| 12 hours validity may change|
 
 # SPC metrics
+For code review here, start with build code sign off, then move onto new SPC chart measurement interval charts, then binary e.g. targets and airway, then older metrics.
 
 Metric | Clincial rules signed off status | Team Code Review Status | Still to be done |
 |---|---|---|---|
