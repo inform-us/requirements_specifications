@@ -9,13 +9,13 @@ Rules for Tidal volume metric
   |-|-|-|-|-|
   |O2 delivery|3040109305|Manual| Drop down (free text available)| Hourly (varies depending on patient's clinical condition)|
   |Vent Mode|3040102607|Manual| Drop down (free text available)|  Hourly (varies depending on patient's clinical condition)|
-  |Tidal Volume||||
+  |Tidal Volume||from monitor||
 
   ## Eligibility Rules (patient is on mandatory ventilation)
  1)  All patients on mandatory ventilation 
-  2) If O2 delivery mode has 'tracheostomy' or 'endotrachael' entered, patient is_intubated
-  3) If vent mode is set. 
- 4)  If Vent mode is VC, PC PRVC, PPV, SIMV, PRVC, APRV, then ventmode is patient is on mandatory ventilation
+  2) If O2 delivery mode has 'tracheostomy' or 'endotrachael' entered and if valid O2 delivery is set patient is_intubated
+ 4)  If Vent mode is VC, PC PRVC, PPV, SIMV, PRVC, APRV, then ventmode is mandatory. Patient is on mandatory ventilation
+ 5)  All must be true in order for patient to be on mandatory ventilation.
     
 
 ## Validity (time window) Rules: 
@@ -24,7 +24,8 @@ Rules for Tidal volume metric
 2) Vent mode score only valid if vent_mode_vt_dt within last 6 hours of epoch_dt
 3) Tidal Volume validity is 4 hours and 15 minutes to give leeway 
 
-
+## Summative Rules (corresponds to tile metric) 
+For all eligible patients take an average of their tidal volumes and display as one number with one decimal point. 
 
 ## Classification Rules: (corresponds to the per patient chart) 
 
@@ -39,10 +40,10 @@ Rules for Tidal volume metric
 
   1. IF the latest classification is 'not applicable':'not applicable' 
   2. IF the latest classification is 'missing': 'out of range' 
-  3. IF latest 3 readings are 'out_of_range_8':'out of range' 
-  4. IF latest 2 readings are 'out_of_range_10':'out of range' 
-  5. IF there are 5 non-consecutive 'out_of_range_8':'out of range' 
-  6. IF the latest classification is 'in range' : 'in range'
+  3. IF latest 3 or more readings are 'out_of_range_8':'out of range' 
+  4. IF latest 2 or more readings are 'out_of_range_10':'out of range' 
+  5. IF there are 5 or more non-consecutive 'out_of_range_8' in 24 hours:'out of range'
+  6. IF the latest classification is 'in range': 'in range'
   7. IF none of the above: 'fallthrough'
   8. n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in ? button. 
  ---    
