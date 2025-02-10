@@ -103,12 +103,15 @@ Denote as percentage
 ### Total Hours on Sedation (corresponds to front tile)
 
 
-Calculate the total patient hours of (i) on mandatory mechanical ventilation AND (ii) receiving sedative drugs in the last 24 hours. Exclude any time += one hour when a patient is off the unit, e.g. patient has left the unit for a scan or procedure and has returned. 
+Calculate the total patient hours of (i) on mandatory mechanical ventilation AND (ii) receiving sedative drugs in the last 24 hours.
+
+Exclude any time += one hour when a patient is off the unit, e.g. patient has left the unit for a scan or procedure and has returned. 
 
 ### Measurement Interval - average time between RASS assessments - front tile metric calculation
 - this calculation will look at all RASS scores (including those that are not on sedation or mechanically ventilated)
 - average time between scores should be calculated from ACTUAL documented RASS scores in EPIC (ie. those with a _dt stamp) and not any forward filled scores
 - there needs to be a minimum of two scores to calculate a measurement interval (if a patient has only just been admitted with one RASS score documented, or if a patient only has one RASS score during their entire ICU admission, calculation will not be possible and data will not be included on front tile metric
+-  Any period of time where a patient is documented as off unit, e.g. for a scan or procedure, should not factor into the calculation. i.e. if RASS assessment 1 of 2 in an interval has a dt_stamp directly before a time period when the patient is off the unit, this measurement and the interval between dt_stamp 1 and 2, which will occur after the patient has returned back to the unit should be excluded from the average. Time 2 of the interval when the patient returns should therefore become time 1 of the subsequent time interval. This is to avoid excessively long time intervals factoring into the average when there would not have been possible to document a RASS score in the ICU notes. 
 - the data on the front tile looks back from the current time to 24 hours in the past
 - there will be two measurement interval calculations displayed on the front tile: DAY (06:00-21:59) and NIGHT (22:00-05:59)
 - in line with other metrics we should provide some leeway (15 minutes) in charting documentation, therefore (adjusted time frame): DAY (06:00-22:14) and NIGHT (22:00-06:14)
@@ -189,7 +192,7 @@ Modified shift week is defined as Sunday 22:15 – Sunday 22:14
 
 DAY for RASS assessment is defined as between the hours of 06:00am and 21:59pm. Note this is not the same as a 'day shift' used in other metrics, which is 08:00am to 19:59pm. Remember that RASS documentation is expected one hourly during the day and 4 hourly during the night. 
 
-1.  Look at RASS assessment measurement intervals between the hours of 06:14 and 22:14 each day. Reference measurement interval section above from line 101. 
+1.  Look at RASS assessment measurement intervals between the hours of 06:14 and 22:14 each day. Reference measurement interval section above from line 110-126. 
 2.   Numerator = count of time intervals that are ≤ 1:00 hours for the DAY category
 - *note SPC denominator adjustment required for excessively long measurement intervals (those that are 2x accepted measurement interval from clinical guideline)*
   3. Denominator (adjusted) = count all assessment measurement intervals between the hours of 06:00 and 21:59 in that week that are > 2:00 hours and ADD +1 to denominator for each one hour period greater than the permitted 1:00 hour.
