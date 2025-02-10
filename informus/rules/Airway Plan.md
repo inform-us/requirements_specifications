@@ -71,16 +71,16 @@ All patients across all units
 3. FOR REVIEW - An ICU Airway plan has been completed - satisfying option A or option B above and generating a _dt stamp, but it is now >14 days between the current time and the _dt stamp; but exclude those with a COMPLETED Airway Plan who have a 'Natural Airway' (from the Airway tab [Airway Flowsheet ID 24499] of the ICU Airway Plan) AND have a DAS Generic Airway Plan [Row ID 24498] = YES (same a Option A that have 'Natural Airway') - these do not need review 
 4. An ICU Airway Plan can be superceded at any time if an entry is updated or new entry is made, this will generate a new _dt stamp
 
+## Summary Data 
 
-## Classification
-Feeds into (i) front tile (live data), (ii) floorplan and (iii) 'airway plan completed' SPC chart
+Feeds into (i) front tile (live data) (ii) 'airway plan completed' SPC chart
 
 **[A] Proportion of patients with 'Airway Plan Completed' - Front tile**
 - represented as a fraction (cf all targets set)
 - classify T03 as one ICU (do not split into T03 North & T03 South) 
 - for each of the four ICUs, identify the number of current inpatients, this is the denominator
 - DENOMINATOR = total number of current number of inpatients (on each respective ICU)
-- NUMERATOR = current number of patients designated as COMPLETED, FOR REVIEW, UPDATE REQUIRED and add them together <br> [you may want to simplify this to = TOTAL CURRENT INPATIENTS - MISSING, but we will need the other data later]
+- NUMERATOR = current number of patients designated as COMPLETED and FOR REVIEW, and add them together <br> [you may want to simplify this to = TOTAL CURRENT INPATIENTS - MISSING, but we will need the other data later]
 
 **[B] Number of patients with 'Airway Plan For Review' - Front tile**
 - represented as a number: "Airway plan - for review: integer
@@ -93,8 +93,22 @@ Feeds into (i) front tile (live data), (ii) floorplan and (iii) 'airway plan com
 - not represented on the front tile, but feeds into the floorplan 1 
 - for each of the four ICUs, identify the number of current inpatients with a MISSING ICU Airway Plan 
 
-**[E] Airway Type**
-- not represented on the front tile, but feeds into the floorplan 2
+## Classification (corresponds to floorplan labelling)
+
+
+**[E] Floorplan 1: Airway Plan Completed** (corresponds to floorplan A Airway Plan)
+- the floorplan displays live data (current state) on a bed by bed basis and is updated as new data is available
+1. If 'Airway Plan Completed'; classify as 'airway plan complete'. 
+2. If 'Airway Plan Missing' (not completed / partially completed), classify as 'airway plan missing'
+3. If 'Airway Plan For Review'; design = classify as 'airway plan for review'
+5. If bed is empty; classify as 'empty'
+
+
+**[F] Airway Type** (corresponds to floorplan B Airway type and Turning)
+
+*Note that for Floorplan B, patients can have multiple labels- see lines 145-151 below*
+
+
 - for each of the four ICUs, for each patient, identify which option has been documented in the Airway tab [Airway Flowsheet ID 24499] of the ICU Airway Plan, retain _dt stamp and process the following:
 - Natural Airway - discard
 - Endotracheal Tube - designate as entotracheal
@@ -110,42 +124,35 @@ Feeds into (i) front tile (live data), (ii) floorplan and (iii) 'airway plan com
   1. entotracheal (from Airway Flowsheet ID 24499 and O2 delivery device ID 3040109305), use data with most recent _dt stamp, if data with the same _dt then use data from O2 delivery device (3040109305)
   2. tracheostomy (from Airway Flowsheet ID 24499 and O2 delivery device ID 3040109305), use data with most recent _dt stamp, if data with the same _dt then use data from O2 delivery device (3040109305)
   3. laryngectomy (from Airway Flowsheet ID 24499), use data with most recent _dt stamp
+     
+**[F] DART Call** (corresponds to floorplan B Airway type and Turning Plan)
 
-**[F] DART Call**
-- not represented on the front tile, but feeds into the floorplan 2
+
 - for each of the four ICUs, for each patient, identify whether the DART option has been documented in the Emergency Teams tab [ICU AIRWAY PLAN TRACHE CALL 24504] of the ICU Airway Plan, retain _dt stamp, process the following:
-- DART = YES (will feed into floorplan 2)
+- DART = YES 
 - DART = NO
 
-**[G] Airway Turning Plan**
-- not represented on the front tile, but feeds into the floorplan 2
+**[G] Airway Turning Plan** (corresponds to floorplan B Airway type and Turning Plan)
+
 - for each of the four ICUs, for each patient, identify whether the Doctor Required option has been documented in the Turning Plan tab [TURNING PLAN DOC REQ 24508] of the ICU Turning Plan, retain _dt stamp, process the following:
-- Doctor Required = YES (will feed into floorplan 2)
+- Doctor Required = YES 
 - Doctor Required = NO
 - for each of the four ICUs, for each patient, identify whether the Senior Nurse Required option has been documented in the Turning Plan tab [TURNING PLAN NURSE REQ 24509] of the ICU Turning Plan, retain _dt stamp, process the following:
-- Senior Nurse Required = YES (will feed into floorplan 2)
+- Senior Nurse Required = YES 
 - Senior Nurse Required = NO
-- if both [TURNING PLAN NURSE REQ 24509] and [TURNING PLAN NURSE REQ 24509] = YES  label patient as Doctor Required. 
+- if both [TURNING PLAN NURSE REQ 24509] and [TURNING PLAN NURSE REQ 24509] = YES  label patient as Doctor Required.
+- if either [TURNING PLAN NURSE REQ 24509] and [TURNING PLAN NURSE REQ 2450] = YES and DART = YES, label patient as the turn required AND DART call. 
 
-**[H] Floorplan 1: Airway Plan Completed - floorplan labeling**
-- the floorplan displays live data (current state) on a bed by bed basis and is updated as new data is available
-1. If 'Airway Plan Completed'; design = green filled bed
-2. If 'Airway Plan Missing' (not completed / partially complted); design = white filled bed with red hashed outline
-3. If 'Airway Plan For Review'; design = green filled bed with orange hashed outline
-4. If 'Airway Plan Update Required'; design = red filled bed
-5. If bed is empty; design = white filled bed with dark grey outline
+Note that for floorplan B, Airway Type and Turning, a patient can be labelled as a type of airway and type of turn and DARRT or any combination. Some examples:
 
-**[I] Floorplan 2: Airway: Type / Turning Plan / DART Call - floorplan labeling**
-- the floorplan displays live data (current state) on a bed by bed basis and is updated as new data is available
-1. If bed is empty; design = white filled bed with dark grey outline
-2. If bed is occupied with a patient who has no artifical airway; design = light blue filled bed with dark grey outline
-3. If airway type is endotracheal; design = amber filled bed with orange outline
-4. If airway type is tracheostomy; design = green filled bed with dark green outline
-5. If airway type is laryngectomy; design = red filled bed with red outline. 
-6. If DART = YES; design = red hashed outline
-7. If Doctor Required = YES; design = D inside appropriately (according to airway type) coloured bed
-8. If Senior Nurse Required = YES; design = N inside appropriately (according to airway type) coloured bed
-   
+a) a patient can be labelled as Doctor Led Turn or Nurse Led Turn= YES, DARRT = YES, and any type of airway designated (Endotracheal, Tracheostomy, Laryngectomy, or no artificial airway)
+
+b) a patient can be labelled as Doctor Led Turn or Nurse Led Turn= YES, DARRT = NO, and any type of airway designated (Endotracheal, Tracheostomy, Laryngectomy, or no artificial airway)
+
+c) a patient can be labelled as Doctor Led Turn or Nurse Led Turn= NO, DARRT =YES and any type of airway designated (Endotracheal, Tracheostomy, Laryngectomy, or no artificial airway)
+
+**See content for all floorplans and legends for the design key that relates to multiple labels for this floorplan**
+
 
 ____
 ## SPC CHART
