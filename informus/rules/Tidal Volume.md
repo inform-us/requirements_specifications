@@ -44,8 +44,10 @@ For all eligible patients take an average of their tidal volumes and display as 
   4. IF latest 2 or more readings are 'out_of_range_10':'out of range' 
   5. IF there are 5 or more non-consecutive 'out_of_range_8' in 24 hours:'out of range'
   6. IF the latest classification is 'in range': 'in range'
-  7. IF none of the above: 'fallthrough'
-  8. n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in ? button. 
+  7. Insert extra rules from code review here. 
+  10. 
+  11. IF none of the above: 'fallthrough'
+  12. n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in ? button. 
  ---    
 # SPC CHARTS 
 ##  Tidal Volume- Weekly percentage of patients achieving Tidal Volume target of 6-8ml/kg IBW 
