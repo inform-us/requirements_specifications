@@ -3,19 +3,26 @@ Rules for Tidal volume metric
 
  ## EPIC Flowsheets
 
-* ### Group ID:
--  [] 
 
 * ### Individual metric Row ID:
 | Flowsheet | Row ID | Manual/Automatic/Calculated Input | Comments | Expected documentation frequency|
   |-|-|-|-|-|
   |O2 delivery|3040109305|Manual| Drop down (free text available)| Hourly (varies depending on patient's clinical condition)|
   |Vent Mode|3040102607|Manual| Drop down (free text available)|  Hourly (varies depending on patient's clinical condition)|
+  |Tidal Volume||||
+
+  ## Eligibility Rules (patient is on mandatory ventilation)
+ 1)  All patients on mandatory ventilation 
+  2) If O2 delivery mode has 'tracheostomy' or 'endotrachael' entered, patient is_intubated
+  3) If vent mode is set. 
+ 4)  If Vent mode is VC, PC PRVC, PPV, SIMV, PRVC, APRV, then ventmode is patient is on mandatory ventilation
+    
 
 ## Validity (time window) Rules: 
 
 1) O2 delivery only valid if o2delivery_dt within last 6 hours of epoch 
-2) Vent mode score only valid if vent_mode_vt_dt within last 4 hours of epoch_dt 
+2) Vent mode score only valid if vent_mode_vt_dt within last 6 hours of epoch_dt
+3) Tidal Volume validity is 4 hours and 15 minutes to give leeway 
 
 
 
@@ -31,10 +38,10 @@ Rules for Tidal volume metric
 ## Labelling Rule: (corresponds to the floor plans)     
 
   1. IF the latest classification is 'not applicable':'not applicable' 
-  2. IF the latest classification is 'missing' : 'out of range' 
+  2. IF the latest classification is 'missing': 'out of range' 
   3. IF latest 3 readings are 'out_of_range_8':'out of range' 
   4. IF latest 2 readings are 'out_of_range_10':'out of range' 
-  5. IF there are 5 non consecutive 'out_of_range_8':'out of range' 
+  5. IF there are 5 non-consecutive 'out_of_range_8':'out of range' 
   6. IF the latest classification is 'in range' : 'in range'
   7. IF none of the above: 'fallthrough'
   8. n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in ? button. 
