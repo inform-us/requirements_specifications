@@ -13,7 +13,7 @@ Metric | Clinical rules signed off status | Team Code Review Status | Still to b
 |---|---|---|---|
 Targets|✅ - 09/05/24| ⚠️ done with Harry/Sarah|Redo with current team||
 Delirium CAM-ICU |✅|✅| |
-MAP (Mean Arterial Blood Pressure)||✅|Update rules based on the code |
+MAP (Mean Arterial Blood Pressure)|❌|✅|Update rules based on the code |
 Pain (including epidural)|✅|✅| |
 Sedation RASS|✅|✅| |
 SpO2|❌|✅|update rules based on the code|
