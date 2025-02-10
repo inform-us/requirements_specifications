@@ -17,7 +17,7 @@ MAP (Mean Arterial Blood Pressure)|❌|✅|Update rules based on the code |
 Pain (including epidural)|✅|✅| |
 Sedation RASS|✅|✅| |
 SpO2|❌|✅|update rules based on the code|
-Tidal Volume|❌|❌||
+Tidal Volume|❌|✅|update rules based on the code|
 POM DReaMing|✅|✅||
 Patients rules| ✅| ✅ ||
 Airway|✅|❌|update to include airway from other ward and double classification|
