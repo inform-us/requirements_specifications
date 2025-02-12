@@ -35,7 +35,7 @@ MAP (Mean Arterial Blood Pressure)|❌|❌||
 Pain scores|✅|✅||
 Pain interval|✅|✅||
 Sedation RASS scores|✅|✅||
-Sedation RASS interval|❌|❌||
+Sedation RASS interval|❌|✅||
 SpO2|❌|❌||
 Tidal Volume|❌|❌||
 POM DReaMing interval|✅|❌||
