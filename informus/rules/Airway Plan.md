@@ -55,21 +55,21 @@ All patients across all units
 
 **Option A** <br>
 - Airway [Row ID 24499] completed - this will return one of the following options: Natural Airway / Endotracheal Tube / Percutaneous Tracheostomy / Surgical Tracheostomy / Laryngectomy / Other and have a _dt stamp
-- AND DAS Generic Airway Plan [Row ID 24498] = YES and has a dt stamp
+- AND DAS Generic Airway Plan [Row ID 24498] = YES or OTHER and has a dt stamp
 
 **Option B** <br>
 - Airway [Row ID 24499] completed - this will return one of the following options: Natural Airway / Endotracheal Tube / Percutaneous Tracheostomy / Surgical Tracheostomy / Laryngectomy / Other and have a _dt stamp
-- AND DAS Generic Airway Plan [Row ID 24498] = NO and has a dt stamp
+- AND DAS Generic Airway Plan [Row ID 24498] = NO and has a dt stamp, or there is not flowsheet 24498
 - PLUS Plan A [Row ID 23865] - any entry generating a _dt stamp
 
 **Validity** <br>
 - as there is currently no consensus on whether an ICU Airway Plan should also be subject to a review date
 - in EPIC an ICU Airway Plan does not expire during the admission
 - we will take a pragmatic stance and propose the following:
-1. MISSING - There is no ICU Airway Plan completed - either one has never been documented OR incomplete documentation does not satisfy option A or option B above
-2. COMPLETED - An ICU Airway plan has been completed - satisfying option A or option B above and generating a _dt stamp
-3. FOR REVIEW - An ICU Airway plan has been completed - satisfying option A or option B above and generating a _dt stamp, but it is now >14 days between the current time and the _dt stamp; but exclude those with a COMPLETED Airway Plan who have a 'Natural Airway' (from the Airway tab [Airway Flowsheet ID 24499] of the ICU Airway Plan) AND have a DAS Generic Airway Plan [Row ID 24498] = YES (same a Option A that have 'Natural Airway') - these do not need review 
-4. An ICU Airway Plan can be superceded at any time if an entry is updated or new entry is made, this will generate a new _dt stamp
+1. MISSING - There is no ICU Airway Plan completed - either one has never been documented OR incomplete documentation does not satisfy option A or option B above. (e.g. there is no data entered for Option A or B above). 
+3. COMPLETED - An ICU Airway plan has been completed - satisfying option A or option B above and generating a _dt stamp
+4. FOR REVIEW - An ICU Airway plan has been completed - satisfying option A or option B above and generating a _dt stamp, but it is now >14 days between the current time and the _dt stamp; but exclude those with a COMPLETED Airway Plan who have a 'Natural Airway' (from the Airway tab [Airway Flowsheet ID 24499] of the ICU Airway Plan) AND have a DAS Generic Airway Plan [Row ID 24498] = YES (same a Option A that have 'Natural Airway') - these do not need review 
+5. An ICU Airway Plan can be superceded at any time if an entry is updated or new entry is made, this will generate a new _dt stamp
 
 ## Summary Data 
 
