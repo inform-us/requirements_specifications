@@ -1,3 +1,5 @@
+Some chagnes to review here
+
 # Airway Plan 
 Rules for the Airway Plan [completed] Metric
 
@@ -55,11 +57,14 @@ All patients across all units
 
 **Option A** <br>
 - Airway [Row ID 24499] completed - this will return one of the following options: Natural Airway / Endotracheal Tube / Percutaneous Tracheostomy / Surgical Tracheostomy / Laryngectomy / Other and have a _dt stamp
-- AND DAS Generic Airway Plan [Row ID 24498] = YES or OTHER and has a dt stamp
+
+- AND DAS Generic Airway Plan [Row ID 24498] = YES and has a dt stamp
+- DAS Generic Airway Plan [Row ID 24498] = NO or OTHER or there is no data entered, Option A is not satisfied.
 
 **Option B** <br>
 - Airway [Row ID 24499] completed - this will return one of the following options: Natural Airway / Endotracheal Tube / Percutaneous Tracheostomy / Surgical Tracheostomy / Laryngectomy / Other and have a _dt stamp
-- AND DAS Generic Airway Plan [Row ID 24498] = NO and has a dt stamp, or there is not flowsheet 24498
+- AND DAS Generic Airway Plan [Row ID 24498] = NO or 'other' and has a dt stamp or there is no data entered
+
 - PLUS Plan A [Row ID 23865] - any entry generating a _dt stamp
 
 **Validity** <br>
@@ -70,6 +75,8 @@ All patients across all units
 3. COMPLETED - An ICU Airway plan has been completed - satisfying option A or option B above and generating a _dt stamp
 4. FOR REVIEW - An ICU Airway plan has been completed - satisfying option A or option B above and generating a _dt stamp, but it is now >14 days between the current time and the _dt stamp; but exclude those with a COMPLETED Airway Plan who have a 'Natural Airway' (from the Airway tab [Airway Flowsheet ID 24499] of the ICU Airway Plan) AND have a DAS Generic Airway Plan [Row ID 24498] = YES (same a Option A that have 'Natural Airway') - these do not need review 
 5. An ICU Airway Plan can be superceded at any time if an entry is updated or new entry is made, this will generate a new _dt stamp
+
+*note I have removed 'update required' as a label.*
 
 ## Summary Data 
 
