@@ -180,33 +180,46 @@ Operational definition = of the patients who are ventilated and on sedative drug
 10. Plot on weekly chart
 
 
-## chart 2 RASS ASSESSMENT TIME INTERVAL SPC CHARTS 
+## Chart 2 RASS ASSESSMENT TIME INTERVAL SPC CHARTS 
 
 These are weekly percentage (p-charts) SPC.
 
 Operational definition = what percentage of RASS scores are done one time within the 1 hour guidelines (day) and 4 hour guidelines (night)? 
 
-Modified shift week is defined as Sunday 22:15 – Sunday 22:14
+DAY for RASS assessment is defined as between the hours of 06:00am and 21:59pm. Note this is not the same as a 'day shift' used in other metrics (08:00-19:59).  
+
+NIGHT for RASS assessment is defined as between the hours of 22:00pm and 05:59am. Note this is not the same as a 'night shift' used in other metrics (20:00-07:59).
+
+RASS documentation is expected one hourly during the day (06:00-21:59)and 4 hourly during the night (22:00-05:59). 
+
+We apply a 15 minute documentation window to the start of each shift making a day 06:15 start time and end time is 22:14 and a night 22:15 start time and end time is 22:14 and a night  
+
+
+
 
 ## Chart 2a - DAY RASS Assessment Time Interval Chart
 
-DAY for RASS assessment is defined as between the hours of 06:00am and 21:59pm. Note this is not the same as a 'day shift' used in other metrics, which is 08:00am to 19:59pm. Remember that RASS documentation is expected one hourly during the day and 4 hourly during the night. 
 
-1.  Look at RASS assessment measurement intervals between the hours of 06:14 and 22:14 each day. Reference measurement interval section above from line 110-126. 
+Day start time is therefore 06:15 and end time is 22:14 to allow for 15 minutes documentation window. 
+
+Modified shift week is therefore Monday 06:15 to Sunday 22:14. 
+
+1.  Look at RASS assessment measurement intervals between the hours of 06:15 and 22:14 each day. Reference measurement interval section above from line 110-126. 
 2.   Numerator = count of time intervals that are ≤ 1:00 hours for the DAY category
 - *note SPC denominator adjustment required for excessively long measurement intervals (those that are 2x accepted measurement interval from clinical guideline)*
-  3. Denominator (adjusted) = count all assessment measurement intervals between the hours of 06:00 and 21:59 in that week that are > 2:00 hours and ADD +1 to denominator for each one hour period greater than the permitted 1:00 hour.
+  3. Denominator (adjusted) = count all assessment measurement intervals between the hours of 06:15 and 22:14 in that week that are > 2:00 hours and ADD +1 to denominator for each one hour period greater than the permitted 1:00 hour.
 
-For example: (i) an 2.01hr measurement (continue to add leeway?) interval will count as 2 in the adjusted denominator - once for the measurement and once for being an additional 1:00hr over the permitted one hour for this category; (ii) 3.01 
-hr measurement interval will count as 3 in the adjusted denominator: (iii) 4.01hr measurement interval will count as 4 in the adjusted denominator etc.....
-4. Generate percentage of measurement intervals for that week that are 1:15 hours or less: numerator / denominator (adjusted)
+For example: (i) an 2.01hr measurement interval will count as 2 in the adjusted denominator - once for the measurement and once for being an additional 1:00hr over the permitted one hour for this category; (ii) 3.01 hr measurement interval will count as 3 in the adjusted denominator: (iii) 4.01hr measurement interval will count as 4 in the adjusted denominator etc.....
+4. Generate percentage of measurement intervals for that week that are 1 hour or less: numerator / denominator (adjusted)
 5. Plot on weekly chart
 
 ## Chart 2b- NIGHT RASS Assessment Time Interval Chart
 
-NIGHT for RASS assessment is defined as between the hours of 22:00pm and 05:59am. Note this is not the same as a 'night shift' used in other metrics, which is 20:00pm to 07:59am
 
-1. Look at RASS assessment measurement intervals between the hours of 22:00 and 05:59 each day
+Night start time is therefore 22:15 and end time is 06:14 to allow for 15 minutes documentation window. 
+
+
+1. Look at RASS assessment measurement intervals between the hours of 22:15 and 06:14 each day
 2. Numerator = count of time intervals that are ≤ 4:00 hours for the NIGHT category
 - *SPC denominator adjustment required for excessively long measurement intervals (those that are 2x accepted measurement interval from clinical guidance)*
 3. Denominator (adjusted) = count all assessment measurement intervals between the hours of 22:00 and 05.59 in that week that are >8:00 hours and ADD +1 to denominator for each four hour period greater than the permitted 4:00 hours
