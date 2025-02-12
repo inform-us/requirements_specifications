@@ -58,10 +58,11 @@ All patients across all units
 **Option A** <br>
 - Airway [Row ID 24499] completed - this will return one of the following options: Natural Airway / Endotracheal Tube / Percutaneous Tracheostomy / Surgical Tracheostomy / Laryngectomy / Other and have a _dt stamp
 - AND DAS Generic Airway Plan [Row ID 24498] = YES and has a dt stamp
+- DAS Generic Airway Plan [Row ID 24498] = NO or OTHER or there is no data entered, Option A is not satisfied.
 
 **Option B** <br>
 - Airway [Row ID 24499] completed - this will return one of the following options: Natural Airway / Endotracheal Tube / Percutaneous Tracheostomy / Surgical Tracheostomy / Laryngectomy / Other and have a _dt stamp
-- AND DAS Generic Airway Plan [Row ID 24498] = NO and has a dt stamp
+- AND DAS Generic Airway Plan [Row ID 24498] = NO or 'other' and has a dt stamp or there is no data entered
 - PLUS Plan A [Row ID 23865] - any entry generating a _dt stamp
 
 **Validity** <br>
