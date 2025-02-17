@@ -34,7 +34,7 @@ Week defined a Monday 00:00 – Sunday 23:59.
 
 ## RASS 
 
-### Flowsheets 
+### Flowsheets used
 
 
 FiO2%	301550	
@@ -55,15 +55,21 @@ FENTANYL	331223
 
 PROPOFOL	331218	
 
-MIDAZOLAM	3040101274	Manual	Numerical entry (free text option)	Hourly
+MIDAZOLAM	3040101274
 
-MORPHINE	331228	Manual	Numerical entry (free text option)	Hourly
+MORPHINE	331228
 
-DEXMEDETOMIDINE	3040101250	Manual	Numerical entry (free text option)	Hourly
+DEXMEDETOMIDINE	3040101250
 
-## RASS- sedated and ventilated patients 
+## RASS- sedated and mechanically ventilated patients 
 
-Patients are defined as ventilated and sedated 
+Patient is defined as sedated and mechanically ventilated if 
+
+(i) on mandatory ventilation if O2 delivery 040109305 equals endotrachael tube or tracheostomy
+
+(ii) ventmode 3040102607 equals CPAP/PS 
+
+(iii) receiving sedative drugs (see flowsheets above) within the last 6 hours 
 
 
 ### RASS scores on target 
@@ -72,12 +78,22 @@ The percentage of documented RASS scores that are the same as the target set by 
 
 Numerator = documented RASS scores within target for sedated and ventilated patients 
 
-Denominator = all documented RASS scores for sedated and ventilated patients 
+Denominator = all documented RASS scores with an associated valid RASS target set for sedated and ventilated patients 
 
-Inform_us displays this data in real time and also as weekly SPC chart showing the percentage of pain scores that are none or mild. 
+Inform_us displays this data in real time and also as weekly SPC chart showing the percentage of  RASS scores on target. 
 
 
 ### RASS documentation 
+
+RASS documentation is expected one hourly during the day (06:00-21:59)and 4 hourly during the night (22:00-05:59).
+
+RASS scores are considered 'on time' if they are documented within 1 hour and 15 minutes (added documentation leeway) during the DAY (06:00-21:59).  Otherwise the score is shown as missing. 
+
+RASS scores are considered 'on time' if they are documented within 4 hours and 15 minutes (added documentation leeway) during the  NIGHT (22:00-05:59).  
+
+Inform_us displays this data in real time and also as two weekly SPC charts (day and night) showing the percentage of pain scores are done 'on time' as per guidelines. 
+
+To reflect the sedation guidelines defining day as different than 'shift day', e.g. 08:00-19:59, the week is defined as Monday 06:15 to Sunday 22:14 to (also allows for 15 minutes leeway). 
 
 
 
