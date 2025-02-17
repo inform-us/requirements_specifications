@@ -2,7 +2,7 @@
 
 ### These are the data rules and thresholds for the metrics that appear on the inform_us dashboard https://informus.org.uk and are also ICU exemplar ward Power BI dashboards
 
-## Pain - all patients
+## Pain 
 
 ### Flowsheets used 
 
@@ -11,6 +11,10 @@ Verbal Pain Scale (at rest)	3040104280
 Verbal Pain Scale (at movement)	3040104281
 
 CRITICAL CARE PAIN OBSERVATION SCORE	3040104659
+
+### Patient Group
+
+All patients in CCU
 
 ### PAIN SCORES
 
@@ -61,7 +65,7 @@ MORPHINE	331228
 
 DEXMEDETOMIDINE	3040101250
 
-## RASS- sedated and mechanically ventilated patients 
+### Patient Group
 
 Patient is defined as sedated and mechanically ventilated if 
 
@@ -72,7 +76,7 @@ Patient is defined as sedated and mechanically ventilated if
 (iii) receiving sedative drugs (see flowsheets above) within the last 6 hours 
 
 
-### RASS scores on target 
+### RASS SCORES on TARGET
 
 The percentage of documented RASS scores that are the same as the target set by the doctors
 
@@ -83,7 +87,7 @@ Denominator = all documented RASS scores with an associated valid RASS target se
 Inform_us displays this data in real time and also as weekly SPC chart showing the percentage of  RASS scores on target. 
 
 
-### RASS documentation 
+### RASS SCORE DOCUMENTATION 
 
 RASS documentation is expected one hourly during the day (06:00-21:59)and 4 hourly during the night (22:00-05:59).
 
@@ -95,6 +99,44 @@ Inform_us displays this data in real time and also as two weekly SPC charts (day
 
 To reflect the sedation guidelines defining day as different than 'shift day', e.g. 08:00-19:59, the week is defined as Monday 06:15 to Sunday 22:14 to (also allows for 15 minutes leeway). 
 
+
+## CAM-ICU Delirium
+
+### Flowsheets used
+
+### Patient Group
+
+All patients with a RASS score of -3 to +4 
+
+### CAM-ICU SCORES
+
+### CAM-ICU DOCUMENTATION
+
+
+## Airway
+
+### Flowsheets used
+
+### Patient Group
+
+All patients
+
+### AIRWAY PLAN DOCUMENTED
+
+### TYPE OF AIRWAY AND TURNING PLAN/DARRT CALL 
+
+
+## DrEaMING
+
+### Flowsheets used
+
+### Patient Group
+
+All patients on PACU (T06 and WMS) 
+
+### DrEaMING STATUS 
+
+### DrEAMING DOCUMENTATION 
 
 
 
