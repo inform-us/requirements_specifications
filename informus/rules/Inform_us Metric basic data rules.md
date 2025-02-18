@@ -177,7 +177,7 @@ Reasons for not mobilising	47371
 
 All patients on PACU (T06 and WMS) 
 
-### Moblisation STATUS 
+### MOBILITY SCALE
 
 Last documented mobility scale and reasons for not mobilising (if not) is displayed in real time on inform_us. 
 
