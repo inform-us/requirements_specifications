@@ -171,6 +171,7 @@ Inform_us displays this data in real time and also as weekly SPC percentage char
 ### Flowsheets used
 
 Mobisation Achieved	40705
+
 Reasons for not mobilising	47371
 
 ### Patient Group
@@ -178,6 +179,8 @@ Reasons for not mobilising	47371
 All patients on PACU (T06 and WMS) 
 
 ### MOBILITY SCALE
+
+Mobilisation is reported as part of the DrEaMing bundle and not as a stand alone metric
 
 Last documented mobility scale and reasons for not mobilising (if not) is displayed in real time on inform_us. 
 
