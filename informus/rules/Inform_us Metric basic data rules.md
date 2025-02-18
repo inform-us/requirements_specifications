@@ -9,12 +9,19 @@ Tip: cross reference these data rules with the visual dashboard.
 ### Flowsheets used 
 
 MAP - R UCLH ICU TARGET MAP [36554]
+
 SpO2 - R UCLH ICU TARGETS SPO2 [36551]
+
 PaO2 - R UCLH ICU TARGET PAO2 [36556]
+
 PaCO2 - R UCLH ICU TARGET PACO2 [36557]
+
 pH - R UCLH ICU TARGETS PH [36559]
+
 Haemoglobin - R UCLH ICU TARGET HB [36558]
+
 Fluid Balance - R UCLH ICU TARGETS FLUID BALANCE [36553]
+
 RASS - R UCLH ICU TARGET RASS [36555]
 
 ### Patient Group
