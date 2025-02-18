@@ -2,6 +2,8 @@
 
 ### These are the data rules and thresholds for the metrics that appear on the inform_us dashboard https://informus.org.uk and are also ICU exemplar ward Power BI dashboards
 
+Tip: cross reference these data rules with the visual dashboard. 
+
 ## Pain 
 
 ### Flowsheets used 
@@ -104,14 +106,38 @@ To reflect the sedation guidelines defining day as different than 'shift day', e
 
 ### Flowsheets used
 
+R CAM-ICU OVERALL	3040104650
+R RICHMOND AGITATION SEDATION SCALE	3040104644
+
 ### Patient Group
 
-All patients with a RASS score of -3 to +4 
+All patients with a RASS score of -3 to +4. 
+
+*n.b. Includes all patients present on the unit during the current shift (including discharged patients who were present during this shift* 
+
 
 ### CAM-ICU SCORES
 
+The percentage of patients with a positive CAM-ICU score. 
+
+Numerator: the number of patients present on each unit at any time over the last 24 hours with at least one positive CAM-ICU score
+Denominator: the number of patients present on each unit at any time over the last 24 hours
+
+Inform_us displays this data in real time and also as 3 weekly SPC chart showing the (1. daily, 2. day shift, and 3. nightshift) rates of delirium as a weekly percentage. 
+
 ### CAM-ICU DOCUMENTATION
 
+For Patients with a RASS of -3 to +4, CAM-ICU documentation is expected once per shift or if a person's mental state changes. 
+
+
+Numerator = number of patients who have a documented RASS score of -3 to +4 at any point this shift, who have had at least one CAM-ICU score documented since the beginning of this shift
+
+Denominator = number of patients who have a documented RASS score of -3 to +4 at any point during this shift
+
+
+Inform_us displays this data as 'last shift' and 'this shift' and also as two weekly SPC charts (day and night) showing the percentage of pain scores are done 'on time' as per guidelines. 
+
+Shift week is defined as Monday 08:00 – Monday 07:59
 
 ## Airway
 
