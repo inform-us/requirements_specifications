@@ -4,6 +4,31 @@
 
 Tip: cross reference these data rules with the visual dashboard. 
 
+## Targets Set
+
+### Flowsheets used 
+
+MAP - R UCLH ICU TARGET MAP [36554]
+SpO2 - R UCLH ICU TARGETS SPO2 [36551]
+PaO2 - R UCLH ICU TARGET PAO2 [36556]
+PaCO2 - R UCLH ICU TARGET PACO2 [36557]
+pH - R UCLH ICU TARGETS PH [36559]
+Haemoglobin - R UCLH ICU TARGET HB [36558]
+Fluid Balance - R UCLH ICU TARGETS FLUID BALANCE [36553]
+RASS - R UCLH ICU TARGET RASS [36555]
+
+### Patient Group
+
+All patients in CCU
+
+### TARGETS SET
+
+The proportion of patients for whom all 8 physiological targets are set (or documented as not applicable) by noon each day. 
+
+Inform_us displays this data in real time and also as weekly SPC chart showing the percentage of patients with all targets set. 
+Week defined a Monday 00:00 – Sunday 23:59.
+
+
 ## Pain 
 
 ### Flowsheets used 
