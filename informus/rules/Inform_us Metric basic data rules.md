@@ -2,7 +2,7 @@
 
 ### These are the data rules and thresholds for the metrics that appear on the inform_us dashboard https://informus.org.uk and are also ICU exemplar ward Power BI dashboards
 
-Tip: cross reference these data rules with the visual dashboard. 
+Tip: cross-reference these data rules with the visual dashboard. 
 
 ## Targets Set
 
@@ -30,9 +30,10 @@ All patients in CCU
 
 ### TARGETS SET
 
-The proportion of patients for whom all 8 physiological targets are set (or documented as not applicable) by noon each day. 
+The proportion of patients for whom all 8 physiological targets are set (or documented as not applicable) between start of shift 08:00am and before 13:00hrs each day. 
 
-Inform_us displays this data in real time and also as weekly SPC chart showing the percentage of patients with all targets set. 
+Inform_us displays this data in real time and also as weekly SPC chart showing the percentage of patients with all targets set each day by 13:00hrs. 
+
 Week defined a Monday 00:00 – Sunday 23:59.
 
 
