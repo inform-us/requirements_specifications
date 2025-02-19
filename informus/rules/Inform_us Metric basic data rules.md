@@ -169,10 +169,12 @@ All patients with a RASS score of -3 to +4.
 
 ### CAM-ICU SCORES
 
-The percentage of patients with a positive CAM-ICU score. 
+The proportion of patients with a positive CAM-ICU score. 
 
-Numerator: the number of patients present on each unit at any time over the last 24 hours with at least one positive CAM-ICU score
-Denominator: the number of patients present on each unit at any time over the last 24 hours
+Denominator = the number of patients present on each unit at any time over the last 24 hours
+
+Numerator = the number of patients present on each unit at any time over the last 24 hours with at least one positive CAM-ICU score in the last 24 hours. 
+
 
 Inform_us displays this data in real time and also as 3 weekly SPC chart showing the (1. daily, 2. day shift, and 3. nightshift) rates of delirium as a weekly percentage. 
 
@@ -194,9 +196,13 @@ Shift week is defined as Monday 08:00 – Monday 07:59
 ### Flowsheets used
 
 Airway	R UCLH ICU AIRWAY PLAN 24499
+
 DAS Generic Airway Plan	R UCLH ICU AIRWAY PLAN DAS 24498
+
 Plan A	R UCLH ICU AIRWAY PLAN A 23865
+
 Emergency Teams	R UCLH ICU AIRWAY PLAN TRACHE CALL 24504
+
 O2 delivery device	R OXYGEN DELIVERY METHOD 3040109305
 
 ### Patient Group
@@ -213,7 +219,7 @@ NUMERATOR = current number of patients designated as COMPLETED
 
 Inform_us displays this data in real time and also as weekly SPC percentage charts. 
 
-
+Week defined a Monday 00:00 – Sunday 23:59.
 
 ## Mobilsation (as part of DrEaMing bundle)
 
@@ -234,13 +240,15 @@ Mobilisation is reported as part of the DrEaMing bundle and not as a stand alone
 
 Proportion of patients who have had DrEaming assessed and documented today (since 00:00hrs today). 
 
-DENOMINATOR = total number of current number of inpatients on each post operative unit 
+DENOMINATOR = total number of patients on each post operative unit 
 
 NUMERATOR = current number of patients who have had DrEaming documented at least once since 00:00hrs today. 
 
-Last documented mobility scale sore and reasons for not mobilising (if not) is displayed in real time on inform_us.
+Last documented mobility scale score and reasons for not mobilising (if not) is displayed in real time on inform_us.
 
 Inform_us also displays percentage of patients who have had DrEaMing fully documented daily in a weekly percentage SPC chart.  
+
+Week defined a Monday 00:00 – Sunday 23:59.
 
 
 
