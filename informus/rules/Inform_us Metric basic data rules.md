@@ -4,7 +4,7 @@
 
 Tip: cross-reference these data rules with the visual dashboard. 
 
-## Targets Set
+## PHYSIOLOGICAL TARGETS
 
 ### Flowsheets used 
 
@@ -42,7 +42,7 @@ Inform_us displays this data in real time and also as weekly SPC chart showing t
 Week defined a Monday 00:00 – Sunday 23:59.
 
 
-## Pain 
+## PAIN
 
 ### Flowsheets used 
 
@@ -153,7 +153,7 @@ Inform_us displays this data in real time and also as two weekly SPC charts (day
 To reflect the sedation guidelines defining day as different than 'shift day', e.g. 08:00-19:59, the week is defined as Monday 06:15 to Sunday 22:14 to (also allows for 15 minutes leeway). 
 
 
-## CAM-ICU Delirium
+## CAM-ICU DELIRIUM
 
 ### Flowsheets used
 
@@ -191,7 +191,7 @@ Inform_us displays this data as 'last shift' and 'this shift' and also as two we
 
 Shift week is defined as Monday 08:00 – Monday 07:59
 
-## Airway
+## AIRWAY
 
 ### Flowsheets used
 
@@ -221,7 +221,7 @@ Inform_us displays this data in real time and also as weekly SPC percentage char
 
 Week defined a Monday 00:00 – Sunday 23:59.
 
-## Mobilsation (as part of DrEaMing bundle)
+## MOBILISATION (as part of DrEaMing bundle)
 
 
 ### Flowsheets used
