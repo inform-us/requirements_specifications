@@ -62,9 +62,9 @@ A pain score is categorised as moderate or severe if the latest score is either 
 
 Denominator = All documented CPOT and VPS scores
 
-Numerator = All documented CPOT and VPS scores that are moderate or severe
+Numerator = All documented CPOT and VPS scores that are none or mild or moderate or severe
 
-Inform_us displays this data in real time and also as weekly SPC chart showing the percentage of pain scores that are moderate or severe. 
+Inform_us displays the proportion of none or mild scores in real time and also a weekly SPC chart showing the percentage of pain scores that are moderate or severe. 
 
 Week defined a Monday 00:00 – Sunday 23:59.
 
@@ -76,9 +76,9 @@ Pain scores are considered 'on time' if they are documented within 1 hour and 15
 Pain scores are considered 'on time if they are documented within 4 hours and 15 minutes (added documentation leeway) after a none or mild score. Otherwise the score is shown as missing. 
 
 
-Denominator = number of pain scores 
+Denominator = number of time intervals between two documented pain scores including unable to assess 
 
-Numerator = number of pain scores that are done within the guidelines 
+Numerator = number of time intervals between two documented pain scores that are done within either 4 hours and 15 minutes (if the first score of a pair is none or mild or unable to assess) or 1 hour and 15 minutes (if the first score of a pair is moderate/severe).
 
 Inform_us displays this data in real time and also as two weekly SPC charts (moderate/severe chart) and (none/mild chart) showing the percentage of pain scores are done 'on time' as per guidelines. 
 
@@ -142,6 +142,11 @@ RASS documentation is expected one hourly during the day (06:00-21:59)and 4 hour
 RASS scores are considered 'on time' if they are documented within 1 hour and 15 minutes (added documentation leeway) during the DAY (06:00-21:59).  Otherwise the score is shown as missing. 
 
 RASS scores are considered 'on time' if they are documented within 4 hours and 15 minutes (added documentation leeway) during the  NIGHT (22:00-05:59).  
+
+
+Denominator = number of time intervals between two documented RASS scores
+
+Numerator = number of time intervals between two documented RASS scores that are within 1 hour and 15 minutes (if the first score of a pair is between 06:00-21:59) and 4 hours and 15 minutes during the night (if the first score of a pair is between22:00-05:59).
 
 Inform_us displays this data in real time and also as two weekly SPC charts (day and night) showing the percentage of pain scores are done 'on time' as per guidelines. 
 
@@ -227,7 +232,15 @@ All patients on PACU (T06 and WMS)
 
 Mobilisation is reported as part of the DrEaMing bundle and not as a stand alone metric
 
-Last documented mobility scale and reasons for not mobilising (if not) is displayed in real time on inform_us. 
+Proportion of patients who have had DrEaming assessed and documented today (since 00:00hrs today). 
+
+DENOMINATOR = total number of current number of inpatients on each post operative unit 
+
+NUMERATOR = current number of patients who have had DrEaming documented at least once since 00:00hrs today. 
+
+Last documented mobility scale sore and reasons for not mobilising (if not) is displayed in real time on inform_us.
+
+Inform_us also displays percentage of patients who have had DrEaMing fully documented daily in a weekly percentage SPC chart.  
 
 
 
