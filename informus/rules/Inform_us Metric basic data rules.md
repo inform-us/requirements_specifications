@@ -30,9 +30,14 @@ All patients in CCU
 
 ### TARGETS SET
 
-The proportion of patients for whom all 8 physiological targets are set (or documented as not applicable) between start of shift 08:00am and before 13:00hrs each day. 
+The proportion of patients for whom all 8 physiological targets are set (or documented as not applicable) in ICU navigators between start of shift 08:00am and before 13:00hrs each day. 
 
-Inform_us displays this data in real time and also as weekly SPC chart showing the percentage of patients with all targets set each day by 13:00hrs. 
+
+Denominator = All patients present on the unit between 08:00am and 13:00hrs.
+
+Numerator = All  patients with all 8 targets set 08:00am and 13:30hrs (30 minutes added for documentation leeway). 
+
+Inform_us displays this data in real time and also as weekly SPC chart showing the percentage of patients with all targets set each day.
 
 Week defined a Monday 00:00 – Sunday 23:59.
 
