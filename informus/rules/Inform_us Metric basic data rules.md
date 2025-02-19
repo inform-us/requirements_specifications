@@ -58,11 +58,13 @@ All patients in CCU
 
 ### PAIN SCORES
 
+A pain score is categorised as moderate or severe if the latest score is either 1) CPOT 3-8 or 2) VPS at move or at rest 2-4. 
+
 Denominator = All documented CPOT and VPS scores
 
-Numerator = All documented CPOT and VPS scores that are none or mild
+Numerator = All documented CPOT and VPS scores that are moderate or severe
 
-Inform_us displays this data in real time and also as weekly SPC chart showing the percentage of pain scores that are none or mild. 
+Inform_us displays this data in real time and also as weekly SPC chart showing the percentage of pain scores that are moderate or severe. 
 
 Week defined a Monday 00:00 – Sunday 23:59.
 
@@ -73,7 +75,13 @@ Pain scores are considered 'on time' if they are documented within 1 hour and 15
 
 Pain scores are considered 'on time if they are documented within 4 hours and 15 minutes (added documentation leeway) after a none or mild score. Otherwise the score is shown as missing. 
 
-Inform_us displays this data in real time and also as weekly SPC chart showing the percentage of pain scores are done 'on time' as per guidelines. 
+
+Denominator = number of pain scores 
+
+Numerator = number of pain scores that are done within the guidelines 
+
+Inform_us displays this data in real time and also as two weekly SPC charts (moderate/severe chart) and (none/mild chart) showing the percentage of pain scores are done 'on time' as per guidelines. 
+
 Week defined a Monday 00:00 – Sunday 23:59.
 
 ## RASS 
@@ -168,10 +176,9 @@ Inform_us displays this data in real time and also as 3 weekly SPC chart showing
 For Patients with a RASS of -3 to +4, CAM-ICU documentation is expected once per shift or if a person's mental state changes. 
 
 
-Numerator = number of patients who have a documented RASS score of -3 to +4 at any point this shift, who have had at least one CAM-ICU score documented since the beginning of this shift
-
 Denominator = number of patients who have a documented RASS score of -3 to +4 at any point during this shift
 
+Numerator = number of patients who have a documented RASS score of -3 to +4 at any point this shift, who have had at least one CAM-ICU score documented since the beginning of this shift
 
 Inform_us displays this data as 'last shift' and 'this shift' and also as two weekly SPC charts (day and night) showing the percentage of pain scores are done 'on time' as per guidelines. 
 
