@@ -69,7 +69,8 @@ Present this number on the front tile as 'number of patients on epidural'.
 ### Average time between motor block assessments (a) Day and (b) night 
 
 Measurement Interval - average time between motor block assessments - front tile metric calculation
-this calculation will look at all RASS scores (including those that are not on sedation or mechanically ventilated)
+
+this calculation will look at all Motor block assessments (including those that are not on sedation or mechanically ventilated)
 average time between scores should be calculated from ACTUAL documented RASS scores in EPIC (ie. those with a _dt stamp) and not any forward filled scores
 there needs to be a minimum of two scores to calculate a measurement interval (if a patient has only just been admitted with one RASS score documented, or if a patient only has one RASS score during their entire ICU admission, calculation will not be possible and data will not be included on front tile metric
 the data on the front tile looks back from the current time to 24 hours in the past
@@ -145,6 +146,8 @@ d. 0-1 = GREEN filled
 e. 2= AMBER filled
 
 f. 3 =RED filled
+
+g. X on x axis to denote patient not on epidural in the last 12 hours. 
 
 
 ## DRAFT below- 
