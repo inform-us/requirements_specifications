@@ -1,6 +1,3 @@
-|File .md signed_off|Code review|Production|Outstanding|
-|---|---|---|---|
-|yes - 09/05/24|- pending code review <br> - Y/N to alternate SPC (line 116)|no|- remove references to daily targets in MD file (line 87) <br> - adjust content from daily to weekly|
 
 # Target Rules
 Rules for all targets set metric
