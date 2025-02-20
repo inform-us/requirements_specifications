@@ -383,7 +383,7 @@ This floorplan displays a patient's mobilisation status according to entries in 
 
 **In bed:** Patient is lying in bed, passively moved to chair, or sitting over the edge of bed (mobility scale 0-3)
 
-**Tip:** Click the bed space to view a patient in bed's documented reason for not mobilising. 
+**Tip:** To view the documented reason for not mobilising, click on the patient's bed. 
 
 **Actively transferring:** Patient is standing, transferring bed to chair, or marching on spot (mobility scale 4-6)
 
