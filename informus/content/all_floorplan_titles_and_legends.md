@@ -139,9 +139,10 @@ _Note there are no other hover overs. Only in bed patients._
 
 **Floorplan title: Documentation compliance**
 
-- All documentation - green-filled bed
-- Partial documentation- amber-filled bed
-- No DrEaMing documentation- red-filled bed
+Once code is changed to omit partial documentation as an option, removed amber filled bed 'partial documentation' in legend and change wording as per below. 
+
+- DrEaMing Fully Documented - green-filled bed
+- DrEaMing Documentation Incomplete- red-filled bed
 
 - ![image](https://github.com/user-attachments/assets/7253fd06-78c0-4467-bbfc-7801125c3309)
 
