@@ -76,7 +76,14 @@ Tabs on Left
 * y axis: Title: CAM-ICU score divided into positive at the top and negative at the bottom
 * Slider bar: time window (upt to last 72 hours)
 * Back button bottom left
+* 
 <img width="552" alt="image" src="https://github.com/user-attachments/assets/a8234003-e00d-4e5a-a4db-127f5a98d3b3">
+
+
+Legend to read -  CAM-ICU positive (RASS overdue)
+
+CAM-ICU negative (RASS overdue)
+
 
   
   
