@@ -113,6 +113,15 @@ Add legend item - dark grey bed, label as 'incomplete data'
 
 ![image](https://github.com/user-attachments/assets/c00a4de3-8a86-486c-825d-0ea9542737d2)
 
+Legend Labeling wording change: 
+
+CAM-ICU positive (no RASS) to CAM-ICU positive (RASS overdue)
+
+and 
+
+CAM-ICU negative (no RASS) to CAM-ICU negative (RASS overdue)
+
+
 ## Tile: All POM patients DrEaMing
 
 **Floorplan title: Eating and Drinking**
@@ -150,7 +159,7 @@ _Note there are no other hover overs. Only in bed patients._
 
 ## Updated Airway Plan Completed
 
-**DLT** - Doctor lef turn
+**DLT** - Doctor led turn
 
 **NLT** - Nurse led turn
 
