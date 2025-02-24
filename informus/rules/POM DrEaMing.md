@@ -188,6 +188,8 @@ MOBILISATION ACHIEVED FLOORPLAN
 
 DOCUMENTATION COMPLIANCE FLOORPLAN
 
+Note change -originally done on main branch. We now omit an amber label for partially documented. DrEaMing should be binary- completely documented or not. 
+
 1. if any of the 'fluid intake', 'diet intake' or 'moblisation achieved' flowsheets have not been completed since 00:00 today,  then label patient as 'Incomplete DrEaMing Documentation'. Bed to be red filled. 
 2. if all three DrEaMing flowsheets- 'fluid intake', 'diet intake' and 'moblisation achieved' flowsheets have been completed since 00:00 today, then label patient as 'DrEaMING Documentation Complete'. Bed to be green filled. 
    
