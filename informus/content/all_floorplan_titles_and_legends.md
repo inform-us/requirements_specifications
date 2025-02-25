@@ -113,6 +113,15 @@ Add legend item - dark grey bed, label as 'incomplete data'
 
 ![image](https://github.com/user-attachments/assets/c00a4de3-8a86-486c-825d-0ea9542737d2)
 
+Legend Labeling wording change: 
+
+CAM-ICU positive (no RASS) to CAM-ICU positive (RASS overdue)
+
+and 
+
+CAM-ICU negative (no RASS) to CAM-ICU negative (RASS overdue)
+
+
 ## Tile: All POM patients DrEaMing
 
 **Floorplan title: Eating and Drinking**
@@ -130,9 +139,10 @@ _Note there are no other hover overs. Only in bed patients._
 
 **Floorplan title: Documentation compliance**
 
-- All documentation - green-filled bed
-- Partial documentation- amber-filled bed
-- No DrEaMing documentation- red-filled bed
+Once code is changed to omit partial documentation as an option, removed amber filled bed 'partial documentation' in legend and change wording as per below. 
+
+- DrEaMing Fully Documented - green-filled bed
+- DrEaMing Documentation Incomplete- red-filled bed
 
 - ![image](https://github.com/user-attachments/assets/7253fd06-78c0-4467-bbfc-7801125c3309)
 
@@ -150,7 +160,7 @@ _Note there are no other hover overs. Only in bed patients._
 
 ## Updated Airway Plan Completed
 
-**DLT** - Doctor lef turn
+**DLT** - Doctor led turn
 
 **NLT** - Nurse led turn
 

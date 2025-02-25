@@ -40,17 +40,17 @@ Total hours on mandatory ventiliation = eligible hours, exclude missing, off uni
 ## Labelling Rule: (corresponds to the floor plans)     
 
   1. IF the latest classification is 'not applicable':'not applicable' 
-  2. IF the latest classification is 'missing': 'out of range' 
+  2. IF the latest classification is 'missing': 'missing' 
   3. IF latest 3 or more readings are 'out_of_range_8':'out of range' 
   4. IF latest 2 or more readings are 'out_of_range_10':'out of range' 
   5. IF there are 5 or more non-consecutive 'out_of_range_8' in 24 hours:'out of range'
   6. IF the latest classification is 'in range': 'in range'
-  7. Insert extra rules to avoid fallthrough cases from code review here. 
-  10. 
-  11. IF none of the above: 'fallthrough'
-  12. n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in ? button. 
+  7. Insert extra rules to avoid fallthrough cases from code review here.
+  8.  IF none of the above: 'fallthrough'
+*n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in ? button.*
  ---    
 # SPC CHARTS 
+
 ##  Tidal Volume- Weekly percentage of patients achieving Tidal Volume target of 6-8ml/kg IBW 
 Operational definition = of the patients who are intubated and on mandatory ventilation (modes), what proportion are achieving their tidal volume target, i.e. < or = 8ml/kg IBW on a weekly basis?
 

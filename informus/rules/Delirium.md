@@ -100,7 +100,7 @@ NOTE:
 - the denominator can potentially be a bigger number than the current number of patients occupying the ICU beds (allowing for admissions / discharges), hence representing this as percentage and not a fraction
 - the following could potentially be excluded from the calculation:
 a) RASS -4/-5 with a CAM-ICU score - this is theoretically possible to document (by accident) but highly unlikely
-b) NO Valid RASS documented with a CAM-ICU score documented - this is possible as the bedside nurse may assume that a RASS score documented in the final hour of the last shift is still valid or incorrect as per clinical guidelines as RASS and CAM-ICU should be documented concurrently - both these scenarios are unlikely and would be even less likely once improvement work on this metric is underway
+b) NO Valid RASS documented with a CAM-ICU score documented means that at the time of CAM-ICU documentation, the last RASS score documented has now surpassed its validity period and become expired (either it has been 1 hours and 15 minutes in the day or 4 hours and 15 minutes in the night). Ideally CAM-ICU and RASS should be documented concurrently as a concurrent RASS autofills one of the four CAM-ICU features, but this is not always done. Once improvement work on this metric is underway, this will be less likely. We will therefore need to denote when CAM-ICUs are documented without valid RASS score to prompt reviews of RASS on the floorplan. 
 
 **[B] CAM-ICU Percentage Completions Last Shift - Front Tile**
 - get all flowsheet data for previous shift
@@ -126,11 +126,12 @@ b) NO Valid RASS documented with a CAM-ICU score documented - this is possible a
 MAKE EPOCHS FOR THIS SECTION
 
 1) If the latest (real or forward-filled) CAM-ICU score reading this shift= negative: ‘GREEN’; design = green filled bed
-2) If the latest (real or forward-filled) CAM-ICU score reading this shift = positive: ‘RED’; design = red filled bed 
-3) If there is no CAM-ICU score since the start of the shift (since 08:00 day or 20:00 night) ‘missing’: ‘missing’; design = white filled bed with red hashed outline
-4) If the latest CAM-ICU score not applicable as RASS score has fallen to -4- or -5: ‘assessment not required (RASS is -5 or -4)’ design = white filled bed with blue hashed outline (RASS pips CAM-ICU)
+2) If the latest (real or forward-filled) CAM-ICU score reading this shift = positive: ‘RED’; design = red filled bed
+3) If the latest CAM-ICU score is positive, but the latest RASS is not within 75 minutes (06:00 - 21.59) or 4 hours and 15 minutes (22:00 - 05:59), label bed as CAM-ICU positive, RASS overdue.
+4) If the latest CAM-ICU score is negative, but the latest RASS is not within 75 minutes (06:00 - 21.59) or 4 hours and 15 minutes (22:00 - 05:59), label bed as CAM-ICU positive, RASS overdue.  
+5) If there is no CAM-ICU score since the start of the current shift (since 08:00 day or 20:00 night) ‘missing’: ‘missing’; design = white filled bed with red hashed outline
+6) If the latest CAM-ICU score is not applicable as RASS score has fallen to -4- or -5: ‘assessment not required (RASS is -5 or -4)’ design = white filled bed with blue hashed outline (RASS pips CAM-ICU)
     - This logic is applied across all epochs, so we override the CAM-ICU score for a particular row if RASS falls below -3.
-5) CAM-ICU with a null RASS - label as either: `positive with no RASS` or `negative with no RASS`
 
 ![image](https://github.com/inform-us/requirements_specifications/assets/167782531/1281d06f-09e7-42ca-9d60-c2c03701a970)
 
@@ -143,10 +144,10 @@ MAKE EPOCHS FOR THIS SECTION
 2) Y-axis left is CAM-ICU score divided into 'Positive' at top and 'Negative' at bottom
 3) CAM-ICU score: 'POSITIVE' = delirium is present, 'NEGATIVE: delirium is not present
 4) Label all CAM-ICU scores as circles
-5) Plot all positive CAM-ICU scores with a RASS on top half of chart as red filled circle
-6) Plot all negative CAM-ICU scores with a RASS on bottom half of chart as green filled circle
-7) Plot all positive CAM-ICU scores without a RASS on top half of chart as red hashed filled circle
-8) Plot all negative CAM-ICU scores without a RASS on bottom half of chart as green hashed filled circle
+5) Plot all positive CAM-ICU scores with a valid RASS on top half of chart as red filled circle
+6) Plot all negative CAM-ICU scores with a valid RASS on bottom half of chart as green filled circle
+7) Plot all positive CAM-ICU scores without a valid RASS on top half of chart as red hashed filled circle
+8) Plot all negative CAM-ICU scores without a valid RASS on bottom half of chart as green hashed filled circle
 8) 'Missing' CAM-ICU scores shown as grey vertical bar with no data points
 9) CAM-ICU not required shown as grey tick on central dividing line
 
