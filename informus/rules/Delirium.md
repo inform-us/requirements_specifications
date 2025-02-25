@@ -209,25 +209,18 @@ Operational definition = out of all patients what proportion of patients have at
 ## Chart 2 [CAM-ICU documentation chart]
 **Weekly percentage of CAM-ICU scores documented at least once per shift as per guidelines**
 
-Operational definition = out of all patients with a documented RASS score of -3 to +4, what proportion of these patients have at least one CAM-ICU documented per shift on a weekly basis?
+Operational definition = For all patients who are eligible for a CAM-ICU score (have documented RASS score of -3 to +4 meaning they are awake enough to be able to complete the assessment), what proportion of CAM-ICU scores have been documented at least once per shift (on a weekly basis)?
 
 1. This looks at data on a per shift basis, which is then converted into a weekly percentage based on a shift week (defined as Monday 08:00 – Monday 07:59)
 2. Break the week down into fourteen 12-hour shift, seven 08:00-19:59 and seven 20:00-07:59
-3. Note to include current inpatients and those that have been discharged for each shift
+3. For each 12-hour shift, calculate the number of patients with a RASS score of -3 to +4, documented at least once during this shift
+4.  Note to include all patients who were present for any time during each shift, including those who were discharged during that shift. 
+5.  Numerator - patients present on each shift with at least one documented RASS score of -3 to +4 at any time during that shift AND at least one CAM-ICU score documented at any time during that shift (note RASS and CAM-ICU do not have to be concurrent)
+6.   Denominator - all patients present each shift with at least one a RASS score of -3 to +4 documented during that shift.
+7.   Combine numerators from all of the shifts where there were patients present.
+8.   Combine denominators from all of the shifts where there were patients present.
+9. Denote as percentage.
 
-4. For each 12-hour day shift (08:00-19:59), calculate the number of patients with a RASS scores of -3 to +4, documented at least once during this shift
-5. For these patients (that have a RASS -3 to +4 on the 12-hour day shift), calculate the number of patients that have had at least one positive CAM-ICU score documented during this shift
-6. Calculate percentage CAM-ICU documented on day shift:
-   Numerator - patients present on day shift with at least one RASS score of -3 to +4 AND at least one CAM-ICU score documented (does not have to be concurrent)
-   Denominator - all patients present on day shift (including current inpatients and those that have been discharged for that shift)
-
-7. For each 12-hour night shift (20:00-07:59), calculate the number of patients with a RASS scores of -3 to +4, documented at least once during this shift
-8. For these patients (that have a RASS -3 to +4 on the 12-hour night shift), calculate the number of patients that have had at least one positive CAM-ICU score documented during this shift
-9. Calculate percentage CAM-ICU documented on night shift:
-   Numerator - patients present on night shift with at least one RASS score of -3 to +4 AND at least one CAM-ICU score documented (does not have to be concurrent)
-   Denominator - all patients present on night shift (including current inpatients and those that have been discharged for that shift)
-
-10. Take the percentges for the number of shifts that week (14 if a complete week) and generate a mean (sum of percentages of shifts / number of shifts), denote as a percentage - this is the shift week data point
-11. NOTE - the night shift that starts on Sunday at 20:00 and ends Monday 07:59 is included in the data from the previous week (i.e. the week that ends the Sunday the night shift starts)
    - SHIFT WEEK is defined as Monday 08:00 – Monday 07:59
+   -    *NOTE - the night shift that starts on Sunday at 20:00 and ends Monday 07:59 is included in the data from the previous week (i.e. the week that ends the Sunday the night shift starts)*
    - WE MAY NEED TO ALTER THE TIME OF THE WEEKLY SPC DATA CAPTURE FOR THE DELIRIUM SPC, WHICH NORMALLY OCCURS EVERY MONDAY AT 03:00/04:00, IT WOULD NEED TO HAPPEN AFTER THE END OF THE NIGHT SHIFT ON MONDAY MORNING 
