@@ -323,11 +323,14 @@ If a patient’s most recent CAM-ICU score is negative: delirium is not present.
 
 ## i button (same i button for all three floorplans)
 
-Ensuring that patients Drink, Eat and Mobilise (DrEaMing) as soon as possible after surgery is essential for timely recovery and for reducing post-operative complications. 80 percent of patients are supported to drink, eat and mobilise within 24 hours of surgery ending. 
+Ensuring that patients Drink, Eat and Mobilise (DrEaMing) is a care bundle to complete within 24 hours of surgery ending.
 
-For post-operative patients, Drinking, Eating and Moblising should be documented at least once a day in the post-op surgical flowsheets in EPIC. Note that we all have access to these flowsheets, but if your EPIC interface does not display them, you may need to add them. 
+DrEaMing within the first 24 hours has been shown to reduce post-operative complications and length of stay, and improves patient experience.  Hospitals with all surgical specialities achieving 80% of patients DrEaMing within 24hours have an average 2 day reduction in length of stay.
 
-Patients receiving different types of surgery will have different guidelines concerning the initiation of drinking, eating and mobilisation. Therefore, when viewing and interpreting this floorplan, knowledge of individual patients' recovery pathway is required.
+Please document Drinking, Eating and Mobilising in the "Postop surgical" flowsheets. Note if you cannot see this flow sheet type Postop Surgical or ERAS into the flowsheet search.  Aim to document during regular observations, this can be done retrospectively after discussion with patients.
+
+Always refer to the Surgeons post op instruction as different specialities vary in their diet progression. Therefore, when viewing and interpreting this floorplan, knowledge of individual patients' recovery pathway is required.
+
 
 ## ? button Eating and Drinking Floorplan
 
