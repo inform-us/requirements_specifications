@@ -78,9 +78,9 @@
 - Mean:
 - Total Motor Block Assessments:
 
-## DrEaMing Measurement Interval SPC Tool Tip (Hover Over Box) Content
+## DrEaMing SPC Tool Tip (Hover Over Box) Content
 
 - Date:
 - Percentage:
 - Mean:
-- Total Motor Block Assessments:
+- Eligible patients:
