@@ -212,16 +212,14 @@ Operational definition = out of all patients what proportion of patients have at
 
 Operational definition = For all patients who are eligible for a CAM-ICU score (have documented RASS score of -3 to +4 meaning they are awake enough to be able to complete the assessment), what proportion of CAM-ICU scores have been documented at least once per shift (on a weekly basis)?
 
-1. This looks at data on a per shift basis, which is then converted into a weekly percentage based on a shift week (defined as Monday 08:00 – Monday 07:59)
-2. Break the week down into fourteen 12-hour shift, seven 08:00-19:59 and seven 20:00-07:59
-3. For each 12-hour shift, calculate the number of patients with a RASS score of -3 to +4, documented at least once during this shift
-4.  Note to include all patients who were present for any time during each shift, including those who were discharged during that shift. 
-5.  Numerator - patients present on each shift with at least one documented RASS score of -3 to +4 at any time during that shift AND at least one CAM-ICU score documented at any time during that shift (note RASS and CAM-ICU do not have to be concurrent)
-6.   Denominator - all patients present each shift with at least one a RASS score of -3 to +4 documented during that shift.
-7.   Combine numerators from all of the shifts where there were patients present.
-8.   Combine denominators from all of the shifts where there were patients present.
-9. Denote as percentage.
+This looks at data on a per shift basis, which is then converted into a weekly percentage based on a shift week (defined as Monday 08:00 – Monday 07:59:59). This means the night shift that starts on Sunday at 20:00 and ends Monday 07:59 is included in the data from the previous week (i.e. the week that ends the Sunday the night shift starts).
 
-   - SHIFT WEEK is defined as Monday 08:00 – Monday 07:59
-   -    *NOTE - the night shift that starts on Sunday at 20:00 and ends Monday 07:59 is included in the data from the previous week (i.e. the week that ends the Sunday the night shift starts)*
-   - WE MAY NEED TO ALTER THE TIME OF THE WEEKLY SPC DATA CAPTURE FOR THE DELIRIUM SPC, WHICH NORMALLY OCCURS EVERY MONDAY AT 03:00/04:00, IT WOULD NEED TO HAPPEN AFTER THE END OF THE NIGHT SHIFT ON MONDAY MORNING 
+Calculations should include all patients who were present for any time during each shift, including those who were discharged during that shift. 
+
+1. Break the week down into fourteen 12-hour shifts, seven 08:00-19:59 and seven 20:00-07:59.
+2. For each 12-hour shift, calculate the number of patients with a RASS score of -3 to +4 documented at least once at any point during the shift.
+3.  Numerator - patients present on each shift with at least one documented RASS score of -3 to +4 at any time during that shift AND at least one CAM-ICU score documented at any time during that shift (RASS and CAM-ICU do not have to be concurrent).
+4.   Denominator - all patients present each shift with at least one a RASS score of -3 to +4 documented during that shift.
+5.   Combine numerators from all of the shifts where there were patients present.
+6.   Combine denominators from all of the shifts where there were patients present.
+7. Denote as percentage.
