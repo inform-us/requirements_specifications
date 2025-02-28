@@ -64,12 +64,11 @@
 - Incidents of delirium/Patients with delirium TBC:
 - Eligible patients:
 
-## CAM-ICU Scores Measurement Interval SPC Tool Tip (Hover Over Box) Content
+## CAM-ICU Scores Documentation SPC Tool Tip (Hover Over Box) Content
 
 - Date:
 - Percentage:
 - Mean:
-- Total CAM-ICU assessments:
 
 ## Epidural Motor Block Assessment Measurement Interval SPC Tool Tip (Hover Over Box) Content
 
