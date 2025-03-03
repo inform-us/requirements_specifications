@@ -170,11 +170,15 @@ TBC weekly percentage of patients who have an airway plan.
 
 1. This is a weekly percentage (p-chart) SPC
 2. Week defined as Monday 00:00 – Sunday 23:59
-3. Calculate the number of patients who have been present on the unit in the week
-4. Calculate the number of patients who have been present on the unit in the week who have had at least one (option A or B above) airway plan documented at any point in their admission. In other words... a patient admitted during a particular week who has an ICU stay that spans over more than that week may have had an airway plan documented on any previous week during their ICU admission. These patients should be included in the numerator.
-   *note this means if a patient is admitted towards the end of the week and the airway plan is not completed until the following week, this would not factor into the numerator of the week of admission, but would in the following week in which the airway plan was completed.* 
-6. Numerator = patients present in the current week who have had at least one airway plan during ICU admission
-7. Denominator = Patients present in the current week
+3. Calculate the number of patients who have been present on each unit in the week
+4. Calculate the number of patients who have been present on each unit in the week who have had at least one (option A or B above) airway plan documented at any point in their admission.
+5.  Numerator = patients present in the current week who have had at least one airway plan during ICU admission
+6.  Denominator = Patients present in the current week
+7. Patients who have admissions > 7 days only require one airway plan documented to be 'airway plan compliant'. A patient admitted during a particular week who has an ICU stay that spans over more than that week may have had an airway plan documented on any previous week during their ICU admission and this should satisfy the numerator. This requires the code to go back retrospectively to the point of admission to see if option A or B have ever been documented.
+8. TBC- Example patients- If a patient is admitted on sunday the week and the airway plan is not completed until Tuesday, this airway plan compliant would not factor into the numerator of the week of admission, but would in the following week in which the airway plan was completed. Is the patient double counted as not compliant first week, and compliant hte second week. Or do we take any patients admitted e.g. on sunday (or other arbitraty cut off) and count them as the following week to ensure better compliance?
+
+
+*note. We acknowelddge that patients will be double, triple, quadruple.... counted in the denominator for as many weeks as they are present but only require an airway plan once to be considered airway plan compliant as described above.* 
 
 ---
 ## APPENDIX - unused flow sheets, discard after code review
