@@ -63,7 +63,10 @@ Present this number on the front tile as 'number of patients on epidural'.
 
 ### Average time between motor block assessments (a) Day and (b) night 
 
-Measurement Interval - average time between motor block assessments in the last 24 hours- front tile metric calculation
+Number of patients with an epidural infusion in the last 12 hours 
+
+
+Aaverage time between motor block assessments (day) (night) in the last 24 hours- front tile metric calculation
 
 This calculation will look at all Motor block assessments for epidural patients. 
 The average time between scores should be calculated from ACTUAL documented motor block scores in EPIC (ie. those with a _dt stamp) and not any forward-filled scores
@@ -73,7 +76,7 @@ There needs to be a minimum of two scores to calculate a measurement interval (i
 The data on the front tile looks back from the current time to 24 hours in the past.
 
 There will be two measurement interval calculations displayed on the front tile: DAY (08:00-19:59) and NIGHT (20:00-07:59)
-in line with other metrics we should provide some leeway (15 minutes) in charting documentation, therefore (adjusted time frame): DAY (08:15-20:14) and NIGHT (20:15-08:14). The leeway is to mitigate skewed mean interval, particularly in the DAY calculation (e.g. 08:01 motor block assessment, time interval calculated with a NIGHT RASS at 02:00, would give a 04:01 measurement interval which would skew daytime data, the 15 minute leeway may need to be reviewed if insufficient.
+in line with other metrics we should provide some leeway (15 minutes) in charting documentation, therefore (adjusted time frame): DAY (08:15-20:14) and NIGHT (20:15-08:14). The leeway is to mitigate skewed mean interval, particularly in the DAY calculation (e.g. 08:01 motor block assessment, time interval calculated with a NIGHT MOTOR BLOCK at 02:00, would give a 04:01 measurement interval which would skew daytime data, the 15 minute leeway may need to be reviewed if insufficient.
 
 the _dt of each measurement determines whether it is categorised as 'DAY' or 'NIGHT', but in order to complete the measurement interval calculation, a preceding measurement can be in the opposing category worked example:
 
@@ -97,7 +100,7 @@ calculate respective DAY and NIGHT mean motor block assessment measurement inter
 
 ## MOTOR BLOCK ASSESSMENT - EPIDURAL PATIENTS FLOOR PLAN
 
-All patients who have been on an epidural in the last 12 hours need to have their level of motor block (level of paralysis) assessed 2 hourly in the day and 4 hourly in the day. 
+All patients who have been on an epidural infusion running in the last 12 hours need to have their level of motor block (level of paralysis) assessed 2 hourly in the day and 4 hourly in the day. 
 
 
 ELIGIBILITY
