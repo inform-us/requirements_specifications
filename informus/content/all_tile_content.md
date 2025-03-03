@@ -156,7 +156,11 @@ Patients on epidural
 
 Motor Block Assessment
 
-Number of amber or red motor block scores 
+Patients with an epidural infusion in the last 12 hours 
+
+Avg time between measurements day:
+
+Avg time between measurements night:
 
  
 
