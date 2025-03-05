@@ -13,14 +13,14 @@ Metric | Clinical rules signed off status | Team Code Review Status | Still to b
 |---|---|---|---|
 Targets|✅ - 09/05/24| ⚠️ done with Harry/Sarah|Redo with current team||
 Delirium CAM-ICU |✅|✅| |
-MAP (Mean Arterial Blood Pressure)|❌|✅|Update rules based on the code |
+MAP (Mean Arterial Blood Pressure)|❌|✅|Update rules based on the code review|
 Pain (including epidural)|✅|✅| |
 Sedation RASS|✅|✅| |
-SpO2|❌|✅|update rules based on the code|
-Tidal Volume|❌|✅|update rules based on the code|
+SpO2|❌|✅|update rules based on the code review|
+Tidal Volume|❌|✅|update rules based on the code review|
 POM DReaMing|✅|✅||
 Patients rules| ✅| ✅ ||
-Airway|✅|❌|update to include airway from other ward and double classification|
+Airway|✅|❌|update to include double classification?|
 Epidural motor block| ⚠️ |❌| code still being written, motor block assessment needed until score is 1 or zero|
 
 # SPC metrics
@@ -30,8 +30,8 @@ Metric | Clincial rules signed off status | Team Code Review Status | Still to b
 |---|---|---|---|
 SPC Chart Build|✅||to discuss process limits denominator|
 Targets|✅ - 09/05/24|⚠️ done with Harry/Sarah|Redo with current team||
-Delirium CAM-ICU scores | ❌ |❌ | coding has not started|
-Delirium CAM-ICU measurement interval| ❌ |❌ |  coding has not started |
+Delirium CAM-ICU scores | ✅| |❌ | James has started coding|
+Delirium CAM-ICU documentation| ✅| |❌ |  James has started coding |
 MAP (Mean Arterial Blood Pressure)|❌|❌||
 Pain scores|✅|✅||
 Pain interval|✅|✅||
