@@ -134,12 +134,17 @@ Note current title is inccorrect.... says 'informus'
 
 
 ---
-## Tile: All Patients Delirium - CAM-ICU assessment frequency
+## Tile: All Patients Delirium CAM-ICU
 
-**SPC chart title: Percentage of CAM-ICU Documentations completed at least once per shift**
+**SPC chart title: Delirium CAM-ICU**
 
----
-## Tile: All Patients Delirium
+4 buttons to read- Documentation, Day shift delirium rates, Night shift delirium rates, Combined Delirium Rates
+
+Chart Titles to read
+1. Weekly percentage of CAM-ICU assessments completed once per shift
+2. Weekly percentage of documented delirium- Day Shifts
+3. Weekly percentage of documented delirium - Night Shifts
+4. Weekly percentage of documented delirium - Calendar Day 
 
 **SPC chart title: Percentage of Positive CAM-ICU scores**
 
