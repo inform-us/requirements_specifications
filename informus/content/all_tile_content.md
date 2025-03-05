@@ -118,35 +118,49 @@ Unit Performance Data for each metric
 ![image](https://github.com/inform-us/requirements_specifications/assets/94536083/9197e25f-21dc-4978-bc9b-9fcde5574548) 
 
 
-**8) Patients with a RASS of -3 to 4 CAM-ICU**
-
-Content on Tile- 
+**8) Patients with RASS -3 to 4 CAM-ICU** 
 
 Patients with RASS -3 to 4 
 
 CAM-ICU
 
-Unit performance data
+Patients with delirium in the last 24 hours
+
+Percentage completions this shift:
+
+Percentage completions previous shift:
 
 **9) All POM patients DrEaMing**
 
-Content of Tile
-POM patients on T06 and WMS 
+All patients
 
 DrEaMing 
 
-Unit performance data
+Percentage of patients with complete documentation since 00:00hrs today
 
-****10) All Patients**
-
-Content of Tile
+**10) All patients AirwayPlan**
 
 All patients
+
 Airway Plan
 
-Unit performance data
+(fraction) patients with complete airway plans
 
+(number) Airway plans for review
 
+TBC....
+
+**11) Patients on epidurals Motor Block Assessment**
+
+Patients on epidural
+
+Motor Block Assessment
+
+Patients with an epidural infusion in the last 12 hours 
+
+Avg time between measurements day:
+
+Avg time between measurements night:
 
  
 
