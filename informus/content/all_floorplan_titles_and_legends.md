@@ -193,3 +193,22 @@ Can have only from section (A), i.e, only dart
 Can have only from section (B), e.g, only DLT
 
 Can have only from section (C), e.g, only E
+
+
+**Floorplan title: Motor Block Assessment**
+
+Legend 
+
+GREEN: Latest motor block 0-1
+
+AMBER: Latest motor block 2
+
+RED: Latest motor block 3
+
+Missing Assessment
+
+No epidural infusion in the last 12hrs
+
+Empty bed
+
+
