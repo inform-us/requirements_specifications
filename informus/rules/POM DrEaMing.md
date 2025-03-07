@@ -210,9 +210,11 @@ If any of the 3 DReaMing metrics are missing for any patient, an entry (a valid 
 
 Numerator = sum of patients achieving (1) above i.e. all three flowsheets documented between 00:00 and 23:59 
 
-Denominator = total number of patients present on unit (based on MRNs) between 00:00 and 23:59 
+Denominator = total number of patients present on unit (based on CSNs) between 00:00 and 23:59 
 
 Calculate weekly percentage for each unit T06 and WMS.
 
 Plot an SPC chart for each respective unit: y-axis = weekly percentage; x-axis = time
+
+Denominator (n) for process limits = number of patients present on unit (based on CSNs) between 00:00 and 23:59. 
 
