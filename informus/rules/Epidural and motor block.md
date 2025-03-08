@@ -198,10 +198,10 @@ Week defined a Monday 00:00 – Sunday 23:59
 Day start time is 08:15 and end time is 20:14 to allow for 15 minutes documentation leeway. 
 
 
-1.  Look at motor block assessment measurement intervals between the hours of 08:15 and 20:14 each day. Reference measurement interval rules for tile calculation above making sure to not include any intervals after both scores have resumed to zero. 
+1.  Look at motor block assessment measurement intervals (for which the first of the pair in the measurement interval is between the hours of 08:15 and 20:14) each day. Reference measurement interval rules for tile calculation above making sure to not include any intervals after both scores have resumed to zero. 
 2.   Numerator = count of time intervals that are ≤ 2:00 hours for the DAY category
 - *note SPC denominator adjustment required for excessively long measurement intervals (those that are 2x accepted measurement interval from clinical guideline)*
-  3. Denominator (adjusted) = count all motor block assessment measurement intervals (for which the first measurement in the pair is between the hours of 08:15 and 20:14) in that week that are > 4:00 hours and ADD +1 to denominator for each measurement interval missed.
+  3. Denominator (adjusted) = count all motor block assessment measurement intervals in that week that are > 4:00 hours and ADD +1 to denominator for each measurement interval missed.
 
 For example: (i) an 4.01hr measurement interval will count as 2 in the adjusted denominator - once for the measurement and once for being an additional having missed the next expected measurement; (ii) 6.01 hr measurement interval will count as 3 in the adjusted denominator: (iii) 8.01hr measurement interval will count as 4 in the adjusted denominator etc.....
 4. Generate percentage of DAY SHIFT measurement intervals for that week that are 2 hour or less: numerator / denominator (adjusted)
@@ -212,10 +212,10 @@ For example: (i) an 4.01hr measurement interval will count as 2 in the adjusted 
 Night start time is 20:15 and end time is 08:14 to allow for 15 minutes documentation leeway.  
 
 
-1. Look at motor block assessment measurement intervals between the hours of 20:15 and 08:14 each day. Reference measurement interval rules for tile calculation above making sure to not include any intervals after both scores have resumed to zero. 
+1. Look at motor block assessment measurement intervals (for which the first of the pair in the measurement interval is between the hours of 20:15 and 08:14 each day). Reference measurement interval rules for tile calculation above making sure to not include any intervals after both scores have resumed to zero. 
 2. Numerator = count of time intervals that are ≤ 4:00 hours for the NIGHT category
 - *SPC denominator adjustment required for excessively long measurement intervals (those that are 2x accepted measurement interval from clinical guidance)*
-3. Denominator (adjusted) = count all assessment measurement intervals (for which the first measurement in the pair occurs between the hours of 20:15 and 08:14) in that week that are >8:00 hours and ADD +1 to denominator for each measurement interval missed.
+3. Denominator (adjusted) = count all assessment measurement intervals  in that week that are >8:00 hours and ADD +1 to denominator for each measurement interval missed.
 
 For example: (i) an 8:01hr measurement interval will count as 2 in the adjusted denominator - once for the measurement and once for having missed the next expected measurement; (ii) 12:01hr measurement interval will count as 3 in the adjusted denominator
 4. Generate percentage of measurement intervals for that week that are 4:00 hours or less: numerator / denominator (adjusted)
