@@ -10,7 +10,7 @@ temporary paralysis (motor block) which if gone unnoticed for too long can have 
 It is therefore important for clinical staff to have an overview of who on the units is using an epidural for pain relief and what their 
 level of motor block (temporary paralysis) in order to ensure patient safety. 
 
-All patients who have been on an epidural in (the last twelve hours) need to have an assessment of their level of motor block to their right and left leg 2 hourly in the day (08:00-19:59) and 4 hourly in the night (20:00-07:59).
+All patients who have been on an epidural in (the last twelve hours) need to have an assessment of their level of motor block to their right and left leg 2 hourly in the day (08:00-19:59) and 4 hourly in the night (20:00-07:59) until there is no more motor block (both scores are zero).
 
 The motor block assessment metric will have its own tile, floor plan and individual chart. An icon indicating which patients are on an epidural will also be included on the pain floor plan. 
 
@@ -191,4 +191,36 @@ These are weekly percentage (p-charts) SPC charts
 Calendar day defined as 00:00 - 23:59
 
 Week defined a Monday 00:00 – Sunday 23:59
+
+
+## Chart 1a - DAY Motor Block Assessment Time Interval Chart
+
+Day start time is 08:15 and end time is 20:14 to allow for 15 minutes documentation leeway. 
+
+
+1.  Look at motor block assessment measurement intervals between the hours of 08:15 and 20:14 each day. Reference measurement interval rules for tile calculation above making sure to not include any intervals after both scores have resumed to zero. 
+2.   Numerator = count of time intervals that are ≤ 2:00 hours for the DAY category
+- *note SPC denominator adjustment required for excessively long measurement intervals (those that are 2x accepted measurement interval from clinical guideline)*
+  3. Denominator (adjusted) = count all assessment measurement intervals between the hours of  08:15 and 20:14 in that week that are > 2:00 hours and ADD +1 to denominator for each one hour period greater than the permitted 1:00 hour.
+
+For example: (i) an 2.01hr measurement interval will count as 2 in the adjusted denominator - once for the measurement and once for being an additional 1:00hr over the permitted one hour for this category; (ii) 3.01 hr measurement interval will count as 3 in the adjusted denominator: (iii) 4.01hr measurement interval will count as 4 in the adjusted denominator etc.....
+4. Generate percentage of measurement intervals for that week that are 1 hour or less: numerator / denominator (adjusted)
+5. Plot on weekly chart
+
+## Chart 2b- NIGHT RASS Assessment Time Interval Chart
+
+
+Night start time is 20:15 and end time is 08:14 to allow for 15 minutes documentation leeway.  
+
+
+1. Look at motor block assessment measurement intervals between the hours of 20:15 and 08:14 each day. Reference measurement interval rules for tile calculation above making sure to not include any intervals after both scores have resumed to zero. 
+2. Numerator = count of time intervals that are ≤ 4:00 hours for the NIGHT category
+- *SPC denominator adjustment required for excessively long measurement intervals (those that are 2x accepted measurement interval from clinical guidance)*
+3. Denominator (adjusted) = count all assessment measurement intervals between the hours of 22:00 and 05.59 in that week that are >8:00 hours and ADD +1 to denominator for each four hour period greater than the permitted 4:00 hours
+
+For example: (i) an 8:01hr measurement interval will count as 2 in the adjusted denominator - once for the measurement and once for being an additional 4:00hr over the permitted four hours for this category; (ii) 12:01hr measurement interval will count as 3 in the adjusted denominator; (iii) 16:01hr measurement interval will count as 4 in the adjusted denominator etc...
+4. Generate percentage of measurement intervals for that week that are 4:00 hours or less: numerator / denominator (adjusted)
+5. Plot on weekly chart
+
+ 
 
