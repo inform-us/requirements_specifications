@@ -79,7 +79,7 @@ Once both scores have resumed to zero, motor block assessment is no longer requi
 
 Worked example:
 
-A patient has the following assessments calculated:
+A patient has the following assessments documented:
 
 1) 09:00 Motor block r leg = 2, Motor block l leg = 1
 2) 11:00 Motor block r leg =1, Motor block l leg = 1
@@ -122,7 +122,7 @@ calculate respective DAY and NIGHT mean motor block assessment measurement inter
 
 ## MOTOR BLOCK ASSESSMENT - EPIDURAL PATIENTS FLOOR PLAN
 
-All patients who have been on an epidural in the last 12 hours need to have their level of motor block (level of paralysis) assessed 2 hourly in the day and 4 hourly in the day. 
+All patients who have been on an epidural in the last 12 hours need to have their level of motor block (level of paralysis) assessed 2 hourly in the day and 4 hourly in the day until both right and left leg scores are 0. 
 
 
 ELIGIBILITY
@@ -143,19 +143,21 @@ All patients with an epidural volume infused in the last 12 hours.
 
 
 ## Secondary Label Assessment of Motor Block 
-*In addition to the last documented Motor Block Assessment, we need to display whether a motor block assessment is overdue (missingness). If a Motor Block Assessment is overdue, we need know what the last reading was as well. 
 
-1. If there has never been an 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' since the patients has been classified as 'on epidural', then label patient as 'missing assessment'. Red Hashed and no fill bed.  
-2. If the current time is 08:00-19:59, if either 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' have not been completed in the last two hours, then label patient as 'missing' and forward fill the latest motor block assessment reading (red amber green). Bed to be red hashed outline (with fill of colour from forward filled entry). 
-3. If the current time is 20:00-07:59, if either 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' have not been completed in the last four hours, then label patient as 'missing' and forward fill the latest motor block assessment reading (red amber green). 
-Bed to be red hashed outline  (with fill of colour from forward filled entry).
+*In addition to the last documented Motor Block Assessment, we need to display whether a motor block assessment is overdue (missingness). If a Motor Block Assessment is overdue, we need need to display both the last motor block assessment reading and that the score is overdue.* 
+
+1. If there has never been an 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' since the patient has been classified as 'on epidural', then label patient as 'missing assessment'. Red Hashed and no fill bed.  
+2. If the current time is 08:00-19:59, and if either the latest documented motor block score (r or l leg) was >0, and 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' have not been completed in the last two hours, then label patient as 'missing' and forward fill the latest motor block assessment reading (red amber green). Bed to be red hashed outline (with fill of colour from forward filled entry).
+4. If the current time is 20:00-07:59, and if either the latest documented motor block score (r or l leg) was >0, and if either 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' have not been completed in the last four hours, then label patient as 'missing' and forward fill the latest motor block assessment reading (red amber green).
+5. During both day and night shifts, if both of the latest documented motor block r and l leg scores were zero, then do not label patient as missing even if there are no more scores. Forward fill the latest motor block assessment green reading until the end of the 12 hour period. 
+
 _______________________________________________
 
 ## [F] Classification Rules: Individual patient chart
 
 - X-axis time in hours, range 0-72 hours, default to 24 hours
 - Y-axis left is motor block assessment score (0 to 3) with 0 denoting no paralysis and 3 denoting full paralysis of either leg.
-- Use rules on lines 110-115 to determine classification for individual charts
+- Use labeling rules above to determine classification for individual charts
 
    
 
@@ -180,12 +182,11 @@ g. X on x axis to denote patient not on epidural in the last 12 hours.
 
 ## [D] SPC CHARTS
 
-Operational definition - For patients on epidurals, what percentage of motor block assessments are done on time as per guidelines. Chart a- day, Char b- night. 
+Operational definition - For patients on epidurals, what percentage of motor block assessments are done on time as per guidelines?
 
-Measurement Interval (for motor block assessment scoring only)
-Average time between motorblock assessments - note suggest not on front tile- TBC. 
+There are two SPC charts (A) Day and (B) Night
 
-ABC SPC CHARTS (refer to XYZ metric in classification
+
 
 Calendar day defined as 00:00 - 23:59
 Week defined as Monday 00:00 – Sunday 23:59
