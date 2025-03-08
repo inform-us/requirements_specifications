@@ -18,6 +18,7 @@ The motor block assessment metric will have its own tile, floor plan and individ
 There will be two SPC charts of the Percentage of Motor Block Assessments done on time as per guidelines (A- Day and B- Night). 
 
 EPIC Flowsheets
+
 Flowsheet	Row ID | Manual/Automatic/Calculated Input | Comments	| Expected documentation frequency
 
 # Motor Block Assessment
@@ -40,15 +41,15 @@ Flowsheet	Row ID | Manual/Automatic/Calculated Input | Comments	| Expected docum
 
 
 ## ELIGIBILITY
-All patients who have received local anaesthesia via an epidural catheter in the last 12 hours. If a patient has a number equal to or greater than zero entered in flowsheet  Epidural drugs | Volume (mL) | 7001026  within the last ?12 hours (use 12 hours for now, but this may be amended), they are eligible. 
+All patients who have received local anaesthesia via an epidural catheter in the last 12 hours. If a patient has a number equal to or greater than zero entered in flowsheet  Epidural drugs | Volume (mL) | 7001026  within the last 12 hours, they are eligible. 
 
 *Note these patients will more frequently be found on the post-surgical units, T06 and PACU*
 
 ## VALIDITY
 
-A patient is classified as 'on an epidural' for ?12 hours following data entry in the flowsheet. 
+A patient is classified as 'on an epidural' for 12 hours following data entry in the flowsheet 7001026. 
 
-If a patient is 'on epidural' they are required to have a motor block assessment documented for at least ?12 hours following any data entered into flowsheet 7001026.: 2 hourly during the day shift (08:00-19:59), and 4 hourly during the night shift (20:00-07:59) ?unless red flag or worsening bromage score.... Define! 
+If a patient is 'on epidural' they are required to have a motor block assessment documented for at least 18 hours following any data entered into flowsheet 7001026 or until both the right and left motor block assessment scores are '0'. The required frequency of documentation is 2 hourly during the day shift (08:00-19:59), and 4 hourly during the night shift (20:00-07:59). 
 
 30415249 Motor block assessment left leg
 30415250 Motor block assessment right leg
@@ -60,7 +61,7 @@ If a patient is 'on epidural' they are required to have a motor block assessment
 
 ### Number of patients on epidural
 
-The epidural data on the front tile is a real time view of (a) the number of patients who are on an epidural (using above eligiblity criteria of volume infused within the last 12 hours) shown as a number (at each refresh looks back and collect all the current epidural flowsheets), (b) the average time between motor block assessments. 
+The epidural data on the front tile is a real time view of (a) the number of patients who are on an epidural (using above eligibility criteria of volume infused within the last 12 hours) shown as a number (at each refresh looks back and collect all the current epidural flowsheets), (b) the average time between motor block assessments. 
 
 Calculate the number of patients who are currently on the unit and have had a number equal to or greater than zero in epidural volume flowsheet 7001026 documented in the last 12 hours. Discharged patients are not included.
 
@@ -70,24 +71,49 @@ Present this number on the front tile as 'number of patients on epidural'.
 
 Measurement Interval - average time between motor block assessments - front tile metric calculation
 
-this calculation will look at all Motor block assessments (including those that are not on sedation or mechanically ventilated)
-average time between scores should be calculated from ACTUAL documented RASS scores in EPIC (ie. those with a _dt stamp) and not any forward filled scores
-there needs to be a minimum of two scores to calculate a measurement interval (if a patient has only just been admitted with one RASS score documented, or if a patient only has one RASS score during their entire ICU admission, calculation will not be possible and data will not be included on front tile metric
-the data on the front tile looks back from the current time to 24 hours in the past
-there will be two measurement interval calculations displayed on the front tile: DAY (08:00-19:59) and NIGHT (20:00-07:59)
-in line with other metrics we should provide some leeway (15 minutes) in charting documentation, therefore (adjusted time frame): DAY (08:00-19:59) and NIGHT (20:00-07:59)
-the leeway is to mitigate skewed mean interval, particularly in the DAY calculation (e.g. 08:01 motor block assessment, time interval calculated with a NIGHT RASS at 02:00, would give a 04:01 measurement interval which would skew daytime data, the 15 minute leeway may need to be reviewed if insufficient
-the _dt of each measurement determines whether it is categorised as 'DAY' or 'NIGHT', but in order to complete the measurement interval calculation, a preceding measurement can be in the opposing category
-worked example:
+This calculation will look at all Motor block assessment intervals for epidural patients. 
+
+There needs to be a minimum of two scores of >0 at two different dt_stamps to calculate a measurement interval. Note that assessing the motor block involves documenting both right and left leg scores simultaneously. Simultaneous right and leg measurements should not be used in the measurement interval calculation (if a patient has only just been admitted with one (r or l leg) or two (r and l leg at same dt_stamp) motor block assessments at one dt_stamp, or if a patient only has one/two at same dt_stamp score during their entire ICU admission, calculation will not be possible and data will not be included on front tile average time between assessments metric.
+
+Once both scores have resumed to zero, motor block assessment is no longer required. This means that even if scores fall within the 12 hour assessment window, if both r and l leg scores are zero, do not calculate the measurement interval after scores of zero.
+
+Worked example:
+
+A patient has the following assessments calculated:
+
+1) 09:00 Motor block r leg = 2, Motor block l leg = 1
+2) 11:00 Motor block r leg =1, Motor block l leg = 1
+3) 13:00 Motor block r leg = 1, Motor block l leg = 0
+4) 15:00 Motor block r leg = 0, Motor block l leg = 0
+5) 19:00 Motor block r leg = 0, Motor block l leg = 0
+
+The interval between assessment 4 and 5 should not factor into the average time between measurements calculation because assessement four showed zero motor block. 
+
+This calculation on the front tile looks back from the current time to 24 hours in the past
+
+There will be two measurement interval calculations displayed on the front tile: DAY (08:00-19:59) and NIGHT (20:00-07:59)
+in line with other metrics we should provide some leeway (15 minutes) in charting documentation, therefore (adjusted time frame): DAY (08:00-19:59) and NIGHT (20:00-07:59). The leeway is to mitigate skewed mean interval, particularly in the DAY calculation (e.g. 08:01 motor block assessment, time interval calculated with a NIGHT motor block assessment at 02:00, would give a 04:01 measurement interval which would skew daytime data, the 15 minute leeway may need to be reviewed if insufficient
+
+The _dt of each measurement determines whether it is categorised as 'DAY' or 'NIGHT', but in order to complete the measurement interval calculation, a preceding measurement can be in the opposing category
+
+Worked example:
+
 (a) a motor block assessment documented at 08:10 would have to be linked with an earlier measurement during the night shift to calculate an interval and would be classified as - NIGHT (before 08:14)
+
 (b) an assessment documented at 8:30 would have to be linked with an earlier measurement during the day or night shift to calculate an interval and would be classified as - DAY (after 08:14)
+
 (c) an assessment documented at 20:10 would have to be linked with an earlier measurement during the day shift to calculate an interval and would be classified as - DAY (before 20:14)
 (d)an assessment documented 20:00 would have to be linked with an earlier measurement during the night or day shift to calculate an interval and would be classified as - NIGHT (after 20:14)
-once classified into DAY or NIGHT, determine numerator and denominator for each and calculate mean
-DAY Numerator = sum of the minutes and hours between all intervals recorded between (08:15-20:14) that fall into the current 24 hour rolling window
-DAY Denominator = number of all time interval measurements that fall into the current 24 hour rolling window
-NIGHT Numerator = sum of the minutes and hours between all intervals recorded between (20:15-08:14) that fall into the current 24 hour rolling window
-NIGHT Denominator = number of all time interval measurements that fall into the current 24 hour rolling window
+
+Once classified into DAY or NIGHT, determine numerator and denominator for each and calculate mean
+
+- DAY Numerator = sum of the minutes and hours between all intervals recorded between (08:15-20:14) that fall into the current 24 hour rolling window
+
+- DAY Denominator = number of all time interval measurements that fall into the current 24 hour rolling window
+
+- NIGHT Numerator = sum of the minutes and hours between all intervals recorded between (20:15-08:14) that fall into the current 24 hour rolling window
+
+- NIGHT Denominator = number of all time interval measurements that fall into the current 24 hour rolling window
 calculate respective DAY and NIGHT mean motor block assessment measurement interval and display as hh:mm on front tile
 
 
