@@ -186,11 +186,9 @@ Operational definition - For patients on epidurals, what percentage of motor blo
 
 There are two SPC charts (A) Day and (B) Night
 
-
+These are weekly percentage (p-charts) SPC charts
 
 Calendar day defined as 00:00 - 23:59
-Week defined as Monday 00:00 – Sunday 23:59
 
-
-These are weekly percentage (p-charts) SPC
 Week defined a Monday 00:00 – Sunday 23:59
+
