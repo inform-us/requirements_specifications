@@ -96,6 +96,25 @@ Operational definition = of the patients who are on oxygen therapy and have had 
 9. ABOVE CHART: generate percentage calendar day designation ‘above’ SpO2 target (i.e.add up all 'above' in that week and divide by 'above'+ 'In range'+ 'below' in that week). Present as percentage
 10. BELOW CHART: generate percentage calendar day designation ‘below’ SpO2 target (i.e.add up all 'below' in that week and divide by 'above'+ 'In range'+ 'below' in that week). Present as percentage
 11. IN RANGE CHART: generate percentage calendar day designation ‘in range’ SpO2 target(i.e.add up all 'in range' in that week and divide by 'above'+ 'In range'+ 'below' int that week). Present as percentage
-12. Aggregate the daily percentages into a -weekly mean percentage_ for each unit 
+12. Aggregate the daily percentages into a -weekly mean percentage_ for each unit
+
+**COMMENT SPC - denominator for process limits**
+
+**NOTE** This metric used be to a daily SPC calcualtion, hence the above day labeling and the conversion to weekely data. The data must stay on a patient basis, but there is no need for the additional step to calculate a day label. 
+
+We can generate the SPC data point using the 1-hour epoch label (for each respective unit). 
+ABOVE
+1. get all 1-hour epochs for an individual patient (CSN) within the designated calendar week
+2. Numerator = all 'above' labels for that patient (CSN) in that week
+3. Denominator = all 'above' + 'in range' + 'below' for that patient (CSN) in that week
+4. Per patient (CSN) calculation: weekly percentage = numerator / denominator
+5. Per unit calculation: aggregated mean percentage = sum of per patient (CSN) calculation percentage / sum of number of patients (CSN) in that calendar week - this is the SPC data point
+6. **SPC - denominator for process limits = sum of number of patients (CSN) in that calendar week (and not the number of 1-hour epochs)**
+7. SPC title would neeed to be adjusted to 'Weekly percentage DURATION of patients within / above / below SpO2 Saturations Target (patients on oxygen therapy)
+8. Hoverover box denominator should be 'number of 1-hour epochs above' = the sum of all 'above' labels in calendar week & total number of 'eligible patients" = sum of number of patients (CSN) in that calendar week (currently correct = No)
+
+IN-RANGE - repeat
+
+BELOW - repeat 
 
  
