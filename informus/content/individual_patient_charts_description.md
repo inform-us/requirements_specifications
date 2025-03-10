@@ -68,22 +68,42 @@ Tabs on Left
    <img width="1383" alt="Screenshot 2024-02-28 at 16 12 54" src="https://github.com/inform-us/requirements_specifications/assets/78792902/2fddbca1-89ec-4a5f-b7c5-357b4e9c4241">
 
 ## CAM-ICU: Delirium - individual chart contents:
+
 * Unit top left
 * Title top centre: CAM-ICU scores
 * Bed number underneath title
-* Legend below title: CAM-ICU positive (red filled circle darker red outline), CAM-ICU negative (green filled circle darker green outline), CAM-ICU not required (dark grey tick on central dividing line ), **missing reading** (light grey verticle rectangle)
+* Legend below title: CAM-ICU positive (red filled circle darker red outline), CAM-ICU negative (green filled circle darker green outline), CAM-ICU not required (dark grey tick on central dividing line ), **missing reading** (light grey verticle rectangle),   CAM-ICU positive (RASS overdue) (red filled circle with red hashed outline) CAM-ICU negative (RASS overdue) (green filled circle with green hashed outline)
 * x axis: time day, date of month, e.g. 14:00, Wed 28
 * y axis: Title: CAM-ICU score divided into positive at the top and negative at the bottom
 * Slider bar: time window (upt to last 72 hours)
 * Back button bottom left
+
+* Data points with colour of legend to be shown on chart.... 
+
 * 
 <img width="552" alt="image" src="https://github.com/user-attachments/assets/a8234003-e00d-4e5a-a4db-127f5a98d3b3">
 
 
-Legend to read -  CAM-ICU positive (RASS overdue)
 
-CAM-ICU negative (RASS overdue)
+## Motor Block Assessment- individual chart contents:
 
+* Unit top left
+
+* Title top centre: Motor Block Assessments
+* 
+*   Bed number underneath title
+
+* Legend below title:  Motor Block 3 (red filled circle darker red outline), Motor Block 0-1 (green filled circle darker green outline), Motor Block 2 (Amber filled circle darker amber outline); No epidural infusion (dark grey x on central dividing line -*Note to Kaite- can these x's be smaller??* ), **missing reading** (light grey verticle rectangle)
+
+* x axis: time day, date of month, e.g. 14:00, Wed 28
+* y axis: Title: Motor Block Assessment
+  y axis legend: no epidural, 0, 1, 2, 3.
+  
+Data points with colour of legend to be shown on chart.... 
+
+* Slider bar: time window (up to last 72 hours)
+  
+* Back button bottom left
 
   
   
