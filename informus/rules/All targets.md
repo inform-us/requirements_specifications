@@ -113,6 +113,14 @@ Operational definition = of documented physiological targets set in ICU Navigato
 7. Aggregate the daily percentages into a **_weekly mean percentage_** for T03 Northside & T03 Southside producing one value for the unit T03
 8. Plot an SPC chart for each respective unit: y-axis = weekly percentage; x-axis = time
 
+**COMMENT SPC - denominator for process limits**
+
+Numerator = number of patients achieving all 8 targets set (e.g. all tragets completed - see above)
+Denominator = total number of current patients (occupied beds) at 13:30 hours
+Calculation for each respective unit: (i) daily percenatge numerator / denominator; (ii) aggregated mean percentage of calendar week (up to 7 mean percentages to aggregate) - this is the SPC data point
+**SPC - denominator for process limits = the aggregated denominator (ie. the total sum of the number of current patients (occupied beds) at 13:30 hours taken on each day of the calendar week**
+Hoverover box denominator should be the number of 'eligible patients" (currently correct = Yes)
+
 **NOTE**
 - this SPC chart has an alternative design for the purposes of adding a competitive edge (gamify) to the daily clinical working pattern
 - a consequence of this method (i.e. snapshot versus calendar day) is that a small proportion of patients may not be accounted for, specifically those admitted after 13:00 and discharged before 13:00 the next day: (i) severely ill and early death (ii) straightforward unplanned admission and quick discharge (iii) straightforward elective surgery and quick discharge.
