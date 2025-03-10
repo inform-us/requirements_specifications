@@ -173,13 +173,15 @@ Operational definition = out of all patients what proportion of patients have at
 ## Chart 1a 
 **Weekly percentage of patients with a positive CAM-ICU score per CALENDAR DAY**
 
+Calendar week is defined as Monday 00:00hrs to Sunday 23:59hrs. 
+
 1. This looks at data on a calendar day basis (00:00 - 23:59)
-2. Establish each patient present on each of the units for that calendar day (including current inpatients and those that have been discharged)
-3. Idenifty for each of these patients whether there was a positive CAM-ICU score documented at any time during the calendar day
-4. Numerator = number of patients that have had one (or more) positive CAM-ICU score(s) documented on each calendar day
-   Denominator = number of patients present on each calenday day (including current inpatients and those that have been discharged)
-5. Calculate a daily percentage of positive CAM-ICU scores (delirium) = numerator / denominator 
-6. Calculate weekly mean of the 7 calendar days (sum of percentage of each of the seven days / seven). Denote as percentage. 
+3. Establish each patient present on each of the units for that calendar day (including current inpatients and those that have been discharged)
+4. Identify for each of these patients whether there was a positive CAM-ICU score documented at any time during the calendar day
+5. Numerator = number of patients that have had one (or more) positive CAM-ICU score(s) documented on each calendar day
+   Denominator = number of patients present on each calendar day (including current inpatients and those that have been discharged)
+6. Calculate a daily percentage of positive CAM-ICU scores (delirium) = numerator / denominator 
+7. Calculate weekly mean of the 7 calendar days (sum of percentage of each of the seven days / seven). Denote as percentage. 
 
 ## Chart 1b 
 **Weekly percentage of patients with a positive CAM-ICU score during a DAY SHIFT**
