@@ -124,7 +124,7 @@ calculate respective DAY and NIGHT mean motor block assessment measurement inter
 
 ## MOTOR BLOCK ASSESSMENT - EPIDURAL PATIENTS FLOOR PLAN
 
-All patients who have been on an epidural in the last 12 hours need to have their level of motor block (level of paralysis) assessed 2 hourly in the day and 4 hourly in the day until both right and left leg scores are 0. 
+All patients who have been on an epidural in the last 12 hours are required to have a motor block assessment documented for at least 12 hours following any data entered into flowsheet or until both the right and left motor block assessment scores are '0'.
 
 
 ELIGIBILITY
@@ -151,7 +151,7 @@ All patients with an epidural volume infused in the last 12 hours.
 1. If there has never been an 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' since the patient has been classified as 'on epidural', then label patient as 'missing assessment'. Red Hashed and no fill bed.  
 2. If the current time is 08:00-19:59, and if either the latest documented motor block score (r or l leg) was >0, and 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' have not been completed in the last two hours, then label patient as 'missing' and forward fill the latest motor block assessment reading (red amber green). Bed to be red hashed outline (with fill of colour from forward filled entry).
 4. If the current time is 20:00-07:59, and if either the latest documented motor block score (r or l leg) was >0, and if either 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' have not been completed in the last four hours, then label patient as 'missing' and forward fill the latest motor block assessment reading (red amber green).
-5. During both day and night shifts, if both of the latest documented motor block r and l leg scores were zero, then do not label patient as missing even if there are no more scores. Forward fill the latest motor block assessment green reading until the end of the 12 hour period. 
+5. During both day and night shifts, if the volume infused flowsheet has no data and if both of the latest documented motor block r and l leg scores were zero and two hours have elapsed (day shift) or four hours have elapsed (night shift), then do not label patient as missing even if there are no more scores. Forward fill the latest motor block assessment green reading until the end of the 12 hour period. 
 
 _______________________________________________
 
