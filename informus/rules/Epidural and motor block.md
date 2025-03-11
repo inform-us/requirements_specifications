@@ -10,7 +10,7 @@ temporary paralysis (motor block) which if gone unnoticed for too long can have 
 It is therefore important for clinical staff to have an overview of who on the units is using an epidural for pain relief and what their 
 level of motor block (temporary paralysis) in order to ensure patient safety. 
 
-All patients who have been on an epidural in (the last twelve hours) need to have an assessment of their level of motor block to their right and left leg 2 hourly in the day (08:00-19:59) and 4 hourly in the night (20:00-07:59) until there is no more motor block (both scores are zero).
+All patients who have been on an epidural in (the last twelve hours) need to have an assessment of their level of motor block to their right and left leg 2 hourly in the day (08:00-19:59) and 4 hourly in the night (20:00-07:59). Once patient's epidural has been stopped, motor block assessment must continue until 12 hours have passed or both motor block scores are zero, whichever comes first. 
 
 The motor block assessment metric will have its own tile, floor plan and individual chart. An icon indicating which patients are on an epidural will also be included on the pain floor plan. 
 
