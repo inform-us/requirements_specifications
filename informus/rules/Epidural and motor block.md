@@ -73,13 +73,14 @@ Measurement Interval - average time between motor block assessments - front tile
 
 This calculation will look at all Motor block assessment intervals for epidural patients. 
 
-There needs to be a minimum of two scores of >0 at two different dt_stamps to calculate a measurement interval. Note that assessing the motor block involves documenting both right and left leg scores simultaneously. Simultaneous right and leg measurements should not be used in the measurement interval calculation (if a patient has only just been admitted with one (r or l leg) or two (r and l leg at same dt_stamp) motor block assessments at one dt_stamp, or if a patient only has one/two at same dt_stamp score during their entire ICU admission, calculation will not be possible and data will not be included on front tile average time between assessments metric.
+There needs to be a minimum of two scores of >0 at two different dt_stamps to calculate a measurement interval. Note that assessing the motor block involves documenting both right and left leg scores simultaneously or in some cases minutes apart. Right and left leg flowsheet entries have their own dt_stamp, but are technically done simultaneously. To mitigate for two assessments being done across two epochs, Two measurement intervals within five minutes of one another should be skipped. Detect if the patient has either r or l leg assessment done and take earlier score. 
 
-Once both scores have resumed to zero, motor block assessment is no longer required. This means that even if scores fall within the 12 hour assessment window, if both r and l leg scores are zero, do not calculate the measurement interval after scores of zero.
+
+If the epidural has been stopped (i.e. there is no data entered into flowsheet 7001026) and both scores have resumed to zero, motor block assessment is no longer required. Therefore measurement interval should stop being calculated. This means that even if there are more assessments after these zero scores within the 12 hour assessment window, do not calculate the measurement interval after motor block assessment scores of zero.
 
 Worked example:
 
-A patient has the following assessments documented:
+A patient's epidural has been stopped at 9:00am (there is no more data in the volume infused flowsheet) and the following assessments are documented:
 
 1) 09:00 Motor block r leg = 2, Motor block l leg = 1
 2) 11:00 Motor block r leg =1, Motor block l leg = 1
@@ -87,7 +88,8 @@ A patient has the following assessments documented:
 4) 15:00 Motor block r leg = 0, Motor block l leg = 0
 5) 19:00 Motor block r leg = 0, Motor block l leg = 0
 
-The interval between assessment 4 and 5 should not factor into the average time between measurements calculation because assessement four showed zero motor block. 
+
+The interval between assessment 4 and 5 should not factor into the average time between measurements calculation because assessement four showed zero motor block. However on the front tile, this patient would still be considered 'on epidural' for the entire 12 hours and on the floorplan, the green score should be displayed on the bed space for the duration of the 12 hours, but not shown as missing. 
 
 This calculation on the front tile looks back from the current time to 24 hours in the past
 
