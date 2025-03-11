@@ -49,7 +49,7 @@ All patients who have received local anaesthesia via an epidural catheter in the
 
 A patient is classified as 'on an epidural' for 12 hours following data entry in the flowsheet 7001026. 
 
-If a patient is 'on epidural' they are required to have a motor block assessment documented for at least 18 hours following any data entered into flowsheet 7001026 or until both the right and left motor block assessment scores are '0'. The required frequency of documentation is 2 hourly during the day shift (08:00-19:59), and 4 hourly during the night shift (20:00-07:59). 
+If a patient is 'on epidural' (i.e. any data entered into flowsheet 7001026 in the last 12 hours) they are required to have a motor block assessment documented for at least 12 hours following any data entered into flowsheet or until both the right and left motor block assessment scores are '0'. The required frequency of documentation is 2 hourly during the day shift (08:00-19:59), and 4 hourly during the night shift (20:00-07:59). 
 
 30415249 Motor block assessment left leg
 30415250 Motor block assessment right leg
