@@ -162,7 +162,6 @@ MAKE EPOCHS FOR THIS SECTION
 1. A day shift is defined as 08:00-19:59 on one day
 2. A night shift is defined as 20:00-07:59 on one day
 3. Calendar day defined as 00:00 - 23:59
-4. Shift week is defined as Monday 08:00 – Monday 07:59 - *note with SPC data grab on sunday am at 3am, is this a problem? If so we can change to sunday 20:00 to following sunday 19:59.* 
 5. There are fourteen shifts in every week
 6. These charts are weekly percentage (p-charts)
   
@@ -185,6 +184,8 @@ Operational definition = out of all patients what proportion of patients have at
 ## Chart 1b 
 **Weekly percentage of patients with a positive CAM-ICU score during a DAY SHIFT**
 
+ Shift week is defined as Monday 08:00 – Sunday 19:59
+
 1. This looks at data on a day shift basis (08:00-19:59)
 2. Establish each patient present on each of the units for the day shift (including current inpatients and those that have been discharged)
 3. Idenifty for each of these patients whether there was a positive CAM-ICU score documented at any time during the day shift
@@ -195,6 +196,8 @@ Operational definition = out of all patients what proportion of patients have at
 
 ## Chart 1c 
 **Weekly percentage of patients with a positive CAM-ICU score during a NIGHT SHIFT**
+
+ Shift week is defined as Monday 20:00 Monday 07:59
 
 1. This looks at data on a night shift basis (20:00-07:59)
 2. Establish each patient present on each of the units for the night shift (including current inpatients and those that have been discharged)
@@ -212,7 +215,11 @@ Operational definition = out of all patients what proportion of patients have at
 
 Operational definition = For all patients who are eligible for a CAM-ICU score (have documented RASS score of -3 to +4 meaning they are awake enough to be able to complete the assessment), what proportion of CAM-ICU scores have been documented at least once per shift (on a weekly basis)?
 
-This looks at data on a per shift basis, which is then converted into a weekly percentage based on a shift week (defined as Monday 08:00 – Monday 07:59:59). This means the night shift that starts on Sunday at 20:00 and ends Monday 07:59 is included in the data from the previous week (i.e. the week that ends the Sunday the night shift starts).
+Shift week is defined as Monday 08:00 – Monday 07:59. 
+
+*This means the night shift that starts on Sunday at 20:00 and ends Monday 07:59 is included in the data from the previous week (i.e. the week that ends the Sunday the night shift starts).*
+
+This looks at data on a per shift basis, which is then converted into a weekly percentage based on a shift week. 
 
 Calculations should include all patients who were present for any time during each shift, including those who were discharged during that shift. 
 

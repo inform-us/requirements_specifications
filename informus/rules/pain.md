@@ -173,17 +173,17 @@ Operational definition = of the documented pain scores in EPIC, what proportion 
 2. Numerator = count of time intervals that are ≤ 4:00 hours for the GREEN category
 3. SPC denominator adjustment required for excessively long measurement intervals (those that are 2x accepted measurement interval from clinical guidance)
 4. Denominator (adjusted) = count all measurement intervals in the GREEN category in that week that are >8:00 hours and ADD +1 to denominator for each four hour period greater than the permitted 4:00 hours
-5. For example: (i) an 8:01hr measurement interval will count as 2 in the adjusted denominator - once for the measurement and once for being an additional 4:00hr over the permitted four hours for this category; (ii) 12:01hr measurement interval will count as 3 in the adjusted denominator; (iii) 16:01hr measurement interval will count as 4 in the adjusted denominator etc...
+5. For example: (i) an 8:01hr (8:01-12:00) measurement interval will count as 2 in the adjusted denominator - once for the measurement and once for being an additional 4:00hr over the permitted four hours for this category; (ii) 12:01hr (12:01-16:00) measurement interval will count as 3 in the adjusted denominator; (iii) 16:01hr (16:01-20:00) measurement interval will count as 4 in the adjusted denominator etc...
 6. Generate percentage of measurement intervals for that week that are 4:00 hours or less: numerator / denominator (adjusted)
 7. Plot on weekly chart
-8. Denominator (n) used for process limits = the weekly sum of all green intervals. 
+8. Denominator (n) used for process limits = the weekly sum of all green intervals (unadjusted denominator) 
 
 ## Chart 2b AMBER/RED [Measurement Interval chart] - moderate severe pain 
 1. Look at AMBER/RED category measurement intervals in that week
 2. Numerator = count of time intervals that are ≤ 1:00 hour for the AMBER/RED category
 3. SPC denominator adjustment required for excessively long measurement intervals (those that are 2x accepted measurement interval from clinical guideance)
 4. Denominator (adjusted) = count all measurement intervals in the AMBER/RED category in that week that are >1:00 hours and ADD +1 to denominator for each one hour period greater than the permitted 1:00 hours
-5. For example: (i) an 2:01hr measurement interval will count as 2 in the adjusted denominator - once for the measurement and once for being an additional 1:00hr over the permitted four hours for this category; (ii) 3:01hr measurement interval will count as 3 in the adjusted denominator; (iii) 4:01hr measurement interval will count as 4 in the adjusted denominator etc...
+5. For example: (i) an 2:01hr (2:01-3:00) measurement interval will count as 2 in the adjusted denominator - once for the measurement and once for being an additional 1:00hr over the permitted four hours for this category; (ii) 3:01hr (3:01-4:00) measurement interval will count as 3 in the adjusted denominator; (iii) 4:01hr (4:01-5:00) measurement interval will count as 4 in the adjusted denominator etc...
 6. Generate percentage of measurement intervals for that week that are 1:00 hour or less: numerator / denominator (adjusted)
 7. Plot on weekly chart
-8. Denominator (n) used for process limits = the weekly sum of all amber/red intervals. 
+8. Denominator (n) used for process limits = the weekly sum of all amber/red intervals (unadjusted denominator)
