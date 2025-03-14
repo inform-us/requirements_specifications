@@ -61,11 +61,12 @@
 - Patients in range:
 - Eligible patients:
 
-## CAM-ICU Scores SPC Tool Tip (Hover Over Box) Content
+## CAM-ICU Scores SPC Tool Tip (Hover Over Box) Content (charts 1a, 1b, 1c)
 
 - Date:
 - Percentage:
 - Mean:
+- Eligible patients:
 
 ## CAM-ICU Scores Measurement Interval SPC Tool Tip (Hover Over Box) Content
 
