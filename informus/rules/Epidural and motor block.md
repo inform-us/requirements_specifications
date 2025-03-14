@@ -171,3 +171,16 @@ Week defined as Monday 00:00 – Sunday 23:59
 
 These are weekly percentage (p-charts) SPC
 Week defined a Monday 00:00 – Sunday 23:59
+
+XXX
+SPC measurement interval
+one SPC p-chart with three tabs on it - Overall / Day / Night (default to overall)
+to calcaulate a measurement interval we need two _dt stamps, the more recent _dt stamp determines the label (day or night) and whether it falls into the week in consideration
+
+Use standard week Monday 00:00 to Sunday 23:59:59
+- collect all measurement intervals
+- groups by day or night (more recent _dt)
+- Day_numerator - number of all DAY measurment intervals that are < or = to 2:00 hours
+- Day_denominator - number of DAY measurment intervals
+- Day_percentage - numerator / denominator
+- 
