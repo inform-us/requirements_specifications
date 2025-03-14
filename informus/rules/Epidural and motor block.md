@@ -82,11 +82,21 @@ Worked example:
 
 A patient's epidural has been stopped at 9:00am (there is no more data in the volume infused flowsheet) and the following assessments are documented:
 
+If the motor block assessments are:
 1) 09:00 Motor block r leg = 2, Motor block l leg = 1
-2) 11:00 Motor block r leg =1, Motor block l leg = 1
+2) 11:00 Motor block r leg = 1, Motor block l leg = 1
 3) 13:00 Motor block r leg = 1, Motor block l leg = 0
 4) 15:00 Motor block r leg = 0, Motor block l leg = 0
 5) 19:00 Motor block r leg = 0, Motor block l leg = 0
+6) 21:00 Motor block r leg = 1, Motor block l leg = 1
+
+Then the time interval are:
+1) 09:00 will be linked to the earlier time, and would be classified as day (the interval label will depend on the later time)
+2) 11:00 will be linked to the earlier time, and would be classified as day and the time interval is 02:00 hours
+3) 13:00 will be linked to the earlier time, and would be classified as day and the time interval is 02:00 hours
+4) 15:00 will be linked to the earlier time but will not be included into the measurement calculations 
+5) 19:00 will be linked to the earlier time but will not be included into the measurement calculations
+5) 21:00 will be linked to the earlier time and would be classified as night and the time interval is 02:00 hours
 
 
 The interval between assessment 4 and 5 should not factor into the average time between measurements calculation because assessement four showed zero motor block. However on the front tile, this patient would still be considered 'on epidural' for the entire 12 hours and on the floorplan, the green score should be displayed on the bed space for the duration of the 12 hours, but not shown as missing. 
