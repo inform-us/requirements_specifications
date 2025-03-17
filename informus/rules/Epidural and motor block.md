@@ -223,11 +223,18 @@ Day start time is 08:15 and end time is 20:14 to allow for 15 minutes documentat
 1.  Look at motor block assessment measurement intervals (for which the first of the pair in the measurement interval is between the hours of 08:15 and 20:14) each day. Reference measurement interval rules for tile calculation above making sure to not include any intervals after both scores have resumed to zero. 
 2.   Numerator = count of time intervals that are ≤ 2:00 hours for the DAY category
 - *note SPC denominator adjustment required for excessively long measurement intervals (those that are 2x accepted measurement interval from clinical guideline)*
-  3. Denominator (adjusted) = count all motor block assessment measurement intervals in that week that are > 4:00 hours and ADD +1 to denominator for each measurement interval missed.
+  3. Denominator (unadjusted) = count of all motor block assessment measurement intervals during the day shift
+  4. Denominator (adjusted) = count all motor block assessment measurement intervals in that week that are > 4:00 hours and ADD +1 to denominator for each measurement interval missed.
 
 For example: (i) an 4.01hr measurement interval will count as 2 in the adjusted denominator - once for the measurement and once for being an additional having missed the next expected measurement; (ii) 6.01 hr measurement interval will count as 3 in the adjusted denominator: (iii) 8.01hr measurement interval will count as 4 in the adjusted denominator etc.....
-4. Generate percentage of DAY SHIFT measurement intervals for that week that are 2 hour or less: numerator / denominator (adjusted)
-5. Plot on weekly chart
+5. Generate percentage of DAY SHIFT measurement intervals for that week that are 2 hour or less: numerator / denominator (adjusted)
+6. Plot on weekly chart
+
+### n number for process limit
+
+Point 3 above -  Aggregate sum of enominator (unadjusted) = count of all motor block assessment measurement intervals during the day shift
+
+Tool tip d
 
 ## Chart 1b- NIGHT Motor Block Assessment Interval Chart
 
