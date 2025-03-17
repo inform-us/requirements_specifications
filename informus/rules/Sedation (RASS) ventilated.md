@@ -204,10 +204,10 @@ Day start time is therefore 06:15 and end time is 22:14 to allow for 15 minutes 
 
 Modified shift week is therefore Monday 06:15 to Sunday 22:14. 
 
-1.  Look at RASS assessment measurement intervals between the hours of 06:15 and 22:14 each day. Reference measurement interval section above from line 110-126. 
+1.  Look at RASS assessment measurement intervals (for which the first of the pair of measurements in an interval is between the hours of 06:15 and 22:14) each day. Reference measurement interval section above.
 2.   Numerator = count of time intervals that are ≤ 1:00 hours for the DAY category
 - *note SPC denominator adjustment required for excessively long measurement intervals (those that are 2x accepted measurement interval from clinical guideline)*
-  3. Denominator (adjusted) = count all assessment measurement intervals between the hours of 06:15 and 22:14 in that week that are > 2:00 hours and ADD +1 to denominator for each one hour period greater than the permitted 1:00 hour.
+  3. Denominator (adjusted) = count all assessment measurement intervals  between the hours of 06:15 and 22:14 in that week that are > 2:00 hours and ADD +1 to denominator for each one hour period greater than the permitted 1:00 hour.
 
 For example: (i) an 2.01hr measurement interval will count as 2 in the adjusted denominator - once for the measurement and once for being an additional 1:00hr over the permitted one hour for this category; (ii) 3.01 hr measurement interval will count as 3 in the adjusted denominator: (iii) 4.01hr measurement interval will count as 4 in the adjusted denominator etc.....
 4. Generate percentage of measurement intervals for that week that are 1 hour or less: numerator / denominator (adjusted)
@@ -219,10 +219,10 @@ For example: (i) an 2.01hr measurement interval will count as 2 in the adjusted 
 Night start time is therefore 22:15 and end time is 06:14 to allow for 15 minutes documentation window. 
 
 
-1. Look at RASS assessment measurement intervals between the hours of 22:15 and 06:14 each day
-2. Numerator = count of time intervals that are ≤ 4:00 hours for the NIGHT category
+1. Look at RASS assessment measurement intervals (for which the first of the pair of measurements in an interval is between the hours of 22:15 and 06:14) each day
+2. Numerator = count of time intervals (that are ≤ 4:00 hours for the NIGHT category
 - *SPC denominator adjustment required for excessively long measurement intervals (those that are 2x accepted measurement interval from clinical guidance)*
-3. Denominator (adjusted) = count all assessment measurement intervals between the hours of 22:00 and 05.59 in that week that are >8:00 hours and ADD +1 to denominator for each four hour period greater than the permitted 4:00 hours
+3. Denominator (adjusted) = count all NIGHT assessment measurement intervals in that week that are >8:00 hours and ADD +1 to denominator for each four hour period greater than the permitted 4:00 hours
 
 For example: (i) an 8:01hr measurement interval will count as 2 in the adjusted denominator - once for the measurement and once for being an additional 4:00hr over the permitted four hours for this category; (ii) 12:01hr measurement interval will count as 3 in the adjusted denominator; (iii) 16:01hr measurement interval will count as 4 in the adjusted denominator etc...
 4. Generate percentage of measurement intervals for that week that are 4:00 hours or less: numerator / denominator (adjusted)
