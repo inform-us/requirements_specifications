@@ -1,5 +1,4 @@
-# Code Review status 
-
+# Code Review status
 
 ✅ = done
 
@@ -9,36 +8,37 @@
 
 # Real-time metrics
 
-Metric | Clinical rules signed off status | Team Code Review Status | Still to be done |
-|---|---|---|---|
-Targets|✅ - 09/05/24| ⚠️ done with Harry/Sarah|Redo with current team||
-Delirium CAM-ICU |✅|✅| |
-MAP (Mean Arterial Blood Pressure)|❌|✅|Update rules based on the code review|
-Pain (including epidural)|✅|✅| |
-Sedation RASS|✅|✅| |
-SpO2|❌|✅|update rules based on the code review|
-Tidal Volume|❌|✅|update rules based on the code review|
-POM DReaMing|✅|✅||
-Patients rules| ✅| ✅ ||
-Airway|✅|❌|update to include double classification?|
-Epidural motor block| ⚠️ |❌| code still being written, motor block assessment needed until score is 1 or zero|
+| Metric                             | Clinical rules signed off status | Team Code Review Status  | Still to be done                                                                 |
+| ---------------------------------- | -------------------------------- | ------------------------ | -------------------------------------------------------------------------------- |
+| Targets                            | ✅ - 09/05/24                    | ⚠️ done with Harry/Sarah | Redo with current team                                                           |
+| Delirium CAM-ICU                   | ✅                               | ✅                       |                                                                                  |
+| MAP (Mean Arterial Blood Pressure) | ❌                               | ✅                       | Update rules based on the code review                                            |
+| Pain (including epidural)          | ✅                               | ✅                       |                                                                                  |
+| Sedation RASS                      | ✅                               | ✅                       |                                                                                  |
+| SpO2                               | ❌                               | ✅                       | update rules based on the code review                                            |
+| Tidal Volume                       | ❌                               | ✅                       | update rules based on the code review                                            |
+| POM DReaMing                       | ✅                               | ✅                       |                                                                                  |
+| Patients rules                     | ✅                               | ✅                       |                                                                                  |
+| Airway                             | ✅                               | ❌                       | update to include double classification?                                         |
+| Epidural motor block               | ⚠️                               | ❌                       | code still being written, motor block assessment needed until score is 1 or zero |
 
 # SPC metrics
+
 For code review here, start with build code sign off, then move onto new SPC chart measurement interval charts, then binary e.g. targets and airway, then older metrics.
 
-Metric | Clincial rules signed off status | Team Code Review Status | Still to be done |
-|---|---|---|---|
-SPC Chart Build|✅||to discuss process limits denominator|
-Targets|✅ - 09/05/24|⚠️ done with Harry/Sarah|Redo with current team||
-Delirium CAM-ICU scores | ✅| |❌ | James has started coding|
-Delirium CAM-ICU documentation| ✅| |❌ |  James has started coding |
-MAP (Mean Arterial Blood Pressure)|❌|❌||
-Pain scores|✅|✅||
-Pain interval|✅|✅||
-Sedation RASS scores|✅|✅||
-Sedation RASS interval|❌|✅||
-SpO2|❌|❌||
-Tidal Volume|❌|❌||
-POM DReaMing interval|✅|❌|coding has not started|
-Airway interval|✅|❌||coding started|
-Epidural motor block score interval|❌|❌|coding has not started|
+| Metric                              | Clincial rules signed off status | Team Code Review Status  | Still to be done                      | process limit sign off | process limit changes implemented in code |
+| ----------------------------------- | -------------------------------- | ------------------------ | ------------------------------------- | ---------------------- | ----------------------------------------- |
+| SPC Chart Build                     | ✅                               |                          | to discuss process limits denominator |                        |                                           |
+| Targets                             | ✅ - 09/05/24                    | ⚠️ done with Harry/Sarah | Redo with current team                | ✅                     | ✅                                        |
+| Delirium CAM-ICU scores             | ✅                               | ❌                       | James has started coding              | ✅                     | ✅                                        |
+| Delirium CAM-ICU documentation      | ✅                               | ❌                       | James has started coding              | ✅                     | ✅                                        |
+| MAP (Mean Arterial Blood Pressure)  | ❌                               | ❌                       |                                       | ❌                     | ❌                                        |
+| Pain scores                         | ✅                               | ✅                       |                                       | ❌                     | ✅                                        |
+| Pain interval                       | ✅                               | ✅                       |                                       | ❌                     | ❌                                        |
+| Sedation RASS scores                | ✅                               | ✅                       |                                       | ❌                     | ❌                                        |
+| Sedation RASS interval              | ❌                               | ✅                       |                                       | ❌                     | ❌                                        |
+| SpO2                                | ❌                               | ❌                       |                                       | ❌                     | ❌                                        |
+| Tidal Volume                        | ❌                               | ❌                       |                                       | ❌                     | ❌                                        |
+| POM DReaMing interval               | ✅                               | ❌                       | coding has not started                | ❌                     | ❌                                        |
+| Airway interval                     | ✅                               | ❌                       | coding started                        | ❌                     | ❌                                        |
+| Epidural motor block score interval | ❌                               | ❌                       | coding has not started                | ❌                     | ❌                                        |
