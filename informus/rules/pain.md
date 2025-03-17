@@ -150,7 +150,7 @@ Feeds into (i) floor plan, (ii) individual patinet chart and (iii) SPC pain scor
 2. Week defined as Monday 00:00 – Sunday 23:59
 
 
-   ## Chart 1 [Patient chart] 
+## Chart 1 [Patient chart] 
 **Proportion of moderate or severe pain scores – weekly chart**
 
 Operational definition = of the documented pain scores in EPIC, what proportion are moderate or severe on a weekly basis? 
