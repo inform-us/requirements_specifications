@@ -164,7 +164,7 @@ c) a patient can be labelled as Doctor Led Turn or Nurse Led Turn= NO, DARRT =YE
 ____
 ## SPC CHART
 
-TBC weekly percentage of patients who have an airway plan. 
+Operational definition- weekly percentage of patients who have an airway plan documented
 
 
 
@@ -175,10 +175,14 @@ TBC weekly percentage of patients who have an airway plan.
 5.  Numerator = patients present in the current week who have had at least one airway plan during ICU admission
 6.  Denominator = Patients present in the current week
 7. Patients who have admissions > 7 days only require one airway plan documented to be 'airway plan compliant'. A patient admitted during a particular week who has an ICU stay that spans over more than that week may have had an airway plan documented on any previous week during their ICU admission and this should satisfy the numerator. This requires the code to go back retrospectively to the point of admission to see if option A or B have ever been documented.
-8. TBC- Example patients- If a patient is admitted on sunday the week and the airway plan is not completed until Tuesday, this airway plan compliant would not factor into the numerator of the week of admission, but would in the following week in which the airway plan was completed. Is the patient double counted as not compliant first week, and compliant hte second week. Or do we take any patients admitted e.g. on sunday (or other arbitraty cut off) and count them as the following week to ensure better compliance?
 
+*note. If patients are present across multiple weeks, but do not have an airway plan in the first week and do from any subsequent weeks,  they do not factor into numerator for the first week (they are non-compliant), but will factor in from the week that they have an airway plan documented forward for the rest of their stay*
 
-*note. We acknowelddge that patients will be double, triple, quadruple.... counted in the denominator for as many weeks as they are present but only require an airway plan once to be considered airway plan compliant as described above.* 
+### n number for process limit
+
+Point 6 above, inpatients in the calendar week
+
+Tool tip = n number for process limit labeled as 'eligible patients'. 
 
 ---
 ## APPENDIX - unused flow sheets, discard after code review
