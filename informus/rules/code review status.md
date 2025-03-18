@@ -20,7 +20,7 @@
 | POM DReaMing                       | ✅                               | ✅                       |                                                                                  |
 | Patients rules                     | ✅                               | ✅                       |                                                                                  |
 | Airway                             | ✅                               | ❌                       | update to include double classification?                                         |
-| Epidural motor block               | ⚠️                               | ❌                       | code still being written, motor block assessment needed until score is 1 or zero |
+| Epidural motor block               | ⚠️                               | ❌                       |
 
 # SPC metrics
 
