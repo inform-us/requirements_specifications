@@ -177,11 +177,11 @@ Tooltip display = process limit n-number with the label "eligible patients".
 
   
    
-**INTERVAL SPC CHARTS (refer to derived data from 'Pain Score Measurement Interval [A])**
+**INTERVAL SPC CHARTS (refer to derived data from 'Pain Score Assessment Measurement Interval [A])**
 1. These are weekly percentage (p-charts) SPC
 2. Week defined a Monday 00:00 – Sunday 23:59
 
-## Chart 2a GREEN [Measurement Interval Chart] - none to mild pain 
+## Chart 2a GREEN [Assessment Measurement Interval Chart] - none to mild pain 
 1. Look at GREEN category measurement intervals in that week
 2. Numerator = count of time intervals that are ≤ 4:00 hours for the GREEN category
 3. Denominator = count of all GREEN category time intervals (unadjusted)
@@ -197,7 +197,7 @@ Point 3 above- count of all GREEN category time intervals (unadjusted)
 
 Tooltip display = process limit n-number with the label "number of measurements".
 
-## Chart 2b AMBER/RED [Measurement Interval chart] - moderate severe pain 
+## Chart 2b AMBER/RED [Assessment Measurement chart] - moderate severe pain 
 1. Look at AMBER/RED category measurement intervals in that week
 2. Numerator = count of time intervals that are ≤ 1:00 hour for the AMBER/RED category
 3. Denominator = count of all AMBER/RED category time intervals (unadjusted)
