@@ -102,16 +102,16 @@ Feeds into (i) front tile (current time snapshot), (ii) floorplan and (iii) 'all
 
 Proportion of 'all targets set' in ICU navigators
 
-Operational definition = of documented physiological targets set in ICU Navigators in EPIC, what proportion of all patients have all their targets set by 13:00 each day on a weekly basis?  
+Operational definition = The percentage of all patients that have all their targets set in ICU navigators by 13:00 each day (on a weekly basis)  
 
 1. Metric compliance is measured at 13:00 on each day, for the purposes of this SPC calculation, the code is set to run at 13:30 to give small amount of leeway for a clinically busy day
 2. For each patient ALL of the 8 physiological targets need to have been completed in the ICU Targets section of the ICU Navigators (i.e. a valid _dt stamp for an entry for each individual metric) in order to achieve (1) SET; if any of the 8 physiological metrics is missing an entry (a valid _dt stamp) then return (2) NOT SET
-3. Numerator = sum of patients achieving (1) SET response
-4. Denominator = total number of current patients (occupied beds) at 13:30 hours
+3. **Numerator** = sum of patients achieving (1) SET response
+4. **Denominator** = total number of current patients (occupied beds) at 13:30 hours
 5. Calculate daily percentage for each unit, (exceptionally) treating T03 as Northside & Southside (e.g. T03N, T03S, T06, GWB & WMS units)
 6. Aggregate the daily percentages into a **-weekly mean percentage_** for each of these respective units (T06, GWB & WMS)
 7. Aggregate the daily percentages into a **_weekly mean percentage_** for T03 Northside & T03 Southside producing one value for the unit T03
-8. Plot an SPC chart for each respective unit: y-axis = weekly percentage; x-axis = time
+9. Plot an SPC chart for each respective unit: y-axis = weekly percentage; x-axis = time
 
 **NOTE**
 - this SPC chart has an alternative design for the purposes of adding a competitive edge (gamify) to the daily clinical working pattern
