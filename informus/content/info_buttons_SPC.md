@@ -434,7 +434,7 @@ Classification
 
 During the day, motor block should be assessed every 2 hours in epic. Once the epidural infusion has been stopped, assessment should continue for 12 hours or until there is no block, whichever comes first. 
 
-During the night, motor block should be assessed every 2 hours in epic. Once the epidural infusion has been stopped, assessment should continue  for 12 hours or until there is no block, whichever comes first. 
+During the night, motor block should be assessed every 4 hours in epic. Once the epidural infusion has been stopped, assessment should continue  for 12 hours or until there is no block, whichever comes first. 
 
 To account for excessively long periods where motor block has not been assessed and documented, the denominator has been adjusted.  
 
