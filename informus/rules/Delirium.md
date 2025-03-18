@@ -168,7 +168,7 @@ MAKE EPOCHS FOR THIS SECTION
 ## Chart 1a, 1b and  1c [Patient chart] - one SPC chart with three tabs (cf MAP, SpO2)
 **Percentage of patients with positive CAM-ICU scores (1a total combined shifts, 1b day shifts and 1c night shifts) – weekly chart**
 
-Operational definition = out of all patients what proportion of patients have at least one positive CAM-ICU score during a calendar day OR per day / night shifts on a weekly basis? 
+Operational definition = The percentage of patients that have had at least one positive CAM-ICU score (therefore a delirium diagnosis) during a calendar day OR per day / night shifts (on a weekly basis)
 
 ## Chart 1a 
 **Weekly percentage of patients with a positive CAM-ICU score per CALENDAR DAY**
@@ -178,16 +178,17 @@ Calendar week is defined as Monday 00:00hrs to Sunday 23:59hrs.
 1. This looks at data on a calendar day basis (00:00 - 23:59)
 3. Establish each patient present on each of the units for that calendar day (including current inpatients and those that have been discharged)
 4. Identify for each of these patients whether there was a positive CAM-ICU score documented at any time during the calendar day
-5. Numerator = number of patients that have had one (or more) positive CAM-ICU score(s) documented on each calendar day
-6. Denominator = number of patients present on each calendar day (including current inpatients and those that have been discharged)
+5. **Numerator** = number of patients that have had one (or more) positive CAM-ICU score(s) documented on each calendar day
+6. **Denominator** = number of patients present on each calendar day (including current inpatients and those that have been discharged)
 7. Calculate a daily percentage of positive CAM-ICU scores (delirium) = numerator / denominator 
 8. Calculate aggregated weekly mean of the 7 calendar days (sum of percentage of each of the seven days / seven). Denote as percentage.
+9.  SPC data point = weekly calendar day shift aggregated mean of numerator/denominator as percentage
 
 ### n-number for process limit calculation
 
 The n-number for chart 1a is the weekly aggregated denominator from point 6 above.
 
-Tooltip should display n-number with the label "eligible patients".
+**Tooltip display** = process limit n-number with the label "eligible patients".
 
 > [!NOTE]
 > This is correct in the code as of 2025-03-14 (though tooltip is hidden on prod)
@@ -200,16 +201,17 @@ Tooltip should display n-number with the label "eligible patients".
 1. This looks at data on a day shift basis (08:00-19:59)
 2. Establish each patient present on each of the units for the day shift (including current inpatients and those that have been discharged)
 3. Idenifty for each of these patients whether there was a positive CAM-ICU score documented at any time during the day shift
-4. Numerator = number of patients that have had one (or more) positive CAM-ICU score(s) documented on each day shift
-5. Denominator = number of patients present on each day shift (including current inpatients and those that have been discharged)
+4. **Numerator** = number of patients that have had one (or more) positive CAM-ICU score(s) documented on each day shift
+5. **Denominator** = number of patients present on each day shift (including current inpatients and those that have been discharged)
 6. Calculate a daily day shift percentage of positive CAM-ICU scores (delirium) = numerator / denominator 
-7. Calculate the aggregated weekly mean of the 7 day shifts (sum of percentage of each of the seven day shifts / seven). Denote as percentage. 
+7. Calculate the aggregated weekly mean of the 7 day shifts (sum of percentage of each of the seven day shifts / seven). Denote as percentage.
+8.  SPC data point = weekly day shift aggregated mean of numerator/denominator as percentage
 
 ### n-number for process limit calculation
 
 The n-number for chart 1b is the weekly aggregated denominator from point 5 above.
 
-Tooltip should display n-number with the label "eligible patients".
+**Tooltip display** = process limit n-number with the label "eligible patients".
 
 > [!NOTE]
 > This is correct in the code as of 2025-03-14 (though tooltip is hidden on prod)
@@ -227,14 +229,15 @@ Tooltip should display n-number with the label "eligible patients".
 5. Denominator = number of patients present on each night shift (including current inpatients and those that have been discharged)
 6. Calculate a daily night shift percentage of positive CAM-ICU scores (delirium) = numerator / denominator 
 7. Calculate the aggregated weekly mean of the 7 night shifts (sum of percentage of each of the seven night shifts / seven). Denote as percentage.
-8. NOTE - the night shift that starts on Sunday at 20:00 and ends Monday 07:59 is included in the data from the previous week (i.e. the week that ends the Sunday the night shift starts)
+8.  SPC data point = weekly night shift aggregated mean of numerator/denominator as percentage
+9. NOTE - the night shift that starts on Sunday at 20:00 and ends Monday 07:59 is included in the data from the previous week (i.e. the week that ends the Sunday the night shift starts)
 
 
 ### n-number for process limit calculation
 
 The n-number for chart 1c is the weekly aggregated denominator from point 5 above.
 
-Tooltip should display n-number with the label "eligible patients".
+**Tooltip display** = process limit n-number with the label "eligible patients".
 
 > [!NOTE]
 > This is correct in the code as of 2025-03-14 (though tooltip is hidden on prod)
@@ -258,17 +261,17 @@ Calculations should include all patients who were present for any time during ea
 
 1. Break the week down into fourteen 12-hour shifts, seven 08:00-19:59 and seven 20:00-07:59.
 2. For each 12-hour shift, calculate the number of patients with a RASS score of -3 to +4 documented at least once at any point during the shift.
-3. Numerator - patients present on each shift with at least one documented RASS score of -3 to +4 at any time during that shift AND at least one CAM-ICU score documented at any time during that shift (RASS and CAM-ICU do not have to be concurrent).
-4. Denominator - all patients present each shift with at least one a RASS score of -3 to +4 documented during that shift.
+3. **Numerator** - patients present on each shift with at least one documented RASS score of -3 to +4 at any time during that shift AND at least one CAM-ICU score documented at any time during that shift (RASS and CAM-ICU do not have to be concurrent).
+4. **Denominator** - all patients present each shift with at least one a RASS score of -3 to +4 documented during that shift.
 5. Combine numerators from all of the shifts where there were patients present.
 6. Combine denominators from all of the shifts where there were patients present.
-7. Denote as percentage.
+7. SPC data point = weekly aggregated mean of numerator/denominator as percentage
 
 ### n-number for process limit calculation
 
 The n-number for chart 2 is the combined denominator from point 6 above.
 
-Tooltip should display n-number with the label "denominator".
+**Tooltip display** n-number with the label "denominator".
 
 > [!NOTE]
 > This is correct in the code as of 2025-03-14 (though tooltip is hidden and called "eigible patients")
