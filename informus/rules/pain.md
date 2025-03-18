@@ -61,7 +61,7 @@ Rules for pain metric
   
 Feeds into (i) front tile - 24 hour rolling window and (ii) SPC interval charts.
   
-**Front tile AVERAGE PAIN MEASUREMENT INTERVAL**
+**Front tile AVERAGE PAIN ASSESSMENT MEASUREMENT INTERVAL**
 1. Measurement interval should be calculated from ACTUAL documented scores in EPIC and not any forward filled scores - these data have precise _dt stamps
 2. There needs to be a minimum of two scores to calculate a measurement interval (if a patient only has one pain score during their ICU admission, this will not be included in the ‘average measurement interval’ data)
 3. Any period of time where a patient is documented as off unit, e.g. for a scan or procedure, should not factor into the calculation. i.e. if pain assessment 1 of 2 in an interval has a dt_stamp directly before a time period when the patient is off the unit, this measurement and the interval between dt_stamp 1 and 2, which will occur after the patient has returned back to the unit should be excluded from the average. Time 2 of the interval when the patient returns should therefore become time 1 of the subsequent time interval. This is to avoid excessively long time intervals factoring into the average when there would not have been possible to document a pain score in the ICU notes. 
@@ -74,7 +74,7 @@ Feeds into (i) front tile - 24 hour rolling window and (ii) SPC interval charts.
 8. Denominator (unadjusted) = number of time interval measurements
 9. FRONT TILE AVERGAE MEASUREMENT INTERVAL (24 hour rolling window) - CALCLULATE MEAN using above numerator / denominator (unadjusted)
   
-** SPC MEASUREMENT INTERVAL CHART (p-chart (%))**
+** SPC ASSESSMENT MEASUREMENT INTERVAL CHART (p-chart (%))**
   
 9. Please see SPC pain score chart for denominator adjustment and calculation
 
@@ -201,7 +201,7 @@ Tooltip display = process limit n-number with the label "number of measurements"
 1. Look at AMBER/RED category measurement intervals in that week
 2. Numerator = count of time intervals that are ≤ 1:00 hour for the AMBER/RED category
 3. Denominator = count of all AMBER/RED category time intervals (unadjusted)
-4. SPC denominator adjustment required for excessively long measurement intervals (those that are 2x accepted measurement interval from clinical guideance)
+4. SPC denominator adjustment required for excessively long measurement intervals (those that are 2x accepted measurement interval from clinical guidance)
 5. Denominator (adjusted) = count all measurement intervals in the AMBER/RED category in that week that are >1:00 hours and ADD +1 to denominator for each one hour period greater than the permitted 1:00 hours
 6. For example: (i) an 2:01hr (2:01-3:00) measurement interval will count as 2 in the adjusted denominator - once for the measurement and once for being an additional 1:00hr over the permitted four hours for this category; (ii) 3:01hr (3:01-4:00) measurement interval will count as 3 in the adjusted denominator; (iii) 4:01hr (4:01-5:00) measurement interval will count as 4 in the adjusted denominator etc...
 7. Generate percentage of measurement intervals for that week that are 1:00 hour or less: numerator / denominator (adjusted)
