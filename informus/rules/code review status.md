@@ -40,5 +40,5 @@ For code review here, start with build code sign off, then move onto new SPC cha
 | SpO2                                | ❌                               | ❌                       |                                       | ❌                     | ❌                                        |
 | Tidal Volume                        | ❌                               | ❌                       |                                       | ❌                     | ❌                                        |
 | POM DReaMing interval               | ✅                               | ❌                       | coding has not started                | ❌                     | ❌                                        |
-| Airway interval                     | ✅                               | ❌                       | coding started                        | ✅                     |    ❌                                   |
-| Epidural motor block score interval | ❌                               | ❌                       | coding has not started                | ❌                     | ❌                                        |
+| Airway interval                     | ✅                               | ❌                       | coding started                        | ✅                     | ❌                                        |
+| Epidural motor block score interval | ❌                               | ❌                       | coding started                        | ❌                     | ❌                                        |
