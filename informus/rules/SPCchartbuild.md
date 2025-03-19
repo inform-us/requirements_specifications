@@ -65,6 +65,7 @@ If 11 + 1 consecutive data points above or below the mean including outliers (=s
 
 *Note that outliers that are above or below the mean should be included in this calculation even if they aren't depicted as part of a shift as they are outliers as they lie above or below the process limit.* 
 
+
 If there has been no data-driven mean and process limit recalculation at the end of 26-week (6 month) period: then automatically recalculate the mean and process limits from the 26th data point and the preceding 23 data points. Visually depict the recalculated mean and process limits going forward from the 26th data point. 
 
 ## Establishing a baseline mean for new SPC charts
@@ -79,3 +80,17 @@ Calculate a baseline mean and process limits using the following:
 4. In week four- the mean of data point one, two, three and four
 
 The week four mean and process limits become our baseline mean and limits. After week four the mean and process limits should be held as constant until one of the mean recalculation rules is triggered, e.g. it has been 26 weeks or there have been 12 points above or below the mean from week four (our baseline mean).
+
+
+SPC - denominator for process limits
+
+TARGETS
+snapshot at 13:00 
+standard calendar week
+each respective unit
+denoninator = total number of current inpatinets (in occupied beds) at time of snapshoot
+numerator = number of patinets cahieivng all 8 targets set (completed) 
+daily percentage
+calaculet daily percentage N/D
+aggregated mean for the week = mean of each daily percenatge
+SPC data point is the agrregated mean of the week. 
