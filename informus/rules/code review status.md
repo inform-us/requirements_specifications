@@ -32,7 +32,7 @@ For code review here, start with build code sign off, then move onto new SPC cha
 | Targets                             | ✅ - 09/05/24                    | ⚠️ done with Harry/Sarah | Redo with current team                | ✅                     | ✅                                        |
 | Delirium CAM-ICU scores             | ✅                               | ❌                       | James has started coding              | ✅                     | ✅                                        |
 | Delirium CAM-ICU documentation      | ✅                               | ❌                       | James has started coding              | ✅                     | ✅                                        |
-| MAP (Mean Arterial Blood Pressure)  | ❌                               | ❌                       |                                       | ✅                     | ❌                                      |
+| MAP (Mean Arterial Blood Pressure)  | ❌                               | ❌                       |                                       | ❌                    | ❌                                      |
 | Pain scores                         | ✅                               | ✅                       |                                       | ✅                     | ✅                                        |
 | Pain interval                       | ✅                               | ✅                       |                                       | ✅                     | ❌                                        |
 | Sedation RASS scores                | ✅                               | ✅                       |                                       | ❌                     | ❌                                        |
