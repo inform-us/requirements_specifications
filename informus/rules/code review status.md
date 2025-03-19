@@ -29,16 +29,16 @@ For code review here, start with build code sign off, then move onto new SPC cha
 | Metric                              | Clincial rules signed off status | Team Code Review Status  | Still to be done                      | process limit sign off | process limit changes implemented in code |
 | ----------------------------------- | -------------------------------- | ------------------------ | ------------------------------------- | ---------------------- | ----------------------------------------- |
 | SPC Chart Build                     | ✅                               |                          |                         |                                           |
-| Targets                             | ✅ - 09/05/24                    | ⚠️ done with Harry/Sarah | Redo with current team                | ✅                     | ✅                                        |
-| Delirium CAM-ICU scores             | ✅                               | ❌                       | James has started coding              | ✅                     | ✅                                        |
-| Delirium CAM-ICU documentation      | ✅                               | ❌                       | James has started coding              | ✅                     | ✅                                        |
+| Targets                             | ✅ - 09/05/24                    |                          |               | ✅                     | ✅                                        |
+| Delirium CAM-ICU scores             | ✅                               | ✅                       |                                       | ✅                     | ✅                                        |
+| Delirium CAM-ICU documentation      | ✅                               | ✅                       |              | ✅                     | ✅                                        |
 | MAP (Mean Arterial Blood Pressure)  | ❌                               | ❌                       |                                       | ❌                    | ❌                                      |
 | Pain scores                         | ✅                               | ✅                       |                                       | ✅                     | ✅                                        |
 | Pain interval                       | ✅                               | ✅                       |                                       | ✅                     | ❌                                        |
 | Sedation RASS scores                | ✅                               | ✅                       |                                       | ❌                     | ❌                                        |
-| Sedation RASS interval              | ❌                               | ✅                       |                                       | ❌                     | ❌                                        |
+| Sedation RASS interval              |  ✅                              | ✅                       |                                       | ❌                     | ❌                                        |
 | SpO2                                | ❌                               | ❌                       |                                       | ❌                     | ❌                                        |
 | Tidal Volume                        | ❌                               | ❌                       |                                       | ❌                     | ❌                                        |
 | POM DReaMing interval               | ✅                               | ❌                       | coding has not started                | ❌                     | ❌                                        |
 | Airway interval                     | ✅                               | ❌                       | coding started                        | ✅                     | ❌                                        |
-| Epidural motor block score interval | ❌                               | ❌                       | coding started                        |✅                      | ❌                                        |
+| Epidural motor block score interval |   ✅                              |  ✅                         | coding started                        |✅                      | ❌                                        |
