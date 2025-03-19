@@ -200,54 +200,61 @@ f. 3 =RED filled
 g. X on x axis to denote patient not on epidural in the last 12 hours. 
 
 
-## DRAFT below- 
-
 ## [D] SPC CHARTS
 
-Operational definition - For patients on epidurals, what percentage of motor block assessments are done on time as per guidelines?
+Operational definition - The percentage of motor block assessments (2 hourly during the day shift and 4 hourly during the night shift) done on time for epidural patients 
 
 There are two SPC charts (A) Day and (B) Night
 
 These are weekly percentage (p-charts) SPC charts
 
-Calendar day defined as 00:00 - 23:59
-
-Week defined a Monday 00:00 – Sunday 23:59
+DAY shift week is Monday 08:15 to Sunday 20:14
+NIGHT shift week is Sunday 20:15 to Monday 08:14
 
 
 ## Chart 1a - DAY Motor Block Assessment Interval Chart
 
 Day start time is 08:15 and end time is 20:14 to allow for 15 minutes documentation leeway. 
 
+Day shift week is therefore Monday 08:15 to Sunday 20:14.
 
-1.  Look at motor block assessment measurement intervals (for which the first of the pair in the measurement interval is between the hours of 08:15 and 20:14) each day. Reference measurement interval rules for tile calculation above making sure to not include any intervals after both scores have resumed to zero. 
-2.   Numerator = count of time intervals that are ≤ 2:00 hours for the DAY category
+1.  Look at day shift motor block assessment measurement intervals (for which the first of the pair in the measurement interval is between the hours of 08:15 and 20:14) each day. Reference measurement interval rules for tile calculation above making sure to not include any intervals after both scores have resumed to zero. 
+2.   **Numerator** =count of time intervals that are ≤ 2:00 hours for the DAY category
 - *note SPC denominator adjustment required for excessively long measurement intervals (those that are 2x accepted measurement interval from clinical guideline)*
-  3. Denominator (unadjusted) = count of all motor block assessment measurement intervals during the day shift
-  4. Denominator (adjusted) = count all motor block assessment measurement intervals in that week that are > 4:00 hours and ADD +1 to denominator for each measurement interval missed.
+  
+  3. **Denominator (unadjusted)** = count of all motor block assessment measurement intervals during the day shift
+  4. **Denominator (adjusted)** = count all day shift motor block assessment measurement intervals in that week that are > 4:00 hours and ADD +1 to denominator for each measurement interval missed.
 
 For example: (i) an 4.01hr measurement interval will count as 2 in the adjusted denominator - once for the measurement and once for being an additional having missed the next expected measurement; (ii) 6.01 hr measurement interval will count as 3 in the adjusted denominator: (iii) 8.01hr measurement interval will count as 4 in the adjusted denominator etc.....
-5. Generate percentage of DAY SHIFT measurement intervals for that week that are 2 hour or less: numerator / denominator (adjusted)
-6. Plot on weekly chart
+5. Generate percentage of DAY SHIFT measurement intervals for that day shift week (line 222) that are 2 hour or less: numerator / denominator (adjusted)
+ 6. SPC data point = weekly aggregated day shift mean of numerator/denominator (adjusted) as percentage
 
 ### n number for process limit
 
-Point 3 above -  Aggregate sum of enominator (unadjusted) = count of all motor block assessment measurement intervals during the day shift
-
-Tool tip d
+ Aggregate day shift weekly sum of point 3 denominator (unadjusted) = count of all motor block assessment measurement intervals during the day shifts in the week 
+ 
+**Tooltip display** = process limit n-number with the label "number of measurements".
 
 ## Chart 1b- NIGHT Motor Block Assessment Interval Chart
 
 Night start time is 20:15 and end time is 08:14 to allow for 15 minutes documentation leeway.  
 
+Modified NIGHT shift week is therefore Sunday 20:15 to Monday 08:14
 
-1. Look at motor block assessment measurement intervals (for which the first of the pair in the measurement interval is between the hours of 20:15 and 08:14 each day). Reference measurement interval rules for tile calculation above making sure to not include any intervals after both scores have resumed to zero. 
-2. Numerator = count of time intervals that are ≤ 4:00 hours for the NIGHT category
+
+1. Look at night shift motor block assessment measurement intervals (for which the first of the pair in the measurement interval is between the hours of 20:15 and 08:14 each day). Reference measurement interval rules for tile calculation above making sure to not include any intervals after both scores have resumed to zero. 
+2. **Numerator** = count of time intervals that are ≤ 4:00 hours for the NIGHT category
 - *SPC denominator adjustment required for excessively long measurement intervals (those that are 2x accepted measurement interval from clinical guidance)*
-3. Denominator (adjusted) = count all assessment measurement intervals  in that week that are >8:00 hours and ADD +1 to denominator for each measurement interval missed.
+   3. **Denominator (unadjusted)** = count of all motor block assessment measurement intervals during the night shift
+4. **Denominator (adjusted)** = count all night shift assessment measurement intervals  in that week that are >8:00 hours and ADD +1 to denominator for each measurement interval missed.
 
 For example: (i) an 8:01hr measurement interval will count as 2 in the adjusted denominator - once for the measurement and once for having missed the next expected measurement; (ii) 12:01hr measurement interval will count as 3 in the adjusted denominator
-4. Generate percentage of measurement intervals for that week that are 4:00 hours or less: numerator / denominator (adjusted)
-5. Plot on weekly chart
+5. Generate percentage of NIGHT shift measurement intervals for that week that are 4:00 hours or less: numerator / denominator (adjusted)
+6.  SPC data point = weekly aggregated night shift mean of numerator/denominator (adjusted) as percentage
 
+### n number for process limit
+
+ Aggregate night shift weekly sum of point 3 denominator (unadjusted) = count of all motor block assessment measurement intervals during the night shifts in the week 
+ 
+**Tooltip display** = process limit n-number with the label "number of measurements".
 
