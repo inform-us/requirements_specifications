@@ -439,7 +439,9 @@ During the night, motor block should be assessed every 4 hours in epic. Once the
 
 To account for excessively long periods where motor block has not been assessed and documented, the denominator has been adjusted.  
 
-A day shift week is defined as Monday 08:15– Sunday 20:14 
+A day shift week is defined as Monday 08:00 – Sunday 19:59 
+
+A day shift week is defined as Sunday 20:00 – Monday 07:59
 
 **Page: SPC chart : Airway Plan)**
 
@@ -476,8 +478,6 @@ All patients across all units
 
 A weekly percentage of all Critical Care inpatients who have had at least one airway plan documented in epic during there stay. Note that patients with admissions longer than one week will be recounted (in the percentage denominator) for each week of their stay, but once an airway plan is documented, it is valid for the rest of the admission. 
 
-
-A night shift week is defined as Sunday 20:15 to Monday 08:14 
 
 **Content for hyperlink ‘More about how to interpret SPC charts’**
 
