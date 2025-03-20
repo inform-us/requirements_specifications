@@ -88,28 +88,28 @@ Operational definition = What proportion of patients receiving oxygen therapy (w
 
 ### Percentage calculation
 1. Fetch data from the previous calendar week
-2. Number of patients: find the individial patient episodes (CSN; ie. the number of individial patients who were on each respective unit during that week)
-3. Find the corresponding 1-hour epch labels for each individial patient (only labels are: above/in range/below) within that calendar week
+2. Number of patients: find the individual patient episodes (CSN; ie. the number of individual patients who were on each respective unit during that week)
+3. Find the corresponding hourly epoch labels for each individual patient (only labels are: above/in range/below) within that calendar week
 
 4. ABOVE
 - **Numerator** = count of the number of 1-hour epochs labelled as 'above' (for each patient - CSN)
 - **Denominator** = count of the number of 1-hour epochs labelled as 'above', ‘in range’ and ‘below’ (for each patient - CSN)
 - Calculate the individual patient (CSN) percentage for the calendar week = numerator / denominator
-- Aggregate all the weekly patient percentages and divide by the number of patients (point 2 above) to generate an **aggregated weekly percentage mean** of 'the proportion of patients receiving oxygen therapy who are 'above' target - **this is the SPC data point**
+- Aggregate all the weekly patient percentages and divide by the number of patients who contributed to above calculation to generate an **aggregated weekly percentage mean** of 'the proportion of patients receiving oxygen therapy who are 'above' target - **this is the SPC data point**
 - Plot an SPC chart for: y-axis = weekly percentage; x-axis = time
 
 5. IN RANGE
 - **Numerator** = count of the number of 1-hour epochs labelled as 'in range' (for each patient - CSN)
 - **Denominator** = count of the number of 1-hour epochs labelled as 'above', ‘in range’ and ‘below’ (for each patient - CSN)
 - Calculate the individual patient (CSN) percentage for the calendar week = numerator / denominator
-- Aggregate all the weekly patient percentages and divide by the number of patients (point 2 above) to generate an **aggregated weekly percentage mean** of 'the proportion of patients receiving oxygen therapy who are 'in range' of target - **this is the SPC data point**
+- Aggregate all the weekly patient percentages and divide by the number of patients who contributed to in range calculation to generate an **aggregated weekly percentage mean** of 'the proportion of patients receiving oxygen therapy who are 'in range' of target - **this is the SPC data point**
 - Plot an SPC chart for: y-axis = weekly percentage; x-axis = time
 
 6. BELOW
 - **Numerator** = count of the number of 1-hour epochs labelled as 'below' (for each patient - CSN)
 - **Denominator** = count of the number of 1-hour epochs labelled as 'above', ‘in range’ and ‘below’ (for each patient - CSN)
 - Calculate the individual patient (CSN) percentage for the calendar week = numerator / denominator
-- Aggregate all the weekly patient percentages and divide by the number of patients (point 2 above) to generate an **aggregated weekly percentage mean** of 'the proportion of patients receiving oxygen therapy who are 'below' target - **this is the SPC data point**
+- Aggregate all the weekly patient percentages and divide by the number of patients who contributed to below calculation to generate an **aggregated weekly percentage mean** of 'the proportion of patients receiving oxygen therapy who are 'below' target - **this is the SPC data point**
 - Plot an SPC chart for: y-axis = weekly percentage; x-axis = time
 
 7. Repeat for each respective unit T03/GWB/T06/WMS
@@ -118,7 +118,11 @@ Operational definition = What proportion of patients receiving oxygen therapy (w
 
 ### n-number for process limits
 
-n-number for process limits = number of individial patients (CSN) who were on each respective unit during that week (point 2 above)
+ABOVE = number of individial patients (CSN) who who contributed to above calculation on each respective unit during that week
+
+IN RANGE = number of individial patients (CSN) who who contributed to in range calculation on each respective unit during that week
+
+BELOW = number of individial patients (CSN) who who contributed to below calculation on each respective unit during that week
 
 **Tooltip display = process limit n-number and labelled as 'eligible patients' 
 
