@@ -49,28 +49,54 @@ Total hours on mandatory ventiliation = eligible hours, exclude missing, off uni
   8.  IF none of the above: 'fallthrough'
 *n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in ? button.*
  ---    
+
 # SPC CHARTS 
 
-##  Tidal Volume- Weekly percentage of patients achieving Tidal Volume target of 6-8ml/kg IBW 
-Operational definition = of the patients who are intubated and on mandatory ventilation (modes), what proportion are achieving their tidal volume target, i.e. < or = 8ml/kg IBW on a weekly basis?
+## NOTE
 
-### GROUP PATIENT HOURLY DATA INTO CALENDAR DAY  
-1. Group patient (MRN/CSN) hourly data into a calendar day
+Calendar week defined as: Monday 00:00 - Sunday 23:59:59
 
-### GENERATE LABEL FOR 1 HOUR EPOCH & DISCARD ‘IN’-ELIGIBLE EPOCHS 
-2. IF more than one tidal volume reading in a one hour epoch, take last reading and discard others 
-3. Discard the following hour epoch labels:
-      -  ‘n/a’ (not intubated / mandatory ventilation mode)
-      -  ‘fall through’
-      -  ‘Missing’
+Eligible patients: only patinets who meet eligibility rules above (i.e on mandatory ventilation / O2 delivery mode has 'tracheostomy' or 'endotrachael' entered / valid O2 delivery is set patient is_intubated / if Vent mode is VC, PC PRVC, PPV, SIMV, PRVC, APRV (ventmode is mandatory).
 
-### GENERATE DESIGNATION FOR PATIENT CALENDAR DAY 
-4. Perform a count of the number of eligible hours in that calendar day (labels: ‘achieving target’ or ‘above target’). This is the denominator 
-5. Take most frequent epoch count as the calendar day designation. IF highest count on that calendar day is ‘achieving target’ then designate as ‘achieving target’
-6. IF highest count on that calendar day is ‘above target’ then designate as ‘above target’.  
-7. IF the most frequent hour counts are equal (between ‘acheiving target’ and ‘above target' then calendar day designation = ‘achieving target’
+Data required: (i) number of eligible patients (ie. CSN that meet above criteria); (ii) 1-hour epoch labels (in range / all 'out of range')
 
-### GENERATE DATA POINT FOR SPC CHART   
-7. Take all of the patient calendar day designations and aggregate into one week: Week defined as: Monday 00:00 - Sunday 23:59 
-8. Generate percentage achieving weekly tidal volume target (i.e. add up all ‘achieving target’ in that week and divide by ‘achieving target’ + ‘above target’ in that week). Present as percentage
-9. Plot on weekly chart
+##  Tidal Volume- Weekly percentage of patients achieving Tidal Volume target (<8ml/kg IBW)
+
+Operational definition = of the patients who are intubated and on mandatory ventilation, what proportion are achieving their tidal volume target, i.e. < or = 8ml/kg IBW on a weekly basis?
+
+### 1 HOUR EPOCHS & DISCARD ‘IN’-ELIGIBLE HOURS 
+1. 1-hour epochs from labelling rules above
+2. Discard the following epoch labels:
+     - ‘n/a’ (not on mandatory ventilation and therefore not eligible to be in this metric calculation)
+     - 'missing'
+     - ‘fall through’
+     - ‘not set’ (no target set)
+3. Include all labels that are out of range adn thos ethat are in range:
+     -  'out_of_range_8'
+     -  'out_of_range_10'
+     -  'out of range'
+     -  'in range'
+
+### Percentage calculation
+1. Fetch data from the previous calendar week
+2. Find the number of eligible patients (see note above) for each unit
+3. Find the corresponding hourly epoch labels for each individual patient (only labels are: all 'out of range' and ' in range' within that calendar week
+
+4. IN RANGE
+- **Numerator** = count of the number of 1-hour epochs labelled as 'in range' (for each eligible patient - CSN)
+- **Denominator** = count of the number of 1-hour epochs labelled as 'in range' and all 'out of range’ (for each eligible patient - CSN)
+- Calculate the individual eligible patient (CSN) percentage for the calendar week = numerator / denominator
+- Aggregate all the weekly patient percentages and divide by the number of patients who contributed to above calculation to generate an **aggregated weekly percentage mean** of 'the proportion of patients achieving (in range) their tidal volume target - **this is the SPC data point**
+- Plot an SPC chart for: y-axis = weekly percentage; x-axis = time
+
+5. Repeat for each respective unit T03/GWB/T06/WMS
+
+8. SPC title would need to be adjusted to 'Weekly percentage DURATION of patients Tidal Volume below 8ml/kg IBW (patients on mandatory ventilation)
+ 
+### n-number for process limits
+
+n = number of eligible patients (point 2 above) who who contributed to above calculation on each respective unit during that week
+
+**Tooltip display = process limit n-number and labelled as 'eligible patients' 
+
+> [!NOTE]
