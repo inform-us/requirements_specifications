@@ -231,7 +231,7 @@ For example: (i) an 4.01hr measurement interval will count as 2 in the adjusted 
 
 ### n number for process limit
 
- Aggregate day shift weekly sum of point 3 denominator (unadjusted) = count of all motor block assessment measurement intervals during the day shifts in the week 
+ Aggregate day shift weekly sum of point 3 denominator (unadjusted) = count of all left and right motor block assessment measurement intervals during the day shifts in the week and divide by two (in order to not count R and L measurements as two)
  
 **Tooltip display** = process limit n-number with the label "number of measurements".
 
@@ -254,7 +254,7 @@ For example: (i) an 8:01hr measurement interval will count as 2 in the adjusted 
 
 ### n number for process limit
 
- Aggregate night shift weekly sum of point 3 denominator (unadjusted) = count of all motor block assessment measurement intervals during the night shifts in the week 
+ Aggregate night shift weekly sum of point 3 denominator (unadjusted) = count of all left and right motor block assessment measurement intervals during the night shifts in the week and divide by two (in order to not count R and L measurements as two)
  
 **Tooltip display** = process limit n-number with the label "number of measurements".
 
