@@ -56,7 +56,7 @@ Total hours on mandatory ventiliation = eligible hours, exclude missing, off uni
 
 Calendar week defined as: Monday 00:00 - Sunday 23:59:59
 
-Eligible patients: only patinets who meet eligibility rules above (i.e on mandatory ventilation / O2 delivery mode has 'tracheostomy' or 'endotrachael' entered / valid O2 delivery is set patient is_intubated / if Vent mode is VC, PC PRVC, PPV, SIMV, PRVC, APRV (ventmode is mandatory).
+Eligible patients: only patients who meet eligibility rules above (i.e on mandatory ventilation / O2 delivery mode has 'tracheostomy' or 'endotrachael' entered / valid O2 delivery is set patient is_intubated / if Vent mode is VC, PC PRVC, PPV, SIMV, PRVC, APRV (ventmode is mandatory).
 
 Data required: (i) number of eligible patients (ie. CSN that meet above criteria); (ii) 1-hour epoch labels (in range / all 'out of range')
 
@@ -71,20 +71,18 @@ Operational definition = of the patients who are intubated and on mandatory vent
      - 'missing'
      - ‘fall through’
      - ‘not set’ (no target set)
-3. Include all labels that are out of range adn thos ethat are in range:
-     -  'out_of_range_8'
-     -  'out_of_range_10'
+3. Include all labels that are out of range and those that are in range:
      -  'out of range'
      -  'in range'
 
 ### Percentage calculation
 1. Fetch data from the previous calendar week
 2. Find the number of eligible patients (see note above) for each unit
-3. Find the corresponding hourly epoch labels for each individual patient (only labels are: all 'out of range' and ' in range' within that calendar week
+3. Find the corresponding hourly epoch labels for each individual patient (only labels are: 'out of range' and ' in range' within that calendar week
 
 4. IN RANGE
 - **Numerator** = count of the number of 1-hour epochs labelled as 'in range' (for each eligible patient - CSN)
-- **Denominator** = count of the number of 1-hour epochs labelled as 'in range' and all 'out of range’ (for each eligible patient - CSN)
+- **Denominator** = count of the number of 1-hour epochs labelled as 'in range' and 'out of range’ (for each eligible patient - CSN)
 - Calculate the individual eligible patient (CSN) percentage for the calendar week = numerator / denominator
 - Aggregate all the weekly patient percentages and divide by the number of patients who contributed to above calculation to generate an **aggregated weekly percentage mean** of 'the proportion of patients achieving (in range) their tidal volume target - **this is the SPC data point**
 - Plot an SPC chart for: y-axis = weekly percentage; x-axis = time
