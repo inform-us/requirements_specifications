@@ -39,6 +39,6 @@ For code review here, start with build code sign off, then move onto new SPC cha
 | Sedation RASS interval              |  ✅                              |✅                                            |                                       | ❌                     | ❌                                        |
 | SpO2                                | ✅                             | ✅                       |                                       | ✅                    | ✅                                        |
 | Tidal Volume                        |✅                               | ❌                       |       one more look at RASS and TV                                   | ✅                    | ❌                                        |
-| POM DReaMing interval               | ✅                               | ❌                       | coding has not started                | ❌                     | ❌                                        |
-| Airway interval                     | ✅                               | ❌                       | coding started Sam                       | ✅                     | ❌                                        |
-| Epidural motor block score interval |   ✅                              |  ✅                         | coding started                        |✅                      | ❌                                        |
+| POM DReaMing interval               | ✅                               | ❌                       | Nik             | ❌                     | ❌                                        |
+| Airway interval                     | ✅                               | ❌                       |  Sam                       | ✅                     | ❌                                        |
+| Epidural motor block score interval |   ✅                              |  ✅                         | Nik                       |✅                      | ❌                                        |
