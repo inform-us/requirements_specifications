@@ -19,8 +19,8 @@
 | Tidal Volume                       | ✅                                | ✅                       | update rules based on the code review                                            |
 | POM DReaMing                       | ✅                               | ✅                       |                                                                                  |
 | Patients rules                     | ✅                               | ✅                       |                                                                                  |
-| Airway                             | ✅                               | ❌                       | update to include doubleclassification?                                         |
-| Epidural motor block               | ⚠️                               | ❌                       |
+| Airway                             | ✅                               | ❌                       |                                          |
+| Epidural motor block               | ✅                               | ❌                       |
 
 # SPC metrics
 
