@@ -12,11 +12,11 @@
 | ---------------------------------- | -------------------------------- | ------------------------ | -------------------------------------------------------------------------------- |
 | Targets                            | ✅ - 09/05/24                    | ⚠️ done with Harry/Sarah | Redo with current team                                                           |
 | Delirium CAM-ICU                   | ✅                               | ✅                       |                                                                                  |
-| MAP (Mean Arterial Blood Pressure) | ❌                               | ✅                       | Update rules based on the code review                                            |
+| MAP (Mean Arterial Blood Pressure) | ✅                                | ✅                       | Update rules based on the code review                                            |
 | Pain (including epidural)          | ✅                               | ✅                       |                                                                                  |
 | Sedation RASS                      | ✅                               | ✅                       |                                                                                  |
-| SpO2                               | ❌                               | ✅                       | update rules based on the code review                                            |
-| Tidal Volume                       | ❌                               | ✅                       | update rules based on the code review                                            |
+| SpO2                               |  ✅                                | ✅                       | update rules based on the code review                                            |
+| Tidal Volume                       | ✅                                | ✅                       | update rules based on the code review                                            |
 | POM DReaMing                       | ✅                               | ✅                       |                                                                                  |
 | Patients rules                     | ✅                               | ✅                       |                                                                                  |
 | Airway                             | ✅                               | ❌                       | update to include double classification?                                         |
@@ -32,13 +32,13 @@ For code review here, start with build code sign off, then move onto new SPC cha
 | Targets                             | ✅ - 09/05/24                    |                          |               | ✅                     | ✅                                        |
 | Delirium CAM-ICU scores             | ✅                               | ✅                       |                                       | ✅                     | ✅                                        |
 | Delirium CAM-ICU documentation      | ✅                               | ✅                       |              | ✅                     | ✅                                        |
-| MAP (Mean Arterial Blood Pressure)  | ❌                               | ✅                        |                                       | ✅                     | ✅                                       |
+| MAP (Mean Arterial Blood Pressure)  | ✅                             | ✅                        |                                       | ✅                     | ✅                                       |
 | Pain scores                         | ✅                               | ✅                       |                                       | ✅                     | ✅                                        |
 | Pain interval                       | ✅                               | ✅                       |                                       | ✅                     | ❌                                        |
-| Sedation RASS scores                | ✅                               | ❌                                             |    one more look at RASS and TV                                   | ❌                     | ❌                                        |
+| Sedation RASS scores                | ✅                               | ✅                                           |    one more look at RASS and TV                                   | ❌                     | ❌                                        |
 | Sedation RASS interval              |  ✅                              |✅                                            |                                       | ❌                     | ❌                                        |
 | SpO2                                | ✅                             | ✅                       |                                       | ✅                    | ✅                                        |
-| Tidal Volume                        |✅                               | ❌                       |       one more look at RASS and TV                                   | ✅                    | ❌                                        |
+| Tidal Volume                        |✅                               | ✅                       |       one more look at RASS and TV                                   | ✅                    | ❌                                        |
 | POM DReaMing interval               | ✅                               | ❌                       | Nik             | ❌                     | ❌                                        |
 | Airway interval                     | ✅                               | ❌                       |  Sam                       | ✅                     | ❌                                        |
 | Epidural motor block score interval |   ✅                              |  ✅                         | Nik                       |✅                      | ❌                                        |
