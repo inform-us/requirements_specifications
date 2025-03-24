@@ -153,31 +153,52 @@ Note if two measurements, take most recent.
     
 ---
 # SPC CHARTS 
+
+## NOTE
+
+Calendar week defined as: Monday 00:00 - Sunday 23:59:59
+
+Eligible patients: only patients who meet eligibility rules above (i.e (i) on mandatory ventilation AND (ii) receiving sedative drugs within the last 6 hours / O2 delivery mode has 'tracheostomy' or 'endotrachael' entered / valid O2 delivery is set patient is_intubated / if Vent mode is VC, PC PRVC, PPV, SIMV, PRVC, APRV (ventmode is mandatory).
+
+Data required: (i) number of eligible patients (ie. CSN that meet above criteria); (ii) 1-hour epoch labels ('on target' / 'off target')
+
 ## RASS- Weekly percentage RASS target compliance
 Operational definition = of the patients who are ventilated and on sedative drug therapy and have had RASS targets set in ICU navigators in EPIC, what proportion are achieving (‘on’) or not achieving (‘off’) the set RASS target on a weekly basis? 
 
-### GROUP PATIENT HOURLY DATA INTO CALENDAR DAY
-1. Group patient (MRN/CSN) hourly data into a calendar day
+### 1 HOUR EPOCHS & DISCARD ‘IN’-ELIGIBLE HOURS 
+1. 1-hour epochs from labelling rules above
+2. Discard the following epoch labels:
+     - ‘n/a’ (not on mandatory ventilation & receiving sedative drugs and therefore not eligible to be in this metric calculation)
+     - 'missing'
+     - ‘fall through’
+     - ‘not set’ (no target set)
+3. Include all labels that are out of range and those that are in range:
+     -  'out of range'
+     -  'in range'
 
-### GENERATE LABEL FOR 1 HOUR EPOCH & DISCARD ‘IN’-ELIGIBLE EPOCHS 
-2. If more than one RASS reading in a one hour epoch, take last reading and discard others 
+### Percentage calculation
+1. Fetch data from the previous calendar week
+2. Find the number of eligible patients (see note above) for each unit
+3. Find the corresponding hourly epoch labels for each individual patient (only labels are: 'on target' and 'off target' within that calendar week
 
-3. Discard the following hour epoch labels:
-    - ‘n/a’ (not ventilated / sedated)
-    - ‘fall through’
-    - ‘not set’
-    - ‘missing’
-  
-  ### GENERATE DESIGNATION FOR PATIENT CALENDAR DAY 
-4. Perform a count of the number of eligible hours in that calendar day (labels: ‘on target’ or ‘off target’). This is the denominator
-5. Take most frequent epoch count as the calendar day designation. IF highest count on that calendar day is ‘on target’ then designate as ‘on target’
-6. IF highest count on that calendar day is ‘off target’ then designate as ‘off target’
-7. IF the most frequent hour counts are equal (between ‘on target’ and ‘off target’ then calendar day designation = ‘on target’
+4. ON TARGET
+- **Numerator** = count of the number of 1-hour epochs labelled as 'on target' (for each eligible patient - CSN)
+- **Denominator** = count of the number of 1-hour epochs labelled as 'on target' and 'off target’ (for each eligible patient - CSN)
+- Calculate the individual eligible patient (CSN) percentage for the calendar week = numerator / denominator
+- Aggregate all the weekly patient percentages and divide by the number of patients who contributed to above calculation to generate an **aggregated weekly percentage mean** of 'the proportion of patients achieving (on target) their RASS target - **this is the SPC data point**
+- Plot an SPC chart for: y-axis = weekly percentage; x-axis = time
 
-### GENERATE DATA POINT FOR SPC CHART 
-7. Take all of the patient calendar day designations and aggregate into one week: Week defined as: Monday 00:00 - Sunday 23:59 
-9. Generate weekly percentage designations that are on target (i.e. add up all ‘on target’ in that week and divide by ‘on target’ + ‘off target’ in that week). Present as percentage
-10. Plot on weekly chart
+5. Repeat for each respective unit T03/GWB/T06/WMS
+
+8. SPC title would need to be adjusted to 'Weekly percentage DURATION of patients achieving RASS target (patients on sedation)
+ 
+### n-number for process limits
+
+n = number of eligible patients (point 2 above) who who contributed to above calculation on each respective unit during that week
+
+**Tooltip display = process limit n-number and labelled as 'eligible patients' 
+
+
 
 
 ## Chart 2 RASS ASSESSMENT TIME INTERVAL SPC CHARTS 
