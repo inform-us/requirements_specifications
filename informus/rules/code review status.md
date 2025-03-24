@@ -10,7 +10,7 @@
 
 | Metric                             | Clinical rules signed off status | Team Code Review Status  | Still to be done                                                                 |
 | ---------------------------------- | -------------------------------- | ------------------------ | -------------------------------------------------------------------------------- |
-| Targets                            | ✅ - 09/05/24                    | ⚠️ done with Harry/Sarah | Redo with current team                                                           |
+| Targets                            | ✅                               |  ✅ 
 | Delirium CAM-ICU                   | ✅                               | ✅                       |                                                                                  |
 | MAP (Mean Arterial Blood Pressure) | ✅                                | ✅                       | Update rules based on the code review                                            |
 | Pain (including epidural)          | ✅                               | ✅                       |                                                                                  |
@@ -19,7 +19,7 @@
 | Tidal Volume                       | ✅                                | ✅                       | update rules based on the code review                                            |
 | POM DReaMing                       | ✅                               | ✅                       |                                                                                  |
 | Patients rules                     | ✅                               | ✅                       |                                                                                  |
-| Airway                             | ✅                               | ❌                       | update to include double classification?                                         |
+| Airway                             | ✅                               | ❌                       | update to include doubleclassification?                                         |
 | Epidural motor block               | ⚠️                               | ❌                       |
 
 # SPC metrics
