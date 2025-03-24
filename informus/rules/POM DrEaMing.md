@@ -199,22 +199,29 @@ Note change -originally done on main branch. We now omit an amber label for part
 
 Proportion of 'POM DrEaMing' documented in EPIC
 
-Operational definition = of all Perioperative patients (patients on T06 and WMS), what proportion have daily DrEaMing metrics (fluid intake, diet intake, mobilisation achieved) documented (weekly chart) 
+Operational definition = of all Perioperative patients (patients on T06 and WMS), what percentage have daily DrEaMing metrics (fluid intake, diet intake, mobilisation achieved) documented (weekly) 
 
 A day is defined as between 00:00 and 23:59 
+
 A week is defined as 00:00 on Monday to 23:59 on the following Sunday
 
-To comply with the DReaMing metric, all three (fluid intake, diet intake, mobilisation achieved) must be documented at least once in this time window 00:00 and 23:59 (i.e. a valid _dt stamp for an entry for each individual metric) in order for each patient to achieve (1) DReaMing documented 
+To comply with the DReaMing metric, all three (fluid intake, diet intake, mobilisation achieved) must be documented at least once in this time window 00:00 and 23:59 (i.e. a valid _dt stamp for an entry for each individual metric) in order for each patient to achieve (1) DReaMing documented in a day
 
-If any of the 3 DReaMing metrics are missing for any patient, an entry (a valid _dt stamp) then DrEaMing is not documented, do not count as DrEaMing documented.
+If any of the 3 DReaMing metrics are missing for any patient, an entry (a valid _dt stamp) then DrEaMing is not documented in that day, do not count as DrEaMing documented.
 
-Numerator = sum of patients achieving (1) above i.e. all three flowsheets documented between 00:00 and 23:59 
+**Numerator** = count of patients achieving (1) above i.e. all three DrEaMing flowsheets documented between 00:00 and 23:59 per day
 
-Denominator = total number of patients present on unit (based on CSNs) between 00:00 and 23:59 
+**Denominator** = total number of patients (including those discharged and RIP) present on unit (based on CSNs) between 00:00 and 23:59 each day
 
-Calculate weekly percentage (aggregate mean) for each unit T06 and WMS.
+Calculate daily percentage numerator/denominator
+
+Calculate weekly percentage (aggregate mean) of the daily percentages for each unit (T06 and WMS).
+
+SPC data point = weekly percentage (aggregate mean of day percentages) 
 
 Plot an SPC chart for each respective unit: y-axis = weekly percentage; x-axis = time
 
-Denominator (n) for process limits = number of patients present on unit (based on CSNs) between 00:00 and 23:59 over the whole calendar week. 
+**n number for process limits** = aggregated (weekly) denominator above 
+
+**Tool Tip display** = process limit n number - label as 'eligible patient days'
 
