@@ -45,8 +45,8 @@ Antihypertensives:
 
 ## Validity (time window) Rules: 
 
-1. MAP only valid if map_dt within last 6 hours of epoch_dt 
-2. Inotropes only valid if within last 4 hours 
+1. MAP only valid if map_dt within last 4:15 hours of epoch_dt 
+2. Inotropes only valid if within last 6 hours 
 3. 8:00 - 12:00 MAP Target Validity rule: 
   -  if epoch time before 12noon, 
   -  if map_target_dt after 8am on the day before then mark as valid else as invalid 
@@ -87,36 +87,68 @@ Calculate the total patient hours of 'on_inotrope' in the last 24 hours. Exclude
 10. if none of the rules matched then label the patient as 'fallthrough'
 11. n.b. fallthrough is shown as dark grey bed on floorplan, but there is no accompanying legend item. This is explained to user in ? button. 
 ---
+
 # SPC CHARTS
-## Mean Arterial Blood Pressure (MAP) - Daily percentage MAP 
-Operational definition = of the patients who are on vasopressor therapy and have had MAP targets set in ICU naviagtors in EPIC, what proportion are above, below and within their MAP targets on a weekly basis? 
-### GROUP PATIENT HOURLY DATA INTO CALENDAR DAY 
-1. Group patient (MRN/CSN) hourly data into a calendar day 
 
-### GENERATE LABEL FOR 1 HOUR EPOCH & DISCARD ‘IN’-ELIGIBLE HOURS 
-2. If more than one MAP reading in a one hour epoch, take last reading and discard others 
-3. Discard the following hour epoch labels: 
-   - ‘n/a’ (not on vasopressor therapy)
-   - ‘fall through’
-   -  ‘not set’ 
+## NOTE
 
-### GENERATE DESIGNATION FOR PATIENT CALENDAR DAY 
-4. Perform a count of the number of eligible hours in that calendar day (eligible hours should only be labelled as: ‘above’, ‘in range’ or ‘below’ target). This is the denominator. 
-5. Take most frequent hour count as the calendar day designation IF highest count is ‘above’ or ‘below’ 
-6. IF highest count is ‘in range’ AND label is ‘in range’ for ≥50% of eligible readings then calendar day designation = ‘in range’ 
-7. IF the most frequent hour count are equal (between all three ‘in range’ and ‘above’ or ‘below' then calendar day designation = ‘above’ 
-8. IF the most frequent hour count is ‘in range’ AND label is ‘in range’ for ≤49.9% of eligible readings then calendar day designation is second most frequent hour count (‘above’ or ‘below’).  
-9. IF the most frequent hour count is equal between ‘above’ and ‘below' then calendar day designation = ‘above’ 
+Calendar week defined as: Monday 00:00 - Sunday 23:59:59
 
-### GENERATE DATA POINT FOR SPC CHART 
-10. Take all of the patient calendar day designations and aggregate into one week: Week defined as: Monday 00:00 - Sunday 23:59 
-11. ABOVE CHART: generate percentage weekly designations that are above MAP target = (i.e. add up all ‘above’ in that week and divide by ‘above’ + in range’ + ‘below’ in that week). Present as percentage  
-12. BELOW CHART: generate percentage weekly designations that are below MAP target (i.e. add up all ‘below’ in that week and divide by ‘above’ + in range’ + ‘below’ in that week). Present as percentage  
-13. IN RANGE CHART:  generate percentage weekly designations that are in range MAP target (i.e. add up all ‘in range’ in that week and divide by ‘above’ + in range’ + ‘below’ in that week). Present as percentage
-14. Plot on weekly chart
+Eligible patients: only patients who meet eligibility rules above (i.e meet criteria for 'on inotrope').
 
-    
+Data required: (i) number of eligible patients (ie. CSN that meet above criteria); (ii) 1-hour epoch labels ('above' / 'in range' / 'below')
 
- 
+## Mean Arterial Blood Pressure (MAP) - Weekly percentage above, below, within SpO2 target
+Operational definition = What proportion of patients receiving VASOACTIVE DRUG therapy (who have MAP targets set) are above, below and in range of their target on a weekly basis?
+
+### 1 HOUR EPOCHS & DISCARD ‘IN’-ELIGIBLE HOURS 
+1. 1-hour epochs from labelling rules above
+2. Discard the following epoch labels:
+     - ‘n/a’ (not 'on inotrope' and therefore not eligible to be in this metric calcaulation)
+     - ‘fall through’
+     - ‘not set’ (no target set)
+
+### Percentage calculation
+1. Fetch data from the previous calendar week
+2. Number of patients: find the individual patient episodes (CSN; ie. the number of individual patients who were on each respective unit during that week)
+3. Find the corresponding hourly epoch labels for each individual patient (only labels are: above/in range/below) within that calendar week
+
+4. ABOVE
+- **Numerator** = count of the number of 1-hour epochs labelled as 'above' (for each patient - CSN)
+- **Denominator** = count of the number of 1-hour epochs labelled as 'above', ‘in range’ and ‘below’ (for each patient - CSN)
+- Calculate the individual patient (CSN) percentage for the calendar week = numerator / denominator
+- Aggregate all the weekly patient percentages and divide by the number of patients who contributed to above calculation to generate an **aggregated weekly percentage mean** of 'the proportion of patients receiving vasoactive therapy who are 'above' target - **this is the SPC data point**
+- Plot an SPC chart for: y-axis = weekly percentage; x-axis = time
+
+5. IN RANGE
+- **Numerator** = count of the number of 1-hour epochs labelled as 'in range' (for each patient - CSN)
+- **Denominator** = count of the number of 1-hour epochs labelled as 'above', ‘in range’ and ‘below’ (for each patient - CSN)
+- Calculate the individual patient (CSN) percentage for the calendar week = numerator / denominator
+- Aggregate all the weekly patient percentages and divide by the number of patients who contributed to in range calculation to generate an **aggregated weekly percentage mean** of 'the proportion of patients receiving vasoactive therapy who are 'in range' of target - **this is the SPC data point**
+- Plot an SPC chart for: y-axis = weekly percentage; x-axis = time
+
+6. BELOW
+- **Numerator** = count of the number of 1-hour epochs labelled as 'below' (for each patient - CSN)
+- **Denominator** = count of the number of 1-hour epochs labelled as 'above', ‘in range’ and ‘below’ (for each patient - CSN)
+- Calculate the individual patient (CSN) percentage for the calendar week = numerator / denominator
+- Aggregate all the weekly patient percentages and divide by the number of patients who contributed to below calculation to generate an **aggregated weekly percentage mean** of 'the proportion of patients receiving vasoactive therapy who are 'below' target - **this is the SPC data point**
+- Plot an SPC chart for: y-axis = weekly percentage; x-axis = time
+
+7. Repeat for each respective unit T03/GWB/T06/WMS
+
+8. SPC title would need to be adjusted to 'Weekly percentage DURATION of patients within / above / below MAP Target (patients on vasoactive)
+
+### n-number for process limits
+
+ABOVE = number of individial patients (CSN) who who contributed to above calculation on each respective unit during that week
+
+IN RANGE = number of individial patients (CSN) who who contributed to in range calculation on each respective unit during that week
+
+BELOW = number of individial patients (CSN) who who contributed to below calculation on each respective unit during that week
+
+**Tooltip display = process limit n-number and labelled as 'eligible patients' 
+
+> [!NOTE]
+> Check tooltip is correct.
 
  
