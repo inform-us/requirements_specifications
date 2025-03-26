@@ -134,11 +134,11 @@ Note current title is inccorrect.... says 'informus'
 
 
 ---
-## Tile: All Patients Delirium CAM-ICU
+## Tile: All Patients Delirium
 
-**SPC chart title: Delirium CAM-ICU**
+**SPC chart title: Delirium**
 
-4 buttons to read- Documentation, Day shift delirium rates, Night shift delirium rates, Combined Delirium Rates
+4 buttons to read- CAM-ICU Documentation, Day shift delirium rates, Night shift delirium rates, Combined Delirium Rates
 
 Chart Titles to read
 1. Weekly percentage of CAM-ICU assessments completed once per shift
