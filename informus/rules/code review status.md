@@ -19,8 +19,8 @@
 | Tidal Volume                       | ✅                                | ✅                       | update rules based on the code review                                            |
 | POM DReaMing                       | ✅                               | ✅                       |                                                                                  |
 | Patients rules                     | ✅                               | ✅                       |                                                                                  |
-| Airway                             | ✅                               | ❌                       |                                          |
-| Epidural motor block               | ✅                               | ❌                       |
+| Airway                             | ✅                               |  ✅                      |                                          |
+| Epidural motor block               | ✅                               |                    |
 
 # SPC metrics
 
@@ -40,5 +40,5 @@ For code review here, start with build code sign off, then move onto new SPC cha
 | SpO2                                | ✅                             | ✅                       |                                       | ✅                    | ✅                                        |
 | Tidal Volume                        |✅                               | ✅                       |                                         | ✅                    | ❌                                        |
 | POM DReaMing interval               | ✅                               | ❌                       | Nik             |  ✅                      | ❌                                        |
-| Airway interval                     | ✅                               | ❌                       |  Sam                       | ✅                     |  ✅                                         |
+| Airway interval                     | ✅                               |  ✅                     |  Sam                       | ✅                     |  ✅                                         |
 | Epidural motor block score interval |   ✅                              |  ✅                         | Nik                       |✅                      | ❌                                        |
