@@ -20,7 +20,7 @@
 | POM DReaMing                       | ✅                               | ✅                       |                                                                                  |
 | Patients rules                     | ✅                               | ✅                       |                                                                                  |
 | Airway                             | ✅                               |  ✅                      |                                          |
-| Epidural motor block               | ✅                               |                    |
+| Epidural motor block               | ✅                               |  ❌                  |
 
 # SPC metrics
 
