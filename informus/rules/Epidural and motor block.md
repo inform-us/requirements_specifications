@@ -84,9 +84,27 @@ Present this number on the front tile as 'number of patients on epidural'.
 
 Measurement Interval - average time between motor block assessments - front tile metric calculation
 
-This calculation will look at all Motor block assessment intervals for epidural patients. 
+This calculation will look at all Motor block assessment intervals for epidural patients.
 
-There needs to be a minimum of two scores of >0 at two different dt_stamps to calculate a measurement interval. Note that assessing the motor block involves documenting both right and left leg scores simultaneously or in some cases minutes apart. Right and left leg flowsheet entries have their own dt_stamp, but are technically done simultaneously. To mitigate for two assessments being done across two epochs, Two measurement intervals within five minutes of one another should be skipped. Detect if the patient has either r or l leg assessment done and take earlier score. Only right leg to right leg and left leg to left leg should be compared using the actual data point from the flowsheet. 
+
+
+- there needs to be a minimum of two scores to calculate a measurement interval (if a patient has only just been admitted with one motor block score documented, or if a patient only has one motor block score during their entire ICU admission, calculation will not be possible and data will not be included on front tile metric
+-  Any period of time where a patient is documented as off unit, e.g. for a scan or procedure, should not factor into the calculation. i.e. if motor block assessment 1 of 2 in an interval has a dt_stamp directly before a time period when the patient is off the unit, this measurement and the interval between dt_stamp 1 and 2, which will occur after the patient has returned back to the unit should be excluded from the average. Time 2 of the interval when the patient returns should therefore become time 1 of the subsequent time interval. This is to avoid excessively long time intervals factoring into the average when there would not have been possible to document a motor block score in the ICU notes. 
+- the data on the front tile looks back from the current time to 24 hours in the past
+- there will be two measurement interval calculations displayed on the front tile: DAY (06:00-21:59) and NIGHT (22:00-05:59)
+- in line with other metrics we should provide some leeway (15 minutes) in charting documentation, therefore (adjusted time frame): DAY (08:00-20:14) and NIGHT (20:00-08:14)
+- the leeway is to mitigate skewed mean interval, particularly in the DAY calculation (e.g. 08:01 motor block, time interval calculated with a NIGHT motor block at 00:00, would give a 04:01 measurement interval which would skew daytime data, the 15 minute leeway may need to be reviewed if insufficient
+- the _dt of each measurement determines whether it is categorised as 'DAY' or 'NIGHT', but in order to complete the measurement interval calculation, a preceeding measurement can be in the opposing category
+- worked example: <br> (a) a measurement taken at 08:10 would have to be linked with an earlier measurement during the night shift to calculate an interval and would be classified as - NIGHT (before 08:14) <br> (b) a mesurement taken at 08:30 would have to be linked with an earlier measurement during the day or night shift to calculate an interval and would be classified as - DAY (after 08:14) <br> (c) a mesurement taken at 20:10 would have to be linked with an earlier measurement during the day shift to calculate an interval and would be classified as - DAY (before 20:14) <br> (d) a mesurement taken at 21:00 would have to be linked with an earlier measurement during the night or day shift to calculate an interval and would be classified as - NIGHT (after 20:14) <br>
+- once classified into DAY or NIGHT deteremine numerator and denominator for each and calculate mean
+- DAY Numerator = sum of the minutes and hours between all intervals recorded between (08:15-20:14) that fall into the current 24 hour rolling window
+- DAY Denominator = number of all time interval measurements that fall into the current 24 hour rolling window
+- NIGHT Numerator = sum of the minutes and hours between all intervals recorded between (20:15-08:14) that fall into the current 24 hour rolling window
+- NIGHT Denominator = number of all time interval measurements that fall into the current 24 hour rolling window
+- calculate respective DAY and NIGHT mean measurement interval and display as hh:mm on front tile
+
+
+ Only right leg to right leg and left leg to left leg should be compared using the actual data point from the flowsheet. 
 
 
 If the epidural has been stopped (i.e. there is no data entered into flowsheet 7001026) and both scores have resumed to zero, motor block assessment is no longer required. Therefore measurement interval should stop being calculated. This means that even if there are more assessments after these zero scores within the 12 hour assessment window, do not calculate the measurement interval after motor block assessment scores of zero.
@@ -218,21 +236,45 @@ Day start time is 08:15 and end time is 20:14 to allow for 15 minutes documentat
 
 Day shift week is therefore Monday 08:15 to Sunday 20:14.
 
-1.  Look at day shift motor block assessment measurement intervals (for which the first of the pair in the measurement interval is between the hours of 08:15 and 20:14) each day. Reference measurement interval rules for tile calculation above making sure to not include any intervals after both scores have resumed to zero. 
+Calculation for Left Leg motor block
+1.  Look at day shift LEFT motor block assessment measurement intervals (for which the first of the pair in the measurement interval is between the hours of 08:15 and 20:14) each day. Reference measurement interval rules for tile calculation above making sure to not include any intervals after both scores have resumed to zero. 
 2.   **Numerator** =count of time intervals that are ≤ 2:00 hours for the DAY category
-- *note SPC denominator adjustment required for excessively long measurement intervals (those that are 2x accepted measurement interval from clinical guideline)*
+
   
   3. **Denominator (unadjusted)** = count of all motor block assessment measurement intervals during the day shift
   4. **Denominator (adjusted)** = count all day shift motor block assessment measurement intervals in that week that are > 4:00 hours and ADD +1 to denominator for each measurement interval missed.
 
+- *note SPC denominator adjustment required for excessively long measurement intervals (those that are 2x accepted measurement interval from clinical guideline)*
+
 For example: (i) an 4.01hr measurement interval will count as 2 in the adjusted denominator - once for the measurement and once for being an additional having missed the next expected measurement; (ii) 6.01 hr measurement interval will count as 3 in the adjusted denominator: (iii) 8.01hr measurement interval will count as 4 in the adjusted denominator etc.....
 
+
 5. Generate percentage of DAY SHIFT measurement intervals for that day shift week (line 222) that are 2 hour or less: numerator / denominator (adjusted)
- 6. SPC data point = weekly aggregated day shift mean of numerator/denominator (adjusted) as percentage
+6. Generate weekly aggregated average for the DAY shift percentages that are 2 hours or less. 
+
+ 7. SPC data point = average weekly aggregated day shift mean of numerator/denominator (adjusted) as percentage
+
+Calculation for Right Leg motor block
+1.  Look at day shift RIGHT motor block assessment measurement intervals (for which the first of the pair in the measurement interval is between the hours of 08:15 and 20:14) each day. Reference measurement interval rules for tile calculation above making sure to not include any intervals after both scores have resumed to zero. 
+2.   **Numerator** =count of time intervals that are ≤ 2:00 hours for the DAY category
+
+  
+  3. **Denominator (unadjusted)** = count of all motor block assessment measurement intervals during the day shift
+  4. **Denominator (adjusted)** = count all day shift motor block assessment measurement intervals in that week that are > 4:00 hours and ADD +1 to denominator for each measurement interval missed.
+
+- *note SPC denominator adjustment required for excessively long measurement intervals (those that are 2x accepted measurement interval from clinical guideline)*
+
+For example: (i) an 4.01hr measurement interval will count as 2 in the adjusted denominator - once for the measurement and once for being an additional having missed the next expected measurement; (ii) 6.01 hr measurement interval will count as 3 in the adjusted denominator: (iii) 8.01hr measurement interval will count as 4 in the adjusted denominator etc.....
+
+
+5. Generate percentage of DAY SHIFT measurement intervals for that day shift week (line 222) that are 2 hour or less: numerator / denominator (adjusted)
+6. Generate weekly aggregated average for the DAY shift percentages that are 2 hours or less. 
+
+ 7. SPC data point = average weekly aggregated day shift mean of numerator/denominator (adjusted) as percentage
 
 ### n number for process limit
 
- Aggregate day shift weekly sum of point 3 denominator (unadjusted) = count of all motor block assessment measurement intervals during the day shifts in the week 
+ Aggregate average weekly day shift weekly sum of point 3 denominator (unadjusted) = count of all motor block assessment measurement intervals during the day shifts in the week 
  
 **Tooltip display** = process limit n-number with the label "number of measurements".
 
@@ -242,21 +284,47 @@ Night start time is 20:15 and end time is 08:14 to allow for 15 minutes document
 
 Modified NIGHT shift week is therefore Sunday 20:15 to Monday 08:14
 
+Calculation for Left Leg motor block
+1.  Look at night shift LEFT motor block assessment measurement intervals (for which the first of the pair in the measurement interval is between the hours of 08:15 and 20:14) each day. Reference measurement interval rules for tile calculation above making sure to not include any intervals after both scores have resumed to zero. 
+2.   **Numerator** =count of time intervals that are ≤ 2:00 hours for the DAY category
 
-1. Look at night shift motor block assessment measurement intervals (for which the first of the pair in the measurement interval is between the hours of 20:15 and 08:14 each day). Reference measurement interval rules for tile calculation above making sure to not include any intervals after both scores have resumed to zero. 
-2. **Numerator** = count of time intervals that are ≤ 4:00 hours for the NIGHT category
-- *SPC denominator adjustment required for excessively long measurement intervals (those that are 2x accepted measurement interval from clinical guidance)*
-   3. **Denominator (unadjusted)** = count of all motor block assessment measurement intervals during the night shift
-4. **Denominator (adjusted)** = count all night shift assessment measurement intervals  in that week that are >8:00 hours and ADD +1 to denominator for each measurement interval missed.
+  
+  3. **Denominator (unadjusted)** = count of all motor block assessment measurement intervals during the night shift
+  4. **Denominator (adjusted)** = count all night shift motor block assessment measurement intervals in that week that are > 4:00 hours and ADD +1 to denominator for each measurement interval missed.
 
-For example: (i) an 8:01hr measurement interval will count as 2 in the adjusted denominator - once for the measurement and once for having missed the next expected measurement; (ii) 12:01hr measurement interval will count as 3 in the adjusted denominator
+- *note SPC denominator adjustment required for excessively long measurement intervals (those that are 2x accepted measurement interval from clinical guideline)*
 
-5. Generate percentage of NIGHT shift measurement intervals for that week that are 4:00 hours or less: numerator / denominator (adjusted)
-6.  SPC data point = weekly aggregated night shift mean of numerator/denominator (adjusted) as percentage
+For example: (i) an 4.01hr measurement interval will count as 2 in the adjusted denominator - once for the measurement and once for being an additional having missed the next expected measurement; (ii) 6.01 hr measurement interval will count as 3 in the adjusted denominator: (iii) 8.01hr measurement interval will count as 4 in the adjusted denominator etc.....
+
+
+5. Generate percentage of DAY SHIFT measurement intervals for that night shift week (line 222) that are 2 hour or less: numerator / denominator (adjusted)
+6. Generate weekly aggregated average for the NIGHT shift percentages that are 2 hours or less. 
+
+ 7. SPC data point = average weekly aggregated day shift mean of numerator/denominator (adjusted) as percentage
+
+Calculation for Right Leg motor block
+1.  Look at night shift RIGHT motor block assessment measurement intervals (for which the first of the pair in the measurement interval is between the hours of 08:15 and 20:14) each day. Reference measurement interval rules for tile calculation above making sure to not include any intervals after both scores have resumed to zero. 
+2.   **Numerator** =count of time intervals that are ≤ 2:00 hours for the NIGHT category
+
+  
+  3. **Denominator (unadjusted)** = count of all motor block assessment measurement intervals during the night shift
+  4. **Denominator (adjusted)** = count all night shift motor block assessment measurement intervals in that week that are > 4:00 hours and ADD +1 to denominator for each measurement interval missed.
+
+- *note SPC denominator adjustment required for excessively long measurement intervals (those that are 2x accepted measurement interval from clinical guideline)*
+
+For example: (i) an 4.01hr measurement interval will count as 2 in the adjusted denominator - once for the measurement and once for being an additional having missed the next expected measurement; (ii) 6.01 hr measurement interval will count as 3 in the adjusted denominator: (iii) 8.01hr measurement interval will count as 4 in the adjusted denominator etc.....
+
+
+5. Generate percentage of NIGHT SHIFT measurement intervals for that day shift week (line 222) that are 2 hour or less: numerator / denominator (adjusted)
+6. Generate weekly aggregated average for the NIGHT shift percentages that are 2 hours or less. 
+
+ 7. SPC data point = average weekly aggregated night shift mean of numerator/denominator (adjusted) as percentage
 
 ### n number for process limit
 
- Aggregate night shift weekly sum of point 3 denominator (unadjusted) = count of all motor block assessment measurement intervals during the night shifts in the week 
+ Aggregate average weekly night shift weekly sum of point 3 denominator (unadjusted) = count of all motor block assessment measurement intervals during the day shifts in the week 
  
 **Tooltip display** = process limit n-number with the label "number of measurements".
+
+
 
