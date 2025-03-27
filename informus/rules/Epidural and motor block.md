@@ -86,7 +86,7 @@ Measurement Interval - average time between motor block assessments - front tile
 
 This calculation will look at all Motor block assessment intervals for epidural patients. 
 
-There needs to be a minimum of two scores of >0 at two different dt_stamps to calculate a measurement interval. Note that assessing the motor block involves documenting both right and left leg scores simultaneously or in some cases minutes apart. Right and left leg flowsheet entries have their own dt_stamp, but are technically done simultaneously. To mitigate for two assessments being done across two epochs, Two measurement intervals within five minutes of one another should be skipped. Detect if the patient has either r or l leg assessment done and take earlier score. 
+There needs to be a minimum of two scores of >0 at two different dt_stamps to calculate a measurement interval. Note that assessing the motor block involves documenting both right and left leg scores simultaneously or in some cases minutes apart. Right and left leg flowsheet entries have their own dt_stamp, but are technically done simultaneously. To mitigate for two assessments being done across two epochs, Two measurement intervals within five minutes of one another should be skipped. Detect if the patient has either r or l leg assessment done and take earlier score. Only right leg to right leg and left leg to left leg should be compared using the actual data point from the flowsheet. 
 
 
 If the epidural has been stopped (i.e. there is no data entered into flowsheet 7001026) and both scores have resumed to zero, motor block assessment is no longer required. Therefore measurement interval should stop being calculated. This means that even if there are more assessments after these zero scores within the 12 hour assessment window, do not calculate the measurement interval after motor block assessment scores of zero.
@@ -226,6 +226,7 @@ Day shift week is therefore Monday 08:15 to Sunday 20:14.
   4. **Denominator (adjusted)** = count all day shift motor block assessment measurement intervals in that week that are > 4:00 hours and ADD +1 to denominator for each measurement interval missed.
 
 For example: (i) an 4.01hr measurement interval will count as 2 in the adjusted denominator - once for the measurement and once for being an additional having missed the next expected measurement; (ii) 6.01 hr measurement interval will count as 3 in the adjusted denominator: (iii) 8.01hr measurement interval will count as 4 in the adjusted denominator etc.....
+
 5. Generate percentage of DAY SHIFT measurement intervals for that day shift week (line 222) that are 2 hour or less: numerator / denominator (adjusted)
  6. SPC data point = weekly aggregated day shift mean of numerator/denominator (adjusted) as percentage
 
@@ -249,6 +250,7 @@ Modified NIGHT shift week is therefore Sunday 20:15 to Monday 08:14
 4. **Denominator (adjusted)** = count all night shift assessment measurement intervals  in that week that are >8:00 hours and ADD +1 to denominator for each measurement interval missed.
 
 For example: (i) an 8:01hr measurement interval will count as 2 in the adjusted denominator - once for the measurement and once for having missed the next expected measurement; (ii) 12:01hr measurement interval will count as 3 in the adjusted denominator
+
 5. Generate percentage of NIGHT shift measurement intervals for that week that are 4:00 hours or less: numerator / denominator (adjusted)
 6.  SPC data point = weekly aggregated night shift mean of numerator/denominator (adjusted) as percentage
 
