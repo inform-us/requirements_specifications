@@ -413,9 +413,6 @@ If none of the above rules match, the bed will appear as dark grey on floorplan
 
 
 --------
-
-**Page: Clinical dashboard tab: Airway Plan** (DRAFT)
-
 ## All patients: Airway Plan 
 
 ## i button
@@ -468,13 +465,41 @@ All patients across all units
 
 **Laryngectomy** Patient has a laryngectomy
 
-**Occupied bed (no artifical airway)** Patient has natural airway
+**Occupied bed (no artificial airway)** Patient has natural airway
 
 
+## Page: Epidural Motor Block Assessments 
+
+## All patients on epidural: Motor Block Assessment
 
 
+**i button** 
 
-  
+Epidurals are effective for pain relief, but they also carry risk of complications including haematoma (bleeding around the spine) which can cause permanent paralysis.
+
+For all patients on epidural, assess and document their level of motor block (Bromage Score) to their right and left leg 2 hourly in the day (08:00-19:59) and 4 hourly in the night (20:00-07:59). 
+
+Once the patient's epidural infusion has been stopped, continue assessment until either 12 hours have passed or until there is no block (both right and left leg scores are zero), whichever comes first.
+
+
+**? button**
+
+Eligibility
+
+All patients who have had epidural infusions running in the last twelve hours. 
+
+Classification
+
+Patients are labeled as GREEN if both of the latest  motor block scores (right and left leg) are 0 or 1
+
+Patients are labeled as AMBER if either of the latest motor block scores is 2
+
+Patients are labeled as RED If either of the latest motor block scores is 3 
+
+The highest motor block at any one time is shown. 
+
+If an epidural is running and it has been over 2 hours on the day shift or over 4 hours on the night shift, the motor block documentation is out of date- the bed space will have a a hashed red outline. 
+
 
 
 
