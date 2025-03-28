@@ -66,10 +66,10 @@ during the night shift (20:00-07:59).
 
 
 
-## SUMMARY (tile)
-
+## [A] Front Tile Metric (tile)
 
 ## CLASSIFICATION
+
 
 ### Number of patients on epidural
 
@@ -80,66 +80,54 @@ Calculate the number of patients who are currently on the unit and have had a nu
 
 Present this number on the front tile as 'number of patients on epidural'. 
 
-### Average time between motor block assessments (a) Day and (b) night 
 
-Measurement Interval - average time between motor block assessments - front tile metric calculation
+### Measurement Interval - average time between motor block assessments (a) Day and (b) night (front tile metric)
 
-This calculation will look at all Motor block assessment intervals for epidural patients. 
+**NOTE**
+1. Average time between scores should be calculated from ACTUAL documented MOTOR BLOCK ASSESSMENTS in EPIC (ie. those with a _dt stamp) and not any forward filled scores.
+2. There needs to be a minimum of two scores to calculate a measurement interval (if a patient has only just been admitted with one MOTOR BLOCK ASSESSMENT documented, or if a patient only has one MOTOR BLOCK ASSESSMENT during their entire ICU admission, calculation will not be possible and data will not be included on front tile metric.
+3. RIGHT & LEFT motor block assessments are in separate flowsheets and may have different _dt for an asessment done simultaneously in a clinical setting.
+4. Any period of time where a patient is documented as off unit, e.g. for a scan or procedure, should not factor into the calculation (see RASS measurement interval rules).
+5. The data on the front tile looks back from the current time to 24 hours in the past.
+6. There will be two measurement interval calculations displayed on the front tile: DAY (08:00-19:59) and NIGHT (20:00-07:59)
+7. In line with other metrics we should provide some leeway (15 minutes) in charting documentation, therefore (adjusted time frame): DAY (08:00-20:14) and NIGHT (20:00-08:14). The leeway is to mitigate skewed mean interval, particularly in the DAY calculation
+8. Despite the case that after an epidural has been stopped (i.e. there is no data entered into flowsheet 7001026) and both scores have resumed to zero, motor block assessment is no longer required [on the floorplan view]. The measurement interval calculation is independent of this and does not take into consideration documented scores. Nor does it apply time penalties for extended time intervals (adjusted DENOMINATOR) as is the case in the SPC calculation. 
 
-There needs to be a minimum of two scores of >0 at two different dt_stamps to calculate a measurement interval. Note that assessing the motor block involves documenting both right and left leg scores simultaneously or in some cases minutes apart. Right and left leg flowsheet entries have their own dt_stamp, but are technically done simultaneously. To mitigate for two assessments being done across two epochs, Two measurement intervals within five minutes of one another should be skipped. Detect if the patient has either r or l leg assessment done and take earlier score. 
+**CALCULATION**
+- this calculation will look at the _dt of MOTOR BLOCK ASSESSMENTS, handling RIGHT and LEFT seprarately before providing a combined average
+
+*RIGHT MOTOR BLOCK ASSESSMENT MEASUREMENT INTERVAL**
+- DAY Numerator = sum of the minutes and hours between all intervals recorded between (08:15-22:14) that fall into the current 24 hour rolling window
+- DAY Denominator = number of all time interval measurements that fall into the current 24 hour rolling window
+- NIGHT Numerator = sum of the minutes and hours between all intervals recorded between (20:15-08:14) that fall into the current 24 hour rolling window
+- NIGHT Denominator = number of all time interval measurements that fall into the current 24 hour rolling window
+
+*LEFT MOTOR BLOCK ASSESSMENT MEASUREMENT INTERVAL**
+- DAY Numerator = sum of the minutes and hours between all intervals recorded between (08:15-22:14) that fall into the current 24 hour rolling window
+- DAY Denominator = number of all time interval measurements that fall into the current 24 hour rolling window
+- NIGHT Numerator = sum of the minutes and hours between all intervals recorded between (20:15-08:14) that fall into the current 24 hour rolling window
+- NIGHT Denominator = number of all time interval measurements that fall into the current 24 hour rolling window
+
+**COMBINED MOTOR BLOCK ASSESSMENT MEASUREMENT INTERVAL**
+
+- average time interval between RIGHT & LEFT per patient and average count of measurements between RIGHT & LEFT per patient, to produce a single measurement interval and data point (count)
+
+- DAY_AVERAGE_NUMERATOR  - average time interval between (eligible) patients
+- DAY_AVERAGE_DENOMINATOR  - average total time interval count between (eligible) patients
+
+- NIGHT_AVERAGE_NUMERATOR  - average time interval between (eligible) patients
+- NIGHT_AVERAGE_DENOMINATOR  - average total time interval count between (eligible) patients
+
+- Calculation: numerator / denominator for DAY & NIGHT respectively and display as hh:mm on front tile
 
 
-If the epidural has been stopped (i.e. there is no data entered into flowsheet 7001026) and both scores have resumed to zero, motor block assessment is no longer required. Therefore measurement interval should stop being calculated. This means that even if there are more assessments after these zero scores within the 12 hour assessment window, do not calculate the measurement interval after motor block assessment scores of zero.
+REWORK THIS SECTIONF FOR FLOWPLAN USE
 
-Worked example:
-
-A patient's epidural has been stopped at 9:00am (there is no more data in the volume infused flowsheet) and the following assessments are documented:
-
-If the motor block assessments are:
-1) 09:00 Motor block r leg = 2, Motor block l leg = 1
-2) 11:00 Motor block r leg = 1, Motor block l leg = 1
-3) 13:00 Motor block r leg = 1, Motor block l leg = 0
-4) 15:00 Motor block r leg = 0, Motor block l leg = 0
-5) 19:00 Motor block r leg = 0, Motor block l leg = 0
-6) 21:00 Motor block r leg = 1, Motor block l leg = 1
-
-Then the time interval are:
-1) 09:00 will be linked to the earlier time, and would be classified as day (the interval label will depend on the later time)
-2) 11:00 will be linked to the earlier time, and would be classified as day and the time interval is 02:00 hours
-3) 13:00 will be linked to the earlier time, and would be classified as day and the time interval is 02:00 hours
-4) 15:00 will be linked to the earlier time but will not be included into the measurement calculations 
-5) 19:00 will be linked to the earlier time but will not be included into the measurement calculations
-5) 21:00 will be linked to the earlier time and would be classified as night and the time interval is 02:00 hours
+Despite the case that after an epidural has been stopped (i.e. there is no data entered into flowsheet 7001026) and both scores have resumed to zero, motor block assessment is no longer required [on the floorplan view]. The measurement interval calculation is independent of this and does not take into consideration documented scores. Nor does it apply time penalties for extended time intervals (adjusted DENOMINATOR) as is the case in the SPC calcaultion.
 
 
-The interval between assessment 4 and 5 should not factor into the average time between measurements calculation because assessement four showed zero motor block. However on the front tile, this patient would still be considered 'on epidural' for the entire 12 hours and on the floorplan, the green score should be displayed on the bed space for the duration of the 12 hours, but not shown as missing. 
-
-This calculation on the front tile looks back from the current time to 24 hours in the past
-
-There will be two measurement interval calculations displayed on the front tile: DAY (08:00-19:59) and NIGHT (20:00-07:59)
-in line with other metrics we should provide some leeway (15 minutes) in charting documentation, therefore (adjusted time frame): DAY (08:15-20:14) and NIGHT (20:15-08:14). The leeway is to mitigate skewed mean interval, particularly in the DAY calculation (e.g. 08:01 motor block assessment, time interval calculated with a NIGHT motor block assessment at 02:00, would give a 04:01 measurement interval which would skew daytime data, the 15 minute leeway may need to be reviewed if insufficient
-
-The _dt of each measurement determines whether it is categorised as 'DAY' or 'NIGHT', but in order to complete the measurement interval calculation, a preceding measurement can be in the opposing category
-
-Worked example:
-
-(a) a motor block assessment documented at 08:10 would have to be linked with an earlier measurement during the night shift to calculate an interval and would be classified as - NIGHT (before 08:14)
-
-(b) an assessment documented at 8:30 would have to be linked with an earlier measurement during the day or night shift to calculate an interval and would be classified as - DAY (after 08:14)
-
-(c) an assessment documented at 20:10 would have to be linked with an earlier measurement during the day shift to calculate an interval and would be classified as - DAY (before 20:14)
-
-(d)an assessment documented 20:00 would have to be linked with an earlier measurement during the night or day shift to calculate an interval and would be classified as - NIGHT (after 20:14)
-
-Once classified into DAY or NIGHT, determine numerator and denominator for each and calculate mean
- - DAY Numerator = sum of the minutes and hours between all intervals recorded between (08:15-20:14) that fall into the current 24 hour rolling window
- - DAY Denominator = number of all time interval measurements that fall into the current 24 hour rolling window
- - NIGHT Numerator = sum of the minutes and hours between all intervals recorded between (20:15-08:14) that fall into the current 24 hour rolling window
- - NIGHT Denominator = number of all time interval measurements that fall into the current 24 hour rolling window
-calculate respective DAY and NIGHT mean motor block assessment measurement interval and display as hh:mm on front tile
 
 ## [B] Floorplan labelling 
-
 
 ## MOTOR BLOCK ASSESSMENT - EPIDURAL PATIENTS FLOOR PLAN
 
@@ -152,6 +140,7 @@ ELIGIBILITY
 All patients with an epidural volume infused in the last 12 hours. 
 
 *Patients with epidurals to be visually highlighted. Others are not included in the calculation*
+
 
 ## Primary Label Assessment of Motor Block 
 
@@ -171,7 +160,26 @@ All patients with an epidural volume infused in the last 12 hours.
 1. If there has never been an 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' since the patient has been classified as 'on epidural', then label patient as 'missing assessment'. Red Hashed and no fill bed.  
 2. If the current time is 08:00-19:59, and if either the latest documented motor block score (r or l leg) was >0, and 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' have not been completed in the last two hours, then label patient as 'missing' and forward fill the latest motor block assessment reading (red amber green). Bed to be red hashed outline (with fill of colour from forward filled entry).
 4. If the current time is 20:00-07:59, and if either the latest documented motor block score (r or l leg) was >0, and if either 'Assessment of Motor Block Lt leg' or 'Assessment of Motor Block Rt leg assessment' have not been completed in the last four hours, then label patient as 'missing' and forward fill the latest motor block assessment reading (red amber green).
-5. During both day and night shifts, if the volume infused flowsheet has no data and if both of the latest documented motor block r and l leg scores were zero and two hours have elapsed (day shift) or four hours have elapsed (night shift), then do not label patient as missing even if there are no more scores. Forward fill the latest motor block assessment green reading until the end of the 12 hour period. 
+5. During both day and night shifts, if the volume infused flowsheet returns zero and the subsequent 1hour-epoch is has no data, and the RIGHT & LEFT motor block asssment is zero, then do no t mark as 'missing once the validity period has passed (day = 2:00 hours and night = 4:00 hours) - the floor plan labe would remain GREEN until the 12 hour 'on epidural' has expired. 
+
+WORKED EXAMPLE (epidural infusion stopped) - FLOORPLAN
+A patient's epidural has been stopped at 9:00am (there is no more data in the volume infused flowsheet) and the following assessments are documented:
+
+If the motor block assessments are:
+1) 09:00 Motor block r leg = 2, Motor block l leg = 1
+2) 11:00 Motor block r leg = 1, Motor block l leg = 1
+3) 13:00 Motor block r leg = 1, Motor block l leg = 0
+4) 15:00 Motor block r leg = 0, Motor block l leg = 0
+5) 19:10 Motor block r leg = 0, Motor block l leg = 0
+6) 21:00 Motor block r leg = 1, Motor block l leg = 1
+
+Then the time interval are:
+1) 09:00 will be linked to the earlier time, and would be classified as day
+2) 11:00 will be linked to the earlier time, and would be classified as day and the time interval is 02:00 hours
+3) 13:00 will be linked to the earlier time, and would be classified as day and the time interval is 02:00 hours
+4) 15:00 will be linked to the earlier time, and would be classified as day and the time interval is 02:00 hours
+5) 19:10 will be linked to the earlier time but will not be highlighted as 'overdue' as it is the second consecutive 0 score and remain GREEN
+6) 21:00 will be linked to the earlier time and would be classified (score now positive) as night and the time interval is 01:50 hours
 
 _______________________________________________
 
