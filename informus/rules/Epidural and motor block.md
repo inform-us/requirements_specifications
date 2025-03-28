@@ -211,6 +211,12 @@ These are weekly percentage (p-charts) SPC charts
 DAY shift week is Monday 08:15 to Sunday 20:14
 NIGHT shift week is Sunday 20:15 to Monday 08:14
 
+- fetch data for the week
+- process to get hourly epochs (don't compare left to right and vice versa)
+- if more than one data point in the one hour epoch, retain most recent
+- calcualte average _Dt betwen left and right of same epoch
+- discard epochs with no data
+- get measurement interval between epochs
 
 ## Chart 1a - DAY Motor Block Assessment Interval Chart
 
@@ -223,7 +229,7 @@ Day shift week is therefore Monday 08:15 to Sunday 20:14.
 - *note SPC denominator adjustment required for excessively long measurement intervals (those that are 2x accepted measurement interval from clinical guideline)*
   
   3. **Denominator (unadjusted)** = count of all motor block assessment measurement intervals during the day shift
-  4. **Denominator (adjusted)** = count all day shift motor block assessment measurement intervals in that week that are > 4:00 hours and ADD +1 to denominator for each measurement interval missed.
+  4. **Denominator (adjusted)** = count all day shift motor block assessment measurement intervals in that week that are > 2:00 hours and ADD +1 to denominator for each measurement interval missed.
 
 For example: (i) an 4.01hr measurement interval will count as 2 in the adjusted denominator - once for the measurement and once for being an additional having missed the next expected measurement; (ii) 6.01 hr measurement interval will count as 3 in the adjusted denominator: (iii) 8.01hr measurement interval will count as 4 in the adjusted denominator etc.....
 5. Generate percentage of DAY SHIFT measurement intervals for that day shift week (line 222) that are 2 hour or less: numerator / denominator (adjusted)
@@ -246,7 +252,7 @@ Modified NIGHT shift week is therefore Sunday 20:15 to Monday 08:14
 2. **Numerator** = count of time intervals that are ≤ 4:00 hours for the NIGHT category
 - *SPC denominator adjustment required for excessively long measurement intervals (those that are 2x accepted measurement interval from clinical guidance)*
    3. **Denominator (unadjusted)** = count of all motor block assessment measurement intervals during the night shift
-4. **Denominator (adjusted)** = count all night shift assessment measurement intervals  in that week that are >8:00 hours and ADD +1 to denominator for each measurement interval missed.
+4. **Denominator (adjusted)** = count all night shift assessment measurement intervals  in that week that are >4:00 hours and ADD +1 to denominator for each measurement interval missed.
 
 For example: (i) an 8:01hr measurement interval will count as 2 in the adjusted denominator - once for the measurement and once for having missed the next expected measurement; (ii) 12:01hr measurement interval will count as 3 in the adjusted denominator
 5. Generate percentage of NIGHT shift measurement intervals for that week that are 4:00 hours or less: numerator / denominator (adjusted)
