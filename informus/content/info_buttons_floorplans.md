@@ -498,7 +498,8 @@ Patients are labeled as RED If either of the latest motor block scores is 3
 
 The highest motor block at any one time is shown. 
 
-If it has been over 2 hours on the day shift or over 4 hours on the night shift, the bed space will be outlined in a hashed red outline 
+If an epidural is running and it has been over 2 hours on the day shift or over 4 hours on the night shift, the motor block documentation is out of date- the bed space will have a a hashed red outline. 
+
 
 
 
