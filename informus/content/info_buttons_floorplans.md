@@ -1,4 +1,4 @@
-\* **Frontend code up to date as of: 10.04.2024** \*
+
 
 # Content for i and ? buttons for all floorplans
 
@@ -86,7 +86,7 @@ Our nurses rely on these targets to deliver safe, quality care.
 
 **Eligibility**  
 
-All patients on ICU - 'All patients in critical care'.
+All patients in critical care
 
 
 **Classification**
@@ -94,10 +94,10 @@ All patients on ICU - 'All patients in critical care'.
 
 **Rule 1:** All eight physiological targets completed in the ICU Targets section of the ICU Navigators.
 
-**Rule 2:** Compliance measured at 13:00 hours each day.
+**Rule 2:** Compliance is measured at 13:00 hours each day.
 
 
-**Tip 1:** All targets ideally set at the same entry at the morning handover or on admission. 
+**Tip 1:** All targets are ideally set at the same entry at the morning handover or on admission. 
 
 **Tip 2:** If a target is not applicable, please select 'Not applicable'.
 
@@ -155,12 +155,12 @@ Patients are receiving supplemental oxygen. If a patient does not receive supple
 
 **Page: Clinical dashboard tab: Mean Arteriel BP**
 
-## Mean Arteriel Blood Pressure (MAP) achieved
+## Mean Arterial Blood Pressure (MAP) achieved
 
 ## i button
 
 
-Excessive use of intravenous vasoactive drugs is associated with poor outcomes. Conversely, low blood pressure is also associated with poor outcome.
+Excessive use of intravenous vasoactive drugs is associated with poor outcomes. Conversely, low blood pressure is also associated with poor outcomes.
 
 MAP targets have an upper as well as lower limit. We need to ensure the MAP remains within the target range and not above or below for prolonged periods.
 
@@ -468,7 +468,7 @@ All patients across all units
 
 **Laryngectomy** Patient has a laryngectomy
 
-**Occupied bed (no artifical airway)** Patient has natural airway
+**Occupied bed (no artificial airway)** Patient has natural airway
 
 
 
