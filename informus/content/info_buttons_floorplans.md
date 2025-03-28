@@ -479,7 +479,7 @@ Epidurals are effective for pain relief, but they also carry risk of complicatio
 
 For all patients on epidural, assess and document their level of motor block (Bromage Score) to their right and left leg 2 hourly in the day (08:00-19:59) and 4 hourly in the night (20:00-07:59). 
 
-Once you patient's epidural infusion has been stopped, continue assessment until either 12 hours have passed or until there is no block (both right and left leg scores are zero), whichever comes first.
+Once the patient's epidural infusion has been stopped, continue assessment until either 12 hours have passed or until there is no block (both right and left leg scores are zero), whichever comes first.
 
 
 **? button**
