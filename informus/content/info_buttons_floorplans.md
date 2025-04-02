@@ -11,11 +11,12 @@
 
 ## i button
 
-
  
 Good pain management is an essential component of quality care. Pain in critical care and post-anaesthetic care unit is common and contributes to poor patient outcomes.  
 
 In CCU we assess pain using the Verbal Pain Scale (VPS) or Critical Care Observation Tool (CPOT) for patients who are unable to self-report their pain, e.g. under sedation.  
+
+‘On epidural infusion’ - denotes those patients that are currently receiving a local anaesthetic infusion via the epidural catheter or are within 12 hours of this having been discontinued. It does not confirm the presence or absence (removal) of an epidural catheter - this needs to be confirmed in person and via EPIC documentation.  
 
 Pain assessment as per the critical care pain guidelines: 
 
@@ -478,6 +479,8 @@ All patients across all units
 Epidurals are effective for pain relief, but they also carry risk of complications including haematoma (bleeding around the spine) which can cause permanent paralysis.
 
 For all patients on epidural, assess and document their level of motor block (Bromage Score) to their right and left leg 2 hourly in the day (08:00-19:59) and 4 hourly in the night (20:00-07:59). 
+
+‘On epidural infusion’ - denotes those patients that are currently receiving a local anaesthetic infusion via the epidural catheter or are within 12 hours of this having been discontinued. It does not confirm the presence or absence (removal) of an epidural catheter - this needs to be confirmed in person and via EPIC documentation.  
 
 Once the patient's epidural infusion has been stopped, continue assessment until either 12 hours have passed or until there is no block (both right and left leg scores are zero), whichever comes first.
 
