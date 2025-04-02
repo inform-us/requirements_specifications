@@ -11,7 +11,7 @@
 | Metric                             | Clinical rules signed off status | Team Code Review Status  | Still to be done                                                                 |
 | ---------------------------------- | -------------------------------- | ------------------------ | -------------------------------------------------------------------------------- |
 | Targets                            | ✅                               |  ✅ 
-| Delirium CAM-ICU                   | ✅                               | ✅                       |                                                                                  |
+| Delirium CAM-ICU                   | ✅                               | ❌                       | Tile statistic has been updated, so needs updating in the code now                                                                                 |
 | MAP (Mean Arterial Blood Pressure) | ✅                                | ✅                       | Update rules based on the code review                                            |
 | Pain (including epidural)          | ✅                               | ✅                       |                                                                                  |
 | Sedation RASS                      | ✅                               | ✅                       |                                                                                  |
