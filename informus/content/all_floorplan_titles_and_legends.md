@@ -69,18 +69,7 @@ To access individual floorplan select location and required tile/metric from Cli
 
 ![image](https://github.com/inform-us/requirements_specifications/assets/94536083/2d0c069a-216a-4031-9dc1-2066a8cea500)
 
-**WARNING MESSAGE**
-
-Add warning message modal to PAIN SCORE FLOORPLAN
-
-Text is al follows:
-
-NOTE: 
-
-‘On epidural’ - denotes those patients that are currently receiving a local anaesthetic infusion via the epidural catheter or are within 12 hours of this having been discontinued. It does not confirm the presence or or absence (removal) of an epidural catheter - this needs to be confirmed in person and via EPIC documentation.  
-
-[] CONFIRM
----
+change 'on epidural' in legend to 'on epidural infusion'
 
 ## Tile: Patients on oxygen therapy SpO2 Saturations
 
@@ -223,18 +212,5 @@ No epidural infusion in the last 12hrs
 Empty bed
 
 
-**WARNING MESSAGE**
-
-Add warning message modal to MOTOR BLOCK ASSESSMENT FLOORPLAN
-
-Text is al follows:
-
-NOTE: 
-
-1. This floor plan highlights those patients that are currently receiving a local anaesthetic infusion via the epidural catheter or are within 12 hours of this having been discontinued. 
-
-2. It does not confirm the presence or or absence (removal) of an epidural catheter - this needs to be confirmed in person and via EPIC documentation.  
-
-[] CONFIRM
 
 
