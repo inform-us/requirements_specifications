@@ -112,9 +112,10 @@ b) NO Valid RASS documented with a CAM-ICU score documented means that at the ti
 *the following feeds into the (i) front tile - 24-hour rolling window and (ii) SPC patients with delirium chart*
 
 **[C]  overall CAM-ICU front tile calculation: Patients with Delirium in the last 2 (completed) shifts**
-- This is a live update that looks at incidence of delirium in the last 2 complted shifts (inpatients and those discharged) - RATIONALE - only one assessment is required per shift, therefore an incomplete will not reflect the quantity of delirium on a ward accurately
+- This is a live update that looks at incidence of delirium in the last 2 complted shifts (inpatients and those discharged) 
+- RATIONALE - only one assessment is required per shift, therefore an incomplete will not reflect the quantity of delirium on a ward accurately
 - Refer to CAM-ICU validity rules above (use backfilled CAM-ICU) *even if the last CAM-ICU was documented over 24 hours ago, it was still valid until the end of that shift so should be included*
-- Numerator: the number of patients present on on each unit at any time over the last 2 complted shifts with positive CAM-ICU scores
+- Numerator: the number of patients present on on each unit at any time over the last 2 completed shifts with positive CAM-ICU scores 
 - Denominator: the number of patients present on on each unit at any time over the last 2 complted shifts 
 - Calculation: (numerator / denominator)*100 represented as percentage
 
