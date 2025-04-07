@@ -112,11 +112,11 @@ b) NO Valid RASS documented with a CAM-ICU score documented means that at the ti
 *the following feeds into the (i) front tile - 24-hour rolling window and (ii) SPC patients with delirium chart*
 
 **[C]  overall CAM-ICU front tile calculation: Patients with Delirium in the last 2 (completed) shifts**
-- This is a live update that looks at incidence of delirium in the last 2 complted shifts (inpatients and those discharged) 
-- RATIONALE - only one assessment is required per shift, therefore an incomplete will not reflect the quantity of delirium on a ward accurately
-- Refer to CAM-ICU validity rules above (use backfilled CAM-ICU) *even if the last CAM-ICU was documented over 24 hours ago, it was still valid until the end of that shift so should be included*
-- Numerator: the number of patients present on on each unit at any time over the last 2 completed shifts with positive CAM-ICU scores 
-- Denominator: the number of patients present on on each unit at any time over the last 2 complted shifts 
+- This is a live update that looks at incidence of delirium over the last 2 completed shifts (includes both inpatients and discharged patients).
+- This calculation does not include the 'current' shift (i.e. the shift we are currently within) as we only want to consider fully 'completed' shifts. Therefore, the calculation will focus on the 2 fully completed shifts that have occurred prior to the 'current' shift.
+  - The rationale for this is that only one assessment is required per shift, therefore an incomplete shift will not reflect the quantity of delirium on a ward accurately.
+- Numerator: the number of patients present on each unit at any time over the last 2 completed shifts with at least one positive CAM-ICU score that is documented at any point over those shifts.
+- Denominator: the number of patients present on each unit at any time over the last 2 completed shifts.
 - Calculation: (numerator / denominator)*100 represented as percentage
 
 ![image](https://github.com/inform-us/requirements_specifications/assets/167782531/e2b82308-a00b-45d6-a5fa-28b46eba09ea)
