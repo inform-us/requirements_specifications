@@ -10,7 +10,7 @@
 
 | Metric                             | Clinical rules signed off status | Team Code Review Status | Still to be done |
 | ---------------------------------- | -------------------------------- | ----------------------- | ---------------- |
-| Targets                            | ✅                               | ✅                      |
+| Targets                            | ✅                               | ✅                      |                  |
 | Delirium CAM-ICU                   | ✅                               | ✅                      |                  |
 | MAP (Mean Arterial Blood Pressure) | ✅                               | ✅                      |                  |
 | Pain (including epidural)          | ✅                               | ✅                      |                  |
@@ -20,13 +20,13 @@
 | POM DReaMing                       | ✅                               | ✅                      |                  |
 | Patients rules                     | ✅                               | ✅                      |                  |
 | Airway                             | ✅                               | ✅                      |                  |
-| Epidural motor block               | ✅                               | ✅                      |
+| Epidural motor block               | ✅                               | ✅                      |                  |
 
 # SPC metrics
 
 | Metric                              | Clincial rules signed off status | Team Code Review Status | Still to be done | process limit sign off | process limit changes implemented in code |
 | ----------------------------------- | -------------------------------- | ----------------------- | ---------------- | ---------------------- | ----------------------------------------- |
-| SPC Chart Build                     | ✅                               |                         |                  |                        |
+| SPC Chart Build                     | ✅                               |                         |                  |                        |                                           |
 | Targets                             | ✅                               |                         |                  | ✅                     | ✅                                        |
 | Delirium CAM-ICU scores             | ✅                               | ✅                      |                  | ✅                     | ✅                                        |
 | Delirium CAM-ICU documentation      | ✅                               | ✅                      |                  | ✅                     | ✅                                        |
