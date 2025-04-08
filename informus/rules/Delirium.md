@@ -115,7 +115,7 @@ b) NO Valid RASS documented with a CAM-ICU score documented means that at the ti
 - This is a live update that looks at incidence of delirium over the last 2 completed shifts (includes both inpatients and discharged patients).
 - This calculation does not include the 'current' shift (i.e. the shift we are currently within) as we only want to consider fully 'completed' shifts. Therefore, the calculation will focus on the 2 fully completed shifts that have occurred prior to the 'current' shift.
   - The rationale for this is that only one assessment is required per shift, therefore an incomplete shift will not reflect the quantity of delirium on a ward accurately.
-- We also do not need to filter by RASS scores for this calculation as we are only interested in positive CAM-ICU scores. This is different to the above two calculations in sections a and b that do consider RASS scores.
+- Note: we also do not need to filter by RASS scores for this calculation as we are only interested in positive CAM-ICU scores. This is different to the above two calculations in sections a and b that do consider RASS scores.
 - Numerator: the number of patients present on each unit at any time over the last 2 completed shifts with at least one positive CAM-ICU score that is documented at any point over those shifts. 
   - Patients are not counted multiple times if they had a positive CAM-ICU on both shifts.
 - Denominator: the number of patients present on each unit at any time over the last 2 completed shifts.
