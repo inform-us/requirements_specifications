@@ -26,8 +26,8 @@
 
 | Metric                              | Clincial rules signed off status | Team Code Review Status | Still to be done | process limit sign off | process limit changes implemented in code |
 | ----------------------------------- | -------------------------------- | ----------------------- | ---------------- | ---------------------- | ----------------------------------------- |
-| SPC Chart Build                     | ✅                               |                         |                  |                        |                                           |
-| Targets                             | ✅                               |                         |                  | ✅                     | ✅                                        |
+| SPC Chart Build                     | ✅                               | ✅                      |                  | ✅                     | ✅                                        |
+| Targets                             | ✅                               | ✅                      |                  | ✅                     | ✅                                        |
 | Delirium CAM-ICU scores             | ✅                               | ✅                      |                  | ✅                     | ✅                                        |
 | Delirium CAM-ICU documentation      | ✅                               | ✅                      |                  | ✅                     | ✅                                        |
 | MAP (Mean Arterial Blood Pressure)  | ✅                               | ✅                      |                  | ✅                     | ✅                                        |
