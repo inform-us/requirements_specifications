@@ -10,5 +10,9 @@ SPC chart status of latest changes -June 2025
 | Mean Arterial Blood Pressure| No - 7| ||
 | RASS Assessement| Yes | | Shifts are still depicted for 12 points, should be seven orange diamonds|
 | RASS| No | | Recalculations seem random|
-
+|Tidal Volume| No - 7 |||
+| Airway Plan| Not enough data but suspect new rules|||
+| Delirium | Yes|| Shifts are still depicted for 12 points, should be seven orange diamonds|
+| Motor Block Assessment | Not enough data but suspect new rules|||
+| DrEaMing| Not enough data but suspect new rules|||
 
