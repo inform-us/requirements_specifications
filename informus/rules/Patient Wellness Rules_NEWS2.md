@@ -30,15 +30,8 @@ Row ID: R UCLH NEWS PATIENT FEEL [304080162]
 - option for free text
 
 
-General information about metric (e.g. location, components, group or summative score etc)
-metric output (e.g. numerical (integer / decimal), drop down, range selection, free text etc)
-Are there corresponding targets?
-EPIC Flowsheets
-ABC metric [ID XXXX for Group or summative score if applicable]
-ABC metric - Row ID XXXX
-ABC metric [component if applicable] - Row ID XXXX
-Flowsheet	Row ID	Manual/Automatic/Calculated Input	Comments	Expected documentation frequency
-PDF - ABC metric user interface sequence
+**Expected documentation frequency
+**PDF - ABC metric user interface sequence
 
 
 
