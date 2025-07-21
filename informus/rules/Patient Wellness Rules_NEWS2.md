@@ -2,24 +2,24 @@
 
 ## EPIC
 
+The NEWS2 score is an ealry warning score measuring physiological deterioration. It looks at the following parameters: respiratory (respiratory rate, SpO2, supplemental oxygen), cardiovascualr (systoloic blood pressure, pulse rate), neurological (consciousl level) and temperature. It ranges from 0-20. It is usually grouped by severity into the following: 0–2, 3–4, 5–6 and 7+. A numerical trigger for escalation is commonly a NEWS2 score = 5. 
+
+https://www.rcp.ac.uk/media/a4ibkkbf/news2-final-report_0_0.pdf
+
+
 ### Group ID 
-
-G UCLH NEWS SCORING [304080160] 
-
-### Row ID 
 
 National Early Warning Score_2 (NEWS2)
 
 Group ID: G UCLH NEWS SCORING [304080160]	
 
+### Row ID 
+
 Row ID: R NEWS SCORE RESULT - DISPLAYED [28315]
 - this is a calculated score
 - integer
 - range 0-20
-- commonly used grouping 0–2, 3–4, 5–6 and 7+
-- usual escalation trigger - NEWS2 score = 5
 
-https://www.rcp.ac.uk/media/a4ibkkbf/news2-final-report_0_0.pdf
 
 NEWS2 'Action Taken' - not currently used for this metric
 RowID: R NEWS ACTION TAKEN [6503]
