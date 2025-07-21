@@ -1,5 +1,4 @@
-
-# DRAFT of beginning of  Rules for Patient Wellness Question (Martha's Rule)
+# DRAFT of beginning of  Rules for Patient Wellness Question (Martha's Rule) linked to NEWS2
 
 ## EPIC
 
@@ -9,10 +8,27 @@ G UCLH NEWS SCORING [304080160]
 
 ### Row ID 
 
-R NEWS SCORE RESULT - DISPLAYED [28315] - this is a Calculated score with a drop down of numbers. 
-Above news 5 is high news cause for concern
+National Early Warning Score_2 (NEWS2)
 
-R UCLH NEWS PATIENT FEEL [304080162] Drop down with four options (better, worse, the same, don't know)
+Group ID: G UCLH NEWS SCORING [304080160]	
+
+Row ID: R NEWS SCORE RESULT - DISPLAYED [28315]
+- this is a calculated score
+- integer
+- range 0-20
+- commonly used grouping 0–2, 3–4, 5–6 and 7+
+- usual escalation trigger - NEWS2 score = 5
+
+https://www.rcp.ac.uk/media/a4ibkkbf/news2-final-report_0_0.pdf
+
+NEWS2 'Action Taken' - not currently used for this metric
+RowID: R NEWS ACTION TAKEN [6503]
+
+NEWS2 'How does the patient feel?'
+
+Row ID: R UCLH NEWS PATIENT FEEL [304080162]
+- drop down with with four options (better than before / the same / worse / don't know)
+- option for free text
 
 
 General information about metric (e.g. location, components, group or summative score etc)
